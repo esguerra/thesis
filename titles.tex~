@@ -1,0 +1,27 @@
+%  Title and other sections that come before the body  of the document
+
+\phd
+%\jointumdnj
+\title{\textbf{RNA Structure Analysis Using the Rigid Block Model}}
+\author{Mauricio Esguerra}
+\campus{New Brunswick}
+\program{Chemistry and Chemical Biology}
+\director{Wilma K. Olson}
+
+
+%% Gives the number of lines for comittee signatures.
+\approvals{4}
+
+% \copyrightpage % Do you want copyright protection?
+\submissionmonth{December 16}   % only May, October or January
+\submissionyear{2009}
+%\figurespage
+%\draft
+
+%%% Abstract
+\abstract{RNA structure is in the forefront of our understanding of life
+
+
+}
+
+
