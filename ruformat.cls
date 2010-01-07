@@ -1,7 +1,7 @@
 % Les Clowney 
 % ru-thesis document style (LaTeX)
-%  ruthesis.cls is based on the LaTeX documentstyle ruthesis.sty, to which
-%  both Dave Steiner and Tara Madhyastha contributed.
+% ruthesis.cls is based on the LaTeX documentstyle ruthesis.sty, to which
+% both Dave Steiner and Tara Madhyastha contributed.
 
 %  4/9/94 Modified for LaTeX2e [lsc]
 %  11/18/94 [lsc] Removed uses of the \initials command. Use of initials,

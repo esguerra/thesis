@@ -1,0 +1,28 @@
+\gdef \the@ipfilectr {@-1}
+\gdef \the@ipfilectr {}
+\contentsline {unnumberedsection}{Abstract}{ii}{section*.1}
+\contentsline {unnumberedsection}{Acknowledgements}{iii}{chapter*.2}
+\contentsline {unnumberedsection}{Dedication}{iv}{chapter*.3}
+\gdef \the@ipfilectr {@-2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\contentsline {chapter}{\numberline {2}RNA Base Steps}{2}{chapter.2}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\contentsline {chapter}{\numberline {3}RNA Base-Pairing}{3}{chapter.3}
+\contentsline {section}{\numberline {3.1}Canonical and Non. Methods Paper}{3}{section.3.1}
+\contentsline {section}{\numberline {3.2}Clustering of Yurong's classification}{3}{section.3.2}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\contentsline {chapter}{\numberline {4}RNA Base Pair Steps}{4}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analysis and Django Webserver}{4}{section.4.1}
+\contentsline {section}{\numberline {4.2}Persistence Length}{4}{section.4.2}
+\contentsline {section}{\numberline {4.3}AMBER: Persistence Length of Base-Pair Step Patterns}{4}{section.4.3}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-6}
+\contentsline {chapter}{\numberline {5}RNA Motifs}{5}{chapter.5}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-7}
+\contentsline {chapter}{\numberline {6}Introduction}{6}{chapter.6}
+\gdef \the@ipfilectr {}
