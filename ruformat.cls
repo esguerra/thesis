@@ -316,6 +316,7 @@
 \long\def\preface#1{\prefacetrue\gdef\@preface{#1}}
 \long\def\acknowledgements#1{\acknowledgementstrue\gdef\@acknowledgements{#1}}
 \long\def\dedication#1{\dedicationtrue\gdef\@dedication{#1}}
+\long\def\quotes#1{\quotestrue\gdef\@quotes{#1}}
 \newcommand{\abbreviations}[1]{\abbreviationspagetrue\gdef\@abbreviations{#1}}
 % Use of the \initials command is being stopped but keep the macro for old 
 % files.
@@ -348,7 +349,7 @@
 \newif\ifafterpreface
 \newif\ifcopyright \newif\iffigures\newif\iftables
 \newif\ifabstract   \newif\ifpreface \newif\ifacknowledgements 
-\newif\ifdedication \newif\ifabbreviationspage
+\newif\ifdedication \newif\ifquotes \newif\ifabbreviationspage
 \newif\ifjoint \newif\ifphd \newif\ifpagestyletopright
 
 %    ******* conditional defaults ******* 
@@ -477,6 +478,10 @@
         \ifdedication%
                 \unnumberedsection{Dedication}
                 \@dedication
+        \fi 
+        \ifquotes%
+                \unnumberedsection{}
+                \@quotes
         \fi 
 
         \tableofcontents
