@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.11.9)  7 JAN 2010 15:59
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.11.9)  11 JAN 2010 15:38
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -267,27 +267,27 @@ LaTeX Warning: Label `introduction' multiply defined.
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 49.
  (/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 46.
-Package hyperref Info: Link coloring OFF on input line 46.
+(Font)              scaled to size 11.39996pt on input line 49.
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
@@ -297,8 +297,8 @@ Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
 \c@section@level=\count122
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -348,15 +348,15 @@ driver: pdftex
  (./titles.tex)
 Title
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 60.
+(Font)              scaled to size 16.41594pt on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 60.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 60.
+(Font)              scaled to size 16.41594pt on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 60.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 60.
+(Font)              scaled to size 11.39996pt on input line 64.
 [1
 
 
@@ -366,18 +366,18 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 Abstract
 
 Package hyperref Warning: No destination for bookmark of \addcontentsline,
-(hyperref)                destination is added on input line 60.
+(hyperref)                destination is added on input line 64.
 
 
 Package hyperref Warning: bookmark level for unknown unnumberedsection defaults
  to 0.
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 60.
+(Font)              scaled to size 13.67995pt on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 60.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 60.
+(Font)              scaled to size 13.67995pt on input line 64.
 [2]
 Acknowledgements
 [3
@@ -385,9 +385,9 @@ Acknowledgements
 ]
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 61.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 65.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 61.
+(Font)              scaled to size 11.39996pt on input line 65.
 [4
 
 ] (./main.toc
@@ -411,18 +411,41 @@ File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 
 (./Chapter1/chapter1.tex
 Chapter 1.
-No file Chapter1/chapter1.bbl.
-) [1
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 7.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 18.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 18.
+<Chapter1/rangan2003pnas.png, id=167, 1316.92pt x 558.085pt>
+File: Chapter1/rangan2003pnas.png Graphic file (type png)
+
+<use Chapter1/rangan2003pnas.png> [1
 
 
 
-]
+] [2 <./Chapter1/rangan2003pnas.png (PNG copy)>] [3] <Chapter1/overallfold.png,
+ id=273, 308.352pt x 303.2931pt>
+File: Chapter1/overallfold.png Graphic file (type png)
+
+<use Chapter1/overallfold.png>
+<Chapter1/ribosome_ribozyme.png, id=276, 572.3784pt x 342.5598pt>
+File: Chapter1/ribosome_ribozyme.png Graphic file (type png)
+
+<use Chapter1/ribosome_ribozyme.png> [4] (./Chapter1/chapter1.bbl [5 <./Chapter
+1/overallfold.png (PNG copy)> <./Chapter1/ribosome_ribozyme.png>]
+References
+[6
+
+] [7] [8] [9])) [10]
 \openout2 = `Chapter2/chapter2.aux'.
 
  (./Chapter2/chapter2.tex
 Chapter 2.
 No file Chapter2/chapter2.bbl.
-) [2
+) [11
 
 
 
@@ -433,7 +456,7 @@ No file Chapter2/chapter2.bbl.
  (./Chapter3/chapter3.tex
 Chapter 3.
 No file Chapter3/chapter3.bbl.
-) [3
+) [12
 
 
 
@@ -444,7 +467,7 @@ No file Chapter3/chapter3.bbl.
  (./Chapter4/chapter4.tex
 Chapter 4.
 No file Chapter4/chapter4.bbl.
-) [4
+) [13
 
 
 
@@ -455,7 +478,7 @@ No file Chapter4/chapter4.bbl.
  (./Chapter5/chapter5.tex
 Chapter 5.
 No file Chapter5/chapter5.bbl.
-) [5
+) [14
 
 
 
@@ -466,7 +489,7 @@ No file Chapter5/chapter5.bbl.
  (./Chapter6/chapter6.tex
 Chapter 6.
 No file Chapter6/chapter6.bbl.
-) [6
+) [15
 
 
 
@@ -479,21 +502,24 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4581 strings out of 95087
- 60023 string characters out of 1183278
- 119244 words of memory out of 1500000
- 7595 multiletter control sequences out of 10000+50000
- 26626 words of font info for 45 fonts, out of 1200000 for 2000
+ 4769 strings out of 95087
+ 62902 string characters out of 1183278
+ 124902 words of memory out of 1500000
+ 7687 multiletter control sequences out of 10000+50000
+ 40261 words of font info for 62 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
- 28i,4n,39p,225b,334s stack positions out of 5000i,500n,6000p,200000b,5000s
- </home/esguerra/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk>{/usr/
-share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts
-/type1/bluesky/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic
-/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr
-/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (11 pages, 53199 bytes).
+ 29i,8n,39p,556b,421s stack positions out of 5000i,500n,6000p,200000b,5000s
+ </home/esguerra/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </hom
+e/esguerra/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk>{/usr/share/te
+xmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/type1/b
+luesky/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr8.pfb>
+</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf-t
+exlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type
+1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uh
+vro8a.pfb>
+Output written on main.pdf (20 pages, 2367419 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 27 named destinations out of 1000 (max. 131072)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 425 PDF objects out of 1000 (max. 8388607)
+ 108 named destinations out of 1000 (max. 131072)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

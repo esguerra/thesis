@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: Chapter1/chapter1.aux
+The style file: nar.bst
+Database file #1: biblio.bib
+Warning--can't use both author and editor fields in moore1999a
+You've used 57 entries,
+            1881 wiz_defined-function locations,
+            789 strings with 13196 characters,
+and the built_in function-call counts, 14672 in all, are:
+= -- 1505
+> -- 626
+< -- 2
++ -- 231
+- -- 174
+* -- 1376
+:= -- 2266
+add.period$ -- 57
+call.type$ -- 57
+change.case$ -- 56
+chr.to.int$ -- 0
+cite$ -- 58
+duplicate$ -- 524
+empty$ -- 1403
+format.name$ -- 174
+if$ -- 3425
+int.to.chr$ -- 0
+int.to.str$ -- 57
+missing$ -- 59
+newline$ -- 288
+num.names$ -- 57
+pop$ -- 68
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 200
+stack$ -- 0
+substring$ -- 1250
+swap$ -- 66
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 114
+width$ -- 59
+write$ -- 516
+(There was 1 warning)

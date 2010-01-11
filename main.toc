@@ -5,24 +5,33 @@
 \contentsline {unnumberedsection}{}{iv}{chapter*.3}
 \gdef \the@ipfilectr {@-2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}RNA folding}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Interest in RNA folding}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Is RNA folding a hard or easy problem?}{1}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Experimental folding techniques}{2}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}RNA simulations}{3}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}Local nucleotide interactions}{3}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.6}RNA secondary structure algorithms and the lack of tertiary ones}{4}{subsection.1.1.6}
+\contentsline {subsection}{\numberline {1.1.7}RNA overall fold}{4}{subsection.1.1.7}
+\contentsline {unnumberedsection}{References}{6}{chapter*.5}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
-\contentsline {chapter}{\numberline {2}RNA Base Steps}{2}{chapter.2}
+\contentsline {chapter}{\numberline {2}RNA Base Steps}{11}{chapter.2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {chapter}{\numberline {3}RNA Base-Pairing}{3}{chapter.3}
-\contentsline {section}{\numberline {3.1}Canonical and Non. Methods Paper}{3}{section.3.1}
-\contentsline {section}{\numberline {3.2}Clustering of Yurong's classification}{3}{section.3.2}
+\contentsline {chapter}{\numberline {3}RNA Base-Pairing}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Canonical and Non. Methods Paper}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Clustering of Yurong's classification}{12}{section.3.2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {chapter}{\numberline {4}RNA Base Pair Steps}{4}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analysis and Django Webserver}{4}{section.4.1}
-\contentsline {section}{\numberline {4.2}Persistence Length}{4}{section.4.2}
-\contentsline {section}{\numberline {4.3}AMBER: Persistence Length of Base-Pair Step Patterns}{4}{section.4.3}
+\contentsline {chapter}{\numberline {4}RNA Base Pair Steps}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analysis and Django Webserver}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Persistence Length}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}AMBER: Persistence Length of Base-Pair Step Patterns}{13}{section.4.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {chapter}{\numberline {5}RNA Motifs}{5}{chapter.5}
+\contentsline {chapter}{\numberline {5}RNA Motifs}{14}{chapter.5}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
-\contentsline {chapter}{\numberline {6}Introduction}{6}{chapter.6}
+\contentsline {chapter}{\numberline {6}Introduction}{15}{chapter.6}
 \gdef \the@ipfilectr {}
