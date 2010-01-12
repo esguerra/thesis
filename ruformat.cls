@@ -158,7 +158,7 @@
  \addcontentsline{toc}{chapter}{#1}\fi
  \chaptermark{#1}
  % Don't add extra space to lists of figures and tables after chapters.
- %  \addtocontents{lof}{\protect\addvspace{10bp}}
+ % \addtocontents{lof}{\protect\addvspace{10bp}}
  %  \addtocontents{lot}{\protect\addvspace{10bp}}
  \if@twocolumn
  \@topnewpage[\@makechapterhead{#2}] 
@@ -185,7 +185,8 @@
 \@tempdima 1.5em\relax \begingroup \bfseries
     #1\leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}% \hfill 
 \hskip 0pt plus 1filll % new line
-   \hbox to\@pnumwidth{\hfil\rm #2}\endgroup\par}
+%   \hbox to\@pnumwidth{\hfil\rm #2}\endgroup\par}
+   \hbox to\@pnumwidth{\hfil #2}\endgroup\par}
 
 % Add dotted leaders for chapters in the table of contents.
 \renewcommand{\l@chapter}[2]{\pagebreak[3]\vskip 1em plus 1bp
@@ -195,7 +196,8 @@
 \@tempdima 1.5em\relax \begingroup 
     \textbf{#1}\leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern \@dotsep mu$}% \hfill 
 \hskip 0pt plus 1filll % new line
-   \hbox to\@pnumwidth{\hfil\rm #2}\endgroup\par}
+%   \hbox to\@pnumwidth{\hfil\rm #2}\endgroup\par}
+   \hbox to\@pnumwidth{\hfil #2}\endgroup\par}   
 
 
 
@@ -237,7 +239,8 @@
 % if the \draft command has been given, otherwise it is empty.
 % 8/1/88 Added \draftheading  [lsc]
 \newcommand\ps@topright{\let\@mkboth\@gobbletwo
-  \def\@oddhead{\rm\draftheading\hfil\thepage}\let\@evenhead\@oddhead
+%  \def\@oddhead{\rm\draftheading\hfil\thepage}\let\@evenhead\@oddhead
+  \def\@oddhead{\draftheading\hfil\thepage}\let\@evenhead\@oddhead
   \def\@evenfoot{}\def\@oddfoot{}}
 % For drafts make this redefinition.
 
@@ -305,7 +308,8 @@
 \newcommand\draft{\drafttrue
  \def\ps@plain{\let\@mkboth\@gobbletwo
   % redefine page styles so that appropriate headers are used.
-   \def\@oddhead{\rm\draftheading\hfil\thepage}\let\@evenhead\@oddhead
+%%   \def\@oddhead{\rm\draftheading\hfil\thepage}\let\@evenhead\@oddhead
+   \def\@oddhead{\draftheading\hfil\thepage}\let\@evenhead\@oddhead   
    \def\@evenfoot{\hfil\thepage\hfil}\let\@oddfoot\@evenfoot}
  \def\draftheading{{\bfseries\jobname.tex\hfil\the\month/\the\day/\the\year}}}
 \newcommand\copyrightpage{\copyrighttrue}
