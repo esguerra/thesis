@@ -13,8 +13,9 @@
 \usepackage{longtable}
 %\usepackage{xtab}
 \usepackage{setspace}
-\usepackage{hyperref}
+%\usepackage{hyperref}
 \usepackage{pdflscape}
+
 \singlespacing
 %\usepackage[left=2.54cm,bottom=2.00cm,top=2.00cm,right=2.54cm]{geometry}
 \usepackage[left=1.5in,bottom=1in,top=1in,right=1in]{geometry}
@@ -22,9 +23,11 @@
 \usepackage{makeidx}
 \makeindex
 \includeonly{titles, Chapter1/chapter1,
-  Chapter2/chapter2, Chapter3/chapter3, Chapter4/chapter4, /Chapter5/chapter5,
-/Chapter6/chapter6} 
+  Chapter2/chapter2, Chapter3/chapter3, Chapter4/chapter4, 
+  Chapter5/chapter5, Chapter6/chapter6} 
 %\usepackage{pdflscape}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Fonts in Document
@@ -36,9 +39,9 @@
 %\usepackage{palatino}
 \usepackage[T1]{fontenc}
 \usepackage[scaled]{helvet}
-\renewcommand*\familydefault{\sfdefault} 
+\renewcommand*\familydefault{\sfdefault}
+%\renewcommand*{\encodingdefault}{T1}
 % For more options go to: http://www.tug.dk/FontCatalogue/
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Here begins the document
@@ -56,17 +59,17 @@
 %    Title and other sections that come before the body  of the document
 %    theses-title has specific commands from ruthesis
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pagenumbering{roman}
 \include{titles}
 \beforepreface % causes insertion of title, abstract, copyright
 \afterpreface
-
-    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    Now lets include the body of the document ...
 %    Each file corresponds to a separate chapter.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    \include{acknowledgments}
+%\pagenumbering{arabic}
 \include{Chapter1/chapter1}
 \include{Chapter2/chapter2}
 \include{Chapter3/chapter3}

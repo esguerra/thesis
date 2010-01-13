@@ -365,6 +365,7 @@
 \dedicationfalse
 \jointfalse
 \phdfalse % default is not for PhD (currently is  Master of Science) 
+\quotesfalse
 \copyrightfalse  
 \abbreviationspagefalse 
 
@@ -451,6 +452,14 @@
                 \vskip 31bp}
                 \end{center}
                 \@abstract}
+
+\newpage
+        \ifquotes{%
+                \typeout{Quotes}
+%                \addcontentsline{toc}{unnumberedsection}{Quotes}
+                {\null\vskip 5cm}
+                \@quotes}
+
         \fi }
 
 \newcommand{\unnumberedsection}[1]{\chapter*{#1}
@@ -483,10 +492,10 @@
                 \unnumberedsection{Dedication}
                 \@dedication
         \fi 
-        \ifquotes%
-                \unnumberedsection{}
-                \@quotes
-        \fi 
+%        \ifquotes%
+%                \unnumberedsection{Quotes}
+%                \@quotes
+%        \fi 
 
         \tableofcontents
         \iftables%

@@ -1,8 +1,7 @@
 \gdef \the@ipfilectr {@-1}
 \gdef \the@ipfilectr {}
 \contentsline {unnumberedsection}{Abstract}{ii}
-\contentsline {unnumberedsection}{Acknowledgements}{iii}
-\contentsline {unnumberedsection}{}{iv}
+\contentsline {unnumberedsection}{Acknowledgements}{iv}
 \gdef \the@ipfilectr {@-2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}RNA folding}{1}
@@ -17,21 +16,25 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
 \contentsline {chapter}{\numberline {2}RNA Base Steps}{11}
+\contentsline {section}{\numberline {2.1}Consensus Clustering of Single Stranded Base Step Parameters}{11}
+\contentsline {section}{\numberline {2.2}Four Major Non-ARNA Step Groups in the Ribosome}{11}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {chapter}{\numberline {3}RNA Base-Pairing}{12}
-\contentsline {section}{\numberline {3.1}Canonical and Non. Methods Paper}{12}
-\contentsline {section}{\numberline {3.2}Clustering of Yurong's classification}{12}
+\contentsline {section}{\numberline {3.1}Canonical and Noncanonical Base-pairs, Methods Paper}{12}
+\contentsline {section}{\numberline {3.2}Clustering of Yurong's Classification}{12}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {4}RNA Base Pair Steps}{13}
-\contentsline {section}{\numberline {4.1}Analysis and Django Webserver}{13}
-\contentsline {section}{\numberline {4.2}Persistence Length}{13}
+\contentsline {section}{\numberline {4.1}Analysis (Albany Poster) and Django Webserver}{13}
+\contentsline {section}{\numberline {4.2}Persistence Length vs. Hagerman}{13}
 \contentsline {section}{\numberline {4.3}AMBER: Persistence Length of Base-Pair Step Patterns}{13}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {chapter}{\numberline {5}RNA Motifs}{14}
+\contentsline {section}{\numberline {5.1}GNRA Motif}{14}
+\contentsline {section}{\numberline {5.2}Triplets on RNA (comparison to Laing et al.)}{14}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
-\contentsline {chapter}{\numberline {6}Introduction}{15}
+\contentsline {chapter}{\numberline {6}RNA Helical Regions and Graph Theory}{15}
 \gdef \the@ipfilectr {}
