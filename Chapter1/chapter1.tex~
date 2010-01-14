@@ -1,7 +1,295 @@
 \chapter{Introduction}
 \label{introduction} 
 \bibliographystyle{nar}
+\section{RNA folding}
+The first high resolution X-ray structure of RNA larger than a
+dinucleotide was that of yeast tRNA$^{\textrm{Phe}}$ at 3{\AA}  in
+1974 \cite{robertus1974, kim1974}. Thirty years later there are two
+orders of magnitude more RNA structural information
+\cite{noller2005}. This fact and the discovery of ribozymes
+\cite{kruger1982, takada1983} has renewed interest in solving the
+\index{RNA folding} problem, that is, from primary sequence, finding in an
+automated\footnote{The term automated is used here to mean a
+theoretical model of tertiary folding, which could use experimental
+measures of secondary structure association in the same way that the
+traditional secondary structure folding model \cite{zuker1989,
+  hofacker1994} uses the Tinoco-Uhlenbeck dinucleotide postulate
+\cite{borer1974} to find total free energies.} way the native
+three-dimensional structure of RNA and its
+folding pathway. The \index{RNA folding} problem is usually seen as
+analogous to the protein folding problem, due both to the discovery
+of the enzymatic behavior of RNA \cite{kruger1982, takada1983} and
+the complicated folding of large RNA molecules \cite{batey1999}. To
+take advantage of this analogy, a unified conceptual framework for
+describing RNA and protein folding, called the kinetic partitioning
+mechanism (KPM), has been developed by Thirumalai and Hyeon
+\cite{thirumalai2005}. This and other methods are based on defining
+an adequate partition function for describing the correct
+conformational ensemble of folded, partially folded, and unfolded
+structures \cite{chen1995, chen1998, thirumalai1996} of either
+protein or RNA.
 
+\section{Is RNA folding a hard or easy problem?}
+There are two trains of thought regarding RNA folding. One states
+that RNA folding is less complex than protein folding
+\cite{tinoco1999} because RNA is made up of a four letter alphabet
+of similar nucleotide units instead of a 20 letter alphabet of
+dissimilar amino acids. Therefore the number of possible sequential
+combinations is smaller. It is also known that secondary and
+tertiary interactions can be separated in the case of RNA by the
+absence or presence of Mg$^{2+}$ \cite{rangan2003} (see Figure 1.1),
+whereas secondary and tertiary elements are not as easily separable in proteins.
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.3]{Chapter1/rangan2003pnas.png}
+\caption{Separation of secondary and tertiary interaction in
+RNA \cite{rangan2003}. Double helical secondary structure
+represented  by individual cylinders and tertiary interactions by
+association of cylinders.}
+\end{figure}
+The other point of view says that RNA folding can be at least as
+complex as protein folding \cite{moore1999a, sorin2004} since there
+is no such thing as hydrophobic burial of regions of RNA as in the
+case of proteins. Instead, the electrostatic problem of having a
+complex charged backbone must be dealt with in the case of RNA.
+% The case of the electrostatic treatment of the backbone is lacking
+% here, most likely WKO wants me not to ignore our own Gerald Manning
+% tinoco 1999 says this must be an easy to solve problem since we can do
+% the electrostatics for it easily
+For instance, the interactions of the RNA polyanionic backbone with
+water and cations \cite{klein2004a} are not easily simulated with
+explicit solvent models as can be done for proteins. The
+aforementioned interactions of RNA need to be modeled implicitly, and
+must aim to describe long dynamic processes of the order of seconds
+to minutes, in contrast to the typical time scales of tens of
+microseconds associated with protein folding.
+% Remember that this means that a explicit calculation for RNA would be prohibitively large.
+Although secondary and tertiary structure can be separated
+experimentally, there have been few theoretical efforts to account
+for the folding of RNA from a random sequence of nucleotides into
+secondary structures and tertiary structures. What little is know
+has been investigated at low resolution. Professor Stephen Harvey
+and associates have simulated yeast tRNA$^{\textrm{Phe}}$
+\cite{malhotra1990, stagg2003} at various levels of detail, initially using
+only one pseudoatom per helical region, and later one pseudoatom per
+nucleotide.
+%Note for presentation ==> Include figure 1 in Malhotra-harvey paper
+%Look at what says in folding.stanford.edu/science.html Also take
+%into account Biophys J. V.88 2516-2524 for the case of having to
+%think of water in the folding problem.
+By contrast, in the case of proteins many groups have simulated the
+transition from secondary to tertiary structure, including some
+calculations which account for the strong coupling of secondary and
+tertiary structure \cite{westhead1999, gerstein2003, meiler2003}.
+This type of work is often referred to as protein structural
+topology and there is no counterpart for RNA.
+
+%The seminal paper here seems to be the one of liphardt in 2001 for rna unfolding
+\section{Experimental folding techniques}
+Traditionally RNA folding and unfolding have been followed
+calorimetrically and spectroscopically as a function of temperature
+and cation concentration \cite{bloomfield2000}. While this approach
+works well for studying two-state folders, \textit{i.e.}, structures which
+populate only two states (native and melted), in general RNA's are
+not two-state folders. RNA seems to go through a rugged free energy
+landscape of conformations in the process of folding
+\cite{zhuang2003}. The experimental solution to this problem is
+offered by single molecule techniques like fluorescence resonance
+energy transfer (FRET) and mechanical micromanipulation, in which
+the ends of RNA are attached to micron sized beads which are then
+pulled apart and monitored with a laser light trap
+\cite{liphardt2001, onoa2004, tinoco2004, hyeon2005}. In the case of
+single molecule force-induced unfolding, state transitions often occur under
+non-equilibrium conditions, thereby making it difficult to extract
+equilibrium information from the data. Recently Bustamante, Tinoco,
+and associates have shown that using the Crooks fluctuation theorem
+\cite{crooks1999}, one can deal with such cases and extract RNA
+folding free energies from single molecule experiments
+\cite{collin2005}.
+%\subsection{RNA Folding in Vitro vs in Vivo vs in Silico}
+% It still is to be seen whether the following is relevant or not
+% This single molecule information is
+% collected in-vitro and not in-vivo, which is actually the ultimate
+% problem aimed for prediction, there's quite a lot of evidence for
+% different folding states reached in one case and not the other and
+% viceversa \cite{sosnick2003, schroeder2002} but still a first step
+% towards understanding in-vivo folding is in-vitro and in-silico
+% experimentation.
+
+\section{RNA simulations}
+Network and molecular mechanics-molecular dynamics (MM-MD) methods
+provide useful information relevant to the RNA folding-unfolding
+problem, especially for describing fluctuations away from the native
+conformation. Gaussian network models \cite{y_wang2004, bahar1998,
+wang2005} which treat RNA at less than atomic detail have been used
+to describe the motions of large RNA structures like the ribosome.
+Examples of the predicted normal modes of motion of the ribosome can
+be seen at: http://ribosome.bb.iastate.edu/70SnK mode. Using MM,
+Sanbonmatsu and coworkers obtained a static atomic model of the 70S
+ribosome structure through homology modeling \cite{tung2004}. Tung and
+associates used this structure for an all-atom MD simulation of the
+movement of tRNA into a fluctuating ribosome \cite{sanbonmatsu2005}.
+This type of simulation might be useful in a reverse-folding
+approach to the RNA folding problem. To the best of my knowledge,
+such calculations haven't as yet been done for RNA.
+
+\section{Local nucleotide interactions}
+%\subsubsection{QM approaches and MM consequences}
+The molecular interactions which rule RNA structures at the nucleic
+acid base level, \textit{i.e.}, local level, are hydrogen bonding and
+stacking interactions. The former are related to base pairing and
+the latter, in most cases, to nucleotide steps. These interactions
+can be explored theoretically at various levels. At the highest
+level are ab-initio quantum mechanical calculations which are still
+too expensive for systems as large as hundreds of atoms. Such
+calculations, nevertheless, can tell a great deal about local
+electronic behavior. For example, Hobza and collaborators have found
+that the stacking interaction of free nucleotide bases is determined
+by dispersion attraction, short-range exchange repulsion, and electrostatic
+interaction. No specific $\pi-\pi$ interactions are found from
+electron correlated ab-initio calculations \cite{sponer1996,
+sponer1997}. This is why force field methods have been so successful
+in the study of nucleic acids, since the empirical potentials used
+in such studies mimic well the quantum mechanically obtained energy
+profiles \cite{tung2004, sponer2000}.
+% since they can be
+%modeled easily with simple empirical potentials consisting of
+%Lennard-Jones, van der Waals and Coulomb terms.
+% What the recent results say it's simply that by using a larger
+% basis set, they can account for some interactions which were not included
+% before, and maybe because of taking better account of electron-correlation.
+A currently debated ab-initio finding is whether small fluctuations
+in the configurations of neighboring base pairs (dimers) are
+iso-energetic or not. Recent calculations of Sponer and Hobza
+\cite{sponer2006} seem to contradict their older publications
+\cite{sponer2000, hobza2002}, in which the stacking energies were
+reported to be relatively insensitive to dimer conformation. The new
+results use the so-called ``coupled cluster singles doubles with triple electron
+excitations'' CCSD(T) method, to account for electron correlation.
+Using this electron correlation energy correction, the stacking
+energy differences between dimer conformations turn out to be
+considerably higher than previously reported.
+
+%, therefore justifying rigid body parameter interpretations.
+%\subsubsection{Experimental Stacking and Polyionic backbone}
+Single and double strand stacking free energies can be obtained
+calorimetrically. The most popular method used for obtaining such
+quantities is differential scanning calorimetry (DSC)
+\cite{marky1982}. These measurements show favorable dinucleotide
+stacking free energies as large as -3.6 kcal/mol for double strand
+stacking. Experimentally, the magnitudes of these interactions are
+found to be sequence dependent \cite{bloomfield2000}. In fact, the
+stacking free energies for some sequences\footnote{Unpaired terminal
+ nucleotides UC/A  UU/A  at 1M NaCl.} are found to be negligible. Thus
+there may be no accountable stacking interaction at all for some sequences.
+
+Besides taking into account the effects of stacking and hydrogen
+bonding, it is important to think at the same time about the
+polyelectrolyte nature of the RNA backbone. Manning's counterion
+condensation theory \cite{manning1977, manning2003} provides a
+simple and quantitative picture of the interactions of the double
+helical nucleic acid polyanion with its counterions, although it
+does not take into account the discrete nature of charge
+\cite{bloomfield2000} or the folding of RNA. Poisson-Boltzmann
+theory offers a more detailed picture of the behavior of charged
+macroions in solution \cite{antypov2005}.
+%but does not address the discrete charge problem.
+%Talk more about counterion condensation, thirumalai discusses it on
+%his 2001 paper also chapter 8 of Bloomfield, Crothers, Tinoco
+%(References \cite{manning2003} Ray-Manning?).
+%Real Experiments results for stacking energies and polyanion energies and
+%Energetics related to cation metal presence
+%WKO says that there might be old experimental data that are contrary
+%to this and that I must show it here, so far what I've found is
+%Saenger saying that based on old QC and this is different, he
+%relates it to hydrophobicity concepts. Talk about experiments.
+
+The local conformational space of RNA has been studied using a large
+set of available RNA structures from the Nucleic Acid Database
+(NDB) \cite{berman1992}. The torsion angles of the nucleotide steps have been
+clustered in the parameter space using different techniques
+\cite{murray2003, schneider2004}. The root-mean-square deviations
+(RMSD) of the distances between closely spaced atoms in the
+phosphates, sugars, and bases, have also been clustered
+\cite{sykes2005}. The latter studies are aimed at finding the common
+nucleotide base steps and base-pair building blocks which are given
+the name of RNA doublets.
+
+\section{RNA secondary structure algorithms and the lack of tertiary ones}
+From secondary structure prediction algorithms like Zuker's
+\textit{mfold} program \cite{zuker2003}, or Hofacker's Vienna RNA
+package \cite{hofacker1994}, one obtains a large ensemble of
+secondary structure graphs. These graphs can be analyzed with graph
+theory to produce a partition function describing a full arrangement
+of contacts for the total number of possible secondary structures
+\cite{chen2000}. So far this type of model has not been generalized
+to take into account tertiary structural features, \textit{i.e.},
+interhelical interactions of RNA.
+
+\section{RNA overall fold}
+Whereas in the case of proteins one can describe the overall fold
+from the arrangement of secondary structure motifs, \textit{i.e.}, using the
+helix-ribbon-coil images developed by Jane Richardson
+\cite{richardson2000} (see Figure 1.2), there is still no comparable
+description of the overall fold of RNA. A ribbon
+representation of the sugar phosphate backbone helps to understand the
+folding of small RNA's, but in the case of the ribosome this type of 
+representation is not sufficient, see Figure 1.3.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.4]{Chapter1/overallfold.png}
+\caption{Ribbon-coil schematic illustraring the fold and
+  intermolecular units of a dimer of prealbumin, or
+transthyretin, taken from Richardson \textit{et al.} \cite{richardson2002}}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[scale=0.5]{Chapter1/ribosome_ribozyme.png}
+\caption{\textit{Haloharcula marismortui's} large ribosomal subunit
+(left) and hammerhead ribozyme (right).%NDBID:UR0029
+ The figures were taken
+directly from the NDB web pages, and show a ribbon
+representation of the phosphate backbone, and a block representation
+for the nucleotide bases. From the figures it's clear that, whereas the
+ribozyme fold can be clearly understood with this representation, the
+ribosome fold cannot.}
+\end{figure}
+%So far the Richardson's group
+%has developed a graphical way to visualize interhelical interactions in
+%ribosomal regions like the interaction of the 5S ribosomal subunit
+%with helix 38 of 23S domain II
+%using KING software (see Figure 1.3) to
+%represent what they call contact dots. That is, they are showing the 
+%interaction on A minor motif
+%
+One can envision that a
+thorough investigation of the parameter space of translational and
+rotational degrees of freedom of the helical regions of RNA could
+give clues as to how we might see an overall fold in RNA structures.
+
+In the case of proteins the SCOP (Structural Classification of
+Proteins) database \cite{andreeva2004}, classifies proteins, among
+other classifications, according to recurrent arrangements of
+secondary structure, that is, folds. The SCOR (Structural
+Classification of RNA) database \cite{klosterman2002,
+klosterman2004}, aims to provide a similar classification to that
+obtained for proteins, but using RNA motifs\footnote{Leontis and
+Westhof \cite{leontis2003} define RNA motifs as: "Directed and
+ordered arrays of non-WC (Watson-Crick) base-pairs forming
+distinctive foldings of the phosphodiester backbones of the
+interacting RNA strands"} instead. This classification focuses on the
+local folding of small pieces of RNA and cannot
+describe the overall fold.
+
+Structure, interactions, and reactivity are the conceptual pillars
+upon which chemistry stands. The aim of this proposal is to try to
+understand how these concepts relate to the RNA folding problem, by
+providing a new model for the three dimensional description of RNA.
+
+
+\subsection{RNA \textit{structural} motifs}
 The following popular definitions of what an ``\textit{RNA structural
   motifs}'' is, can be found in recent literature:
 \begin{itemize}
@@ -18,21 +306,21 @@ First, a word of caution must be given to the reader. The term
 ``\textit{RNA motif}'' alone, can be used to describe three different
 levels of RNA organization, that is, RNA sequence motifs, RNA
 secondary structure motifs, or RNA 3D structure motifs. We start by
-making such distinction as it is not always clearly mentioned in RNA
+making such distinction as it is not always clearly mentioned in the RNA
 literature, generating a great deal of confusion and bibliographical
-search frustration for the beginner. In the remaining of
+search frustration for the beginner. In the remainder of
 this text it is to be understood that RNA structural motifs refer to
-specific geometrical arrangements in three dimensional space.
+specific geometrical arrangements in three-dimensional space.
 
 As can be seen from the previous definitions, and from the brief
 review on RNA Motifs in Appendix A of this text, there is no unique,
 or consensus definition of what an RNA structural motif is yet, and it
-seems like every researcher has it's own, even if they don't declare
+seems like every researcher has his or her own, even if they don't declare
 them. The RNA Ontology Consortium (ROC) has not come to a consensus
-definition or RNA structural motifs neither. The majority of their
+definition or RNA structural motifs either. The majority of their
 work has been centered at understanding RNA backbone conformations, and
 the influence of isosteric substitutions on RNA structure. The
-ROC has yet to address the relation of base-staking to RNA structural
+ROC has yet to address the relation of base-stacking to RNA structural
 motifs, which leaves a natural space for the rigid-block interpretation
 of nucleic acids to fill in.
 In order to compare our work to that of others on RNA structural motif
@@ -41,7 +329,7 @@ localization and discovery, we ask the following questions:
 \item{Can the geometric rigid-block description of base-pairing and
 base-stacking solve the problem of defining RNA structural motifs?}
 \item{Can we use quantities derived from the 3DNA software package to make
-and automatic search for a known motif, for example, the GNRA
+an automatic search for a known motif, for example, the GNRA
 tetraloop motif, and perhaps find unknown motifs?}
 \end{enumerate}
 In the ROC meeting of May, 2009 a reduced dataset of RNA
@@ -50,17 +338,17 @@ http://docs.google.com/Doc?id=dhrmkfmn\_13ftpbjcgq\\
 was made available to participants with the purpose of allowing
 them to search for RNA motifs, which would later be compared between groups.
 
-We have modestly, and as of yet unsuccessfully, started to aim at solving
+We have started to aim at solving
 question number two. Initially we are trying to identify all
-instances of the well known GNRA tetraloop motif in
-the 23S subunit of ribosomal RNA of \textit{Thermus Thermophilus},
+instances of the well-known GNRA tetraloop motif in
+the 23S subunit of ribosomal RNA of \textit{Thermus thermophilus},
 PDB-ID:1ffk using results from 3DNA and 3DNA-Parser, and using an
 automated process which could be later reproduced for any desired dataset.
 Our hope is that these baby steps will allow us to to tackle the ROC dataset later.
 
-\section{3DNA-Parser}
+\subsection{3DNA-Parser}
 We started by using Dr. Yurong Xin's 3DNA-Parser hoping that the
-description of the enclosing base pair in the loop, that is, the
+description of the closing base pair in the loop, that is, the
 sheared G$\cdot$A, would have a characteristic signature.
 We found that such is not the case. We know from Major et
 al. \cite{lemieux2006} that there should be at least 21 GNRA tetraloops
@@ -70,17 +358,17 @@ that according to Dr. Xin's helical classification the enclosing G is
 classified as $S_{hq}$ and A is classified as $H_{e}$. 
 \begin{figure}[htbp]
 \centering 
-\includegraphics[angle=0, scale=0.5]{gnra.png}
+\includegraphics[angle=0, scale=0.5]{Chapter1/gnra.png}
 \caption{GNRA Tetraloop from \textit{Thermus Thermophilus} 23S Ribosomal RNA PDB-ID:1ffk.}
 \end{figure}
 We then searched all such instances for G$\cdot$A base-pairs and we found seven hits,
 but none were in fact GNRA tetraloops.
 
-\section{Overlap Scores} 
+\subsection{Overlap Scores} 
 We also used 3DNA overlap scores hoping to assign RNA structural motifs to
-evident patterns formed after data clustering.
-We tried out a sliding sequence window, meaning that we make a
-vector whose components are the overlap values shifted by one
+any patterns formed after data clustering.
+We tried a sliding sequence window, meaning that we make a
+vector whose components were the overlap values shifted by one
 base, for example, if we had the sequence GAUAGAC, they will
 correspond to the following sequences:\\
 \\
@@ -89,13 +377,13 @@ AUAG\\
 UAGA\\
 AGAC\\
 
-Each being represented by a three dimensional vector whose components
+Each entity was represented by a three-dimensional vector whose components
 are the overlaps between consecutive bases.
 The results after clustering are shown in Figure 1.2.,  from which it's clear that
 there are no obvious groups being ``formed".
 \begin{figure}[htbp]
 \centering 
-\includegraphics[angle=0, scale=0.8]{3Dwindow.png}
+\includegraphics[angle=0, scale=0.8]{Chapter1/3Dwindow.png}
 \caption{Dendrogram for consensus clustering of 3D sequential
 overlaps. All vector elements were normalized.}
 \end{figure}
@@ -109,7 +397,7 @@ is that there are so many values which are exactly zero (33\%), that all other d
 is overshadowed (This can be seen clearly for the normalized histograms in Figure).
 \begin{figure}[htbp]
 \centering 
-\includegraphics[angle=0, scale=0.8]{histocompare.png}
+\includegraphics[angle=0, scale=0.8]{Chapter1/histocompare.png}
 \caption{Normalized histograms showing the distribution of overlap values in 
 the 23S subunit or \textit{Thermus Thermophilus} rRNA, PDB-ID:1jjk. In histogram 
 (a) all values are included, but in histogram (b) only values greater than zero are 
@@ -121,12 +409,12 @@ difficult since it's only good for continuously stacked regions, therefore not
 general, and it might be introducing an unwanted artifact.
 \begin{figure}[htbp]
 \centering 
-\includegraphics[angle=90, scale=0.6]{eucli_cons.png}
+\includegraphics[angle=90, scale=0.6]{Chapter1/eucli_cons.png}
 \caption{Dendrogram for consensus clustering of 1D sequential overlaps
   with zero values filtered out and vector elements normalized to unity.}
 \end{figure}
 The next step in this analysis will be to find the structures which
-correspond to this clusters and superimpose and align them using
+correspond to these clusters and superimpose and align them using
 Kabsh's algorithm to be able to determine their RMSD's.
 
 Many people start their RNA Motif identification and classification
@@ -134,34 +422,12 @@ algorithms by splitting RNA structures into what is helical and what
 is not, and then finding interactions between these two groups. We
 believe that we could do a similar exercise with 3DNA by using the scalar
 product of helical axis vectors and once helical and non-helical
-regions are found we might be able to use 3DNA Parser to look for characteristic
+regions are found we might be able to use the 3DNA Parser to look for characteristic
 interactions.
 
-\section{Useful Python Tools}
-In order to produce an efficient motif finder we have turned our
-attention to the Python programming language, in particular miss
-Pradhan has found that there  are  several tools  that  can  be  used
-for  biological computation using  Python.  One   such   tool   is
-known as BioPython. BioPython  was created by an  international team of
-developers  in order  to  create a  bank  for possibly  useful
-modules.  There  are  many  functions Biopython  can  perform,
-including parsing bioinformatic files so that they can be used
-in  Python  and  using  Graphic  User  Interface  (GUI)  based
-programs  in  order to  do  basic  sequence manipulations  and
-translations. Biopython modules help with arranging sequences,
-slicing and adding sequences, executing transcription, reverse
-transcription,  and translation  on nucleotide  sequences, and
-comparing sequences.  Overall, it is  a very useful  tool that
-can   be   used   for   user  convenience   in   bioinformatic
-projects. Other tools include IMP  and PConPy. IMP is a Python
-toolbox used for image  processing. This source package can be
-used for identifying  graphical properties, particle tracking,
-morphological  measurements  (such   as  particle  area),  and
-filtering images.  IMP is utilized mostly  for images produced
-from fluorescence microscopy and X-ray microscopy. PConPy is a
-Python module that  can be used for generating  2D maps. It is
-an  open source  module that  can be  used for  distance maps,
-protein contact maps, and hydrogen bond plots.
+
+
+
 
 \bibliography{biblio}
 

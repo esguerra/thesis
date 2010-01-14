@@ -1,0 +1,94 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: titles.aux
+A level-1 auxiliary file: Chapter1/chapter1.aux
+The style file: nar.bst
+A level-1 auxiliary file: Chapter2/chapter2.aux
+Illegal, another \bibstyle command---line 2 of file Chapter2/chapter2.aux
+ : \bibstyle
+ :          {nar}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 3 of file Chapter2/chapter2.aux
+ : \bibdata
+ :         {biblio}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter3/chapter3.aux
+Illegal, another \bibstyle command---line 2 of file Chapter3/chapter3.aux
+ : \bibstyle
+ :          {nar}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 3 of file Chapter3/chapter3.aux
+ : \bibdata
+ :         {biblio}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter4/chapter4.aux
+Illegal, another \bibstyle command---line 2 of file Chapter4/chapter4.aux
+ : \bibstyle
+ :          {nar}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 3 of file Chapter4/chapter4.aux
+ : \bibdata
+ :         {biblio}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter5/chapter5.aux
+Illegal, another \bibstyle command---line 2 of file Chapter5/chapter5.aux
+ : \bibstyle
+ :          {nar}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 3 of file Chapter5/chapter5.aux
+ : \bibdata
+ :         {biblio}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapter6/chapter6.aux
+Illegal, another \bibstyle command---line 2 of file Chapter6/chapter6.aux
+ : \bibstyle
+ :          {nar}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 3 of file Chapter6/chapter6.aux
+ : \bibdata
+ :         {biblio}
+I'm skipping whatever remains of this command
+Database file #1: biblio.bib
+Warning--can't use both author and editor fields in moore1999a
+You've used 60 entries,
+            1881 wiz_defined-function locations,
+            812 strings with 13617 characters,
+and the built_in function-call counts, 15361 in all, are:
+= -- 1578
+> -- 642
+< -- 2
++ -- 238
+- -- 178
+* -- 1437
+:= -- 2370
+add.period$ -- 60
+call.type$ -- 60
+change.case$ -- 59
+chr.to.int$ -- 0
+cite$ -- 61
+duplicate$ -- 551
+empty$ -- 1477
+format.name$ -- 178
+if$ -- 3587
+int.to.chr$ -- 0
+int.to.str$ -- 60
+missing$ -- 62
+newline$ -- 303
+num.names$ -- 60
+pop$ -- 71
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 210
+stack$ -- 0
+substring$ -- 1319
+swap$ -- 69
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 120
+width$ -- 62
+write$ -- 543
+(There were 10 error messages)

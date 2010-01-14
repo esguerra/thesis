@@ -1,47 +1,47 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.7)
-The top-level auxiliary file: chapter1.aux
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: Chapter1/chapter1.aux
 The style file: nar.bst
 Database file #1: biblio.bib
 Warning--can't use both author and editor fields in moore1999a
-You've used 57 entries,
+You've used 60 entries,
             1881 wiz_defined-function locations,
-            789 strings with 13178 characters,
-and the built_in function-call counts, 14672 in all, are:
-= -- 1505
-> -- 626
+            805 strings with 13507 characters,
+and the built_in function-call counts, 15361 in all, are:
+= -- 1578
+> -- 642
 < -- 2
-+ -- 231
-- -- 174
-* -- 1376
-:= -- 2266
-add.period$ -- 57
-call.type$ -- 57
-change.case$ -- 56
++ -- 238
+- -- 178
+* -- 1437
+:= -- 2370
+add.period$ -- 60
+call.type$ -- 60
+change.case$ -- 59
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 524
-empty$ -- 1403
-format.name$ -- 174
-if$ -- 3425
+cite$ -- 61
+duplicate$ -- 551
+empty$ -- 1477
+format.name$ -- 178
+if$ -- 3587
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 59
-newline$ -- 288
-num.names$ -- 57
-pop$ -- 68
+int.to.str$ -- 60
+missing$ -- 62
+newline$ -- 303
+num.names$ -- 60
+pop$ -- 71
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 200
+skip$ -- 210
 stack$ -- 0
-substring$ -- 1250
-swap$ -- 66
+substring$ -- 1319
+swap$ -- 69
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 114
-width$ -- 59
-write$ -- 516
+while$ -- 120
+width$ -- 62
+write$ -- 543
 (There was 1 warning)

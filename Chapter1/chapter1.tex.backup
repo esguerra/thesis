@@ -2,32 +2,32 @@
 \label{introduction} 
 \bibliographystyle{nar}
 \section{RNA folding}
-The first  high resolution  X-ray\cite{X-ray} structure of  RNA larger
-than a dinucleotide was  that of yeast tRNA$^{\textrm{Phe}}$ at 3{\AA}
-in 1974 \cite{robertus1974, kim1974}. Thirty years later there are two
-orders    of    magnitude     more    RNA    structural    information
-\cite{noller2005}.   This  fact   and  the   discovery   of  ribozymes
-\cite{kruger1982, takada1983} has renewed  interest in solving the RNA
-folding\index{RNA  folding} problem, that  is, from  primary sequence,
-finding in  an automated\footnote{The term  automated is used  here to
-  mean  a  theoretical model  of  tertiary  folding,  which could  use
-  experimental measures of secondary structure association in the same
-  way   that  the  traditional   secondary  structure   folding  model
-  \cite{zuker1989,    hofacker1994}    uses    the    Tinoco-Uhlenbeck
-  dinucleotide   postulate  \cite{borer1974}   to   find  total   free
-  energies.} way the native three-dimensional structure of RNA and its
-folding pathway. The RNA folding\index{RNA folding} problem is usually
-seen  as analogous to  the protein  folding problem,  due both  to the
-discovery   of  the  enzymatic   behavior  of   RNA  \cite{kruger1982,
-  takada1983}  and  the complicated  folding  of  large RNA  molecules
-\cite{batey1999}.  To  take  advantage  of  this  analogy,  a  unified
-conceptual framework  for describing  RNA and protein  folding, called
-the  kinetic  partitioning  mechanism  (KPM), has  been  developed  by
-Thirumalai and Hyeon \cite{thirumalai2005}. This and other methods are
-based on  defining an adequate  partition function for  describing the
-correct  conformational  ensemble  of  folded, partially  folded,  and
-unfolded  structures   \cite{chen1995,  chen1998,  thirumalai1996}  of
-either protein or RNA.
+The first high resolution X-ray structure of RNA larger than a
+dinucleotide was that of yeast tRNA$^{\textrm{Phe}}$ at 3{\AA}  in
+1974 \cite{robertus1974, kim1974}. Thirty years later there are two
+orders of magnitude more RNA structural information
+\cite{noller2005}. This fact and the discovery of ribozymes
+\cite{kruger1982, takada1983} has renewed interest in solving the
+\index{RNA folding} problem, that is, from primary sequence, finding in an
+automated\footnote{The term automated is used here to mean a
+theoretical model of tertiary folding, which could use experimental
+measures of secondary structure association in the same way that the
+traditional secondary structure folding model \cite{zuker1989,
+  hofacker1994} uses the Tinoco-Uhlenbeck dinucleotide postulate
+\cite{borer1974} to find total free energies.} way the native
+three-dimensional structure of RNA and its
+folding pathway. The \index{RNA folding} problem is usually seen as
+analogous to the protein folding problem, due both to the discovery
+of the enzymatic behavior of RNA \cite{kruger1982, takada1983} and
+the complicated folding of large RNA molecules \cite{batey1999}. To
+take advantage of this analogy, a unified conceptual framework for
+describing RNA and protein folding, called the kinetic partitioning
+mechanism (KPM), has been developed by Thirumalai and Hyeon
+\cite{thirumalai2005}. This and other methods are based on defining
+an adequate partition function for describing the correct
+conformational ensemble of folded, partially folded, and unfolded
+structures \cite{chen1995, chen1998, thirumalai1996} of either
+protein or RNA.
 
 \section{Is RNA folding a hard or easy problem?}
 There are two trains of thought regarding RNA folding. One states
@@ -289,141 +289,9 @@ understand how these concepts relate to the RNA folding problem, by
 providing a new model for the three dimensional description of RNA.
 
 
-\subsection{RNA \textit{structural} motifs}
-The following popular definitions of what an ``\textit{RNA structural
-  motifs}'' is, can be found in recent literature:
-\begin{itemize}
-\item{RNA motifs are ``\textit{Conserved  structural subunits that  make up the  secondary
-structures of RNAs.}''\cite{holbrook2005}}
-\item{RNA motifs are ``\textit{Ordered stacked arrays of
-non-Watson-Crick  base pairs that  form distinct  folds  on  the
-phosphodiester backbones of  RNA strands.}''\cite{leontis2003}} 
-\item{``\textit{An RNA Motif is a discrete sequence or combination of base
-juxtapositions found in naturally occurring RNA's in unexpectedly high
-abundance.}''\cite{moore1999}}
-\end{itemize}
-First, a word of caution must be given to the reader. The term
-``\textit{RNA motif}'' alone, can be used to describe three different
-levels of RNA organization, that is, RNA sequence motifs, RNA
-secondary structure motifs, or RNA 3D structure motifs. We start by
-making such distinction as it is not always clearly mentioned in the RNA
-literature, generating a great deal of confusion and bibliographical
-search frustration for the beginner. In the remainder of
-this text it is to be understood that RNA structural motifs refer to
-specific geometrical arrangements in three-dimensional space.
+\subsection{RNA Motifs}
 
-As can be seen from the previous definitions, and from the brief
-review on RNA Motifs in Appendix A of this text, there is no unique,
-or consensus definition of what an RNA structural motif is yet, and it
-seems like every researcher has his or her own, even if they don't declare
-them. The RNA Ontology Consortium (ROC) has not come to a consensus
-definition or RNA structural motifs either. The majority of their
-work has been centered at understanding RNA backbone conformations, and
-the influence of isosteric substitutions on RNA structure. The
-ROC has yet to address the relation of base-stacking to RNA structural
-motifs, which leaves a natural space for the rigid-block interpretation
-of nucleic acids to fill in.
-In order to compare our work to that of others on RNA structural motif
-localization and discovery, we ask the following questions:
-\begin{enumerate}
-\item{Can the geometric rigid-block description of base-pairing and
-base-stacking solve the problem of defining RNA structural motifs?}
-\item{Can we use quantities derived from the 3DNA software package to make
-an automatic search for a known motif, for example, the GNRA
-tetraloop motif, and perhaps find unknown motifs?}
-\end{enumerate}
-In the ROC meeting of May, 2009 a reduced dataset of RNA
-structures found at:\\
-http://docs.google.com/Doc?id=dhrmkfmn\_13ftpbjcgq\\
-was made available to participants with the purpose of allowing
-them to search for RNA motifs, which would later be compared between groups.
 
-We have started to aim at solving
-question number two. Initially we are trying to identify all
-instances of the well-known GNRA tetraloop motif in
-the 23S subunit of ribosomal RNA of \textit{Thermus thermophilus},
-PDB-ID:1ffk using results from 3DNA and 3DNA-Parser, and using an
-automated process which could be later reproduced for any desired dataset.
-Our hope is that these baby steps will allow us to to tackle the ROC dataset later.
-
-\subsection{3DNA-Parser}
-We started by using Dr. Yurong Xin's 3DNA-Parser hoping that the
-description of the closing base pair in the loop, that is, the
-sheared G$\cdot$A, would have a characteristic signature.
-We found that such is not the case. We know from Major et
-al. \cite{lemieux2006} that there should be at least 21 GNRA tetraloops
-in the 23S subunit of rRNA. We used the G2696 N2697 R2698 A2699
-tetraloop as a seed (as can be seen in Figure 1.1) and found out
-that according to Dr. Xin's helical classification the enclosing G is
-classified as $S_{hq}$ and A is classified as $H_{e}$. 
-\begin{figure}[htbp]
-\centering 
-\includegraphics[angle=0, scale=0.5]{Chapter1/gnra.png}
-\caption{GNRA Tetraloop from \textit{Thermus Thermophilus} 23S Ribosomal RNA PDB-ID:1ffk.}
-\end{figure}
-We then searched all such instances for G$\cdot$A base-pairs and we found seven hits,
-but none were in fact GNRA tetraloops.
-
-\subsection{Overlap Scores} 
-We also used 3DNA overlap scores hoping to assign RNA structural motifs to
-any patterns formed after data clustering.
-We tried a sliding sequence window, meaning that we make a
-vector whose components were the overlap values shifted by one
-base, for example, if we had the sequence GAUAGAC, they will
-correspond to the following sequences:\\
-\\
-GAUA\\
-AUAG\\
-UAGA\\
-AGAC\\
-
-Each entity was represented by a three-dimensional vector whose components
-are the overlaps between consecutive bases.
-The results after clustering are shown in Figure 1.2.,  from which it's clear that
-there are no obvious groups being ``formed".
-\begin{figure}[htbp]
-\centering 
-\includegraphics[angle=0, scale=0.8]{Chapter1/3Dwindow.png}
-\caption{Dendrogram for consensus clustering of 3D sequential
-overlaps. All vector elements were normalized.}
-\end{figure}
-Perhaps we should increase the size of
-the sliding window, at least to five bases, and include residue identity as
-an additional dimension.
-
-We also clustered the overlap values in one dimension and got rid of
-all overlap values which were zero. One reason for justifying this approach 
-is that there are so many values which are exactly zero (33\%), that all other data
-is overshadowed (This can be seen clearly for the normalized histograms in Figure).
-\begin{figure}[htbp]
-\centering 
-\includegraphics[angle=0, scale=0.8]{Chapter1/histocompare.png}
-\caption{Normalized histograms showing the distribution of overlap values in 
-the 23S subunit or \textit{Thermus Thermophilus} rRNA, PDB-ID:1jjk. In histogram 
-(a) all values are included, but in histogram (b) only values greater than zero are 
-included. Notice the high preponderance of zero values, exactly 897 out of a total
-of 2705.}
-\end{figure}
-For this case we obtained a ``good'' dendrogram as seen in Figure 1.3, but the interpretation is
-difficult since it's only good for continuously stacked regions, therefore not
-general, and it might be introducing an unwanted artifact.
-\begin{figure}[htbp]
-\centering 
-\includegraphics[angle=90, scale=0.6]{Chapter1/eucli_cons.png}
-\caption{Dendrogram for consensus clustering of 1D sequential overlaps
-  with zero values filtered out and vector elements normalized to unity.}
-\end{figure}
-The next step in this analysis will be to find the structures which
-correspond to these clusters and superimpose and align them using
-Kabsh's algorithm to be able to determine their RMSD's.
-
-Many people start their RNA Motif identification and classification
-algorithms by splitting RNA structures into what is helical and what
-is not, and then finding interactions between these two groups. We
-believe that we could do a similar exercise with 3DNA\index{3DNA} by using the scalar
-product of helical axis vectors and once helical and non-helical
-regions are found we might be able to use the 3DNA Parser to look for characteristic
-interactions.
 
 
 \bibliography{biblio}

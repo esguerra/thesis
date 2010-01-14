@@ -1,4 +1,4 @@
-% Les Clowney 
+%Les Clowney 
 % ru-thesis document style (LaTeX)
 % ruthesis.cls is based on the LaTeX documentstyle ruthesis.sty, to which
 % both Dave Steiner and Tara Madhyastha contributed.
