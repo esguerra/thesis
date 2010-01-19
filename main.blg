@@ -35,7 +35,7 @@ Illegal, another \bibstyle command---line 2 of file Chapter5/chapter5.aux
  : \bibstyle
  :          {nar}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 3 of file Chapter5/chapter5.aux
+Illegal, another \bibdata command---line 14 of file Chapter5/chapter5.aux
  : \bibdata
  :         {biblio}
 I'm skipping whatever remains of this command
@@ -48,47 +48,52 @@ Illegal, another \bibdata command---line 3 of file Chapter6/chapter6.aux
  : \bibdata
  :         {biblio}
 I'm skipping whatever remains of this command
+A level-1 auxiliary file: index.aux
 Database file #1: biblio.bib
 Warning--can't use both author and editor fields in moore1999a
-You've used 60 entries,
+ptr=1, stack=
+{RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching}
+---the literal stack isn't empty for entry nasalean2009
+while executing---line 2203 of file nar.bst
+You've used 79 entries,
             1881 wiz_defined-function locations,
-            812 strings with 13617 characters,
-and the built_in function-call counts, 15361 in all, are:
-= -- 1578
-> -- 642
-< -- 2
-+ -- 238
-- -- 178
-* -- 1437
-:= -- 2370
-add.period$ -- 60
-call.type$ -- 60
-change.case$ -- 59
+            928 strings with 17810 characters,
+and the built_in function-call counts, 20348 in all, are:
+= -- 2085
+> -- 846
+< -- 5
++ -- 313
+- -- 234
+* -- 1949
+:= -- 3119
+add.period$ -- 79
+call.type$ -- 79
+change.case$ -- 77
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 551
-empty$ -- 1477
-format.name$ -- 178
-if$ -- 3587
+cite$ -- 80
+duplicate$ -- 729
+empty$ -- 1960
+format.name$ -- 234
+if$ -- 4751
 int.to.chr$ -- 0
-int.to.str$ -- 60
-missing$ -- 62
-newline$ -- 303
-num.names$ -- 60
-pop$ -- 71
+int.to.str$ -- 79
+missing$ -- 82
+newline$ -- 398
+num.names$ -- 79
+pop$ -- 95
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 210
+skip$ -- 278
 stack$ -- 0
-substring$ -- 1319
-swap$ -- 69
-text.length$ -- 2
+substring$ -- 1740
+swap$ -- 94
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 120
-width$ -- 62
-write$ -- 543
-(There were 10 error messages)
+while$ -- 160
+width$ -- 81
+write$ -- 715
+(There were 11 error messages)

@@ -8,9 +8,7 @@
 \BOOKMARK [1][-]{section.1.5}{Local nucleotide interactions}{chapter.1}
 \BOOKMARK [1][-]{section.1.6}{RNA secondary structure algorithms and the lack of tertiary ones}{chapter.1}
 \BOOKMARK [1][-]{section.1.7}{RNA overall fold}{chapter.1}
-\BOOKMARK [2][-]{subsection.1.7.1}{RNA structural motifs}{section.1.7}
-\BOOKMARK [2][-]{subsection.1.7.2}{3DNA-Parser}{section.1.7}
-\BOOKMARK [2][-]{subsection.1.7.3}{Overlap Scores}{section.1.7}
+\BOOKMARK [2][-]{subsection.1.7.1}{RNA motifs}{section.1.7}
 \BOOKMARK [0][-]{chapter*.4}{References}{}
 \BOOKMARK [0][-]{chapter.2}{RNA Base Steps}{}
 \BOOKMARK [1][-]{section.2.1}{Consensus Clustering of Single Stranded Base Step Parameters}{chapter.2}
@@ -23,7 +21,10 @@
 \BOOKMARK [1][-]{section.4.2}{Persistence Length vs. Hagerman}{chapter.4}
 \BOOKMARK [1][-]{section.4.3}{AMBER: Persistence Length of Base-Pair Step Patterns}{chapter.4}
 \BOOKMARK [0][-]{chapter.5}{RNA Motifs}{}
-\BOOKMARK [1][-]{section.5.1}{GNRA Motif}{chapter.5}
-\BOOKMARK [1][-]{section.5.2}{Triplets on RNA \(comparison to Laing et al.\)}{chapter.5}
+\BOOKMARK [1][-]{section.5.1}{RNA Structural Motifs}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{GNRA tetraloop}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.2.1}{3DNA-Parser}{section.5.2}
+\BOOKMARK [2][-]{subsection.5.2.2}{Overlap Scores}{section.5.2}
+\BOOKMARK [1][-]{section.5.3}{Triplets on RNA \(comparison to Laing et al.\)}{chapter.5}
 \BOOKMARK [0][-]{chapter.6}{RNA Helical Regions and Graph Theory}{}
 \BOOKMARK [0][-]{chapter.7}{Index}{}
