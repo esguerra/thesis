@@ -334,20 +334,118 @@ Leontis, N.~B. and Westhof, E. (2003)
 {Analysis of RNA Motifs}.
 {\em Current Opinion in Structural Biology,} {\bf 13}, 300--308.
 
-\bibitem{holbrook2005}
-Holbrook, S.~R. (2005)
-{RNA Structure: The Long and the Short of it}.
-{\em Current Opinion in Structural Biology,} {\bf 15}, 302--308.
+\bibitem{laing2009}
+Laing, C., Jung, S., Iqbal, A., and Schlick, T. (Oct, 2009)
+{Tertiary Motifs Revealed in Analyses of Higher-Order RNA Junctions}.
+{\em Journal of Molecular Biology,} {\bf 393}(1), 67--82.
 
-\bibitem{moore1999}
-Moore, P.~B. (1999)
-{Structural Motifs in RNA}.
-{\em Annual {R}eview of {B}iochemistry,} {\bf 68}, 287--300.
+\bibitem{laing2009a}
+Laing, C. and Schlick, T. (Jul, 2009)
+{Analysis of Four-way Junctions in RNA Structures}.
+{\em Journal of Molecular Biology,} {\bf 390}(3), 547--559.
+
+\bibitem{nasalean2009}
+Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
+Vol. 13,  of  Springer Series in Biophysics chapter~1, pp. 1--26
+Springer-Verlag Berlin Heidelberg (November, 2009).
+
+\bibitem{schroeder2009}
+Schroeder, S.~J. (Jul, 2009)
+{Advances in RNA Structure Prediction from Sequence: New Tools for Generating
+  Hypotheses About Viral RNA Structure-Function Relationships}.
+{\em Journal of Virology,} {\bf 83}(13), 6326--6334.
+
+\bibitem{mokdad2008}
+Mokdad, A. and Frankel, A.~D. (April, 2008)
+{ISFOLD: Structure Prediction of Base-pairs in Non-helical RNA Motifs From
+  Isostericity Signatures in Their Sequence Alignments}.
+{\em Journal of Biomolecular Structure and Dynamics,} {\bf 25}(5), 467--472.
+
+\bibitem{clery2008}
+Cléry, A., Blatter, M., and Allain, F. H.-T. (June, 2008)
+{RNA Recognition Motifs: Boring? Not Quite}.
+{\em Current Opinion in Structural Biology,} {\bf 18}(3), 290--298.
+
+\bibitem{reeder2007}
+Reeder, J., Reeder, J., and Giegerich, R. (Jul, 2007)
+{Locomotif: From Graphical Motif Description to RNA Motif Search}.
+{\em Bioinformatics,} {\bf 23}(13), i392--i400.
 
 \bibitem{lemieux2006}
 Lemieux, S. and Major, F. (2006)
 {Automated Extraction and Classification of RNA Tertiary Structure Cyclic
   Motifs}.
 {\em Nucleic Acids Research,} {\bf 34}, 2340--2346.
+
+\bibitem{spackova2006}
+Spacková, N. and Sponer, J. (2006)
+{Molecular Dynamics Simulations of Sarcin-Ricin rRNA Motif}.
+{\em Nucleic Acids Research,} {\bf 34}(2), 697--708.
+
+\bibitem{yao2006}
+Yao, Z., Weinberg, Z., and Ruzzo, W.~L. (Feb, 2006)
+{CMfinder--A Covariance Model Based RNA Motif Finding Algorithm}.
+{\em Bioinformatics,} {\bf 22}(4), 445--452.
+
+\bibitem{hendrix2005}
+Hendrix, D.~K., Brenner, S.~E., and Holbrook, S.~R. (2005)
+{RNA Structural Motifs : Building Blocks of a Modular Biomolecule}.
+{\em Quarterly Reviews of Biophysics,} {\bf 38}, 221.
+
+\bibitem{holbrook2005}
+Holbrook, S.~R. (2005)
+{RNA Structure: The Long and the Short of it}.
+{\em Current Opinion in Structural Biology,} {\bf 15}, 302--308.
+
+\bibitem{laserson2005}
+Laserson, U., Gan, H.~H., and Schlick, T. (2005)
+{Predicting Candidate Genomic Sequences that Correspond to Synthetic Functional
+  RNA Motifs}.
+{\em Nucleic Acids Research,} {\bf 33}(18), 6057--6069.
+
+\bibitem{lescoute2005}
+Lescoute, A., Leontis, N.~B., Massire, C., and Westhof, E. (2005)
+{Recurrent Structural RNA Motifs, Isostericity Matrices and Sequence
+  Alignments}.
+{\em Nucleic Acids Research,} {\bf 33}(8), 2395--2409.
+
+\bibitem{huang2005}
+Huang, H.-C., Nagaswamy, U., and Fox, G.~E. (2005)
+{The Application of Cluster Analysis in the Intercomparison of Loop Structures
+  in RNA}.
+{\em RNA,} {\bf 11}, 412--423.
+
+\bibitem{reblova2003}
+Réblová, K., Spacková, N., Stefl, R., Csaszar, K., Koca, J., Leontis, N.~B.,
+  and Sponer, J. (Jun, 2003)
+{Non-Watson-Crick Basepairing and Hydration in RNA Motifs: Molecular Dynamics
+  of 5S rRNA Loop E}.
+{\em Biophysical Journal,} {\bf 84}(6), 3564--3582.
+
+\bibitem{leontis2002b}
+Leontis, N.~B. and Westhof, E. (2002)
+{The Annotation of RNA Motifs}.
+{\em Comparative and Functional Genomics,} {\bf 3}, 518--524.
+
+\bibitem{leontis2002}
+Leontis, N.~B., Stombaugh, J., and Westhof, E. (2002)
+{The Non-Watson-Crick Base Pairs and their Associated Isostericity Matrices}.
+{\em Nucleic Acids Research,} {\bf 30}, 3497--3531.
+
+\bibitem{zacharias2000a}
+Zacharias, M. (Jun, 2000)
+{Simulation of the Structure and Dynamics of Nonhelical RNA Motifs}.
+{\em Current Opinion in Structural Biology,} {\bf 10}(3), 311--317.
+
+\bibitem{moore1999}
+Moore, P.~B. (1999)
+{Structural Motifs in RNA}.
+{\em Annual {R}eview of {B}iochemistry,} {\bf 68}, 287--300.
+
+\bibitem{duarte1998}
+Duarte, C.~M. and Pyle, A.~M. (1998)
+Stepping {T}hrough an {RNA} {S}tructure: {A} {N}ovel {A}pproach to
+  {C}onformational {A}nalysis.
+{\em Journal of Molecular Biology,} {\bf 284}, 1465--1478.
 
 \end{thebibliography}

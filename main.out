@@ -1,5 +1,7 @@
 \BOOKMARK [0][-]{section*.1}{Abstract}{}
 \BOOKMARK [0][-]{chapter*.2}{Acknowledgements}{}
+\BOOKMARK [0][-]{chapter*.4}{List of Tables}{}
+\BOOKMARK [0][-]{chapter*.5}{List of Figures}{}
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}
 \BOOKMARK [1][-]{section.1.1}{RNA folding}{chapter.1}
 \BOOKMARK [1][-]{section.1.2}{Is RNA folding a hard or easy problem?}{chapter.1}
@@ -9,7 +11,7 @@
 \BOOKMARK [1][-]{section.1.6}{RNA secondary structure algorithms and the lack of tertiary ones}{chapter.1}
 \BOOKMARK [1][-]{section.1.7}{RNA overall fold}{chapter.1}
 \BOOKMARK [2][-]{subsection.1.7.1}{RNA motifs}{section.1.7}
-\BOOKMARK [0][-]{chapter*.4}{References}{}
+\BOOKMARK [0][-]{chapter*.6}{References}{}
 \BOOKMARK [0][-]{chapter.2}{RNA Base Steps}{}
 \BOOKMARK [1][-]{section.2.1}{Consensus Clustering of Single Stranded Base Step Parameters}{chapter.2}
 \BOOKMARK [1][-]{section.2.2}{Four Major Non-ARNA Step Groups in the Ribosome}{chapter.2}
@@ -26,5 +28,5 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{3DNA-Parser}{section.5.2}
 \BOOKMARK [2][-]{subsection.5.2.2}{Overlap Scores}{section.5.2}
 \BOOKMARK [1][-]{section.5.3}{Triplets on RNA \(comparison to Laing et al.\)}{chapter.5}
+\BOOKMARK [0][-]{chapter*.7}{References}{}
 \BOOKMARK [0][-]{chapter.6}{RNA Helical Regions and Graph Theory}{}
-\BOOKMARK [0][-]{chapter.7}{Index}{}

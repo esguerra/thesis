@@ -17,8 +17,6 @@
 \usepackage{hyperref}
 \usepackage{pdflscape}
 \singlespacing
-%The geometry package might not be necessary since there are definitions in
-%ruformat.cls
 \usepackage[left=2.54cm,bottom=2.00cm,top=2.00cm,right=2.54cm]{geometry}
 %\usepackage[left=1.5in,bottom=1in,top=1in,right=1in]{geometry}
 \usepackage{chapterbib}
@@ -26,7 +24,7 @@
 \makeindex
 \includeonly{titles, Chapter1/chapter1,
   Chapter2/chapter2, Chapter3/chapter3, Chapter4/chapter4, 
-  Chapter5/chapter5, Chapter6/chapter6} 
+  Chapter5/chapter5, Chapter6/chapter6, index} 
 %\usepackage{pdflscape}
 
 
@@ -81,8 +79,7 @@
 \include{Chapter6/chapter6}
 %\appendix
 %\include{appendix2}
-%\include{index}
-\printindex
+\include{index}
 \end{document}
 
 

@@ -1,7 +1,7 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.11.9)  19 JAN 2010 17:47
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.11.9)  19 JAN 2010 19:33
 entering extended mode
  %&-line parsing enabled.
-**main.tex
+**main
 (./main.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
@@ -261,31 +261,29 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 ) (./main.aux
 (./titles.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
 (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
-(./Chapter6/chapter6.aux) (./index.aux))
+(./Chapter6/chapter6.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 49.
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 51.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 49.
-
+(Font)              scaled to size 11.39996pt on input line 51.
 (/usr/share/texmf/tex/context/base/supp-pdf.tex
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
@@ -299,7 +297,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 \MPnumerator=\count126
 \everyMPtoPDFconversion=\toks28
 )
-Package hyperref Info: Link coloring OFF on input line 49.
+Package hyperref Info: Link coloring OFF on input line 51.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 
@@ -308,8 +306,8 @@ Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
 \c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -359,15 +357,15 @@ driver: pdftex
  (./titles.tex)
 Title
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 64.
+(Font)              scaled to size 16.41594pt on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 64.
+(Font)              scaled to size 16.41594pt on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 64.
+(Font)              scaled to size 11.39996pt on input line 66.
 [1
 
 
@@ -377,24 +375,24 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 Abstract
 
 Package hyperref Warning: No destination for bookmark of \addcontentsline,
-(hyperref)                destination is added on input line 64.
+(hyperref)                destination is added on input line 66.
 
 
 Package hyperref Warning: bookmark level for unknown unnumberedsection defaults
  to 0.
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 64.
+(Font)              scaled to size 13.67995pt on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 64.
+(Font)              scaled to size 13.67995pt on input line 66.
 [2]
 Quotes
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 64.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 64.
+(Font)              scaled to size 11.39996pt on input line 66.
 [3]
 Acknowledgements
 [4
@@ -414,11 +412,23 @@ File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 
  [5
 
+] [6] (./main.lot)
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+
+[7
+
+] (./main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+ [8
+
 ]
 \openout2 = `Chapter1/chapter1.aux'.
 
-
-(./Chapter1/chapter1.tex
+ (./Chapter1/chapter1.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.59998pt on input line 6.
@@ -428,7 +438,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 9.49997pt on input line 19.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.64998pt on input line 19.
-<Chapter1/rangan2003pnas.png, id=202, 1316.92pt x 558.085pt>
+<Chapter1/rangan2003pnas.png, id=256, 1316.92pt x 558.085pt>
 File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
 <use Chapter1/rangan2003pnas.png> [1
@@ -436,11 +446,11 @@ File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
 
 ] [2 <./Chapter1/rangan2003pnas.png (PNG copy)>] [3] <Chapter1/overallfold.png,
- id=314, 308.352pt x 303.2931pt>
+ id=365, 308.352pt x 303.2931pt>
 File: Chapter1/overallfold.png Graphic file (type png)
 
 <use Chapter1/overallfold.png>
-<Chapter1/ribosome_ribozyme.png, id=317, 572.3784pt x 342.5598pt>
+<Chapter1/ribosome_ribozyme.png, id=368, 572.3784pt x 342.5598pt>
 File: Chapter1/ribosome_ribozyme.png Graphic file (type png)
 
 <use Chapter1/ribosome_ribozyme.png> [4 <./Chapter1/overallfold.png (PNG copy)>
@@ -450,21 +460,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--293
  []
 
 
-LaTeX Warning: Citation `laing2009' in file `Chapter1/chapter1' on page 5 undef
-ined on input line 300.
-
-
-LaTeX Warning: Citation `laing2009a' in file `Chapter1/chapter1' on page 5 unde
-fined on input line 300.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 294--301
 
  []
-
-
-LaTeX Warning: Citation `nasalean2009' in file `Chapter1/chapter1' on page 5 un
-defined on input line 321.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 302--322
@@ -472,18 +470,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 302--322
  []
 
 [5 <./Chapter1/ribosome_ribozyme.png>]
-
-LaTeX Warning: Citation `schroeder2009' in file `Chapter1/chapter1' on page 6 u
-ndefined on input line 329.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 323--330
 
  []
-
-
-LaTeX Warning: Citation `mokdad2008' in file `Chapter1/chapter1' on page 6 unde
-fined on input line 343.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 331--344
@@ -491,17 +480,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--344
  []
 
 
-LaTeX Warning: Citation `clery2008' in file `Chapter1/chapter1' on page 6 undef
-ined on input line 352.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 345--353
 
  []
-
-
-LaTeX Warning: Citation `reeder2007' in file `Chapter1/chapter1' on page 6 unde
-fined on input line 362.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 354--363
@@ -514,27 +495,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 364--376
  []
 
 
-LaTeX Warning: Citation `spackova2006' in file `Chapter1/chapter1' on page 6 un
-defined on input line 384.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 377--385
 
  []
 
 [6]
-
-LaTeX Warning: Citation `yao2006' in file `Chapter1/chapter1' on page 7 undefin
-ed on input line 392.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 386--393
 
  []
-
-
-LaTeX Warning: Citation `hendrix2005' in file `Chapter1/chapter1' on page 7 und
-efined on input line 406.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 394--407
@@ -542,26 +510,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 394--407
  []
 
 
-LaTeX Warning: Citation `laserson2005' in file `Chapter1/chapter1' on page 7 un
-defined on input line 415.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 408--416
 
  []
 
 
-LaTeX Warning: Citation `lescoute2005' in file `Chapter1/chapter1' on page 7 un
-defined on input line 428.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 417--429
 
  []
-
-
-LaTeX Warning: Citation `huang2005' in file `Chapter1/chapter1' on page 7 undef
-ined on input line 435.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 430--436
@@ -579,17 +535,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 448--458
  []
 
 
-LaTeX Warning: Citation `reblova2003' in file `Chapter1/chapter1' on page 8 und
-efined on input line 463.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 459--464
 
  []
-
-
-LaTeX Warning: Citation `leontis2002b' in file `Chapter1/chapter1' on page 8 un
-defined on input line 474.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 465--475
@@ -597,17 +545,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 465--475
  []
 
 
-LaTeX Warning: Citation `leontis2002' in file `Chapter1/chapter1' on page 8 und
-efined on input line 481.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 476--482
 
  []
-
-
-LaTeX Warning: Citation `zacharias2000a' in file `Chapter1/chapter1' on page 8 
-undefined on input line 486.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 483--487
@@ -620,10 +560,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 488--499
  []
 
 
-LaTeX Warning: Citation `duarte1998' in file `Chapter1/chapter1' on page 8 unde
-fined on input line 507.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 500--508
 
  []
@@ -632,13 +568,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 500--508
 References
 [10
 
-] [11] [12])) [13]
+] [11] [12] [13] [14])) [15]
 \openout2 = `Chapter2/chapter2.aux'.
 
  (./Chapter2/chapter2.tex
 Chapter 2.
 No file Chapter2/chapter2.bbl.
-) [14
+) [16
 
 
 
@@ -649,7 +585,7 @@ No file Chapter2/chapter2.bbl.
  (./Chapter3/chapter3.tex
 Chapter 3.
 No file Chapter3/chapter3.bbl.
-) [15
+) [17
 
 
 
@@ -660,7 +596,7 @@ No file Chapter3/chapter3.bbl.
  (./Chapter4/chapter4.tex
 Chapter 4.
 No file Chapter4/chapter4.bbl.
-) [16
+) [18
 
 
 
@@ -682,30 +618,13 @@ File: omsphv.fd
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
-
-
-LaTeX Warning: Citation `holbrook2005' in file `Chapter5/chapter5' on page 17 u
-ndefined on input line 10.
-
-
-LaTeX Warning: Citation `leontis2003' in file `Chapter5/chapter5' on page 17 un
-defined on input line 13.
-
-
-LaTeX Warning: Citation `moore1999' in file `Chapter5/chapter5' on page 17 unde
-fined on input line 16.
-
-[17
+ [19
 
 
 
 
 ]
-
-LaTeX Warning: Citation `lemieux2006' in file `Chapter5/chapter5' on page 18 un
-defined on input line 69.
-
-<Chapter5/gnra.png, id=409, 706.64pt x 415.5525pt>
+<Chapter5/gnra.png, id=506, 706.64pt x 415.5525pt>
 File: Chapter5/gnra.png Graphic file (type png)
  <use Chapter5/gnra.png>
 Underfull \hbox (badness 10000) in paragraph at lines 83--94
@@ -717,12 +636,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--94
 
  []
 
-[18 <./Chapter5/gnra.png>]
-<Chapter5/3Dwindow.png, id=417, 560.8152pt x 808.7013pt>
+[20 <./Chapter5/gnra.png>]
+<Chapter5/3Dwindow.png, id=513, 560.8152pt x 808.7013pt>
 File: Chapter5/3Dwindow.png Graphic file (type png)
 
 <use Chapter5/3Dwindow.png>
-<Chapter5/histocompare.png, id=418, 647.41875pt x 782.925pt>
+<Chapter5/histocompare.png, id=514, 647.41875pt x 782.925pt>
 File: Chapter5/histocompare.png Graphic file (type png)
 
 <use Chapter5/histocompare.png>
@@ -733,58 +652,65 @@ Overfull \hbox (48.18031pt too wide) in paragraph at lines 115--121
 
 LaTeX Warning: Float too large for page by 23.96611pt on input line 121.
 
-<Chapter5/eucli_cons.png, id=419, 1123.19624pt x 778.91pt>
+<Chapter5/eucli_cons.png, id=515, 1123.19624pt x 778.91pt>
 File: Chapter5/eucli_cons.png Graphic file (type png)
 
 <use Chapter5/eucli_cons.png>
 
 LaTeX Warning: Float too large for page by 42.5482pt on input line 130.
 
-No file Chapter5/chapter5.bbl.
-) [19] [20 <./Chapter5/3Dwindow.png>] [21 <./Chapter5/histocompare.png>]
-[22 <./Chapter5/eucli_cons.png (PNG copy)>]
+(./Chapter5/chapter5.bbl [21] [22 <./Chapter5/3Dwindow.png>] [23 <./Chapter5/hi
+stocompare.png>] [24 <./Chapter5/eucli_cons.png (PNG copy)>]
+References
+pdfTeX warning (ext4): destination with the same identifier (name{cite.holbrook
+2005}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \bibitem{holbrook2005}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{cite.leontis2003}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.8 \bibitem{leontis2003}
+                         pdfTeX warning (ext4): destination with the same ident
+ifier (name{cite.moore1999}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.13 \bibitem{moore1999}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{cite.lemieux2006}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 \bibitem{lemieux2006}
+                          )) [25
+
+]
 \openout2 = `Chapter6/chapter6.aux'.
 
  (./Chapter6/chapter6.tex
 Chapter 6.
 No file Chapter6/chapter6.bbl.
-) [23
+) [26
 
 
 
 
-]
-\openout2 = `index.aux'.
-
- (./index.tex
-Chapter 7.
-(./main.ind [24
+] (./main.ind [27
 
 
 
-
-] [25
-
-
-])) [26
-
-] (./main.aux (./titles.aux)
-(./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
-(./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
-(./index.aux))
-
-LaTeX Warning: There were undefined references.
-
- )
-(\end occurred when \iftrue on line 64 was incomplete) 
+]) (./main.aux (./titles.aux) (./Chapter1/chapter1.aux)
+(./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux)
+(./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)) )
+(\end occurred when \iftrue on line 66 was incomplete) 
 Here is how much of TeX's memory you used:
- 5179 strings out of 95086
- 68568 string characters out of 1183255
- 127383 words of memory out of 1500000
- 8045 multiletter control sequences out of 10000+50000
+ 5206 strings out of 95087
+ 68949 string characters out of 1183278
+ 128665 words of memory out of 1500000
+ 8046 multiletter control sequences out of 10000+50000
  43117 words of font info for 64 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
- 32i,9n,39p,560b,421s stack positions out of 5000i,500n,6000p,200000b,5000s
+ 32i,9n,39p,556b,421s stack positions out of 5000i,500n,6000p,200000b,5000s
 {/usr/share/texmf-texlive
 /fonts/enc/dvips/base/8r.enc} </home/esguerra/.texmf-var/fonts/pk/ljfour/jknapp
 en/ec/ecrm1200.600pk> </home/esguerra/.texmf-var/fonts/pk/ljfour/jknappen/ec/ec
@@ -796,9 +722,9 @@ hare/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texliv
 e/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-texlive/fonts/type1/ur
 w/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8
 a.pfb>
-Output written on main.pdf (31 pages, 2695827 bytes).
+Output written on main.pdf (35 pages, 2715023 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
- 136 named destinations out of 1000 (max. 131072)
- 292 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 160 named destinations out of 1000 (max. 131072)
+ 308 words of extra memory for PDF output out of 10000 (max. 10000000)
 

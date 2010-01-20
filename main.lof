@@ -1,0 +1,21 @@
+\gdef \the@ipfilectr {@-1}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-2}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Separation of secondary and tertiary interaction in RNA \cite {rangan2003}. Double helical secondary structure represented by individual cylinders and tertiary interactions by association of cylinders.}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Ribbon-coil schematic illustraring the fold and intermolecular units of a dimer of prealbumin, or transthyretin, taken from Richardson \textit {et al.} \cite {richardson2002}}}{4}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces \textit {Haloharcula marismortui's} large ribosomal subunit (left) and hammerhead ribozyme (right).The figures were taken directly from the NDB web pages, and show a ribbon representation of the phosphate backbone, and a block representation for the nucleotide bases. From the figures it's clear that, whereas the ribozyme fold can be clearly understood with this representation, the ribosome fold cannot.}}{5}{figure.1.3}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-3}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-4}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-5}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-6}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces GNRA Tetraloop from \textit {Thermus Thermophilus} 23S Ribosomal RNA PDB-ID:1ffk.}}{20}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Dendrogram for consensus clustering of 3D sequential overlaps. All vector elements were normalized.}}{22}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Normalized histograms showing the distribution of overlap values in the 23S subunit or \textit {Thermus Thermophilus} rRNA, PDB-ID:1jjk. In histogram (a) all values are included, but in histogram (b) only values greater than zero are included. Notice the high preponderance of zero values, exactly 897 out of a total of 2705.}}{23}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Dendrogram for consensus clustering of 1D sequential overlaps with zero values filtered out and vector elements normalized to unity.}}{24}{figure.5.4}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-7}
+\gdef \the@ipfilectr {}

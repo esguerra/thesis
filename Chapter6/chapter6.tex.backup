@@ -6,3 +6,6 @@ using graph theoretical descriptors.
 
 
 \bibliography{biblio}
+
+
+\printindex{Index}
