@@ -36,7 +36,7 @@ that RNA folding is less complex than protein folding
 \cite{tinoco1999} because RNA is made up of a four letter alphabet
 of similar nucleotide units instead of a 20 letter alphabet of
 dissimilar amino acids. Therefore the number of possible sequential
-combinations is smaller. It is also known that secondary and
+combinations is smaller. It is also well known that secondary and
 tertiary interactions can be separated in the case of RNA by the
 absence or presence of Mg$^{2+}$ \cite{rangan2003} (see Figure 1.1),
 whereas secondary and tertiary elements are not as easily separable in proteins.
@@ -70,10 +70,17 @@ experimentally, there have been few theoretical efforts to account
 for the folding of RNA from a random sequence of nucleotides into
 secondary structures and tertiary structures. What little is know
 has been investigated at low resolution. Professor Stephen Harvey
-and associates have simulated yeast tRNA$^{\textrm{Phe}}$
-\cite{malhotra1990, stagg2003} at various levels of detail, initially using
+and associates have simulated yeast tRNA$^{\textrm{Phe}}$, \cite{malhotra1990} 
+and the assembly of the 30S subunit of the ribosome \cite{stagg2003}
+ at various levels of detail, initially using
 only one pseudoatom per helical region, and later one pseudoatom per
-nucleotide.
+nucleotide. Recently Major's group \cite{parisien2008} at Montreal has 
+proposed a pipeline of two computer algorithms, one makes secondary 
+structure predictions, and the other assembles 3D structures based
+on the best scoring secondary structures. The key to the success of 
+the 3D prediction is attributed to what they call Nucleotide Cyclic 
+Motifs (NCM), which are based on a graph theoretical description 
+common to secondary and 3D structure.
 %Note for presentation ==> Include figure 1 in Malhotra-harvey paper
 %Look at what says in folding.stanford.edu/science.html Also take
 %into account Biophys J. V.88 2516-2524 for the case of having to
@@ -216,16 +223,30 @@ phosphates, sugars, and bases, have also been clustered
 nucleotide base steps and base-pair building blocks which are given
 the name of RNA doublets.
 
+Mention here the RNA Ontology paper for backbone suites, or however
+they call'em.
+
+
 \section{RNA secondary structure algorithms and the lack of tertiary ones}
 From secondary structure prediction algorithms like Zuker's
-\textit{mfold} program \cite{zuker2003}, or Hofacker's Vienna RNA
-package \cite{hofacker1994}, one obtains a large ensemble of
-secondary structure graphs. These graphs can be analyzed with graph
+\textit{mfold} program \cite{zuker2003}, Hofacker's Vienna RNA
+package \cite{hofacker1994}, or Mathews Dynaling \cite{mathews2002},  
+one obtains a large ensemble of secondary structure graphs. 
+These graphs can be analyzed with graph
 theory to produce a partition function describing a full arrangement
 of contacts for the total number of possible secondary structures
-\cite{chen2000}. So far this type of model has not been generalized
+\cite{chen2000}. In the past 
+
+mention shapiro and jager and major
+and 10.1261/rna.894608 ifoldRNA
+
+So far this type of model has not been generalized
 to take into account tertiary structural features, \textit{i.e.},
-interhelical interactions of RNA.
+interhelical interactions of RNA
+
+In here a small summary of programs which go from sequence to 3D, even 
+if it's reconstruction and then emphasizing Major's.
+
 
 \section{RNA overall fold}
 Whereas in the case of proteins one can describe the overall fold

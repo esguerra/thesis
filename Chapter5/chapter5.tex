@@ -80,36 +80,9 @@ We then searched all such instances for G$\cdot$A base-pairs and we found seven 
 but none were in fact GNRA tetraloops.
 
 \subsection{Overlap Scores} 
-We also used 3DNA overlap scores hoping to assign RNA structural motifs to
-evident patterns formed after data clustering.
-We tried out a sliding sequence window, meaning that we make a
-vector whose components are the overlap values shifted by one
-base, for example, if we had the sequence GAUAGAC, they will
-correspond to the following sequences:\\
-\\
-GAUA\\
-AUAG\\
-UAGA\\
-AGAC\\
-
-Each being represented by a three dimensional vector whose components
-are the overlaps between consecutive bases.
-The results after clustering are shown in Figure 1.2.,  from which it's clear that
-there are no obvious groups being ``formed".
-\begin{figure}[htbp]
-\centering 
-\includegraphics[angle=0, scale=0.8]{Chapter5/3Dwindow.png}
-\caption{Dendrogram for consensus clustering of 3D sequential
-overlaps. All vector elements were normalized.}
-\end{figure}
-Perhaps we should increase the size of
-the sliding window, at least to five bases, and include residue identity as
-an additional dimension.
-
-We also clustered the overlap values in one dimension and got rid of
-all overlap values which were zero. One reason for justifying this approach 
-is that there are so many values which are exactly zero (33\%), that all other data
-is overshadowed (This can be seen clearly for the normalized histograms in Figure).
+We clustered the overlap values impossing a cutoff of values
+of [1-8]. There are many values which are exactly zero (33\%), so,
+without the cutoff the zero values "overshadow" the data.
 \begin{figure}[htbp]
 \centering 
 \includegraphics[angle=0, scale=0.8]{Chapter5/histocompare.png}
@@ -119,15 +92,14 @@ the 23S subunit or \textit{Thermus Thermophilus} rRNA, PDB-ID:1jjk. In histogram
 included. Notice the high preponderance of zero values, exactly 897 out of a total
 of 2705.}
 \end{figure}
-For this case we obtained a ``good'' dendrogram as seen in Figure 1.3, but the interpretation is
-difficult since it's only good for continuously stacked regions, therefore not
-general, and it might be introducing an unwanted artifact.
+For this case we obtained a ``good'' dendrogram as seen in Figure 1.2.
 \begin{figure}[htbp]
 \centering 
 \includegraphics[angle=90, scale=0.6]{Chapter5/eucli_cons.png}
-\caption{Dendrogram for consensus clustering of 1D sequential overlaps
-  with zero values filtered out and vector elements normalized to unity.}
+\caption{Dendrogram for consensus clustering of overlap scores in the ribosome.
+Zero values filtered out and remaining data normalized.}
 \end{figure}
+
 The next step in this analysis will be to find the structures which
 correspond to this clusters and superimpose and align them using
 Kabsh's algorithm to be able to determine their RMSD's.

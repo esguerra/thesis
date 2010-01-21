@@ -1,5 +1,4 @@
 %  Title and other sections that come before the body  of the document
-
 \phd
 %\jointumdnj
 \title{\textbf{RNA Structure Analysis via the Rigid Block Model}}
@@ -8,25 +7,25 @@
 \program{Chemistry and Chemical Biology}
 \director{Wilma K. Olson}
 
-
 %% Gives the number of lines for comittee signatures.
 \approvals{4}
 
+
 % \copyrightpage % Do you want copyright protection?
-%\submissionmonth{February}   % only May, October or January
-%\submissionyear{2010}
+\submissionmonth{May}   % only May, October or January
+\submissionyear{2010}
 %\today
 %\figurespage
 %\draft
-
 %%% Abstract
+\singlespacing
 \abstract{RNA structure is at the forefront of our understanding of
 the origin of life, the mechanisms of life regulation and
 control, and it plays a primordial role in some viruses.
 Our knowledge of the importance of RNA in cellular regulation is
 relatively new, (a bit more than a decade, Craig and Mello, Nature
 1998) and along with the detailed structural elucidation of the
-transcription machine, the ribosome, have propelled interest in
+transcription machine, the ribosome, has propelled interest in
 RNA understanding to a level which starts to closely resemble that
 given to proteins.
 
@@ -35,7 +34,7 @@ functionality of such a complex polymer as RNA, one practical task
 left to the structural chemist is to understand the details of how
 structure relates to large scale polymer processes. With this in mind
 the fundamental problems which fuel the work described in this thesis
-are those of the typical conformations which RNA's assume in nature,
+are those of the conformations which RNA's assume in nature,
 and the aim to understand how RNA folds.
 
 The RNA folding problem can be understood as a mechanical problem,
@@ -45,10 +44,11 @@ methodology is mainly used in this work in a long term effort
 on understanding the intrinsic structural features of RNA, and how
 they might relate to it's folding.}
 
+
 %%% Acknowledgments
 \acknowledgements{I would first like to give a special thanks to
-Dr. Yurong Xin, who's patience, help, and collaboration since the very
-beginning of my joining of the Olson lab, have been fundamental for
+Dr. Yurong Xin, whose patience, help, and collaboration since the very
+beginning of my joining of the Olson lab have been fundamental for
 the development of this work. I would like to thank Dr. Olson's
 extreme patience, and room for freedom on carrying out this
 research. Finally I thank all colleagues at the Olson lab.}
@@ -90,8 +90,9 @@ true world among shadows.}
 \textbf{Anonymous Chemist}
 \end{flushright}
 
-
 }
+
+%\end{singlespace}
 
 \figurespage
 \tablespage

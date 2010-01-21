@@ -7,6 +7,7 @@
 \program{Chemistry and Chemical Biology}
 \director{Wilma K. Olson}
 
+
 %% Gives the number of lines for comittee signatures.
 \approvals{4}
 
@@ -42,7 +43,6 @@ combined with detailed knowledge of atomic level structure. Such
 methodology is mainly used in this work in a long term effort
 on understanding the intrinsic structural features of RNA, and how
 they might relate to it's folding.}
-
 
 %%% Acknowledgments
 \acknowledgements{I would first like to give a special thanks to
@@ -89,9 +89,8 @@ true world among shadows.}
 \textbf{Anonymous Chemist}
 \end{flushright}
 
-}
 
-%\end{singlespace}
+}
 
 \figurespage
 \tablespage

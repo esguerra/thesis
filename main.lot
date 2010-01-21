@@ -12,3 +12,5 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-8}
+\gdef \the@ipfilectr {}

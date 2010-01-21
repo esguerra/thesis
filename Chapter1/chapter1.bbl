@@ -19,8 +19,8 @@ R{NA} {S}tructure: {R}eading the {R}ibosome.
 
 \bibitem{weinberg2009}
 Weinberg, Z., Perreault, J., Meyer, M.~M., and Breaker, R.~R. (2009)
-Exceptional structured noncoding rnas revealed by bacterial metagenome
-  analysis.
+{Exceptional Structured Noncoding RNAs Revealed by Bacterial Metagenome
+  Analysis}.
 {\em Nature,} {\bf 462}, 656--659.
 
 \bibitem{kruger1982}
@@ -107,8 +107,8 @@ The contribution of metal ions to the structural stability of the large
 
 \bibitem{malhotra1990}
 Malhotra, A., Tan, R.~K., and Harvey, S.~C. (1990)
-Prediction of the three-dimensional structure of {E}scherichia coli 30{S}
-  ribosomal subunit: a molecular mechanics approach..
+Prediction of the {T}hree-{D}imensional {S}tructure of {E}scherichia {C}oli
+  30{S} {R}ibosomal {S}ubunit: {A} {M}olecular {M}echanics {A}pproach..
 {\em Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
   {S}tates of {A}merica,} {\bf 87}, 1950--1954.
 
@@ -117,6 +117,12 @@ Stagg, S.~M., Mears, J.~A., and Harvey, S.~C. (2003)
 A {S}tructural {M}odel for the {A}ssembly of the 30 {S} {S}ubunit of the
   {R}ibosome.
 {\em Journal of {M}olecular {B}iology,} {\bf 328}, 49--61.
+
+\bibitem{parisien2008}
+Parisien, M. and Major, F. (2008)
+The {MC}-{F}old and {MC}-{S}ym {P}ipeline {I}nfers {RNA} {S}tructure from
+  {S}equence {D}ata.
+{\em Nature,} {\bf 452}, 51--55.
 
 \bibitem{westhead1999}
 Westhead, D., Slidel, T., Flores, T., and Thornton, J. (1999)

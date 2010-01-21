@@ -1,17 +1,22 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.11.9)  19 JAN 2010 19:33
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.12.9)  20 JAN 2010 15:37
 entering extended mode
  %&-line parsing enabled.
 **main
 (./main.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
+yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+turkish, ukenglish, ukrainian, loaded.
 (./ruformat.cls
 Document Class: ruformat 3/22/95 v1.2 Standard LaTeX2e document class
-(/usr/share/texmf-texlive/tex/latex/base/report.cls
+(/usr/share/texmf/tex/latex/base/report.cls
 Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo
-File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+(/usr/share/texmf/tex/latex/base/size11.clo
+File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -26,24 +31,24 @@ File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -84,42 +89,42 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2001/10/25 v2.2f
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2002/01/22 v2.2d
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+(/usr/share/texmf/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/usr/share/texmf/tex/latex/graphics/graphics.sty
 Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+(/usr/share/texmf/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
+(/usr/share/texmf/tex/latex/config/graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 90.
 
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
 \Gread@gobject=\count100
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+(/usr/share/texmf/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip46
 \subfigcapskip=\skip47
@@ -135,11 +140,11 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+(/usr/share/texmf/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip50
 \subfig@bottom=\skip51
 )
-(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
+(/usr/share/texmf/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip52
 \LTright=\skip53
@@ -157,7 +162,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count109
 \LT@p@ftn=\toks20
 )
-(/usr/share/texmf-texlive/tex/latex/float/float.sty
+(/usr/share/texmf/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count110
 \float@exts=\toks21
@@ -167,23 +172,23 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 \@float@every@figure=\toks23
 
-(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+(/usr/share/texmf/tex/latex/setspace/setspace.sty
 Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
 
 Package: `setspace' 6.7 <2000/12/01>
-) (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+) (/usr/share/texmf/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
 \@linkdim=\dimen117
 \Hy@linkcounter=\count111
 \Hy@pagecounter=\count112
 
-(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
 )
-(/etc/texmf/tex/latex/config/hyperref.cfg
+(/usr/share/texmf/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
 HO)
 )
@@ -195,7 +200,7 @@ Package hyperref Info: Backreferencing OFF on input line 2308.
 
 Implicit mode ON; LaTeX internals redefined
 Package hyperref Info: Bookmarks ON on input line 2444.
-(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+(/usr/share/texmf/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
 Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 )
@@ -215,17 +220,17 @@ Package hyperref Info: Link coloring OFF on input line 3122.
 \c@Hfootnote=\count116
 )
 *hyperref using driver hpdftex*
-(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
 \Fld@listcount=\count117
 )
-(/usr/share/texmf-texlive/tex/latex/oberdiek/pdflscape.sty
+(/usr/share/texmf/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2006/04/24 v0.6 Landscape pages in PDF (HO)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
+(/usr/share/texmf/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ))
-(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+(/usr/share/texmf/tex/latex/geometry/geometry.sty
 Package: geometry 2002/07/08 v3.2 Page Geometry
 \Gm@cnth=\count118
 \Gm@cntv=\count119
@@ -235,13 +240,12 @@ Package: geometry 2002/07/08 v3.2 Page Geometry
 \Gm@odd@mp=\dimen122
 \Gm@even@mp=\dimen123
 \Gm@dimlist=\toks26
-
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
-(/usr/share/texmf-texlive/tex/latex/cite/chapterbib.sty
+)
+(/usr/share/texmf/tex/latex/cite/chapterbib.sty
 \c@inputfile=\count121
 Package: chapterbib 2004/02/29  v 1.11
 )
-(/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
+(/usr/share/texmf/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
@@ -249,19 +253,19 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 
 
 Writing index file main.idx
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+(/usr/share/texmf/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+(/usr/share/texmf/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
+(/usr/share/texmf/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (./main.aux
-(./titles.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
-(./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
-(./Chapter6/chapter6.aux))
+) (./main.aux (./titles.aux)
+(./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
+(./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
+(./CV/cv.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -279,37 +283,24 @@ LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 51.
- (/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
+ (/usr/share/texmf/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 11.39996pt on input line 51.
-(/usr/share/texmf/tex/context/base/supp-pdf.tex
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen124
-\scratchbox=\box34
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen125
-\MPnumerator=\count126
-\everyMPtoPDFconversion=\toks28
-)
+(Font)              scaled to size 10.40245pt on input line 51.
 Package hyperref Info: Link coloring OFF on input line 51.
- (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 
-(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count127
+\c@section@level=\count122
 )
 LaTeX Info: Redefining \ref on input line 51.
 LaTeX Info: Redefining \pageref on input line 51.
- (./main.out)
-(./main.out)
+ (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -354,18 +345,20 @@ driver: pdftex
 -----------------------
 \openout2 = `titles.aux'.
 
- (./titles.tex)
+
+(./titles.tex)
 Title
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.41594pt on input line 66.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
+(Font)              scaled to size 13.67995pt on input line 66.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 66.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              scaled to size 13.67995pt on input line 66.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 66.
+(Font)              scaled to size 10.40245pt on input line 66.
+\@aplines=\count123
 [1
 
 
@@ -382,29 +375,29 @@ Package hyperref Warning: bookmark level for unknown unnumberedsection defaults
  to 0.
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 66.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              scaled to size 11.39996pt on input line 66.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 66.
+(Font)              scaled to size 11.39996pt on input line 66.
 [2]
 Quotes
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 66.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 66.
+(Font)              scaled to size 10.40245pt on input line 66.
 [3]
 Acknowledgements
 [4
 
 ] (./main.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 ))
 \tf@toc=\write5
@@ -412,18 +405,23 @@ File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 
  [5
 
-] [6] (./main.lot)
+] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
+ [6
 
-[7
+] (./main.lof
+Overfull \hbox (25.43752pt too wide) in paragraph at lines 6--6
+ [][] [][]\T1/phv/m/sl/10.95 Haloharcula maris-mor-tui's \T1/phv/m/n/10.95 larg
+e ri-bo-so-mal sub-unit (left) and ham-mer-head ri-bozyme (right).The 
+ []
 
-] (./main.lof)
+)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [8
+ [7
 
 ]
 \openout2 = `Chapter1/chapter1.aux'.
@@ -435,9 +433,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 5.69998pt on input line 6.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 19.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 19.
+(Font)              scaled to size 8.54997pt on input line 19.
 <Chapter1/rangan2003pnas.png, id=256, 1316.92pt x 558.085pt>
 File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
@@ -446,135 +442,134 @@ File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
 
 ] [2 <./Chapter1/rangan2003pnas.png (PNG copy)>] [3] <Chapter1/overallfold.png,
- id=365, 308.352pt x 303.2931pt>
+ id=373, 308.352pt x 303.2931pt>
 File: Chapter1/overallfold.png Graphic file (type png)
 
 <use Chapter1/overallfold.png>
-<Chapter1/ribosome_ribozyme.png, id=368, 572.3784pt x 342.5598pt>
+<Chapter1/ribosome_ribozyme.png, id=376, 572.3784pt x 342.5598pt>
 File: Chapter1/ribosome_ribozyme.png Graphic file (type png)
 
-<use Chapter1/ribosome_ribozyme.png> [4 <./Chapter1/overallfold.png (PNG copy)>
-]
-Underfull \hbox (badness 10000) in paragraph at lines 289--293
+<use Chapter1/ribosome_ribozyme.png>
+Underfull \hbox (badness 10000) in paragraph at lines 300--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--301
+Underfull \hbox (badness 10000) in paragraph at lines 305--312
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--322
+Underfull \hbox (badness 10000) in paragraph at lines 313--333
+
+ []
+
+[4 <./Chapter1/overallfold.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 334--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--374
 
  []
 
 [5 <./Chapter1/ribosome_ribozyme.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 323--330
+Underfull \hbox (badness 10000) in paragraph at lines 375--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--344
+Underfull \hbox (badness 10000) in paragraph at lines 388--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--353
+Underfull \hbox (badness 10000) in paragraph at lines 397--404
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--363
+Underfull \hbox (badness 10000) in paragraph at lines 405--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--376
+Underfull \hbox (badness 10000) in paragraph at lines 419--427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--385
+Underfull \hbox (badness 10000) in paragraph at lines 428--440
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 386--393
+Underfull \hbox (badness 10000) in paragraph at lines 441--447
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 408--416
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 417--429
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--436
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 437--447
-
- []
-
-[7]
 Underfull \hbox (badness 10000) in paragraph at lines 448--458
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--464
+Underfull \hbox (badness 10000) in paragraph at lines 459--469
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--475
+Underfull \hbox (badness 10000) in paragraph at lines 470--475
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--482
+Underfull \hbox (badness 10000) in paragraph at lines 476--486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--487
+Underfull \hbox (badness 10000) in paragraph at lines 487--493
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--499
+Underfull \hbox (badness 10000) in paragraph at lines 494--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--508
+Underfull \hbox (badness 10000) in paragraph at lines 499--510
 
  []
 
-[8] (./Chapter1/chapter1.bbl [9]
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 511--519
+
+ []
+
+(./Chapter1/chapter1.bbl [8]
 References
-[10
+[9
 
-] [11] [12] [13] [14])) [15]
+] [10] [11] [12])) [13]
 \openout2 = `Chapter2/chapter2.aux'.
 
  (./Chapter2/chapter2.tex
 Chapter 2.
 No file Chapter2/chapter2.bbl.
-) [16
+) [14
 
 
 
@@ -585,7 +580,7 @@ No file Chapter2/chapter2.bbl.
  (./Chapter3/chapter3.tex
 Chapter 3.
 No file Chapter3/chapter3.bbl.
-) [17
+) [15
 
 
 
@@ -596,7 +591,7 @@ No file Chapter3/chapter3.bbl.
  (./Chapter4/chapter4.tex
 Chapter 4.
 No file Chapter4/chapter4.bbl.
-) [18
+) [16
 
 
 
@@ -606,27 +601,34 @@ No file Chapter4/chapter4.bbl.
 
  (./Chapter5/chapter5.tex
 Chapter 5.
-LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <14.4> not available
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 5.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 5.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 13.67995pt on input line 5.
+(Font)              scaled to size 11.39996pt on input line 5.
 LaTeX Font Info:    Try loading font information for OMS+phv on input line 9.
-(/usr/share/texmf-texlive/tex/latex/psnfss/omsphv.fd
+(/usr/share/texmf/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
-LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
- [19
+
+Overfull \hbox (2.51604pt too wide) in paragraph at lines 9--11
+[]\T1/phv/m/n/10.95 RNA mo-tifs are ``\T1/phv/m/sl/10.95 Con-served struc-tural
+ sub-units that make up the sec-ondary struc-tures of RNAs.\T1/phv/m/n/10.95 ''
+[[]] 
+ []
+
+[17
 
 
 
 
-]
-<Chapter5/gnra.png, id=506, 706.64pt x 415.5525pt>
+] <Chapter5/gnra.png, id=500, 706.64pt x 415.5525pt>
 File: Chapter5/gnra.png Graphic file (type png)
- <use Chapter5/gnra.png>
+
+<use Chapter5/gnra.png>
 Underfull \hbox (badness 10000) in paragraph at lines 83--94
 
  []
@@ -636,12 +638,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--94
 
  []
 
-[20 <./Chapter5/gnra.png>]
-<Chapter5/3Dwindow.png, id=513, 560.8152pt x 808.7013pt>
+<Chapter5/3Dwindow.png, id=501, 560.8152pt x 808.7013pt>
 File: Chapter5/3Dwindow.png Graphic file (type png)
 
 <use Chapter5/3Dwindow.png>
-<Chapter5/histocompare.png, id=514, 647.41875pt x 782.925pt>
+<Chapter5/histocompare.png, id=502, 647.41875pt x 782.925pt>
 File: Chapter5/histocompare.png Graphic file (type png)
 
 <use Chapter5/histocompare.png>
@@ -650,17 +651,18 @@ Overfull \hbox (48.18031pt too wide) in paragraph at lines 115--121
  []
 
 
-LaTeX Warning: Float too large for page by 23.96611pt on input line 121.
+LaTeX Warning: Float too large for page by 17.44608pt on input line 121.
 
-<Chapter5/eucli_cons.png, id=515, 1123.19624pt x 778.91pt>
+<Chapter5/eucli_cons.png, id=503, 1123.19624pt x 778.91pt>
 File: Chapter5/eucli_cons.png Graphic file (type png)
 
 <use Chapter5/eucli_cons.png>
 
-LaTeX Warning: Float too large for page by 42.5482pt on input line 130.
+LaTeX Warning: Float too large for page by 39.80458pt on input line 130.
 
-(./Chapter5/chapter5.bbl [21] [22 <./Chapter5/3Dwindow.png>] [23 <./Chapter5/hi
-stocompare.png>] [24 <./Chapter5/eucli_cons.png (PNG copy)>]
+[18 <./Chapter5/gnra.png>] [19 <./Chapter5/3Dwindow.png>]
+(./Chapter5/chapter5.bbl [20] [21 <./Chapter5/histocompare.png>] [22 <./Chapter
+5/eucli_cons.png (PNG copy)>]
 References
 pdfTeX warning (ext4): destination with the same identifier (name{cite.holbrook
 2005}) has been already used, duplicate ignored
@@ -682,7 +684,7 @@ fier (name{cite.lemieux2006}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.18 \bibitem{lemieux2006}
-                          )) [25
+                          )) [23
 
 ]
 \openout2 = `Chapter6/chapter6.aux'.
@@ -690,41 +692,50 @@ l.18 \bibitem{lemieux2006}
  (./Chapter6/chapter6.tex
 Chapter 6.
 No file Chapter6/chapter6.bbl.
-) [26
+) [24
 
 
 
 
-] (./main.ind [27
+]
+\openout2 = `CV/cv.aux'.
+
+ (./CV/cv.tex
+Curriculum Vitae
+) [25
+
+
+
+
+] (./main.ind [26
 
 
 
 ]) (./main.aux (./titles.aux) (./Chapter1/chapter1.aux)
 (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux)
-(./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)) )
+(./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./CV/cv.aux)) )
 (\end occurred when \iftrue on line 66 was incomplete) 
 Here is how much of TeX's memory you used:
- 5206 strings out of 95087
- 68949 string characters out of 1183278
- 128665 words of memory out of 1500000
- 8046 multiletter control sequences out of 10000+50000
- 43117 words of font info for 64 fonts, out of 1200000 for 2000
- 28 hyphenation exceptions out of 8191
- 32i,9n,39p,556b,421s stack positions out of 5000i,500n,6000p,200000b,5000s
-{/usr/share/texmf-texlive
-/fonts/enc/dvips/base/8r.enc} </home/esguerra/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecrm1200.600pk> </home/esguerra/.texmf-var/fonts/pk/ljfour/jknappen/ec/ec
-rm0800.600pk></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi12.pfb></usr/
-share/texmf-texlive/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf-texlive/
-fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/c
-m/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy6.pfb></usr/s
-hare/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texliv
-e/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-texlive/fonts/type1/ur
-w/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8
-a.pfb>
-Output written on main.pdf (35 pages, 2715023 bytes).
+ 4920 strings out of 256217
+ 64367 string characters out of 1917095
+ 129497 words of memory out of 1500000
+ 7868 multiletter control sequences out of 10000+200000
+ 41889 words of font info for 64 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 32i,9n,39p,556b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
+{/usr/share/texmf/fonts/e
+nc/dvips/base/8r.enc} </home/esguerra/.texlive2007/texmf-var/fonts/pk/ljfour/jk
+nappen/ec/ecrm1095.600pk> </home/esguerra/.texlive2007/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecrm0800.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/u
+rw/helvetic/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvbo8a.pfb><
+/usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf/fonts/ty
+pe1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (33 pages, 2715189 bytes).
 PDF statistics:
- 636 PDF objects out of 1000 (max. 8388607)
- 160 named destinations out of 1000 (max. 131072)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 635 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 131072)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -372,40 +372,35 @@
          }
         \vskip 2ex plus 2ex minus 2ex 
         {\centering\bfseries
-          by\\
-          \uppercase\expandafter{\@author}\par
+          BY \uppercase\expandafter{\@author}\par
           \nobreak
           \vskip 4ex plus 2ex minus 2ex 
           \ifdraft%
             {DRAFT VERSION CREATED ON \uppercase\expandafter{\today}\\}
           \else %
-             A \ifphd{dissertation}\else{thesis}\fi\ submitted to the\\
-             Graduate School---\@campus \\
+             A \ifphd{dissertation}\else{report}\fi\ submitted to\\
+             Dr. Wilma K. Olson Group \\
              Rutgers, The State University of New Jersey\\
              \ifjoint{in conjunction with\\ \obeylines\@jointwith\par}\fi
              \ifjoint{in partial fulfillment of the requirements 
                 for the\\ Degree of}
-                \else %
-                  in partial fulfillment of the requirements \\
-                  for the degree of\\ 
              \fi 
-             \@degree\\
-             Graduate Program in \@program\\
-             \vskip 1ex
-             Written under the direction of\\
-             \@director\\
-             and approved by\\ 
-             \vskip 2ex plus 1ex minus 2ex
+%             \vskip 1ex
+%             Written under the direction of\\
+%             \@director\\
+%             and approved by\\ 
+%             \vskip 2ex plus 1ex minus 2ex
+%
+%             \newcount\@aplines
+%             \@aplines=\@approvals
+%             \loop {} \ifnum\@aplines>0
+%                \advance\@aplines by-1
+%                \vskip 5bp
 
-             \newcount\@aplines
-             \@aplines=\@approvals
-             \loop {} \ifnum\@aplines>0
-                \advance\@aplines by-1
-                \vskip 5bp
                 % should really just copy to a box and reuse that...do later
-                \hbox to\hsize{\hss\vrule width 200bp height 0.4bp\hss}
-                \nobreak
-             \repeat
+%                \hbox to\hsize{\hss\vrule width 200bp height 0.4bp\hss}
+%                \nobreak
+%             \repeat
 
         \vfil
         \@campus, New Jersey\\
@@ -455,7 +450,6 @@
         \ifquotes{%
                 \typeout{Quotes}
 %                \addcontentsline{toc}{unnumberedsection}{Quotes}
-		\singlespacing  %This makes the quotes single spaced
                 {\null\vskip 5cm}
                 \@quotes}
 
@@ -522,7 +516,7 @@
         \pagestyle{topright}
         }
 \newenvironment{vita}%
-{\unnumberedsection{Curriculum Vitae}
+{\unnumberedsection{Vita}
  \bgroup\def\baselinestretch{1}\@normalsize}
 {\egroup}
 

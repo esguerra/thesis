@@ -4,7 +4,7 @@
 % Ph. D. Thesis
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Need ruproposal.cls which formats to Rutgers Style Guide
-\documentclass[12pt, oneside, pdftex]{ruformat}
+\documentclass[11pt, oneside, pdftex]{ruformat}
 \renewcommand{\thefootnote}{\roman{footnote}}
 \usepackage{amsmath, amstext, amsfonts, amssymb}
 \usepackage[pdftex]{graphicx}
@@ -16,7 +16,7 @@
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{pdflscape}
-\singlespacing
+%\singlespacing
 %The geometry package might not be necessary since there are definitions in
 %ruformat.cls
 \usepackage[left=2.54cm,bottom=2.00cm,top=2.00cm,right=2.54cm]{geometry}
@@ -26,7 +26,7 @@
 \makeindex
 \includeonly{titles, Chapter1/chapter1,
   Chapter2/chapter2, Chapter3/chapter3, Chapter4/chapter4, 
-  Chapter5/chapter5, Chapter6/chapter6} 
+  Chapter5/chapter5, Chapter6/chapter6, CV/cv} 
 %\usepackage{pdflscape}
 
 
@@ -73,16 +73,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\pagenumbering{arabic}
 %\include{acknowledgments}
+%\doublespacing
 \include{Chapter1/chapter1}
 \include{Chapter2/chapter2}
 \include{Chapter3/chapter3}
 \include{Chapter4/chapter4}
 \include{Chapter5/chapter5}
 \include{Chapter6/chapter6}
+\include{CV/cv}
 %\appendix
 %\include{appendix2}
 %\include{index}
-\printindex{Index}
+\printindex
 \end{document}
 
 
