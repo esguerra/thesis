@@ -13,4 +13,7 @@
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{24}{table.A.1}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-9}
 \gdef \the@ipfilectr {}

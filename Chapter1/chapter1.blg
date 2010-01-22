@@ -7,45 +7,45 @@ ptr=1, stack=
 {RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching}
 ---the literal stack isn't empty for entry nasalean2009
 while executing---line 2203 of file nar.bst
-You've used 80 entries,
+You've used 86 entries,
             1881 wiz_defined-function locations,
-            925 strings with 17856 characters,
-and the built_in function-call counts, 20567 in all, are:
-= -- 2108
-> -- 854
+            960 strings with 19636 characters,
+and the built_in function-call counts, 22303 in all, are:
+= -- 2276
+> -- 962
 < -- 5
-+ -- 316
-- -- 236
-* -- 1968
-:= -- 3153
-add.period$ -- 80
-call.type$ -- 80
-change.case$ -- 78
++ -- 354
+- -- 268
+* -- 2154
+:= -- 3428
+add.period$ -- 86
+call.type$ -- 86
+change.case$ -- 84
 chr.to.int$ -- 0
-cite$ -- 81
-duplicate$ -- 738
-empty$ -- 1982
-format.name$ -- 236
-if$ -- 4803
+cite$ -- 87
+duplicate$ -- 790
+empty$ -- 2128
+format.name$ -- 268
+if$ -- 5198
 int.to.chr$ -- 0
-int.to.str$ -- 80
-missing$ -- 83
-newline$ -- 403
-num.names$ -- 80
-pop$ -- 96
+int.to.str$ -- 86
+missing$ -- 89
+newline$ -- 433
+num.names$ -- 86
+pop$ -- 103
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 282
+skip$ -- 302
 stack$ -- 0
-substring$ -- 1755
-swap$ -- 95
+substring$ -- 1884
+swap$ -- 101
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 162
-width$ -- 82
-write$ -- 724
+while$ -- 173
+width$ -- 88
+write$ -- 777
 (There was 1 error message)

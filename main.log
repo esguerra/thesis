@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.12.9)  21 JAN 2010 15:05
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.12.9)  22 JAN 2010 17:26
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -265,7 +265,7 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 ) (./main.aux (./titles.aux)
 (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
 (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
-(./CV/cv.aux))
+(./Appendix/appendix2a.aux) (./CV/cv.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -283,7 +283,8 @@ LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 51.
- (/usr/share/texmf/tex/latex/psnfss/t1phv.fd
+
+(/usr/share/texmf/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -399,19 +400,20 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
-))
+) [5
+
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [5
-
-] (./main.lot)
+ [6] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [6
+ [7
 
-] (./main.lof
+]
+(./main.lof
 Overfull \hbox (25.43752pt too wide) in paragraph at lines 6--6
  [][] [][]\T1/phv/m/sl/10.95 Haloharcula maris-mor-tui's \T1/phv/m/n/10.95 larg
 e ri-bo-so-mal sub-unit (left) and ham-mer-head ri-bozyme (right).The 
@@ -421,7 +423,7 @@ e ri-bo-so-mal sub-unit (left) and ham-mer-head ri-bozyme (right).The
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [7
+ [8
 
 ]
 \openout2 = `Chapter1/chapter1.aux'.
@@ -429,141 +431,133 @@ e ri-bo-so-mal sub-unit (left) and ham-mer-head ri-bozyme (right).The
  (./Chapter1/chapter1.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 6.
+(Font)              scaled to size 7.59998pt on input line 11.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 6.
+(Font)              scaled to size 5.69998pt on input line 11.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 19.
-<Chapter1/rangan2003pnas.png, id=253, 1316.92pt x 558.085pt>
+(Font)              scaled to size 8.54997pt on input line 23.
+<Chapter1/rangan2003pnas.png, id=273, 1316.92pt x 558.085pt>
 File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
 <use Chapter1/rangan2003pnas.png> [1
 
 
 
-] [2 <./Chapter1/rangan2003pnas.png (PNG copy)>]
-
-LaTeX Warning: Citation `richardson2008' in file `Chapter1/chapter1' on page 3 
-undefined on input line 226.
-
-
-LaTeX Warning: Citation `mathews2002' in file `Chapter1/chapter1' on page 3 und
-efined on input line 232.
-
-[3] <Chapter1/overallfold.png, id=370, 308.352pt x 303.2931pt>
+] [2 <./Chapter1/rangan2003pnas.png (PNG copy)>] [3] <Chapter1/overallfold.png,
+ id=399, 308.352pt x 303.2931pt>
 File: Chapter1/overallfold.png Graphic file (type png)
 
 <use Chapter1/overallfold.png>
-<Chapter1/ribosome_ribozyme.png, id=373, 572.3784pt x 342.5598pt>
+<Chapter1/ribosome_ribozyme.png, id=402, 572.3784pt x 342.5598pt>
 File: Chapter1/ribosome_ribozyme.png Graphic file (type png)
 
 <use Chapter1/ribosome_ribozyme.png>
-Underfull \hbox (badness 10000) in paragraph at lines 296--300
+Underfull \hbox (badness 10000) in paragraph at lines 314--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--308
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--329
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
 
  []
 
 [4 <./Chapter1/overallfold.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 330--337
+Underfull \hbox (badness 10000) in paragraph at lines 327--347
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--351
+Underfull \hbox (badness 10000) in paragraph at lines 348--355
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 352--360
+Underfull \hbox (badness 10000) in paragraph at lines 356--369
 
  []
 
 [5 <./Chapter1/ribosome_ribozyme.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 361--370
+Underfull \hbox (badness 10000) in paragraph at lines 370--378
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--383
+Underfull \hbox (badness 10000) in paragraph at lines 379--388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 384--392
+Underfull \hbox (badness 10000) in paragraph at lines 389--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--400
+Underfull \hbox (badness 10000) in paragraph at lines 402--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--414
+Underfull \hbox (badness 10000) in paragraph at lines 411--418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--423
+Underfull \hbox (badness 10000) in paragraph at lines 419--432
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--436
+Underfull \hbox (badness 10000) in paragraph at lines 433--441
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 437--443
+Underfull \hbox (badness 10000) in paragraph at lines 442--454
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--454
+Underfull \hbox (badness 10000) in paragraph at lines 455--461
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--465
+Underfull \hbox (badness 10000) in paragraph at lines 462--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--471
+Underfull \hbox (badness 10000) in paragraph at lines 473--483
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 472--482
+Underfull \hbox (badness 10000) in paragraph at lines 484--490
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--489
+Underfull \hbox (badness 10000) in paragraph at lines 491--502
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--494
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 495--506
+Underfull \hbox (badness 10000) in paragraph at lines 503--509
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 507--515
+Underfull \hbox (badness 10000) in paragraph at lines 510--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--535
 
  []
 
@@ -633,11 +627,11 @@ Overfull \hbox (2.51604pt too wide) in paragraph at lines 9--11
 
 
 
-] <Chapter5/gnra.png, id=497, 706.64pt x 415.5525pt>
+] <Chapter5/gnra.png, id=531, 706.64pt x 415.5525pt>
 File: Chapter5/gnra.png Graphic file (type png)
 
 <use Chapter5/gnra.png>
-<Chapter5/histocompare.png, id=498, 647.41875pt x 782.925pt>
+<Chapter5/histocompare.png, id=532, 647.41875pt x 782.925pt>
 File: Chapter5/histocompare.png Graphic file (type png)
 
 <use Chapter5/histocompare.png>
@@ -648,7 +642,7 @@ Overfull \hbox (48.18031pt too wide) in paragraph at lines 88--94
 
 LaTeX Warning: Float too large for page by 17.44608pt on input line 94.
 
-<Chapter5/eucli_cons.png, id=499, 1123.19624pt x 778.91pt>
+<Chapter5/eucli_cons.png, id=533, 1123.19624pt x 778.91pt>
 File: Chapter5/eucli_cons.png Graphic file (type png)
 
 <use Chapter5/eucli_cons.png>
@@ -692,48 +686,74 @@ No file Chapter6/chapter6.bbl.
 
 
 ]
+\openout2 = `Appendix/appendix2a.aux'.
+
+ (./Appendix/appendix2a.tex
+Appendix A.
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\advance' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\hangindent' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\@tempdima' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\hbox' on input line 1.
+
+[23
+
+
+
+
+] <Appendix/appendixtree.png, id=579, 709.90219pt x 846.91406pt>
+File: Appendix/appendixtree.png Graphic file (type png)
+
+<use Appendix/appendixtree.png> [24]
+No file Appendix/appendix2a.bbl.
+) [25 <./Appendix/appendixtree.png (PNG copy)>]
 \openout2 = `CV/cv.aux'.
 
  (./CV/cv.tex
 Curriculum Vitae
-) [23
+) [26
 
 
 
 
-] (./main.ind [24
-
-
-
-]) (./main.aux (./titles.aux) (./Chapter1/chapter1.aux)
+] (./main.aux (./titles.aux) (./Chapter1/chapter1.aux)
 (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux)
-(./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./CV/cv.aux))
-
-LaTeX Warning: There were undefined references.
-
- )
+(./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Appendix/appendix2a.aux)
+(./CV/cv.aux)) )
 (\end occurred when \iftrue on line 66 was incomplete) 
 Here is how much of TeX's memory you used:
- 4914 strings out of 256217
- 64293 string characters out of 1917095
- 128497 words of memory out of 1500000
- 7866 multiletter control sequences out of 10000+200000
+ 4969 strings out of 256217
+ 65048 string characters out of 1917095
+ 130520 words of memory out of 1500000
+ 7883 multiletter control sequences out of 10000+200000
  41889 words of font info for 64 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 32i,9n,39p,556b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 32i,14n,39p,556b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
 {/usr/share/texmf/fonts/e
 nc/dvips/base/8r.enc} </home/esguerra/.texlive2007/texmf-var/fonts/pk/ljfour/jk
 nappen/ec/ecrm1095.600pk> </home/esguerra/.texlive2007/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecrm0800.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pf
-b></usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/ty
-pe1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></u
-sr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/u
-rw/helvetic/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvbo8a.pfb><
-/usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf/fonts/ty
-pe1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (31 pages, 2696325 bytes).
+r/jknappen/ec/ecrm0800.600pk></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmmi6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></
+usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/
+bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/s
+hare/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/urw/h
+elvetic/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr
+/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf/fonts/type1/
+urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (34 pages, 2741820 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 158 named destinations out of 1000 (max. 131072)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 704 PDF objects out of 1000 (max. 8388607)
+ 190 named destinations out of 1000 (max. 131072)
+ 332 words of extra memory for PDF output out of 10000 (max. 10000000)
 

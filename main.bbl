@@ -142,7 +142,7 @@ Sequences and {T}opology.
 
 \bibitem{meiler2003}
 Meiler, J. and Baker, D. (2003)
-Coupled prediction of protein secondary and tertiary structure.
+{Coupled Prediction of Protein Secondary and Tertiary Structure}.
 {\em Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
   {S}tates of {A}merica,} {\bf 100}, 12105--12110.
 
@@ -300,16 +300,56 @@ Describing {RNA} {S}tructure by {L}ibraries of {C}lustered {N}ucleotide
   {D}oublets.
 {\em Journal of {M}olecular {B}iology,} {\bf 351}, 26--38.
 
+\bibitem{richardson2008}
+Richardson, J.~S., Schneider, B., Murray, L.~W., Kapral, G.~J., Immormino,
+  R.~M., Headd, J.~J., Richardson, D.~C., Ham, D., Hershkovits, E., Williams,
+  L.~D., Keating, K.~S., Pyle, A.~M., Micallef, D., Westbrook, J., , and
+  Berman, H.~M. (2008)
+{RNA Backbone: Consensus All-Angle Conformers and Modular String Nomenclature
+  (An RNA Ontology Consortium Contribution)}.
+{\em RNA,}.
+
 \bibitem{zuker2003}
 Zuker, M. (2003)
 Mfold web server for nucleic acid folding and hybridization prediction.
 {\em Nucleic {A}cids {R}esearch,} {\bf 31}(13), 3406--3415.
+
+\bibitem{mathews2002}
+Mathews, D.~H. and Turner, D.~H. (Mar, 2002)
+{Dynalign: An Algorithm for Finding the Secondary Structure Common to Two RNA
+  Sequences.}.
+{\em Journal of Molecular Biology,} {\bf 317}(2), 191--203.
 
 \bibitem{chen2000}
 Chen, S.-J. and Dill, K.~A. (2000)
 R{NA} {F}olding {E}nergy {L}andscapes.
 {\em Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
   {S}tates of {A}merica,} {\bf 97}, 646--651.
+
+\bibitem{das2007}
+Das, R. and Baker, D. (Sep, 2007)
+{Automated de Novo Prediction of Native-Like RNA Tertiary Structures}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 104}(37), 14664--14669.
+
+\bibitem{ding2008}
+Ding, F., Sharma, S., Chalasani, P., Demidov, V.~V., Broude, N.~E., and
+  Dokholyan, N.~V. (Jun, 2008)
+{Ab Initio RNA Folding by Discrete Molecular Dynamics: From Structure
+  Prediction to Folding Mechanisms}.
+{\em RNA,} {\bf 14}(6), 1164--1173.
+
+\bibitem{jonikas2009a}
+Jonikas, M.~A., Radmer, R.~J., and Altman, R.~B. (Dec, 2009)
+{Knowledge-Based Instantiation of Full Atomic Detail Into Coarse-Grain RNA 3D
+  Structural Models}.
+{\em Bioinformatics,} {\bf 25}(24), 3259--3266.
+
+\bibitem{martinez2008}
+Martinez, H.~M., Jr, J. V.~M., and Shapiro, B.~A. (2008)
+{RNA2D3D: A program for Generating, Viewing, and Comparing 3-Dimensional Models
+  of RNA}.
+{\em Journal of Biomolecular Structure and Dynamics,} {\bf 25}, 573--752.
 
 \bibitem{richardson2000}
 Richardson, J.~S. (2000)
@@ -319,8 +359,8 @@ Early ribbon drawings of proteins.
 \bibitem{andreeva2004}
 Andreeva, A., Howorth, D., Brenner, S.~E., Hubbard, T. J.~P., Chothia, C., and
   Murzin, A.~G. (2004)
-S{COP} database in 2004: refinements integrate structure and sequence family
-  data..
+{S{COP} Database in 2004: Refinements Integrate Structure and Sequence Family
+  Data}.
 {\em Nucleic {A}cids {R}esearch,} {\bf 32}, D226--D229.
 
 \bibitem{klosterman2002}
