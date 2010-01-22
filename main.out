@@ -7,10 +7,10 @@
 \BOOKMARK [1][-]{section.1.2}{Is RNA folding a hard or easy problem?}{chapter.1}
 \BOOKMARK [1][-]{section.1.3}{Experimental folding techniques}{chapter.1}
 \BOOKMARK [1][-]{section.1.4}{RNA simulations}{chapter.1}
-\BOOKMARK [1][-]{section.1.5}{Local nucleotide interactions}{chapter.1}
-\BOOKMARK [1][-]{section.1.6}{RNA secondary structure algorithms and the lack of tertiary ones}{chapter.1}
-\BOOKMARK [1][-]{section.1.7}{RNA overall fold}{chapter.1}
-\BOOKMARK [2][-]{subsection.1.7.1}{RNA motifs}{section.1.7}
+\BOOKMARK [2][-]{subsection.1.4.1}{Local nucleotide interactions}{section.1.4}
+\BOOKMARK [2][-]{subsection.1.4.2}{RNA secondary structure algorithms and the lack of tertiary ones}{section.1.4}
+\BOOKMARK [2][-]{subsection.1.4.3}{RNA overall fold}{section.1.4}
+\BOOKMARK [2][-]{subsection.1.4.4}{RNA motifs}{section.1.4}
 \BOOKMARK [0][-]{chapter*.6}{References}{}
 \BOOKMARK [0][-]{chapter.2}{RNA Base Steps}{}
 \BOOKMARK [1][-]{section.2.1}{Consensus Clustering of Single Stranded Base Step Parameters}{chapter.2}

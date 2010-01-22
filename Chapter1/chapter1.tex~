@@ -138,10 +138,10 @@ ribosome structure through homology modeling \cite{tung2004}. Tung and
 associates used this structure for an all-atom MD simulation of the
 movement of tRNA into a fluctuating ribosome \cite{sanbonmatsu2005}.
 This type of simulation might be useful in a reverse-folding
-approach to the RNA folding problem. To the best of my knowledge,
+approach to the RNA folding problem. To the best of our knowledge,
 such calculations haven't as yet been done for RNA.
 
-\section{Local nucleotide interactions}
+\subsection{Local nucleotide interactions}
 %\subsubsection{QM approaches and MM consequences}
 The molecular interactions which rule RNA structures at the nucleic
 acid base level, \textit{i.e.}, local level, are hydrogen bonding and
@@ -221,30 +221,39 @@ clustered in the parameter space using different techniques
 phosphates, sugars, and bases, have also been clustered
 \cite{sykes2005}. The latter studies are aimed at finding the common
 nucleotide base steps and base-pair building blocks which are given
-the name of RNA doublets.
-
-\section{RNA secondary structure algorithms and the lack of tertiary ones}
-From secondary structure prediction algorithms like Zuker's
-\textit{mfold} program \cite{zuker2003}, Hofacker's Vienna RNA
-package \cite{hofacker1994}, or Mathews Dynaling \cite{mathews2002},  
-one obtains a large ensemble of secondary structure graphs. 
-These graphs can be analyzed with graph
-theory to produce a partition function describing a full arrangement
-of contacts for the total number of possible secondary structures
-\cite{chen2000}. In the past 
-
-mention shapiro and jager and major
-and 10.1261/rna.894608 ifoldRNA
-
-So far this type of model has not been generalized
-to take into account tertiary structural features, \textit{i.e.},
-interhelical interactions of RNA
-
-In here a small summary of programs which go from sequence to 3D, even 
-if it's reconstruction and then emphasizing Major's.
+the name of RNA doublets. Recently, the RNA Ontology Consortium (ROC) has
+proposed a consensus set of RNA dinucleotide conformers integrating
+the work of various groups \cite{richardson2008}.
 
 
-\section{RNA overall fold}
+\subsection{RNA secondary structure algorithms and the lack of tertiary ones}
+From   secondary   structure   prediction  algorithms   like   Zuker's
+\textit{mfold} program \cite{zuker2003}, Hofacker's Vienna RNA package
+\cite{hofacker1994},  or   Mathews  Dynaling  \cite{mathews2002},  one
+obtains a large ensemble  of secondary structure graphs.  These graphs
+can  be analyzed  with graph  theory to  produce a  partition function
+describing  a full  arrangement of  contacts for  the total  number of
+possible secondary structures making possible a "relation of
+microscopic      conformations     to      macroscopic     properties"
+\cite{chen2000}. So far this type of model has not been generalized to
+take into account tertiary structural features, \textit{i.e.}, interhelical
+interactions of RNA.
+In the last two to three years  a boom in prediction of small ($<$ 100
+bp) RNA 3D structures has started.
+Jager TectoRNA
+Shapiro RNA2D3D
+Major MC-Fold -- MC-Sym
+Ding F iFoldRNA
+D. Baker Rosetta, FARNA 
+
+Jonikas, Altman  NAST  Makes coarse grained similar to YUM but takes into account 
+experimental constraints  RNA 2009 paper
+ -Then they instantiate the coarse grained and produce full atomic using knowledge 
+base from crystal structures Bioinformatics 2009pare
+
+
+
+\subsection{RNA overall fold}
 Whereas in the case of proteins one can describe the overall fold
 from the arrangement of secondary structure motifs, \textit{i.e.}, using the
 helix-ribbon-coil images developed by Jane Richardson
@@ -274,14 +283,7 @@ for the nucleotide bases. From the figures it's clear that, whereas the
 ribozyme fold can be clearly understood with this representation, the
 ribosome fold cannot.}
 \end{figure}
-%So far the Richardson's group
-%has developed a graphical way to visualize interhelical interactions in
-%ribosomal regions like the interaction of the 5S ribosomal subunit
-%with helix 38 of 23S domain II
-%using KING software (see Figure 1.3) to
-%represent what they call contact dots. That is, they are showing the 
-%interaction on A minor motif
-%
+
 One can envision that a
 thorough investigation of the parameter space of translational and
 rotational degrees of freedom of the helical regions of RNA could
@@ -300,7 +302,6 @@ distinctive foldings of the phosphodiester backbones of the
 interacting RNA strands"} instead. This classification focuses on the
 local folding of small pieces of RNA and cannot
 describe the overall fold.
-
 
 \subsection{RNA motifs}
 The current review on RNA motifs spans (mainly) the first decade of the

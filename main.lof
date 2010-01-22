@@ -13,9 +13,8 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces GNRA Tetraloop from \textit {Thermus Thermophilus} 23S Ribosomal RNA PDB-ID:1ffk.}}{18}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Dendrogram for consensus clustering of 3D sequential overlaps. All vector elements were normalized.}}{19}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Normalized histograms showing the distribution of overlap values in the 23S subunit or \textit {Thermus Thermophilus} rRNA, PDB-ID:1jjk. In histogram (a) all values are included, but in histogram (b) only values greater than zero are included. Notice the high preponderance of zero values, exactly 897 out of a total of 2705.}}{21}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Dendrogram for consensus clustering of 1D sequential overlaps with zero values filtered out and vector elements normalized to unity.}}{22}{figure.5.4}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Normalized histograms showing the distribution of overlap values in the 23S subunit or \textit {Thermus Thermophilus} rRNA, PDB-ID:1jjk. In histogram (a) all values are included, but in histogram (b) only values greater than zero are included. Notice the high preponderance of zero values, exactly 897 out of a total of 2705.}}{19}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Dendrogram for consensus clustering of overlap scores in the ribosome. Zero values filtered out and remaining data normalized.}}{20}{figure.5.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}

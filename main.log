@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.12.9)  20 JAN 2010 15:37
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.12.9)  21 JAN 2010 15:05
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -434,128 +434,136 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 5.69998pt on input line 6.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 19.
-<Chapter1/rangan2003pnas.png, id=256, 1316.92pt x 558.085pt>
+<Chapter1/rangan2003pnas.png, id=253, 1316.92pt x 558.085pt>
 File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
 <use Chapter1/rangan2003pnas.png> [1
 
 
 
-] [2 <./Chapter1/rangan2003pnas.png (PNG copy)>] [3] <Chapter1/overallfold.png,
- id=373, 308.352pt x 303.2931pt>
+] [2 <./Chapter1/rangan2003pnas.png (PNG copy)>]
+
+LaTeX Warning: Citation `richardson2008' in file `Chapter1/chapter1' on page 3 
+undefined on input line 226.
+
+
+LaTeX Warning: Citation `mathews2002' in file `Chapter1/chapter1' on page 3 und
+efined on input line 232.
+
+[3] <Chapter1/overallfold.png, id=370, 308.352pt x 303.2931pt>
 File: Chapter1/overallfold.png Graphic file (type png)
 
 <use Chapter1/overallfold.png>
-<Chapter1/ribosome_ribozyme.png, id=376, 572.3784pt x 342.5598pt>
+<Chapter1/ribosome_ribozyme.png, id=373, 572.3784pt x 342.5598pt>
 File: Chapter1/ribosome_ribozyme.png Graphic file (type png)
 
 <use Chapter1/ribosome_ribozyme.png>
-Underfull \hbox (badness 10000) in paragraph at lines 300--304
+Underfull \hbox (badness 10000) in paragraph at lines 296--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--312
+Underfull \hbox (badness 10000) in paragraph at lines 301--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--333
+Underfull \hbox (badness 10000) in paragraph at lines 309--329
 
  []
 
 [4 <./Chapter1/overallfold.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 334--341
+Underfull \hbox (badness 10000) in paragraph at lines 330--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--355
+Underfull \hbox (badness 10000) in paragraph at lines 338--351
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 356--364
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--374
+Underfull \hbox (badness 10000) in paragraph at lines 352--360
 
  []
 
 [5 <./Chapter1/ribosome_ribozyme.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 375--387
+Underfull \hbox (badness 10000) in paragraph at lines 361--370
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 388--396
+Underfull \hbox (badness 10000) in paragraph at lines 371--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--404
+Underfull \hbox (badness 10000) in paragraph at lines 384--392
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--418
+Underfull \hbox (badness 10000) in paragraph at lines 393--400
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 419--427
+Underfull \hbox (badness 10000) in paragraph at lines 401--414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--440
+Underfull \hbox (badness 10000) in paragraph at lines 415--423
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--436
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 441--447
+Underfull \hbox (badness 10000) in paragraph at lines 437--443
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--458
+Underfull \hbox (badness 10000) in paragraph at lines 444--454
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 459--469
+Underfull \hbox (badness 10000) in paragraph at lines 455--465
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 470--475
+Underfull \hbox (badness 10000) in paragraph at lines 466--471
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 476--486
+Underfull \hbox (badness 10000) in paragraph at lines 472--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--493
+Underfull \hbox (badness 10000) in paragraph at lines 483--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 494--498
+Underfull \hbox (badness 10000) in paragraph at lines 490--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--510
+Underfull \hbox (badness 10000) in paragraph at lines 495--506
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 511--519
+Underfull \hbox (badness 10000) in paragraph at lines 507--515
 
  []
 
@@ -625,44 +633,30 @@ Overfull \hbox (2.51604pt too wide) in paragraph at lines 9--11
 
 
 
-] <Chapter5/gnra.png, id=500, 706.64pt x 415.5525pt>
+] <Chapter5/gnra.png, id=497, 706.64pt x 415.5525pt>
 File: Chapter5/gnra.png Graphic file (type png)
 
 <use Chapter5/gnra.png>
-Underfull \hbox (badness 10000) in paragraph at lines 83--94
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--94
-
- []
-
-<Chapter5/3Dwindow.png, id=501, 560.8152pt x 808.7013pt>
-File: Chapter5/3Dwindow.png Graphic file (type png)
-
-<use Chapter5/3Dwindow.png>
-<Chapter5/histocompare.png, id=502, 647.41875pt x 782.925pt>
+<Chapter5/histocompare.png, id=498, 647.41875pt x 782.925pt>
 File: Chapter5/histocompare.png Graphic file (type png)
 
 <use Chapter5/histocompare.png>
-Overfull \hbox (48.18031pt too wide) in paragraph at lines 115--121
+Overfull \hbox (48.18031pt too wide) in paragraph at lines 88--94
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 17.44608pt on input line 121.
+LaTeX Warning: Float too large for page by 17.44608pt on input line 94.
 
-<Chapter5/eucli_cons.png, id=503, 1123.19624pt x 778.91pt>
+<Chapter5/eucli_cons.png, id=499, 1123.19624pt x 778.91pt>
 File: Chapter5/eucli_cons.png Graphic file (type png)
 
 <use Chapter5/eucli_cons.png>
 
-LaTeX Warning: Float too large for page by 39.80458pt on input line 130.
+LaTeX Warning: Float too large for page by 39.92947pt on input line 101.
 
-[18 <./Chapter5/gnra.png>] [19 <./Chapter5/3Dwindow.png>]
-(./Chapter5/chapter5.bbl [20] [21 <./Chapter5/histocompare.png>] [22 <./Chapter
-5/eucli_cons.png (PNG copy)>]
+(./Chapter5/chapter5.bbl [18 <./Chapter5/gnra.png>] [19 <./Chapter5/histocompar
+e.png>] [20 <./Chapter5/eucli_cons.png (PNG copy)>]
 References
 pdfTeX warning (ext4): destination with the same identifier (name{cite.holbrook
 2005}) has been already used, duplicate ignored
@@ -684,7 +678,7 @@ fier (name{cite.lemieux2006}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.18 \bibitem{lemieux2006}
-                          )) [23
+                          )) [21
 
 ]
 \openout2 = `Chapter6/chapter6.aux'.
@@ -692,7 +686,7 @@ l.18 \bibitem{lemieux2006}
  (./Chapter6/chapter6.tex
 Chapter 6.
 No file Chapter6/chapter6.bbl.
-) [24
+) [22
 
 
 
@@ -702,24 +696,28 @@ No file Chapter6/chapter6.bbl.
 
  (./CV/cv.tex
 Curriculum Vitae
-) [25
+) [23
 
 
 
 
-] (./main.ind [26
+] (./main.ind [24
 
 
 
 ]) (./main.aux (./titles.aux) (./Chapter1/chapter1.aux)
 (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux)
-(./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./CV/cv.aux)) )
+(./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./CV/cv.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred when \iftrue on line 66 was incomplete) 
 Here is how much of TeX's memory you used:
- 4920 strings out of 256217
- 64367 string characters out of 1917095
- 129497 words of memory out of 1500000
- 7868 multiletter control sequences out of 10000+200000
+ 4914 strings out of 256217
+ 64293 string characters out of 1917095
+ 128497 words of memory out of 1500000
+ 7866 multiletter control sequences out of 10000+200000
  41889 words of font info for 64 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  32i,9n,39p,556b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -733,9 +731,9 @@ sr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/u
 rw/helvetic/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvbo8a.pfb><
 /usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf/fonts/ty
 pe1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (33 pages, 2715189 bytes).
+Output written on main.pdf (31 pages, 2696325 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 161 named destinations out of 1000 (max. 131072)
- 316 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 622 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 131072)
+ 311 words of extra memory for PDF output out of 10000 (max. 10000000)
 
