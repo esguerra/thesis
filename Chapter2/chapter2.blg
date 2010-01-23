@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: Chapter2/chapter2.aux
+The style file: nar.bst
+Database file #1: biblio.bib
+Warning--I didn't find a database entry for "olson1972"
+`journal' is a missing field, not a string, for entry Rproj
+while executing---line 2203 of file nar.bst
+Warning--empty journal in Rproj
+You've used 24 entries,
+            1881 wiz_defined-function locations,
+            612 strings with 8433 characters,
+and the built_in function-call counts, 6332 in all, are:
+= -- 633
+> -- 339
+< -- 0
++ -- 122
+- -- 98
+* -- 606
+:= -- 1014
+add.period$ -- 24
+call.type$ -- 24
+change.case$ -- 23
+chr.to.int$ -- 0
+cite$ -- 25
+duplicate$ -- 214
+empty$ -- 566
+format.name$ -- 98
+if$ -- 1461
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 25
+newline$ -- 123
+num.names$ -- 24
+pop$ -- 32
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 73
+stack$ -- 0
+substring$ -- 471
+swap$ -- 22
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 45
+width$ -- 26
+write$ -- 218
+(There was 1 error message)

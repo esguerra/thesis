@@ -13,8 +13,17 @@
 \BOOKMARK [2][-]{subsection.1.4.4}{RNA motifs}{section.1.4}
 \BOOKMARK [0][-]{chapter*.6}{References}{}
 \BOOKMARK [0][-]{chapter.2}{RNA Base Steps}{}
-\BOOKMARK [1][-]{section.2.1}{Consensus Clustering of Single Stranded Base Step Parameters}{chapter.2}
-\BOOKMARK [1][-]{section.2.2}{Four Major Non-ARNA Step Groups in the Ribosome}{chapter.2}
+\BOOKMARK [1][-]{section.2.1}{Dinucleotide Torsion Angles}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.1.1}{Partitional Clustering for Torsion Angles}{section.2.1}
+\BOOKMARK [2][-]{subsection.2.1.2}{Hierarchical Clustering for Torsion Angles}{section.2.1}
+\BOOKMARK [1][-]{section.2.2}{Base-step Parameters}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{Combining Fourier Averaging Results and Clustering Analysis}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.2}{Partitional Clustering for Rigid Body Parameters}{section.2.2}
+\BOOKMARK [2][-]{subsection.2.2.3}{Hierarchical Clustering for Rigid Body Parameters}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{RNA Conformations}{chapter.2}
+\BOOKMARK [1][-]{section.2.4}{Consensus Clustering of Single Stranded Base Step Parameters}{chapter.2}
+\BOOKMARK [1][-]{section.2.5}{Four Major Non-ARNA Step Groups in the Ribosome}{chapter.2}
+\BOOKMARK [0][-]{chapter*.7}{References}{}
 \BOOKMARK [0][-]{chapter.3}{RNA Base-Pairing}{}
 \BOOKMARK [1][-]{section.3.1}{Canonical and Noncanonical Base-pairs, Methods Paper}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{Clustering of Yurong's Classification}{chapter.3}
@@ -28,8 +37,8 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{3DNA-Parser}{section.5.2}
 \BOOKMARK [2][-]{subsection.5.2.2}{Overlap Scores}{section.5.2}
 \BOOKMARK [1][-]{section.5.3}{Triplets on RNA \(comparison to Laing et al.\)}{chapter.5}
-\BOOKMARK [0][-]{chapter*.7}{References}{}
+\BOOKMARK [0][-]{chapter*.8}{References}{}
 \BOOKMARK [0][-]{chapter.6}{RNA Helical Regions and Graph Theory}{}
 \BOOKMARK [0][-]{appendix.A}{Appendix A. Clustering Analysis \(CA\)}{}
 \BOOKMARK [1][-]{section.A.1}{Hierarchical methods}{appendix.A}
-\BOOKMARK [0][-]{appendix*.8}{Curriculum Vitae}{}
+\BOOKMARK [0][-]{appendix*.9}{Curriculum Vitae}{}
