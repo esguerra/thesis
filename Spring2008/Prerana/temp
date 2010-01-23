@@ -1,0 +1,31 @@
+HEADER    RIBONUCLEIC ACID                        23-FEB-00   1EHZ              
+TITLE     THE CRYSTAL STRUCTURE OF YEAST PHENYLALANINE TRNA AT 1.93 A           
+TITLE    2 RESOLUTION                                                           
+COMPND    MOL_ID: 1;                                                            
+COMPND   2 MOLECULE: TRANSFER RNA (PHE);                                        
+COMPND   3 CHAIN: A;                                                            
+COMPND   4 ENGINEERED: YES                                                      
+SOURCE    MOL_ID: 1;                                                            
+SOURCE   2 SYNTHETIC: YES;                                                      
+SOURCE   3 OTHER_DETAILS: THIS SEQUENCE OCCURS NATURALLY IN YEAST               
+KEYWDS    TRNA, YEAST, PHENYLALANINE                                            
+EXPDTA    X-RAY DIFFRACTION                                                     
+AUTHOR    H.SHI,P.B.MOORE                                                       
+REVDAT   3   25-APR-06 1EHZ    1       HETATM JRNL   REMARK                     
+REVDAT   2   22-NOV-00 1EHZ    1       LINK   CONECT MASTER                     
+REVDAT   1   02-OCT-00 1EHZ    0                                                
+JRNL        AUTH   H.SHI,P.B.MOORE                                              
+JRNL        TITL   THE CRYSTAL STRUCTURE OF YEAST PHENYLALANINE TRNA            
+JRNL        TITL 2 AT 1.93 A RESOLUTION: A CLASSIC STRUCTURE REVISITED          
+JRNL        REF    RNA                           V.   6  1091 2000              
+JRNL        REFN   ASTM RNARFU  UK ISSN 1355-8382                               
+HETATM    1 MG    MG   590      70.566  35.530   1.665  1.00 65.44          MG  
+HETATM    2 MN    MN   530      80.714  57.068  31.271  1.00 34.23          MN  
+HETATM    3 MG    MG   510      57.346  47.575  47.279  1.00 62.77          MG  
+HETATM    4 MN    MN   520      49.923  44.427  50.131  1.00 89.20          MN  
+HETATM    5 MG    MG   540      77.110  64.307  25.357  1.00 40.08          MG  
+HETATM    6 MG    MG   560      62.649  46.629  27.595  1.00 47.02          MG  
+HETATM    7 MG    MG   570      73.331  43.321  11.207  1.00 50.39          MG  
+HETATM    8 MG    MG   580      69.222  44.815  33.339  1.00 61.74          MG  
+HETATM    9 MN    MN   550      72.301  48.513  33.894  1.00 56.51          MN  
+END

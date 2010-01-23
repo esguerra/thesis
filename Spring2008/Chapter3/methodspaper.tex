@@ -1,0 +1,3993 @@
+\chapter{RNA Dataset}
+\bibliographystyle{nar}
+%\bibliographystyle{jacs}
+\label{clustering} 
+MicroRNAs (miRNA) are small (~22 nucleotide) helical RNA's which
+down-regulate translation in Eukaryotes forming partial duplex
+structures with mRNA \cite{ruvkun2001}. Motivated by the goal of
+understanding the structural role non-canonical base pairs play in the regulatory
+mechanisms in which miRNAs take part, we have assembled a data set of
+785 RNA crystal structures taken from the Protein Data Bank (PDB). The
+collected structures are composed of a minimum of 3 base pairs, have
+been parsed through 3DNA to detect hydrogen bonds with a distance no
+longer than $3.4$ \AA, Stagger $ \le 1.5$ \AA, Buckle $ \le 30^{\circ}$, and
+other 3DNA parameters in their default values.
+
+\section{Base Pair Counting and Classification}
+\setlongtables
+%\begin{table}[H]
+\begin{center}
+%{\small
+%\begin{tabular}{c|p{5cm}|c|c|c}
+\begin{longtable}{l|c}
+\caption{Distribution of BP (Base Pairs) in RNA Database with 785
+  Crystal Structures.} \label{tab:all}\\
+\hline
+Total number of base pairs & 131934   \\ \hline
+Total number of WC base pairs & 87735(66.5\%)   \\ \hline
+Total number of non-WC base pairs & 44199(33.5\%)  \\ \hline
+\end{longtable}
+%}
+\end{center}
+%\end{table}
+
+In Figure~\ref{fig:WCandnon} we show a scatterplot for the base pair parameters of WC 
+base pairs in red, and non-WC base pairs in blue. From this Figure
+it's clear that WC base pairs have a narrow distribution for Shear, Stretch and Opening, 
+but for Stagger, Buckle and Propeller, the distribution is almost as broad as that of
+non-cannonical WC base pairs. Taking this fact into account we can now
+split our dataset in two parts, a WC one, and a non-canonical one.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6, angle=90]{allscatter.png}
+\caption{Scatterplots showing the distribution of Watson-Crick (WC)
+  and Non-WC base pair in dataset.}
+\label{fig:WCandnon}
+\end{figure}
+
+
+\subsection{All Base Pairs (WC and non-WC)}
+
+\begin{center}
+\begin{longtable}{c|c}
+\caption{Distribution of base pairs according to Leontis-Westhof (LW) classification.}\\ \hline
+\bf{Number of Base Pairs} & \bf{LW Class} \\ \hline \hline
+ 105703 & cis-W/W     \\ \hline
+   9570 & NA          \\ \hline
+   4158 & trans-S/H   \\ \hline
+   3101 & trans-H/S   \\ \hline
+   2593 & trans-W/H   \\ \hline
+   1926 & trans-H/W   \\ \hline
+   1050 & trans-W/W   \\ \hline
+    691 & trans-H/H   \\ \hline
+    677 & trans-S/W   \\ \hline
+    566 & cis-W/H     \\ \hline
+    431 & cis-W/S     \\ \hline
+    371 & cis-S/W     \\ \hline
+    333 & cis-H/W     \\ \hline
+    195 & trans-W/S   \\ \hline
+    178 & cis-S/H     \\ \hline
+    132 & trans-S/S   \\ \hline
+    117 & cis-H/S     \\ \hline
+     82 & cis-S/S     \\ \hline
+     23 & cis-H/H     \\ \hline
+     11 & trans-W/.   \\ \hline
+      5 & cis-X/X     \\ \hline
+      5 & cis-W/.     \\ \hline
+      5 & cis-H/.     \\ \hline
+      3 & trans-./W   \\ \hline
+      3 & trans-S/.   \\ \hline
+      3 & trans-./S   \\ \hline
+      1 & trans-./H   \\ \hline
+      1 & cis-./.     \\ \hline
+\end{longtable}
+\end{center}
+
+
+\begin{center}
+\begin{longtable}{c|c|c}
+\caption{Distribution of base pairs according to LW Classification and WC Classification}\\ \hline
+\bf{Number of Base Pairs} & \bf{LW Classification} & \bf{WC or not} \\ \hline \hline
+84410 & cis-W/W & WC \\  \hline
+3325 & NA & WC \\  \hline
+21293 & cis-W/W & non-WC \\  \hline
+6245 & NA & non-WC \\  \hline
+4158 & trans-S/H & non-WC \\  \hline
+3101 & trans-H/S & non-WC \\  \hline
+2593 & trans-W/H & non-WC \\  \hline
+1926 & trans-H/W & non-WC \\  \hline
+1050 & trans-W/W & non-WC \\  \hline
+691 & trans-H/H & non-WC \\  \hline
+677 & trans-S/W & non-WC \\  \hline
+566 & cis-W/H & non-WC \\  \hline
+431 & cis-W/S & non-WC \\  \hline
+371 & cis-S/W & non-WC \\  \hline
+333 & cis-H/W & non-WC \\  \hline
+195 & trans-W/S & non-WC \\  \hline
+178 & cis-S/H & non-WC \\  \hline
+132 & trans-S/S & non-WC \\  \hline
+117 & cis-H/S & non-WC \\  \hline
+82 & cis-S/S & non-WC \\  \hline
+23 & cis-H/H & non-WC \\  \hline
+11 & trans-W/. & non-WC \\  \hline
+5 & cis-X/X & non-WC \\  \hline
+5 & cis-W/. & non-WC \\  \hline
+5 & cis-H/. & non-WC \\  \hline
+3 & trans-./W & non-WC \\  \hline
+3 & trans-S/. & non-WC \\  \hline
+3 & trans-./S & non-WC \\  \hline
+1 & trans-./H & non-WC \\  \hline
+1 & cis-./. & non-WC \\  \hline
+\end{longtable}
+\end{center}
+
+\begin{center}
+\begin{longtable}{c|c|c|c|c}
+\caption{Distribution of cis-W/W Base Pairs (BP) with Leontis-Westhof
+  Classification (LW) , Number of Hydrogen Bonds (\# HB), and Helical Classifications (HC)}
+\label{tab:allWC_LW_hb_hel}\\ 
+%This is the header for the first page of the table...
+\bf{BP Type} & \bf{\# BP} & \bf{LW Classification} &
+\bf{\# HB} & \bf{HC}  \\  \hline \hline
+\endfirsthead
+
+%This is the header for the remaining page(s) of the table...
+\multicolumn{5}{r}{{\tablename} \thetable{} -- Continued} \\
+\bf{BP Type} & \bf{\# BP} & \bf{LW Classification} &
+\bf{\# HB} & \bf{HC} \\  \hline \hline
+
+\endhead
+
+%This is the footer for all pages except the last page of the table...
+\multicolumn{5}{r}{Continued on Next Page\ldots} \\
+\endfoot
+%This is the footer for the last page of the table...
+\endlastfoot
+C:G & 21061 & cis-W/W & 3 & $H/H$ \\  \hline
+G:C & 19828 & cis-W/W & 3 & $H/H$ \\  \hline
+A:U & 8165 & cis-W/W & 2 & $H/H$ \\  \hline
+U:A & 7939 & cis-W/W & 2 & $H/H$ \\  \hline
+C:G & 4028 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+G:C & 3080 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+G:C & 3013 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+G:U & 2204 & cis-W/W & 2 & $H/H$ \\  \hline
+U:G & 2164 & cis-W/W & 2 & $H/H$ \\  \hline
+C:G & 2055 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+C:G & 1998 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+G:C & 1701 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+C:G & 1535 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+G:C & 1250 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+G:U & 1200 & cis-W/W & 3 & $H/H$ \\  \hline
+A:U & 1086 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+U:G & 1065 & cis-W/W & 3 & $H/H$ \\  \hline
+G:A & 1045 & trans-S/H & 3 & $H/H$ \\  \hline
+U:A & 1000 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+A:G & 954 & trans-H/S & 3 & $H/H$ \\  \hline
+C:G & 865 & cis-W/W & 2 & $H/H$ \\  \hline
+G:C & 795 & cis-W/W & 2 & $H/H$ \\  \hline
+A:U & 709 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+U:A & 681 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+U:A & 588 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+C:G & 568 & NA & 3 & $H/H$ \\  \hline
+G:C & 542 & NA & 3 & $H/H$ \\  \hline
+U:G & 534 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+U:U & 501 & cis-W/W & 2 & $H/H$ \\  \hline
+A:U & 490 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+G:A & 488 & trans-S/H & 2 & $H_e/H_e$ \\  \hline
+G:U & 456 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+A:U & 408 & trans-H/W & 2 & $H/H_qe$ \\  \hline
+C:G & 407 & cis-W/W & 3 & $H_e/H_ie$ \\  \hline
+G:C & 386 & cis-W/W & 4 & $H/H$ \\  \hline
+G:A & 379 & trans-W/H & 3 & $H_e/H_e$ \\  \hline
+G:A & 375 & trans-S/H & 3 & $H_e/H_e$ \\  \hline
+G:U & 362 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+C:G & 362 & cis-W/W & 4 & $H/H$ \\  \hline
+U:A & 354 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+U:A & 331 & cis-W/W & 3 & $H/H$ \\  \hline
+A:G & 320 & trans-H/S & 3 & $H/H_qe$ \\  \hline
+U:G & 315 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+A:U & 305 & cis-W/W & 3 & $H/H$ \\  \hline
+A:U & 305 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+U:G & 302 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+U:A & 293 & cis-W/W & 1 & $H/H$ \\  \hline
+A:U & 290 & cis-W/W & 1 & $H/H$ \\  \hline
+U:A & 285 & trans-W/H & 2 & $H_qe/H$ \\  \hline
+C:G & 229 & NA & 3 & $H_e/H_e$ \\  \hline
+A:G & 229 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+G:A & 226 & trans-S/H & 3 & $H_qe/H_qe$ \\  \hline
+G:A & 224 & trans-S/H & 3 & $H_qe/H$ \\  \hline
+G:C & 218 & NA & 3 & $H/H_qe$ \\  \hline
+A:U & 216 & trans-H/W & 2 & $H_qe/H_qe$ \\  \hline
+A:G & 216 & trans-H/S & 3 & $H_qe/H_qe$ \\  \hline
+G:C & 207 & cis-W/W & 3 & $H_qe/H_i$ \\  \hline
+G:U & 205 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+U:A & 204 & trans-W/H & 2 & $H_qe/H_qe$ \\  \hline
+G:C & 202 & cis-W/W & 1 & $H/H$ \\  \hline
+U:A & 190 & trans-W/H & 2 & $H/H_i$ \\  \hline
+G:U & 188 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+U:G & 186 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+C:C & 179 & cis-W/W & 2 & $H/H$ \\  \hline
+A:G & 177 & trans-H/S & 3 & $H_qe/H$ \\  \hline
+C:G & 176 & cis-W/W & 1 & $H/H$ \\  \hline
+A:U & 171 & NA & 2 & $H/H$ \\  \hline
+A:G & 171 & trans-H/S & 2 & $H/H$ \\  \hline
+C:G & 170 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+C:G & 168 & NA & 3 & $H/H_qe$ \\  \hline
+G:C & 167 & NA & 3 & $H_e/H_e$ \\  \hline
+G:C & 165 & cis-W/W & 3 & $H_ie/H_ie$ \\  \hline
+U:U & 164 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+C:C & 163 & cis-W/W & 1 & $H/H$ \\  \hline
+G:A & 161 & NA & 2 & $H_e/H_ie$ \\  \hline
+U:A & 160 & NA & 2 & $H/H$ \\  \hline
+G:A & 157 & NA & 2 & $H_e/H_e$ \\  \hline
+G:C & 155 & NA & 3 & $H_qe/H_qe$ \\  \hline
+G:C & 155 & cis-W/W & 5 & $H/H$ \\  \hline
+U:A & 151 & trans-W/H & 2 & $H_e/H_ie$ \\  \hline
+C:G & 151 & cis-W/W & 3 & $H/H_i$ \\  \hline
+C:G & 150 & NA & 3 & $H_qe/H_qe$ \\  \hline
+C:G & 149 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+A:A & 147 & trans-H/H & 3 & $H/H_qe$ \\  \hline
+U:G & 139 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:U & 139 & trans-H/W & 2 & $H_i/H$ \\  \hline
+U:G & 135 & cis-W/W & 1 & $H/H$ \\  \hline
+C:G & 135 & NA & 3 & $H_qe/H$ \\  \hline
+A:A & 135 & trans-H/H & 3 & $H_qe/H$ \\  \hline
+U:G & 132 & trans-S/W & 2 & $H_e/H_e$ \\  \hline
+A:G & 128 & cis-W/W & 2 & $H/H$ \\  \hline
+C:G & 126 & cis-W/W & 3 & $H_qe/H_i$ \\  \hline
+U:G & 124 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+C:G & 124 & cis-W/W & 5 & $H/H$ \\  \hline
+G:C & 122 & cis-W/W & 3 & $H_i/H_i$ \\  \hline
+G:C & 122 & cis-W/W & 3 & $H_i/H$ \\  \hline
+G:C & 122 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+G:A & 122 & trans-S/H & 3 & $H/H_qe$ \\  \hline
+A:G & 118 & NA & 3 & $H_e/H_e$ \\  \hline
+G:C & 117 & NA & 3 & $H_qe/H$ \\  \hline
+G:C & 117 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+U:G & 115 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+G:A & 113 & trans-S/H & 4 & $H/H$ \\  \hline
+G:U & 112 & cis-W/W & 1 & $H/H$ \\  \hline
+A:G & 112 & trans-H/S & 2 & $H_qe/H_qe$ \\  \hline
+A:G & 112 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+A:U & 110 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+G:A & 108 & trans-S/H & 2 & $H/H$ \\  \hline
+U:G & 107 & cis-W/W & 4 & $H/H$ \\  \hline
+G:A & 106 & NA & 3 & $H_e/H_e$ \\  \hline
+U:A & 105 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+G:C & 105 & cis-W/W & 3 & $H/H_i$ \\  \hline
+C:U & 102 & cis-W/W & 1 & $H/H$ \\  \hline
+C:G & 102 & cis-W/W & 3 & $H_i/H_i$ \\  \hline
+U:G & 99 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+G:U & 99 & cis-W/W & 4 & $H/H$ \\  \hline
+A:A & 99 & trans-H/S & 2 & $H/H$ \\  \hline
+C:G & 98 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+A:U & 98 & trans-H/W & 2 & $H/H$ \\  \hline
+A:U & 95 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+U:G & 93 & trans-S/W & 3 & $H_e/H_e$ \\  \hline
+A:C & 92 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+A:A & 91 & trans-S/H & 2 & $H/H_qe$ \\  \hline
+G:U & 90 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 90 & cis-W/W & 1 & $H/H$ \\  \hline
+G:C & 88 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+C:G & 87 & NA & 2 & $H/H$ \\  \hline
+G:U & 86 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+C:G & 86 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+U:C & 85 & cis-W/W & 1 & $H/H$ \\  \hline
+G:C & 85 & cis-W/W & 3 & $H_e/H_ie$ \\  \hline
+A:C & 84 & cis-W/W & 1 & $H/H$ \\  \hline
+A:U & 83 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+A:C & 83 & trans-H/W & 3 & $H/H$ \\  \hline
+A:C & 83 & cis-W/W & 2 & $H/H$ \\  \hline
+G:A & 81 & trans-S/H & 2 & $H_qe/H_qe$ \\  \hline
+G:A & 80 & trans-S/H & 2 & $H_qe/H$ \\  \hline
+A:A & 80 & trans-S/H & 1 & $H/H$ \\  \hline
+A:U & 79 & trans-H/W & 2 & $H_qe/H$ \\  \hline
+U:A & 77 & NA & 1 & $H/H$ \\  \hline
+G:C & 77 & cis-W/W & 4 & $H_e/H_e$ \\  \hline
+U:U & 76 & cis-W/W & 3 & $H/H$ \\  \hline
+G:C & 76 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:G & 76 & trans-H/S & 2 & $H/H_qe$ \\  \hline
+G:A & 75 & cis-W/W & 2 & $H/H$ \\  \hline
+C:G & 75 & cis-W/W & 3 & $H_ie/H_ie$ \\  \hline
+A:A & 75 & NA & 2 & $H_qe/H_i$ \\  \hline
+A:A & 75 & cis-S/W & 2 & $H_ie/H_e$ \\  \hline
+U:G & 74 & trans-S/W & 2 & $H_e/H_ie$ \\  \hline
+C:G & 74 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+G:A & 73 & trans-S/H & 4 & $H_e/H_e$ \\  \hline
+G:A & 73 & NA & 3 & $H/H$ \\  \hline
+U:U & 72 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+C:A & 71 & NA & 2 & $H_e/H_e$ \\  \hline
+A:G & 70 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 70 & trans-H/H & 2 & $H_qe/H$ \\  \hline
+U:A & 69 & trans-W/H & 2 & $H/H$ \\  \hline
+G:A & 69 & trans-S/W & 3 & $H_e/H_ie$ \\  \hline
+U:U & 68 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+A:A & 68 & trans-H/H & 3 & $H/H$ \\  \hline
+G:C & 67 & cis-W/W & 3 & $H_i/H_qe$ \\  \hline
+U:A & 66 & trans-W/H & 2 & $H_i/H_i$ \\  \hline
+G:G & 66 & trans-H/S & 2 & $H/H$ \\  \hline
+A:A & 66 & cis-W/S & 2 & $H_i/H_qe$ \\  \hline
+A:U & 65 & trans-H/W & 3 & $H/H_qe$ \\  \hline
+A:G & 65 & trans-H/S & 4 & $H/H$ \\  \hline
+A:A & 65 & trans-W/W & 2 & $H_i/H_qe$ \\  \hline
+A:G & 64 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+A:A & 64 & trans-W/W & 2 & $H_qe/H_i$ \\  \hline
+U:A & 63 & cis-W/H & 2 & $H/H_i$ \\  \hline
+G:C & 63 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+G:C & 63 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+A:G & 63 & trans-H/S & 3 & $H_i/H$ \\  \hline
+U:A & 62 & trans-W/H & 2 & $H/H_qe$ \\  \hline
+G:A & 62 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+G:A & 62 & cis-H/W & 1 & $H_qe/H_qe$ \\  \hline
+C:G & 62 & NA & 2 & $H/H_i$ \\  \hline
+A:G & 62 & cis-W/W & 3 & $H/H$ \\  \hline
+U:U & 61 & cis-W/W & 1 & $H/H$ \\  \hline
+G:A & 61 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+C:A & 61 & NA & 2 & $H/H$ \\  \hline
+G:C & 60 & NA & 2 & $H/H$ \\  \hline
+A:U & 60 & NA & 1 & $H/H$ \\  \hline
+G:C & 58 & NA & 3 & $H_i/H_i$ \\  \hline
+C:A & 58 & trans-W/H & 2 & $H_e/H_e$ \\  \hline
+A:U & 58 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+A:G & 58 & cis-S/S & 3 & $H_i/H$ \\  \hline
+G:C & 57 & cis-W/S & 2 & $H/H_qe$ \\  \hline
+A:U & 57 & trans-H/W & 2 & $H_i/H_i$ \\  \hline
+A:U & 57 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+A:G & 57 & NA & 2 & $H/H_qe$ \\  \hline
+U:A & 56 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+A:A & 56 & NA & 2 & $H/H_qe$ \\  \hline
+G:U & 55 & NA & 2 & $H/H$ \\  \hline
+C:G & 54 & NA & 2 & $H_qe/H_qe$ \\  \hline
+C:A & 54 & cis-W/W & 2 & $H/H$ \\  \hline
+U:A & 53 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+U:A & 53 & cis-W/S & 2 & $H_i/H$ \\  \hline
+G:C & 53 & cis-W/W & 3 & $H_ie/H_e$ \\  \hline
+C:A & 53 & trans-W/H & 3 & $H_qe/H_qe$ \\  \hline
+G:A & 52 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+A:U & 52 & cis-W/W & 2 & $H_i/H$ \\  \hline
+A:U & 52 & cis-W/W & 2 & $H_ie/H_ie$ \\  \hline
+A:A & 52 & NA & 1 & $H_e/H_ie$ \\  \hline
+U:A & 51 & trans-W/H & 3 & $H_qe/H$ \\  \hline
+G:A & 51 & trans-S/H & 1 & $H/H$ \\  \hline
+C:G & 51 & cis-W/W & 3 & $H_ie/H_e$ \\  \hline
+C:C & 51 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+C:A & 51 & trans-S/H & 2 & $H/H$ \\  \hline
+A:U & 51 & trans-H/W & 2 & $H/H_i$ \\  \hline
+A:A & 51 & trans-H/W & 2 & $H/H$ \\  \hline
+U:A & 50 & trans-W/W & 2 & $H_ie/H_e$ \\  \hline
+G:A & 50 & trans-S/H & 3 & $H_ie/H_ie$ \\  \hline
+A:U & 50 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+A:G & 50 & NA & 3 & $H_qe/H$ \\  \hline
+A:A & 50 & trans-H/S & 2 & $H/H_qe$ \\  \hline
+U:A & 49 & cis-W/W & 2 & $H_e/H_ie$ \\  \hline
+U:A & 49 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+G:C & 49 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+C:G & 49 & NA & 3 & $H_e/H_ie$ \\  \hline
+A:U & 49 & NA & 2 & $H_qe/H$ \\  \hline
+A:A & 49 & trans-W/H & 2 & $H_i/H$ \\  \hline
+U:U & 48 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+U:A & 48 & trans-W/S & 2 & $H/H_i$ \\  \hline
+U:A & 48 & NA & 2 & $H/H_qe$ \\  \hline
+U:A & 47 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+G:A & 47 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+G:A & 47 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+C:G & 47 & cis-W/W & 4 & $H_e/H_e$ \\  \hline
+C:A & 47 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+A:G & 47 & trans-H/S & 1 & $H_qe/H$ \\  \hline
+A:G & 47 & NA & 3 & $H_qe/H_qe$ \\  \hline
+G:A & 46 & trans-W/H & 2 & $H_e/H_e$ \\  \hline
+C:G & 46 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+A:G & 46 & trans-H/S & 2 & $H_qe/H$ \\  \hline
+U:A & 45 & NA & 1 & $H_e/H_ie$ \\  \hline
+C:G & 45 & NA & 4 & $H/H$ \\  \hline
+A:U & 45 & trans-H/W & 2 & $H_i/H_qe$ \\  \hline
+A:U & 45 & trans-H/W & 1 & $H_qe/H_qe$ \\  \hline
+A:U & 45 & cis-H/W & 2 & $H_i/H_i$ \\  \hline
+A:G & 45 & NA & 2 & $H_qe/H$ \\  \hline
+A:C & 45 & trans-H/S & 2 & $H/H$ \\  \hline
+U:A & 44 & trans-W/H & 3 & $H_qe/H_qe$ \\  \hline
+U:A & 44 & NA & 2 & $H_e/H_e$ \\  \hline
+G:C & 44 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+C:C & 44 & trans-H/S & 2 & $H/H$ \\  \hline
+A:U & 44 & NA & 1 & $H/H_qe$ \\  \hline
+A:C & 44 & trans-H/W & 2 & $H_i/H$ \\  \hline
+A:A & 44 & trans-H/H & 4 & $H_i/H$ \\  \hline
+G:A & 43 & trans-S/S & 2 & $H/H_i$ \\  \hline
+C:G & 43 & NA & 1 & $H_ie/H_ie$ \\  \hline
+A:U & 43 & trans-H/S & 2 & $H/H$ \\  \hline
+A:G & 43 & cis-W/H & 2 & $H/H_i$ \\  \hline
+A:A & 43 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+5MC:G & 43 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+U:A & 42 & NA & 2 & $H_qe/H$ \\  \hline
+U:A & 42 & NA & 2 & $H_e/H_ie$ \\  \hline
+G:G & 42 & cis-W/H & 2 & $H_i/H$ \\  \hline
+G:A & 42 & trans-S/H & 3 & $H/H_i$ \\  \hline
+G:A & 42 & cis-W/W & 1 & $H/H$ \\  \hline
+U:A & 41 & trans-W/H & 2 & $H_qe/H_i$ \\  \hline
+G:G & 41 & trans-W/H & 2 & $H/H_i$ \\  \hline
+G:C & 41 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+G:C & 41 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+C:C & 41 & NA & 2 & $H_e/H_e$ \\  \hline
+C:A & 41 & trans-S/H & 2 & $H_e/H_ie$ \\  \hline
+A:U & 41 & trans-W/W & 2 & $H_i/H_qe$ \\  \hline
+A:U & 41 & NA & 2 & $H_qe/H_qe$ \\  \hline
+A:C & 41 & trans-S/W & 2 & $H_e/H_e$ \\  \hline
+U:G & 40 & cis-H/S & 3 & $H_qe/H_i$ \\  \hline
+U:A & 40 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+G:C & 40 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+G:A & 40 & trans-W/H & 2 & $H/H$ \\  \hline
+U:A & 39 & NA & 2 & $H_qe/H_qe$ \\  \hline
+G:C & 39 & cis-W/W & 4 & $H_qe/H_qe$ \\  \hline
+A:U & 39 & NA & 2 & $H_e/H_e$ \\  \hline
+A:U & 39 & NA & 1 & $H_i/H_i$ \\  \hline
+A:U & 39 & cis-S/W & 2 & $H_e/H_ie$ \\  \hline
+A:A & 39 & NA & 1 & $H_qe/H$ \\  \hline
+U:G & 38 & cis-S/W & 2 & $H/H$ \\  \hline
+U:C & 38 & trans-W/W & 1 & $H/H_qe$ \\  \hline
+U:A & 38 & cis-W/H & 3 & $H_i/H$ \\  \hline
+G:U & 38 & NA & 1 & $H/H$ \\  \hline
+G:G & 38 & trans-S/H & 2 & $H/H$ \\  \hline
+G:A & 38 & trans-W/H & 2 & $H_qe/H$ \\  \hline
+G:A & 38 & NA & 2 & $H_qe/H$ \\  \hline
+A:G & 38 & NA & 1 & $H_i/H$ \\  \hline
+A:C & 38 & trans-H/W & 3 & $H/H_qe$ \\  \hline
+A:C & 38 & cis-W/H & 1 & $H_qe/H_i$ \\  \hline
+A:A & 38 & trans-S/H & 2 & $H/H$ \\  \hline
+U:U & 37 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+G:G & 37 & NA & 2 & $H_e/H_ie$ \\  \hline
+G:A & 37 & NA & 1 & $H_e/H_e$ \\  \hline
+G:A & 37 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+A:U & 37 & cis-H/W & 2 & $H_ie/H_ie$ \\  \hline
+A:A & 37 & NA & 3 & $H/H$ \\  \hline
+U:A & 36 & trans-W/H & 3 & $H_e/H_ie$ \\  \hline
+G:G & 36 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+C:U & 36 & trans-H/S & 2 & $H/H$ \\  \hline
+C:G & 36 & cis-W/W & 4 & $H_qe/H_qe$ \\  \hline
+U:G & 35 & NA & 2 & $H_e/H_e$ \\  \hline
+U:A & 35 & trans-W/H & 2 & $H_i/H$ \\  \hline
+G:G & 35 & NA & 3 & $H_e/H_e$ \\  \hline
+G:C & 35 & NA & 4 & $H/H$ \\  \hline
+G:A & 35 & NA & 1 & $H_e/H_ie$ \\  \hline
+G:A & 35 & cis-W/H & 2 & $H_qe/H_i$ \\  \hline
+A:U & 35 & NA & 2 & $H/H_qe$ \\  \hline
+A:U & 35 & cis-H/W & 2 & $H/H_i$ \\  \hline
+U:C & 34 & NA & 2 & $H_i/H$ \\  \hline
+U:A & 34 & NA & 3 & $H_e/H_ie$ \\  \hline
+G:U & 34 & trans-S/H & 1 & $H/H$ \\  \hline
+G:U & 34 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+G:G & 34 & trans-W/H & 2 & $H_e/H_ie$ \\  \hline
+G:A & 34 & NA & 2 & $H/H$ \\  \hline
+G:A & 34 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+C:G & 34 & NA & 2 & $H/H_qe$ \\  \hline
+C:C & 34 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+C:C & 34 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+A:C & 34 & trans-H/W & 3 & $H_qe/H_i$ \\  \hline
+A:A & 34 & NA & 2 & $H_i/H$ \\  \hline
+U:A & 33 & cis-W/H & 2 & $H_e/H_ie$ \\  \hline
+G:U & 33 & cis-W/S & 2 & $H/H_i$ \\  \hline
+G:A & 33 & NA & 2 & $H_qe/H_qe$ \\  \hline
+C:G & 33 & NA & 2 & $H_qe/H$ \\  \hline
+C:G & 33 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+G:C & 32 & NA & 2 & $H_e/H_e$ \\  \hline
+G:A & 32 & cis-S/W & 1 & $H_e/H_ie$ \\  \hline
+C:G & 32 & NA & 3 & $H_ie/H_ie$ \\  \hline
+C:C & 32 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+C:A & 32 & cis-W/W & 1 & $H/H$ \\  \hline
+G:C & 31 & trans-W/W & 2 & $H_ie/H_ie$ \\  \hline
+C:G & 31 & cis-W/W & 5 & $H_qe/H_qe$ \\  \hline
+A:G & 31 & trans-H/S & 1 & $H/H$ \\  \hline
+U:G & 30 & cis-W/W & 3 & $H_qe/H_i$ \\  \hline
+U:G & 30 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+U:A & 30 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+G:U & 30 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+G:U & 30 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+G:A & 30 & trans-S/H & 2 & $H/H_qe$ \\  \hline
+G:A & 30 & cis-W/W & 3 & $H/H$ \\  \hline
+A:U & 30 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 30 & NA & 2 & $H_qe/H$ \\  \hline
+U:G & 29 & NA & 2 & $H/H$ \\  \hline
+G:U & 29 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+C:U & 29 & cis-W/W & 3 & $H/H_i$ \\  \hline
+C:A & 29 & NA & 2 & $H_i/H_qe$ \\  \hline
+A:U & 29 & NA & 2 & $H_i/H$ \\  \hline
+A:U & 29 & NA & 1 & $H_qe/H_i$ \\  \hline
+A:U & 29 & cis-W/W & 1 & $H_i/H$ \\  \hline
+A:A & 29 & trans-S/H & 2 & $H_e/H_e$ \\  \hline
+A:A & 29 & trans-H/H & 3 & $H_qe/H_qe$ \\  \hline
+A:A & 29 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+5BU:A & 29 & cis-W/W & 2 & $H/H$ \\  \hline
+U:G & 28 & trans-S/W & 3 & $H_e/H_ie$ \\  \hline
+U:G & 28 & trans-H/S & 1 & $H_qe/H$ \\  \hline
+U:C & 28 & NA & 1 & $H_e/H_e$ \\  \hline
+G:U & 28 & NA & 2 & $H/H_qe$ \\  \hline
+C:C & 28 & cis-W/W & 2 & $H_i/H$ \\  \hline
+A:U & 28 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+A:A & 28 & NA & 2 & $H_e/H_ie$ \\  \hline
+U:U & 27 & NA & 2 & $H/H$ \\  \hline
+PSU:G & 27 & trans-S/W & 2 & $H_e/H_ie$ \\  \hline
+C:G & 27 & NA & 2 & $H_e/H_e$ \\  \hline
+C:G & 27 & cis-W/W & 3 & $H_i/H_qe$ \\  \hline
+A:G & 27 & trans-H/S & 2 & $H_i/H$ \\  \hline
+A:A & 27 & NA & 2 & $H_i/H_qe$ \\  \hline
+U:U & 26 & NA & 2 & $H_e/H_e$ \\  \hline
+U:G & 26 & NA & 1 & $H/H$ \\  \hline
+U:A & 26 & NA & 1 & $H_qe/H_qe$ \\  \hline
+U:A & 26 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+U:A & 26 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+G:C & 26 & NA & 3 & $H_qe/H_i$ \\  \hline
+G:C & 26 & NA & 2 & $H_qe/H$ \\  \hline
+G:A & 26 & trans-S/H & 2 & $H_e/H_ie$ \\  \hline
+G:A & 26 & trans-H/H & 2 & $H_qe/H$ \\  \hline
+C:A & 26 & trans-W/H & 3 & $H_i/H_qe$ \\  \hline
+A:U & 26 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+A:G & 26 & trans-W/S & 2 & $H_i/H_qe$ \\  \hline
+U:A & 25 & trans-W/H & 3 & $H_qe/H_i$ \\  \hline
+U:A & 25 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+G:C & 25 & NA & 3 & $H_i/H_qe$ \\  \hline
+C:G & 25 & cis-W/W & 5 & $H_e/H_e$ \\  \hline
+C:G & 25 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+C:A & 25 & NA & 1 & $H/H$ \\  \hline
+A:U & 25 & trans-W/W & 2 & $H_qe/H$ \\  \hline
+A:U & 25 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+A:U & 25 & cis-H/W & 3 & $H/H_i$ \\  \hline
+A:G & 25 & NA & 2 & $H_e/H_e$ \\  \hline
+A:A & 25 & trans-H/W & 2 & $H_e/H_e$ \\  \hline
+A:A & 25 & NA & 1 & $H_i/H_qe$ \\  \hline
+A:A & 25 & cis-S/H & 1 & $H_qe/H_i$ \\  \hline
+G:U & 24 & NA & 3 & $H/H$ \\  \hline
+G:C & 24 & NA & 2 & $H_ie/H_ie$ \\  \hline
+G:A & 24 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+C:G & 24 & NA & 3 & $H_i/H_i$ \\  \hline
+C:C & 24 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+A:G & 24 & NA & 2 & $H_i/H_qe$ \\  \hline
+A:A & 24 & trans-H/H & 1 & $H_qe/H$ \\  \hline
+A:A & 24 & trans-H/H & 1 & $H_i/H_i$ \\  \hline
+G:G & 23 & cis-W/H & 2 & $H/H_i$ \\  \hline
+G:C & 23 & NA & 2 & $H_qe/H_qe$ \\  \hline
+G:C & 23 & cis-W/W & 5 & $H/H_qe$ \\  \hline
+G:A & 23 & trans-S/H & 3 & $H_i/H$ \\  \hline
+G:A & 23 & trans-S/H & 3 & $H_e/H_ie$ \\  \hline
+C:A & 23 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:U & 23 & trans-H/W & 2 & $H_e/H_e$ \\  \hline
+A:U & 23 & cis-W/W & 2 & $H/H_i$ \\  \hline
+A:G & 23 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+A:G & 23 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+A:A & 23 & trans-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 23 & trans-W/W & 2 & $H/H_qe$ \\  \hline
+U:G & 22 & cis-W/W & 4 & $H_e/H_e$ \\  \hline
+U:A & 22 & cis-W/W & 4 & $H/H$ \\  \hline
+U:A & 22 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+U:A & 22 & cis-W/W & 1 & $H_i/H_i$ \\  \hline
+G:U & 22 & trans-W/H & 1 & $H/H$ \\  \hline
+G:G & 22 & trans-H/S & 1 & $H/H$ \\  \hline
+G:C & 22 & NA & 3 & $H_i/H$ \\  \hline
+G:C & 22 & NA & 2 & $H/H_qe$ \\  \hline
+G:A & 22 & trans-S/W & 2 & $H_ie/H_ie$ \\  \hline
+A:U & 22 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+A:A & 22 & NA & 1 & $H_ie/H_ie$ \\  \hline
+A:A & 22 & NA & 1 & $H_e/H_e$ \\  \hline
+2MG:C & 22 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+U:U & 21 & NA & 1 & $H_e/H_e$ \\  \hline
+U:U & 21 & cis-W/W & 2 & $H_i/H$ \\  \hline
+U:G & 21 & NA & 3 & $H/H$ \\  \hline
+U:G & 21 & NA & 1 & $H_qe/H$ \\  \hline
+U:G & 21 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+U:C & 21 & trans-S/H & 2 & $H_qe/H$ \\  \hline
+U:A & 21 & NA & 1 & $H_e/H_e$ \\  \hline
+U:A & 21 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:U & 21 & NA & 2 & $H_i/H_qe$ \\  \hline
+G:U & 21 & cis-W/W & 5 & $H/H$ \\  \hline
+G:U & 21 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+G:A & 21 & trans-S/W & 2 & $H_e/H_ie$ \\  \hline
+G:A & 21 & NA & 3 & $H_e/H_ie$ \\  \hline
+C:U & 21 & trans-H/S & 1 & $H/H$ \\  \hline
+C:U & 21 & NA & 3 & $H/H_i$ \\  \hline
+C:G & 21 & NA & 1 & $H/H$ \\  \hline
+C:A & 21 & NA & 2 & $H/H_qe$ \\  \hline
+A:U & 21 & NA & 2 & $H_ie/H_ie$ \\  \hline
+A:U & 21 & NA & 1 & $H_qe/H$ \\  \hline
+A:G & 21 & NA & 2 & $H_qe/H_qe$ \\  \hline
+A:G & 21 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+A:A & 21 & trans-W/H & 1 & $H/H_qe$ \\  \hline
+A:A & 21 & trans-H/W & 2 & $H_qe/H$ \\  \hline
+A:A & 21 & trans-H/S & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 21 & cis-W/S & 2 & $H/H_qe$ \\  \hline
+5MU:A & 21 & trans-W/H & 2 & $H/H_i$ \\  \hline
+5MU:1MA & 21 & trans-W/H & 2 & $H/H_i$ \\  \hline
+U:A & 20 & trans-W/H & 3 & $H/H_qe$ \\  \hline
+U:A & 20 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+G:G & 20 & trans-H/W & 3 & $H/H_qe$ \\  \hline
+G:G & 20 & NA & 3 & $H_qe/H_i$ \\  \hline
+G:G & 20 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+G:A & 20 & NA & 1 & $H_i/H_i$ \\  \hline
+G:A & 20 & NA & 1 & $H_ie/H_ie$ \\  \hline
+C:A & 20 & NA & 1 & $H_e/H_ie$ \\  \hline
+A:U & 20 & trans-H/W & 3 & $H/H$ \\  \hline
+A:G & 20 & trans-H/S & 2 & $H_e/H_e$ \\  \hline
+A:G & 20 & trans-H/S & 1 & $H_qe/H_qe$ \\  \hline
+A:G & 20 & cis-W/W & 1 & $H_i/H$ \\  \hline
+A:C & 20 & cis-W/S & 2 & $H_qe/H$ \\  \hline
+A:C & 20 & cis-W/S & 1 & $H/H_qe$ \\  \hline
+A:A & 20 & NA & 2 & $H_ie/H_e$ \\  \hline
+U:A & 19 & trans-S/S & 4 & $H_e/H_e$ \\  \hline
+G:U & 19 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+C:U & 19 & trans-W/S & 1 & $H/H$ \\  \hline
+C:G & 19 & NA & 1 & $H/H_qe$ \\  \hline
+A:M2G & 19 & NA & 2 & $H_qe/H$ \\  \hline
+A:G & 19 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+A:A & 19 & trans-W/H & 2 & $H/H_qe$ \\  \hline
+A:A & 19 & NA & 1 & $H/H_qe$ \\  \hline
+A:A & 19 & NA & 1 & $H/H$ \\  \hline
+U:C & 18 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+U:A & 18 & trans-W/H & 3 & $H_e/H_e$ \\  \hline
+U:A & 18 & trans-S/H & 2 & $H_e/H_e$ \\  \hline
+U:A & 18 & NA & 1 & $H_qe/H$ \\  \hline
+G:U & 18 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+G:C & 18 & NA & 1 & $H_qe/H$ \\  \hline
+G:C & 18 & cis-W/W & 5 & $H_qe/H$ \\  \hline
+G:A & 18 & trans-S/H & 4 & $H_qe/H_qe$ \\  \hline
+G:A & 18 & NA & 2 & $H_qe/H_i$ \\  \hline
+C:G & 18 & NA & 1 & $H_e/H_e$ \\  \hline
+C:G & 18 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+C:A & 18 & trans-H/S & 1 & $H/H$ \\  \hline
+C:A & 18 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+A:U & 18 & trans-H/W & 3 & $H/H_i$ \\  \hline
+A:U & 18 & NA & 3 & $H_ie/H_ie$ \\  \hline
+A:U & 18 & NA & 2 & $H_i/H_i$ \\  \hline
+A:U & 18 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+A:U & 18 & cis-W/S & 1 & $H_qe/H$ \\  \hline
+A:G & 18 & trans-H/S & 3 & $H_e/H_e$ \\  \hline
+A:G & 18 & NA & 3 & $H/H_qe$ \\  \hline
+A:G & 18 & NA & 2 & $H_qe/H_i$ \\  \hline
+A:G & 18 & NA & 2 & $H_ie/H_e$ \\  \hline
+A:G & 18 & NA & 2 & $H/H_i$ \\  \hline
+A:G & 18 & NA & 2 & $H/H$ \\  \hline
+A:C & 18 & NA & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 18 & trans-H/W & 1 & $H_qe/H$ \\  \hline
+A:A & 18 & NA & 2 & $H/H_i$ \\  \hline
+U:U & 17 & trans-W/W & 2 & $H_ie/H_ie$ \\  \hline
+U:G & 17 & trans-H/W & 1 & $H_qe/H$ \\  \hline
+U:G & 17 & NA & 2 & $H_qe/H_i$ \\  \hline
+U:A & 17 & cis-W/H & 2 & $H_i/H$ \\  \hline
+G:U & 17 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+G:U & 17 & cis-W/S & 2 & $H/H_qe$ \\  \hline
+G:A & 17 & NA & 4 & $H/H$ \\  \hline
+C:U & 17 & NA & 1 & $H/H$ \\  \hline
+C:G & 17 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+C:G & 17 & cis-W/W & 5 & $H/H_qe$ \\  \hline
+C:A & 17 & trans-S/H & 1 & $H/H$ \\  \hline
+A:U & 17 & trans-W/W & 2 & $H_i/H$ \\  \hline
+A:C & 17 & cis-W/W & 3 & $H/H$ \\  \hline
+A:A & 17 & trans-W/H & 1 & $H/H$ \\  \hline
+A:A & 17 & trans-H/H & 3 & $H_i/H$ \\  \hline
+A:A & 17 & NA & 2 & $H_qe/H_qe$ \\  \hline
+A:5BU & 17 & cis-W/W & 2 & $H/H$ \\  \hline
+5MC:G & 17 & cis-W/W & 3 & $H/H$ \\  \hline
+U:U & 16 & NA & 1 & $H/H$ \\  \hline
+U:C & 16 & cis-W/W & 2 & $H/H$ \\  \hline
+U:A & 16 & trans-W/H & 3 & $H/H_i$ \\  \hline
+U:A & 16 & NA & 3 & $H/H$ \\  \hline
+U:A & 16 & cis-W/W & 1 & $H_e/H_ie$ \\  \hline
+G:G & 16 & cis-H/W & 2 & $H/H$ \\  \hline
+G:C & 16 & NA & 2 & $H_i/H_qe$ \\  \hline
+G:C & 16 & NA & 1 & $H/H$ \\  \hline
+G:C & 16 & cis-W/W & 5 & $H_e/H_e$ \\  \hline
+G:A & 16 & NA & 3 & $H_qe/H_qe$ \\  \hline
+G:A & 16 & NA & 3 & $H/H_qe$ \\  \hline
+G:A & 16 & NA & 1 & $H_i/H_qe$ \\  \hline
+G:A & 16 & cis-W/H & 3 & $H_qe/H_i$ \\  \hline
+C:U & 16 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+C:G & 16 & NA & 3 & $H_ie/H_e$ \\  \hline
+C:G & 16 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+C:A & 16 & trans-H/S & 2 & $H/H$ \\  \hline
+C:A & 16 & NA & 3 & $H_ie/H_e$ \\  \hline
+A:U & 16 & NA & 1 & $H_e/H_e$ \\  \hline
+A:U & 16 & cis-W/W & 1 & $H_i/H_qe$ \\  \hline
+A:C & 16 & trans-H/W & 2 & $H/H$ \\  \hline
+A:A & 16 & trans-S/H & 1 & $H/H_qe$ \\  \hline
+A:A & 16 & cis-S/W & 1 & $H_ie/H_e$ \\  \hline
+U:G & 15 & NA & 2 & $H_ie/H_ie$ \\  \hline
+U:G & 15 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+U:C & 15 & trans-S/W & 2 & $H_qe/H$ \\  \hline
+U:A & 15 & trans-H/H & 1 & $H_e/H_e$ \\  \hline
+U:A & 15 & NA & 2 & $H_ie/H_ie$ \\  \hline
+PSU:A & 15 & cis-W/W & 3 & $H/H$ \\  \hline
+G:U & 15 & NA & 1 & $H/H_qe$ \\  \hline
+G:G & 15 & NA & 3 & $H_ie/H_e$ \\  \hline
+G:G & 15 & NA & 2 & $H_e/H_e$ \\  \hline
+G:G & 15 & NA & 1 & $H_e/H_ie$ \\  \hline
+G:C & 15 & NA & 2 & $H_qe/H_i$ \\  \hline
+G:A & 15 & trans-W/H & 2 & $H_qe/H_qe$ \\  \hline
+G:A & 15 & NA & 3 & $H_qe/H$ \\  \hline
+C:A & 15 & NA & 2 & $H_ie/H_e$ \\  \hline
+A:C & 15 & NA & 2 & $H/H$ \\  \hline
+A:A & 15 & trans-H/W & 2 & $H_qe/H_i$ \\  \hline
+A:A & 15 & trans-H/W & 2 & $H_i/H_i$ \\  \hline
+A:A & 15 & cis-W/W & 2 & $H/H$ \\  \hline
+U:C & 14 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+U:A & 14 & trans-W/H & 1 & $H_e/H_e$ \\  \hline
+U:A & 14 & cis-W/H & 3 & $H_e/H_ie$ \\  \hline
+G:U & 14 & cis-W/W & 4 & $H_qe/H_qe$ \\  \hline
+G:U & 14 & cis-S/H & 3 & $H_i/H_qe$ \\  \hline
+G:C & 14 & NA & 4 & $H_e/H_e$ \\  \hline
+G:A & 14 & trans-S/H & 1 & $H_qe/H$ \\  \hline
+C:G & 14 & NA & 3 & $H_qe/H_i$ \\  \hline
+C:A & 14 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+A:U & 14 & NA & 3 & $H_qe/H_qe$ \\  \hline
+A:G & 14 & cis-W/W & 1 & $H/H$ \\  \hline
+A:A & 14 & trans-W/W & 2 & $H_i/H_i$ \\  \hline
+A:A & 14 & trans-H/W & 1 & $H_e/H_e$ \\  \hline
+A:A & 14 & trans-H/H & 2 & $H_ie/H_ie$ \\  \hline
+U:G & 13 & NA & 3 & $H_i/H$ \\  \hline
+U:G & 13 & cis-W/W & 5 & $H/H$ \\  \hline
+U:G & 13 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+U:G & 13 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+U:A & 13 & trans-W/H & 1 & $H/H_i$ \\  \hline
+G:U & 13 & NA & 2 & $H_qe/H$ \\  \hline
+G:U & 13 & cis-S/H & 3 & $H_qe/H_i$ \\  \hline
+G:C & 13 & NA & 5 & $H/H$ \\  \hline
+G:C & 13 & NA & 3 & $H_ie/H_ie$ \\  \hline
+G:A & 13 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+G:A & 13 & NA & 1 & $H_qe/H$ \\  \hline
+C:A & 13 & trans-W/H & 2 & $H/H$ \\  \hline
+A:U & 13 & trans-H/W & 3 & $H_i/H$ \\  \hline
+A:G & 13 & trans-H/S & 3 & $H_i/H_i$ \\  \hline
+A:G & 13 & NA & 3 & $H/H$ \\  \hline
+A:G & 13 & NA & 1 & $H/H_qe$ \\  \hline
+A:A & 13 & trans-H/W & 2 & $H/H_qe$ \\  \hline
+A:A & 13 & trans-H/W & 1 & $H/H_qe$ \\  \hline
+A:A & 13 & trans-H/S & 1 & $H/H_qe$ \\  \hline
+A:A & 13 & trans-H/H & 2 & $H/H_qe$ \\  \hline
+U:G & 12 & NA & 1 & $H_e/H_e$ \\  \hline
+U:G & 12 & cis-S/W & 3 & $H/H$ \\  \hline
+U:C & 12 & NA & 1 & $H_qe/H$ \\  \hline
+U:C & 12 & cis-W/W & 5 & $H/H_qe$ \\  \hline
+U:A & 12 & trans-W/H & 1 & $H_qe/H$ \\  \hline
+U:A & 12 & trans-S/S & 4 & $H_e/H_ie$ \\  \hline
+U:A & 12 & NA & 2 & $H_ie/H_e$ \\  \hline
+PSU:G & 12 & trans-S/W & 3 & $H_e/H_ie$ \\  \hline
+G:U & 12 & NA & 1 & $H_ie/H_ie$ \\  \hline
+G:U & 12 & cis-S/H & 1 & $H_i/H_qe$ \\  \hline
+G:G & 12 & trans-S/H & 3 & $H/H$ \\  \hline
+G:G & 12 & cis-W/H & 3 & $H/H_i$ \\  \hline
+G:C & 12 & NA & 4 & $H_qe/H_qe$ \\  \hline
+G:C & 12 & NA & 2 & $H_i/H_i$ \\  \hline
+G:A & 12 & trans-S/H & 1 & $H/H_qe$ \\  \hline
+G:A & 12 & NA & 1 & $H_qe/H_qe$ \\  \hline
+C:G & 12 & cis-H/W & 1 & $H/H_qe$ \\  \hline
+C:A & 12 & trans-W/W & 1 & $H_e/H_e$ \\  \hline
+C:A & 12 & trans-W/H & 3 & $H/H$ \\  \hline
+C:A & 12 & trans-W/H & 2 & $H_qe/H$ \\  \hline
+C:A & 12 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+C43:G48 & 12 & cis-W/W & 3 & $H/H$ \\  \hline
+A:U & 12 & NA & 3 & $H_qe/H_i$ \\  \hline
+A:U & 12 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+A:G & 12 & trans-H/S & 2 & $H_ie/H_e$ \\  \hline
+A:G & 12 & NA & 1 & $H_qe/H_i$ \\  \hline
+A:C & 12 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 12 & trans-W/W & 1 & $H/H_qe$ \\  \hline
+A:A & 12 & trans-W/H & 1 & $H/H_i$ \\  \hline
+A:A & 12 & NA & 2 & $H/H$ \\  \hline
+U:U & 11 & NA & 2 & $H_e/H_ie$ \\  \hline
+U:U & 11 & NA & 1 & $H_qe/H_qe$ \\  \hline
+U:G & 11 & trans-S/W & 1 & $H_e/H_ie$ \\  \hline
+U:G & 11 & cis-W/W & 4 & $H_qe/H_qe$ \\  \hline
+U:C & 11 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+U:C & 11 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+U:C & 11 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+U:A & 11 & NA & 2 & $H_i/H$ \\  \hline
+U:A & 11 & NA & 1 & $H_i/H_qe$ \\  \hline
+U:A & 11 & cis-S/W & 1 & $H_e/H_e$ \\  \hline
+G:U & 11 & trans-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:U & 11 & NA & 2 & $H_e/H_e$ \\  \hline
+G:G & 11 & trans-H/S & 3 & $H/H$ \\  \hline
+G:C & 11 & NA & 4 & $H_qe/H$ \\  \hline
+G:C & 11 & NA & 3 & $H_e/H_ie$ \\  \hline
+G:C & 11 & NA & 1 & $H_e/H_e$ \\  \hline
+G:C & 11 & cis-W/W & 4 & $H_ie/H_ie$ \\  \hline
+G:C & 11 & cis-W/W & 2 & $H_i/H$ \\  \hline
+G:A & 11 & cis-W/S & 2 & $H/H_qe$ \\  \hline
+G48:C43 & 11 & cis-W/W & 3 & $H/H$ \\  \hline
+C:U & 11 & cis-W/W & 2 & $H/H_i$ \\  \hline
+C:U & 11 & cis-W/W & 1 & $H/H_i$ \\  \hline
+C:G & 11 & NA & 1 & $H_qe/H_qe$ \\  \hline
+C:G & 11 & cis-W/W & 4 & $H_e/H_ie$ \\  \hline
+C:A & 11 & NA & 3 & $H/H_qe$ \\  \hline
+C:A & 11 & NA & 2 & $H_qe/H_qe$ \\  \hline
+C:A & 11 & NA & 1 & $H_e/H_e$ \\  \hline
+A:U & 11 & NA & 1 & $H_qe/H_qe$ \\  \hline
+A:U & 11 & cis-H/S & 2 & $H_qe/H_i$ \\  \hline
+A:G & 11 & trans-H/S & 2 & $H_i/H_qe$ \\  \hline
+A:G & 11 & NA & 1 & $H/H_i$ \\  \hline
+A:C & 11 & NA & 2 & $H_qe/H_qe$ \\  \hline
+A:C & 11 & NA & 2 & $H_e/H_ie$ \\  \hline
+A:C & 11 & NA & 1 & $H_qe/H_i$ \\  \hline
+A:A & 11 & trans-W/W & 2 & $H_i/H$ \\  \hline
+A:A & 11 & trans-W/S & 2 & $H/H$ \\  \hline
+A:A & 11 & trans-H/S & 1 & $H/H$ \\  \hline
+A:A & 11 & cis-W/H & 1 & $H/H_qe$ \\  \hline
+A:A & 11 & cis-H/S & 1 & $H_i/H_qe$ \\  \hline
+U:A & 10 & trans-W/W & 1 & $H_e/H_ie$ \\  \hline
+U:A & 10 & NA & 4 & $H_e/H_ie$ \\  \hline
+U:A & 10 & NA & 2 & $H_qe/H_i$ \\  \hline
+U:A & 10 & NA & 1 & $H_ie/H_ie$ \\  \hline
+U:A & 10 & NA & 1 & $H_ie/H_e$ \\  \hline
+G:G & 10 & trans-W/W & 3 & $H/H_qe$ \\  \hline
+G:A & 10 & NA & 2 & $H_ie/H_ie$ \\  \hline
+C:U & 10 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+C:G & 10 & cis-W/W & 1 & $H_ie/H_ie$ \\  \hline
+C:A & 10 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+C:A & 10 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+A:U & 10 & trans-H/W & 2 & $H_qe/H_i$ \\  \hline
+A:U & 10 & NA & 3 & $H/H_qe$ \\  \hline
+A:U & 10 & cis-W/W & 2 & $H_e/H_ie$ \\  \hline
+A:G & 10 & trans-H/S & 2 & $H_ie/H_ie$ \\  \hline
+A:G & 10 & trans-H/S & 1 & $H/H_qe$ \\  \hline
+A:C & 10 & trans-H/S & 1 & $H_qe/H$ \\  \hline
+A:C & 10 & NA & 1 & $H_ie/H_e$ \\  \hline
+A:C & 10 & NA & 1 & $H/H$ \\  \hline
+A:C & 10 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+A:A & 10 & trans-W/W & 2 & $H/H_i$ \\  \hline
+A:A & 10 & NA & 1 & $H_qe/H_i$ \\  \hline
+U:U & 9 & trans-W/W & 2 & $H_qe/H_qe$ \\  \hline
+U:U & 9 & NA & 1 & $H_ie/H_ie$ \\  \hline
+U:U & 9 & cis-W/W & 4 & $H/H$ \\  \hline
+U:G & 9 & trans-W/W & 2 & $H/H$ \\  \hline
+U:G & 9 & NA & 3 & $H_e/H_e$ \\  \hline
+U:G & 9 & NA & 2 & $H_e/H_ie$ \\  \hline
+U:G & 9 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+U:C & 9 & NA & 1 & $H_qe/H_qe$ \\  \hline
+U:A & 9 & trans-W/S & 1 & $H/H_i$ \\  \hline
+U:A & 9 & NA & 1 & $H/H_qe$ \\  \hline
+U:A & 9 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+U:A & 9 & cis-W/W & 3 & $H_ie/H_e$ \\  \hline
+G:U & 9 & NA & 3 & $H_qe/H$ \\  \hline
+G:U & 9 & NA & 2 & $H_qe/H_qe$ \\  \hline
+G:U & 9 & NA & 1 & $H_qe/H_qe$ \\  \hline
+G:G & 9 & trans-W/W & 2 & $H/H_qe$ \\  \hline
+G:C & 9 & cis-W/W & 1 & $H_ie/H_e$ \\  \hline
+G:A & 9 & trans-S/H & 2 & $H_ie/H_ie$ \\  \hline
+G:A & 9 & NA & 1 & $H_qe/H_i$ \\  \hline
+C:U & 9 & cis-W/W & 2 & $H/H$ \\  \hline
+C:G & 9 & NA & 4 & $H_e/H_e$ \\  \hline
+C:G & 9 & cis-W/W & 3 & $H_i/H$ \\  \hline
+C:C & 9 & trans-S/H & 2 & $H/H$ \\  \hline
+C:C & 9 & NA & 2 & $H/H$ \\  \hline
+C:C & 9 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+C:A & 9 & trans-W/H & 1 & $H_qe/H$ \\  \hline
+C:A & 9 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+A:U & 9 & trans-W/S & 1 & $H_qe/H$ \\  \hline
+A:U & 9 & trans-H/W & 3 & $H_qe/H_qe$ \\  \hline
+A:U & 9 & NA & 3 & $H/H$ \\  \hline
+A:U & 9 & cis-W/W & 4 & $H/H$ \\  \hline
+A:U & 9 & cis-W/W & 1 & $H_i/H_i$ \\  \hline
+A:G & 9 & trans-H/S & 4 & $H_qe/H_qe$ \\  \hline
+A:G & 9 & trans-H/S & 3 & $H/H_i$ \\  \hline
+A:G & 9 & NA & 2 & $H_ie/H_ie$ \\  \hline
+A:G & 9 & NA & 2 & $H_e/H_ie$ \\  \hline
+A:C & 9 & NA & 1 & $H_e/H_ie$ \\  \hline
+A:A & 9 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 9 & trans-H/H & 3 & $H_e/H_e$ \\  \hline
+A:A & 9 & trans-H/H & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 9 & cis-W/H & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 9 & cis-H/H & 1 & $H_i/H_i$ \\  \hline
+U:U & 8 & NA & 3 & $H_e/H_e$ \\  \hline
+U:U & 8 & NA & 2 & $H_i/H_i$ \\  \hline
+U:U & 8 & NA & 2 & $H_ie/H_ie$ \\  \hline
+U:U & 8 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+U:U & 8 & cis-W/H & 1 & $H/H_qe$ \\  \hline
+U:G & 8 & trans-W/W & 2 & $H_e/H_e$ \\  \hline
+U:G & 8 & trans-S/H & 3 & $H_e/H_e$ \\  \hline
+U:G & 8 & NA & 3 & $H_i/H_qe$ \\  \hline
+U:C & 8 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+U:A & 8 & trans-W/W & 2 & $H_qe/H_i$ \\  \hline
+U:A & 8 & NA & 3 & $H_qe/H_qe$ \\  \hline
+U:A & 8 & NA & 3 & $H/H_i$ \\  \hline
+U:A & 8 & NA & 2 & $H_i/H_qe$ \\  \hline
+U36:A44 & 8 & cis-W/W & 2 & $H/H$ \\  \hline
+G:U & 8 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+G:U & 8 & NA & 3 & $H_qe/H_i$ \\  \hline
+G:U & 8 & NA & 3 & $H/H_qe$ \\  \hline
+G:U & 8 & cis-S/H & 2 & $H_qe/H_i$ \\  \hline
+G:U & 8 & cis-S/H & 2 & $H_ie/H_e$ \\  \hline
+G:G & 8 & trans-S/S & 3 & $H_qe/H_i$ \\  \hline
+G:G & 8 & trans-H/W & 2 & $H_i/H_qe$ \\  \hline
+G:G & 8 & NA & 3 & $H_e/H_ie$ \\  \hline
+G:G & 8 & NA & 1 & $H/H_i$ \\  \hline
+G:G & 8 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+G:G & 8 & cis-S/H & 3 & $H_e/H_ie$ \\  \hline
+G:C & 8 & trans-W/W & 2 & $H/H_i$ \\  \hline
+G:C & 8 & NA & 2 & $H_ie/H_e$ \\  \hline
+G:C & 8 & cis-W/W & 5 & $H_qe/H_qe$ \\  \hline
+G:C & 8 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+G:A & 8 & trans-W/H & 3 & $H_e/H_ie$ \\  \hline
+G:A & 8 & trans-S/W & 2 & $H_i/H_i$ \\  \hline
+G:A & 8 & trans-S/W & 1 & $H/H_qe$ \\  \hline
+G:A & 8 & NA & 1 & $H/H_i$ \\  \hline
+C:G & 8 & cis-W/W & 2 & $H_ie/H_ie$ \\  \hline
+C:G & 8 & cis-W/W & 2 & $H_e/H_ie$ \\  \hline
+C:A & 8 & trans-W/W & 2 & $H_qe/H_qe$ \\  \hline
+C:A & 8 & trans-W/S & 1 & $H/H$ \\  \hline
+C:A & 8 & trans-S/H & 2 & $H_qe/H$ \\  \hline
+C:A & 8 & trans-S/H & 1 & $H/H_qe$ \\  \hline
+C:A & 8 & NA & 2 & $H_e/H_ie$ \\  \hline
+C:A & 8 & cis-S/W & 1 & $H_e/H_e$ \\  \hline
+A:U & 8 & NA & 2 & $H_i/H_qe$ \\  \hline
+A:U & 8 & NA & 1 & $H_e/H_ie$ \\  \hline
+A:G & 8 & trans-H/S & 3 & $H_i/H_qe$ \\  \hline
+A:G & 8 & NA & 4 & $H_qe/H$ \\  \hline
+A:G & 8 & NA & 3 & $H_i/H_qe$ \\  \hline
+A:C & 8 & trans-S/W & 2 & $H/H_qe$ \\  \hline
+A:C & 8 & NA & 3 & $H_qe/H_i$ \\  \hline
+A:A & 8 & trans-H/H & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 8 & NA & 2 & $H_ie/H_ie$ \\  \hline
+A:A & 8 & cis-S/W & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 8 & cis-S/W & 2 & $H_qe/H_i$ \\  \hline
+A44:U36 & 8 & cis-W/W & 2 & $H/H$ \\  \hline
+U:U & 7 & NA & 2 & $H/H_qe$ \\  \hline
+U:U & 7 & NA & 1 & $H_qe/H$ \\  \hline
+U:U & 7 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+U:G & 7 & NA & 3 & $H_qe/H$ \\  \hline
+U:G & 7 & NA & 3 & $H_e/H_ie$ \\  \hline
+U:G & 7 & NA & 2 & $H_qe/H$ \\  \hline
+U:G & 7 & NA & 1 & $H_qe/H_qe$ \\  \hline
+U:G & 7 & NA & 1 & $H_qe/H_i$ \\  \hline
+U:G & 7 & cis-W/W & 2 & $H_e/H_ie$ \\  \hline
+U:G & 7 & cis-S/W & 2 & $H_i/H$ \\  \hline
+U:G & 7 & cis-H/S & 2 & $H_qe/H_i$ \\  \hline
+U:C & 7 & trans-W/W & 1 & $H/H$ \\  \hline
+U:C & 7 & NA & 2 & $H_ie/H_ie$ \\  \hline
+U:C & 7 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+U:A & 7 & trans-W/W & 2 & $H/H_i$ \\  \hline
+U:A & 7 & trans-W/H & 2 & $H_ie/H_ie$ \\  \hline
+U:A & 7 & trans-W/H & 1 & $H_e/H_ie$ \\  \hline
+U:A & 7 & trans-S/S & 5 & $H_e/H_ie$ \\  \hline
+U:A & 7 & trans-S/H & 3 & $H_e/H_e$ \\  \hline
+U:A & 7 & NA & 1 & $H_qe/H_i$ \\  \hline
+U:A & 7 & cis-W/H & 2 & $H/H_qe$ \\  \hline
+U:A & 7 & cis-W/H & 2 & $H_e/H_e$ \\  \hline
+G:U & 7 & NA & 3 & $H_ie/H_e$ \\  \hline
+G:U & 7 & cis-W/W & 2 & $H_e/H_ie$ \\  \hline
+G:U & 7 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+G:G & 7 & trans-W/H & 3 & $H_e/H_e$ \\  \hline
+G:G & 7 & NA & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 7 & NA & 2 & $H/H_i$ \\  \hline
+G:G & 7 & cis-W/H & 3 & $H/H_qe$ \\  \hline
+G:G & 7 & cis-W/H & 2 & $H/H$ \\  \hline
+G:C & 7 & trans-W/W & 3 & $H_ie/H_ie$ \\  \hline
+G:C & 7 & NA & 2 & $H_i/H$ \\  \hline
+G:C & 7 & NA & 1 & $H/H_qe$ \\  \hline
+G:C & 7 & cis-W/W & 2 & $H_ie/H_ie$ \\  \hline
+G:C & 7 & cis-W/W & 1 & $H_i/H_i$ \\  \hline
+G:CBV & 7 & cis-W/W & 3 & $H/H$ \\  \hline
+G:A & 7 & trans-W/H & 3 & $H_ie/H_ie$ \\  \hline
+G:A & 7 & trans-S/H & 4 & $H_qe/H$ \\  \hline
+DC:G & 7 & cis-W/W & 3 & $H/H$ \\  \hline
+C:G & 7 & NA & 5 & $H/H$ \\  \hline
+C:G & 7 & NA & 3 & $H/H_i$ \\  \hline
+C:G & 7 & NA & 1 & $H_e/H_ie$ \\  \hline
+C:G & 7 & cis-W/H & 2 & $H_e/H_ie$ \\  \hline
+C:G & 7 & cis-W/H & 1 & $H_e/H_ie$ \\  \hline
+C:C & 7 & trans-W/S & 2 & $H/H$ \\  \hline
+C:A & 7 & trans-W/S & 2 & $H/H$ \\  \hline
+C:A & 7 & NA & 4 & $H_e/H_ie$ \\  \hline
+C:A & 7 & NA & 3 & $H_ie/H_ie$ \\  \hline
+C:A & 7 & cis-W/W & 3 & $H/H$ \\  \hline
+A:U & 7 & trans-H/W & 3 & $H_qe/H$ \\  \hline
+A:U & 7 & trans-H/W & 1 & $H_i/H$ \\  \hline
+A:U & 7 & trans-H/S & 1 & $H_qe/H$ \\  \hline
+A:U & 7 & NA & 2 & $H_ie/H_e$ \\  \hline
+A:U & 7 & NA & 2 & $H/H_i$ \\  \hline
+A:U & 7 & cis-W/W & 3 & $H_i/H_qe$ \\  \hline
+A:G & 7 & trans-H/W & 2 & $H_qe/H_qe$ \\  \hline
+A:G & 7 & NA & 2 & $H_i/H$ \\  \hline
+A:G & 7 & cis-S/W & 2 & $H_qe/H$ \\  \hline
+A:C & 7 & trans-W/S & 1 & $H_qe/H$ \\  \hline
+A:C & 7 & trans-S/H & 1 & $H/H$ \\  \hline
+A:C & 7 & trans-H/W & 3 & $H_i/H$ \\  \hline
+A:C & 7 & cis-W/S & 2 & $H_i/H_qe$ \\  \hline
+A:A & 7 & trans-W/H & 3 & $H_i/H$ \\  \hline
+A:A & 7 & trans-H/S & 3 & $H/H$ \\  \hline
+A:A & 7 & trans-H/H & 3 & $H_e/H_ie$ \\  \hline
+U:G & 6 & trans-W/H & 2 & $H_e/H_ie$ \\  \hline
+U:G & 6 & cis-W/W & 3 & $H_e/H_ie$ \\  \hline
+U:G & 6 & cis-H/S & 2 & $H_i/H_qe$ \\  \hline
+U:C & 6 & NA & 3 & $H/H$ \\  \hline
+U:C & 6 & NA & 2 & $H/H_qe$ \\  \hline
+U:C & 6 & NA & 1 & $H_e/H_ie$ \\  \hline
+U:C & 6 & cis-W/W & 3 & $H/H$ \\  \hline
+U:A & 6 & trans-W/W & 2 & $H_ie/H_ie$ \\  \hline
+U:A & 6 & trans-W/H & 4 & $H_qe/H_qe$ \\  \hline
+U:A & 6 & trans-W/H & 3 & $H_i/H_qe$ \\  \hline
+U:A & 6 & trans-W/H & 1 & $H_qe/H_qe$ \\  \hline
+U:A & 6 & trans-S/H & 1 & $H/H_qe$ \\  \hline
+U:A & 6 & NA & 5 & $H_e/H_ie$ \\  \hline
+U:A & 6 & NA & 3 & $H_i/H_qe$ \\  \hline
+U:A & 6 & NA & 2 & $H_i/H_i$ \\  \hline
+U:A & 6 & NA & 2 & $H/H_i$ \\  \hline
+U:A & 6 & NA & 1 & $H/H_i$ \\  \hline
+U:A & 6 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+U:A & 6 & cis-W/S & 1 & $H_i/H$ \\  \hline
+U:A & 6 & cis-W/H & 1 & $H_e/H_ie$ \\  \hline
+U:A & 6 & cis-S/H & 1 & $H_qe/H_i$ \\  \hline
+PSU:G & 6 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+G:U & 6 & NA & 4 & $H_ie/H_ie$ \\  \hline
+G:U & 6 & NA & 1 & $H_e/H_ie$ \\  \hline
+G:U & 6 & NA & 1 & $H_e/H_e$ \\  \hline
+G:G & 6 & trans-W/H & 2 & $H/H$ \\  \hline
+G:G & 6 & NA & 3 & $H/H_qe$ \\  \hline
+G:G & 6 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+G:G & 6 & cis-W/S & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 6 & cis-H/W & 3 & $H/H$ \\  \hline
+G:G & 6 & cis-H/W & 2 & $H_ie/H_e$ \\  \hline
+G:C & 6 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+G:C & 6 & NA & 5 & $H_qe/H$ \\  \hline
+G:C & 6 & NA & 4 & $H/H_qe$ \\  \hline
+G:C & 6 & NA & 3 & $H_ie/H_e$ \\  \hline
+G:C & 6 & NA & 1 & $H_ie/H_ie$ \\  \hline
+G:C & 6 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+G:C & 6 & cis-W/H & 1 & $H_qe/H$ \\  \hline
+G:A & 6 & trans-W/S & 3 & $H_e/H_e$ \\  \hline
+G:A & 6 & trans-W/H & 3 & $H_qe/H$ \\  \hline
+G:A & 6 & trans-S/W & 2 & $H_qe/H_i$ \\  \hline
+G:A & 6 & trans-S/H & 4 & $H/H_qe$ \\  \hline
+G:A & 6 & NA & 4 & $H_qe/H_qe$ \\  \hline
+G:A & 6 & NA & 4 & $H_qe/H$ \\  \hline
+G:A & 6 & NA & 2 & $H/H_qe$ \\  \hline
+C:U & 6 & NA & 2 & $H/H_i$ \\  \hline
+C:G & 6 & NA & 3 & $H_i/H_qe$ \\  \hline
+C:G & 6 & NA & 2 & $H_ie/H_e$ \\  \hline
+C:G & 6 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+C:C & 6 & trans-W/W & 1 & $H/H$ \\  \hline
+C:C & 6 & NA & 1 & $H/H_qe$ \\  \hline
+C:C & 6 & cis-W/W & 3 & $H_i/H$ \\  \hline
+C:C & 6 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+CBV:G & 6 & cis-W/W & 3 & $H/H$ \\  \hline
+C:A & 6 & trans-W/W & 4 & $H/H_qe$ \\  \hline
+C:A & 6 & NA & 2 & $H_qe/H_i$ \\  \hline
+C:A & 6 & NA & 1 & $H_i/H_qe$ \\  \hline
+C:A & 6 & cis-W/W & 3 & $H_e/H_ie$ \\  \hline
+C:A & 6 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+A:U & 6 & trans-H/W & 4 & $H/H_qe$ \\  \hline
+A:U & 6 & cis-W/W & 4 & $H_qe/H_i$ \\  \hline
+A:U & 6 & cis-H/W & 3 & $H_ie/H_e$ \\  \hline
+A:G & 6 & trans-H/W & 2 & $H/H_qe$ \\  \hline
+A:G & 6 & NA & 3 & $H_ie/H_ie$ \\  \hline
+A:G & 6 & NA & 1 & $H_i/H_qe$ \\  \hline
+A:G & 6 & NA & 1 & $H_ie/H_e$ \\  \hline
+A:C & 6 & trans-W/W & 4 & $H_qe/H$ \\  \hline
+A:C & 6 & trans-S/H & 1 & $H/H_qe$ \\  \hline
+A:C & 6 & trans-H/W & 2 & $H_e/H_e$ \\  \hline
+A:C & 6 & NA & 3 & $H/H$ \\  \hline
+A:C & 6 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:C & 6 & cis-W/S & 2 & $H_i/H$ \\  \hline
+A:A & 6 & trans-W/H & 2 & $H_qe/H$ \\  \hline
+A:A & 6 & trans-W/H & 2 & $H_i/H_i$ \\  \hline
+A:A & 6 & trans-W/H & 2 & $H/H_i$ \\  \hline
+A:A & 6 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+A:A & 6 & trans-H/W & 1 & $H_i/H$ \\  \hline
+A:A & 6 & trans-H/W & 1 & $H/H$ \\  \hline
+A:A & 6 & trans-H/S & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 6 & NA & 3 & $H_ie/H_ie$ \\  \hline
+A:A & 6 & NA & 3 & $H/H_qe$ \\  \hline
+A:A & 6 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+5BU:A & 6 & cis-W/W & 3 & $H/H$ \\  \hline
+U:U & 5 & NA & 2 & $H_qe/H$ \\  \hline
+U:U & 5 & NA & 2 & $H_ie/H_e$ \\  \hline
+U:U & 5 & NA & 1 & $H_ie/H_e$ \\  \hline
+U:G & 5 & trans-W/W & 1 & $H_qe/H$ \\  \hline
+U:G & 5 & trans-W/H & 3 & $H_e/H_ie$ \\  \hline
+U:G & 5 & trans-S/W & 1 & $H_e/H_e$ \\  \hline
+U:G & 5 & trans-S/H & 2 & $H_e/H_e$ \\  \hline
+U:G & 5 & NA & 3 & $H/H_qe$ \\  \hline
+U:G & 5 & NA & 2 & $H_qe/H_qe$ \\  \hline
+U:G & 5 & NA & 1 & $H_ie/H_ie$ \\  \hline
+U:G & 5 & cis-W/W & 5 & $H_qe/H_qe$ \\  \hline
+U:G & 5 & cis-S/W & 2 & $H_e/H_e$ \\  \hline
+U:C & 5 & trans-W/. & 1 & $H_e/H_e$ \\  \hline
+U:C & 5 & NA & 2 & $H_e/H_ie$ \\  \hline
+U:C & 5 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+U:A & 5 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+U:A & 5 & trans-W/H & 4 & $H_e/H_ie$ \\  \hline
+U:A & 5 & trans-W/H & 3 & $H/H$ \\  \hline
+U:A & 5 & trans-W/H & 2 & $H_e/H_e$ \\  \hline
+U:A & 5 & trans-S/S & 3 & $H_e/H_e$ \\  \hline
+U:A & 5 & NA & 4 & $H_qe/H_qe$ \\  \hline
+U:A & 5 & NA & 3 & $H_qe/H$ \\  \hline
+U:A & 5 & cis-W/W & 3 & $H_ie/H_ie$ \\  \hline
+U:A & 5 & cis-W/W & 2 & $H_ie/H_ie$ \\  \hline
+U:A & 5 & cis-W/H & 2 & $H_qe/H_i$ \\  \hline
+PSU:G & 5 & NA & 1 & $H_e/H_ie$ \\  \hline
+LC:LG & 5 & cis-W/W & 3 & $H/H$ \\  \hline
+H2U:U & 5 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+G:U & 5 & trans-W/W & 1 & $H_e/H_e$ \\  \hline
+G:U & 5 & trans-S/W & 1 & $H/H_qe$ \\  \hline
+G:U & 5 & NA & 4 & $H_qe/H_qe$ \\  \hline
+G:U & 5 & NA & 3 & $H_qe/H_qe$ \\  \hline
+G:U & 5 & NA & 3 & $H_e/H_e$ \\  \hline
+G:U & 5 & NA & 1 & $H_i/H_qe$ \\  \hline
+G:G & 5 & trans-W/W & 2 & $H/H$ \\  \hline
+G:G & 5 & trans-S/W & 1 & $H/H_qe$ \\  \hline
+G:G & 5 & trans-S/H & 1 & $H/H$ \\  \hline
+G:G & 5 & NA & 4 & $H_e/H_ie$ \\  \hline
+G:G & 5 & NA & 4 & $H_e/H_e$ \\  \hline
+G:G & 5 & NA & 1 & $H_qe/H_i$ \\  \hline
+G:G & 5 & NA & 1 & $H_qe/H$ \\  \hline
+G:G & 5 & NA & 1 & $H/H_qe$ \\  \hline
+G:C & 5 & trans-W/W & 1 & $H_e/H_ie$ \\  \hline
+G:A & 5 & trans-W/H & 3 & $H/H$ \\  \hline
+G:A & 5 & trans-S/W & 1 & $H_e/H_ie$ \\  \hline
+G:A & 5 & trans-S/H & 3 & $H_ie/H_e$ \\  \hline
+G:A & 5 & trans-S/H & 2 & $H_i/H_i$ \\  \hline
+G:A & 5 & trans-S/H & 1 & $H/H_i$ \\  \hline
+G:A & 5 & trans-S/H & 1 & $H_e/H_ie$ \\  \hline
+G:A & 5 & NA & 4 & $H_e/H_e$ \\  \hline
+G:A & 5 & NA & 3 & $H_ie/H_e$ \\  \hline
+G:A & 5 & NA & 2 & $H_ie/H_e$ \\  \hline
+G:A & 5 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+G:5MC & 5 & cis-W/W & 3 & $H/H$ \\  \hline
+C:U & 5 & NA & 1 & $H/H_qe$ \\  \hline
+C:U & 5 & NA & 1 & $H/H_i$ \\  \hline
+C:U & 5 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+C:G & 5 & NA & 4 & $H_qe/H_qe$ \\  \hline
+C:G & 5 & NA & 2 & $H_e/H_ie$ \\  \hline
+C:G & 5 & NA & 1 & $H_i/H$ \\  \hline
+C:G & 5 & cis-W/W & 1 & $H_i/H_qe$ \\  \hline
+C:G & 5 & cis-W/W & 1 & $H_ie/H_e$ \\  \hline
+C:G & 5 & cis-S/W & 1 & $H/H$ \\  \hline
+C:C & 5 & trans-W/W & 2 & $H/H$ \\  \hline
+C:C & 5 & NA & 3 & $H_i/H$ \\  \hline
+C:C & 5 & NA & 2 & $H_e/H_ie$ \\  \hline
+C:C & 5 & NA & 1 & $H_i/H_qe$ \\  \hline
+C:A & 5 & trans-W/W & 2 & $H_i/H_qe$ \\  \hline
+C:A & 5 & trans-W/H & 3 & $H_e/H_e$ \\  \hline
+C:A & 5 & trans-S/H & 2 & $H_ie/H_ie$ \\  \hline
+C:A & 5 & NA & 4 & $H_ie/H_e$ \\  \hline
+C:A & 5 & NA & 2 & $H_i/H_i$ \\  \hline
+C:A & 5 & NA & 2 & $H/H_i$ \\  \hline
+C:A & 5 & cis-S/S & 2 & $H/H_i$ \\  \hline
+A:U & 5 & trans-W/W & 2 & $H/H_i$ \\  \hline
+A:U & 5 & trans-H/W & 1 & $H/H_qe$ \\  \hline
+A:U & 5 & NA & 3 & $H_e/H_ie$ \\  \hline
+A:U & 5 & NA & 2 & $H_e/H_ie$ \\  \hline
+A:U & 5 & NA & 1 & $H_ie/H_ie$ \\  \hline
+A:U & 5 & cis-W/W & 3 & $H_i/H_i$ \\  \hline
+A:U & 5 & cis-H/W & 4 & $H/H_i$ \\  \hline
+A:U & 5 & cis-H/W & 2 & $H_ie/H_e$ \\  \hline
+A:U & 5 & cis-H/S & 4 & $H/H_i$ \\  \hline
+A:U & 5 & cis-H/S & 3 & $H_i/H_qe$ \\  \hline
+A:U & 5 & cis-H/S & 1 & $H_qe/H_i$ \\  \hline
+A:G & 5 & trans-W/S & 1 & $H_i/H$ \\  \hline
+A:G & 5 & trans-H/W & 2 & $H_ie/H_e$ \\  \hline
+A:G & 5 & trans-H/W & 1 & $H/H_qe$ \\  \hline
+A:G & 5 & trans-H/S & 4 & $H_qe/H$ \\  \hline
+A:G & 5 & trans-H/S & 3 & $H_ie/H_e$ \\  \hline
+A:G & 5 & NA & 3 & $H_ie/H_e$ \\  \hline
+A:G & 5 & NA & 2 & $H_i/H_i$ \\  \hline
+A:G & 5 & NA & 1 & $H_ie/H_ie$ \\  \hline
+A:G & 5 & NA & 1 & $H_e/H_ie$ \\  \hline
+A:G & 5 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+A:G & 5 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+A:G & 5 & cis-W/H & 2 & $H/H_qe$ \\  \hline
+A:C & 5 & trans-H/W & 2 & $H_qe/H_qe$ \\  \hline
+A:C & 5 & trans-H/W & 1 & $H_e/H_ie$ \\  \hline
+A:C & 5 & trans-H/S & 1 & $H_ie/H_ie$ \\  \hline
+A:C & 5 & NA & 2 & $H_e/H_e$ \\  \hline
+A:C & 5 & NA & 1 & $H/H_qe$ \\  \hline
+A:C & 5 & NA & 1 & $H_e/H_e$ \\  \hline
+A:C & 5 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+A:A & 5 & trans-W/W & 2 & $H_ie/H_e$ \\  \hline
+A:A & 5 & trans-W/W & 1 & $H/H_i$ \\  \hline
+A:A & 5 & trans-W/H & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 5 & trans-S/H & 3 & $H/H_qe$ \\  \hline
+A:A & 5 & trans-H/W & 2 & $H_i/H_qe$ \\  \hline
+A:A & 5 & NA & 3 & $H_qe/H_qe$ \\  \hline
+A:A & 5 & NA & 3 & $H_e/H_e$ \\  \hline
+A:A & 5 & NA & 2 & $H_i/H_i$ \\  \hline
+A:A & 5 & NA & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 5 & cis-S/H & 2 & $H_i/H_qe$ \\  \hline
+A:A & 5 & cis-S/H & 1 & $H_i/H_i$ \\  \hline
+A:A & 5 & cis-H/H & 2 & $H_ie/H_e$ \\  \hline
+A:4SU & 5 & trans-H/W & 2 & $H/H_i$ \\  \hline
+5MU:A & 5 & trans-W/H & 3 & $H/H_i$ \\  \hline
+U:U & 4 & trans-W/W & 3 & $H_ie/H_ie$ \\  \hline
+U:U & 4 & trans-W/H & 2 & $H_e/H_ie$ \\  \hline
+U:U & 4 & NA & 2 & $H_qe/H_qe$ \\  \hline
+U:U & 4 & NA & 1 & $H_i/H$ \\  \hline
+U:U & 4 & cis-W/W & 3 & $H_qe/H_i$ \\  \hline
+U:U & 4 & cis-W/W & 3 & $H_e/H_ie$ \\  \hline
+U:U & 4 & cis-W/W & 1 & $H_i/H$ \\  \hline
+U:U & 4 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+U:U & 4 & cis-W/S & 2 & $H_qe/H_qe$ \\  \hline
+UMS:A & 4 & cis-W/W & 2 & $H/H$ \\  \hline
+U:G & 4 & trans-S/W & 4 & $H_e/H_e$ \\  \hline
+U:G & 4 & NA & 4 & $H_qe/H_qe$ \\  \hline
+U:G & 4 & NA & 2 & $H_i/H_qe$ \\  \hline
+U:G & 4 & NA & 1 & $H_e/H_ie$ \\  \hline
+U:G & 4 & cis-W/W & 5 & $H/H_qe$ \\  \hline
+U:G & 4 & cis-W/W & 4 & $H_e/H_ie$ \\  \hline
+U:G & 4 & cis-W/W & 1 & $H_i/H_qe$ \\  \hline
+U:G & 4 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+U:G & 4 & cis-W/H & 1 & $H_i/H_qe$ \\  \hline
+U:G & 4 & cis-S/W & 2 & $H_qe/H_qe$ \\  \hline
+U:C & 4 & trans-W/W & 1 & $H_qe/H_qe$ \\  \hline
+U:C & 4 & trans-W/W & 1 & $H_e/H_e$ \\  \hline
+U:C & 4 & trans-S/W & 1 & $H_e/H_e$ \\  \hline
+U:C & 4 & NA & 3 & $H_e/H_ie$ \\  \hline
+U:C & 4 & NA & 2 & $H_qe/H$ \\  \hline
+U:C & 4 & NA & 1 & $H_i/H_i$ \\  \hline
+U:C & 4 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+U:C & 4 & cis-S/W & 2 & $H_qe/H$ \\  \hline
+U:A & 4 & trans-W/W & 1 & $H_qe/H$ \\  \hline
+U:A & 4 & trans-W/H & 3 & $H_i/H_i$ \\  \hline
+U:A & 4 & trans-W/H & 1 & $H/H_qe$ \\  \hline
+U:A & 4 & trans-S/W & 1 & $H_ie/H_ie$ \\  \hline
+U:A & 4 & trans-S/S & 6 & $H_e/H_ie$ \\  \hline
+U:A & 4 & trans-S/S & 5 & $H_e/H_e$ \\  \hline
+U:A & 4 & trans-S/S & 3 & $H_e/H_ie$ \\  \hline
+U:A & 4 & trans-S/H & 4 & $H_e/H_e$ \\  \hline
+U:A & 4 & trans-S/H & 2 & $H_e/H_ie$ \\  \hline
+U:A & 4 & NA & 4 & $H_i/H_i$ \\  \hline
+U:A & 4 & cis-W/W & 4 & $H_e/H_e$ \\  \hline
+U:A & 4 & cis-W/W & 2 & $H/H_i$ \\  \hline
+U:A & 4 & cis-W/S & 3 & $H_i/H$ \\  \hline
+U:A & 4 & cis-W/H & 4 & $H_e/H_ie$ \\  \hline
+U:A & 4 & cis-W/H & 3 & $H_e/H_e$ \\  \hline
+U:A & 4 & cis-W/H & 2 & $H/H$ \\  \hline
+PSU:G & 4 & cis-W/W & 3 & $H/H$ \\  \hline
+OMG:OMC & 4 & cis-W/W & 5 & $H/H$ \\  \hline
+OMG:OMC & 4 & cis-W/W & 3 & $H/H$ \\  \hline
+OMC:OMG & 4 & cis-W/W & 5 & $H/H$ \\  \hline
+OMC:OMG & 4 & cis-W/W & 3 & $H/H$ \\  \hline
+G:U & 4 & trans-S/H & 1 & $H/H_qe$ \\  \hline
+G:U & 4 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+G:U & 4 & cis-W/W & 3 & $H_e/H_ie$ \\  \hline
+G:U & 4 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+G:U & 4 & cis-S/W & 1 & $H_ie/H_e$ \\  \hline
+G:U & 4 & cis-S/H & 1 & $H_ie/H_ie$ \\  \hline
+GTP:C & 4 & cis-W/W & 3 & $H/H$ \\  \hline
+G:PPU & 4 & NA & 2 & $H_e/H_ie$ \\  \hline
+G:G & 4 & trans-W/W & 1 & $H_e/H_ie$ \\  \hline
+G:G & 4 & trans-S/H & 1 & $H_ie/H_ie$ \\  \hline
+G:G & 4 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+G:G & 4 & trans-H/S & 1 & $H/H_qe$ \\  \hline
+G:G & 4 & NA & 3 & $H_i/H_i$ \\  \hline
+G:G & 4 & NA & 3 & $H/H$ \\  \hline
+G:G & 4 & NA & 1 & $H_ie/H_e$ \\  \hline
+G:G & 4 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 4 & cis-W/H & 2 & $H/H_qe$ \\  \hline
+G:G & 4 & cis-H/W & 2 & $H/H_i$ \\  \hline
+G:C & 4 & NA & 5 & $H_e/H_e$ \\  \hline
+G:C & 4 & NA & 4 & $H_i/H_qe$ \\  \hline
+G:C & 4 & NA & 1 & $H_qe/H_i$ \\  \hline
+G:C & 4 & NA & 1 & $H_e/H_ie$ \\  \hline
+G:C & 4 & cis-W/W & 5 & $H/H_i$ \\  \hline
+G:C & 4 & cis-W/W & 4 & $H_i/H$ \\  \hline
+G:C & 4 & cis-W/W & 2 & $H_e/H_ie$ \\  \hline
+G:C & 4 & cis-W/W & 1 & $H_i/H_qe$ \\  \hline
+G:C & 4 & cis-W/S & 3 & $H/H_qe$ \\  \hline
+G:A & 4 & trans-W/H & 2 & $H_e/H_ie$ \\  \hline
+G:A & 4 & trans-W/H & 1 & $H_qe/H_qe$ \\  \hline
+G:A & 4 & trans-S/W & 2 & $H/H_i$ \\  \hline
+G:A & 4 & trans-S/H & 5 & $H/H$ \\  \hline
+G:A & 4 & trans-S/H & 3 & $H_qe/H_i$ \\  \hline
+G:A & 4 & trans-H/W & 2 & $H_qe/H$ \\  \hline
+G:A & 4 & NA & 3 & $H_i/H_qe$ \\  \hline
+G:A & 4 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+G:A & 4 & cis-W/H & 2 & $H_e/H_ie$ \\  \hline
+G:A & 4 & cis-S/W & 2 & $H_ie/H_ie$ \\  \hline
+G:A & 4 & cis-H/W & 2 & $H_qe/H$ \\  \hline
+G48:C43 & 4 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+CSL:G & 4 & cis-W/W & 3 & $H/H$ \\  \hline
+C:G & 4 & NA & 5 & $H/H_qe$ \\  \hline
+C:G & 4 & NA & 5 & $H_e/H_ie$ \\  \hline
+C:G & 4 & NA & 4 & $H_i/H_i$ \\  \hline
+C:G & 4 & NA & 4 & $H_ie/H_ie$ \\  \hline
+C:G & 4 & NA & 4 & $H/H_qe$ \\  \hline
+C:G & 4 & NA & 2 & $H_ie/H_ie$ \\  \hline
+C:G & 4 & NA & 1 & $H_qe/H$ \\  \hline
+C:G & 4 & cis-W/W & 5 & $H_qe/H_i$ \\  \hline
+C:G & 4 & cis-S/W & 2 & $H_qe/H$ \\  \hline
+C:G & 4 & cis-H/. & 1 & $H/H_qe$ \\  \hline
+C:C & 4 & trans-W/S & 1 & $H_qe/H_qe$ \\  \hline
+C:C & 4 & NA & 2 & $H/H_qe$ \\  \hline
+C:C & 4 & cis-W/S & 2 & $H_qe/H_qe$ \\  \hline
+C:A & 4 & trans-W/H & 4 & $H/H_qe$ \\  \hline
+C:A & 4 & trans-W/H & 2 & $H_qe/H_qe$ \\  \hline
+C:A & 4 & trans-W/H & 1 & $H_e/H_e$ \\  \hline
+C:A & 4 & NA & 2 & $H_ie/H_ie$ \\  \hline
+C:A & 4 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+C:A & 4 & cis-S/W & 2 & $H/H_qe$ \\  \hline
+A:U & 4 & trans-H/W & 3 & $H_ie/H_e$ \\  \hline
+A:U & 4 & trans-H/W & 2 & $H_ie/H_e$ \\  \hline
+A:U & 4 & NA & 3 & $H_e/H_e$ \\  \hline
+A:U & 4 & cis-W/W & 3 & $H_qe/H_i$ \\  \hline
+A:U & 4 & cis-W/S & 2 & $H_i/H_i$ \\  \hline
+A:U & 4 & cis-H/W & 2 & $H_qe/H_i$ \\  \hline
+A:G & 4 & trans-W/S & 1 & $H_i/H_qe$ \\  \hline
+A:G & 4 & NA & 4 & $H/H$ \\  \hline
+A:G & 4 & NA & 3 & $H_i/H$ \\  \hline
+A:G & 4 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+A:C & 4 & trans-W/W & 2 & $H_i/H$ \\  \hline
+A:C & 4 & trans-S/H & 2 & $H_e/H_e$ \\  \hline
+A:C & 4 & NA & 2 & $H/H_qe$ \\  \hline
+A:C & 4 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+A:A & 4 & trans-W/W & 3 & $H/H_qe$ \\  \hline
+A:A & 4 & trans-W/H & 1 & $H_i/H$ \\  \hline
+A:A & 4 & trans-W/H & 1 & $H_e/H_ie$ \\  \hline
+A:A & 4 & trans-S/W & 1 & $H_e/H_ie$ \\  \hline
+A:A & 4 & trans-S/H & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 4 & trans-S/H & 2 & $H_qe/H$ \\  \hline
+A:A & 4 & trans-H/H & 3 & $H_qe/H_i$ \\  \hline
+A:A & 4 & NA & 4 & $H/H_qe$ \\  \hline
+A:A & 4 & cis-W/S & 2 & $H/H_i$ \\  \hline
+A:A & 4 & cis-W/H & 1 & $H_qe/H$ \\  \hline
+A:A & 4 & cis-S/W & 2 & $H_i/H$ \\  \hline
+A:A & 4 & cis-S/W & 2 & $H_e/H_ie$ \\  \hline
+A:A & 4 & cis-S/H & 1 & $H_i/H_qe$ \\  \hline
+A:A & 4 & cis-H/S & 1 & $H_qe/H_i$ \\  \hline
+52:22 & 4 & cis-W/W & 2 & $H_ie/H_ie$ \\  \hline
+U:U & 3 & trans-W/W & 2 & $H_qe/H$ \\  \hline
+U:U & 3 & trans-W/W & 1 & $H_ie/H_ie$ \\  \hline
+U:U & 3 & trans-H/W & 1 & $H_i/H$ \\  \hline
+U:U & 3 & NA & 4 & $H_qe/H_qe$ \\  \hline
+U:U & 3 & NA & 3 & $H_ie/H_e$ \\  \hline
+U:U & 3 & NA & 3 & $H/H$ \\  \hline
+U:U & 3 & NA & 1 & $H_e/H_ie$ \\  \hline
+U:U & 3 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+U:U & 3 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+U:U & 3 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+U:U & 3 & cis-S/W & 2 & $H_e/H_e$ \\  \hline
+U:G & 3 & trans-W/W & 3 & $H_e/H_e$ \\  \hline
+U:G & 3 & NA & 5 & $H/H_qe$ \\  \hline
+U:G & 3 & NA & 1 & $H_i/H_qe$ \\  \hline
+U:G & 3 & cis-W/W & 2 & $H/H_i$ \\  \hline
+U:G & 3 & cis-H/S & 3 & $H_ie/H_ie$ \\  \hline
+U:C & 3 & NA & 3 & $H_ie/H_e$ \\  \hline
+U:C & 3 & NA & 1 & $H_ie/H_e$ \\  \hline
+U:C & 3 & NA & 1 & $H/H$ \\  \hline
+U:C & 3 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+U:A & 3 & trans-W/H & 4 & $H/H_i$ \\  \hline
+U:A & 3 & trans-W/H & 1 & $H_qe/H_i$ \\  \hline
+U:A & 3 & trans-S/W & 2 & $H_e/H_e$ \\  \hline
+U:A & 3 & trans-S/H & 2 & $H_ie/H_ie$ \\  \hline
+U:A & 3 & trans-S/H & 1 & $H/H$ \\  \hline
+U:A & 3 & NA & 3 & $H_i/H_i$ \\  \hline
+U:A & 3 & NA & 3 & $H_ie/H_e$ \\  \hline
+U:A & 3 & NA & 3 & $H_e/H_e$ \\  \hline
+U:A & 3 & cis-W/W & 4 & $H_qe/H_qe$ \\  \hline
+U:A & 3 & cis-W/W & 4 & $H/H_i$ \\  \hline
+U:A & 3 & cis-W/W & 1 & $H_qe/H_i$ \\  \hline
+U:A & 3 & cis-W/H & 2 & $H_qe/H_qe$ \\  \hline
+U:A & 3 & cis-W/H & 2 & $H_i/H_qe$ \\  \hline
+U:A & 3 & cis-W/H & 2 & $H_ie/H_ie$ \\  \hline
+U:A & 3 & cis-W/H & 1 & $H/H_i$ \\  \hline
+I:U & 3 & cis-W/W & 2 & $H/H$ \\  \hline
+IU:A & 3 & cis-W/W & 2 & $H/H$ \\  \hline
+H2U:U & 3 & trans-W/W & 4 & $H_e/H_ie$ \\  \hline
+G:U & 3 & trans-W/. & 3 & $H_e/H_ie$ \\  \hline
+G:U & 3 & NA & 4 & $H/H$ \\  \hline
+G:U & 3 & NA & 3 & $H_i/H_qe$ \\  \hline
+G:U & 3 & NA & 3 & $H/H_i$ \\  \hline
+G:U & 3 & cis-W/W & 3 & $H_qe/H_i$ \\  \hline
+G:U & 3 & cis-W/W & 3 & $H_i/H_i$ \\  \hline
+G:U & 3 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+G:U & 3 & cis-W/S & 3 & $H/H$ \\  \hline
+G:U & 3 & cis-W/S & 2 & $H/H$ \\  \hline
+G:U & 3 & cis-W/S & 1 & $H/H_qe$ \\  \hline
+G:G & 3 & trans-W/W & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 3 & trans-W/H & 2 & $H/H_qe$ \\  \hline
+G:G & 3 & trans-S/S & 4 & $H_qe/H_qe$ \\  \hline
+G:G & 3 & trans-H/W & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 3 & trans-H/W & 2 & $H/H_qe$ \\  \hline
+G:G & 3 & trans-H/W & 1 & $H/H_qe$ \\  \hline
+G:G & 3 & trans-H/S & 2 & $H/H_qe$ \\  \hline
+G:G & 3 & NA & 3 & $H_i/H_qe$ \\  \hline
+G:G & 3 & NA & 2 & $H_ie/H_e$ \\  \hline
+G:G & 3 & NA & 2 & $H/H$ \\  \hline
+G:G & 3 & NA & 1 & $H_ie/H_ie$ \\  \hline
+G:G & 3 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+G:G & 3 & cis-W/H & 1 & $H/H_i$ \\  \hline
+G:G & 3 & cis-S/W & 1 & $H_qe/H$ \\  \hline
+G:G & 3 & cis-H/W & 1 & $H_qe/H_i$ \\  \hline
+G:C & 3 & trans-W/W & 3 & $H_qe/H_i$ \\  \hline
+G:C & 3 & NA & 4 & $H_qe/H_i$ \\  \hline
+G:C & 3 & NA & 4 & $H_ie/H_ie$ \\  \hline
+G:C & 3 & NA & 4 & $H_ie/H_e$ \\  \hline
+G:C & 3 & NA & 1 & $H_qe/H_qe$ \\  \hline
+G:C & 3 & NA & 1 & $H_i/H$ \\  \hline
+G:C & 3 & NA & 1 & $H_ie/H_e$ \\  \hline
+G:C & 3 & cis-W/W & 4 & $H_qe/H_i$ \\  \hline
+G:C & 3 & cis-W/W & 4 & $H_i/H_qe$ \\  \hline
+G:C & 3 & cis-W/W & 4 & $H/H_i$ \\  \hline
+G:C & 3 & cis-W/W & 4 & $H_e/H_ie$ \\  \hline
+G:C & 3 & cis-W/S & 2 & $H_qe/H$ \\  \hline
+G:C & 3 & cis-H/W & 2 & $H/H$ \\  \hline
+G:A & 3 & trans-W/H & 1 & $H_e/H_e$ \\  \hline
+G:A & 3 & trans-S/W & 2 & $H_qe/H_qe$ \\  \hline
+G:A & 3 & trans-S/H & 5 & $H_e/H_e$ \\  \hline
+G:A & 3 & trans-S/H & 3 & $H_i/H_i$ \\  \hline
+G:A & 3 & trans-S/H & 2 & $H_qe/H_i$ \\  \hline
+G:A & 3 & NA & 2 & $H_i/H_qe$ \\  \hline
+G:A & 3 & NA & 2 & $H_i/H_i$ \\  \hline
+G:A & 3 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:A & 3 & cis-W/W & 1 & $H_e/H_ie$ \\  \hline
+G:A & 3 & cis-W/S & 3 & $H_e/H_e$ \\  \hline
+G:A & 3 & cis-S/H & 2 & $H_ie/H_ie$ \\  \hline
+G:A & 3 & cis-H/S & 3 & $H_i/H_i$ \\  \hline
+G:A & 3 & cis-H/H & 1 & $H_qe/H_qe$ \\  \hline
+G:5MC & 3 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+G:5BU & 3 & cis-W/W & 3 & $H/H$ \\  \hline
+G:5AA & 3 & NA & 2 & $H_e/H_ie$ \\  \hline
+C:U & 3 & trans-H/S & 1 & $H_qe/H_i$ \\  \hline
+C:U & 3 & NA & 2 & $H_i/H$ \\  \hline
+C:U & 3 & NA & 2 & $H_e/H_ie$ \\  \hline
+C:G & 3 & trans-W/W & 3 & $H/H_qe$ \\  \hline
+C:G & 3 & trans-W/W & 2 & $H_ie/H_ie$ \\  \hline
+C:G & 3 & trans-W/W & 1 & $H_e/H_ie$ \\  \hline
+C:G & 3 & NA & 4 & $H_qe/H_i$ \\  \hline
+C:G & 3 & NA & 1 & $H_ie/H_e$ \\  \hline
+C:G & 3 & NA & 1 & $H/H_i$ \\  \hline
+C:G & 3 & cis-W/W & 5 & $H_qe/H$ \\  \hline
+C:G & 3 & cis-W/W & 5 & $H/H_i$ \\  \hline
+C:G & 3 & cis-W/W & 4 & $H_ie/H_ie$ \\  \hline
+C:G & 3 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+C:G & 3 & cis-W/W & 1 & $H_i/H_i$ \\  \hline
+C:G & 3 & cis-H/W & 1 & $H_qe/H_qe$ \\  \hline
+C:C & 3 & trans-W/W & 1 & $H_e/H_e$ \\  \hline
+C:C & 3 & NA & 2 & $H_ie/H_ie$ \\  \hline
+C:C & 3 & NA & 1 & $H_qe/H_i$ \\  \hline
+C:C & 3 & cis-S/W & 1 & $H_qe/H_i$ \\  \hline
+C:A & 3 & trans-W/W & 2 & $H/H$ \\  \hline
+C:A & 3 & trans-S/H & 2 & $H_qe/H_qe$ \\  \hline
+C:A & 3 & NA & 4 & $H_i/H_qe$ \\  \hline
+C:A & 3 & NA & 4 & $H_i/H_i$ \\  \hline
+C:A & 3 & NA & 3 & $H_qe/H_qe$ \\  \hline
+C:A & 3 & NA & 3 & $H_e/H_ie$ \\  \hline
+C:A & 3 & NA & 1 & $H_ie/H_e$ \\  \hline
+C:A & 3 & NA & 1 & $H/H_qe$ \\  \hline
+C:A & 3 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+C:A & 3 & cis-S/H & 1 & $H_i/H_qe$ \\  \hline
+A:U & 3 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+A:U & 3 & trans-W/W & 1 & $H_qe/H_qe$ \\  \hline
+A:U & 3 & trans-H/W & 4 & $H_qe/H_qe$ \\  \hline
+A:U & 3 & trans-H/W & 3 & $H_i/H_i$ \\  \hline
+A:U & 3 & trans-H/W & 1 & $H/H_i$ \\  \hline
+A:U & 3 & trans-H/S & 1 & $H_qe/H_qe$ \\  \hline
+A:U & 3 & NA & 4 & $H_i/H$ \\  \hline
+A:U & 3 & NA & 3 & $H_i/H_qe$ \\  \hline
+A:U & 3 & NA & 3 & $H_i/H_i$ \\  \hline
+A:U & 3 & NA & 3 & $H_i/H$ \\  \hline
+A:U & 3 & NA & 1 & $H_i/H_qe$ \\  \hline
+A:U & 3 & cis-W/W & 4 & $H_i/H_qe$ \\  \hline
+A:U & 3 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+A:U & 3 & cis-H/W & 3 & $H_ie/H_ie$ \\  \hline
+A:U & 3 & cis-H/S & 2 & $H_i/H_qe$ \\  \hline
+A:PSU & 3 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+A:OMC & 3 & trans-W/S & 1 & $H_qe/H$ \\  \hline
+A:G & 3 & trans-H/S & 3 & $H_qe/H_i$ \\  \hline
+A:G & 3 & trans-H/S & 2 & $H_qe/H_i$ \\  \hline
+A:G & 3 & trans-H/S & 2 & $H_i/H_i$ \\  \hline
+A:G & 3 & NA & 4 & $H_qe/H_qe$ \\  \hline
+A:G & 3 & NA & 1 & $H_qe/H_qe$ \\  \hline
+A:G & 3 & NA & 1 & $H_qe/H$ \\  \hline
+A:G & 3 & NA & 1 & $H/H$ \\  \hline
+A:G & 3 & cis-W/W & 1 & $H_i/H_qe$ \\  \hline
+A:G & 3 & cis-W/W & 1 & $H/H_i$ \\  \hline
+A:G & 3 & cis-H/S & 2 & $H_qe/H_i$ \\  \hline
+A:C & 3 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+A:C & 3 & NA & 4 & $H_qe/H_i$ \\  \hline
+A:C & 3 & NA & 3 & $H_ie/H_ie$ \\  \hline
+A:C & 3 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+A:C & 3 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+A:A & 3 & trans-W/W & 1 & $H_i/H_i$ \\  \hline
+A:A & 3 & trans-W/H & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 3 & trans-W/H & 2 & $H_qe/H_i$ \\  \hline
+A:A & 3 & trans-W/H & 2 & $H/H$ \\  \hline
+A:A & 3 & trans-W/H & 1 & $H_qe/H$ \\  \hline
+A:A & 3 & trans-S/W & 2 & $H_ie/H_ie$ \\  \hline
+A:A & 3 & trans-S/W & 1 & $H_ie/H_ie$ \\  \hline
+A:A & 3 & trans-H/W & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 3 & trans-H/S & 2 & $H_qe/H$ \\  \hline
+A:A & 3 & trans-H/H & 4 & $H/H_qe$ \\  \hline
+A:A & 3 & trans-H/H & 4 & $H/H$ \\  \hline
+A:A & 3 & trans-H/H & 1 & $H/H_qe$ \\  \hline
+A:A & 3 & NA & 4 & $H_qe/H_qe$ \\  \hline
+A:A & 3 & NA & 3 & $H_qe/H_i$ \\  \hline
+A:A & 3 & NA & 3 & $H_e/H_ie$ \\  \hline
+A:A & 3 & NA & 2 & $H_e/H_e$ \\  \hline
+A:A & 3 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+A:A & 3 & cis-W/S & 3 & $H/H_i$ \\  \hline
+A:A & 3 & cis-S/H & 2 & $H_qe/H_i$ \\  \hline
+A:A & 3 & cis-H/H & 1 & $H_qe/H_qe$ \\  \hline
+5MU:MAD & 3 & trans-W/H & 2 & $H/H_i$ \\  \hline
+U:U & 2 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+U:U & 2 & trans-W/W & 2 & $H_e/H_e$ \\  \hline
+U:U & 2 & trans-W/H & 2 & $H/H_qe$ \\  \hline
+U:U & 2 & NA & 5 & $H_ie/H_ie$ \\  \hline
+U:U & 2 & NA & 3 & $H/H_qe$ \\  \hline
+U:U & 2 & NA & 3 & $H/H_i$ \\  \hline
+U:U & 2 & NA & 3 & $H_e/H_ie$ \\  \hline
+U:U & 2 & NA & 2 & $H_i/H$ \\  \hline
+U:U & 2 & NA & 1 & $H_i/H_i$ \\  \hline
+U:U & 2 & NA & 1 & $H/H_i$ \\  \hline
+U:U & 2 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+U:U & 2 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+U:U & 2 & cis-W/W & 3 & $H_i/H$ \\  \hline
+U:U & 2 & cis-W/W & 3 & $H_ie/H_ie$ \\  \hline
+U:U & 2 & cis-W/W & 3 & $H/H_i$ \\  \hline
+U:U & 2 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+U:U & 2 & cis-W/W & 1 & $H/H_i$ \\  \hline
+U:U & 2 & cis-W/S & 2 & $H/H$ \\  \hline
+U:U & 2 & cis-W/H & 2 & $H_qe/H_i$ \\  \hline
+U:U & 2 & cis-W/H & 1 & $H_qe/H_i$ \\  \hline
+U:U & 2 & cis-S/W & 3 & $H_e/H_ie$ \\  \hline
+U:U & 2 & cis-H/W & 1 & $H_qe/H_qe$ \\  \hline
+U:I & 2 & cis-W/W & 2 & $H/H$ \\  \hline
+U:G & 2 & trans-W/H & 2 & $H_qe/H_qe$ \\  \hline
+U:G & 2 & trans-S/W & 1 & $H_ie/H_ie$ \\  \hline
+U:G & 2 & NA & 5 & $H/H$ \\  \hline
+U:G & 2 & NA & 4 & $H_qe/H_i$ \\  \hline
+U:G & 2 & NA & 4 & $H_e/H_e$ \\  \hline
+U:G & 2 & NA & 3 & $H_qe/H_i$ \\  \hline
+U:G & 2 & NA & 3 & $H_ie/H_e$ \\  \hline
+U:G & 2 & NA & 2 & $H_i/H_i$ \\  \hline
+U:G & 2 & NA & 2 & $H/H_qe$ \\  \hline
+U:G & 2 & cis-W/W & 3 & $H_i/H_i$ \\  \hline
+U:G & 2 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+U:G & 2 & cis-W/W & 1 & $H_i/H$ \\  \hline
+U:G & 2 & cis-W/W & 1 & $H_ie/H_ie$ \\  \hline
+U:G & 2 & cis-W/W & 1 & $H_e/H_ie$ \\  \hline
+U:G & 2 & cis-S/W & 1 & $H_e/H_e$ \\  \hline
+U:G & 2 & cis-H/W & 2 & $H_e/H_ie$ \\  \hline
+U:C & 2 & NA & 3 & $H_i/H$ \\  \hline
+U:C & 2 & NA & 2 & $H/H$ \\  \hline
+U:C & 2 & NA & 1 & $H_ie/H_ie$ \\  \hline
+U:C & 2 & NA & 1 & $H/H_qe$ \\  \hline
+U:C & 2 & cis-W/W & 2 & $H_i/H$ \\  \hline
+U:C & 2 & cis-W/W & 2 & $H_e/H_ie$ \\  \hline
+U:C & 2 & cis-S/W & 1 & $H_qe/H$ \\  \hline
+U:A & 2 & trans-W/W & 3 & $H_ie/H_ie$ \\  \hline
+U:A & 2 & trans-W/W & 1 & $H_qe/H_qe$ \\  \hline
+U:A & 2 & trans-W/S & 3 & $H/H_i$ \\  \hline
+U:A & 2 & trans-W/H & 4 & $H_i/H$ \\  \hline
+U:A & 2 & trans-W/H & 2 & $H_i/H_qe$ \\  \hline
+U:A & 2 & trans-W/H & 1 & $H/H$ \\  \hline
+U:A & 2 & trans-S/W & 2 & $H_ie/H_ie$ \\  \hline
+U:A & 2 & trans-S/W & 1 & $H_e/H_e$ \\  \hline
+U:A & 2 & trans-S/H & 1 & $H_i/H_qe$ \\  \hline
+U:A & 2 & NA & 3 & $H_qe/H_i$ \\  \hline
+U:A & 2 & NA & 3 & $H_ie/H_ie$ \\  \hline
+U:A & 2 & NA & 3 & $H/H_qe$ \\  \hline
+U:A & 2 & NA & 1 & $H_i/H_i$ \\  \hline
+U:A & 2 & cis-W/W & 3 & $H_i/H_i$ \\  \hline
+U:A & 2 & cis-W/H & 3 & $H_ie/H_e$ \\  \hline
+U:A & 2 & cis-W/H & 3 & $H/H_qe$ \\  \hline
+U:A & 2 & cis-W/H & 1 & $H_qe/H_i$ \\  \hline
+U:A & 2 & cis-S/W & 1 & $H/H$ \\  \hline
+U:A & 2 & cis-S/H & 2 & $H_qe/H_i$ \\  \hline
+U:A & 2 & cis-S/H & 2 & $H_e/H_ie$ \\  \hline
+U:A & 2 & cis-S/H & 1 & $H_e/H_ie$ \\  \hline
+PSU:G & 2 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+PSU:G & 2 & trans-S/W & 2 & $H_qe/H_i$ \\  \hline
+PSU:G & 2 & NA & 2 & $H_e/H_ie$ \\  \hline
+PSU:A & 2 & cis-W/W & 2 & $H/H$ \\  \hline
+LG:LC & 2 & cis-W/W & 3 & $H/H$ \\  \hline
+I:I & 2 & cis-W/H & 1 & $H/H$ \\  \hline
+HPA:C & 2 & cis-W/W & 3 & $H_i/H_qe$ \\  \hline
+HPA:C & 2 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:U & 2 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+G:U & 2 & NA & 2 & $H_ie/H_e$ \\  \hline
+G:U & 2 & NA & 2 & $H_e/H_ie$ \\  \hline
+G:U & 2 & NA & 1 & $H_qe/H$ \\  \hline
+G:U & 2 & NA & 1 & $H_i/H_i$ \\  \hline
+G:U & 2 & cis-W/W & 5 & $H_qe/H$ \\  \hline
+G:U & 2 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:U & 2 & cis-W/S & 4 & $H/H$ \\  \hline
+G:U & 2 & cis-S/H & 2 & $H_i/H_i$ \\  \hline
+G:U & 2 & cis-S/H & 2 & $H_ie/H_ie$ \\  \hline
+G:U & 2 & cis-H/W & 2 & $H/H$ \\  \hline
+G:IU & 2 & cis-W/W & 2 & $H/H$ \\  \hline
+G:G & 2 & trans-W/W & 4 & $H/H_qe$ \\  \hline
+G:G & 2 & trans-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:G & 2 & trans-W/W & 2 & $H/H_i$ \\  \hline
+G:G & 2 & trans-W/W & 2 & $H_e/H_e$ \\  \hline
+G:G & 2 & trans-W/W & 1 & $H_i/H_qe$ \\  \hline
+G:G & 2 & trans-W/H & 2 & $H_e/H_e$ \\  \hline
+G:G & 2 & trans-W/H & 1 & $H_e/H_e$ \\  \hline
+G:G & 2 & trans-S/S & 5 & $H_ie/H_ie$ \\  \hline
+G:G & 2 & trans-S/S & 3 & $H_i/H_i$ \\  \hline
+G:G & 2 & trans-S/H & 3 & $H_e/H_e$ \\  \hline
+G:G & 2 & trans-S/H & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 2 & trans-H/W & 2 & $H/H$ \\  \hline
+G:G & 2 & trans-H/W & 1 & $H/H$ \\  \hline
+G:G & 2 & trans-H/S & 4 & $H/H$ \\  \hline
+G:G & 2 & trans-H/S & 3 & $H_qe/H_qe$ \\  \hline
+G:G & 2 & trans-H/S & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 2 & trans-H/S & 2 & $H_qe/H$ \\  \hline
+G:G & 2 & NA & 3 & $H_qe/H_qe$ \\  \hline
+G:G & 2 & NA & 2 & $H_qe/H_i$ \\  \hline
+G:G & 2 & NA & 2 & $H_qe/H$ \\  \hline
+G:G & 2 & NA & 2 & $H_i/H_qe$ \\  \hline
+G:G & 2 & NA & 1 & $H_qe/H_qe$ \\  \hline
+G:G & 2 & NA & 1 & $H_i/H_i$ \\  \hline
+G:G & 2 & NA & 1 & $H/H$ \\  \hline
+G:G & 2 & cis-W/W & 5 & $H_qe/H$ \\  \hline
+G:G & 2 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+G:G & 2 & cis-W/W & 1 & $H_e/H_ie$ \\  \hline
+G:G & 2 & cis-W/S & 1 & $H_qe/H_qe$ \\  \hline
+G:G & 2 & cis-W/H & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 2 & cis-S/H & 2 & $H_e/H_ie$ \\  \hline
+G:G & 2 & cis-H/W & 3 & $H/H_i$ \\  \hline
+G:G & 2 & cis-H/W & 2 & $H_qe/H_qe$ \\  \hline
+G:G & 2 & cis-H/W & 2 & $H_e/H_e$ \\  \hline
+G:C & 2 & trans-W/W & 4 & $H_e/H_ie$ \\  \hline
+G:C & 2 & trans-W/W & 3 & $H_i/H_qe$ \\  \hline
+G:C & 2 & trans-W/W & 2 & $H_qe/H$ \\  \hline
+G:C & 2 & trans-W/W & 2 & $H_i/H$ \\  \hline
+G:C & 2 & trans-W/W & 1 & $H_qe/H$ \\  \hline
+G:C & 2 & trans-S/W & 2 & $H_qe/H_qe$ \\  \hline
+G:C & 2 & NA & 5 & $H_i/H_i$ \\  \hline
+G:C & 2 & NA & 5 & $H/H_qe$ \\  \hline
+G:C & 2 & NA & 4 & $H_i/H$ \\  \hline
+G:C & 2 & NA & 4 & $H_e/H_ie$ \\  \hline
+G:C & 2 & NA & 2 & $H_e/H_ie$ \\  \hline
+G:C & 2 & cis-W/W & 5 & $H_ie/H_e$ \\  \hline
+G:C & 2 & cis-W/W & 5 & $H_e/H_ie$ \\  \hline
+G:C & 2 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+G:C & 2 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:C & 2 & cis-W/W & 1 & $H_qe/H_i$ \\  \hline
+G:C & 2 & cis-W/W & 1 & $H_i/H$ \\  \hline
+G:C & 2 & cis-W/W & 1 & $H_ie/H_ie$ \\  \hline
+G:C & 2 & cis-W/S & 3 & $H_ie/H_e$ \\  \hline
+G:C & 2 & cis-W/H & 1 & $H_e/H_e$ \\  \hline
+G:C & 2 & cis-S/W & 2 & $H_ie/H_e$ \\  \hline
+G:CBR & 2 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+G:CBR & 2 & cis-W/W & 3 & $H/H$ \\  \hline
+G:A & 2 & trans-W/H & 4 & $H_ie/H_ie$ \\  \hline
+G:A & 2 & trans-W/H & 3 & $H_qe/H_qe$ \\  \hline
+G:A & 2 & trans-W/H & 3 & $H/H_qe$ \\  \hline
+G:A & 2 & trans-S/W & 3 & $H_qe/H_i$ \\  \hline
+G:A & 2 & trans-S/W & 3 & $H/H_i$ \\  \hline
+G:A & 2 & trans-S/W & 2 & $H/H_qe$ \\  \hline
+G:A & 2 & trans-S/S & 3 & $H/H_i$ \\  \hline
+G:A & 2 & trans-S/S & 3 & $H_e/H_ie$ \\  \hline
+G:A & 2 & trans-S/H & 4 & $H_i/H$ \\  \hline
+G:A & 2 & trans-S/H & 4 & $H_e/H_ie$ \\  \hline
+G:A & 2 & trans-S/H & 2 & $H_i/H$ \\  \hline
+G:A & 2 & trans-S/H & 2 & $H_ie/H_e$ \\  \hline
+G:A & 2 & trans-S/H & 2 & $H/H_i$ \\  \hline
+G:A & 2 & NA & 2 & $H/H_i$ \\  \hline
+G:A & 2 & NA & 1 & $H_ie/H_e$ \\  \hline
+G:A & 2 & cis-S/W & 3 & $H_qe/H$ \\  \hline
+G:A & 2 & cis-S/S & 2 & $H/H_i$ \\  \hline
+G:A & 2 & cis-S/H & 2 & $H_e/H_ie$ \\  \hline
+G:A & 2 & cis-S/H & 1 & $H_ie/H_ie$ \\  \hline
+G:A & 2 & cis-H/W & 2 & $H/H$ \\  \hline
+G:5MU & 2 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+G:5IC & 2 & cis-W/W & 3 & $H/H$ \\  \hline
+G:5BU & 2 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+C:U & 2 & trans-H/S & 1 & $H/H_qe$ \\  \hline
+C:U & 2 & NA & 3 & $H_qe/H_i$ \\  \hline
+C:U & 2 & NA & 2 & $H_i/H_i$ \\  \hline
+C:U & 2 & NA & 2 & $H_ie/H_ie$ \\  \hline
+C:U & 2 & NA & 2 & $H/H$ \\  \hline
+C:U & 2 & NA & 1 & $H_qe/H_qe$ \\  \hline
+C:U & 2 & NA & 1 & $H_i/H_qe$ \\  \hline
+C:U & 2 & NA & 1 & $H_e/H_e$ \\  \hline
+C:U & 2 & cis-W/W & 4 & $H/H_i$ \\  \hline
+C:U & 2 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+C:U & 2 & cis-W/W & 3 & $H/H$ \\  \hline
+C:U & 2 & cis-W/S & 1 & $H/H$ \\  \hline
+C:G & 2 & trans-W/W & 4 & $H_ie/H_ie$ \\  \hline
+C:G & 2 & trans-W/W & 3 & $H_ie/H_ie$ \\  \hline
+C:G & 2 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+C:G & 2 & trans-W/W & 2 & $H_qe/H_qe$ \\  \hline
+C:G & 2 & trans-W/S & 2 & $H_i/H_qe$ \\  \hline
+C:GTP & 2 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+C:G & 2 & NA & 4 & $H_qe/H$ \\  \hline
+C:G & 2 & NA & 4 & $H_ie/H_e$ \\  \hline
+C:G & 2 & NA & 4 & $H_e/H_ie$ \\  \hline
+C:G & 2 & NA & 2 & $H_qe/H_i$ \\  \hline
+C:G & 2 & NA & 2 & $H_i/H_qe$ \\  \hline
+C:G & 2 & NA & 2 & $H_i/H_i$ \\  \hline
+C:G & 2 & NA & 2 & $H_i/H$ \\  \hline
+C:G & 2 & NA & 1 & $H_i/H_i$ \\  \hline
+C:G & 2 & cis-W/W & 5 & $H_ie/H_ie$ \\  \hline
+C:G & 2 & cis-W/W & 4 & $H_i/H_i$ \\  \hline
+C:G & 2 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+C:G & 2 & cis-W/. & 1 & $H_i/H$ \\  \hline
+C:G & 2 & cis-S/W & 3 & $H_qe/H$ \\  \hline
+C:G & 2 & cis-H/W & 3 & $H/H_qe$ \\  \hline
+C:C & 2 & trans-W/W & 2 & $H_ie/H_e$ \\  \hline
+C:C & 2 & trans-S/W & 1 & $H_e/H_e$ \\  \hline
+C:C & 2 & trans-H/S & 1 & $H_qe/H_qe$ \\  \hline
+C:C & 2 & NA & 2 & $H_i/H$ \\  \hline
+C:C & 2 & NA & 2 & $H_ie/H_e$ \\  \hline
+C:C & 2 & NA & 1 & $H_qe/H_qe$ \\  \hline
+C:C & 2 & NA & 1 & $H/H$ \\  \hline
+C:C & 2 & cis-W/W & 3 & $H_ie/H_e$ \\  \hline
+C:C & 2 & cis-W/W & 1 & $H_ie/H_ie$ \\  \hline
+CBR:G & 2 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+CBR:G & 2 & cis-W/W & 3 & $H/H$ \\  \hline
+C:A & 2 & trans-W/W & 2 & $H_e/H_ie$ \\  \hline
+C:A & 2 & trans-W/W & 1 & $H_i/H$ \\  \hline
+C:A & 2 & trans-W/W & 1 & $H/H_qe$ \\  \hline
+C:A & 2 & trans-W/W & 1 & $H_e/H_ie$ \\  \hline
+C:A & 2 & trans-W/H & 3 & $H_qe/H_i$ \\  \hline
+C:A & 2 & trans-S/W & 1 & $H_e/H_e$ \\  \hline
+C:A & 2 & trans-S/H & 2 & $H_e/H_e$ \\  \hline
+C:A & 2 & trans-S/H & 1 & $H_e/H_ie$ \\  \hline
+C:A & 2 & trans-H/H & 2 & $H_e/H_e$ \\  \hline
+C:A & 2 & NA & 3 & $H_i/H_qe$ \\  \hline
+C:A & 2 & NA & 3 & $H_i/H_i$ \\  \hline
+C:A & 2 & NA & 1 & $H_qe/H_i$ \\  \hline
+C:A & 2 & cis-W/W & 2 & $H_e/H_ie$ \\  \hline
+C:A & 2 & cis-W/H & 1 & $H_qe/H_i$ \\  \hline
+C:A & 2 & cis-S/W & 1 & $H_e/H_ie$ \\  \hline
+C:A & 2 & cis-S/H & 2 & $H_ie/H_e$ \\  \hline
+C:2MG & 2 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+A:U & 2 & trans-W/W & 3 & $H_i/H$ \\  \hline
+A:U & 2 & trans-W/W & 1 & $H_i/H_qe$ \\  \hline
+A:U & 2 & trans-H/W & 3 & $H_e/H_e$ \\  \hline
+A:U & 2 & trans-H/W & 2 & $H_e/H_ie$ \\  \hline
+A:U & 2 & trans-H/W & 1 & $H_i/H_i$ \\  \hline
+A:U & 2 & trans-H/W & 1 & $H/H$ \\  \hline
+A:U & 2 & trans-H/W & 1 & $H_e/H_e$ \\  \hline
+A:U & 2 & NA & 3 & $H_qe/H$ \\  \hline
+A:U & 2 & NA & 2 & $H_qe/H_i$ \\  \hline
+A:U & 2 & cis-W/W & 4 & $H_qe/H_qe$ \\  \hline
+A:U & 2 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+A:U & 2 & cis-W/W & 3 & $H_ie/H_e$ \\  \hline
+A:U & 2 & cis-W/W & 1 & $H_ie/H_ie$ \\  \hline
+A:U & 2 & cis-W/W & 1 & $H_ie/H_e$ \\  \hline
+A:U & 2 & cis-W/W & 1 & $H/H_i$ \\  \hline
+A:U & 2 & cis-W/S & 2 & $H_qe/H$ \\  \hline
+A:U & 2 & cis-S/W & 3 & $H_e/H_ie$ \\  \hline
+A:U & 2 & cis-H/W & 3 & $H_i/H_i$ \\  \hline
+A:U & 2 & cis-H/W & 2 & $H/H$ \\  \hline
+A:U & 2 & cis-H/W & 1 & $H/H_i$ \\  \hline
+A:U & 2 & cis-H/S & 3 & $H_qe/H_i$ \\  \hline
+A:U & 2 & cis-H/S & 3 & $H/H_i$ \\  \hline
+A:PSU & 2 & cis-W/W & 2 & $H/H$ \\  \hline
+A:OMC & 2 & trans-H/W & 1 & $H/H_i$ \\  \hline
+A:IU & 2 & cis-W/W & 2 & $H/H$ \\  \hline
+A:G & 2 & trans-W/S & 1 & $H_ie/H_ie$ \\  \hline
+A:G & 2 & trans-S/S & 2 & $H_i/H$ \\  \hline
+A:G & 2 & trans-H/S & 4 & $H/H_qe$ \\  \hline
+A:G & 2 & trans-H/S & 3 & $H_e/H_ie$ \\  \hline
+A:G & 2 & trans-H/S & 2 & $H/H_i$ \\  \hline
+A:G & 2 & trans-H/S & 1 & $H_i/H_qe$ \\  \hline
+A:G & 2 & trans-H/S & 1 & $H/H_i$ \\  \hline
+A:G & 2 & NA & 5 & $H_qe/H_qe$ \\  \hline
+A:G & 2 & NA & 3 & $H_qe/H_i$ \\  \hline
+A:G & 2 & NA & 3 & $H_i/H_i$ \\  \hline
+A:G & 2 & NA & 3 & $H_e/H_ie$ \\  \hline
+A:G & 2 & NA & 1 & $H_e/H_e$ \\  \hline
+A:G & 2 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+A:G & 2 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+A:G & 2 & cis-W/H & 1 & $H_qe/H_qe$ \\  \hline
+A:G & 2 & cis-W/. & 1 & $H_i/H$ \\  \hline
+A:G & 2 & cis-S/S & 3 & $H_e/H_e$ \\  \hline
+A:G & 2 & cis-H/W & 3 & $H/H$ \\  \hline
+A:C & 2 & trans-W/W & 1 & $H_ie/H_e$ \\  \hline
+A:C & 2 & trans-W/S & 2 & $H_qe/H$ \\  \hline
+A:C & 2 & trans-S/W & 1 & $H_e/H_e$ \\  \hline
+A:C & 2 & trans-S/H & 2 & $H/H$ \\  \hline
+A:C & 2 & trans-H/W & 4 & $H_qe/H_i$ \\  \hline
+A:C & 2 & trans-H/W & 4 & $H/H_qe$ \\  \hline
+A:C & 2 & trans-H/W & 2 & $H/H_qe$ \\  \hline
+A:C & 2 & trans-H/W & 1 & $H_qe/H_i$ \\  \hline
+A:C & 2 & trans-H/S & 2 & $H_ie/H_ie$ \\  \hline
+A:C & 2 & NA & 3 & $H_qe/H_qe$ \\  \hline
+A:C & 2 & NA & 3 & $H_e/H_ie$ \\  \hline
+A:C & 2 & NA & 2 & $H_ie/H_e$ \\  \hline
+A:C & 2 & NA & 1 & $H_i/H_i$ \\  \hline
+A:C & 2 & NA & 1 & $H_i/H$ \\  \hline
+A:C & 2 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+A:C & 2 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+A:C & 2 & cis-W/W & 1 & $H_qe/H_i$ \\  \hline
+A:C & 2 & cis-W/W & 1 & $H_i/H_i$ \\  \hline
+A:C & 2 & cis-W/S & 2 & $H_ie/H_e$ \\  \hline
+A:C & 2 & cis-S/W & 3 & $H_i/H_qe$ \\  \hline
+A:C & 2 & cis-S/W & 3 & $H_ie/H_e$ \\  \hline
+A:C & 2 & cis-S/W & 2 & $H_i/H$ \\  \hline
+A:C & 2 & cis-H/S & 1 & $H_ie/H_ie$ \\  \hline
+A:A & 2 & trans-W/W & 3 & $H_qe/H_qe$ \\  \hline
+A:A & 2 & trans-W/W & 1 & $H_qe/H_i$ \\  \hline
+A:A & 2 & trans-W/W & 1 & $H_qe/H$ \\  \hline
+A:A & 2 & trans-W/W & 1 & $H_i/H_qe$ \\  \hline
+A:A & 2 & trans-W/S & 2 & $H_ie/H_ie$ \\  \hline
+A:A & 2 & trans-W/H & 3 & $H_qe/H_qe$ \\  \hline
+A:A & 2 & trans-W/H & 2 & $H_i/H_qe$ \\  \hline
+A:A & 2 & trans-W/H & 2 & $H_ie/H_ie$ \\  \hline
+A:A & 2 & trans-W/H & 1 & $H_ie/H_ie$ \\  \hline
+A:A & 2 & trans-W/H & 1 & $H_e/H_e$ \\  \hline
+A:A & 2 & trans-S/W & 2 & $H_e/H_ie$ \\  \hline
+A:A & 2 & trans-S/H & 3 & $H_e/H_e$ \\  \hline
+A:A & 2 & trans-H/W & 3 & $H_qe/H_qe$ \\  \hline
+A:A & 2 & trans-H/W & 2 & $H_qe/H_qe$ \\  \hline
+A:A & 2 & trans-H/W & 1 & $H_i/H_i$ \\  \hline
+A:A & 2 & trans-H/H & 4 & $H_e/H_e$ \\  \hline
+A:A & 2 & trans-H/H & 3 & $H_i/H_qe$ \\  \hline
+A:A & 2 & trans-H/H & 2 & $H/H$ \\  \hline
+A:A & 2 & trans-H/H & 2 & $H_e/H_ie$ \\  \hline
+A:A & 2 & trans-H/H & 1 & $H_e/H_e$ \\  \hline
+A:A & 2 & NA & 3 & $H_qe/H$ \\  \hline
+A:A & 2 & NA & 3 & $H_ie/H_e$ \\  \hline
+A:A & 2 & NA & 1 & $H_i/H_i$ \\  \hline
+A:A & 2 & cis-W/W & 1 & $H/H_i$ \\  \hline
+A:A & 2 & cis-W/S & 1 & $H_i/H_qe$ \\  \hline
+A:A & 2 & cis-W/S & 1 & $H_ie/H_ie$ \\  \hline
+A:A & 2 & cis-S/W & 2 & $H/H_qe$ \\  \hline
+A:A & 2 & cis-S/H & 3 & $H_qe/H_i$ \\  \hline
+A:A & 2 & cis-S/H & 3 & $H_i/H_qe$ \\  \hline
+A:A & 2 & cis-S/H & 1 & $H_ie/H_e$ \\  \hline
+A:A & 2 & cis-S/H & 1 & $H_e/H_ie$ \\  \hline
+5MU:G & 2 & trans-W/H & 3 & $H/H_i$ \\  \hline
+5MU:1MA & 2 & trans-W/H & 1 & $H/H_i$ \\  \hline
+5MC:G & 2 & cis-W/W & 2 & $H/H$ \\  \hline
+5BU:G & 2 & cis-W/W & 3 & $H/H$ \\  \hline
+5BU:G & 2 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+XUG:C & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+U:U & 1 & trans-W/W & 3 & $H_qe/H_qe$ \\  \hline
+U:U & 1 & trans-W/W & 2 & $H_ie/H_e$ \\  \hline
+U:U & 1 & trans-W/S & 2 & $H_i/H$ \\  \hline
+U:U & 1 & trans-W/H & 2 & $H_qe/H_i$ \\  \hline
+U:U & 1 & trans-W/H & 1 & $H/H_qe$ \\  \hline
+U:U & 1 & trans-S/W & 2 & $H_i/H_qe$ \\  \hline
+U:U & 1 & trans-S/W & 2 & $H_e/H_e$ \\  \hline
+U:U & 1 & trans-S/H & 2 & $H_e/H_ie$ \\  \hline
+U:U & 1 & NA & 4 & $H_ie/H_e$ \\  \hline
+U:U & 1 & NA & 4 & $H/H$ \\  \hline
+U:U & 1 & NA & 3 & $H_qe/H_qe$ \\  \hline
+U:U & 1 & NA & 3 & $H_qe/H$ \\  \hline
+U:U & 1 & NA & 3 & $H_i/H_i$ \\  \hline
+U:U & 1 & NA & 3 & $H_ie/H_ie$ \\  \hline
+U:U & 1 & NA & 2 & $H_i/H_qe$ \\  \hline
+U:U & 1 & NA & 2 & $H/H_i$ \\  \hline
+U:U & 1 & NA & 1 & $H_qe/H_i$ \\  \hline
+U:U & 1 & NA & 1 & $H_i/H_qe$ \\  \hline
+U:U & 1 & cis-W/W & 4 & $H_qe/H_qe$ \\  \hline
+U:U & 1 & cis-W/W & 4 & $H_e/H_e$ \\  \hline
+U:U & 1 & cis-W/W & 2 & $H/H_i$ \\  \hline
+U:U & 1 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+U:U & 1 & cis-W/S & 1 & $H/H$ \\  \hline
+U:U & 1 & cis-W/H & 2 & $H/H_qe$ \\  \hline
+U:U & 1 & cis-W/H & 2 & $H_e/H_ie$ \\  \hline
+U:U & 1 & cis-W/H & 1 & $H_qe/H_qe$ \\  \hline
+U:U & 1 & cis-W/H & 1 & $H_i/H_i$ \\  \hline
+U:U & 1 & cis-W/H & 1 & $H_i/H$ \\  \hline
+U:U & 1 & cis-S/W & 4 & $H_ie/H_ie$ \\  \hline
+U:U & 1 & cis-S/W & 2 & $H_qe/H_qe$ \\  \hline
+U:U & 1 & cis-S/W & 2 & $H_i/H_qe$ \\  \hline
+U:RIA & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+U:N6G & 1 & trans-H/S & 1 & $H_qe/H$ \\  \hline
+U:MTU & 1 & trans-H/S & 1 & $H_ie/H_e$ \\  \hline
+U:MAD & 1 & trans-W/H & 3 & $H/H_i$ \\  \hline
+U:I & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+U:G & 1 & trans-W/W & 1 & $H/H$ \\  \hline
+U:G & 1 & trans-W/W & 1 & $H_e/H_e$ \\  \hline
+U:G & 1 & trans-W/S & 2 & $H_ie/H_ie$ \\  \hline
+U:G & 1 & trans-W/S & 1 & $H_qe/H$ \\  \hline
+U:G & 1 & trans-W/S & 1 & $H_i/H_i$ \\  \hline
+U:G & 1 & trans-./W & 1 & $H_qe/H$ \\  \hline
+U:G & 1 & trans-./W & 1 & $H_e/H_e$ \\  \hline
+U:G & 1 & trans-S/W & 4 & $H_e/H_ie$ \\  \hline
+U:G & 1 & trans-S/W & 2 & $H_ie/H_ie$ \\  \hline
+U:G & 1 & trans-S/S & 4 & $H_e/H_e$ \\  \hline
+U:G & 1 & trans-S/H & 5 & $H/H_i$ \\  \hline
+U:G & 1 & trans-S/H & 5 & $H_e/H_ie$ \\  \hline
+U:G & 1 & trans-S/H & 4 & $H_e/H_ie$ \\  \hline
+U:G & 1 & trans-S/H & 3 & $H_e/H_ie$ \\  \hline
+U:G & 1 & trans-S/H & 2 & $H_e/H_ie$ \\  \hline
+U:G & 1 & NA & 5 & $H_qe/H_i$ \\  \hline
+U:G & 1 & NA & 5 & $H_i/H_qe$ \\  \hline
+U:G & 1 & NA & 5 & $H_i/H$ \\  \hline
+U:G & 1 & NA & 4 & $H_i/H_qe$ \\  \hline
+U:G & 1 & NA & 4 & $H_i/H$ \\  \hline
+U:G & 1 & NA & 4 & $H_ie/H_ie$ \\  \hline
+U:G & 1 & NA & 4 & $H_ie/H_e$ \\  \hline
+U:G & 1 & NA & 4 & $H_e/H_ie$ \\  \hline
+U:G & 1 & NA & 3 & $H_qe/H_qe$ \\  \hline
+U:G & 1 & NA & 3 & $H_ie/H_ie$ \\  \hline
+U:G & 1 & NA & 2 & $H_ie/H_e$ \\  \hline
+U:G & 1 & NA & 2 & $H/H_i$ \\  \hline
+U:G & 1 & NA & 1 & $H_i/H_i$ \\  \hline
+U:G & 1 & NA & 1 & $H_i/H$ \\  \hline
+U:G & 1 & NA & 1 & $H/H_qe$ \\  \hline
+U:GDP & 1 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+U:G & 1 & cis-W/W & 5 & $H_qe/H$ \\  \hline
+U:G & 1 & cis-W/W & 5 & $H_e/H_e$ \\  \hline
+U:G & 1 & cis-W/W & 4 & $H_qe/H_i$ \\  \hline
+U:G & 1 & cis-W/W & 4 & $H_ie/H_ie$ \\  \hline
+U:G & 1 & cis-W/W & 3 & $H_i/H_qe$ \\  \hline
+U:G & 1 & cis-W/W & 3 & $H_ie/H_ie$ \\  \hline
+U:G & 1 & cis-W/W & 3 & $H/H_i$ \\  \hline
+U:G & 1 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+U:G & 1 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+U:G & 1 & cis-W/W & 1 & $H_qe/H_i$ \\  \hline
+U:G & 1 & cis-W/S & 5 & $H_qe/H_i$ \\  \hline
+U:G & 1 & cis-W/S & 4 & $H_qe/H_i$ \\  \hline
+U:G & 1 & cis-W/S & 4 & $H_i/H_qe$ \\  \hline
+U:G & 1 & cis-W/S & 2 & $H_ie/H_e$ \\  \hline
+U:G & 1 & cis-W/S & 1 & $H/H$ \\  \hline
+U:G & 1 & cis-W/H & 3 & $H/H$ \\  \hline
+U:G & 1 & cis-S/W & 4 & $H/H$ \\  \hline
+U:G & 1 & cis-S/W & 3 & $H_e/H_e$ \\  \hline
+U:G & 1 & cis-S/H & 2 & $H_e/H_e$ \\  \hline
+U:C & 1 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+U:C & 1 & trans-W/H & 1 & $H_e/H_e$ \\  \hline
+U:C & 1 & trans-W/. & 1 & $H_ie/H_ie$ \\  \hline
+U:C & 1 & trans-S/W & 1 & $H_qe/H_qe$ \\  \hline
+U:C & 1 & trans-S/H & 2 & $H/H$ \\  \hline
+U:C & 1 & trans-S/H & 2 & $H_e/H_e$ \\  \hline
+U:C & 1 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+U:C & 1 & trans-S/H & 1 & $H_ie/H_ie$ \\  \hline
+U:C & 1 & trans-S/H & 1 & $H/H$ \\  \hline
+U:C & 1 & NA & 4 & $H_i/H$ \\  \hline
+U:C & 1 & NA & 3 & $H_i/H_qe$ \\  \hline
+U:C & 1 & NA & 3 & $H/H_qe$ \\  \hline
+U:C & 1 & NA & 2 & $H_ie/H_e$ \\  \hline
+U:C & 1 & NA & 2 & $H_e/H_e$ \\  \hline
+U:C & 1 & NA & 1 & $H_i/H$ \\  \hline
+U:C & 1 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+U:C & 1 & cis-W/W & 1 & $H_e/H_ie$ \\  \hline
+U:C & 1 & cis-W/S & 3 & $H_qe/H_qe$ \\  \hline
+U:C & 1 & cis-W/H & 2 & $H/H$ \\  \hline
+U:C & 1 & cis-S/W & 3 & $H_ie/H_e$ \\  \hline
+U:C & 1 & cis-S/W & 2 & $H_ie/H_e$ \\  \hline
+U:C & 1 & cis-S/W & 1 & $H_ie/H_e$ \\  \hline
+U:C & 1 & cis-S/S & 3 & $H_ie/H_ie$ \\  \hline
+U:A & 1 & trans-W/W & 3 & $H_ie/H_e$ \\  \hline
+U:A & 1 & trans-W/W & 1 & $H_qe/H_i$ \\  \hline
+U:A & 1 & trans-W/W & 1 & $H_ie/H_ie$ \\  \hline
+U:A & 1 & trans-W/W & 1 & $H_ie/H_e$ \\  \hline
+U:A & 1 & trans-W/W & 1 & $H_e/H_e$ \\  \hline
+U:A & 1 & trans-W/H & 4 & $H_qe/H_i$ \\  \hline
+U:A & 1 & trans-W/H & 4 & $H_qe/H$ \\  \hline
+U:A & 1 & trans-W/H & 4 & $H_i/H_i$ \\  \hline
+U:A & 1 & trans-S/W & 2 & $H_e/H_ie$ \\  \hline
+U:A & 1 & trans-S/S & 2 & $H_e/H_ie$ \\  \hline
+U:A & 1 & trans-S/H & 6 & $H/H_qe$ \\  \hline
+U:A & 1 & trans-S/H & 5 & $H/H_qe$ \\  \hline
+U:A & 1 & trans-S/H & 4 & $H_e/H_ie$ \\  \hline
+U:A & 1 & trans-S/H & 3 & $H_ie/H_ie$ \\  \hline
+U:A & 1 & trans-S/H & 2 & $H_qe/H_qe$ \\  \hline
+U:A & 1 & trans-S/H & 2 & $H_qe/H$ \\  \hline
+U:A & 1 & trans-S/H & 1 & $H_qe/H$ \\  \hline
+U:A & 1 & trans-H/S & 3 & $H_i/H_qe$ \\  \hline
+U:A & 1 & NA & 6 & $H_e/H_ie$ \\  \hline
+U:A & 1 & NA & 5 & $H_i/H$ \\  \hline
+U:A & 1 & NA & 4 & $H_qe/H_i$ \\  \hline
+U:A & 1 & NA & 4 & $H/H$ \\  \hline
+U:A & 1 & NA & 4 & $H_e/H_e$ \\  \hline
+U:A & 1 & NA & 3 & $H_i/H$ \\  \hline
+U:A & 1 & cis-W/W & 3 & $H_i/H_qe$ \\  \hline
+U:A & 1 & cis-W/W & 3 & $H_i/H$ \\  \hline
+U:A & 1 & cis-W/W & 3 & $H/H_i$ \\  \hline
+U:A & 1 & cis-W/W & 3 & $H_e/H_ie$ \\  \hline
+U:A & 1 & cis-W/W & 2 & $H_i/H$ \\  \hline
+U:A & 1 & cis-W/W & 1 & $H_ie/H_e$ \\  \hline
+U:A & 1 & cis-W/H & 4 & $H_i/H_i$ \\  \hline
+U:A & 1 & cis-W/H & 3 & $H_i/H_i$ \\  \hline
+U:A & 1 & cis-W/H & 3 & $H/H_i$ \\  \hline
+U:A & 1 & cis-W/H & 2 & $H_i/H_i$ \\  \hline
+U:A & 1 & cis-W/H & 1 & $H_i/H_qe$ \\  \hline
+U:A & 1 & cis-W/H & 1 & $H_i/H$ \\  \hline
+U:A & 1 & cis-W/H & 1 & $H_e/H_e$ \\  \hline
+U:A & 1 & cis-S/W & 2 & $H_qe/H$ \\  \hline
+U:A & 1 & cis-S/W & 2 & $H_ie/H_e$ \\  \hline
+U:A & 1 & cis-S/W & 1 & $H_ie/H_e$ \\  \hline
+U:A & 1 & cis-S/S & 3 & $H_ie/H_e$ \\  \hline
+U:A & 1 & cis-S/S & 2 & $H_ie/H_ie$ \\  \hline
+U:A & 1 & cis-S/H & 4 & $H_qe/H_i$ \\  \hline
+U:A & 1 & cis-S/H & 4 & $H_i/H$ \\  \hline
+U:A & 1 & cis-S/H & 4 & $H_e/H_ie$ \\  \hline
+U:A & 1 & cis-S/H & 3 & $H_ie/H_ie$ \\  \hline
+U:A & 1 & cis-H/H & 1 & $H_ie/H_e$ \\  \hline
+U2N:A & 1 & trans-W/H & 1 & $H_qe/H_qe$ \\  \hline
+SSU:A & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+SAM:57 & 1 & NA & 2 & $H_i/H$ \\  \hline
+S4C:G & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+PSU:OMG & 1 & trans-S/W & 2 & $H_e/H_ie$ \\  \hline
+PSU:G & 1 & trans-W/W & 2 & $H/H_qe$ \\  \hline
+PSU:G & 1 & trans-W/W & 1 & $H_e/H_ie$ \\  \hline
+PSU:G & 1 & trans-./W & 1 & $H_e/H_ie$ \\  \hline
+PSU:G & 1 & trans-S/W & 3 & $H_qe/H_i$ \\  \hline
+PSU:G & 1 & trans-S/W & 3 & $H_ie/H_ie$ \\  \hline
+PSU:G & 1 & trans-S/W & 1 & $H_e/H_ie$ \\  \hline
+PSU:G & 1 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+PSU:A & 1 & trans-W/H & 3 & $H_qe/H_i$ \\  \hline
+PSU:A & 1 & trans-W/H & 2 & $H_e/H_ie$ \\  \hline
+PSU:A & 1 & cis-W/W & 1 & $H/H$ \\  \hline
+OMU:A2M & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+OMG:OMC & 1 & cis-W/W & 7 & $H_e/H_e$ \\  \hline
+OMG:OMC & 1 & cis-W/W & 6 & $H_e/H_e$ \\  \hline
+OMG:OMC & 1 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+OMC:OMG & 1 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+OMC:A & 1 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+N5C:G & 1 & NA & 3 & $H_ie/H_e$ \\  \hline
+MTU:A & 1 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+M2G:A & 1 & cis-W/W & 1 & $H/H_qe$ \\  \hline
+LHU:LG & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+LHU:LG & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+LG:LHU & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+LG:LHU & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+LG:LC & 1 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+LG:LC & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+LC:LG & 1 & cis-W/W & 5 & $H/H$ \\  \hline
+LC:LG & 1 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+I:I & 1 & cis-H/W & 1 & $H_qe/H_qe$ \\  \hline
+I:C & 1 & cis-X/X & 3 & $H/H$ \\  \hline
+I:C & 1 & cis-X/X & 2 & $H/H$ \\  \hline
+HPA:74 & 1 & NA & 2 & $H_i/H_qe$ \\  \hline
+H2U:U & 1 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+H2U:U & 1 & NA & 3 & $H_e/H_ie$ \\  \hline
+H2U:U & 1 & NA & 2 & $H_e/H_ie$ \\  \hline
+G:U & 1 & trans-W/W & 4 & $H_e/H_ie$ \\  \hline
+G:U & 1 & trans-W/W & 3 & $H_ie/H_e$ \\  \hline
+G:U & 1 & trans-W/W & 2 & $H_ie/H_ie$ \\  \hline
+G:U & 1 & trans-W/W & 2 & $H/H$ \\  \hline
+G:U & 1 & trans-W/H & 1 & $H_e/H_e$ \\  \hline
+G:U & 1 & trans-S/W & 3 & $H_i/H_qe$ \\  \hline
+G:U & 1 & trans-S/W & 2 & $H_e/H_ie$ \\  \hline
+G:U & 1 & trans-S/W & 1 & $H_e/H_ie$ \\  \hline
+G:U & 1 & trans-S/H & 2 & $H/H$ \\  \hline
+G:U & 1 & trans-./H & 1 & $H_qe/H_qe$ \\  \hline
+G:U & 1 & NA & 5 & $H_qe/H_qe$ \\  \hline
+G:U & 1 & NA & 5 & $H_qe/H_i$ \\  \hline
+G:U & 1 & NA & 4 & $H_qe/H_i$ \\  \hline
+G:U & 1 & NA & 4 & $H/H_qe$ \\  \hline
+G:U & 1 & NA & 4 & $H_e/H_ie$ \\  \hline
+G:U & 1 & NA & 2 & $H_qe/H_i$ \\  \hline
+G:U & 1 & NA & 2 & $H_ie/H_ie$ \\  \hline
+G:U & 1 & NA & 1 & $H_i/H$ \\  \hline
+G:U & 1 & cis-W/W & 5 & $H_e/H_e$ \\  \hline
+G:U & 1 & cis-W/W & 3 & $H_i/H_qe$ \\  \hline
+G:U & 1 & cis-W/W & 3 & $H_ie/H_e$ \\  \hline
+G:U & 1 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+G:U & 1 & cis-W/S & 3 & $H_qe/H_qe$ \\  \hline
+G:U & 1 & cis-W/S & 3 & $H/H_i$ \\  \hline
+G:U & 1 & cis-W/S & 1 & $H_qe/H_qe$ \\  \hline
+G:U & 1 & cis-W/S & 1 & $H_i/H_qe$ \\  \hline
+G:U & 1 & cis-S/W & 2 & $H_qe/H_qe$ \\  \hline
+G:U & 1 & cis-S/S & 3 & $H_i/H_qe$ \\  \hline
+G:U & 1 & cis-S/S & 2 & $H/H_i$ \\  \hline
+G:U & 1 & cis-S/H & 3 & $H_ie/H_e$ \\  \hline
+G:U & 1 & cis-S/H & 2 & $H_i/H_qe$ \\  \hline
+G:U & 1 & cis-S/H & 1 & $H_ie/H_e$ \\  \hline
+G:U & 1 & cis-S/H & 1 & $H_e/H_ie$ \\  \hline
+G:U & 1 & cis-H/W & 1 & $H_i/H_qe$ \\  \hline
+G:U & 1 & cis-H/W & 1 & $H/H$ \\  \hline
+G:S4C & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+G:PSU & 1 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+G:PSU & 1 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+G:PSU & 1 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+G:G & 1 & trans-W/W & 5 & $H_e/H_e$ \\  \hline
+G:G & 1 & trans-W/W & 2 & $H_qe/H_i$ \\  \hline
+G:G & 1 & trans-W/W & 1 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & trans-W/S & 1 & $H_qe/H$ \\  \hline
+G:G & 1 & trans-W/H & 4 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & trans-W/H & 3 & $H_qe/H$ \\  \hline
+G:G & 1 & trans-W/H & 3 & $H/H$ \\  \hline
+G:G & 1 & trans-W/H & 2 & $H_qe/H_i$ \\  \hline
+G:G & 1 & trans-W/H & 2 & $H_i/H_i$ \\  \hline
+G:G & 1 & trans-W/H & 2 & $H_i/H$ \\  \hline
+G:G & 1 & trans-W/H & 1 & $H_i/H$ \\  \hline
+G:G & 1 & trans-W/H & 1 & $H_e/H_ie$ \\  \hline
+G:G & 1 & trans-S/W & 2 & $H_e/H_ie$ \\  \hline
+G:G & 1 & trans-S/S & 5 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & trans-S/S & 4 & $H_ie/H_e$ \\  \hline
+G:G & 1 & trans-S/S & 3 & $H_ie/H_ie$ \\  \hline
+G:G & 1 & trans-S/H & 5 & $H_e/H_ie$ \\  \hline
+G:G & 1 & trans-S/H & 3 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & trans-S/H & 2 & $H/H_qe$ \\  \hline
+G:G & 1 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & trans-S/H & 1 & $H_qe/H$ \\  \hline
+G:G & 1 & trans-H/W & 3 & $H/H$ \\  \hline
+G:G & 1 & trans-H/W & 3 & $H_e/H_e$ \\  \hline
+G:G & 1 & trans-H/W & 1 & $H_i/H$ \\  \hline
+G:G & 1 & trans-H/S & 1 & $H_qe/H$ \\  \hline
+G:G & 1 & NA & 4 & $H_qe/H_i$ \\  \hline
+G:G & 1 & NA & 1 & $H_e/H_e$ \\  \hline
+G:G & 1 & cis-W/W & 5 & $H_e/H_e$ \\  \hline
+G:G & 1 & cis-W/W & 4 & $H/H_qe$ \\  \hline
+G:G & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+G:G & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+G:G & 1 & cis-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:G & 1 & cis-W/W & 2 & $H_ie/H_ie$ \\  \hline
+G:G & 1 & cis-W/W & 1 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & cis-W/W & 1 & $H_i/H_qe$ \\  \hline
+G:G & 1 & cis-W/W & 1 & $H/H_i$ \\  \hline
+G:G & 1 & cis-W/S & 2 & $H/H$ \\  \hline
+G:G & 1 & cis-W/S & 1 & $H/H$ \\  \hline
+G:G & 1 & cis-W/H & 4 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & cis-W/H & 4 & $H_i/H_qe$ \\  \hline
+G:G & 1 & cis-W/H & 4 & $H/H_qe$ \\  \hline
+G:G & 1 & cis-W/H & 3 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & cis-W/H & 3 & $H_i/H_qe$ \\  \hline
+G:G & 1 & cis-W/H & 3 & $H_i/H$ \\  \hline
+G:G & 1 & cis-W/H & 3 & $H/H$ \\  \hline
+G:G & 1 & cis-W/H & 2 & $H_qe/H_i$ \\  \hline
+G:G & 1 & cis-W/H & 2 & $H_i/H_i$ \\  \hline
+G:G & 1 & cis-W/H & 2 & $H_ie/H_ie$ \\  \hline
+G:G & 1 & cis-W/H & 1 & $H_qe/H_i$ \\  \hline
+G:G & 1 & cis-W/H & 1 & $H_qe/H$ \\  \hline
+G:G & 1 & cis-S/W & 4 & $H_e/H_ie$ \\  \hline
+G:G & 1 & cis-S/W & 3 & $H_e/H_e$ \\  \hline
+G:G & 1 & cis-S/W & 2 & $H_qe/H$ \\  \hline
+G:G & 1 & cis-S/W & 2 & $H_ie/H_e$ \\  \hline
+G:G & 1 & cis-S/W & 2 & $H/H_qe$ \\  \hline
+G:G & 1 & cis-S/W & 2 & $H/H$ \\  \hline
+G:G & 1 & cis-S/W & 2 & $H_e/H_ie$ \\  \hline
+G:G & 1 & cis-S/W & 1 & $H_ie/H_e$ \\  \hline
+G:G & 1 & cis-S/H & 2 & $H_i/H_qe$ \\  \hline
+G:G & 1 & cis-H/W & 3 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & cis-H/W & 3 & $H_qe/H_i$ \\  \hline
+G:G & 1 & cis-H/W & 2 & $H_i/H_i$ \\  \hline
+G:G & 1 & cis-H/W & 1 & $H_qe/H_qe$ \\  \hline
+G:G & 1 & cis-H/W & 1 & $H/H$ \\  \hline
+G:G & 1 & cis-H/S & 4 & $H_qe/H_i$ \\  \hline
+G:C & 1 & trans-W/W & 2 & $H_i/H_qe$ \\  \hline
+G:C & 1 & trans-W/W & 2 & $H/H$ \\  \hline
+G:C & 1 & trans-W/W & 2 & $H_e/H_e$ \\  \hline
+G:C & 1 & trans-W/W & 1 & $H_ie/H_ie$ \\  \hline
+G:C & 1 & trans-W/W & 1 & $H/H_i$ \\  \hline
+G:C & 1 & trans-S/H & 2 & $H_e/H_e$ \\  \hline
+G:CSL & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+G:CSL & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+G:C & 1 & NA & 5 & $H_qe/H_qe$ \\  \hline
+G:C & 1 & NA & 5 & $H_qe/H_i$ \\  \hline
+G:C & 1 & NA & 5 & $H_i/H_qe$ \\  \hline
+G:C & 1 & NA & 5 & $H_i/H$ \\  \hline
+G:C & 1 & NA & 4 & $H_i/H_i$ \\  \hline
+G:C & 1 & NA & 3 & $H/H_i$ \\  \hline
+G:C & 1 & NA & 2 & $H/H_i$ \\  \hline
+G:C & 1 & NA & 1 & $H/H_i$ \\  \hline
+G:C & 1 & cis-W/W & 4 & $H_i/H_i$ \\  \hline
+G:C & 1 & cis-W/W & 1 & $H/H_i$ \\  \hline
+G:C & 1 & cis-W/S & 4 & $H_i/H$ \\  \hline
+G:C & 1 & cis-W/S & 2 & $H/H$ \\  \hline
+G:C & 1 & cis-W/S & 1 & $H/H_qe$ \\  \hline
+G:C & 1 & cis-W/S & 1 & $H_e/H_e$ \\  \hline
+G:C & 1 & cis-W/. & 1 & $H_qe/H$ \\  \hline
+G:C & 1 & cis-S/H & 3 & $H_i/H_qe$ \\  \hline
+G:C & 1 & cis-S/H & 2 & $H_i/H_qe$ \\  \hline
+G:C & 1 & cis-S/H & 1 & $H_i/H_qe$ \\  \hline
+G:C & 1 & cis-H/W & 1 & $H_e/H_ie$ \\  \hline
+G:C & 1 & cis-H/W & 1 & $H_e/H_e$ \\  \hline
+G:C & 1 & cis-H/S & 1 & $H_i/H_i$ \\  \hline
+G:CB2 & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+G:A & 1 & trans-W/S & 2 & $H_qe/H_qe$ \\  \hline
+G:A & 1 & trans-W/H & 5 & $H_e/H_e$ \\  \hline
+G:A & 1 & trans-W/H & 4 & $H/H$ \\  \hline
+G:A & 1 & trans-W/H & 2 & $H_ie/H_ie$ \\  \hline
+G:A & 1 & trans-W/H & 2 & $H_ie/H_e$ \\  \hline
+G:A & 1 & trans-S/W & 4 & $H_e/H_ie$ \\  \hline
+G:A & 1 & trans-S/W & 3 & $H_i/H_i$ \\  \hline
+G:A & 1 & trans-S/W & 3 & $H/H_qe$ \\  \hline
+G:A & 1 & trans-S/W & 1 & $H_i/H_i$ \\  \hline
+G:A & 1 & trans-S/W & 1 & $H_e/H_e$ \\  \hline
+G:A & 1 & trans-S/S & 4 & $H/H_i$ \\  \hline
+G:A & 1 & trans-S/S & 2 & $H_ie/H_ie$ \\  \hline
+G:A & 1 & trans-S/S & 2 & $H_e/H_ie$ \\  \hline
+G:A & 1 & trans-S/H & 6 & $H_ie/H_e$ \\  \hline
+G:A & 1 & trans-S/H & 5 & $H_qe/H_qe$ \\  \hline
+G:A & 1 & trans-S/H & 5 & $H_qe/H_i$ \\  \hline
+G:A & 1 & trans-S/H & 5 & $H/H_i$ \\  \hline
+G:A & 1 & trans-S/H & 5 & $H_e/H_ie$ \\  \hline
+G:A & 1 & trans-S/H & 4 & $H_qe/H_i$ \\  \hline
+G:A & 1 & trans-S/H & 4 & $H_ie/H_ie$ \\  \hline
+G:A & 1 & trans-S/H & 3 & $H_i/H_qe$ \\  \hline
+G:A & 1 & trans-S/H & 2 & $H_i/H_qe$ \\  \hline
+G:A & 1 & trans-S/H & 1 & $H_i/H_i$ \\  \hline
+G:A & 1 & trans-H/W & 1 & $H_qe/H_i$ \\  \hline
+G:A & 1 & NA & 9 & $H_e/H_ie$ \\  \hline
+G:A & 1 & NA & 5 & $H_i/H_i$ \\  \hline
+G:A & 1 & NA & 5 & $H_e/H_e$ \\  \hline
+G:A & 1 & NA & 4 & $H_i/H_qe$ \\  \hline
+G:A & 1 & NA & 4 & $H_ie/H_ie$ \\  \hline
+G:A & 1 & NA & 4 & $H/H_qe$ \\  \hline
+G:A & 1 & NA & 4 & $H/H_i$ \\  \hline
+G:A & 1 & NA & 4 & $H_e/H_ie$ \\  \hline
+G:A & 1 & NA & 3 & $H_qe/H_i$ \\  \hline
+G:A & 1 & NA & 3 & $H_i/H$ \\  \hline
+G:A & 1 & NA & 3 & $H_ie/H_ie$ \\  \hline
+G:A & 1 & NA & 3 & $H/H_i$ \\  \hline
+G:A & 1 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+G:A & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+G:A & 1 & cis-W/W & 2 & $H_i/H$ \\  \hline
+G:A & 1 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+G:A & 1 & cis-W/W & 1 & $H_e/H_e$ \\  \hline
+G:A & 1 & cis-W/S & 2 & $H_e/H_ie$ \\  \hline
+G:A & 1 & cis-W/H & 1 & $H_qe/H_i$ \\  \hline
+G:A & 1 & cis-S/W & 1 & $H_ie/H_ie$ \\  \hline
+G:A & 1 & cis-S/S & 3 & $H/H_i$ \\  \hline
+G:A & 1 & cis-S/S & 2 & $H_qe/H_qe$ \\  \hline
+G:A & 1 & cis-S/H & 5 & $H_e/H_ie$ \\  \hline
+G:A & 1 & cis-S/H & 4 & $H_qe/H_i$ \\  \hline
+G:A & 1 & cis-S/H & 4 & $H_e/H_ie$ \\  \hline
+G:A & 1 & cis-S/H & 2 & $H_i/H_qe$ \\  \hline
+G:A & 1 & cis-S/H & 2 & $H_ie/H_e$ \\  \hline
+G:A & 1 & cis-H/H & 1 & $H_qe/H$ \\  \hline
+G:A & 1 & cis-./. & 1 & $H_qe/H_i$ \\  \hline
+G:A5M & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+G:74 & 1 & NA & 3 & $H_i/H_qe$ \\  \hline
+G:5MC & 1 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+G:5BU & 1 & cis-W/W & 4 & $H/H$ \\  \hline
+G:5BU & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+G:5BU & 1 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+G48:C43 & 1 & cis-W/W & 4 & $H/H$ \\  \hline
+G:2AD & 1 & trans-S/S & 2 & $H_qe/H_i$ \\  \hline
+DU:G & 1 & trans-H/S & 1 & $H_qe/H$ \\  \hline
+DG:C & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+DG:C & 1 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+DC:G & 1 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+DC:G & 1 & cis-W/W & 2 & $H_e/H_e$ \\  \hline
+DC:A & 1 & cis-W/W & 1 & $H/H$ \\  \hline
+DA:U & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+DA:A & 1 & trans-S/H & 1 & $H_qe/H_i$ \\  \hline
+C:XUG & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+C:U & 1 & trans-S/W & 2 & $H_i/H$ \\  \hline
+C:U & 1 & NA & 6 & $H_i/H_qe$ \\  \hline
+C:U & 1 & NA & 4 & $H_qe/H_i$ \\  \hline
+C:U & 1 & NA & 4 & $H_i/H_qe$ \\  \hline
+C:U & 1 & NA & 4 & $H/H_i$ \\  \hline
+C:U & 1 & NA & 3 & $H_qe/H$ \\  \hline
+C:U & 1 & NA & 3 & $H/H$ \\  \hline
+C:U & 1 & NA & 3 & $H_e/H_ie$ \\  \hline
+C:U & 1 & NA & 2 & $H_qe/H_qe$ \\  \hline
+C:U & 1 & NA & 2 & $H_ie/H_e$ \\  \hline
+C:U & 1 & NA & 2 & $H_e/H_e$ \\  \hline
+C:U & 1 & NA & 1 & $H_i/H_i$ \\  \hline
+C:U & 1 & NA & 1 & $H_e/H_ie$ \\  \hline
+C:U & 1 & cis-W/W & 5 & $H/H_i$ \\  \hline
+C:U & 1 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+C:U & 1 & cis-W/S & 2 & $H_qe/H_qe$ \\  \hline
+C:U & 1 & cis-S/H & 3 & $H_i/H_i$ \\  \hline
+CTP:G & 1 & NA & 3 & $H_ie/H_e$ \\  \hline
+C:I & 1 & cis-X/X & 3 & $H/H$ \\  \hline
+C:I & 1 & cis-X/X & 3 & $H_e/H_e$ \\  \hline
+C:I & 1 & cis-X/X & 2 & $H/H$ \\  \hline
+C:G & 1 & trans-W/W & 4 & $H/H_qe$ \\  \hline
+C:G & 1 & trans-W/W & 4 & $H_e/H_ie$ \\  \hline
+C:G & 1 & trans-W/W & 1 & $H_ie/H_ie$ \\  \hline
+C:G & 1 & trans-W/W & 1 & $H/H_i$ \\  \hline
+C:G & 1 & trans-W/S & 2 & $H/H_i$ \\  \hline
+C:G & 1 & trans-W/S & 1 & $H_i/H_qe$ \\  \hline
+C:G & 1 & trans-S/W & 3 & $H_i/H_qe$ \\  \hline
+C:G & 1 & trans-S/H & 1 & $H_e/H_e$ \\  \hline
+C:G & 1 & NA & 5 & $H_e/H_e$ \\  \hline
+C:G & 1 & NA & 3 & $H_i/H$ \\  \hline
+C:G & 1 & cis-W/W & 5 & $H_e/H_ie$ \\  \hline
+C:G & 1 & cis-W/W & 4 & $H_i/H_qe$ \\  \hline
+C:G & 1 & cis-W/W & 2 & $H_i/H$ \\  \hline
+C:G & 1 & cis-W/W & 2 & $H_ie/H_e$ \\  \hline
+C:G & 1 & cis-W/W & 2 & $H/H_i$ \\  \hline
+C:G & 1 & cis-W/W & 1 & $H/H_i$ \\  \hline
+C:G & 1 & cis-W/W & 1 & $H_e/H_ie$ \\  \hline
+C:G & 1 & cis-W/H & 2 & $H_qe/H_qe$ \\  \hline
+C:G & 1 & cis-W/H & 2 & $H_ie/H_ie$ \\  \hline
+C:G & 1 & cis-W/H & 1 & $H_i/H_i$ \\  \hline
+C:G & 1 & cis-S/W & 2 & $H_qe/H_qe$ \\  \hline
+C:G & 1 & cis-S/W & 2 & $H_ie/H_e$ \\  \hline
+C:G & 1 & cis-S/W & 2 & $H/H_i$ \\  \hline
+C:G & 1 & cis-S/W & 2 & $H/H$ \\  \hline
+C:G & 1 & cis-S/W & 2 & $H_e/H_e$ \\  \hline
+C:G & 1 & cis-S/S & 1 & $H_e/H_ie$ \\  \hline
+C:G & 1 & cis-S/H & 3 & $H/H_i$ \\  \hline
+C:G & 1 & cis-H/W & 2 & $H_qe/H_qe$ \\  \hline
+C:G & 1 & cis-H/H & 1 & $H/H_qe$ \\  \hline
+C:G & 1 & cis-H/. & 1 & $H_qe/H_qe$ \\  \hline
+C:DG & 1 & cis-W/W & 3 & $H/H_i$ \\  \hline
+C:C & 1 & trans-W/W & 3 & $H_e/H_ie$ \\  \hline
+C:C & 1 & trans-W/W & 2 & $H/H_qe$ \\  \hline
+C:C & 1 & trans-W/W & 1 & $H/H_qe$ \\  \hline
+C:C & 1 & trans-W/H & 1 & $H_qe/H_qe$ \\  \hline
+C:C & 1 & trans-./S & 1 & $H_ie/H_e$ \\  \hline
+C:C & 1 & trans-H/S & 1 & $H/H$ \\  \hline
+C:C & 1 & NA & 4 & $H_qe/H_i$ \\  \hline
+C:C & 1 & NA & 3 & $H_i/H_qe$ \\  \hline
+C:C & 1 & NA & 3 & $H_e/H_ie$ \\  \hline
+C:C & 1 & NA & 2 & $H_qe/H$ \\  \hline
+C:C & 1 & NA & 1 & $H_i/H$ \\  \hline
+C:C & 1 & NA & 1 & $H_e/H_ie$ \\  \hline
+C:C & 1 & cis-W/W & 3 & $H_qe/H_qe$ \\  \hline
+C:C & 1 & cis-W/W & 3 & $H_i/H_qe$ \\  \hline
+C:C & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+C:C & 1 & cis-W/W & 2 & $H_ie/H_ie$ \\  \hline
+C:C & 1 & cis-W/W & 1 & $H_qe/H_i$ \\  \hline
+C:C & 1 & cis-S/H & 2 & $H_qe/H_i$ \\  \hline
+C:C & 1 & cis-S/H & 2 & $H_e/H_e$ \\  \hline
+C:C & 1 & cis-S/H & 1 & $H_qe/H_i$ \\  \hline
+C:C & 1 & cis-S/H & 1 & $H_i/H_qe$ \\  \hline
+C:C & 1 & cis-H/W & 1 & $H/H_i$ \\  \hline
+C:C & 1 & cis-H/W & 1 & $H/H$ \\  \hline
+CBR:G & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+CB2:G & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+C:A & 1 & trans-W/W & 2 & $H_ie/H_ie$ \\  \hline
+C:A & 1 & trans-W/W & 1 & $H_ie/H_ie$ \\  \hline
+C:A & 1 & trans-W/W & 1 & $H/H$ \\  \hline
+C:A & 1 & trans-W/H & 5 & $H_e/H_ie$ \\  \hline
+C:A & 1 & trans-W/H & 4 & $H_e/H_ie$ \\  \hline
+C:A & 1 & trans-W/H & 3 & $H_i/H_i$ \\  \hline
+C:A & 1 & trans-W/H & 3 & $H_e/H_ie$ \\  \hline
+C:A & 1 & trans-W/H & 2 & $H_i/H_qe$ \\  \hline
+C:A & 1 & trans-W/H & 2 & $H_i/H_i$ \\  \hline
+C:A & 1 & trans-W/H & 2 & $H_i/H$ \\  \hline
+C:A & 1 & trans-W/H & 2 & $H_e/H_ie$ \\  \hline
+C:A & 1 & trans-W/H & 1 & $H_e/H_ie$ \\  \hline
+C:A & 1 & trans-W/. & 1 & $H_e/H_e$ \\  \hline
+C:A & 1 & trans-S/W & 3 & $H/H_qe$ \\  \hline
+C:A & 1 & trans-S/W & 2 & $H/H$ \\  \hline
+C:A & 1 & trans-S/W & 1 & $H_qe/H_qe$ \\  \hline
+C:A & 1 & trans-S/W & 1 & $H/H$ \\  \hline
+C:A & 1 & trans-S/S & 2 & $H_ie/H_e$ \\  \hline
+C:A & 1 & trans-S/H & 2 & $H_i/H_qe$ \\  \hline
+C:A & 1 & trans-S/. & 1 & $H/H$ \\  \hline
+C:A & 1 & trans-S/. & 1 & $H_e/H_e$ \\  \hline
+C:A & 1 & trans-H/W & 1 & $H_e/H_e$ \\  \hline
+C:A & 1 & NA & 5 & $H_e/H_ie$ \\  \hline
+C:A & 1 & NA & 3 & $H/H_i$ \\  \hline
+C:A & 1 & NA & 1 & $H_qe/H$ \\  \hline
+C:A & 1 & cis-W/W & 4 & $H/H$ \\  \hline
+C:A & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+C:A & 1 & cis-W/S & 3 & $H_i/H$ \\  \hline
+C:A & 1 & cis-W/H & 2 & $H_e/H_e$ \\  \hline
+C:A & 1 & cis-S/W & 3 & $H/H_i$ \\  \hline
+C:A & 1 & cis-S/W & 2 & $H/H_i$ \\  \hline
+C:A & 1 & cis-S/W & 1 & $H/H_qe$ \\  \hline
+C:A & 1 & cis-S/W & 1 & $H/H$ \\  \hline
+C:A & 1 & cis-S/S & 4 & $H_ie/H_ie$ \\  \hline
+C:A & 1 & cis-S/H & 2 & $H_i/H_qe$ \\  \hline
+C:A & 1 & cis-S/H & 2 & $H_e/H_ie$ \\  \hline
+C:A & 1 & cis-S/H & 1 & $H_e/H_ie$ \\  \hline
+C:A & 1 & cis-H/S & 1 & $H_e/H_ie$ \\  \hline
+C:7MG & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+C:2MG & 1 & cis-W/W & 3 & $H/H_qe$ \\  \hline
+AVC:A & 1 & trans-S/H & 3 & $H_qe/H_qe$ \\  \hline
+AVC:A & 1 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+A:U & 1 & trans-W/W & 2 & $H/H_qe$ \\  \hline
+A:U & 1 & trans-W/W & 1 & $H_qe/H_i$ \\  \hline
+A:U & 1 & trans-W/W & 1 & $H_qe/H$ \\  \hline
+A:U & 1 & trans-W/W & 1 & $H_i/H_i$ \\  \hline
+A:U & 1 & trans-W/W & 1 & $H/H_qe$ \\  \hline
+A:U & 1 & trans-W/H & 1 & $H_qe/H_qe$ \\  \hline
+A:U & 1 & trans-H/W & 4 & $H_qe/H$ \\  \hline
+A:U & 1 & trans-H/W & 4 & $H_i/H_qe$ \\  \hline
+A:U & 1 & trans-H/W & 4 & $H_i/H_i$ \\  \hline
+A:U & 1 & trans-H/W & 4 & $H_i/H$ \\  \hline
+A:U & 1 & trans-H/W & 4 & $H/H$ \\  \hline
+A:U & 1 & trans-H/W & 3 & $H_qe/H_i$ \\  \hline
+A:U & 1 & trans-H/W & 3 & $H_ie/H_ie$ \\  \hline
+A:U & 1 & trans-H/W & 2 & $H_ie/H_ie$ \\  \hline
+A:U & 1 & trans-H/W & 1 & $H_qe/H$ \\  \hline
+A:U & 1 & trans-H/W & 1 & $H_i/H_qe$ \\  \hline
+A:U & 1 & trans-H/W & 1 & $H_ie/H_e$ \\  \hline
+A:U & 1 & trans-H/S & 1 & $H_e/H_ie$ \\  \hline
+A:U & 1 & NA & 6 & $H_e/H_ie$ \\  \hline
+A:U & 1 & NA & 5 & $H_e/H_ie$ \\  \hline
+A:U & 1 & NA & 4 & $H/H_qe$ \\  \hline
+A:U & 1 & NA & 1 & $H_ie/H_e$ \\  \hline
+A:U & 1 & cis-W/W & 3 & $H_e/H_ie$ \\  \hline
+A:U & 1 & cis-W/W & 1 & $H_qe/H_i$ \\  \hline
+A:U & 1 & cis-W/S & 2 & $H_qe/H_qe$ \\  \hline
+A:U & 1 & cis-W/S & 2 & $H_i/H$ \\  \hline
+A:U & 1 & cis-W/H & 1 & $H_i/H_i$ \\  \hline
+A:U & 1 & cis-S/W & 2 & $H_ie/H_e$ \\  \hline
+A:U & 1 & cis-S/S & 4 & $H_i/H_qe$ \\  \hline
+A:U & 1 & cis-H/W & 3 & $H_qe/H_qe$ \\  \hline
+A:U & 1 & cis-H/W & 3 & $H_i/H$ \\  \hline
+A:U & 1 & cis-H/W & 3 & $H_e/H_ie$ \\  \hline
+A:U & 1 & cis-H/W & 2 & $H_i/H_qe$ \\  \hline
+A:U & 1 & cis-H/W & 2 & $H_e/H_ie$ \\  \hline
+A:U & 1 & cis-H/W & 1 & $H_qe/H$ \\  \hline
+A:U & 1 & cis-H/S & 4 & $H_qe/H_i$ \\  \hline
+A:PSU & 1 & cis-W/H & 2 & $H/H$ \\  \hline
+A:M5M & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+A:M2G & 1 & NA & 3 & $H_qe/H$ \\  \hline
+A:M2G & 1 & NA & 1 & $H_qe/H$ \\  \hline
+A:M2G & 1 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+A:M2G & 1 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:M2G & 1 & cis-W/W & 1 & $H_qe/H$ \\  \hline
+A:G & 1 & trans-W/S & 3 & $H_qe/H_i$ \\  \hline
+A:G & 1 & trans-W/S & 1 & $H/H_i$ \\  \hline
+A:G & 1 & trans-W/H & 2 & $H/H_qe$ \\  \hline
+A:G & 1 & trans-W/. & 1 & $H_i/H$ \\  \hline
+A:G & 1 & trans-S/S & 3 & $H_i/H$ \\  \hline
+A:G & 1 & trans-S/S & 2 & $H_i/H_qe$ \\  \hline
+A:G & 1 & trans-S/S & 2 & $H_e/H_ie$ \\  \hline
+A:G & 1 & trans-S/H & 2 & $H/H$ \\  \hline
+A:G & 1 & trans-H/W & 1 & $H_qe/H_qe$ \\  \hline
+A:G & 1 & trans-H/W & 1 & $H_e/H_e$ \\  \hline
+A:G & 1 & trans-H/S & 5 & $H_qe/H$ \\  \hline
+A:G & 1 & trans-H/S & 5 & $H_ie/H_e$ \\  \hline
+A:G & 1 & trans-H/S & 4 & $H_i/H_qe$ \\  \hline
+A:G & 1 & trans-H/S & 4 & $H_i/H_i$ \\  \hline
+A:G & 1 & trans-H/S & 4 & $H_e/H_e$ \\  \hline
+A:G & 1 & trans-H/S & 3 & $H_ie/H_ie$ \\  \hline
+A:G & 1 & trans-H/S & 1 & $H_ie/H_ie$ \\  \hline
+A:G & 1 & NA & 5 & $H_ie/H_ie$ \\  \hline
+A:G & 1 & NA & 4 & $H_ie/H_e$ \\  \hline
+A:G & 1 & NA & 4 & $H/H_qe$ \\  \hline
+A:G & 1 & NA & 3 & $H/H_i$ \\  \hline
+A:G & 1 & cis-W/W & 3 & $H_ie/H_ie$ \\  \hline
+A:G & 1 & cis-W/W & 2 & $H/H_i$ \\  \hline
+A:G & 1 & cis-W/W & 1 & $H_ie/H_ie$ \\  \hline
+A:G & 1 & cis-W/W & 1 & $H_e/H_ie$ \\  \hline
+A:G & 1 & cis-W/S & 3 & $H_e/H_e$ \\  \hline
+A:G & 1 & cis-W/H & 2 & $H/H$ \\  \hline
+A:G & 1 & cis-W/H & 1 & $H/H$ \\  \hline
+A:G & 1 & cis-S/S & 3 & $H_qe/H_qe$ \\  \hline
+A:G & 1 & cis-S/S & 2 & $H_i/H$ \\  \hline
+A:G & 1 & cis-S/S & 1 & $H_i/H$ \\  \hline
+A:G & 1 & cis-S/H & 3 & $H_i/H_qe$ \\  \hline
+A:G & 1 & cis-S/H & 2 & $H_qe/H_i$ \\  \hline
+A:G & 1 & cis-S/H & 2 & $H_i/H_qe$ \\  \hline
+A:G & 1 & cis-H/S & 3 & $H_i/H_i$ \\  \hline
+ADE:74 & 1 & NA & 2 & $H_i/H_qe$ \\  \hline
+A:C & 1 & trans-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:C & 1 & trans-W/W & 2 & $H/H_i$ \\  \hline
+A:C & 1 & trans-W/S & 3 & $H_i/H$ \\  \hline
+A:C & 1 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+A:C & 1 & trans-./S & 1 & $H/H$ \\  \hline
+A:C & 1 & trans-H/W & 4 & $H/H$ \\  \hline
+A:C & 1 & trans-H/W & 2 & $H_qe/H_i$ \\  \hline
+A:C & 1 & trans-H/W & 1 & $H_i/H$ \\  \hline
+A:C & 1 & trans-H/W & 1 & $H/H$ \\  \hline
+A:C & 1 & trans-H/S & 2 & $H_qe/H_qe$ \\  \hline
+A:C & 1 & trans-H/S & 2 & $H_i/H_i$ \\  \hline
+A:C & 1 & NA & 3 & $H_i/H_i$ \\  \hline
+A:C & 1 & NA & 2 & $H_i/H$ \\  \hline
+A:C & 1 & NA & 2 & $H_ie/H_ie$ \\  \hline
+A:C & 1 & NA & 1 & $H_i/H_qe$ \\  \hline
+A:C & 1 & NA & 1 & $H_ie/H_ie$ \\  \hline
+A:C & 1 & cis-W/W & 4 & $H/H$ \\  \hline
+A:C & 1 & cis-W/W & 4 & $H_e/H_e$ \\  \hline
+A:C & 1 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+A:C & 1 & cis-W/W & 2 & $H_qe/H_i$ \\  \hline
+A:C & 1 & cis-W/W & 1 & $H_e/H_ie$ \\  \hline
+A:C & 1 & cis-W/S & 3 & $H_i/H_qe$ \\  \hline
+A:C & 1 & cis-W/S & 3 & $H_i/H$ \\  \hline
+A:C & 1 & cis-W/S & 3 & $H_ie/H_e$ \\  \hline
+A:C & 1 & cis-W/S & 1 & $H_qe/H$ \\  \hline
+A:C & 1 & cis-W/S & 1 & $H_i/H$ \\  \hline
+A:C & 1 & cis-W/S & 1 & $H_ie/H_e$ \\  \hline
+A:C & 1 & cis-S/W & 2 & $H_i/H_qe$ \\  \hline
+A:C & 1 & cis-S/S & 3 & $H_qe/H_qe$ \\  \hline
+A:C & 1 & cis-H/W & 3 & $H_e/H_e$ \\  \hline
+A:C & 1 & cis-H/W & 2 & $H/H_qe$ \\  \hline
+A:A & 1 & trans-W/W & 3 & $H_i/H_i$ \\  \hline
+A:A & 1 & trans-W/W & 2 & $H_qe/H$ \\  \hline
+A:A & 1 & trans-W/W & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 1 & trans-W/W & 1 & $H_ie/H_e$ \\  \hline
+A:A & 1 & trans-W/S & 1 & $H_ie/H_ie$ \\  \hline
+A:A & 1 & trans-W/H & 3 & $H_qe/H$ \\  \hline
+A:A & 1 & trans-S/W & 2 & $H_qe/H_i$ \\  \hline
+A:A & 1 & trans-S/H & 1 & $H_qe/H_i$ \\  \hline
+A:A & 1 & trans-S/H & 1 & $H_ie/H_ie$ \\  \hline
+A:A & 1 & trans-./S & 1 & $H_qe/H_qe$ \\  \hline
+A:A & 1 & trans-S/. & 1 & $H_qe/H$ \\  \hline
+A:A & 1 & trans-H/W & 3 & $H_i/H_qe$ \\  \hline
+A:A & 1 & trans-H/W & 3 & $H_e/H_e$ \\  \hline
+A:A & 1 & trans-H/W & 1 & $H_qe/H_i$ \\  \hline
+A:A & 1 & trans-H/W & 1 & $H_e/H_ie$ \\  \hline
+A:A & 1 & trans-H/S & 3 & $H_qe/H$ \\  \hline
+A:A & 1 & trans-H/S & 1 & $H_ie/H_ie$ \\  \hline
+A:A & 1 & trans-H/H & 5 & $H_qe/H$ \\  \hline
+A:A & 1 & trans-H/H & 4 & $H_qe/H$ \\  \hline
+A:A & 1 & trans-H/H & 3 & $H_ie/H_e$ \\  \hline
+A:A & 1 & trans-H/H & 3 & $H/H_i$ \\  \hline
+A:A & 1 & trans-H/H & 2 & $H_qe/H_i$ \\  \hline
+A:A & 1 & trans-H/H & 2 & $H_i/H_qe$ \\  \hline
+A:A & 1 & trans-H/H & 1 & $H_e/H_ie$ \\  \hline
+A:A & 1 & NA & 4 & $H_i/H_i$ \\  \hline
+A:A & 1 & NA & 1 & $H_ie/H_e$ \\  \hline
+A:A & 1 & NA & 1 & $H/H_i$ \\  \hline
+A:A & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+A:A & 1 & cis-W/S & 1 & $H/H_qe$ \\  \hline
+A:A & 1 & cis-S/W & 2 & $H_ie/H_ie$ \\  \hline
+A:A & 1 & cis-S/S & 3 & $H_ie/H_ie$ \\  \hline
+A:A & 1 & cis-S/H & 4 & $H_qe/H_i$ \\  \hline
+A:A & 1 & cis-H/W & 2 & $H_qe/H$ \\  \hline
+A:A & 1 & cis-H/W & 2 & $H_i/H_qe$ \\  \hline
+A:A & 1 & cis-H/W & 1 & $H_qe/H$ \\  \hline
+A:A5M & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+A5M:G & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+A5M:A & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+A5M:A & 1 & cis-W/W & 1 & $H/H$ \\  \hline
+A:5BU & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+A:5BU & 1 & cis-W/W & 2 & $H_qe/H_qe$ \\  \hline
+A:5BU & 1 & cis-W/W & 2 & $H/H_qe$ \\  \hline
+A:5BU & 1 & cis-H/W & 2 & $H/H$ \\  \hline
+A:4OC & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+A2M:OMU & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+A2M:A & 1 & trans-W/H & 1 & $H_qe/H_qe$ \\  \hline
+A2M:A & 1 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+A2M:A & 1 & trans-S/H & 1 & $H_qe/H_i$ \\  \hline
+A:1MA & 1 & trans-W/H & 2 & $H/H_i$ \\  \hline
+6AP:74 & 1 & NA & 3 & $H_i/H_qe$ \\  \hline
+5MU:MAD & 1 & trans-W/H & 1 & $H/H_i$ \\  \hline
+5MU:A & 1 & trans-W/H & 3 & $H_e/H_ie$ \\  \hline
+5MU:A & 1 & trans-W/H & 2 & $H_e/H_ie$ \\  \hline
+5MU:1MA & 1 & trans-W/H & 3 & $H/H_i$ \\  \hline
+5MC:G & 1 & cis-W/W & 3 & $H_e/H_e$ \\  \hline
+5MC:G & 1 & cis-W/W & 2 & $H_qe/H$ \\  \hline
+5CG:C & 1 & NA & 3 & $H_i/H$ \\  \hline
+5CG:C & 1 & cis-W/W & 3 & $H_i/H$ \\  \hline
+5BU:G & 1 & cis-W/W & 2 & $H_i/H_i$ \\  \hline
+5BU:G & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+5BU:A & 1 & cis-W/H & 4 & $H_i/H_qe$ \\  \hline
+5BU:A & 1 & cis-W/H & 2 & $H/H$ \\  \hline
+5BU:5BU & 1 & cis-W/W & 2 & $H/H$ \\  \hline
+5BU:5BU & 1 & cis-W/W & 1 & $H/H$ \\  \hline
+47:56 & 1 & cis-W/W & 3 & $H_qe/H$ \\  \hline
+3DA:A & 1 & trans-S/H & 1 & $H_qe/H_qe$ \\  \hline
+3AY:U & 1 & NA & 3 & $H_i/H_qe$ \\  \hline
+2MU:1MA & 1 & trans-W/H & 1 & $H/H_i$ \\  \hline
+2MG:U & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+2MG:C & 1 & cis-W/W & 5 & $H_qe/H$ \\  \hline
+2MG:C & 1 & cis-W/W & 4 & $H_qe/H$ \\  \hline
+1SC:G & 1 & cis-W/W & 3 & $H/H$ \\  \hline
+\end{longtable}
+\end{center}
+
+
+\subsection{Watson-Crick Base Pairs}
+
+In addition to Figure~\ref{fig:WCandnon} we have also colored the most
+abundant WC base pairs  in Figure~\ref{fig:mainWC} that is, CG, GC, AU, and UA, base
+pairs. The base pairs counts for every possible Watson-Crick pair can
+be seen in Table~\ref{tab:allWC}, and the average base pair parameters
+and their standard deviations can be seen in Table~\ref{tab:WCave}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6, angle=90]{CGGCAUUA.png}
+\caption{Scatterplots showing the distribution of Watson-Crick (WC)
+  base pairs colored as CG(Cyan), GC(Green), AU(Blue), UA(Red), others(black)}
+\label{fig:mainWC}
+\end{figure}
+
+
+\begin{center}
+\begin{longtable}{c|c}
+\caption{Number of WC base pairs sorted by base pair ID.}
+\label{tab:allWC}\\ 
+%This is the header for the first page of the table...
+\bf{\# BP} & \bf{BP Type} \\ \hline \hline 
+\endfirsthead
+
+%This is the header for the remaining page(s) of the table...
+\multicolumn{2}{r}{{\tablename} \thetable{} -- Continued} \\
+\bf{\# BP} & \bf{BP Type} \\ \hline \hline
+\endhead
+
+%This is the footer for all pages except the last page of the table...
+\multicolumn{2}{r}{Continued on Next Page\ldots} \\
+\endfoot
+%This is the footer for the last page of the table...
+\endlastfoot
+  33036 & C:G      \\ \hline
+  31216 & G:C      \\ \hline
+  11756 & A:U      \\ \hline
+  11424 & U:A      \\ \hline
+     61 & 5MC:G    \\ \hline
+     35 & 5BU:A    \\ \hline
+     24 & 2MG:C    \\ \hline
+     20 & A:5BU    \\ \hline
+     16 & G48:C43  \\ \hline
+     12 & C43:G48  \\ \hline
+     11 & OMG:OMC  \\ \hline
+      9 & OMC:OMG  \\ \hline
+      8 & U36:A44  \\ \hline
+      8 & DC:G     \\ \hline
+      8 & A44:U36  \\ \hline
+      7 & LC:LG    \\ \hline
+      7 & G:CBV    \\ \hline
+      6 & G:5MC    \\ \hline
+      6 & CBV:G    \\ \hline
+      5 & CBR:G    \\ \hline
+      4 & UMS:A    \\ \hline
+      4 & LG:LC    \\ \hline
+      4 & GTP:C    \\ \hline
+      4 & G:CBR    \\ \hline
+      4 & CSL:G    \\ \hline
+      4 & 52:22    \\ \hline
+      3 & IU:A     \\ \hline
+      3 & C:2MG    \\ \hline
+      2 & G:5IC    \\ \hline
+      2 & C:GTP    \\ \hline
+      2 & A:IU     \\ \hline
+      2 & 5CG:C    \\ \hline
+      1 & U:RIA    \\ \hline
+      1 & SSU:A    \\ \hline
+      1 & S4C:G    \\ \hline
+      1 & OMU:A2M  \\ \hline
+      1 & N5C:G    \\ \hline
+      1 & G:S4C    \\ \hline
+      1 & G:CSL    \\ \hline
+      1 & G:CB2    \\ \hline
+      1 & G:A5M    \\ \hline
+      1 & G:74     \\ \hline
+      1 & DG:C     \\ \hline
+      1 & DA:U     \\ \hline
+      1 & C:XUG    \\ \hline
+      1 & CTP:G    \\ \hline
+      1 & C:DG     \\ \hline
+      1 & CB2:G    \\ \hline
+      1 & C:7MG    \\ \hline
+      1 & ADE:74   \\ \hline
+      1 & A5M:G    \\ \hline
+      1 & A2M:OMU  \\ \hline
+      1 & 47:56    \\ \hline
+      1 & 1SC:G    \\ \hline 
+\end{longtable}
+\end{center}
+
+\begin{center}
+{\small
+\begin{longtable}{c|c|c|c|c|c|c}
+\caption{\normalsize{This table summarizes for Watson-Crick base pairs, the base
+  pair parameters average values with standard  deviations in
+  parentheses.}} \label{tab:WCave}\\ 
+\hline
+\parbox[t]{1.8cm}{\bf{BP Parameter}} & \bf{CG} & \bf{GC} & \bf{AU} & \bf{UA} & \bf{others} & \bf{ARNA}\\ \hline \hline
+Shear     &  0.169(0.311)  & -0.184(0.315) &  0.035(0.276)  & -0.034(0.292) & -0.070(0.381) &  0.01 \\ \hline
+Stretch   & -0.149(0.135)  & -0.148(0.132) & -0.122(0.118)  & -0.121(0.120) & -0.175(0.151) & -0.08 \\ \hline
+Stagger   & -0.145(0.427)  & -0.138(0.407) & -0.042(0.394)  & -0.046(0.391) &  0.001(0.285) &  0.01 \\ \hline
+Buckle    &  3.888(9.589)  & -3.631(9.446) & -0.817(8.750)  &  1.209(8.700) &  0.688(6.590) & -0.00 \\ \hline
+Propeller & -6.568(8.841)  & -6.309(8.721) & -4.724(10.537) & -6.350(8.672) & -9.678(7.052) & -2.07 \\ \hline
+Opening   &  0.454(3.600)  &  0.509(3.643) &  0.709(5.349)  &
+1.043(5.248) &  3.554(0.313) & -1.67 \\ \hline 
+\end{longtable}
+
+}
+\end{center}
+
+As can be seen in Table~\ref{tab:LW} all CG, GC, AU, and UA cannonical
+base pairs are given the cis-W/W LW classification, or are classified
+as NA as is expected.
+
+\begin{center}
+\begin{longtable}{c|c|c}
+\caption{Canonical WC Base Pairs in dataset.}
+\label{tab:LW}\\
+\hline
+\bf{\# BP} & \bf{BP Type} & \bf{LW Class} \\ \hline \hline
+  31680 & C:G & cis-W/W  \\ \hline
+  29908 & G:C & cis-W/W  \\ \hline
+  11435 & A:U & cis-W/W  \\ \hline
+  11089 & U:A & cis-W/W  \\ \hline
+   1356 & C:G & NA       \\ \hline
+   1308 & G:C & NA       \\ \hline
+    335 & U:A & NA       \\ \hline
+    321 & A:U & NA       \\ \hline
+\end{longtable}
+
+\end{center}
+
+       
+\begin{center}
+\begin{longtable}{c|c|c|c}
+\caption{Canonical CG Base Pairs and their Helical Context (HC)}
+\label{tab:WC_CG_hel_LW}\\
+\hline
+\bf{\# BP} & \bf{BP Type} & \bf{HC} & \bf{LW
+Class} \\ \hline \hline
+  21077 & C:G & $H/H      $ & cis-W/W        \\ \hline
+   4034 & C:G & $H/H_qe   $ & cis-W/W     \\ \hline
+   2056 & C:G & $H_qe/H   $ & cis-W/W     \\ \hline
+   2012 & C:G & $H_e/H_e  $ & cis-W/W    \\ \hline
+   1551 & C:G & $H_qe/H_qe$ & cis-W/W  \\ \hline
+    415 & C:G & $H_e/H_ie $ & cis-W/W   \\ \hline
+    151 & C:G & $H/H_i    $ & cis-W/W      \\ \hline
+    124 & C:G & $H_qe/H_i $ & cis-W/W   \\ \hline
+    100 & C:G & $H_i/H_i  $ & cis-W/W    \\ \hline 
+     75 & C:G & $H_ie/H_ie$ & cis-W/W  \\ \hline
+     51 & C:G & $H_ie/H_e $ & cis-W/W   \\ \hline
+     27 & C:G & $H_i/H_qe $ & cis-W/W   \\ \hline
+      7 & C:G & $H_i/H    $ & cis-W/W      \\ \hline
+    560 & C:G & $H/H      $ & NA             \\ \hline
+    232 & C:G & $H_e/H_e  $ & NA         \\ \hline
+    173 & C:G & $H/H_qe   $ & NA          \\ \hline
+    142 & C:G & $H_qe/H_qe$ & NA       \\ \hline
+    132 & C:G & $H_qe/H   $ & NA          \\ \hline
+     39 & C:G & $H_e/H_ie $ & NA        \\ \hline
+     24 & C:G & $H_ie/H_ie$ & NA       \\ \hline
+     23 & C:G & $H_i/H_i  $ & NA         \\ \hline
+     12 & C:G & $H_ie/H_e $ & NA        \\ \hline
+     10 & C:G & $H_qe/H_i $ & NA        \\ \hline
+      5 & C:G & $H/H_i    $ & NA           \\ \hline
+      4 & C:G & $H_i/H_qe $ & NA        \\ \hline
+\end{longtable}
+\end{center}
+       
+\subsection{non-WC Base Pairs}
+
+
+\begin{center}
+\begin{longtable}{c|c|c|c}
+\caption{non-WC Base Pairs (BP) Classified by Helical Region (HR), and
+  Leontis-Westhof (LW).}
+\label{tab:noWC_LW}\\ 
+%This is the header for the first page of the table...
+\hline 
+\bf{BP Type} & \bf{HR Type} & \bf{LW
+  Class} & \bf{Counts}\\ \hline \hline
+\endfirsthead
+
+%This is the header for the remaining page(s) of the table...
+\multicolumn{4}{r}{{\tablename} \thetable{} -- Continued} \\
+\hline 
+\bf{BP Type} & \bf{HR Type} & \bf{LW
+  Class} & \bf{Counts}\\ \hline \hline
+\endhead
+
+%This is the footer for all pages except the last page of the table...
+\multicolumn{4}{r}{Continued on Next Page\ldots} \\
+\endfoot
+%This is the footer for the last page of the table...
+\endlastfoot
+G:U & $H/H$ & cis-W/W & 3636 \\  \hline
+U:G & $H/H$ & cis-W/W & 3484 \\  \hline
+C:G & $H/H$ & cis-W/W & 1511 \\  \hline
+G:C & $H/H$ & cis-W/W & 1443 \\  \hline
+G:A & $H/H$ & trans-S/H & 1321 \\  \hline
+A:G & $H/H$ & trans-H/S & 1221 \\  \hline
+G:A & $H_e/H_e$ & trans-S/H & 1000 \\  \hline
+G:U & $H/H_qe$ & cis-W/W & 697 \\  \hline
+U:G & $H_qe/H$ & cis-W/W & 680 \\  \hline
+U:U & $H/H$ & cis-W/W & 647 \\  \hline
+G:U & $H_qe/H$ & cis-W/W & 605 \\  \hline
+U:G & $H/H_qe$ & cis-W/W & 509 \\  \hline
+U:G & $H_e/H_e$ & cis-W/W & 492 \\  \hline
+A:U & $H/H_qe$ & trans-H/W & 484 \\  \hline
+G:A & $H_e/H_e$ & trans-W/H & 429 \\  \hline
+A:G & $H/H_qe$ & trans-H/S & 408 \\  \hline
+A:U & $H/H$ & cis-W/W & 386 \\  \hline
+U:A & $H/H$ & cis-W/W & 370 \\  \hline
+A:G & $H_qe/H_qe$ & trans-H/S & 357 \\  \hline
+U:A & $H_qe/H$ & trans-W/H & 349 \\  \hline
+C:C & $H/H$ & cis-W/W & 342 \\  \hline
+G:A & $H_qe/H_qe$ & trans-S/H & 339 \\  \hline
+G:A & $H_qe/H$ & trans-S/H & 325 \\  \hline
+A:G & $H/H_qe$ & cis-W/W & 312 \\  \hline
+G:A & $H_e/H_e$ & NA & 306 \\  \hline
+C:G & $H/H_qe$ & cis-W/W & 280 \\  \hline
+A:G & $H_qe/H$ & trans-H/S & 276 \\  \hline
+A:U & $H_qe/H_qe$ & trans-H/W & 273 \\  \hline
+U:G & $H_qe/H_qe$ & cis-W/W & 269 \\  \hline
+U:A & $H_qe/H_qe$ & trans-W/H & 260 \\  \hline
+C:G & $H_e/H_e$ & cis-W/W & 253 \\  \hline
+G:C & $H_qe/H$ & cis-W/W & 251 \\  \hline
+U:G & $H_e/H_e$ & trans-S/W & 234 \\  \hline
+A:A & $H_qe/H$ & trans-H/H & 231 \\  \hline
+U:A & $H/H_i$ & trans-W/H & 222 \\  \hline
+G:C & $H/H_qe$ & cis-W/W & 220 \\  \hline
+G:A & $H_e/H_ie$ & NA & 219 \\  \hline
+G:C & $H_e/H_e$ & cis-W/W & 209 \\  \hline
+G:U & $H_qe/H_qe$ & cis-W/W & 208 \\  \hline
+A:G & $H/H$ & cis-W/W & 204 \\  \hline
+U:A & $H_e/H_ie$ & trans-W/H & 199 \\  \hline
+A:C & $H/H$ & cis-W/W & 185 \\  \hline
+U:U & $H/H_qe$ & cis-W/W & 175 \\  \hline
+G:A & $H/H_qe$ & trans-S/H & 170 \\  \hline
+C:G & $H/H$ & NA & 168 \\  \hline
+A:A & $H/H_qe$ & trans-H/H & 166 \\  \hline
+G:C & $H_qe/H_qe$ & cis-W/W & 162 \\  \hline
+A:U & $H_i/H$ & trans-H/W & 160 \\  \hline
+A:G & $H_qe/H$ & cis-W/W & 156 \\  \hline
+C:G & $H_qe/H_qe$ & cis-W/W & 155 \\  \hline
+C:G & $H_qe/H$ & cis-W/W & 149 \\  \hline
+G:A & $H/H$ & cis-W/W & 147 \\  \hline
+A:G & $H_e/H_e$ & NA & 145 \\  \hline
+G:C & $H/H$ & NA & 126 \\  \hline
+U:A & $H_e/H_ie$ & NA & 125 \\  \hline
+G:A & $H/H$ & NA & 124 \\  \hline
+A:U & $H/H$ & trans-H/W & 121 \\  \hline
+U:A & $H_e/H_ie$ & trans-W/W & 120 \\  \hline
+G:U & $H/H$ & NA & 120 \\  \hline
+A:A & $H/H$ & trans-S/H & 118 \\  \hline
+A:A & $H/H$ & trans-H/S & 117 \\  \hline
+U:G & $H_e/H_ie$ & trans-S/W & 114 \\  \hline
+C:U & $H/H$ & cis-W/W & 113 \\  \hline
+A:A & $H/H_qe$ & trans-S/H & 112 \\  \hline
+G:A & $H_qe/H_qe$ & cis-W/W & 108 \\  \hline
+U:C & $H/H$ & cis-W/W & 107 \\  \hline
+A:G & $H_qe/H$ & NA & 106 \\  \hline
+A:A & $H/H$ & cis-W/W & 105 \\  \hline
+G:A & $H/H_qe$ & cis-W/W & 104 \\  \hline
+A:U & $H/H_qe$ & cis-W/W & 102 \\  \hline
+G:G & $H/H$ & trans-H/S & 101 \\  \hline
+G:A & $H_qe/H$ & cis-W/W & 101 \\  \hline
+A:C & $H/H$ & trans-H/W & 101 \\  \hline
+A:G & $H_qe/H_qe$ & cis-W/W & 98 \\  \hline
+A:C & $H/H_qe$ & cis-W/W & 98 \\  \hline
+G:A & $H_e/H_ie$ & trans-S/W & 96 \\  \hline
+C:A & $H/H$ & cis-W/W & 94 \\  \hline
+A:A & $H_ie/H_e$ & cis-S/W & 91 \\  \hline
+A:G & $H_i/H$ & trans-H/S & 90 \\  \hline
+A:G & $H/H_qe$ & NA & 89 \\  \hline
+A:U & $H_qe/H$ & trans-H/W & 88 \\  \hline
+A:A & $H_qe/H_i$ & NA & 88 \\  \hline
+U:A & $H/H_qe$ & trans-W/H & 86 \\  \hline
+C:C & $H_qe/H_qe$ & cis-W/W & 86 \\  \hline
+C:A & $H/H$ & NA & 86 \\  \hline
+A:A & $H/H_qe$ & NA & 85 \\  \hline
+U:U & $H_e/H_e$ & cis-W/W & 84 \\  \hline
+U:A & $H/H$ & NA & 84 \\  \hline
+A:U & $H/H$ & NA & 84 \\  \hline
+A:A & $H_e/H_ie$ & NA & 83 \\  \hline
+U:A & $H_e/H_e$ & trans-S/H & 82 \\  \hline
+G:U & $H_e/H_e$ & cis-W/W & 82 \\  \hline
+C:A & $H_e/H_e$ & NA & 82 \\  \hline
+A:U & $H_qe/H$ & cis-W/W & 81 \\  \hline
+U:G & $H/H$ & NA & 78 \\  \hline
+C:G & $H_qe/H_qe$ & NA & 78 \\  \hline
+U:A & $H/H$ & trans-W/H & 76 \\  \hline
+G:C & $H_e/H_ie$ & trans-W/W & 76 \\  \hline
+A:G & $H_qe/H_qe$ & NA & 76 \\  \hline
+U:A & $H_e/H_e$ & cis-W/W & 74 \\  \hline
+U:U & $H_qe/H$ & cis-W/W & 73 \\  \hline
+A:A & $H/H$ & trans-H/H & 73 \\  \hline
+G:A & $H_qe/H$ & NA & 72 \\  \hline
+A:U & $H/H_i$ & trans-H/W & 72 \\  \hline
+U:A & $H_i/H_i$ & trans-W/H & 71 \\  \hline
+A:A & $H_qe/H$ & NA & 71 \\  \hline
+U:A & $H_qe/H_i$ & trans-W/H & 70 \\  \hline
+U:A & $H/H_qe$ & cis-W/W & 69 \\  \hline
+C:A & $H/H$ & trans-S/H & 68 \\  \hline
+A:A & $H_i/H_qe$ & cis-W/S & 68 \\  \hline
+A:A & $H/H$ & NA & 68 \\  \hline
+U:A & $H/H_i$ & cis-W/H & 67 \\  \hline
+G:A & $H_qe/H_qe$ & NA & 67 \\  \hline
+C:G & $H/H_i$ & NA & 67 \\  \hline
+C:A & $H_e/H_e$ & trans-W/H & 67 \\  \hline
+A:U & $H/H_i$ & cis-H/W & 67 \\  \hline
+A:A & $H_i/H_qe$ & trans-W/W & 67 \\  \hline
+C:A & $H_e/H_e$ & cis-W/W & 66 \\  \hline
+A:A & $H_qe/H_i$ & trans-W/W & 66 \\  \hline
+G:G & $H_e/H_ie$ & NA & 65 \\  \hline
+G:C & $H_e/H_e$ & NA & 65 \\  \hline
+U:A & $H_i/H$ & cis-W/S & 63 \\  \hline
+G:G & $H_qe/H$ & cis-W/W & 63 \\  \hline
+A:U & $H_i/H_i$ & trans-H/W & 63 \\  \hline
+A:A & $H/H_qe$ & trans-H/S & 63 \\  \hline
+G:C & $H/H_qe$ & cis-W/S & 62 \\  \hline
+G:A & $H_qe/H_qe$ & cis-H/W & 62 \\  \hline
+A:A & $H_i/H$ & trans-H/H & 61 \\  \hline
+G:A & $H_ie/H_ie$ & trans-S/H & 60 \\  \hline
+A:G & $H_i/H$ & cis-S/S & 60 \\  \hline
+A:A & $H_i/H$ & trans-W/H & 60 \\  \hline
+U:A & $H/H_i$ & trans-W/S & 59 \\  \hline
+C:G & $H_ie/H_ie$ & NA & 59 \\  \hline
+A:U & $H_i/H_i$ & NA & 59 \\  \hline
+U:G & $H_e/H_e$ & NA & 58 \\  \hline
+U:A & $H_e/H_ie$ & cis-W/H & 57 \\  \hline
+G:A & $H_e/H_ie$ & trans-S/H & 57 \\  \hline
+C:U & $H/H$ & trans-H/S & 57 \\  \hline
+C:C & $H_e/H_e$ & cis-W/W & 57 \\  \hline
+C:A & $H_qe/H_qe$ & trans-W/H & 57 \\  \hline
+A:A & $H/H$ & trans-H/W & 57 \\  \hline
+U:A & $H_i/H$ & cis-W/H & 56 \\  \hline
+G:G & $H_e/H_e$ & NA & 56 \\  \hline
+G:C & $H_qe/H$ & NA & 56 \\  \hline
+G:C & $H/H_qe$ & NA & 56 \\  \hline
+C:G & $H/H_qe$ & NA & 56 \\  \hline
+U:U & $H_e/H_e$ & NA & 55 \\  \hline
+G:G & $H/H$ & trans-S/H & 55 \\  \hline
+A:U & $H_qe/H$ & NA & 55 \\  \hline
+C:U & $H/H_i$ & cis-W/W & 54 \\  \hline
+A:U & $H_i/H$ & cis-W/W & 54 \\  \hline
+U:U & $H_qe/H_qe$ & cis-W/W & 52 \\  \hline
+U:A & $H_ie/H_e$ & trans-W/W & 52 \\  \hline
+G:U & $H/H_qe$ & NA & 52 \\  \hline
+G:A & $H_qe/H_i$ & cis-W/H & 52 \\  \hline
+C:G & $H_e/H_e$ & NA & 52 \\  \hline
+A:U & $H/H_qe$ & NA & 52 \\  \hline
+A:C & $H_i/H$ & trans-H/W & 52 \\  \hline
+A:A & $H_i/H_qe$ & NA & 52 \\  \hline
+U:G & $H/H$ & cis-S/W & 51 \\  \hline
+U:A & $H_qe/H_qe$ & NA & 51 \\  \hline
+G:A & $H/H_i$ & trans-S/H & 50 \\  \hline
+A:G & $H_i/H$ & NA & 49 \\  \hline
+A:U & $H_qe/H_qe$ & cis-W/W & 48 \\  \hline
+U:U & $H/H$ & NA & 47 \\  \hline
+U:G & $H_qe/H_i$ & cis-H/S & 47 \\  \hline
+A:U & $H_i/H_qe$ & trans-H/W & 47 \\  \hline
+A:U & $H_i/H_i$ & cis-H/W & 47 \\  \hline
+G:A & $H/H$ & trans-W/H & 46 \\  \hline
+G:A & $H/H_i$ & trans-S/S & 46 \\  \hline
+A:A & $H_qe/H_qe$ & trans-H/H & 46 \\  \hline
+U:G & $H_qe/H_i$ & cis-W/W & 45 \\  \hline
+C:C & $H/H$ & trans-H/S & 45 \\  \hline
+A:C & $H/H$ & trans-H/S & 45 \\  \hline
+G:A & $H_qe/H$ & trans-W/H & 44 \\  \hline
+G:G & $H_i/H$ & cis-W/H & 43 \\  \hline
+C:C & $H/H_qe$ & cis-W/W & 43 \\  \hline
+C:A & $H_e/H_ie$ & trans-S/H & 43 \\  \hline
+A:U & $H_i/H_qe$ & trans-W/W & 43 \\  \hline
+A:U & $H/H$ & trans-H/S & 43 \\  \hline
+A:G & $H/H_i$ & cis-W/H & 43 \\  \hline
+A:C & $H_e/H_e$ & trans-S/W & 43 \\  \hline
+A:A & $H_qe/H_qe$ & cis-W/W & 43 \\  \hline
+U:C & $H/H_qe$ & cis-W/W & 42 \\  \hline
+G:C & $H_qe/H_qe$ & NA & 42 \\  \hline
+G:C & $H_ie/H_ie$ & NA & 42 \\  \hline
+C:G & $H_qe/H$ & NA & 42 \\  \hline
+A:U & $H_qe/H_i$ & NA & 42 \\  \hline
+A:C & $H/H_qe$ & trans-H/W & 42 \\  \hline
+U:U & $H_qe/H_i$ & cis-W/W & 41 \\  \hline
+G:G & $H/H_i$ & trans-W/H & 41 \\  \hline
+C:C & $H_e/H_e$ & NA & 41 \\  \hline
+A:U & $H_e/H_ie$ & cis-S/W & 41 \\  \hline
+PSU:G & $H_e/H_ie$ & trans-S/W & 40 \\  \hline
+C:A & $H_i/H_qe$ & NA & 40 \\  \hline
+A:U & $H_ie/H_ie$ & cis-H/W & 40 \\  \hline
+A:A & $H/H_qe$ & trans-W/H & 40 \\  \hline
+A:A & $H_e/H_e$ & trans-H/W & 40 \\  \hline
+G:C & $H_ie/H_ie$ & trans-W/W & 39 \\  \hline
+C:A & $H_ie/H_e$ & NA & 39 \\  \hline
+C:A & $H_e/H_ie$ & NA & 39 \\  \hline
+A:G & $H_e/H_e$ & trans-H/S & 39 \\  \hline
+A:C & $H_qe/H_i$ & trans-H/W & 39 \\  \hline
+A:A & $H_qe/H$ & trans-H/W & 39 \\  \hline
+A:A & $H/H_qe$ & trans-W/W & 39 \\  \hline
+U:C & $H_i/H$ & NA & 38 \\  \hline
+U:C & $H/H_qe$ & trans-W/W & 38 \\  \hline
+G:G & $H/H_i$ & cis-W/H & 38 \\  \hline
+A:G & $H_i/H_qe$ & NA & 38 \\  \hline
+A:G & $H/H$ & NA & 38 \\  \hline
+A:C & $H_qe/H_i$ & cis-W/H & 38 \\  \hline
+U:A & $H_i/H$ & trans-W/H & 37 \\  \hline
+U:A & $H_e/H_e$ & trans-W/H & 37 \\  \hline
+A:A & $H_e/H_e$ & trans-S/H & 37 \\  \hline
+A:A & $H_ie/H_ie$ & NA & 36 \\  \hline
+U:G & $H_qe/H$ & NA & 35 \\  \hline
+G:U & $H/H$ & trans-S/H & 35 \\  \hline
+G:G & $H_e/H_ie$ & trans-W/H & 35 \\  \hline
+C:A & $H/H_qe$ & NA & 35 \\  \hline
+U:A & $H_e/H_e$ & NA & 34 \\  \hline
+G:U & $H/H_i$ & cis-W/S & 34 \\  \hline
+C:C & $H_i/H$ & cis-W/W & 34 \\  \hline
+C:A & $H/H$ & trans-H/S & 34 \\  \hline
+A:A & $H_i/H$ & NA & 34 \\  \hline
+U:A & $H_qe/H_qe$ & cis-W/W & 33 \\  \hline
+U:A & $H_qe/H$ & cis-W/W & 33 \\  \hline
+C:U & $H/H_i$ & NA & 33 \\  \hline
+C:A & $H_qe/H_qe$ & cis-W/W & 33 \\  \hline
+A:U & $H_i/H$ & NA & 33 \\  \hline
+G:C & $H_qe/H_i$ & NA & 32 \\  \hline
+G:A & $H_ie/H_ie$ & NA & 32 \\  \hline
+G:A & $H_e/H_ie$ & cis-S/W & 32 \\  \hline
+A:G & $H_qe/H_i$ & NA & 32 \\  \hline
+A:U & $H_ie/H_ie$ & NA & 31 \\  \hline
+A:C & $H_qe/H_qe$ & NA & 31 \\  \hline
+A:C & $H/H$ & NA & 31 \\  \hline
+A:A & $H_qe/H_i$ & cis-S/H & 31 \\  \hline
+A:G & $H_i/H_qe$ & trans-W/S & 30 \\  \hline
+A:G & $H_ie/H_e$ & NA & 30 \\  \hline
+A:G & $H/H_i$ & NA & 30 \\  \hline
+A:A & $H_qe/H_qe$ & NA & 30 \\  \hline
+A:A & $H_e/H_e$ & NA & 30 \\  \hline
+U:G & $H_qe/H_i$ & NA & 29 \\  \hline
+U:C & $H_e/H_e$ & NA & 29 \\  \hline
+G:U & $H_qe/H_qe$ & NA & 29 \\  \hline
+G:U & $H_i/H_qe$ & NA & 29 \\  \hline
+A:A & $H/H_qe$ & cis-W/W & 29 \\  \hline
+U:G & $H_qe/H$ & trans-H/S & 28 \\  \hline
+U:A & $H_e/H_ie$ & trans-S/S & 28 \\  \hline
+U:A & $H_e/H_e$ & trans-S/S & 28 \\  \hline
+G:G & $H_qe/H_i$ & NA & 28 \\  \hline
+G:A & $H_qe/H_i$ & NA & 28 \\  \hline
+C:G & $H_e/H_ie$ & NA & 28 \\  \hline
+A:U & $H_e/H_ie$ & trans-W/W & 28 \\  \hline
+A:C & $H_qe/H_qe$ & cis-W/W & 28 \\  \hline
+U:U & $H_i/H$ & cis-W/W & 27 \\  \hline
+U:A & $H_ie/H_ie$ & NA & 27 \\  \hline
+G:U & $H_i/H_qe$ & cis-S/H & 27 \\  \hline
+G:A & $H_i/H$ & trans-S/H & 27 \\  \hline
+C:A & $H_i/H_qe$ & trans-W/H & 27 \\  \hline
+A:U & $H_e/H_e$ & trans-H/W & 27 \\  \hline
+A:A & $H_qe/H_qe$ & trans-H/S & 27 \\  \hline
+U:A & $H_qe/H$ & NA & 26 \\  \hline
+G:G & $H/H_qe$ & trans-H/W & 26 \\  \hline
+G:C & $H_ie/H_e$ & cis-W/W & 26 \\  \hline
+G:A & $H_qe/H$ & trans-H/H & 26 \\  \hline
+A:U & $H_qe/H$ & trans-W/W & 26 \\  \hline
+A:U & $H_i/H_qe$ & cis-W/W & 26 \\  \hline
+A:A & $H_qe/H_qe$ & trans-W/W & 26 \\  \hline
+A:A & $H/H_qe$ & trans-H/W & 26 \\  \hline
+5MU:A & $H/H_i$ & trans-W/H & 26 \\  \hline
+U:A & $H_ie/H_e$ & NA & 25 \\  \hline
+C:A & $H/H$ & trans-W/H & 25 \\  \hline
+U:U & $H_ie/H_ie$ & trans-W/W & 24 \\  \hline
+U:A & $H_i/H_qe$ & NA & 24 \\  \hline
+G:U & $H_qe/H$ & NA & 24 \\  \hline
+G:A & $H_i/H_qe$ & NA & 24 \\  \hline
+G:A & $H_i/H_i$ & NA & 24 \\  \hline
+A:A & $H_i/H_i$ & trans-H/H & 24 \\  \hline
+5MU:1MA & $H/H_i$ & trans-W/H & 24 \\  \hline
+G:G & $H/H$ & cis-H/W & 23 \\  \hline
+G:C & $H_i/H_qe$ & NA & 23 \\  \hline
+G:A & $H/H_qe$ & NA & 23 \\  \hline
+C:G & $H_ie/H_ie$ & cis-W/W & 23 \\  \hline
+C:G & $H_e/H_ie$ & trans-W/W & 23 \\  \hline
+A:U & $H_e/H_e$ & cis-W/W & 23 \\  \hline
+A:A & $H_ie/H_e$ & NA & 23 \\  \hline
+U:G & $H_ie/H_ie$ & NA & 22 \\  \hline
+U:C & $H_qe/H_qe$ & cis-W/W & 22 \\  \hline
+U:A & $H_i/H_i$ & cis-W/W & 22 \\  \hline
+G:U & $H/H$ & trans-W/H & 22 \\  \hline
+G:U & $H_e/H_e$ & NA & 22 \\  \hline
+G:G & $H_ie/H_e$ & NA & 22 \\  \hline
+G:A & $H_ie/H_ie$ & trans-S/W & 22 \\  \hline
+C:A & $H_qe/H$ & cis-W/W & 22 \\  \hline
+C:A & $H/H_qe$ & cis-W/W & 22 \\  \hline
+A:G & $H_i/H_qe$ & trans-H/S & 22 \\  \hline
+A:C & $H_qe/H_i$ & NA & 22 \\  \hline
+A:C & $H_e/H_ie$ & NA & 22 \\  \hline
+A:A & $H/H_qe$ & cis-W/S & 22 \\  \hline
+U:G & $H_e/H_ie$ & NA & 21 \\  \hline
+U:C & $H_qe/H$ & trans-S/H & 21 \\  \hline
+G:U & $H_qe/H_i$ & cis-S/H & 21 \\  \hline
+G:G & $H/H_qe$ & trans-W/W & 21 \\  \hline
+G:C & $H_i/H$ & cis-W/W & 21 \\  \hline
+G:A & $H_qe/H_qe$ & trans-W/H & 21 \\  \hline
+C:A & $H_qe/H$ & trans-W/H & 21 \\  \hline
+A:M2G & $H_qe/H$ & NA & 21 \\  \hline
+A:G & $H_ie/H_ie$ & NA & 21 \\  \hline
+A:C & $H_qe/H$ & cis-W/S & 21 \\  \hline
+U:U & $H_ie/H_ie$ & NA & 20 \\  \hline
+U:A & $H/H_i$ & NA & 20 \\  \hline
+G:U & $H/H_qe$ & cis-W/S & 20 \\  \hline
+G:C & $H_ie/H_ie$ & cis-W/W & 20 \\  \hline
+C:U & $H/H$ & NA & 20 \\  \hline
+A:U & $H_qe/H_qe$ & NA & 20 \\  \hline
+A:U & $H_qe/H$ & cis-W/S & 20 \\  \hline
+A:U & $H_e/H_e$ & NA & 20 \\  \hline
+A:G & $H_i/H$ & cis-W/W & 20 \\  \hline
+A:C & $H/H_qe$ & cis-W/S & 20 \\  \hline
+A:A & $H/H$ & trans-W/H & 20 \\  \hline
+U:U & $H_qe/H_qe$ & NA & 19 \\  \hline
+U:G & $H_e/H_ie$ & cis-W/W & 19 \\  \hline
+U:C & $H_e/H_e$ & trans-S/H & 19 \\  \hline
+U:A & $H/H_qe$ & NA & 19 \\  \hline
+G:U & $H_ie/H_ie$ & NA & 19 \\  \hline
+C:U & $H/H$ & trans-W/S & 19 \\  \hline
+A:U & $H_qe/H_i$ & cis-H/S & 19 \\  \hline
+A:U & $H_i/H$ & trans-W/W & 19 \\  \hline
+A:A & $H/H_i$ & NA & 19 \\  \hline
+PSU:A & $H/H$ & cis-W/W & 18 \\  \hline
+G:C & $H_i/H_i$ & NA & 18 \\  \hline
+A:U & $H_e/H_ie$ & NA & 18 \\  \hline
+A:G & $H_ie/H_e$ & trans-H/S & 18 \\  \hline
+A:A & $H_i/H_i$ & trans-W/W & 18 \\  \hline
+A:A & $H/H_i$ & trans-W/H & 18 \\  \hline
+U:G & $H_qe/H$ & trans-H/W & 17 \\  \hline
+U:G & $H_qe/H_qe$ & NA & 17 \\  \hline
+U:G & $H_i/H_qe$ & NA & 17 \\  \hline
+U:A & $H_e/H_ie$ & cis-W/W & 17 \\  \hline
+G:U & $H_qe/H_qe$ & trans-S/H & 17 \\  \hline
+G:C & $H_i/H_i$ & cis-W/W & 17 \\  \hline
+C:U & $H/H_qe$ & cis-W/W & 17 \\  \hline
+A:G & $H_i/H_i$ & trans-H/S & 17 \\  \hline
+A:A & $H_i/H_i$ & trans-H/W & 17 \\  \hline
+U:U & $H_e/H_ie$ & NA & 16 \\  \hline
+U:G & $H_i/H$ & NA & 16 \\  \hline
+U:C & $H_qe/H$ & NA & 16 \\  \hline
+G:C & $H_ie/H_e$ & NA & 16 \\  \hline
+C:A & $H_e/H_e$ & trans-S/H & 16 \\  \hline
+A:G & $H_e/H_ie$ & NA & 16 \\  \hline
+A:A & $H_qe/H_i$ & trans-H/W & 16 \\  \hline
+U:C & $H_qe/H$ & trans-S/W & 15 \\  \hline
+U:C & $H_e/H_ie$ & NA & 15 \\  \hline
+U:A & $H_e/H_e$ & trans-H/H & 15 \\  \hline
+G:G & $H/H_i$ & NA & 15 \\  \hline
+C:G & $H_ie/H_e$ & NA & 15 \\  \hline
+C:A & $H/H$ & trans-W/S & 15 \\  \hline
+A:A & $H/H_i$ & trans-W/W & 15 \\  \hline
+U:U & $H_ie/H_e$ & NA & 14 \\  \hline
+U:A & $H_i/H_i$ & NA & 14 \\  \hline
+C:G & $H/H_qe$ & cis-H/W & 14 \\  \hline
+C:G & $H_e/H_ie$ & cis-W/H & 14 \\  \hline
+C:A & $H_qe/H_qe$ & NA & 14 \\  \hline
+A:A & $H_ie/H_ie$ & trans-H/H & 14 \\  \hline
+U:U & $H_qe/H$ & NA & 13 \\  \hline
+U:G & $H_e/H_e$ & trans-S/H & 13 \\  \hline
+U:A & $H_i/H$ & NA & 13 \\  \hline
+G:C & $H_i/H$ & NA & 13 \\  \hline
+G:C & $H_e/H_ie$ & NA & 13 \\  \hline
+C:G & $H_e/H_ie$ & cis-W/W & 13 \\  \hline
+A:U & $H_i/H_i$ & cis-W/W & 13 \\  \hline
+A:G & $H/H_i$ & trans-H/S & 13 \\  \hline
+A:A & $H_qe/H_qe$ & trans-S/H & 13 \\  \hline
+A:A & $H_e/H_e$ & trans-H/H & 13 \\  \hline
+U:G & $H_e/H_e$ & trans-W/W & 12 \\  \hline
+U:C & $H_qe/H$ & cis-W/W & 12 \\  \hline
+U:A & $H_e/H_e$ & cis-W/H & 12 \\  \hline
+G:G & $H/H_qe$ & cis-W/H & 12 \\  \hline
+G:A & $H_ie/H_e$ & NA & 12 \\  \hline
+G:A & $H/H_i$ & NA & 12 \\  \hline
+G:A & $H_e/H_ie$ & trans-W/H & 12 \\  \hline
+C:U & $H_qe/H_qe$ & cis-W/W & 12 \\  \hline
+C:G & $H_i/H_qe$ & cis-W/W & 12 \\  \hline
+C:A & $H_e/H_e$ & trans-W/W & 12 \\  \hline
+A:G & $H_ie/H_ie$ & trans-H/S & 12 \\  \hline
+A:C & $H_ie/H_e$ & NA & 12 \\  \hline
+U:U & $H_i/H_i$ & NA & 11 \\  \hline
+U:G & $H/H_qe$ & NA & 11 \\  \hline
+U:G & $H_e/H_ie$ & trans-W/H & 11 \\  \hline
+U:C & $H/H$ & NA & 11 \\  \hline
+U:C & $H_e/H_e$ & cis-W/W & 11 \\  \hline
+U:A & $H_qe/H_i$ & NA & 11 \\  \hline
+U:A & $H_e/H_e$ & cis-S/W & 11 \\  \hline
+G:U & $H_qe/H_i$ & NA & 11 \\  \hline
+G:U & $H_i/H_qe$ & trans-W/W & 11 \\  \hline
+G:U & $H_e/H_ie$ & trans-W/W & 11 \\  \hline
+G:U & $H_e/H_ie$ & cis-W/W & 11 \\  \hline
+G:G & $H_qe/H_qe$ & NA & 11 \\  \hline
+G:G & $H/H_qe$ & NA & 11 \\  \hline
+G:G & $H_e/H_e$ & trans-W/H & 11 \\  \hline
+G:A & $H/H_qe$ & trans-S/W & 11 \\  \hline
+G:A & $H/H_qe$ & cis-W/S & 11 \\  \hline
+C:C & $H/H$ & trans-W/W & 11 \\  \hline
+C:C & $H/H$ & NA & 11 \\  \hline
+C:A & $H_ie/H_ie$ & NA & 11 \\  \hline
+A:U & $H_qe/H_i$ & trans-H/W & 11 \\  \hline
+A:U & $H_ie/H_e$ & cis-H/W & 11 \\  \hline
+A:G & $H/H_qe$ & trans-H/W & 11 \\  \hline
+A:G & $H_e/H_e$ & cis-W/W & 11 \\  \hline
+A:A & $H_i/H$ & trans-W/W & 11 \\  \hline
+A:A & $H_i/H_qe$ & cis-S/H & 11 \\  \hline
+A:A & $H_i/H_qe$ & cis-H/S & 11 \\  \hline
+A:A & $H/H$ & trans-W/S & 11 \\  \hline
+A:A & $H/H_qe$ & cis-W/H & 11 \\  \hline
+U:U & $H_qe/H_qe$ & trans-W/W & 10 \\  \hline
+U:G & $H/H$ & trans-W/W & 10 \\  \hline
+G:U & $H_ie/H_e$ & cis-S/H & 10 \\  \hline
+G:G & $H_e/H_ie$ & cis-S/H & 10 \\  \hline
+G:G & $H_e/H_e$ & cis-W/W & 10 \\  \hline
+G:A & $H_i/H_i$ & trans-S/W & 10 \\  \hline
+G:A & $H_ie/H_ie$ & trans-W/H & 10 \\  \hline
+C:G & $H_i/H_i$ & cis-W/W & 10 \\  \hline
+C:C & $H/H_qe$ & NA & 10 \\  \hline
+C:A & $H_i/H_i$ & NA & 10 \\  \hline
+A:U & $H_i/H_qe$ & NA & 10 \\  \hline
+A:C & $H_qe/H$ & trans-H/S & 10 \\  \hline
+A:C & $H_e/H_e$ & NA & 10 \\  \hline
+A:A & $H_qe/H$ & trans-W/H & 10 \\  \hline
+A:A & $H_qe/H_qe$ & trans-W/H & 10 \\  \hline
+A:A & $H_e/H_ie$ & trans-H/H & 10 \\  \hline
+U:U & $H/H_qe$ & NA & 9 \\  \hline
+U:U & $H/H_qe$ & cis-W/H & 9 \\  \hline
+U:C & $H_qe/H_qe$ & NA & 9 \\  \hline
+U:C & $H_ie/H_ie$ & NA & 9 \\  \hline
+U:C & $H/H_qe$ & NA & 9 \\  \hline
+U:A & $H_qe/H_i$ & trans-W/W & 9 \\  \hline
+U:A & $H_qe/H_i$ & cis-S/H & 9 \\  \hline
+U:A & $H_ie/H_ie$ & trans-W/W & 9 \\  \hline
+U:A & $H/H_qe$ & cis-W/H & 9 \\  \hline
+H2U:U & $H_e/H_ie$ & trans-W/W & 9 \\  \hline
+G:U & $H_ie/H_e$ & NA & 9 \\  \hline
+G:U & $H_e/H_ie$ & NA & 9 \\  \hline
+G:G & $H/H$ & NA & 9 \\  \hline
+G:C & $H/H_i$ & trans-W/W & 9 \\  \hline
+G:A & $H_qe/H_i$ & trans-S/H & 9 \\  \hline
+G:A & $H_i/H_i$ & trans-S/H & 9 \\  \hline
+C:G & $H_qe/H_i$ & NA & 9 \\  \hline
+C:G & $H_i/H_i$ & NA & 9 \\  \hline
+C:C & $H/H$ & trans-S/H & 9 \\  \hline
+A:U & $H_qe/H$ & trans-W/S & 9 \\  \hline
+A:U & $H_ie/H_e$ & trans-H/W & 9 \\  \hline
+A:C & $H_qe/H$ & trans-W/S & 9 \\  \hline
+A:C & $H/H$ & trans-S/H & 9 \\  \hline
+A:C & $H/H_qe$ & NA & 9 \\  \hline
+A:A & $H_qe/H_qe$ & cis-W/H & 9 \\  \hline
+A:A & $H_i/H_i$ & cis-H/H & 9 \\  \hline
+U:G & $H_e/H_e$ & cis-S/W & 8 \\  \hline
+U:A & $H_i/H_qe$ & trans-W/H & 8 \\  \hline
+U:A & $H/H_qe$ & trans-S/H & 8 \\  \hline
+G:U & $H/H$ & cis-W/S & 8 \\  \hline
+G:G & $H_qe/H_qe$ & cis-W/S & 8 \\  \hline
+G:G & $H_qe/H_i$ & trans-S/S & 8 \\  \hline
+G:G & $H_i/H_qe$ & trans-H/W & 8 \\  \hline
+G:G & $H/H$ & cis-W/H & 8 \\  \hline
+G:C & $H_i/H_qe$ & cis-W/W & 8 \\  \hline
+G:C & $H_e/H_ie$ & cis-W/W & 8 \\  \hline
+G:A & $H_qe/H_i$ & trans-S/W & 8 \\  \hline
+G:A & $H_ie/H_e$ & trans-S/H & 8 \\  \hline
+C:G & $H_qe/H_i$ & cis-W/W & 8 \\  \hline
+C:G & $H_i/H$ & NA & 8 \\  \hline
+C:G & $H_ie/H_ie$ & trans-W/W & 8 \\  \hline
+C:C & $H_i/H$ & NA & 8 \\  \hline
+C:C & $H_ie/H_e$ & cis-W/W & 8 \\  \hline
+C:A & $H_qe/H$ & trans-S/H & 8 \\  \hline
+C:A & $H_qe/H_qe$ & trans-W/W & 8 \\  \hline
+C:A & $H_qe/H_i$ & NA & 8 \\  \hline
+C:A & $H/H_qe$ & trans-W/W & 8 \\  \hline
+C:A & $H/H_qe$ & trans-S/H & 8 \\  \hline
+C:A & $H_e/H_ie$ & cis-W/W & 8 \\  \hline
+C:A & $H_e/H_e$ & cis-S/W & 8 \\  \hline
+A:U & $H_i/H_qe$ & cis-H/S & 8 \\  \hline
+A:U & $H_ie/H_e$ & NA & 8 \\  \hline
+A:G & $H_qe/H_qe$ & trans-H/W & 8 \\  \hline
+A:C & $H_i/H_qe$ & cis-W/S & 8 \\  \hline
+A:C & $H_i/H$ & cis-W/S & 8 \\  \hline
+A:C & $H/H_qe$ & trans-S/W & 8 \\  \hline
+A:A & $H_qe/H_qe$ & cis-S/W & 8 \\  \hline
+A:A & $H_qe/H_i$ & cis-S/W & 8 \\  \hline
+A:A & $H_i/H_i$ & NA & 8 \\  \hline
+U:G & $H_i/H$ & cis-S/W & 7 \\  \hline
+U:C & $H_ie/H_e$ & NA & 7 \\  \hline
+U:C & $H/H$ & trans-W/W & 7 \\  \hline
+U:A & $H_qe/H_i$ & cis-W/H & 7 \\  \hline
+U:A & $H_ie/H_ie$ & trans-W/H & 7 \\  \hline
+U:A & $H/H_i$ & trans-W/W & 7 \\  \hline
+PSU:G & $H/H_qe$ & cis-W/W & 7 \\  \hline
+PSU:G & $H_e/H_ie$ & NA & 7 \\  \hline
+G:U & $H_qe/H_i$ & cis-W/W & 7 \\  \hline
+G:G & $H_qe/H$ & NA & 7 \\  \hline
+G:G & $H/H$ & trans-W/H & 7 \\  \hline
+G:G & $H/H_qe$ & trans-H/S & 7 \\  \hline
+G:G & $H/H_qe$ & cis-W/W & 7 \\  \hline
+C:C & $H/H$ & trans-W/S & 7 \\  \hline
+C:C & $H_e/H_ie$ & NA & 7 \\  \hline
+A:U & $H_qe/H$ & trans-H/S & 7 \\  \hline
+A:U & $H/H_i$ & cis-H/S & 7 \\  \hline
+A:G & $H_qe/H$ & cis-S/W & 7 \\  \hline
+A:G & $H_i/H_i$ & NA & 7 \\  \hline
+A:C & $H_qe/H$ & cis-W/W & 7 \\  \hline
+A:C & $H_ie/H_ie$ & trans-H/S & 7 \\  \hline
+A:C & $H_e/H_e$ & trans-S/H & 7 \\  \hline
+A:A & $H_qe/H_qe$ & trans-H/W & 7 \\  \hline
+A:A & $H/H_i$ & cis-W/S & 7 \\  \hline
+A:A & $H_e/H_e$ & cis-W/W & 7 \\  \hline
+U:U & $H_i/H$ & NA & 6 \\  \hline
+U:G & $H_i/H_qe$ & cis-W/W & 6 \\  \hline
+U:G & $H_i/H_qe$ & cis-H/S & 6 \\  \hline
+U:C & $H_qe/H$ & cis-S/W & 6 \\  \hline
+U:A & $H_ie/H_ie$ & trans-S/W & 6 \\  \hline
+G:U & $H_i/H_i$ & cis-W/W & 6 \\  \hline
+G:U & $H_ie/H_ie$ & cis-S/H & 6 \\  \hline
+G:G & $H_i/H_i$ & NA & 6 \\  \hline
+G:G & $H_ie/H_e$ & cis-H/W & 6 \\  \hline
+G:G & $H/H_i$ & cis-H/W & 6 \\  \hline
+G:G & $H_e/H_e$ & trans-S/H & 6 \\  \hline
+G:C & $H_qe/H$ & cis-W/H & 6 \\  \hline
+G:A & $H/H_i$ & trans-S/W & 6 \\  \hline
+G:A & $H_e/H_e$ & trans-W/S & 6 \\  \hline
+C:G & $H_qe/H$ & cis-S/W & 6 \\  \hline
+C:G & $H_ie/H_e$ & cis-W/W & 6 \\  \hline
+C:G & $H/H$ & cis-S/W & 6 \\  \hline
+C:C & $H_i/H_qe$ & NA & 6 \\  \hline
+C:A & $H/H_i$ & NA & 6 \\  \hline
+A:G & $H_qe/H_i$ & trans-H/S & 6 \\  \hline
+A:C & $H_qe/H$ & trans-W/W & 6 \\  \hline
+A:C & $H/H_qe$ & trans-S/H & 6 \\  \hline
+A:C & $H_e/H_e$ & trans-H/W & 6 \\  \hline
+A:C & $H_e/H_e$ & cis-W/W & 6 \\  \hline
+A:A & $H_i/H$ & trans-H/W & 6 \\  \hline
+A:A & $H_i/H_qe$ & trans-H/W & 6 \\  \hline
+A:A & $H_i/H_i$ & trans-W/H & 6 \\  \hline
+A:A & $H_ie/H_ie$ & trans-S/W & 6 \\  \hline
+A:A & $H_ie/H_e$ & trans-W/W & 6 \\  \hline
+A:A & $H_e/H_ie$ & trans-S/W & 6 \\  \hline
+U:U & $H/H_i$ & NA & 5 \\  \hline
+U:U & $H/H_i$ & cis-W/W & 5 \\  \hline
+U:G & $H_qe/H$ & trans-W/W & 5 \\  \hline
+U:C & $H_e/H_e$ & trans-W/. & 5 \\  \hline
+U:A & $H_e/H_ie$ & trans-S/H & 5 \\  \hline
+U:A & $H_e/H_ie$ & cis-S/H & 5 \\  \hline
+U:A & $H_e/H_e$ & trans-S/W & 5 \\  \hline
+G:U & $H/H_qe$ & trans-S/W & 5 \\  \hline
+G:U & $H_e/H_e$ & trans-W/W & 5 \\  \hline
+G:G & $H_qe/H_qe$ & cis-W/W & 5 \\  \hline
+G:G & $H_i/H_qe$ & NA & 5 \\  \hline
+G:G & $H/H$ & trans-W/W & 5 \\  \hline
+G:G & $H/H$ & trans-H/W & 5 \\  \hline
+G:G & $H/H_qe$ & trans-S/W & 5 \\  \hline
+G:C & $H_qe/H_i$ & cis-W/W & 5 \\  \hline
+G:A & $H_ie/H_ie$ & cis-S/W & 5 \\  \hline
+G:A & $H_ie/H_ie$ & cis-S/H & 5 \\  \hline
+C:U & $H_ie/H_e$ & cis-W/W & 5 \\  \hline
+C:U & $H/H_qe$ & NA & 5 \\  \hline
+C:U & $H_e/H_ie$ & NA & 5 \\  \hline
+C:G & $H/H_i$ & cis-W/W & 5 \\  \hline
+C:A & $H_i/H_qe$ & trans-W/W & 5 \\  \hline
+C:A & $H_ie/H_ie$ & trans-S/H & 5 \\  \hline
+C:A & $H/H_qe$ & cis-S/W & 5 \\  \hline
+C:A & $H/H_i$ & cis-S/S & 5 \\  \hline
+C:A & $H_e/H_ie$ & trans-W/H & 5 \\  \hline
+A:U & $H_qe/H_i$ & cis-W/W & 5 \\  \hline
+A:U & $H/H_i$ & trans-W/W & 5 \\  \hline
+A:U & $H/H_i$ & NA & 5 \\  \hline
+A:G & $H_i/H$ & trans-W/S & 5 \\  \hline
+A:G & $H_ie/H_e$ & trans-H/W & 5 \\  \hline
+A:G & $H/H_qe$ & cis-W/H & 5 \\  \hline
+A:C & $H_qe/H_qe$ & trans-H/W & 5 \\  \hline
+A:C & $H_ie/H_ie$ & NA & 5 \\  \hline
+A:C & $H_e/H_ie$ & trans-H/W & 5 \\  \hline
+A:A & $H_qe/H_i$ & trans-H/H & 5 \\  \hline
+A:A & $H_i/H_i$ & cis-S/H & 5 \\  \hline
+A:A & $H_ie/H_e$ & cis-H/H & 5 \\  \hline
+A:4SU & $H/H_i$ & trans-H/W & 5 \\  \hline
+U:U & $H_qe/H_qe$ & cis-W/S & 4 \\  \hline
+U:U & $H_qe/H_i$ & cis-W/H & 4 \\  \hline
+U:U & $H_e/H_ie$ & trans-W/H & 4 \\  \hline
+U:U & $H_e/H_ie$ & cis-W/W & 4 \\  \hline
+U:G & $H_qe/H_qe$ & cis-S/W & 4 \\  \hline
+U:G & $H_i/H_qe$ & cis-W/H & 4 \\  \hline
+U:G & $H_i/H_i$ & cis-W/W & 4 \\  \hline
+U:G & $H_ie/H_ie$ & cis-W/W & 4 \\  \hline
+U:G & $H_ie/H_e$ & NA & 4 \\  \hline
+U:G & $H/H_i$ & cis-W/W & 4 \\  \hline
+U:G & $H_e/H_ie$ & trans-S/H & 4 \\  \hline
+U:C & $H_qe/H_qe$ & trans-W/W & 4 \\  \hline
+U:C & $H_i/H_i$ & NA & 4 \\  \hline
+U:C & $H_e/H_e$ & trans-W/W & 4 \\  \hline
+U:C & $H_e/H_e$ & trans-S/W & 4 \\  \hline
+U:A & $H_qe/H$ & trans-W/W & 4 \\  \hline
+U:A & $H_i/H_qe$ & cis-W/H & 4 \\  \hline
+U:A & $H_ie/H_ie$ & trans-S/H & 4 \\  \hline
+U:A & $H/H$ & cis-W/H & 4 \\  \hline
+PSU:G & $H/H$ & cis-W/W & 4 \\  \hline
+HPA:C & $H_i/H_qe$ & cis-W/W & 4 \\  \hline
+G:U & $H_ie/H_e$ & cis-S/W & 4 \\  \hline
+G:U & $H/H_qe$ & trans-S/H & 4 \\  \hline
+G:U & $H_e/H_e$ & trans-S/H & 4 \\  \hline
+G:PPU & $H_e/H_ie$ & NA & 4 \\  \hline
+G:G & $H_qe/H_qe$ & trans-W/W & 4 \\  \hline
+G:G & $H_qe/H_qe$ & trans-S/S & 4 \\  \hline
+G:G & $H_qe/H_qe$ & trans-S/H & 4 \\  \hline
+G:G & $H_qe/H_qe$ & trans-H/S & 4 \\  \hline
+G:G & $H_qe/H_qe$ & cis-W/H & 4 \\  \hline
+G:G & $H_qe/H_qe$ & cis-H/W & 4 \\  \hline
+G:G & $H_qe/H_i$ & cis-H/W & 4 \\  \hline
+G:G & $H_qe/H$ & cis-S/W & 4 \\  \hline
+G:G & $H_i/H_qe$ & trans-W/W & 4 \\  \hline
+G:G & $H_ie/H_ie$ & trans-S/H & 4 \\  \hline
+G:G & $H_e/H_ie$ & trans-W/W & 4 \\  \hline
+G:C & $H_qe/H$ & trans-W/W & 4 \\  \hline
+G:A & $H_qe/H$ & trans-H/W & 4 \\  \hline
+G:A & $H_qe/H$ & cis-H/W & 4 \\  \hline
+G:A & $H_e/H_ie$ & cis-W/H & 4 \\  \hline
+G:A & $H_e/H_ie$ & cis-S/H & 4 \\  \hline
+G:5BU & $H/H$ & cis-W/W & 4 \\  \hline
+C:U & $H_i/H_qe$ & NA & 4 \\  \hline
+C:G & $H_qe/H_qe$ & cis-H/W & 4 \\  \hline
+C:G & $H_i/H_qe$ & NA & 4 \\  \hline
+C:G & $H/H_qe$ & trans-W/W & 4 \\  \hline
+C:G & $H/H_qe$ & cis-H/. & 4 \\  \hline
+C:C & $H_qe/H_qe$ & trans-W/S & 4 \\  \hline
+C:C & $H_qe/H_qe$ & cis-W/S & 4 \\  \hline
+C:C & $H_qe/H_i$ & NA & 4 \\  \hline
+C:A & $H_i/H_qe$ & cis-S/H & 4 \\  \hline
+C:A & $H/H$ & trans-W/W & 4 \\  \hline
+C:A & $H/H_qe$ & trans-W/H & 4 \\  \hline
+C:A & $H_e/H_ie$ & trans-W/W & 4 \\  \hline
+A:U & $H_qe/H_i$ & cis-H/W & 4 \\  \hline
+A:U & $H_i/H_i$ & cis-W/S & 4 \\  \hline
+A:G & $H/H_i$ & cis-W/W & 4 \\  \hline
+A:C & $H_i/H$ & trans-W/W & 4 \\  \hline
+A:C & $H_ie/H_e$ & cis-W/S & 4 \\  \hline
+A:A & $H_qe/H$ & trans-S/H & 4 \\  \hline
+A:A & $H_qe/H$ & trans-H/S & 4 \\  \hline
+A:A & $H_qe/H_i$ & cis-H/S & 4 \\  \hline
+A:A & $H_qe/H$ & cis-W/H & 4 \\  \hline
+A:A & $H_i/H$ & cis-S/W & 4 \\  \hline
+A:A & $H_ie/H_ie$ & trans-W/H & 4 \\  \hline
+A:A & $H_e/H_ie$ & trans-W/H & 4 \\  \hline
+A:A & $H_e/H_ie$ & cis-S/W & 4 \\  \hline
+5MU:MAD & $H/H_i$ & trans-W/H & 4 \\  \hline
+U:U & $H_qe/H$ & trans-W/W & 3 \\  \hline
+U:U & $H_i/H$ & trans-H/W & 3 \\  \hline
+U:U & $H_i/H_i$ & cis-W/W & 3 \\  \hline
+U:U & $H/H_qe$ & trans-W/H & 3 \\  \hline
+U:U & $H/H$ & cis-W/S & 3 \\  \hline
+U:U & $H_e/H_e$ & cis-S/W & 3 \\  \hline
+U:I & $H/H$ & cis-W/W & 3 \\  \hline
+U:G & $H_i/H_i$ & NA & 3 \\  \hline
+U:G & $H_ie/H_ie$ & trans-S/W & 3 \\  \hline
+U:G & $H_ie/H_ie$ & cis-H/S & 3 \\  \hline
+U:C & $H_ie/H_e$ & cis-S/W & 3 \\  \hline
+U:C & $H_e/H_ie$ & cis-W/W & 3 \\  \hline
+U:A & $H_qe/H_qe$ & cis-W/H & 3 \\  \hline
+U:A & $H_qe/H_i$ & cis-W/W & 3 \\  \hline
+U:A & $H_i/H_i$ & cis-W/H & 3 \\  \hline
+U:A & $H_ie/H_ie$ & cis-W/H & 3 \\  \hline
+U:A & $H/H$ & trans-S/H & 3 \\  \hline
+U:A & $H/H_i$ & cis-W/W & 3 \\  \hline
+PSU:G & $H_qe/H_i$ & trans-S/W & 3 \\  \hline
+PSU:G & $H_e/H_ie$ & trans-W/W & 3 \\  \hline
+I:U & $H/H$ & cis-W/W & 3 \\  \hline
+G:U & $H_i/H_qe$ & cis-W/W & 3 \\  \hline
+G:U & $H/H_i$ & NA & 3 \\  \hline
+G:U & $H/H$ & cis-H/W & 3 \\  \hline
+G:U & $H_e/H_ie$ & trans-W/. & 3 \\  \hline
+G:PSU & $H_qe/H$ & cis-W/W & 3 \\  \hline
+G:G & $H_qe/H$ & trans-H/S & 3 \\  \hline
+G:G & $H_qe/H_qe$ & trans-H/W & 3 \\  \hline
+G:G & $H_ie/H_ie$ & trans-S/S & 3 \\  \hline
+G:G & $H_ie/H_ie$ & NA & 3 \\  \hline
+G:G & $H/H_qe$ & trans-W/H & 3 \\  \hline
+G:G & $H_e/H_e$ & trans-W/W & 3 \\  \hline
+G:C & $H_qe/H_i$ & trans-W/W & 3 \\  \hline
+G:C & $H_qe/H$ & cis-W/S & 3 \\  \hline
+G:C & $H_i/H_qe$ & trans-W/W & 3 \\  \hline
+G:C & $H_i/H_qe$ & cis-S/H & 3 \\  \hline
+G:C & $H/H_i$ & cis-W/W & 3 \\  \hline
+G:C & $H/H$ & cis-H/W & 3 \\  \hline
+G:A & $H_qe/H_qe$ & trans-S/W & 3 \\  \hline
+G:A & $H_qe/H_qe$ & cis-H/H & 3 \\  \hline
+G:A & $H_i/H_qe$ & cis-W/W & 3 \\  \hline
+G:A & $H_i/H_i$ & cis-H/S & 3 \\  \hline
+G:A & $H/H_i$ & cis-S/S & 3 \\  \hline
+G:A & $H_e/H_ie$ & trans-S/S & 3 \\  \hline
+G:A & $H_e/H_ie$ & cis-W/W & 3 \\  \hline
+G:A & $H_e/H_e$ & cis-W/W & 3 \\  \hline
+G:A & $H_e/H_e$ & cis-W/S & 3 \\  \hline
+G:5MC & $H_e/H_ie$ & trans-W/W & 3 \\  \hline
+G:5AA & $H_e/H_ie$ & NA & 3 \\  \hline
+C:U & $H_qe/H_qe$ & NA & 3 \\  \hline
+C:U & $H_qe/H_i$ & trans-H/S & 3 \\  \hline
+C:U & $H_qe/H_i$ & NA & 3 \\  \hline
+C:U & $H_i/H$ & NA & 3 \\  \hline
+C:U & $H_i/H_i$ & NA & 3 \\  \hline
+C:U & $H_e/H_e$ & NA & 3 \\  \hline
+C:G & $H_i/H_qe$ & trans-W/S & 3 \\  \hline
+C:G & $H_i/H$ & cis-W/W & 3 \\  \hline
+C:C & $H_qe/H_i$ & cis-S/W & 3 \\  \hline
+C:C & $H_ie/H_ie$ & NA & 3 \\  \hline
+C:C & $H_ie/H_ie$ & cis-W/W & 3 \\  \hline
+C:C & $H_e/H_e$ & trans-W/W & 3 \\  \hline
+C:A & $H_qe/H_qe$ & trans-S/H & 3 \\  \hline
+A:U & $H_qe/H_qe$ & trans-W/W & 3 \\  \hline
+A:U & $H_qe/H_qe$ & trans-H/S & 3 \\  \hline
+A:U & $H/H_i$ & cis-W/W & 3 \\  \hline
+A:PSU & $H_e/H_e$ & cis-W/W & 3 \\  \hline
+A:OMC & $H_qe/H$ & trans-W/S & 3 \\  \hline
+A:G & $H_qe/H_i$ & cis-H/S & 3 \\  \hline
+A:G & $H_i/H$ & trans-S/S & 3 \\  \hline
+A:G & $H_i/H_qe$ & cis-W/W & 3 \\  \hline
+A:C & $H_qe/H_i$ & cis-W/W & 3 \\  \hline
+A:C & $H_i/H_qe$ & cis-S/W & 3 \\  \hline
+A:C & $H_i/H$ & NA & 3 \\  \hline
+A:C & $H_i/H_i$ & NA & 3 \\  \hline
+A:A & $H_qe/H$ & trans-W/W & 3 \\  \hline
+A:A & $H_qe/H_qe$ & cis-H/H & 3 \\  \hline
+A:A & $H_qe/H_i$ & trans-W/H & 3 \\  \hline
+A:A & $H_qe/H$ & cis-W/W & 3 \\  \hline
+A:A & $H_i/H_qe$ & trans-H/H & 3 \\  \hline
+A:A & $H_ie/H_ie$ & trans-W/S & 3 \\  \hline
+5BU:G & $H/H$ & cis-W/W & 3 \\  \hline
+U:U & $H_qe/H_qe$ & cis-H/W & 2 \\  \hline
+U:U & $H_i/H_qe$ & NA & 2 \\  \hline
+U:U & $H_ie/H_ie$ & cis-W/W & 2 \\  \hline
+U:U & $H_ie/H_e$ & cis-W/W & 2 \\  \hline
+U:U & $H_e/H_ie$ & trans-W/W & 2 \\  \hline
+U:U & $H_e/H_ie$ & cis-S/W & 2 \\  \hline
+U:U & $H_e/H_e$ & trans-W/W & 2 \\  \hline
+U:G & $H_qe/H_qe$ & trans-W/H & 2 \\  \hline
+U:G & $H_qe/H_i$ & cis-W/S & 2 \\  \hline
+U:G & $H_i/H$ & cis-W/W & 2 \\  \hline
+U:G & $H_e/H_ie$ & cis-H/W & 2 \\  \hline
+U:C & $H_i/H$ & cis-W/W & 2 \\  \hline
+U:C & $H/H$ & trans-S/H & 2 \\  \hline
+U:A & $H_qe/H$ & trans-S/H & 2 \\  \hline
+U:A & $H_qe/H_qe$ & trans-W/W & 2 \\  \hline
+U:A & $H_i/H_qe$ & trans-S/H & 2 \\  \hline
+U:A & $H_ie/H_e$ & cis-W/W & 2 \\  \hline
+U:A & $H_ie/H_e$ & cis-W/H & 2 \\  \hline
+U:A & $H_ie/H_e$ & cis-S/W & 2 \\  \hline
+U:A & $H/H$ & cis-S/W & 2 \\  \hline
+LHU:LG & $H/H$ & cis-W/W & 2 \\  \hline
+LG:LHU & $H/H$ & cis-W/W & 2 \\  \hline
+I:I & $H/H$ & cis-W/H & 2 \\  \hline
+I:C & $H/H$ & cis-X/X & 2 \\  \hline
+H2U:U & $H_e/H_ie$ & NA & 2 \\  \hline
+G:U & $H_qe/H_qe$ & cis-W/S & 2 \\  \hline
+G:U & $H_i/H_i$ & NA & 2 \\  \hline
+G:U & $H_i/H_i$ & cis-S/H & 2 \\  \hline
+G:U & $H_ie/H_e$ & cis-W/W & 2 \\  \hline
+G:U & $H_e/H_ie$ & trans-S/W & 2 \\  \hline
+G:IU & $H/H$ & cis-W/W & 2 \\  \hline
+G:G & $H_qe/H_i$ & cis-W/H & 2 \\  \hline
+G:G & $H_i/H$ & trans-W/H & 2 \\  \hline
+G:G & $H_i/H_qe$ & cis-W/W & 2 \\  \hline
+G:G & $H_i/H_qe$ & cis-W/H & 2 \\  \hline
+G:G & $H_i/H_i$ & trans-S/S & 2 \\  \hline
+G:G & $H_ie/H_e$ & cis-S/W & 2 \\  \hline
+G:G & $H/H_i$ & trans-W/W & 2 \\  \hline
+G:G & $H/H$ & cis-W/S & 2 \\  \hline
+G:G & $H_e/H_ie$ & cis-W/W & 2 \\  \hline
+G:G & $H_e/H_ie$ & cis-S/W & 2 \\  \hline
+G:G & $H_e/H_e$ & cis-H/W & 2 \\  \hline
+G:C & $H_qe/H_qe$ & trans-S/W & 2 \\  \hline
+G:C & $H_i/H$ & trans-W/W & 2 \\  \hline
+G:C & $H_ie/H_e$ & cis-W/S & 2 \\  \hline
+G:C & $H_ie/H_e$ & cis-S/W & 2 \\  \hline
+G:C & $H/H_i$ & NA & 2 \\  \hline
+G:C & $H_e/H_e$ & cis-W/H & 2 \\  \hline
+G:A & $H_qe/H$ & cis-S/W & 2 \\  \hline
+G:A & $H_i/H_qe$ & trans-S/H & 2 \\  \hline
+G:A & $H/H_qe$ & trans-W/H & 2 \\  \hline
+G:A & $H/H$ & cis-H/W & 2 \\  \hline
+G:5MU & $H/H_qe$ & cis-W/W & 2 \\  \hline
+G:5BU & $H_qe/H_qe$ & cis-W/W & 2 \\  \hline
+C:U & $H_ie/H_ie$ & NA & 2 \\  \hline
+C:U & $H/H_qe$ & trans-H/S & 2 \\  \hline
+C:U & $H/H$ & cis-W/S & 2 \\  \hline
+C:I & $H/H$ & cis-X/X & 2 \\  \hline
+C:G & $H_qe/H_qe$ & trans-W/W & 2 \\  \hline
+C:G & $H_i/H$ & cis-W/. & 2 \\  \hline
+C:C & $H_qe/H_qe$ & trans-H/S & 2 \\  \hline
+C:C & $H_qe/H_qe$ & NA & 2 \\  \hline
+C:C & $H_qe/H_i$ & cis-S/H & 2 \\  \hline
+C:C & $H_ie/H_e$ & trans-W/W & 2 \\  \hline
+C:C & $H_ie/H_e$ & NA & 2 \\  \hline
+C:C & $H/H_qe$ & trans-W/W & 2 \\  \hline
+C:C & $H_e/H_e$ & trans-S/W & 2 \\  \hline
+C:A & $H_qe/H_i$ & trans-W/H & 2 \\  \hline
+C:A & $H_qe/H_i$ & cis-W/H & 2 \\  \hline
+C:A & $H_i/H$ & trans-W/W & 2 \\  \hline
+C:A & $H_i/H_i$ & trans-W/H & 2 \\  \hline
+C:A & $H_ie/H_ie$ & trans-W/W & 2 \\  \hline
+C:A & $H_ie/H_e$ & cis-S/H & 2 \\  \hline
+C:A & $H/H$ & trans-S/W & 2 \\  \hline
+C:A & $H/H_i$ & cis-S/W & 2 \\  \hline
+C:A & $H_e/H_ie$ & cis-S/W & 2 \\  \hline
+C:A & $H_e/H_ie$ & cis-S/H & 2 \\  \hline
+C:A & $H_e/H_e$ & trans-S/W & 2 \\  \hline
+C:A & $H_e/H_e$ & trans-H/H & 2 \\  \hline
+AVC:A & $H_qe/H_qe$ & trans-S/H & 2 \\  \hline
+A:U & $H_ie/H_ie$ & trans-H/W & 2 \\  \hline
+A:U & $H_ie/H_ie$ & cis-W/W & 2 \\  \hline
+A:U & $H_ie/H_e$ & cis-W/W & 2 \\  \hline
+A:U & $H/H_qe$ & trans-W/W & 2 \\  \hline
+A:U & $H/H$ & cis-H/W & 2 \\  \hline
+A:U & $H_e/H_ie$ & trans-H/W & 2 \\  \hline
+A:U & $H_e/H_ie$ & cis-H/W & 2 \\  \hline
+A:PSU & $H/H$ & cis-W/W & 2 \\  \hline
+A:OMC & $H/H_i$ & trans-H/W & 2 \\  \hline
+A:M2G & $H_qe/H$ & cis-W/W & 2 \\  \hline
+A:G & $H_qe/H_qe$ & cis-W/H & 2 \\  \hline
+A:G & $H_qe/H_i$ & cis-W/W & 2 \\  \hline
+A:G & $H_i/H_qe$ & cis-S/H & 2 \\  \hline
+A:G & $H_i/H$ & cis-W/. & 2 \\  \hline
+A:G & $H_ie/H_ie$ & trans-W/S & 2 \\  \hline
+A:G & $H_ie/H_ie$ & cis-W/W & 2 \\  \hline
+A:G & $H/H$ & cis-W/H & 2 \\  \hline
+A:G & $H/H$ & cis-H/W & 2 \\  \hline
+A:G & $H_e/H_ie$ & trans-H/S & 2 \\  \hline
+A:G & $H_e/H_e$ & cis-S/S & 2 \\  \hline
+A:C & $H_i/H_qe$ & cis-W/W & 2 \\  \hline
+A:C & $H_i/H_i$ & cis-W/W & 2 \\  \hline
+A:C & $H_i/H$ & cis-S/W & 2 \\  \hline
+A:C & $H_ie/H_ie$ & cis-H/S & 2 \\  \hline
+A:C & $H_ie/H_e$ & trans-W/W & 2 \\  \hline
+A:C & $H_ie/H_e$ & cis-S/W & 2 \\  \hline
+A:A & $H_qe/H$ & cis-H/W & 2 \\  \hline
+A:A & $H_i/H_qe$ & trans-W/H & 2 \\  \hline
+A:A & $H_ie/H_ie$ & cis-W/S & 2 \\  \hline
+A:A & $H_ie/H_e$ & cis-S/H & 2 \\  \hline
+A:A & $H/H_qe$ & cis-S/W & 2 \\  \hline
+A:A & $H/H_i$ & cis-W/W & 2 \\  \hline
+A:A & $H_e/H_ie$ & cis-S/H & 2 \\  \hline
+A:A & $H_e/H_e$ & trans-W/H & 2 \\  \hline
+A5M:A & $H/H$ & cis-W/W & 2 \\  \hline
+5MU:G & $H/H_i$ & trans-W/H & 2 \\  \hline
+5MU:A & $H_e/H_ie$ & trans-W/H & 2 \\  \hline
+5MC:G & $H/H$ & cis-W/W & 2 \\  \hline
+5BU:G & $H_qe/H_qe$ & cis-W/W & 2 \\  \hline
+5BU:5BU & $H/H$ & cis-W/W & 2 \\  \hline
+XUG:C & $H/H$ & cis-W/W & 1 \\  \hline
+U:U & $H_qe/H_qe$ & cis-W/H & 1 \\  \hline
+U:U & $H_qe/H_qe$ & cis-S/W & 1 \\  \hline
+U:U & $H_qe/H_i$ & trans-W/H & 1 \\  \hline
+U:U & $H_qe/H_i$ & NA & 1 \\  \hline
+U:U & $H_i/H$ & trans-W/S & 1 \\  \hline
+U:U & $H_i/H_qe$ & trans-S/W & 1 \\  \hline
+U:U & $H_i/H_qe$ & cis-S/W & 1 \\  \hline
+U:U & $H_i/H_i$ & cis-W/H & 1 \\  \hline
+U:U & $H_i/H$ & cis-W/H & 1 \\  \hline
+U:U & $H_ie/H_ie$ & cis-S/W & 1 \\  \hline
+U:U & $H_ie/H_e$ & trans-W/W & 1 \\  \hline
+U:U & $H_e/H_ie$ & trans-S/H & 1 \\  \hline
+U:U & $H_e/H_ie$ & cis-W/H & 1 \\  \hline
+U:U & $H_e/H_e$ & trans-S/W & 1 \\  \hline
+U:N6G & $H_qe/H$ & trans-H/S & 1 \\  \hline
+U:MTU & $H_ie/H_e$ & trans-H/S & 1 \\  \hline
+U:MAD & $H/H_i$ & trans-W/H & 1 \\  \hline
+U:G & $H_qe/H$ & trans-W/S & 1 \\  \hline
+U:G & $H_qe/H$ & trans-./W & 1 \\  \hline
+U:G & $H_i/H_qe$ & cis-W/S & 1 \\  \hline
+U:G & $H_i/H_i$ & trans-W/S & 1 \\  \hline
+U:G & $H_ie/H_ie$ & trans-W/S & 1 \\  \hline
+U:G & $H_ie/H_e$ & cis-W/W & 1 \\  \hline
+U:G & $H_ie/H_e$ & cis-W/S & 1 \\  \hline
+U:G & $H/H_i$ & trans-S/H & 1 \\  \hline
+U:G & $H/H_i$ & NA & 1 \\  \hline
+U:G & $H/H$ & cis-W/S & 1 \\  \hline
+U:G & $H/H$ & cis-W/H & 1 \\  \hline
+U:G & $H_e/H_e$ & trans-./W & 1 \\  \hline
+U:G & $H_e/H_e$ & trans-S/S & 1 \\  \hline
+U:G & $H_e/H_e$ & cis-S/H & 1 \\  \hline
+U:GDP & $H_e/H_e$ & cis-W/W & 1 \\  \hline
+U:C & $H_qe/H_qe$ & trans-S/W & 1 \\  \hline
+U:C & $H_qe/H_qe$ & trans-S/H & 1 \\  \hline
+U:C & $H_qe/H_qe$ & cis-W/S & 1 \\  \hline
+U:C & $H_i/H_qe$ & NA & 1 \\  \hline
+U:C & $H_ie/H_ie$ & trans-W/. & 1 \\  \hline
+U:C & $H_ie/H_ie$ & trans-S/H & 1 \\  \hline
+U:C & $H_ie/H_ie$ & cis-S/S & 1 \\  \hline
+U:C & $H/H$ & cis-W/H & 1 \\  \hline
+U:C & $H_e/H_ie$ & trans-W/W & 1 \\  \hline
+U:C & $H_e/H_e$ & trans-W/H & 1 \\  \hline
+U:A & $H_qe/H_qe$ & trans-S/H & 1 \\  \hline
+U:A & $H_qe/H$ & cis-S/W & 1 \\  \hline
+U:A & $H_i/H_qe$ & trans-H/S & 1 \\  \hline
+U:A & $H_i/H_qe$ & cis-W/W & 1 \\  \hline
+U:A & $H_i/H$ & cis-S/H & 1 \\  \hline
+U:A & $H_ie/H_ie$ & cis-S/S & 1 \\  \hline
+U:A & $H_ie/H_ie$ & cis-S/H & 1 \\  \hline
+U:A & $H_ie/H_e$ & cis-S/S & 1 \\  \hline
+U:A & $H_ie/H_e$ & cis-H/H & 1 \\  \hline
+U:A & $H_e/H_ie$ & trans-S/W & 1 \\  \hline
+U:A & $H_e/H_e$ & trans-W/W & 1 \\  \hline
+U2N:A & $H_qe/H_qe$ & trans-W/H & 1 \\  \hline
+PSU:OMG & $H_e/H_ie$ & trans-S/W & 1 \\  \hline
+PSU:G & $H_ie/H_ie$ & trans-S/W & 1 \\  \hline
+PSU:G & $H/H_qe$ & trans-W/W & 1 \\  \hline
+PSU:G & $H_e/H_ie$ & trans-./W & 1 \\  \hline
+PSU:A & $H_qe/H_i$ & trans-W/H & 1 \\  \hline
+PSU:A & $H_e/H_ie$ & trans-W/H & 1 \\  \hline
+OMC:A & $H_e/H_e$ & cis-W/W & 1 \\  \hline
+MTU:A & $H_qe/H$ & cis-W/W & 1 \\  \hline
+M2G:A & $H/H_qe$ & cis-W/W & 1 \\  \hline
+I:I & $H_qe/H_qe$ & cis-H/W & 1 \\  \hline
+G:U & $H_qe/H_qe$ & trans-./H & 1 \\  \hline
+G:U & $H_qe/H_qe$ & cis-S/W & 1 \\  \hline
+G:U & $H_i/H_qe$ & trans-S/W & 1 \\  \hline
+G:U & $H_i/H_qe$ & cis-W/S & 1 \\  \hline
+G:U & $H_i/H_qe$ & cis-S/S & 1 \\  \hline
+G:U & $H_i/H_qe$ & cis-H/W & 1 \\  \hline
+G:U & $H_i/H$ & NA & 1 \\  \hline
+G:U & $H_ie/H_ie$ & trans-W/W & 1 \\  \hline
+G:U & $H_ie/H_e$ & trans-W/W & 1 \\  \hline
+G:U & $H/H$ & trans-W/W & 1 \\  \hline
+G:U & $H/H_i$ & cis-S/S & 1 \\  \hline
+G:U & $H_e/H_ie$ & cis-S/H & 1 \\  \hline
+G:U & $H_e/H_e$ & trans-W/H & 1 \\  \hline
+G:G & $H_qe/H$ & trans-W/S & 1 \\  \hline
+G:G & $H_qe/H$ & trans-W/H & 1 \\  \hline
+G:G & $H_qe/H$ & trans-S/H & 1 \\  \hline
+G:G & $H_qe/H_qe$ & trans-W/H & 1 \\  \hline
+G:G & $H_qe/H_i$ & trans-W/W & 1 \\  \hline
+G:G & $H_qe/H_i$ & trans-W/H & 1 \\  \hline
+G:G & $H_qe/H_i$ & cis-H/S & 1 \\  \hline
+G:G & $H_qe/H$ & cis-W/H & 1 \\  \hline
+G:G & $H_i/H$ & trans-H/W & 1 \\  \hline
+G:G & $H_i/H_qe$ & cis-S/H & 1 \\  \hline
+G:G & $H_i/H_i$ & trans-W/H & 1 \\  \hline
+G:G & $H_i/H_i$ & cis-W/H & 1 \\  \hline
+G:G & $H_i/H_i$ & cis-H/W & 1 \\  \hline
+G:G & $H_ie/H_ie$ & cis-W/W & 1 \\  \hline
+G:G & $H_ie/H_ie$ & cis-W/H & 1 \\  \hline
+G:G & $H_ie/H_e$ & trans-S/S & 1 \\  \hline
+G:G & $H/H_qe$ & trans-S/H & 1 \\  \hline
+G:G & $H/H_qe$ & cis-S/W & 1 \\  \hline
+G:G & $H/H_i$ & cis-W/W & 1 \\  \hline
+G:G & $H/H$ & cis-W/W & 1 \\  \hline
+G:G & $H/H$ & cis-S/W & 1 \\  \hline
+G:G & $H_e/H_ie$ & trans-S/W & 1 \\  \hline
+G:G & $H_e/H_ie$ & trans-S/H & 1 \\  \hline
+G:G & $H_e/H_e$ & trans-H/W & 1 \\  \hline
+G:G & $H_e/H_e$ & cis-S/W & 1 \\  \hline
+G:CSL & $H/H$ & cis-W/W & 1 \\  \hline
+G:C & $H_qe/H$ & cis-W/. & 1 \\  \hline
+G:C & $H_i/H_i$ & cis-H/S & 1 \\  \hline
+G:C & $H_i/H$ & cis-W/S & 1 \\  \hline
+G:C & $H/H$ & trans-W/W & 1 \\  \hline
+G:C & $H/H$ & cis-W/S & 1 \\  \hline
+G:C & $H_e/H_ie$ & cis-H/W & 1 \\  \hline
+G:C & $H_e/H_e$ & trans-W/W & 1 \\  \hline
+G:C & $H_e/H_e$ & trans-S/H & 1 \\  \hline
+G:C & $H_e/H_e$ & cis-W/S & 1 \\  \hline
+G:C & $H_e/H_e$ & cis-H/W & 1 \\  \hline
+G:A & $H_qe/H_qe$ & trans-W/S & 1 \\  \hline
+G:A & $H_qe/H_qe$ & cis-S/S & 1 \\  \hline
+G:A & $H_qe/H_i$ & trans-H/W & 1 \\  \hline
+G:A & $H_qe/H_i$ & cis-S/H & 1 \\  \hline
+G:A & $H_qe/H_i$ & cis-./. & 1 \\  \hline
+G:A & $H_qe/H$ & cis-H/H & 1 \\  \hline
+G:A & $H_i/H_qe$ & cis-S/H & 1 \\  \hline
+G:A & $H_i/H$ & NA & 1 \\  \hline
+G:A & $H_i/H$ & cis-W/W & 1 \\  \hline
+G:A & $H_ie/H_ie$ & trans-S/S & 1 \\  \hline
+G:A & $H_ie/H_e$ & trans-W/H & 1 \\  \hline
+G:A & $H_ie/H_e$ & cis-S/H & 1 \\  \hline
+G:A & $H_e/H_ie$ & cis-W/S & 1 \\  \hline
+G:A & $H_e/H_e$ & trans-S/W & 1 \\  \hline
+G:5BU & $H_i/H_i$ & cis-W/W & 1 \\  \hline
+G:5BU & $H_e/H_e$ & cis-W/W & 1 \\  \hline
+G:2AD & $H_qe/H_i$ & trans-S/S & 1 \\  \hline
+DU:G & $H_qe/H$ & trans-H/S & 1 \\  \hline
+DG:C & $H_e/H_e$ & cis-W/W & 1 \\  \hline
+DC:G & $H_e/H_e$ & cis-W/W & 1 \\  \hline
+DC:A & $H/H$ & cis-W/W & 1 \\  \hline
+DA:A & $H_qe/H_i$ & trans-S/H & 1 \\  \hline
+C:U & $H_qe/H_qe$ & cis-W/S & 1 \\  \hline
+C:U & $H_qe/H$ & NA & 1 \\  \hline
+C:U & $H_i/H$ & trans-S/W & 1 \\  \hline
+C:U & $H_i/H_i$ & cis-S/H & 1 \\  \hline
+C:U & $H_ie/H_e$ & NA & 1 \\  \hline
+C:I & $H_e/H_e$ & cis-X/X & 1 \\  \hline
+C:G & $H_qe/H_qe$ & cis-W/H & 1 \\  \hline
+C:G & $H_qe/H_qe$ & cis-S/W & 1 \\  \hline
+C:G & $H_qe/H_qe$ & cis-H/. & 1 \\  \hline
+C:G & $H_i/H_qe$ & trans-S/W & 1 \\  \hline
+C:G & $H_i/H_i$ & cis-W/H & 1 \\  \hline
+C:G & $H_ie/H_ie$ & cis-W/H & 1 \\  \hline
+C:G & $H_ie/H_e$ & cis-S/W & 1 \\  \hline
+C:G & $H/H_qe$ & cis-H/H & 1 \\  \hline
+C:G & $H/H_i$ & trans-W/W & 1 \\  \hline
+C:G & $H/H_i$ & trans-W/S & 1 \\  \hline
+C:G & $H/H_i$ & cis-S/W & 1 \\  \hline
+C:G & $H/H_i$ & cis-S/H & 1 \\  \hline
+C:G & $H_e/H_ie$ & cis-S/S & 1 \\  \hline
+C:G & $H_e/H_e$ & trans-S/H & 1 \\  \hline
+C:G & $H_e/H_e$ & cis-S/W & 1 \\  \hline
+C:C & $H_qe/H_qe$ & trans-W/H & 1 \\  \hline
+C:C & $H_qe/H$ & NA & 1 \\  \hline
+C:C & $H_qe/H_i$ & cis-W/W & 1 \\  \hline
+C:C & $H_i/H_qe$ & cis-W/W & 1 \\  \hline
+C:C & $H_i/H_qe$ & cis-S/H & 1 \\  \hline
+C:C & $H_ie/H_e$ & trans-./S & 1 \\  \hline
+C:C & $H/H_i$ & cis-H/W & 1 \\  \hline
+C:C & $H/H$ & cis-H/W & 1 \\  \hline
+C:C & $H_e/H_ie$ & trans-W/W & 1 \\  \hline
+C:C & $H_e/H_e$ & cis-S/H & 1 \\  \hline
+C:A & $H_qe/H_qe$ & trans-S/W & 1 \\  \hline
+C:A & $H_qe/H$ & NA & 1 \\  \hline
+C:A & $H_i/H$ & trans-W/H & 1 \\  \hline
+C:A & $H_i/H_qe$ & trans-S/H & 1 \\  \hline
+C:A & $H_i/H$ & cis-W/S & 1 \\  \hline
+C:A & $H_ie/H_ie$ & cis-S/S & 1 \\  \hline
+C:A & $H_ie/H_e$ & trans-S/S & 1 \\  \hline
+C:A & $H/H$ & trans-S/. & 1 \\  \hline
+C:A & $H/H_qe$ & trans-S/W & 1 \\  \hline
+C:A & $H/H$ & cis-S/W & 1 \\  \hline
+C:A & $H_e/H_ie$ & cis-H/S & 1 \\  \hline
+C:A & $H_e/H_e$ & trans-W/. & 1 \\  \hline
+C:A & $H_e/H_e$ & trans-S/. & 1 \\  \hline
+C:A & $H_e/H_e$ & trans-H/W & 1 \\  \hline
+C:A & $H_e/H_e$ & cis-W/H & 1 \\  \hline
+A:U & $H_qe/H_qe$ & trans-W/H & 1 \\  \hline
+A:U & $H_qe/H_qe$ & cis-W/S & 1 \\  \hline
+A:U & $H_qe/H_qe$ & cis-H/W & 1 \\  \hline
+A:U & $H_qe/H_i$ & trans-W/W & 1 \\  \hline
+A:U & $H_qe/H$ & cis-H/W & 1 \\  \hline
+A:U & $H_i/H_qe$ & cis-S/S & 1 \\  \hline
+A:U & $H_i/H_qe$ & cis-H/W & 1 \\  \hline
+A:U & $H_i/H_i$ & trans-W/W & 1 \\  \hline
+A:U & $H_i/H_i$ & cis-W/H & 1 \\  \hline
+A:U & $H_i/H$ & cis-W/S & 1 \\  \hline
+A:U & $H_i/H$ & cis-H/W & 1 \\  \hline
+A:U & $H_ie/H_e$ & cis-S/W & 1 \\  \hline
+A:U & $H_e/H_ie$ & trans-H/S & 1 \\  \hline
+A:U & $H_e/H_ie$ & cis-W/W & 1 \\  \hline
+A:PSU & $H/H$ & cis-W/H & 1 \\  \hline
+A:M5M & $H/H$ & cis-W/W & 1 \\  \hline
+A:M2G & $H_qe/H_qe$ & cis-W/W & 1 \\  \hline
+A:G & $H_qe/H_qe$ & cis-S/S & 1 \\  \hline
+A:G & $H_qe/H_i$ & trans-W/S & 1 \\  \hline
+A:G & $H_qe/H_i$ & cis-S/H & 1 \\  \hline
+A:G & $H_i/H$ & trans-W/. & 1 \\  \hline
+A:G & $H_i/H_qe$ & trans-S/S & 1 \\  \hline
+A:G & $H_i/H_i$ & cis-H/S & 1 \\  \hline
+A:G & $H/H$ & trans-S/H & 1 \\  \hline
+A:G & $H/H_qe$ & trans-W/H & 1 \\  \hline
+A:G & $H/H_i$ & trans-W/S & 1 \\  \hline
+A:G & $H_e/H_ie$ & trans-S/S & 1 \\  \hline
+A:G & $H_e/H_ie$ & cis-W/W & 1 \\  \hline
+A:G & $H_e/H_e$ & trans-H/W & 1 \\  \hline
+A:G & $H_e/H_e$ & cis-W/S & 1 \\  \hline
+A:C & $H_qe/H_qe$ & trans-W/W & 1 \\  \hline
+A:C & $H_qe/H_qe$ & trans-S/H & 1 \\  \hline
+A:C & $H_qe/H_qe$ & trans-H/S & 1 \\  \hline
+A:C & $H_qe/H_qe$ & cis-S/S & 1 \\  \hline
+A:C & $H_i/H$ & trans-W/S & 1 \\  \hline
+A:C & $H_i/H_qe$ & NA & 1 \\  \hline
+A:C & $H_i/H_i$ & trans-H/S & 1 \\  \hline
+A:C & $H/H$ & trans-./S & 1 \\  \hline
+A:C & $H/H_qe$ & cis-H/W & 1 \\  \hline
+A:C & $H/H_i$ & trans-W/W & 1 \\  \hline
+A:C & $H_e/H_ie$ & cis-W/W & 1 \\  \hline
+A:C & $H_e/H_e$ & cis-H/W & 1 \\  \hline
+A:A & $H_qe/H$ & trans-S/. & 1 \\  \hline
+A:A & $H_qe/H_qe$ & trans-./S & 1 \\  \hline
+A:A & $H_qe/H_i$ & trans-S/W & 1 \\  \hline
+A:A & $H_qe/H_i$ & trans-S/H & 1 \\  \hline
+A:A & $H_i/H_qe$ & cis-H/W & 1 \\  \hline
+A:A & $H_ie/H_ie$ & trans-S/H & 1 \\  \hline
+A:A & $H_ie/H_ie$ & trans-H/S & 1 \\  \hline
+A:A & $H_ie/H_ie$ & cis-S/W & 1 \\  \hline
+A:A & $H_ie/H_ie$ & cis-S/S & 1 \\  \hline
+A:A & $H_ie/H_e$ & trans-H/H & 1 \\  \hline
+A:A & $H/H_i$ & trans-H/H & 1 \\  \hline
+A:A & $H_e/H_ie$ & trans-H/W & 1 \\  \hline
+A:A5M & $H/H$ & cis-W/W & 1 \\  \hline
+A:5BU & $H/H$ & cis-H/W & 1 \\  \hline
+A:4OC & $H/H$ & cis-W/W & 1 \\  \hline
+A2M:A & $H_qe/H_qe$ & trans-W/H & 1 \\  \hline
+A2M:A & $H_qe/H_qe$ & trans-S/H & 1 \\  \hline
+A2M:A & $H_qe/H_i$ & trans-S/H & 1 \\  \hline
+A:1MA & $H/H_i$ & trans-W/H & 1 \\  \hline
+5MC:G & $H_qe/H$ & cis-W/W & 1 \\  \hline
+5BU:G & $H_i/H_i$ & cis-W/W & 1 \\  \hline
+5BU:A & $H_i/H_qe$ & cis-W/H & 1 \\  \hline
+5BU:A & $H/H$ & cis-W/H & 1 \\  \hline
+3DA:A & $H_qe/H_qe$ & trans-S/H & 1 \\  \hline
+3AY:U & $H_i/H_qe$ & NA & 1 \\  \hline
+2MU:1MA & $H/H_i$ & trans-W/H & 1 \\  \hline
+2MG:U & $H/H$ & cis-W/W & 1 \\  \hline
+\end{longtable}
+\end{center}
+
+
+
+
+
+\section{Base Pair-Step (BPS) Counting and Classification}
+
+
+
+\begin{center}
+\begin{longtable}{c|c}
+\caption{Number of Base Pair Steps (BPS) per BPS-ID.}\\ \hline
+\label{tab:bpscount}\\ 
+%This is the header for the first page of the table...
+\bf{BPS ID} & \bf{Number of BPS}\\ \hline \hline
+\endfirsthead
+
+%This is the header for the remaining page(s) of the table...
+\multicolumn{2}{r}{{\tablename} \thetable{} -- Continued} \\
+\bf{BPS ID} & \bf{Number of BPS}\\ \hline \hline
+\endhead
+
+%This is the footer for all pages except the last page of the table...
+\multicolumn{2}{r}{Continued on Next Page\ldots} \\
+\endfoot
+%This is the footer for the last page of the table...
+\endlastfoot
+C:G:C:G & 11751 \\ \hline
+G:C:G:C & 11043 \\ \hline
+G:C:C:G & 8541 \\ \hline
+C:G:G:C & 7472 \\ \hline
+C:G:U:A & 4640 \\ \hline
+A:U:C:G & 4269 \\ \hline
+U:A:C:G & 4171 \\ \hline
+U:A:G:C & 4120 \\ \hline
+G:C:U:A & 4047 \\ \hline
+A:U:G:C & 3980 \\ \hline
+C:G:A:U & 3940 \\ \hline
+G:C:A:U & 3839 \\ \hline
+G:C:U:G & 2719 \\ \hline
+G:U:C:G & 2504 \\ \hline
+A:U:A:U & 2328 \\ \hline
+C:G:U:G & 2093 \\ \hline
+C:G:G:A & 2005 \\ \hline
+G:U:G:C & 1925 \\ \hline
+A:G:G:C & 1835 \\ \hline
+A:U:U:A & 1534 \\ \hline
+U:G:C:G & 1494 \\ \hline
+U:A:A:U & 1487 \\ \hline
+G:C:G:U & 1487 \\ \hline
+A:G:C:G & 1362 \\ \hline
+U:A:U:A & 1248 \\ \hline
+U:G:G:C & 1133 \\ \hline
+G:C:G:A & 1082 \\ \hline
+C:G:G:U & 954 \\ \hline
+G:A:A:U & 938 \\ \hline
+G:U:U:A & 935 \\ \hline
+U:A:A:G & 886 \\ \hline
+G:A:A:G & 778 \\ \hline
+U:A:G:A & 697 \\ \hline
+U:G:G:U & 694 \\ \hline
+A:A:G:C & 685 \\ \hline
+U:G:G:A & 638 \\ \hline
+A:G:G:U & 623 \\ \hline
+A:U:U:G & 609 \\ \hline
+U:G:A:U & 588 \\ \hline
+G:A:G:C & 570 \\ \hline
+A:U:A:A & 566 \\ \hline
+A:A:A:G & 548 \\ \hline
+U:A:G:U & 540 \\ \hline
+G:C:A:G & 522 \\ \hline
+U:U:C:G & 518 \\ \hline
+U:G:U:A & 508 \\ \hline
+G:U:A:U & 498 \\ \hline
+A:U:G:U & 497 \\ \hline
+U:A:U:G & 494 \\ \hline
+A:G:A:U & 488 \\ \hline
+G:C:A:A & 478 \\ \hline
+A:A:U:A & 459 \\ \hline
+C:G:A:A & 456 \\ \hline
+G:A:A:A & 451 \\ \hline
+A:C:G:C & 410 \\ \hline
+G:C:U:U & 404 \\ \hline
+A:U:G:A & 391 \\ \hline
+U:U:G:C & 343 \\ \hline
+G:A:C:G & 341 \\ \hline
+A:A:C:G & 339 \\ \hline
+A:U:A:G & 331 \\ \hline
+C:G:A:G & 330 \\ \hline
+G:U:G:U & 311 \\ \hline
+G:C:C:A & 311 \\ \hline
+A:U:C:C & 296 \\ \hline
+G:A:U:A & 288 \\ \hline
+A:G:U:A & 286 \\ \hline
+G:A:G:A & 276 \\ \hline
+A:A:A:U & 267 \\ \hline
+C:G:U:U & 266 \\ \hline
+C:G:A:C & 264 \\ \hline
+G:C:A:C & 255 \\ \hline
+C:A:C:G & 252 \\ \hline
+U:A:A:A & 239 \\ \hline
+U:G:A:G & 233 \\ \hline
+A:G:A:G & 227 \\ \hline
+C:A:G:C & 209 \\ \hline
+C:G:C:A & 204 \\ \hline
+A:A:A:A & 197 \\ \hline
+C:G:U:C & 190 \\ \hline
+G:C:G:G & 189 \\ \hline
+G:G:G:C & 180 \\ \hline
+C:G:C:C & 180 \\ \hline
+A:C:C:G & 178 \\ \hline
+C:U:G:U & 172 \\ \hline
+A:U:A:C & 168 \\ \hline
+U:G:A:A & 158 \\ \hline
+C:G:G:G & 158 \\ \hline
+A:A:U:G & 157 \\ \hline
+A:U:U:U & 156 \\ \hline
+C:U:G:C & 154 \\ \hline
+A:A:C:A & 154 \\ \hline
+A:A:G:U & 147 \\ \hline
+A:G:U:U & 140 \\ \hline
+A:A:G:A & 140 \\ \hline
+C:C:G:A & 132 \\ \hline
+A:C:U:A & 132 \\ \hline
+G:G:G:U & 129 \\ \hline
+A:G:U:G & 125 \\ \hline
+U:C:C:G & 124 \\ \hline
+C:C:G:C & 124 \\ \hline
+U:U:U:A & 123 \\ \hline
+C:C:A:A & 121 \\ \hline
+C:C:U:A & 120 \\ \hline
+A:A:C:C & 119 \\ \hline
+A:C:G:A & 118 \\ \hline
+U:G:U:G & 115 \\ \hline
+C:G:C:U & 112 \\ \hline
+A:C:G:U & 112 \\ \hline
+U:G:U:U & 107 \\ \hline
+A:U:C:A & 107 \\ \hline
+U:A:G:G & 102 \\ \hline
+G:C:C:C & 102 \\ \hline
+A:A:C:U & 101 \\ \hline
+C:A:U:A & 100 \\ \hline
+Total   & 131934 \\ \hline
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+
+\bibliography{biblio}
+%\printindex

@@ -1,0 +1,105 @@
+\begin{thebibliography}{10}
+\addcontentsline{toc}{chapter}{\bibname}
+
+\bibitem{olson1972}
+Olson,~W.~K.; Flory,~P.~J.  {\it Biopolymers} {\bf 1972}, {\em 11}, 1.
+
+\bibitem{saenger1984}
+Saenger,~W. {\em Principles of {N}ucleic {A}cid {S}tructure}; Springer-Verlag;
+  London, 1984.
+
+\bibitem{gautheret1993}
+Gautheret,~D.; Major,~F.; Cedergren,~R.  {\it Journal of {M}olecular {B}iology}
+  {\bf 1993}, {\em 229}, 1049.
+
+\bibitem{wimberly2000}
+Wimberly,~B.~T.; Brodersen,~D.~E.; Clemons,~W.~M.; Morgan-Warren,~R.~J.;
+  Carter,~A.~P.; Vonrhein,~C.; Hartschk,~T.; Ramakrishnan,~V.  {\it Nature}
+  {\bf 2000}, {\em 407}, 327.
+
+\bibitem{schluenzen2000}
+Schluenzen,~F.; Tocilj,~A.; Zarivach,~R.; Harms,~J.; Gluehmann,~M.; Janell,~D.;
+  Bashan,~A.; Bartels,~H.; Agmon,~I.; Franceschi,~F.; Yonath,~A.  {\it Cell}
+  {\bf 2000}, {\em 102}, 615.
+
+\bibitem{ban2000}
+Ban,~N.; Nissen,~P.; Hansen,~J.; Moore,~P.~B.; Steitz,~T.~A.  {\it Science}
+  {\bf 2000}, {\em 289}, 905.
+
+\bibitem{noller2005}
+Noller,~H.~F. {\it Science} {\bf 2005}, {\em 309}, 1508.
+
+\bibitem{reijmers2001}
+Reijmers,~T.~H.; Wehrens,~R.; Buydens,~L.~M.~C.  {\it Journal of {C}hemical
+  {I}nformation and {C}omputer {S}cience} {\bf 2001}, {\em 41}, 1388.
+
+\bibitem{sykes2005}
+Sykes,~M.~T.; Levitt,~M.  {\it Journal of {M}olecular {B}iology} {\bf 2005},
+  {\em 351}, 26.
+
+\bibitem{murray2003}
+Murray,~L.~J.~W.; III,~W.~B.~A.; Richardson,~D.~C.; Richardson,~J.~S.  {\it
+  Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
+  {S}tates of {A}merica} {\bf 2003}, {\em 100}, 13904.
+
+\bibitem{hershkovitz2003}
+Hershkovitz,~E.; Tannenbaum,~E.; Howerton,~S.~B.; Sheth,~A.; Tannenbaum,~A.;
+  Williams,~L.~D.  {\it Nucleic Acids Research} {\bf 2003}, {\em 31}, 6249.
+
+\bibitem{schneider2004}
+Schneider,~B.; Moravek,~Z.; Berman,~H.  {\it Nucleic {A}cids {R}esearch} {\bf
+  2004}, {\em 32}, 1666.
+
+\bibitem{hershkovitz2006}
+Hershkovitz,~E.; Sapiro,~G.; Tannenbaum,~A.; Williams,~L.~D.  {\it Transactions
+  on {C}omputational {B}iology and {B}ioinformatics} {\bf 2006}, {\em 3}, 33.
+
+\bibitem{duarte1998}
+Duarte,~C.~M.; Pyle,~A.~M.  {\it Journal of Molecular Biology} {\bf 1998}, {\em
+  284}, 1465.
+
+\bibitem{duarte2003}
+Duarte,~C.~M.; Wadley,~L.~M.; Pyle,~A.~M.  {\it Nucleic {A}cids {R}esearch}
+  {\bf 2003}, {\em 31}, 4755.
+
+\bibitem{wadley2007}
+Wadley,~L.~M.; Keating,~K.~S.; Duarte,~C.~M.; Pyle,~A.~M.  {\it Journal of
+  {M}olecular {B}iology} {\bf 2007}, {\em 372}, 942.
+
+\bibitem{westhof2000}
+Westhof,~E.; Fritsch,~V.  {\it Structure} {\bf 2000}, {\em 8}, R55.
+
+\bibitem{leontis2002}
+Leontis,~N.~B.; Stombaugh,~J.; Westhof,~E.  {\it Nucleic {A}cids {R}esearch}
+  {\bf 2002}, {\em 30}, 3497.
+
+\bibitem{leontis2006}
+Leontis,~N.~B.; Lescoute,~A.; Westhof,~E.  {\it Current {O}pinion in
+  {S}tructural {B}iology} {\bf 2006}, {\em 16}, 279.
+
+\bibitem{jain1999}
+Jain,~A.~K.; Murthy,~M.~N.; Flynn,~P.~J.  {\it A{CM} {C}omputing {S}urveys}
+  {\bf 1999}, {\em 31}, 265.
+
+\bibitem{Rproj}
+{R Development Core Team},~ , R: A Language and Environment for Statistical
+  Computing, Vienna, Austria (2007), {ISBN} 3-900051-07-0.
+
+\bibitem{richardson2008}
+Richardson,~J.~S.; Schneider,~B.; Murray,~L.~W.; Kapral,~G.~J.;
+  Immormino,~R.~M.; Headd,~J.~J.; Richardson,~D.~C.; Ham,~D.; Hershkovits,~E.;
+  Williams,~L.~D.; Keating,~K.~S.; Pyle,~A.~M.; Micallef,~D.; Westbrook,~J.; ;
+  Berman,~H.~M.  {\it RNA} {\bf 2008},
+
+\bibitem{huang2005}
+Huang,~H.-C.; Nagaswamy,~U.; Fox,~G.~E.  {\it R{NA}} {\bf 2005}, {\em 11}, 412.
+
+\bibitem{restrepo2004}
+Restrepo,~G.; Mesa,~H.; Llanos,~E.~J.; Villaveces,~J.~L.  {\it Journal of
+  {C}hemical {I}nformation and {C}omputer {S}cience} {\bf 2004}, {\em 44}, 68.
+
+\bibitem{restrepo2006}
+Restrepo,~G.; Llanos,~E.~J.; Meza,~H.  {\it Journal of {M}athematical
+  {C}hemistry} {\bf 2006}, {\em 39}, 401.
+
+\end{thebibliography}

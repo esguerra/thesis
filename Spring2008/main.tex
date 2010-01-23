@@ -1,0 +1,62 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Main Document Spring 2008 Report
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Need ruproposal.cls which formats to Rutgers Style Guide
+%\documentclass[pdflatex,12pt, oneside]{ruproposal}
+%\draft
+\documentclass[11pt, oneside, pdftex]{ruformat}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\usepackage{amsmath, amstext, amsfonts, amssymb}
+\usepackage[pdftex]{graphicx}
+\usepackage{subfigure, longtable}
+\usepackage{float}
+\restylefloat{figure}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+\singlespacing
+\usepackage[left=2.54cm,bottom=2.00cm,top=2.00cm,right=2.54cm]{geometry}
+\usepackage{chapterbib}
+\usepackage{makeidx}
+\makeindex
+%\includeonly{titles,clustering,gaunetmod,graphrna}
+\includeonly{titles,Chapter1/clustering,Chapter2/sequence,Chapter3/methodspaper,appendix_a}
+%\usepackage{pdflscape}
+%% For getting bibliography for each chapter!!
+%% Use call in each chapter as \bibliography{biblio}
+%%\usepackage[english]{babel}
+%%\usepackage[latin1]{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% For Fonts in Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{times}
+%\usepackage{pslatex}
+%\usepackage{newcent}
+%\usepackage{palatcm}
+%\usepackage{palatino}
+\usepackage[T1]{fontenc}
+\usepackage[scaled]{helvet}
+\renewcommand*\familydefault{\sfdefault} 
+% For more options go to: http://www.tug.dk/FontCatalogue/
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theses
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    % Title and other sections that come before the body  of the document
+    % theses-title has specific commands from ruthesis
+    \include{titles}
+    \beforepreface % causes insertion of title, abstract, copyright
+    \afterpreface
+    % Now lets include the body of the document ...
+    % Each file corresponds to a separate chapter.
+%    \include{chapter1}
+    \include{Chapter1/clustering}
+    \include{Chapter2/sequence}
+    \include{Chapter3/methodspaper}
+    \appendix
+    \include{appendix_a}  % Clustering methods for classification
+%    \include{gaunetmod} % Gaussian Network Models Review
+%    \include{graphrna} % Graph Theory for RNA Tetraloops
+\end{document}

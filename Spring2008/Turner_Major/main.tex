@@ -1,0 +1,38 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Main Document Turner and Major Visit to Rutgers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Need ruformat.cls which formats to Rutgers Style Guide
+%\documentclass[pdflatex,12pt, oneside]{ruformat}
+%\draft
+%\documentclass[12pt, oneside, pdftex]{ruformat}
+\documentclass[12pt, oneside, pdftex]{article}
+\renewcommand{\thefootnote}{\roman{footnote}}
+\usepackage{amsmath, amstext, amsfonts, amssymb}
+\usepackage[pdftex]{graphicx}
+\usepackage{subfigure, longtable}
+\usepackage{setspace}
+\usepackage{hyperref}
+\singlespacing
+\usepackage[left=2.54cm,bottom=2.54cm,top=2.54cm,right=2.54cm]{geometry}
+\usepackage{chapterbib}
+\usepackage{makeidx}
+\makeindex
+%\includeonly{titles,clustering,gaunetmod,graphrna}
+\includeonly{readings}
+%\usepackage{pdflscape}
+%% For getting bibliography for each chapter!!
+%% Use call in each chapter as \bibliography{biblio}
+%%\usepackage[english]{babel}
+%%\usepackage[latin1]{inputenc}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theses
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    % Title and other sections that come before the body  of the document
+    % theses-title has specific commands from ruthesis
+    % Now lets include the body of the document ...
+    % Each file corresponds to a separate chapter.
+    \include{readings}
+\end{document}

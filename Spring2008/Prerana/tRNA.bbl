@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}
+
+\bibitem{crick1958}
+Francis Crick.
+\newblock On protein synthesis.
+\newblock {\em Symposia of the Society of Experimental Biology}, 12:138--163,
+  1958.
+
+\bibitem{crick1966}
+Francis Crick.
+\newblock Codon--anticodon pairing: the wobble hypothesis.
+\newblock {\em Journal of Molecular Biology}, 19:548--555, 1966.
+
+\bibitem{saks2007}
+Margaret~E. Saks and John~S. Conery.
+\newblock Anticodon-dependent conservation of bacterial trna gene sequences.
+\newblock {\em BIOINFORMATICS}, 13:651--660, 2007.
+
+\bibitem{Vries2008}
+John~K. Vries and Xiong Liu.
+\newblock Subfamily specific conservation profiles for proteins based on n-gram
+  patterns.
+\newblock {\em BMC Bioinformatics}, 9:72, 2008.
+
+\end{thebibliography}

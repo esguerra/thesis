@@ -1,0 +1,61 @@
+zap
+load hel_regions.pdb
+# load 1ehz.pdb
+# restrict not (protein or water)
+
+
+#------Helix #1, color: red------
+select 1:A, 72:A
+color red
+select 2:A, 71:A
+color red
+select 3:A, 70:A
+color red
+select 4:A, 69:A
+color red
+select 5:A, 68:A
+color red
+select 6:A, 67:A
+color red
+select 7:A, 66:A
+color red
+
+#------Helix #2, color: green------
+select 41:A, 29:A
+color green
+select 42:A, 28:A
+color green
+select 43:A, 27:A
+color green
+select 45:A, 25:A
+color green
+select 11:A, 24:A
+color green
+select 12:A, 23:A
+color green
+select 13:A, 22:A
+color green
+select 14:A, 8:A
+color green
+select 15:A, 48:A
+color green
+
+#------Helix #3, color: blue------
+select 19:A, 56:A
+color blue
+
+#------Helix #4, color: yellow------
+select 33:A, 36:A
+color yellow
+
+#------Helix #5, color: cyan------
+select 50:A, 64:A
+color cyan
+select 51:A, 63:A
+color cyan
+select 52:A, 62:A
+color cyan
+select 53:A, 61:A
+color cyan
+
+select all
