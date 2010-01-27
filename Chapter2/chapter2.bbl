@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{olson1_1972}
+Olson, W.~K. and Flory, P.~J. (1972)
+Spatial {C}onfigurations of {P}olynucleotide {C}hains. {I}. {S}teric
+  {I}nteractions in {P}olyribonucleotides: {A} {V}irtual {B}ond {M}odel.
+{\em Biopolymers,} {\bf 11}, 1--23.
+
 \bibitem{saenger1984}
 Saenger, W. (1984)
 Principles of {N}ucleic {A}cid {S}tructure,
@@ -44,16 +50,15 @@ The {I}nfluence of {D}ifferent {S}tructure {R}epresentations on the
 
 \bibitem{sykes2005}
 Sykes, M.~T. and Levitt, M. (2005)
-Describing {RNA} {S}tructure by {L}ibraries of {C}lustered {N}ucleotide
-  {D}oublets.
-{\em Journal of {M}olecular {B}iology,} {\bf 351}, 26--38.
+{Describing RNA Structure by Libraries of Clustered Nucleotide Doublets}.
+{\em Journal of Molecular Biology,} {\bf 351}, 26--38.
 
 \bibitem{murray2003}
 Murray, L. J.~W., III, W. B.~A., Richardson, D.~C., and Richardson, J.~S.
   (2003)
-R{NA} {B}ackbone is {R}otameric.
-{\em Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
-  {S}tates of {A}merica,} {\bf 100}, 13904--13909.
+{RNA Backbone is Rotameric}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 100}, 13904--13909.
 
 \bibitem{hershkovitz2003}
 Hershkovitz, E., Tannenbaum, E., Howerton, S.~B., Sheth, A., Tannenbaum, A.,
@@ -64,8 +69,8 @@ Automated {I}dentification of {RNA} {C}onformational {M}otifs: {T}heory and
 
 \bibitem{schneider2004}
 Schneider, B., Moravek, Z., and Berman, H. (2004)
-R{NA} {C}onformational {C}lasses.
-{\em Nucleic {A}cids {R}esearch,} {\bf 32}, 1666--1677.
+{RNA Conformational Classes}.
+{\em Nucleic Acids Research,} {\bf 32}, 1666--1677.
 
 \bibitem{hershkovitz2006}
 Hershkovitz, E., Sapiro, G., Tannenbaum, A., and Williams, L.~D. (2006)
@@ -123,7 +128,7 @@ Richardson, J.~S., Schneider, B., Murray, L.~W., Kapral, G.~J., Immormino,
   Berman, H.~M. (2008)
 {RNA Backbone: Consensus All-Angle Conformers and Modular String Nomenclature
   (An RNA Ontology Consortium Contribution)}.
-{\em RNA,}.
+{\em RNA,} {\bf 14}, 465--481.
 
 \bibitem{huang2005}
 Huang, H.-C., Nagaswamy, U., and Fox, G.~E. (2005)

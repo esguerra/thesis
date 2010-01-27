@@ -8,7 +8,7 @@ Illegal, another \bibstyle command---line 2 of file Chapter2/chapter2.aux
  : \bibstyle
  :          {nar}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 85 of file Chapter2/chapter2.aux
+Illegal, another \bibdata command---line 101 of file Chapter2/chapter2.aux
  : \bibdata
  :         {biblio}
 I'm skipping whatever remains of this command
@@ -35,7 +35,7 @@ Illegal, another \bibstyle command---line 2 of file Chapter5/chapter5.aux
  : \bibstyle
  :          {nar}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 11 of file Chapter5/chapter5.aux
+Illegal, another \bibdata command---line 8 of file Chapter5/chapter5.aux
  : \bibdata
  :         {biblio}
 I'm skipping whatever remains of this command
@@ -53,13 +53,12 @@ Illegal, another \bibstyle command---line 2 of file Appendix/appendix2a.aux
  : \bibstyle
  :          {nar}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 10 of file Appendix/appendix2a.aux
+Illegal, another \bibdata command---line 8 of file Appendix/appendix2a.aux
  : \bibdata
  :         {biblio}
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: CV/cv.aux
 Database file #1: biblio.bib
-Warning--I didn't find a database entry for "olson1972"
 Warning--can't use both author and editor fields in moore1999a
 ptr=1, stack=
 {RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching}
@@ -68,45 +67,45 @@ while executing---line 2203 of file nar.bst
 `journal' is a missing field, not a string, for entry Rproj
 while executing---line 2203 of file nar.bst
 Warning--empty journal in Rproj
-You've used 102 entries,
+You've used 97 entries,
             1881 wiz_defined-function locations,
-            1052 strings with 22836 characters,
-and the built_in function-call counts, 26448 in all, are:
-= -- 2692
-> -- 1184
-< -- 5
-+ -- 434
-- -- 332
-* -- 2551
-:= -- 4088
-add.period$ -- 102
-call.type$ -- 102
-change.case$ -- 99
+            1023 strings with 21384 characters,
+and the built_in function-call counts, 25362 in all, are:
+= -- 2583
+> -- 1142
+< -- 6
++ -- 418
+- -- 321
+* -- 2428
+:= -- 3917
+add.period$ -- 97
+call.type$ -- 97
+change.case$ -- 94
 chr.to.int$ -- 0
-cite$ -- 104
-duplicate$ -- 934
-empty$ -- 2501
-format.name$ -- 332
-if$ -- 6159
+cite$ -- 99
+duplicate$ -- 897
+empty$ -- 2391
+format.name$ -- 321
+if$ -- 5917
 int.to.chr$ -- 0
-int.to.str$ -- 102
-missing$ -- 106
-newline$ -- 513
-num.names$ -- 102
-pop$ -- 126
+int.to.str$ -- 97
+missing$ -- 101
+newline$ -- 488
+num.names$ -- 97
+pop$ -- 120
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 349
+skip$ -- 341
 stack$ -- 0
-substring$ -- 2178
+substring$ -- 2093
 swap$ -- 115
-text.length$ -- 5
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 203
-width$ -- 105
-write$ -- 922
+while$ -- 195
+width$ -- 99
+write$ -- 879
 (There were 14 error messages)

@@ -8,55 +8,54 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}RNA folding}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Is RNA folding a hard or easy problem?}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}Experimental folding techniques}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}RNA simulations}{2}{section.1.4}
+\contentsline {section}{\numberline {1.3}Experimental folding techniques}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}RNA simulations}{3}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Local nucleotide interactions}{3}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}RNA secondary structure algorithms and the lack of tertiary ones}{3}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}RNA overall fold}{4}{subsection.1.4.3}
-\contentsline {subsection}{\numberline {1.4.4}RNA motifs}{5}{subsection.1.4.4}
-\contentsline {unnumberedsection}{References}{9}{chapter*.6}
+\contentsline {subsection}{\numberline {1.4.2}RNA secondary structure algorithms and the lack of tertiary ones}{5}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}RNA overall fold}{5}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}RNA motifs}{6}{subsection.1.4.4}
+\contentsline {unnumberedsection}{References}{8}{chapter*.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
-\contentsline {chapter}{\numberline {2}RNA Base Steps}{14}{chapter.2}
-\contentsline {section}{\numberline {2.1}Dinucleotide Torsion Angles}{16}{section.2.1}
+\contentsline {chapter}{\numberline {2}RNA Base Steps}{13}{chapter.2}
+\contentsline {section}{\numberline {2.1}Dinucleotide Torsion Angles}{15}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Partitional Clustering for Torsion Angles}{16}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Hierarchical Clustering for Torsion Angles}{22}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Base-step Parameters}{22}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Combining Fourier Averaging Results and Clustering Analysis}{22}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Partitional Clustering for Rigid Body Parameters}{25}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Hierarchical Clustering for Rigid Body Parameters}{29}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}RNA Conformations}{29}{section.2.3}
-\contentsline {section}{\numberline {2.4}Consensus Clustering of Single Stranded Base Step Parameters}{29}{section.2.4}
-\contentsline {section}{\numberline {2.5}Four Major Non-ARNA Step Groups in the Ribosome}{29}{section.2.5}
-\contentsline {unnumberedsection}{References}{36}{chapter*.7}
+\contentsline {subsection}{\numberline {2.1.2}Hierarchical Clustering for Torsion Angles}{19}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Base-step Parameters}{23}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Combining Fourier Averaging Results and Clustering Analysis}{23}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Partitional Clustering for Rigid Body Parameters}{26}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Hierarchical Clustering for Rigid Body Parameters}{31}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}RNA Conformations}{31}{section.2.3}
+\contentsline {section}{\numberline {2.4}Consensus Clustering of Single Stranded Base Step Parameters}{37}{section.2.4}
+\contentsline {section}{\numberline {2.5}Four Major Non-ARNA Step Groups in the Ribosome}{37}{section.2.5}
+\contentsline {unnumberedsection}{References}{38}{chapter*.7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {chapter}{\numberline {3}RNA Base-Pairing}{38}{chapter.3}
-\contentsline {section}{\numberline {3.1}Canonical and Noncanonical Base-pairs, Methods Paper}{38}{section.3.1}
-\contentsline {section}{\numberline {3.2}Clustering of Yurong's Classification}{38}{section.3.2}
+\contentsline {chapter}{\numberline {3}RNA Base-Pairing}{40}{chapter.3}
+\contentsline {section}{\numberline {3.1}Canonical and Noncanonical Base-pairs, Methods Paper}{40}{section.3.1}
+\contentsline {section}{\numberline {3.2}Clustering of Yurong's Classification}{40}{section.3.2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {chapter}{\numberline {4}RNA Base Pair Steps}{39}{chapter.4}
-\contentsline {section}{\numberline {4.1}Analysis (Albany Poster) and Django Webserver}{39}{section.4.1}
-\contentsline {section}{\numberline {4.2}Persistence Length vs. Hagerman}{39}{section.4.2}
-\contentsline {section}{\numberline {4.3}AMBER: Persistence Length of Base-Pair Step Patterns}{39}{section.4.3}
+\contentsline {chapter}{\numberline {4}RNA Base Pair Steps}{41}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analysis (Albany Poster) and Django Webserver}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Persistence Length vs. Hagerman}{41}{section.4.2}
+\contentsline {section}{\numberline {4.3}AMBER: Persistence Length of Base-Pair Step Patterns}{41}{section.4.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {chapter}{\numberline {5}RNA Motifs}{40}{chapter.5}
-\contentsline {section}{\numberline {5.1}RNA \textit {Structural} Motifs}{40}{section.5.1}
-\contentsline {section}{\numberline {5.2}GNRA tetraloop}{40}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}3DNA-Parser}{41}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Overlap Scores}{41}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Triplets on RNA (comparison to Laing et al.)}{41}{section.5.3}
-\contentsline {unnumberedsection}{References}{44}{chapter*.8}
+\contentsline {chapter}{\numberline {5}RNA Motifs}{42}{chapter.5}
+\contentsline {section}{\numberline {5.1}GNRA tetraloop}{42}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}3DNA-Parser}{42}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Overlap Scores}{43}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Triplets on RNA (comparison to Laing et al.)}{43}{section.5.2}
+\contentsline {unnumberedsection}{References}{46}{chapter*.8}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
-\contentsline {chapter}{\numberline {6}RNA Helical Regions and Graph Theory}{45}{chapter.6}
+\contentsline {chapter}{\numberline {6}RNA Helical Regions and Graph Theory}{47}{chapter.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {chapter}{\appnumberline {A}Clustering Analysis (CA)}{46}{appendix.A}
-\contentsline {section}{\numberline {A.1}Hierarchical methods}{46}{section.A.1}
+\contentsline {chapter}{\appnumberline {A}Clustering Analysis (CA)}{48}{appendix.A}
+\contentsline {section}{\numberline {A.1}Hierarchical methods}{48}{section.A.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {unnumberedsection}{Curriculum Vitae}{49}{appendix*.9}
+\contentsline {unnumberedsection}{Curriculum Vitae}{52}{appendix*.9}
 \gdef \the@ipfilectr {}

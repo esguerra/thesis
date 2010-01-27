@@ -1,11 +1,11 @@
-\begin{thebibliography}{100}
+\begin{thebibliography}{10}
 
 \bibitem{rangan2003}
 Rangan, P., Masquida, B., Westhof, E., and Woodson, S.~A. (2003)
-Assembly of core helices and rapid tertiary folding of a small bacterial group
-  {I} ribozyme.
-{\em Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
-  {S}tated of {A}merica,} {\bf 100}, 1574--1579.
+{Assembly of Core Helices and Rapid Tertiary Folding of a Small Bacterial Group
+  I Ribozyme}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 100}, 1574--1579.
 
 \bibitem{richardson2002}
 Richardson, D.~C. and Richardson, J.~S. (2002)
@@ -15,9 +15,9 @@ Teaching {M}olecular 3-{D} {L}iteracy.
 \bibitem{murray2003}
 Murray, L. J.~W., III, W. B.~A., Richardson, D.~C., and Richardson, J.~S.
   (2003)
-R{NA} {B}ackbone is {R}otameric.
-{\em Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
-  {S}tates of {A}merica,} {\bf 100}, 13904--13909.
+{RNA Backbone is Rotameric}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 100}, 13904--13909.
 
 \bibitem{robertus1974}
 Robertus, J.~D., Ladner, J.~E., Finch, J.~T., Rhodes, D., Brown, R.~S., Clark,
@@ -45,18 +45,18 @@ Weinberg, Z., Perreault, J., Meyer, M.~M., and Breaker, R.~R. (2009)
 \bibitem{kruger1982}
 Kruger, K., Grabowski, P.~J., Zaug, A.~J., Sands, J., Gottschling, D.~E., and
   Cech, T.~R. (1982)
-Self-splicing {RNA}: {A}utoexcision and autocyclization of the ribosomal {RNA}
-  intervening sequence of tetrahymena.
+{Self-Splicing RNA: Autoexcision and Autocyclization of the Ribosomal RNA
+  Intervening Sequence of Tetrahymena}.
 {\em Cell,} {\bf 31}, 147--157.
 
 \bibitem{takada1983}
 Guerrier-Takada, C., Gardiner, K., Marsh, T., Pace, N., and Altman, S. (1983)
-The {RNA} moiety of ribonuclease {P} is the catalytic subunit of the enzyme..
+{The RNA Moiety of Ribonuclease P is the Catalytic Subunit of the Enzyme}.
 {\em Cell,} {\bf 35}, 849--857.
 
 \bibitem{zuker1989}
 Zuker, M. (1989)
-On {F}inding all {S}uboptimal {F}oldings of an {RNA} {M}olecule.
+{On Finding All Suboptimal Foldings of an RNA Molecule}.
 {\em Science,} {\bf 244}, 48--52.
 
 \bibitem{hofacker1994}
@@ -67,7 +67,7 @@ Fast {F}olding and {C}omparison of {RNA} {S}econdary {S}tructures.
 
 \bibitem{borer1974}
 Borer, P.~N., Dengler, B., Tinoco, J.~I., and Uhlenbeck, O.~C. (1974)
-Stability of ribonucleic acid double-stranded helices.
+{Stability of Ribonucleic Acid Double-Stranded Helices}.
 {\em Journal of {M}olecular {B}iology,} {\bf 86}, 843--853.
 
 \bibitem{batey1999}
@@ -82,13 +82,13 @@ R{NA} and {P}rotein {F}olding: {C}ommon {T}hemes and {V}ariations.
 
 \bibitem{chen1995}
 Chen, S.-J. and Dill, K.~A. (1995)
-Statistical thermodynamics of double-stranded polymer molecules.
-{\em Journal of {C}hemical {P}hysics,} {\bf 103}, 5802--5813.
+{Statistical Thermodynamics of Double-Stranded Polymer Molecules}.
+{\em Journal of Chemical Physics,} {\bf 103}, 5802--5813.
 
 \bibitem{chen1998}
 Chen, S.-J. and Dill, K.~A. (1998)
-Theory for the conformational changes of double-stranded chain molecules.
-{\em Journal of {C}hemical {P}hysics,} {\bf 109}, 4602--4616.
+{Theory for the Conformational Changes of Double-Stranded Chain Molecules}.
+{\em Journal of Chemical Physics,} {\bf 109}, 4602--4616.
 
 \bibitem{thirumalai1996}
 Thirumalai, D. and Woodson, S.~A. (1996)
@@ -113,14 +113,14 @@ Does {N}ative {S}tate {T}opology {D}etermine the {RNA} {F}olding {M}echanism?.
 
 \bibitem{klein2004a}
 Klein, D.~J., Moore, P.~B., and Steitz, T.~A. (2004)
-The contribution of metal ions to the structural stability of the large
-  ribosomal subunit..
-{\em R{NA},} {\bf 10}(9), 1366--1379.
+{The Contribution of Metal Ions to the Structural Stability of the Large
+  Ribosomal Subunit}.
+{\em RNA,} {\bf 10}(9), 1366--1379.
 
 \bibitem{malhotra1990}
 Malhotra, A., Tan, R.~K., and Harvey, S.~C. (1990)
 Prediction of the {T}hree-{D}imensional {S}tructure of {E}scherichia {C}oli
-  30{S} {R}ibosomal {S}ubunit: {A} {M}olecular {M}echanics {A}pproach..
+  30{S} {R}ibosomal {S}ubunit: {A} {M}olecular {M}echanics {A}pproach.
 {\em Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
   {S}tates of {A}merica,} {\bf 87}, 1950--1954.
 
@@ -138,9 +138,9 @@ The {MC}-{F}old and {MC}-{S}ym {P}ipeline {I}nfers {RNA} {S}tructure from
 
 \bibitem{westhead1999}
 Westhead, D., Slidel, T., Flores, T., and Thornton, J. (1999)
-Protein structural topology: {A}utomated analysis and diagrammatic
-  representation.
-{\em Protein {S}cience,} {\bf 8}, 897--904.
+{Protein Structural Topology: Automated Analysis and Diagrammatic
+  Representation}.
+{\em Protein Science,} {\bf 8}, 897--904.
 
 \bibitem{gerstein2003}
 Gerstein, M. and Thornton, J.~M. (2003)
@@ -165,49 +165,49 @@ Zhuang, X. and Rief, M. (2003)
 
 \bibitem{liphardt2001}
 Liphardt, J., Onoa, B., Smith, S., Jr., I.~T., and Bustamante, C. (2001)
-Reversible unfolding of single {RNA} molecules by mechanical force..
+{Reversible Unfolding of Single RNA Molecules by Mechanical Force}.
 {\em Science,} {\bf 292}, 733--737.
 
 \bibitem{onoa2004}
 Onoa, B. and Jr., I.~T. (2004)
-R{NA} folding and unfolding.
+{RNA Folding and Unfolding}.
 {\em Current {O}pinion in {S}tructural {B}iology,} {\bf 14}(3), 374--379.
 
 \bibitem{tinoco2004}
 Tinoco, I. (2004)
-F{ORCE} {AS} {A} {USEFUL} {VARIABLE} {IN} {REACTIONS}: {U}nfolding {RNA}..
+{Force as a Useful Variable in Reactions: Unfolding RNA}.
 {\em Annual {R}eview of {B}iophysics \& {B}iomolecular {S}tructure,} {\bf 33},
   363--385.
 
 \bibitem{hyeon2005}
 Hyeon, C. and Thirumalai, D. (2005)
-Mechanical unfolding of {RNA} hairpins.
-{\em Proceedings of the {N}ational {A}cademy of {S}cience,} {\bf 102}(19),
-  6789--6794.
+{Mechanical Unfolding of RNA Hairpins}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 102}(19), 6789--6794.
 
 \bibitem{crooks1999}
 Crooks, G.~E. (1999)
-Entropy production fluctuation theorem and the nonequilirium work relation for
-  free-energy differences.
-{\em Physical {R}eview {E},} {\bf 60}, 2721--2726.
+{Entropy Production Fluctuation Theorem and the Nonequilirium Work Relation for
+  Free-Energy Differences}.
+{\em Physical Review E,} {\bf 60}, 2721--2726.
 
 \bibitem{collin2005}
 Collin, D., F.Ritort, Jarzynski, C., Smith, S.~B., Jr., I.~T., and Bustamante,
   C. (2005)
-Verification of the {C}rooks fluctuation theorem and recovery of {RNA} folding
-  free energies.
+{Verification of the Crooks Fluctuation Theorem and Recovery of RNA Folding
+  Free Energies}.
 {\em Nature,} {\bf 437}, 231--234.
 
 \bibitem{y_wang2004}
 Wang, Y., Rader, A.~J., Bahar, I., and Jernigan, R.~L. (2004)
-Global ribosome motions revealed with elastic network model.
-{\em Journal of {S}tructural {B}iology,} {\bf 147}, 302--314.
+{Global Ribosome Motions Revealed with Elastic Network Model}.
+{\em Journal of Structural Biology,} {\bf 147}, 302--314.
 
 \bibitem{bahar1998}
 Bahar, I. and Jernigan, R.~L. (1998)
-Vibrational dynamics of transfer {RNA}s: comparison of the free and
-  synthetase-bound forms.
-{\em Journal of {M}olecular {B}iology,} {\bf 281}, 871--884.
+{Vibrational Dynamics of Transfer RNAs: Comparison of the Free and
+  Synthetase-Bound Forms}.
+{\em Journal of Molecular Biology,} {\bf 281}, 871--884.
 
 \bibitem{wang2005}
 Wang, Y. and Jernigan, R.~L. (2005)
@@ -223,16 +223,16 @@ Atomic {M}odel of the {T}hermus thermophilus 70{S} {R}ibosome {D}eveloped in
 
 \bibitem{sanbonmatsu2005}
 Sanbonmatsu, K.~Y., Simpson, J., and Tung, C.-S. (2005)
-Simulating movement of t{RNA} into the ribosome during decoding.
-{\em Proceedings of the {N}ational {A}cademy of {S}ciences,} {\bf 102},
-  15854--15859.
+{Simulating Movement of tRNA into the Ribosome During Decoding}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 102}, 15854--15859.
 
 \bibitem{sponer1996}
 Sponer, J., Leszczynski, J., and Hobza, P. (1996)
-Nature of {N}ucleic {A}cid-{B}ase {S}tacking: {N}onempirical ab {I}nitio and
+Nature of {N}ucleic {A}cid-{B}ase {S}tacking: {N}onempirical {A}b {I}nitio and
   {E}mpirical {P}otential {C}haracterization of 10 {S}tacked {B}ase {D}imers.
   {C}omparison of {S}tacked and {H}-{B}onded {B}ase {P}airs.
-{\em Journal of {P}hysical {C}hemistry,} {\bf 100}, 5590--5596.
+{\em Journal of Physical Chemistry,} {\bf 100}, 5590--5596.
 
 \bibitem{sponer1997}
 Sponer, J., Leszczynski, J., and Hobza, P. (1997)
@@ -241,64 +241,62 @@ Thioguanine and {T}hiouracil: {H}ydrogen-{B}onding and {S}tacking {P}roperties.
 
 \bibitem{sponer2000}
 Sponer, J., Berger, I., Spackova, N., Leszczynski, J., and Hobza, P. (2000)
-Aromatic {B}ase {S}tacking in {DNA}: {F}rom ab initio {C}alculations to
-  {M}olecular {D}ynamics {S}imulations.
-{\em Journal of {B}iomolecular {S}tructure and {D}ynamics,} {\bf 11}, 1--24.
+{Aromatic Base Stacking in DNA: From Ab Initio Calculations to Molecular
+  Dynamics Simulations}.
+{\em Journal of Biomolecular Structure and Dynamics,} {\bf 11}, 1--24.
 
 \bibitem{sponer2006}
 Sponer, J., Jureka, P., Marchan, I., Luque, F.~J., Orozco, M., and Hobza, P.
   (2006)
-Nature of {B}ase {S}tacking: {R}eference {Q}uantum-{C}hemical {S}tacking
-  {E}nergies in {T}en {U}nique {B}-{DNA} {B}ase-{P}air {S}teps..
-{\em Chemistry - {A} {E}uropean {J}ournal,}.
+{Nature of Base Stacking: Reference Quantum-Chemical Stacking Energies in Ten
+  Unique B-DNA Base-Pair Steps}.
+{\em Chemistry - A European Journal,} {\bf 12}, 2854 –2865.
 
 \bibitem{hobza2002}
 Hobza, P. and Sponer, J. (2002)
-Toward {T}rue {DNA} {B}ase-{S}tacking {E}nergies: {MP}2, {CCSD}({T}), and
-  {C}omplete {B}asis {S}et {C}alculations.
-{\em Journal of the {A}merican {C}hemical {S}ociety,} {\bf 124}, 11802--11808.
+{Toward True DNA Base-Stacking Energies: MP2, CCSD(T), and Complete Basis Set
+  Calculations}.
+{\em Journal of the American Chemical Society,} {\bf 124}, 11802--11808.
 
 \bibitem{marky1982}
 Marky, L.~A. and Breslauer, K.~J. (1982)
-Calorimetric determination of base-stacking enthalpies in double-helical {DNA}
-  molecules.
+{Calorimetric Determination of Base-Stacking Enthalpies in Double-Helical DNA
+  Molecules}.
 {\em Biopolymers,} {\bf 11}, 2185--2194.
 
 \bibitem{manning1977}
 Manning, G.~S. (1977)
-Limiting laws and counterion condensation in polyelectrolyte solutions. {IV}.
-  {T}he approach to the limit and the extraordinary stability of the charge
-  fraction..
-{\em Biophysical {C}hemistry,} {\bf 7}, 95--102.
+{Limiting Laws and Counterion Condensation in Polyelectrolyte Solutions IV. The
+  Approach to the Limit and the Extraordinary Stability of the Charge
+  Fraction}.
+{\em Biophysical Chemistry,} {\bf 7}, 95--102.
 
 \bibitem{manning2003}
 Manning, G.~S. (2003)
-Comments on {S}elected {A}spects of {N}ucleic {A}cid {E}lectrostatics.
+{Comments on Selected Aspects of Nucleic Acid Electrostatics}.
 {\em Biopolymers,} {\bf 69}, 137--143.
 
 \bibitem{antypov2005}
 Antypov, D., Barbosa, M.~C., and Holm, C. (2005)
-Incorporation of excluded-volume correlations into {P}oisson-{B}oltzmann
-  theory.
-{\em Physical {R}eview {E}.,} {\bf 71}(6), 1--6.
+{Incorporation of Excluded-Volume Correlations into Poisson-Boltzmann Theory}.
+{\em Physical Review E,} {\bf 71}(6), 1--6.
 
 \bibitem{berman1992}
 Berman, H.~M., Olson, W.~K., Beveridge, D.~L., Westbrook, J., Gelbin, A.,
   Demeny, T., Hsieh, S.~H., Srinivasan, A.~R., and Schneider, B. (1992)
-The nucleic acid database. {A} comprehensive relational database of
-  three-dimensional structures of nucleic acids..
-{\em Biophysical {J}ournal,} {\bf 63}, 751--759.
+{The Nucleic Acid Database. A Comprehensive Relational Database of
+  three-Dimensional Structures of Nucleic Acids}.
+{\em Biophysical Journal,} {\bf 63}, 751--759.
 
 \bibitem{schneider2004}
 Schneider, B., Moravek, Z., and Berman, H. (2004)
-R{NA} {C}onformational {C}lasses.
-{\em Nucleic {A}cids {R}esearch,} {\bf 32}, 1666--1677.
+{RNA Conformational Classes}.
+{\em Nucleic Acids Research,} {\bf 32}, 1666--1677.
 
 \bibitem{sykes2005}
 Sykes, M.~T. and Levitt, M. (2005)
-Describing {RNA} {S}tructure by {L}ibraries of {C}lustered {N}ucleotide
-  {D}oublets.
-{\em Journal of {M}olecular {B}iology,} {\bf 351}, 26--38.
+{Describing RNA Structure by Libraries of Clustered Nucleotide Doublets}.
+{\em Journal of Molecular Biology,} {\bf 351}, 26--38.
 
 \bibitem{richardson2008}
 Richardson, J.~S., Schneider, B., Murray, L.~W., Kapral, G.~J., Immormino,
@@ -307,17 +305,17 @@ Richardson, J.~S., Schneider, B., Murray, L.~W., Kapral, G.~J., Immormino,
   Berman, H.~M. (2008)
 {RNA Backbone: Consensus All-Angle Conformers and Modular String Nomenclature
   (An RNA Ontology Consortium Contribution)}.
-{\em RNA,}.
+{\em RNA,} {\bf 14}, 465--481.
 
 \bibitem{zuker2003}
 Zuker, M. (2003)
-Mfold web server for nucleic acid folding and hybridization prediction.
-{\em Nucleic {A}cids {R}esearch,} {\bf 31}(13), 3406--3415.
+{Mfold Web Server for Nucleic Acid Folding and Hybridization Prediction}.
+{\em Nucleic Acids Research,} {\bf 31}(13), 3406--3415.
 
 \bibitem{mathews2002}
 Mathews, D.~H. and Turner, D.~H. (Mar, 2002)
 {Dynalign: An Algorithm for Finding the Secondary Structure Common to Two RNA
-  Sequences.}.
+  Sequences}.
 {\em Journal of Molecular Biology,} {\bf 317}(2), 191--203.
 
 \bibitem{chen2000}
@@ -347,14 +345,14 @@ Jonikas, M.~A., Radmer, R.~J., and Altman, R.~B. (Dec, 2009)
 
 \bibitem{martinez2008}
 Martinez, H.~M., Jr, J. V.~M., and Shapiro, B.~A. (2008)
-{RNA2D3D: A program for Generating, Viewing, and Comparing 3-Dimensional Models
+{RNA2D3D: A Program for Generating, Viewing, and Comparing 3-Dimensional Models
   of RNA}.
 {\em Journal of Biomolecular Structure and Dynamics,} {\bf 25}, 573--752.
 
 \bibitem{richardson2000}
 Richardson, J.~S. (2000)
-Early ribbon drawings of proteins.
-{\em Nature {S}tructural {B}iology,} {\bf 7}, 624--625.
+{Early Ribbon Drawings of Proteins}.
+{\em Nature Structural Biology,} {\bf 7}, 624--625.
 
 \bibitem{andreeva2004}
 Andreeva, A., Howorth, D., Brenner, S.~E., Hubbard, T. J.~P., Chothia, C., and
@@ -375,10 +373,37 @@ Klosterman, P.~S., Hendrix, D.~K., Tamura, M., Holbrook, S.~R., and Brenner.,
   Database: Extruded Strands, Base Triples, Tetraloops and U-turns}.
 {\em Nucleic Acids Research,} {\bf 32}(8), 2342--2352.
 
+\bibitem{holbrook2005}
+Holbrook, S.~R. (2005)
+{RNA Structure: The Long and the Short of it}.
+{\em Current Opinion in Structural Biology,} {\bf 15}, 302--308.
+
 \bibitem{leontis2003}
 Leontis, N.~B. and Westhof, E. (2003)
 {Analysis of RNA Motifs}.
 {\em Current Opinion in Structural Biology,} {\bf 13}, 300--308.
+
+\bibitem{moore1999}
+Moore, P.~B. (1999)
+{Structural Motifs in RNA}.
+{\em Annual {R}eview of {B}iochemistry,} {\bf 68}, 287--300.
+
+\bibitem{nasalean2009}
+Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
+Vol. 13,  of  Springer Series in Biophysics chapter~1, pp. 1--26
+Springer-Verlag Berlin Heidelberg (November, 2009).
+
+\bibitem{lemieux2006}
+Lemieux, S. and Major, F. (2006)
+{Automated Extraction and Classification of RNA Tertiary Structure Cyclic
+  Motifs}.
+{\em Nucleic Acids Research,} {\bf 34}, 2340--2346.
+
+\bibitem{duarte2003}
+Duarte, C.~M., Wadley, L.~M., and Pyle, A.~M. (2003)
+R{NA} {S}tructure {C}omparison, {M}otif {S}earch and {D}iscovery {U}sing a
+  {R}educed {R}epresentation of {RNA} {C}onformational {S}pace.
+{\em Nucleic {A}cids {R}esearch,} {\bf 31}(16), 4755--4761.
 
 \bibitem{laing2009}
 Laing, C., Jung, S., Iqbal, A., and Schlick, T. (Oct, 2009)
@@ -390,76 +415,15 @@ Laing, C. and Schlick, T. (Jul, 2009)
 {Analysis of Four-way Junctions in RNA Structures}.
 {\em Journal of Molecular Biology,} {\bf 390}(3), 547--559.
 
-\bibitem{nasalean2009}
-Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
-Vol. 13,  of  Springer Series in Biophysics chapter~1, pp. 1--26
-Springer-Verlag Berlin Heidelberg (November, 2009).
-
-\bibitem{schroeder2009}
-Schroeder, S.~J. (Jul, 2009)
-{Advances in RNA Structure Prediction from Sequence: New Tools for Generating
-  Hypotheses About Viral RNA Structure-Function Relationships}.
-{\em Journal of Virology,} {\bf 83}(13), 6326--6334.
-
-\bibitem{mokdad2008}
-Mokdad, A. and Frankel, A.~D. (April, 2008)
-{ISFOLD: Structure Prediction of Base-pairs in Non-helical RNA Motifs From
-  Isostericity Signatures in Their Sequence Alignments}.
-{\em Journal of Biomolecular Structure and Dynamics,} {\bf 25}(5), 467--472.
-
-\bibitem{clery2008}
-Cléry, A., Blatter, M., and Allain, F. H.-T. (June, 2008)
-{RNA Recognition Motifs: Boring? Not Quite}.
-{\em Current Opinion in Structural Biology,} {\bf 18}(3), 290--298.
-
-\bibitem{reeder2007}
-Reeder, J., Reeder, J., and Giegerich, R. (Jul, 2007)
-{Locomotif: From Graphical Motif Description to RNA Motif Search}.
-{\em Bioinformatics,} {\bf 23}(13), i392--i400.
-
-\bibitem{lemieux2006}
-Lemieux, S. and Major, F. (2006)
-{Automated Extraction and Classification of RNA Tertiary Structure Cyclic
-  Motifs}.
-{\em Nucleic Acids Research,} {\bf 34}, 2340--2346.
+\bibitem{holbrook2008}
+Holbrook, S.~R. (2008)
+{Structural Principles From large RNAs}.
+{\em Annual Review in Biophysics,} {\bf 37}, 445--464.
 
 \bibitem{spackova2006}
 Spacková, N. and Sponer, J. (2006)
 {Molecular Dynamics Simulations of Sarcin-Ricin rRNA Motif}.
 {\em Nucleic Acids Research,} {\bf 34}(2), 697--708.
-
-\bibitem{yao2006}
-Yao, Z., Weinberg, Z., and Ruzzo, W.~L. (Feb, 2006)
-{CMfinder--A Covariance Model Based RNA Motif Finding Algorithm}.
-{\em Bioinformatics,} {\bf 22}(4), 445--452.
-
-\bibitem{hendrix2005}
-Hendrix, D.~K., Brenner, S.~E., and Holbrook, S.~R. (2005)
-{RNA Structural Motifs : Building Blocks of a Modular Biomolecule}.
-{\em Quarterly Reviews of Biophysics,} {\bf 38}, 221.
-
-\bibitem{holbrook2005}
-Holbrook, S.~R. (2005)
-{RNA Structure: The Long and the Short of it}.
-{\em Current Opinion in Structural Biology,} {\bf 15}, 302--308.
-
-\bibitem{laserson2005}
-Laserson, U., Gan, H.~H., and Schlick, T. (2005)
-{Predicting Candidate Genomic Sequences that Correspond to Synthetic Functional
-  RNA Motifs}.
-{\em Nucleic Acids Research,} {\bf 33}(18), 6057--6069.
-
-\bibitem{lescoute2005}
-Lescoute, A., Leontis, N.~B., Massire, C., and Westhof, E. (2005)
-{Recurrent Structural RNA Motifs, Isostericity Matrices and Sequence
-  Alignments}.
-{\em Nucleic Acids Research,} {\bf 33}(8), 2395--2409.
-
-\bibitem{huang2005}
-Huang, H.-C., Nagaswamy, U., and Fox, G.~E. (2005)
-{The Application of Cluster Analysis in the Intercomparison of Loop Structures
-  in RNA}.
-{\em RNA,} {\bf 11}, 412--423.
 
 \bibitem{reblova2003}
 Réblová, K., Spacková, N., Stefl, R., Csaszar, K., Koca, J., Leontis, N.~B.,
@@ -468,31 +432,29 @@ Réblová, K., Spacková, N., Stefl, R., Csaszar, K., Koca, J., Leontis, N.~B.,
   of 5S rRNA Loop E}.
 {\em Biophysical Journal,} {\bf 84}(6), 3564--3582.
 
-\bibitem{leontis2002b}
-Leontis, N.~B. and Westhof, E. (2002)
-{The Annotation of RNA Motifs}.
-{\em Comparative and Functional Genomics,} {\bf 3}, 518--524.
+\bibitem{sarver2008}
+Sarver, M., Zirbel, C.~L., Stombaugh, J., Mokdad, A., and Leontis, N.~B. (Jan,
+  2008)
+{FR3D: Finding Local and Composite Recurrent Structural Motifs in RNA 3D
+  Structures}.
+{\em Journal of Mathematical Biology,} {\bf 56}(1-2), 215--252.
 
-\bibitem{leontis2002}
-Leontis, N.~B., Stombaugh, J., and Westhof, E. (2002)
-{The Non-Watson-Crick Base Pairs and their Associated Isostericity Matrices}.
-{\em Nucleic Acids Research,} {\bf 30}, 3497--3531.
+\bibitem{mokdad2008}
+Mokdad, A. and Frankel, A.~D. (April, 2008)
+{ISFOLD: Structure Prediction of Base-pairs in Non-helical RNA Motifs From
+  Isostericity Signatures in Their Sequence Alignments}.
+{\em Journal of Biomolecular Structure and Dynamics,} {\bf 25}(5), 467--472.
 
-\bibitem{zacharias2000a}
-Zacharias, M. (Jun, 2000)
-{Simulation of the Structure and Dynamics of Nonhelical RNA Motifs}.
-{\em Current Opinion in Structural Biology,} {\bf 10}(3), 311--317.
+\bibitem{stonge2007}
+Stonge, K., Thibault, P., Hamel, S., and Major, F. (2007)
+Modeling {RNA} {T}ertiary {S}tructure {M}otifs by {G}raph-{G}rammars.
+{\em Nucleic Acids Research, 2007, 1ï¿½11,} pp. 1--11.
 
-\bibitem{moore1999}
-Moore, P.~B. (1999)
-{Structural Motifs in RNA}.
-{\em Annual {R}eview of {B}iochemistry,} {\bf 68}, 287--300.
-
-\bibitem{duarte1998}
-Duarte, C.~M. and Pyle, A.~M. (1998)
-Stepping {T}hrough an {RNA} {S}tructure: {A} {N}ovel {A}pproach to
-  {C}onformational {A}nalysis.
-{\em Journal of Molecular Biology,} {\bf 284}, 1465--1478.
+\bibitem{olson1_1972}
+Olson, W.~K. and Flory, P.~J. (1972)
+Spatial {C}onfigurations of {P}olynucleotide {C}hains. {I}. {S}teric
+  {I}nteractions in {P}olyribonucleotides: {A} {V}irtual {B}ond {M}odel.
+{\em Biopolymers,} {\bf 11}, 1--23.
 
 \bibitem{saenger1984}
 Saenger, W. (1984)
@@ -544,11 +506,11 @@ Statistical {A}nalysis of {RNA} {B}ackbone.
 {\em Transactions on {C}omputational {B}iology and {B}ioinformatics,} {\bf 3},
   33--46.
 
-\bibitem{duarte2003}
-Duarte, C.~M., Wadley, L.~M., and Pyle, A.~M. (2003)
-R{NA} {S}tructure {C}omparison, {M}otif {S}earch and {D}iscovery {U}sing a
-  {R}educed {R}epresentation of {RNA} {C}onformational {S}pace.
-{\em Nucleic {A}cids {R}esearch,} {\bf 31}(16), 4755--4761.
+\bibitem{duarte1998}
+Duarte, C.~M. and Pyle, A.~M. (1998)
+Stepping {T}hrough an {RNA} {S}tructure: {A} {N}ovel {A}pproach to
+  {C}onformational {A}nalysis.
+{\em Journal of Molecular Biology,} {\bf 284}, 1465--1478.
 
 \bibitem{wadley2007}
 Wadley, L.~M., Keating, K.~S., Duarte, C.~M., and Pyle, A.~M. (2007)
@@ -560,6 +522,11 @@ Evaluating and {L}earning from {RNA} {P}seudotorsional {S}pace: {Q}uantitative
 Westhof, E. and Fritsch, V. (2000)
 R{NA} folding: beyond {W}atson-{C}rick pairs.
 {\em Structure,} {\bf 8}, R55--R65.
+
+\bibitem{leontis2002}
+Leontis, N.~B., Stombaugh, J., and Westhof, E. (2002)
+{The Non-Watson-Crick Base Pairs and their Associated Isostericity Matrices}.
+{\em Nucleic Acids Research,} {\bf 30}, 3497--3531.
 
 \bibitem{leontis2006}
 Leontis, N.~B., Lescoute, A., and Westhof, E. (2006)
@@ -575,6 +542,12 @@ Data {C}lustering: {A} {R}eview.
 {R Development Core Team} (2007)
 R: A language and environment for statistical computing.
 {ISBN} 3-900051-07-0.
+
+\bibitem{huang2005}
+Huang, H.-C., Nagaswamy, U., and Fox, G.~E. (2005)
+{The Application of Cluster Analysis in the Intercomparison of Loop Structures
+  in RNA}.
+{\em RNA,} {\bf 11}, 412--423.
 
 \bibitem{restrepo2004}
 Restrepo, G., Mesa, H., Llanos, E.~J., and Villaveces, J.~L. (2004)
