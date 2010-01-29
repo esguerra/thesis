@@ -111,31 +111,6 @@ Leontis, N.~B., Lescoute, A., and Westhof, E. (2006)
 {The Building Blocks and Motifs of RNA Architecture}.
 {\em Current Opinion in Structural Biology,} {\bf 16}, 279--287.
 
-\bibitem{jain1999}
-Jain, A.~K., Murthy, M.~N., and Flynn, P.~J. (1999)
-Data {C}lustering: {A} {R}eview.
-{\em A{CM} {C}omputing {S}urveys,} {\bf 31}, 265.
-
-\bibitem{Rproj}
-{R Development Core Team} (2007)
-R: A language and environment for statistical computing.
-{ISBN} 3-900051-07-0.
-
-\bibitem{richardson2008}
-Richardson, J.~S., Schneider, B., Murray, L.~W., Kapral, G.~J., Immormino,
-  R.~M., Headd, J.~J., Richardson, D.~C., Ham, D., Hershkovits, E., Williams,
-  L.~D., Keating, K.~S., Pyle, A.~M., Micallef, D., Westbrook, J., , and
-  Berman, H.~M. (2008)
-{RNA Backbone: Consensus All-Angle Conformers and Modular String Nomenclature
-  (An RNA Ontology Consortium Contribution)}.
-{\em RNA,} {\bf 14}, 465--481.
-
-\bibitem{huang2005}
-Huang, H.-C., Nagaswamy, U., and Fox, G.~E. (2005)
-{The Application of Cluster Analysis in the Intercomparison of Loop Structures
-  in RNA}.
-{\em RNA,} {\bf 11}, 412--423.
-
 \bibitem{restrepo2004}
 Restrepo, G., Mesa, H., Llanos, E.~J., and Villaveces, J.~L. (2004)
 Topological {S}tudy of the {P}eriodic {S}ystem.

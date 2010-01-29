@@ -1,5 +1,48 @@
 \begin{thebibliography}{10}
 
+\bibitem{orgel2004}
+Orgel, L.~E. (2004)
+Prebiotic {C}hemistry and the {O}rigin of the {RNA} {W}orld.
+{\em Critical {R}eviews in {B}iochemistry and {M}olecular {B}iology,} {\bf 39},
+  99--123.
+
+\bibitem{schluenzen2000}
+Schluenzen, F., Tocilj, A., Zarivach, R., Harms, J., Gluehmann, M., Janell, D.,
+  Bashan, A., Bartels, H., Agmon, I., Franceschi, F., and Yonath, A. (2000)
+{S}tructure of {F}unctionally {A}ctivated {S}mall {R}ibosomal {S}ubunit at 3.3
+  {{\AA}} {R}esolution.
+{\em Cell,} {\bf 102}, 615--623.
+
+\bibitem{ban2000}
+Ban, N., Nissen, P., Hansen, J., Moore, P.~B., and Steitz, T.~A. (August, 2000)
+The {C}omplete {A}tomic {S}tructure of the {L}arge {R}ibosomal {S}ubunit at 2.4
+  {{\AA}} {R}esolution.
+{\em Science,} {\bf 289}(5481), 905--920.
+
+\bibitem{wimberly2000}
+Wimberly, B.~T., Brodersen, D.~E., Clemons, W.~M., Morgan-Warren, R.~J.,
+  Carter, A.~P., Vonrhein, C., Hartschk, T., and Ramakrishnan, V. (2000)
+Structure of the 30{S} {R}ibosomal {S}ubunit.
+{\em Nature,} {\bf 407}, 327--339.
+
+\bibitem{watson1953a}
+Watson, J.~D. and Crick, F.~H. (Apr, 1953)
+{Molecular Structure of Nucleic Acids; A Structure for Deoxyribose Nucleic
+  Acid}.
+{\em Nature,} {\bf 171}(4356), 737--738.
+
+\bibitem{weinberg2009}
+Weinberg, Z., Perreault, J., Meyer, M.~M., and Breaker, R.~R. (2009)
+{Exceptional Structured Noncoding RNAs Revealed by Bacterial Metagenome
+  Analysis}.
+{\em Nature,} {\bf 462}, 656--659.
+
+\bibitem{severcan2009}
+Severcan, I., Geary, C., Verzemnieks, E., Chworos, A., and Jaeger, L. (Mar,
+  2009)
+{Square-Shaped RNA Particles from Different RNA Folds}.
+{\em Nanotechnology Letters,} {\bf 9}(3), 1270--1277.
+
 \bibitem{robertus1974}
 Robertus, J.~D., Ladner, J.~E., Finch, J.~T., Rhodes, D., Brown, R.~S., Clark,
   B. F.~C., and Klug, A. (1974)
@@ -16,12 +59,6 @@ Three-{D}imensional {T}ertiary {S}tructure of {Y}east {P}henylalanine
 Noller, H.~F. (2005)
 R{NA} {S}tructure: {R}eading the {R}ibosome.
 {\em Science,} {\bf 309}, 1508--1514.
-
-\bibitem{weinberg2009}
-Weinberg, Z., Perreault, J., Meyer, M.~M., and Breaker, R.~R. (2009)
-{Exceptional Structured Noncoding RNAs Revealed by Bacterial Metagenome
-  Analysis}.
-{\em Nature,} {\bf 462}, 656--659.
 
 \bibitem{kruger1982}
 Kruger, K., Grabowski, P.~J., Zaug, A.~J., Sands, J., Gottschling, D.~E., and
@@ -145,6 +182,12 @@ Meiler, J. and Baker, D. (2003)
 Bloomfield, V.~A., Crothers, D.~M., and Jr., I.~T. (2000)
 Nucleic {A}cids: {S}tructures, {P}roperties and {F}unctions,
 University Science Books, .
+
+\bibitem{boots2008}
+Boots, J.~L., Canny, M.~D., Azimi, E., and Pardi, A. (Oct, 2008)
+{Metal Ion Specificities for Folding and Cleavage Activity in the Schistosoma
+  Hammerhead Ribozyme}.
+{\em RNA,} {\bf 14}(10), 2212--2222.
 
 \bibitem{zhuang2003}
 Zhuang, X. and Rief, M. (2003)
@@ -357,7 +400,7 @@ Teaching {M}olecular 3-{D} {L}iteracy.
 \bibitem{andreeva2004}
 Andreeva, A., Howorth, D., Brenner, S.~E., Hubbard, T. J.~P., Chothia, C., and
   Murzin, A.~G. (2004)
-{S{COP} Database in 2004: Refinements Integrate Structure and Sequence Family
+{SCOP Database in 2004: Refinements Integrate Structure and Sequence Family
   Data}.
 {\em Nucleic {A}cids {R}esearch,} {\bf 32}, D226--D229.
 

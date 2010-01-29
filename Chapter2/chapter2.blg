@@ -2,48 +2,44 @@ This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: Chapter2/chapter2.aux
 The style file: nar.bst
 Database file #1: biblio.bib
-`journal' is a missing field, not a string, for entry Rproj
-while executing---line 2203 of file nar.bst
-Warning--empty journal in Rproj
-You've used 25 entries,
+You've used 21 entries,
             1881 wiz_defined-function locations,
-            619 strings with 8598 characters,
-and the built_in function-call counts, 6628 in all, are:
-= -- 665
-> -- 347
+            595 strings with 7705 characters,
+and the built_in function-call counts, 5582 in all, are:
+= -- 566
+> -- 271
 < -- 0
-+ -- 125
-- -- 100
-* -- 636
-:= -- 1056
-add.period$ -- 25
-call.type$ -- 25
-change.case$ -- 24
++ -- 98
+- -- 77
+* -- 534
+:= -- 880
+add.period$ -- 21
+call.type$ -- 21
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 26
-duplicate$ -- 225
-empty$ -- 597
-format.name$ -- 100
-if$ -- 1532
+cite$ -- 21
+duplicate$ -- 191
+empty$ -- 515
+format.name$ -- 77
+if$ -- 1296
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 26
-newline$ -- 128
-num.names$ -- 25
-pop$ -- 32
+int.to.str$ -- 21
+missing$ -- 22
+newline$ -- 108
+num.names$ -- 21
+pop$ -- 26
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 77
+skip$ -- 65
 stack$ -- 0
-substring$ -- 504
-swap$ -- 23
+substring$ -- 453
+swap$ -- 20
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 48
-width$ -- 27
-write$ -- 228
-(There was 1 error message)
+warning$ -- 0
+while$ -- 41
+width$ -- 23
+write$ -- 193

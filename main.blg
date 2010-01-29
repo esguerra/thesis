@@ -8,7 +8,7 @@ Illegal, another \bibstyle command---line 2 of file Chapter2/chapter2.aux
  : \bibstyle
  :          {nar}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 101 of file Chapter2/chapter2.aux
+Illegal, another \bibdata command---line 66 of file Chapter2/chapter2.aux
  : \bibdata
  :         {biblio}
 I'm skipping whatever remains of this command
@@ -64,48 +64,45 @@ ptr=1, stack=
 {RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching}
 ---the literal stack isn't empty for entry nasalean2009
 while executing---line 2203 of file nar.bst
-`journal' is a missing field, not a string, for entry Rproj
-while executing---line 2203 of file nar.bst
-Warning--empty journal in Rproj
-You've used 97 entries,
+You've used 98 entries,
             1881 wiz_defined-function locations,
-            1023 strings with 21384 characters,
-and the built_in function-call counts, 25362 in all, are:
-= -- 2583
-> -- 1142
+            1031 strings with 21850 characters,
+and the built_in function-call counts, 25814 in all, are:
+= -- 2629
+> -- 1159
 < -- 6
-+ -- 418
-- -- 321
-* -- 2428
-:= -- 3917
-add.period$ -- 97
-call.type$ -- 97
-change.case$ -- 94
++ -- 424
+- -- 326
+* -- 2488
+:= -- 3978
+add.period$ -- 98
+call.type$ -- 98
+change.case$ -- 95
 chr.to.int$ -- 0
 cite$ -- 99
-duplicate$ -- 897
-empty$ -- 2391
-format.name$ -- 321
-if$ -- 5917
+duplicate$ -- 908
+empty$ -- 2435
+format.name$ -- 326
+if$ -- 6022
 int.to.chr$ -- 0
-int.to.str$ -- 97
-missing$ -- 101
-newline$ -- 488
-num.names$ -- 97
-pop$ -- 120
+int.to.str$ -- 98
+missing$ -- 102
+newline$ -- 493
+num.names$ -- 98
+pop$ -- 119
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 341
+skip$ -- 345
 stack$ -- 0
-substring$ -- 2093
-swap$ -- 115
+substring$ -- 2156
+swap$ -- 117
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 195
-width$ -- 99
-write$ -- 879
-(There were 14 error messages)
+warning$ -- 1
+while$ -- 198
+width$ -- 100
+write$ -- 889
+(There were 13 error messages)

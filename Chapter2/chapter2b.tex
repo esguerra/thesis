@@ -216,5 +216,171 @@ ribosomal subunit.}
 \end{table}
 
 
+\subsection{Partitional Clustering for Rigid Body Parameters}
+
+The same type of analysis that has been carried out for torsion angles
+can  also  be  carried  out   for  rigid  body  parameters,  that  is,
+partitional  clustering, and  hierarchical  clustering, are used  as 
+standard statistical  analysis methods  to analyze  our set  of  2753 
+base-step parameter vectors.  For the  partitional clustering case, 
+again, there is no known number of clusters in which the data must
+group, therefore we've  calculated the  within clusters  sum  of
+squares and also  the
+average silhouette widths, for a particular selection of the number of
+partitions of the data for $k=[2-80]$.  From figure~\ref{fig:wssSteps}
+we can't conclude  much. We see that the value  of the within clusters
+sum  of squares  becomes constant  around  $k=47$ and  there´s also  a
+change of  curvature around  $k=13$.  For the  case where  the average
+silhoutte width has been computed, that is, figure~\ref{fig:aswSteps},
+we see that  the maximum is for $k=2$, and  there are some interesting
+maxima at  $k=9,12$.  Now that  we have a  clue as to which  number of
+partitions the data  optimally has we have plotted  the k-means results
+for $k=13$ and $k=47$ in Figures  bla and bla, and the PAM results for
+$k=2, 9, 12$ in Figure bla.
+
+We have  also prefiltered  the data according  to the 16  possible RNA
+base steps, that is,  AA, AG, GA, GG, UU, UC, CU,  CC, UA, UG, CA, CG,
+AU, AC,  GU, and  GC.  Tables showing  how many  representatives steps
+there are  belonging to  non-helical, helical, and  watson-crick sets,
+will be later included and discussed here.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[angle=0, scale=0.40]{Chapter2/hartigan_nuclu_steps_b.png}
+\caption{Sum of all within clusters sum of squares against number of clusters.}
+\label{fig:wssSteps}
+\end{figure}
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[angle=270, scale=0.50]{Chapter2/pam_asw_2_80_steps.png}
+ \caption{Average silhouette width against number of clusters.}
+ \label{fig:aswSteps}
+\end{figure}
+
+
+
+\subsection{Hierarchical Clustering for Rigid Body Parameters}
+
+Also as has been carried out for torsion angles, hierarchical clustering has
+also been performed on rigid body parameters, the results are yet to be
+included here. A cluster dissimilarity tree can be seen in
+Figure~\ref{fig:clusdis} for the 12 trees resulting from the four clustering
+methods and three distance definitions used to cluster the base step data.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.60]{Chapter2/clussdissim.png}
+\caption{Cluster dissimilarities for the twelve hierarchical trees
+  obtained from clustering of the six-dimensional base-step parameters
+obtained from the large subunit of the ribosome (PDB-ID:1jj2)}
+\label{fig:clusdis}
+\end{figure}
+
+
+\section{RNA Conformations}
+There are two main RNA conformations, A-RNA ,and A'RNA, and maybe even a
+third unconfirmed one A"RNA \cite{saenger1984}.
+Their values for their standard torsion angles and step parameters can be seen
+in Tables~\ref{tab:tor_conf} and ~\ref{tab:step_conf} 
+
+\begin{table}[htbp]
+\begin{center}
+{\small
+\begin{tabular}{c|c|c|c|c|c|c|c|c}
+\hline
+\bf{Structure Name} & $\alpha$ & $\beta$ & $\gamma$ & $\delta$ & $\epsilon$
+& $\zeta$ & $\chi$ & \bf{Reference} \\ \hline
+A-RNA & -68.9 & 179.5 & 54.5 & 82.2 & -153.9 & -70.8 & -161.1 & Arnott \\ \hline
+A'-RNA & -70.0 & 176.6 & 60.8 & 76.7 & -153.4 & -69.4 & -163.4 & Arnott \\ \hline
+AII-RNA & -65.0 & 175.1 & 52.9 & 81.1 & -166.0 & -68.0 & -157.0 & Schneider \\ \hline
+\end{tabular}
+}
+\caption{Base step torsion angles for the different known RNA conformations.}
+\label{tab:tor_conf}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+{\small
+\begin{tabular}{p{2cm}|c|c|c|c|c|c|c}
+\hline
+\bf{Structure Name} & Shift ($D_x$) & Slide ($D_y$) & Rise ($D_z$) & Tilt
+($\tau$) & Roll ($\rho$) & Twist ($\Omega$) & \bf{Reference} \\ \hline
+A-DNA & 0.36 & -1.39 & 3.29 & 2.46 & 12.50 & 30.19 & \\ \hline
+B-DNA & 0.44 & 0.47 & 3.33 & 4.63 & 1.77 & 35.67 & \\ \hline
+A-RNA & -0.08 & -1.48 & 3.30 & -0.43 & 8.64 & 31.57 & Arnott \\ \hline
+A'-RNA & 0.05 & -1.88 & 3.39 & -0.12 & 5.43 & 29.52 & Arnott \\ \hline
+AII-RNA & 1.01 & -2.52 & 3.33 & 2.94 & 9.75 & 25.12 & Schneider \\ \hline
+\end{tabular}
+}
+\caption{Base step parameters for the different known RNA
+  conformations. Notice that the base step parameters are for single
+  bases rather than base-pairs.}
+\label{tab:step_conf}
+\end{center}
+\end{table}
+
+
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[angle=90, scale=0.50]{Chapter2/hartigan_tor_b.png}
+\caption{
+K-means of torsion  angle vectors of 2753 dinucleotide steps
+present in  23S rRNA using the  \textit{Hartigan-Wong} algorithm.  The
+number  of  partitions  is  \textbf{2}.   The  upper  diagonal  matrix
+displays the values  of the linear correlation coefficient  $r$, and a
+histogram showing  the torsion angle distribution is rendered  in the
+diagonal.}
+\label{fig:hartigan}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[angle=90, scale=0.50]{Chapter2/lloyd_tor_b.png}
+\caption{
+K-means of torsion  angle vectors of 2753 dinucleotide steps
+present in  23S rRNA using the  \textit{Lloyd} algorithm.  The
+number  of  partitions  is  \textbf{2}.   The  upper  diagonal  matrix
+displays the values  of the linear correlation coefficient  $r$, and a
+histogram showing  the torsion angle  distribution is rendered  in the
+diagonal.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[angle=90, scale=0.50]{Chapter2/forgy_tor_b.png}
+\caption{
+K-means of torsion  angle vectors of 2753 dinucleotide steps
+present in  23S rRNA using the  \textit{Forgy} algorithm.  The
+number  of  partitions  is  \textbf{2}.   The  upper  diagonal  matrix
+displays the values  of the linear correlation coefficient  $r$, and a
+histogram showing  the torsion angle  distribution is rendered  in the
+diagonal.}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[angle=90, scale=0.50]{Chapter2/macqueen_tor_b.png}
+\caption{
+K-means of torsion  angle vectors of 2753 dinucleotide steps
+present in  23S rRNA using the  \textit{McQueen} algorithm.  The
+number  of  partitions  is  \textbf{2}.   The  upper  diagonal  matrix
+displays the values  of the linear correlation coefficient  $r$, and a
+histogram showing  the torsion angle  distribution is rendered  in the
+diagonal.}
+\label{fig:macqueen}
+\end{figure}
+
+
+This chapter deals with how starting from a backbone based view of
+RNA, we can make an interpretation at the step level using the block model.
+
+
+\section{Four Major Non-ARNA Step Groups in the Ribosome}
+
 \bibliography{biblio}
 
