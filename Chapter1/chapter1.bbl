@@ -1,5 +1,20 @@
 \begin{thebibliography}{10}
 
+\bibitem{woese1967}
+Woese, C. (1967)
+The Genetic Code, the Molecular Basis for Genetic Expression,
+Harper and Row, .
+
+\bibitem{crick1968}
+Crick, F. (1968)
+{The Origin of the Genetic Code}.
+{\em Journal of Molecular Biology,} {\bf 38}, 367--379.
+
+\bibitem{orgel1968}
+Orgel, L. (1968)
+{Evolution of the Genetic Apparatus}.
+{\em Journal of Molecular Biology,} {\bf 38}, 381--393.
+
 \bibitem{orgel2004}
 Orgel, L.~E. (2004)
 Prebiotic {C}hemistry and the {O}rigin of the {RNA} {W}orld.
@@ -316,7 +331,7 @@ Antypov, D., Barbosa, M.~C., and Holm, C. (2005)
 Berman, H.~M., Olson, W.~K., Beveridge, D.~L., Westbrook, J., Gelbin, A.,
   Demeny, T., Hsieh, S.~H., Srinivasan, A.~R., and Schneider, B. (1992)
 {The Nucleic Acid Database. A Comprehensive Relational Database of
-  three-Dimensional Structures of Nucleic Acids}.
+  Three-Dimensional Structures of Nucleic Acids}.
 {\em Biophysical Journal,} {\bf 63}, 751--759.
 
 \bibitem{murray2003}
@@ -433,8 +448,8 @@ Moore, P.~B. (1999)
 
 \bibitem{nasalean2009}
 Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
-Vol. 13,  of  Springer Series in Biophysics chapter~1, pp. 1--26
-Springer-Verlag Berlin Heidelberg (November, 2009).
+Vol. 13,  of  Springer Series in Biophysics chapter Chapter I, pp. 1--26
+Springer Verlag Berlin Heidelberg (November, 2009).
 
 \bibitem{lemieux2006}
 Lemieux, S. and Major, F. (2006)

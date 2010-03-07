@@ -23,8 +23,8 @@
 \contentsline {section}{\numberline {2.1}Consensus Clustering of Single Stranded Base Step Parameters}{14}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Combining Fourier Averaging Results and Clustering Analysis}{15}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Partitional Clustering for Rigid Body Parameters}{16}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Hierarchical Clustering for Rigid Body Parameters}{16}{subsection.2.1.3}
-\contentsline {section}{\numberline {2.2}RNA Conformations}{22}{section.2.2}
+\contentsline {subsection}{\numberline {2.1.3}Hierarchical Clustering for Rigid Body Parameters}{21}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}RNA Conformations}{21}{section.2.2}
 \contentsline {unnumberedsection}{References}{27}{chapter*.7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
