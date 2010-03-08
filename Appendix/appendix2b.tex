@@ -12,12 +12,57 @@ doing  "an orthogonal  linear  transformation of  a  set of  variables
 optimizing certain algebraic criterion" \cite{jolliffe2002}.
 
 \begin{gather}
-  \mathbf{y} = \mathbf{T}^\mathrm{T} \mathbf{x}
+  \mathbf{y} = \mathbf{T} \mathbf{x}
 \end{gather}
 
+Where $\mathbf{T}$ is an orthogonal linear transformation matrix of
+dimension $k$ by $n$, $\mathbf{x}$ is the "original" data matrix of
+dimension $n$ by $m$, and by definition of the matrix product
+$\mathbf{y}$ is a matrix of dimension $k$ by $m$.
 
+From the linear tranformation expression it's clear that if $k=m$ then
+the transformation matrix is just a rotation matrix, and in the case
+where $k<m$ then the transformation matrix is also reducing the
+dimension of the "original" data.
 
+One common algorithm to find such transformation ($\mathbf{T}$) is the
+following: 
 
+\begin{enumerate}
+\item{Substract the mean from the data matrix $\mathbf{x}$.
+\begin{equation}
+\mathbf{\Omega} = \mathbf{x} - \mathbf{\bar{x}_{m}}
+\end{equation}
+}
+\item{Find the covariance matrix for $\mathbf{\Omega}$.
+\begin{equation}
+\mathbf{\Sigma} = \frac{\mathbf{\Omega}^{-1} \mathbf{\Omega}}{(1-n)}
+\end{equation}  
+}  
+\item{Diagonalize the covariance matrix $\mathbf{\Sigma}$.
+\begin{equation}
+\mathbf{T}^{\mathrm{T}} \mathbf{\Sigma} \mathbf{T} = \mathbf{\Lambda}
+\end{equation}  
+}  
+\item{Organize $\mathbf{T}$ from the highest to lowest eigenvalues in
+$\mathbf{Lambda}$.}
+\end{enumerate}  
+
+Obtaining the eigenvalues and eigenvectors of $\mathbf{\Sigma}$ means
+that we have found our transformation matrix $\mathbf{T}$, which can
+be used to either rotate the original data space to an orthonormal
+one, or to reduce the dimensionality of the data space by choosing
+$k<m$, depending on the weight of the eigenvectors in
+$\mathbf{\Lambda}$. The $k$ rows of $\mathbf{y}$ are named Principal
+Components.
+
+There is a large amount of bibliography which refers to the statistics
+of Principal Components Analysis, and to sofistications which are not
+included in this brief appendix. An interested reader can find great
+help in the following web addresses:
+
+\url{http://www-stat.wharton.upenn.edu/~buja/script-Buja-CU-2009-06-pca.R}
+\url{}
 \bibliography{biblio}
 
 
