@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{rangan2003}
 Rangan, P., Masquida, B., Westhof, E., and Woodson, S.~A. (2003)
@@ -19,11 +19,33 @@ Murray, L. J.~W., III, W. B.~A., Richardson, D.~C., and Richardson, J.~S.
 {\em Proceedings of the National Academy of Sciences of the United States of
   America,} {\bf 100}, 13904--13909.
 
+\bibitem{woese1967}
+Woese, C. (1967)
+The Genetic Code, the Molecular Basis for Genetic Expression,
+Harper and Row, .
+
+\bibitem{crick1968}
+Crick, F. (1968)
+{The Origin of the Genetic Code}.
+{\em Journal of Molecular Biology,} {\bf 38}, 367--379.
+
+\bibitem{orgel1968}
+Orgel, L. (1968)
+{Evolution of the Genetic Apparatus}.
+{\em Journal of Molecular Biology,} {\bf 38}, 381--393.
+
 \bibitem{orgel2004}
 Orgel, L.~E. (2004)
 Prebiotic {C}hemistry and the {O}rigin of the {RNA} {W}orld.
 {\em Critical {R}eviews in {B}iochemistry and {M}olecular {B}iology,} {\bf 39},
   99--123.
+
+\bibitem{fire1998}
+Fire, A., Xu, S., Montgomery, M.~K., Kostas, S.~A., Driver, S.~E., and Mello,
+  C.~C. (Feb, 1998)
+{Potent and Specific Genetic Interference by Double-Stranded RNA in
+  Caenorhabditis Elegans}.
+{\em Nature,} {\bf 391}(6669), 806--811.
 
 \bibitem{schluenzen2000}
 Schluenzen, F., Tocilj, A., Zarivach, R., Harms, J., Gluehmann, M., Janell, D.,
@@ -73,6 +95,13 @@ Kim, S.~H. (1974)
 Three-{D}imensional {T}ertiary {S}tructure of {Y}east {P}henylalanine
   {T}ransfer {RNA}.
 {\em Science,} {\bf 185}, 435.
+
+\bibitem{stout1976}
+Stout, C.~D., Mizuno, H., Rubin, J., Brennan, T., Rao, S.~T., and
+  Sundaralingam, M. (Apr, 1976)
+{Atomic Coordinates and Molecular Conformation of Yeast Phenylalanyl tRNA. An
+  Independent Investigation}.
+{\em Nucleic Acids Research,} {\bf 3}(4), 1111--1123.
 
 \bibitem{noller2005}
 Noller, H.~F. (2005)
@@ -328,7 +357,7 @@ Antypov, D., Barbosa, M.~C., and Holm, C. (2005)
 Berman, H.~M., Olson, W.~K., Beveridge, D.~L., Westbrook, J., Gelbin, A.,
   Demeny, T., Hsieh, S.~H., Srinivasan, A.~R., and Schneider, B. (1992)
 {The Nucleic Acid Database. A Comprehensive Relational Database of
-  three-Dimensional Structures of Nucleic Acids}.
+  Three-Dimensional Structures of Nucleic Acids}.
 {\em Biophysical Journal,} {\bf 63}, 751--759.
 
 \bibitem{schneider2004}
@@ -433,8 +462,8 @@ Moore, P.~B. (1999)
 
 \bibitem{nasalean2009}
 Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
-Vol. 13,  of  Springer Series in Biophysics chapter~1, pp. 1--26
-Springer-Verlag Berlin Heidelberg (November, 2009).
+Vol. 13,  of  Springer Series in Biophysics chapter Chapter I, pp. 1--26
+Springer Verlag Berlin Heidelberg (November, 2009).
 
 \bibitem{lemieux2006}
 Lemieux, S. and Major, F. (2006)
@@ -567,5 +596,10 @@ Topological {S}tudy of the {P}eriodic {S}ystem.
 Restrepo, G., Llanos, E.~J., and Meza, H. (2006)
 Topological {S}pace of the {C}hemical {E}lements and its {P}roperties.
 {\em Journal of {M}athematical {C}hemistry,} {\bf 39}, 401--416.
+
+\bibitem{jolliffe2002}
+Jolliffe, I.~T. (2002)
+Principal Component Analyses,
+Springer, .
 
 \end{thebibliography}

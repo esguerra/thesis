@@ -8,7 +8,7 @@ Illegal, another \bibstyle command---line 2 of file Chapter2/chapter2.aux
  : \bibstyle
  :          {nar}
 I'm skipping whatever remains of this command
-Illegal, another \bibdata command---line 60 of file Chapter2/chapter2.aux
+Illegal, another \bibdata command---line 57 of file Chapter2/chapter2.aux
  : \bibdata
  :         {biblio}
 I'm skipping whatever remains of this command
@@ -57,6 +57,15 @@ Illegal, another \bibdata command---line 10 of file Appendix/appendix2a.aux
  : \bibdata
  :         {biblio}
 I'm skipping whatever remains of this command
+A level-1 auxiliary file: Appendix/appendix2b.aux
+Illegal, another \bibstyle command---line 2 of file Appendix/appendix2b.aux
+ : \bibstyle
+ :          {nar}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 4 of file Appendix/appendix2b.aux
+ : \bibdata
+ :         {biblio}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Supplement/supplements.aux
 Illegal, another \bibstyle command---line 2 of file Supplement/supplements.aux
  : \bibstyle
@@ -68,50 +77,49 @@ Illegal, another \bibdata command---line 3 of file Supplement/supplements.aux
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: CV/cv.aux
 Database file #1: biblio.bib
-Warning--can't use both author and editor fields in moore1999a
 ptr=1, stack=
-{RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching}
+RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching
 ---the literal stack isn't empty for entry nasalean2009
 while executing---line 2203 of file nar.bst
-You've used 98 entries,
+You've used 104 entries,
             1881 wiz_defined-function locations,
-            1032 strings with 21876 characters,
-and the built_in function-call counts, 25814 in all, are:
-= -- 2629
-> -- 1159
+            1064 strings with 22669 characters,
+and the built_in function-call counts, 27195 in all, are:
+= -- 2771
+> -- 1215
 < -- 6
-+ -- 424
-- -- 326
-* -- 2488
-:= -- 3978
-add.period$ -- 98
-call.type$ -- 98
-change.case$ -- 95
++ -- 446
+- -- 342
+* -- 2601
+:= -- 4198
+add.period$ -- 104
+call.type$ -- 104
+change.case$ -- 99
 chr.to.int$ -- 0
-cite$ -- 99
-duplicate$ -- 908
-empty$ -- 2435
-format.name$ -- 326
-if$ -- 6022
+cite$ -- 104
+duplicate$ -- 966
+empty$ -- 2575
+format.name$ -- 342
+if$ -- 6350
 int.to.chr$ -- 0
-int.to.str$ -- 98
-missing$ -- 102
-newline$ -- 493
-num.names$ -- 98
-pop$ -- 119
+int.to.str$ -- 104
+missing$ -- 110
+newline$ -- 523
+num.names$ -- 104
+pop$ -- 138
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 345
+skip$ -- 360
 stack$ -- 0
-substring$ -- 2156
-swap$ -- 117
+substring$ -- 2246
+swap$ -- 120
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 198
-width$ -- 100
-write$ -- 889
-(There were 15 error messages)
+warning$ -- 0
+while$ -- 208
+width$ -- 107
+write$ -- 945
+(There were 17 error messages)

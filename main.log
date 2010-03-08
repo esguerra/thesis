@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.12.9)  1 MAR 2010 16:23
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2009.12.9)  7 MAR 2010 20:01
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -265,7 +265,8 @@ Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS)
 ) (./main.aux (./titles.aux)
 (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
 (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
-(./Appendix/appendix2a.aux) (./Supplement/supplements.aux) (./CV/cv.aux))
+(./Appendix/appendix2a.aux) (./Appendix/appendix2b.aux)
+(./Supplement/supplements.aux) (./CV/cv.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
@@ -431,12 +432,12 @@ e ri-bo-so-mal sub-unit (left) and ham-mer-head ri-bozyme (right).The
  (./Chapter1/chapter1.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 43.
+(Font)              scaled to size 7.59998pt on input line 46.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 43.
+(Font)              scaled to size 5.69998pt on input line 46.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 56.
-<Chapter1/rangan2003pnas.png, id=386, 1316.92pt x 558.085pt>
+(Font)              scaled to size 8.54997pt on input line 60.
+<Chapter1/rangan2003pnas.png, id=403, 1316.92pt x 558.085pt>
 File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
 <use Chapter1/rangan2003pnas.png> [1
@@ -444,24 +445,24 @@ File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
 
 ] [2 <./Chapter1/rangan2003pnas.png (PNG copy)>] [3] <Chapter1/overallfold.png,
- id=512, 308.352pt x 303.2931pt>
+ id=531, 308.352pt x 303.2931pt>
 File: Chapter1/overallfold.png Graphic file (type png)
 
 <use Chapter1/overallfold.png>
-<Chapter1/ribosome_ribozyme.png, id=515, 572.3784pt x 342.5598pt>
+<Chapter1/ribosome_ribozyme.png, id=534, 572.3784pt x 342.5598pt>
 File: Chapter1/ribosome_ribozyme.png Graphic file (type png)
 
 <use Chapter1/ribosome_ribozyme.png> [4]
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 356.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 361.
 
 
 (/usr/share/texmf/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 356.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 361.
 
-Overfull \hbox (8.29973pt too wide) in paragraph at lines 356--358
+Overfull \hbox (8.29973pt too wide) in paragraph at lines 361--363
 []\T1/phv/m/n/10.95 RNA mo-tifs are ``\T1/phv/m/sl/10.95 Con-served struc-tural
  sub-units that make up the sec-ondary struc-tures of RNAs.\T1/phv/m/n/10.95 ''
 [[]] 
@@ -477,7 +478,7 @@ References
 
  (./Chapter2/chapter2.tex
 Chapter 2.
-<Chapter2/rna2000_2009copy.png, id=612, 1204.5pt x 494.84875pt>
+<Chapter2/rna2000_2009copy.png, id=631, 1204.5pt x 494.84875pt>
 File: Chapter2/rna2000_2009copy.png Graphic file (type png)
 
 <use Chapter2/rna2000_2009copy.png> [13
@@ -486,7 +487,7 @@ File: Chapter2/rna2000_2009copy.png Graphic file (type png)
 
 
  <./Chapter2/rna2000_2009copy.png>]
-<Chapter2/histogram.png, id=626, 560.8152pt x 808.7013pt>
+<Chapter2/histogram.png, id=645, 560.8152pt x 808.7013pt>
 File: Chapter2/histogram.png Graphic file (type png)
 
 <use Chapter2/histogram.png>
@@ -500,11 +501,11 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 9.49997pt on input line 105.
-<Chapter2/murray2003.png, id=643, 351.3125pt x 430.60875pt>
+<Chapter2/murray2003.png, id=662, 351.3125pt x 430.60875pt>
 File: Chapter2/murray2003.png Graphic file (type png)
 
 <use Chapter2/murray2003.png> [14 <./Chapter2/histogram.png>]
-<Chapter2/eucli_cons_nonA-RNA.png, id=666, 1123.19624pt x 778.91pt>
+<Chapter2/eucli_cons_nonA-RNA.png, id=685, 1123.19624pt x 778.91pt>
 File: Chapter2/eucli_cons_nonA-RNA.png Graphic file (type png)
 
 <use Chapter2/eucli_cons_nonA-RNA.png>
@@ -512,7 +513,7 @@ File: Chapter2/eucli_cons_nonA-RNA.png Graphic file (type png)
 LaTeX Warning: Float too large for page by 39.92947pt on input line 169.
 
 [15 <./Chapter2/murray2003.png>]
-<Chapter2/collageb.png, id=675, 1204.5pt x 930.47626pt>
+<Chapter2/collageb.png, id=694, 1204.5pt x 930.47626pt>
 File: Chapter2/collageb.png Graphic file (type png)
 
 <use Chapter2/collageb.png>
@@ -650,17 +651,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--241
 \T1/phv/m/n/9 2017, 2516, 2755,
  []
 
-<Chapter2/hartigan_nuclu_steps_b.png, id=681, 1123.19624pt x 778.91pt>
+<Chapter2/hartigan_nuclu_steps_b.png, id=700, 1123.19624pt x 778.91pt>
 File: Chapter2/hartigan_nuclu_steps_b.png Graphic file (type png)
 
 <use Chapter2/hartigan_nuclu_steps_b.png>
-<Chapter2/pam_asw_2_80_steps.png, id=682, 560.8152pt x 808.7013pt>
+<Chapter2/pam_asw_2_80_steps.png, id=701, 560.8152pt x 808.7013pt>
 File: Chapter2/pam_asw_2_80_steps.png Graphic file (type png)
 
 <use Chapter2/pam_asw_2_80_steps.png> [16] [17 <./Chapter2/eucli_cons_nonA-RNA.
 png (PNG copy)>] [18 <./Chapter2/collageb.png>] [19] [20 <./Chapter2/hartigan_n
 uclu_steps_b.png (PNG copy)> <./Chapter2/pam_asw_2_80_steps.png>]
-<Chapter2/clussdissim.png, id=712, 798.985pt x 1129.21875pt>
+<Chapter2/clussdissim.png, id=731, 798.985pt x 1129.21875pt>
 File: Chapter2/clussdissim.png Graphic file (type png)
 
 <use Chapter2/clussdissim.png>
@@ -676,19 +677,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--352
 []\T1/phv/b/n/10 Structure
  []
 
-<Chapter2/hartigan_tor_b.png, id=716, 1123.19624pt x 778.91pt>
+<Chapter2/hartigan_tor_b.png, id=735, 1123.19624pt x 778.91pt>
 File: Chapter2/hartigan_tor_b.png Graphic file (type png)
 
 <use Chapter2/hartigan_tor_b.png>
-<Chapter2/lloyd_tor_b.png, id=717, 1123.19624pt x 778.91pt>
+<Chapter2/lloyd_tor_b.png, id=736, 1123.19624pt x 778.91pt>
 File: Chapter2/lloyd_tor_b.png Graphic file (type png)
 
 <use Chapter2/lloyd_tor_b.png>
-<Chapter2/forgy_tor_b.png, id=718, 1123.19624pt x 778.91pt>
+<Chapter2/forgy_tor_b.png, id=737, 1123.19624pt x 778.91pt>
 File: Chapter2/forgy_tor_b.png Graphic file (type png)
 
 <use Chapter2/forgy_tor_b.png>
-<Chapter2/macqueen_tor_b.png, id=719, 1123.19624pt x 778.91pt>
+<Chapter2/macqueen_tor_b.png, id=738, 1123.19624pt x 778.91pt>
 File: Chapter2/macqueen_tor_b.png Graphic file (type png)
 
 <use Chapter2/macqueen_tor_b.png> (./Chapter2/chapter2.bbl [21] [22 <./Chapter2
@@ -770,10 +771,10 @@ No file Chapter4/chapter4.bbl.
 
  (./Chapter5/chapter5.tex
 Chapter 5.
-<Chapter5/gnra.png, id=768, 706.64pt x 415.5525pt>
+<Chapter5/gnra.png, id=787, 706.64pt x 415.5525pt>
 File: Chapter5/gnra.png Graphic file (type png)
  <use Chapter5/gnra.png>
-<Chapter5/histocompare.png, id=769, 647.41875pt x 782.925pt>
+<Chapter5/histocompare.png, id=788, 647.41875pt x 782.925pt>
 File: Chapter5/histocompare.png Graphic file (type png)
 
 <use Chapter5/histocompare.png>
@@ -784,7 +785,7 @@ Overfull \hbox (48.18031pt too wide) in paragraph at lines 52--58
 
 LaTeX Warning: Float too large for page by 17.44608pt on input line 58.
 
-<Chapter5/eucli_cons.png, id=770, 1123.19624pt x 778.91pt>
+<Chapter5/eucli_cons.png, id=789, 1123.19624pt x 778.91pt>
 File: Chapter5/eucli_cons.png Graphic file (type png)
 
 <use Chapter5/eucli_cons.png>
@@ -858,15 +859,15 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 
 
-] <Appendix/appendixtree.png, id=821, 709.90219pt x 846.91406pt>
+] <Appendix/appendixtree.png, id=840, 709.90219pt x 846.91406pt>
 File: Appendix/appendixtree.png Graphic file (type png)
 
 <use Appendix/appendixtree.png> [38]
 No file Appendix/appendix2a.bbl.
 ) [39 <./Appendix/appendixtree.png (PNG copy)>]
-\openout2 = `Supplement/supplements.aux'.
+\openout2 = `Appendix/appendix2b.aux'.
 
- (./Supplement/supplements.tex
+ (./Appendix/appendix2b.tex
 Appendix B.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
@@ -884,22 +885,52 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\hbox' on input line 1.
 
-<Supplement/collage2.png, id=839, 1204.5pt x 930.47626pt>
+(./Appendix/appendix2b.bbl [40
+
+
+
+
+]
+References
+)) [41
+
+]
+\openout2 = `Supplement/supplements.aux'.
+
+ (./Supplement/supplements.tex
+Appendix C.
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\advance' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\hangindent' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\@tempdima' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
+(hyperref)                removing `\hbox' on input line 1.
+
+<Supplement/collage2.png, id=871, 1204.5pt x 930.47626pt>
 File: Supplement/collage2.png Graphic file (type png)
 
 <use Supplement/collage2.png>
 No file Supplement/supplements.bbl.
-) [40
+) [42
 
 
 
 
-] [41 <./Supplement/collage2.png>]
+] [43 <./Supplement/collage2.png>]
 \openout2 = `CV/cv.aux'.
 
  (./CV/cv.tex
 Curriculum Vitae
-) [42
+) [44
 
 
 
@@ -907,32 +938,33 @@ Curriculum Vitae
 ] (./main.aux (./titles.aux) (./Chapter1/chapter1.aux)
 (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux)
 (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Appendix/appendix2a.aux)
-(./Supplement/supplements.aux) (./CV/cv.aux)) )
+(./Appendix/appendix2b.aux) (./Supplement/supplements.aux) (./CV/cv.aux)) )
 (\end occurred when \iftrue on line 67 was incomplete) 
 Here is how much of TeX's memory you used:
- 5161 strings out of 256217
- 68603 string characters out of 1917095
- 138098 words of memory out of 1500000
- 7993 multiletter control sequences out of 10000+200000
- 48437 words of font info for 73 fonts, out of 1200000 for 2000
+ 5193 strings out of 256217
+ 69080 string characters out of 1917095
+ 138695 words of memory out of 1500000
+ 8004 multiletter control sequences out of 10000+200000
+ 49366 words of font info for 76 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  28i,14n,39p,556b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
  </home/esguerra/.texlive
 2007/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/esguerra/.tex
 live2007/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk>{/usr/share/texmf
-/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pf
-b></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/t
-ype1/bluesky/cm/cmmi6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></
-usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/
-bluesky/cm/cmmi9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/s
-hare/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesk
-y/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/t
-exmf/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/urw/helveti
-c/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/
-texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (51 pages, 3735282 bytes).
+/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi6.pfb><
+/usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></usr/share/texmf/fonts/type1
+/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi9.pfb></usr/
+share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/blue
+sky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm
+/cmsy8.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/te
+xmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf/fonts/type1/urw/helve
+tic/uhvro8a.pfb>
+Output written on main.pdf (53 pages, 3743583 bytes).
 PDF statistics:
- 984 PDF objects out of 1000 (max. 8388607)
- 246 named destinations out of 1000 (max. 131072)
- 453 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1021 PDF objects out of 1200 (max. 8388607)
+ 255 named destinations out of 1000 (max. 131072)
+ 477 words of extra memory for PDF output out of 10000 (max. 10000000)
 

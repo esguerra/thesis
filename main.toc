@@ -54,9 +54,14 @@
 \contentsline {section}{\numberline {A.1}Hierarchical methods}{37}{section.A.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {chapter}{\appnumberline {B}Figure Supplements}{40}{appendix.B}
-\contentsline {section}{\numberline {B.1}Chapter2}{40}{section.B.1}
+\contentsline {chapter}{\appnumberline {B}Dimension Reduction}{40}{appendix.B}
+\contentsline {section}{\numberline {B.1}Principal Component Analysis}{40}{section.B.1}
+\contentsline {unnumberedsection}{References}{41}{appendix*.9}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
-\contentsline {unnumberedsection}{Curriculum Vitae}{42}{appendix*.9}
+\contentsline {chapter}{\appnumberline {C}Figure Supplements}{42}{appendix.C}
+\contentsline {section}{\numberline {C.1}Chapter2}{42}{section.C.1}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-11}
+\contentsline {unnumberedsection}{Curriculum Vitae}{44}{appendix*.10}
 \gdef \the@ipfilectr {}
