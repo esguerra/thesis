@@ -232,13 +232,14 @@ states \cite{babcock1994}:
   continuous motion along a unique axis of rotation.}''
 \end{quote}
 
-\noindent For the  three dimensional case of  nucleic acid base  steps what this
-means is that, instead of rotating around one reference-frame centered
-axis and then translating along another reference-frame centered axis,
-one  rotates about  and also  translates along  only one  common axis,
-which is not  reference-frame centered. This allows one  to define the
-orientation  of  a helical  axis  (or unique  rotational-translational
-axis) as a unit vector given by equation 2.15:
+\noindent For  the three dimensional  case of nucleic acid  base steps
+what   this  means   is   that,  instead   of   rotating  around   one
+reference-frame  centered  axis  and  then translating  along  another
+reference-frame centered  axis, one rotates about  and also translates
+along   only   one  common   axis,   which   is  not   reference-frame
+centered. This allows one to  define the orientation of a helical axis
+(or unique  rotational-translational axis) as  a unit vector  given by
+equation 2.15:
 
 \begin{gather}
 h=\left[ \begin{array}{c}
@@ -312,45 +313,50 @@ proteins.
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.3]{Chapter1/rangan2003pnas.png}
-\caption{Separation of secondary and tertiary interaction in RNA
+\caption{Separation  of  secondary  and  tertiary interaction  in  RNA
   \cite{rangan2003}. Double helical secondary structure represented by
-  individual cylinders and tertiary interactions by association of
-  cylinders. The color coding stands for separate helical regions of
-  RNA and the connecting black strings represent single stranded loop
+  individual  cylinders and  tertiary interactions  by  association of
+  cylinders. Color coding stands for separate  helical regions of
+  RNA, and the connecting  black strings represent single stranded loop
   structures.}
+%% Note that Dr. Olson asks what the colors in cylinders mean.
+%% Answer: They mean nothing. Perhaps only that the cyan stands for
+%% the helical structures making a pseudo-knot, that is, P7 and P3.
 \label{fig:folding}
 \end{figure}
 The  other point of  view says  that RNA  folding can  be at  least as
 complex as protein folding \cite{moore1999a, sorin2004} since there is
 no such thing  as hydrophobic burial of regions of RNA  as in the case
-of proteins.  Instead, the electrostatic  problem of having  a complex
-charged backbone must be dealt with in the case of RNA.
+of  proteins.   Instead, the  electrostatic  problem  stemming from  a
+complex charged backbone must be dealt with in the case of RNA.
 % The case of the electrostatic treatment of the backbone is lacking
 % here, most likely WKO wants me not to ignore our own Gerald Manning
 % tinoco 1999 says this must be an easy to solve problem since we can
 % do the electrostatics for it easily
 For instance,  the interactions of  the RNA polyanionic  backbone with
 water  and cations  \cite{klein2004a}  are not  easily simulated  with
-explicit   solvent  models   as  can   be  done   for   proteins.  The
+explicit   solvent  models   like those used to treat   proteins.  The
 aforementioned interactions of RNA  need to be modeled implicitly, and
 must aim to describe long dynamic processes of the order of seconds to
 minutes,  in  contrast   to  the  typical  time  scales   of  tens  of
 microseconds associated with protein folding.
 % Remember that this means that a explicit calculation for RNA would
 % be prohibitively large.
+
 Although   secondary   and  tertiary   structure   can  be   separated
 experimentally, there have been few theoretical efforts to account for
 the  folding  of  RNA  from  a random  sequence  of  nucleotides  into
 secondary structures and tertiary  structures. What little is know has
-been  investigated at  low  resolution. Professor  Stephen Harvey  and
-associates     have     simulated     yeast     tRNA$^{\textrm{Phe}}$,
+been  investigated at  low resolution.  Stephen Harvey  and associates
+have   simulated   the   folding   of   yeast   tRNA$^{\textrm{Phe}}$,
 \cite{malhotra1990}  and  the  assembly  of  the 30S  subunit  of  the
 ribosome \cite{stagg2003} at various levels of detail, initially using
 only one pseudoatom  per helical region, and later  one pseudoatom per
-nucleotide. Recently Major's group at Montreal has proposed a pipeline
-of  two computer algorithms  \cite{parisien2008}, one  makes secondary
-structure predictions, and the  other assembles 3D structures based on
-the best scoring  secondary structures.
+nucleotide.  Recently  Fran\c{c}ois  Major's  group  at  Montreal  has
+proposed a pipeline of two  computer algorithms to study RNA structure
+\cite{parisien2008}.   One    pipeline   makes   secondary   structure
+predictions, and the  other assembles 3D structures based  on the best
+scoring secondary structures.
 % Note for presentation ==> Include figure 1 in Malhotra-harvey paper
 % Look at what says in folding.stanford.edu/science.html Also take
 % into account Biophys J. V.88 2516-2524 for the case of having to
@@ -373,17 +379,17 @@ structures  which populate  only two  states (native  and  melted), in
 general RNA's  are not  two-state folders. RNA  seems to go  through a
 rugged  free  energy landscape  of  conformations  in  the process  of
 folding \cite{zhuang2003}.  The  experimental solution to this problem
-is offered  by single molecule techniques  like fluorescence resonance
+is offered  by single-molecule techniques  like fluorescence resonance
 energy transfer (FRET) and  mechanical micromanipulation, in which the
 ends of RNA  are attached to micron sized beads  which are then pulled
 apart  and  monitored  with  a laser  light  trap  \cite{liphardt2001,
-  onoa2004, tinoco2004,  hyeon2005}.  In  the case of  single molecule
+  onoa2004,  tinoco2004, hyeon2005}.  In  the case  of single-molecule
 force-induced   unfolding,  state   transitions   often  occur   under
 non-equilibrium  conditions, thereby  making it  difficult  to extract
 equilibrium  information from the  data. Recently  Bustamante, Tinoco,
-and associates  have shown that  using the Crooks  fluctuation theorem
+and associates have shown that by using the Crooks fluctuation theorem
 \cite{crooks1999},  one  can deal  with  such  cases  and extract  RNA
-folding    free   energies    from    single   molecule    experiments
+folding    free     energies    from    single-molecule    experiments
 \cite{collin2005}.
 %\subsection{RNA Folding in Vitro vs in Vivo vs in Silico}
 % It still is to be seen whether the following is relevant or not
@@ -399,22 +405,23 @@ folding    free   energies    from    single   molecule    experiments
 Network  and molecular  mechanics-molecular  dynamics (MM-MD)  methods
 provide  useful  information  relevant  to the  RNA  folding-unfolding
 problem, especially  for describing fluctuations away  from the native
-conformation.  Gaussian  network  models \cite{y_wang2004,  bahar1998,
-  wang2005} which treat RNA at  less than atomic detail have been used
-to describe  the motions  of large RNA  structures like  the ribosome.
-Examples of the  predicted normal modes of motion  of the ribosome can
-be  seen  at:  http://ribosome.bb.iastate.edu/70SnK  mode.  Using  MM,
-Sanbonmatsu and  coworkers obtained a  static atomic model of  the 70S
-ribosome structure through homology modeling \cite{tung2004}. Tung and
-associates used  this structure for  an all-atom MD simulation  of the
-movement of  tRNA into a  fluctuating ribosome \cite{sanbonmatsu2005}.
-This type of simulation might  be useful in a reverse-folding approach
-to  the  RNA folding  problem.  To the  best  of  our knowledge,  such
-calculations haven't as yet been done for RNA.
+conformation.   Gaussian network  models  \cite{y_wang2004, bahar1998,
+  wang2005}, which  treat RNA  at less than  atomic detail,  have been
+used  to  describe  the  motions  of large  RNA  structures  like  the
+ribosome.  Examples  of the  predicted normal modes  of motion  of the
+ribosome  can be  seen at:  http://ribosome.bb.iastate.edu/70SnK mode.
+Using MM, Sanbonmatsu and coworkers  obtained a static atomic model of
+the    70S    ribosome    structure    through    homology    modeling
+\cite{tung2004}.  Tung  and  associates  used this  structure  for  an
+all-atom  MD simulation  of the  movement of  tRNA into  a fluctuating
+ribosome  \cite{sanbonmatsu2005}.  This  type of  simulation  might be
+useful in a  reverse-folding approach to the RNA  folding problem.  To
+the best of our knowledge,  such calculations haven't as yet been done
+for RNA.
 
 \subsection{Local nucleotide interactions}
 %\subsubsection{QM approaches and MM consequences}
-The molecular  interactions which rule  RNA structures at  the nucleic
+The molecular  interactions that  rule  RNA structures at  the nucleic
 acid base level, \textit{i.e.},  local level, are hydrogen bonding and
 stacking interactions. The former are  related to base pairing and the
 latter, in most cases, to  nucleotide steps. These interactions can be
@@ -439,8 +446,8 @@ obtained energy profiles \cite{tung2004, sponer2000}.
 % electron-correlation.
 A currently debated ab-initio finding is whether small fluctuations in
 the   configurations   of   neighboring   base  pairs   (dimers)   are
-iso-energetic  or  not.  Recent   calculations  of  Sponer  and  Hobza
-\cite{sponer2006}   seem  to   contradict  their   older  publications
+iso-energetic  or  not.   Recent  calculations  of  Sponer  and  Hobza
+\cite{sponer2006}    seem   to    contradict   their    earlier   work
 \cite{sponer2000,  hobza2002},  in which  the  stacking energies  were
 reported to  be relatively insensitive to dimer  conformation. The new
 results  use  the so-called  ``coupled  cluster  singles doubles  with
@@ -451,28 +458,30 @@ considerably higher than previously reported.
 
 % therefore justifying rigid body parameter interpretations.
 % \subsubsection{Experimental Stacking and Polyionic backbone}
-Single  and  double strand  stacking  free  energies  can be  obtained
-calorimetrically.  The most  popular  method used  for obtaining  such
-quantities     is    differential    scanning     calorimetry    (DSC)
-\cite{marky1982}.  These   measurements  show  favorable  dinucleotide
-stacking free  energies as  large as -3.6  kcal/mol for  double strand
-stacking.  Experimentally, the  magnitudes of  these  interactions are
-found  to be  sequence dependent  \cite{bloomfield2000}. In  fact, the
-stacking free  energies for some  sequences\footnote{Unpaired terminal
-  nucleotides UC/A UU/A at 1M  NaCl.} are found to be negligible. Thus
-there  may be  no accountable  stacking  interaction at  all for  some
-sequences.
+Single-strand and double-strand stacking free energies can be obtained
+calorimetrically \cite{freier1985}.   One of the  most popular methods
+used   for  obtaining   such  quantities   is   differential  scanning
+calorimetry (DSC) \cite{marky1982}.  These measurements show favorable
+dinucleotide stacking  free energies as  large as $-3.6$  kcal/mol for
+double-strand  stacking.   Experimentally,  the  magnitudes  of  these
+interactions      are     found      to      be     sequence-dependent
+\cite{bloomfield2000}. In  fact, the  stacking free energies  for some
+sequences\footnote{Free   Energies   for   5'   unpaired   nucleotides
+  (e.g. UC/A  UU/A) are quite small  (i.e.  $<$ 0.4  kcal/mol) and are
+  termed  weakly stacking bases.\cite{burkard1999,  burkard1999b}} are
+found to  be negligible.   Thus there may  be no  accountable stacking
+interaction at all for some sequences.
 
 Besides  taking into  account  the effects  of  stacking and  hydrogen
 bonding,  it  is  important  to  think  at the  same  time  about  the
-polyelectrolyte  nature  of  the  RNA backbone.  Manning's  counterion
+polyelectrolyte  nature  of the  RNA  backbone.  Manning's  counterion
 condensation theory \cite{manning1977,  manning2003} provides a simple
-and  quantitative picture of  the interactions  of the  double helical
-nucleic acid polyanion with its counterions, although it does not take
-into account  the discrete  nature of charge  \cite{bloomfield2000} or
-the folding  of RNA. Poisson-Boltzmann  theory offers a  more detailed
-picture   of   the  behavior   of   charged   macroions  in   solution
-\cite{antypov2005}.
+and   quantitative  picture   of   the  interactions   of  a   regular
+double-helical  nucleic acid  polyanion with  its counterions,  but it
+does   not  take   into  account   the  discrete   nature   of  charge
+\cite{bloomfield2000} or the  folding of RNA. Poisson-Boltzmann theory
+offers a more detailed picture of the behavior of charged macroions in
+solution \cite{antypov2005, xu2007}.
 % Talk more about counterion condensation, thirumalai discusses it on
 % his 2001 paper also chapter 8 of Bloomfield, Crothers, Tinoco
 % (References \cite{manning2003} Ray-Manning?).
@@ -485,63 +494,72 @@ picture   of   the  behavior   of   charged   macroions  in   solution
 
 The local conformational  space of RNA has been  studied using a large
 set of available  RNA structures from the Nucleic  Acid Database (NDB)
-\cite{berman1992}.  The torsion  angles of  the nucleotide  steps have
-been  clustered  in the  parameter  space  using different  techniques
-\cite{murray2003,  schneider2004}.   The  root-mean-square  deviations
-(RMSD)  of   the  distances  between  closely  spaced   atoms  in  the
-phosphates,   sugars,   and    bases,   have   also   been   clustered
-\cite{sykes2005}. The  latter studies are aimed at  finding the common
-nucleotide base  steps and base-pair  building blocks which  are given
-the name of RNA doublets.  Recently, the RNA Ontology Consortium (ROC)
-has  proposed   a  consensus   set  of  RNA   dinucleotide  conformers
-integrating the work of various groups \cite{richardson2008}.
+\cite{berman1992}.  The  torsion angles  of the nucleotide  steps have
+been   clustered    using   different   techniques   \cite{murray2003,
+  schneider2004}.   The  root-mean-square  deviations  (RMSD)  of  the
+distances between closely spaced  atoms in the phosphates, sugars, and
+bases, have  also been clustered \cite{sykes2005}.  The latter studies
+are aimed  at finding the  common nucleotide base steps  and base-pair
+building  blocks which  have  been  given the  name  of RNA  doublets.
+Recently, the  RNA Ontology Consortium (ROC) has  proposed a consensus
+set  of RNA dinucleotide  conformers integrating  the work  of various
+groups \cite{richardson2008}.
 
 
 \subsection{RNA  secondary  structure   algorithms  and  the  lack  of
  tertiary ones}
 From   secondary   structure   prediction  algorithms   like   Zuker's
 \textit{mfold} program \cite{zuker2003}, Hofacker's Vienna RNA package
-\cite{hofacker1994},  or   Mathews  Dynaling  \cite{mathews2002},  one
-obtains a large ensemble  of secondary structure graphs.  These graphs
-can  be analyzed  with graph  theory to  produce a  partition function
-describing  a full  arrangement of  contacts for  the total  number of
-possible   secondary  structures  making   possible  a   "relation  of
-microscopic      conformations     to      macroscopic     properties"
-\cite{chen2000}. So far this type of model has not been generalized to
-take  into   account  tertiary  structural   features,  \textit{i.e.},
-interhelical interactions  of RNA.  In the  last two to  three years a
-boom  in  prediction  of  small  ($\approx$ 200  nucleotides)  RNA  3D
-structures has started. Basically  three types of approaches are being
-followed.  One  is that  of using a  coarse grained model  assigning a
-potential function  to it, followed  by a minimization  procedure, and
-then  a molecular  mechanics (MM)  all atom  refinement \cite{das2007,
-  ding2008,  jonikas2009a}. Another  starts  from predicted  secondary
-structures  and  assumes  their   helical  regions  adopt  the  A-form
-conformation, then  mechanically thrusts  residues as rigid  bodies in
-the  remaining  non-helical  regions,  and  finally carry  out  an  MM
-optimization   \cite{martinez2008}.   Finally,   a   pipeline  between
-secondary  structure prediction,  and tertiary  structure  assembly is
-proposed. This  pipeline uses  as bridging concept  between 2D  and 3D
-structure, the  graph theoretical definition of a  minimum cycle basis,
-which for  the case of  nucleic acids is  renamed by Major's  group as
-Nucleic Cyclic Motifs (NCM) \cite{parisien2008}.
+\cite{hofacker1994}, or  Mathews Dynaling software \cite{mathews2002},
+one obtains  a large ensemble  of secondary structure graphs,  i.e. 2D
+representations of  the double-stranded helical  stems, hairpin loops,
+bubbles formed by the constituent bases.  These graphs can be analyzed
+with graph  theory to produce  a partition function describing  a full
+arrangement  of contacts for  the total  number of  possible secondary
+structures, allowing  the construction  of a "relation  of microscopic
+conformations to macroscopic  properties" \cite{chen2000}. So far this
+type of model  has not been generalized to  take into account tertiary
+structural features, \textit{i.e.},  interhelical interactions of RNA.
+In  the  last  two to  three  years  a  boom  in prediction  of  small
+($\approx$ 200  nucleotides) RNA 3D structures  has started. Basically
+three types of approaches are being  followed.  One is that of using a
+coarse-grained model, assigning a potential function to it, applying a
+minimization procedure, and then performing a molecular mechanics (MM)
+all-atom  refinement \cite{das2007,  ding2008,  jonikas2009a}. Another
+starts  from  the predicted  secondary  structures,  assumes that  the
+helical  regions adopt  the canonical  A-form  structure, mechanically
+inserts residues as rigid bodies in the remaining non-helical regions,
+and  finally carry  out an  MM optimization  \cite{martinez2008}.  The
+third  approach   entails  a  pipeline   between  secondary  structure
+prediction, and tertiary structure assembly is proposed. This pipeline
+uses  as bridging  concept  between  2D and  3D  structure, the  graph
+theoretical definition of a minimum cycle basis, which for the case of
+nucleic  acids  has  been  renamed  as  Nucleic  Cyclic  Motifs  (NCM)
+\cite{parisien2008}.
 
 \subsection{RNA overall fold}
-Whereas in the case of proteins one can describe the overall fold from
-the  arrangement of secondary  structure motifs,  \textit{i.e.}, using
-the   helix-ribbon-coil   images    developed   by   Jane   Richardson
-\cite{richardson2000} (see  Figure 1.2), there is  still no comparable
-description of the overall fold of RNA. A ribbon representation of the
-sugar  phosphate backbone  helps to  understand the  folding  of small
-RNA's, but in the case of  the ribosome this type of representation is
-not sufficient, see Figure 1.3.
+Whereas  in  the case  of  proteins  one  qualitatively describes  the
+overall  fold  in terms  of  the  arrangement  of secondary  structure
+motifs, \textit{i.e.}, using the helix-ribbon-coil images developed by
+Jane           Richardson          \cite{richardson2000}          (see
+Figure~\ref{fig:ribboncoil}), there is still no comparable description
+of  the overall  fold of  RNA. A  ribbon representation  of  the sugar
+phosphate backbone (see  Figure~\ref{fig:ribosome}) helps to understand
+the  folding of  small  RNA's, but  in  the case  of  the ribosome,  a
+representation at such level of detail does not allow to make sense of
+such a large  structure (about 3000 nucleotides for  the large subunit
+of   the  archaeal   ribosome).    In  the   past   two  years   Sykes
+\cite{sykes2009}  and  Holbrook\cite{holbrook2008}  have proposed  new
+representations for RNA based on helical region organization.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[scale=0.4]{Chapter1/overallfold.png}
 \caption{Ribbon-coil    schematic    illustraring    the   fold    and
-  intermolecular  units of  a dimer  of prealbumin,  or transthyretin,
-  taken from Richardson \textit{et al.} \cite{richardson2002}}
+  intermolecular  units of  a dimer  of prealbumin  (PDB\_ID:2pab), or
+  transthyretin,    taken     from    Richardson    \textit{et    al.}
+  \cite{richardson2002}}
+\label{fig:ribboncoil}
 \end{figure}
 
 \begin{figure}[t]

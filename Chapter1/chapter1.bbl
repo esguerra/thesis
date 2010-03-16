@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{woese1967}
 Woese, C. (1967)
@@ -214,10 +214,10 @@ Klein, D.~J., Moore, P.~B., and Steitz, T.~A. (2004)
 
 \bibitem{malhotra1990}
 Malhotra, A., Tan, R.~K., and Harvey, S.~C. (1990)
-Prediction of the {T}hree-{D}imensional {S}tructure of {E}scherichia {C}oli
-  30{S} {R}ibosomal {S}ubunit: {A} {M}olecular {M}echanics {A}pproach.
-{\em Proceedings of the {N}ational {A}cademy of {S}ciences of the {U}nited
-  {S}tates of {A}merica,} {\bf 87}, 1950--1954.
+Prediction of the three-dimensional structure of escherichia coli 30s ribosomal
+  subunit: A molecular mechanics approach..
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 87}, 1950--1954.
 
 \bibitem{stagg2003}
 Stagg, S.~M., Mears, J.~A., and Harvey, S.~C. (2003)
@@ -359,11 +359,28 @@ Hobza, P. and Sponer, J. (2002)
   Calculations}.
 {\em Journal of the American Chemical Society,} {\bf 124}, 11802--11808.
 
+\bibitem{freier1985}
+Freier, S.~M., Sinclair, A., Neilson, T., and Turner, D.~H. (1985)
+{Improved Free Energies for G.C Base-Pairs}.
+{\em Journal of Molecular Biology,} {\bf 185}, 645--647.
+
 \bibitem{marky1982}
 Marky, L.~A. and Breslauer, K.~J. (1982)
 {Calorimetric Determination of Base-Stacking Enthalpies in Double-Helical DNA
   Molecules}.
 {\em Biopolymers,} {\bf 11}, 2185--2194.
+
+\bibitem{burkard1999}
+Burkard, M.~E., Kierzek, R., and Turner, D.~H. (1999)
+{Thermodynamics of Unpaired Terminal Nucleotides on Short RNA Helixes
+  Correlates with Stacking at Helix Termini in Larger RNAs}.
+{\em Journal of Molecular Biology,} {\bf 290}, 967--982.
+
+\bibitem{burkard1999b}
+Burkard, M.~E., Turner, D.~H., and Jr., I.~T.
+The {RNA} {W}orld chapter 10. The Interactions That Shape RNA Structure, pp.
+  233--264
+Cold Spring Harbor Laboratory Press  2nd edition (1999).
 
 \bibitem{manning1977}
 Manning, G.~S. (1977)
@@ -381,6 +398,11 @@ Manning, G.~S. (2003)
 Antypov, D., Barbosa, M.~C., and Holm, C. (2005)
 {Incorporation of Excluded-Volume Correlations into Poisson-Boltzmann Theory}.
 {\em Physical Review E,} {\bf 71}(6), 1--6.
+
+\bibitem{xu2007}
+Xu, D., Landon, T., Greenbaum, N.~L., and Fenley, M.~O. (2007)
+{The Electrostatic Characteristics of G.U Wobble Base Pairs}.
+{\em Nucleic Acids Research,} {\bf 35}, 3836--3847.
 
 \bibitem{berman1992}
 Berman, H.~M., Olson, W.~K., Beveridge, D.~L., Westbrook, J., Gelbin, A.,
