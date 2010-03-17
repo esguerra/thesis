@@ -565,58 +565,65 @@ representations for RNA based on helical region organization.
 \begin{figure}[t]
 \centering
 \includegraphics[scale=0.5]{Chapter1/ribosome_ribozyme.png}
-\caption{\textit{Haloharcula marismortui's} large ribosomal subunit
-(left) and hammerhead ribozyme (right).%NDBID:UR0029
- The figures were taken
-directly from the NDB web pages, and show a ribbon
-representation of the phosphate backbone, and a block representation
-for the nucleotide bases. From the figures it's clear that, whereas the
-ribozyme fold can be clearly understood with this representation, the
-ribosome fold cannot.}
+\caption{Images   of  the  \textit{Haloharcula   marismortui's}  large
+  ribosomal subunit NDB\_ID:RR0033 (left) and the hammerhead ribozyme
+  (right) NDB\_ID:UR0029.
+  The  figures were taken directly  from the NDB
+  web  pages,   and  show  a  3DNA   generated  \cite{lu2008b}  ribbon
+  representation of the phosphate backbone, and a block representation
+  for the nucleotide bases. From  the figures it's clear that, whereas
+  the   ribozyme   fold   can   be  clearly   understood   with   this
+  representation, the ribosome fold cannot.}
+\label{fig:ribosome}
 \end{figure}
 
-One can envision that a  thorough investigation of the parameter space
-of  translational and  rotational degrees  of freedom  of  the helical
-regions of RNA could give clues as to how we might see an overall fold
-in RNA structures.
+One  can  envision that  a  thorough  investigation  of the  space  of
+translational and rotational degrees of freedom of the helical regions
+of RNA could give clues as to  how we might see an overall fold in RNA
+structures.  To the  best  of  our knowledge  there  is no  comparable
+quantitative description of the folding of proteins.
 
 In  the  case  of  proteins  the SCOP  (Structural  Classification  of
 Proteins)  database  \cite{andreeva2004},  classifies proteins,  among
-other   classifications,  according   to  recurrent   arrangements  of
-secondary   structure,   that  is,   folds.    The  SCOR   (Structural
-Classification of RNA) database \cite{klosterman2002, klosterman2004},
-aims  to  provide  a  similar  classification  to  that  obtained  for
-proteins, but using RNA motifs instead. This classification focuses on
-the  local folding  of small  pieces of  RNA and  cannot  describe the
-overall fold.
+various  qualitative  descriptors,   according  to  folds,  which  are
+recurrent  arrangements of  secondary structure,  that is,  a  list of
+secondary  structures with  unique topological  connections.  The SCOR
+(Structural  Classification  of  RNA)  database  \cite{klosterman2002,
+  klosterman2004}, aims  to provide  a similar classification  to that
+obtained   for  proteins,   but   using  RNA   motifs  instead.   This
+classification focuses on the local folding of small pieces of RNA and
+cannot  describe  the  overall  fold.  Local  classification  is  also
+qualitative rather than quantitative.
 
 \subsection{RNA motifs}
-First,  a word  of  caution must  be  given to  the  reader. The  term
-``\textit{RNA  motif}'' alone is  used in  the literature  to describe
-three   different   levels  of   RNA   organization,   that  is,   RNA
+The term ``\textit{RNA motif}'' is  used in the literature to describe
+three   different   levels    of   RNA   organization,   namely,   RNA
 \textbf{sequence} motifs, RNA  \textbf{secondary structure} motifs, or
-RNA \textbf{3D structure} motifs.  We start by making such distinction
-as it is not always  clearly mentioned in RNA literature, generating a
-great deal of confusion and bibliographical search frustration for the
-beginner. The  kind of RNA  motifs we  are dealing with  in this
-thesis are those of the third kind, that is, RNA \textbf{3D structure}
-motifs  which we'll  address from  now on  simply as  RNA  motifs. Yet
-another source of confusion in  understading RNA motifs is the lack of
-a  unique definition. Three popular and  somewhat
-recent definitions are:
+RNA \textbf{3D structure} motifs.   Because these distinctions are not
+always clearly made the beginner may result in confused and frustrated
+bibliographical searches.
+
+The lack of a unique definition of RNA motifs is yet another source of
+confusion  in  understading  RNA  motifs  is  the  lack  of  a  unique
+definition.  Three  popular and  somewhat  recent  definitions of  RNA
+motifs include:
 \begin{itemize}
-\item{RNA motifs are ``\textit{Conserved structural subunits that make
-    up the secondary structures of RNAs.}''\cite{holbrook2005}}
-\item{RNA   motifs    are   ``\textit{Ordered   stacked    arrays   of
-    non-Watson-Crick  base  pairs  that  form distinct  folds  on  the
-    phosphodiester backbones of RNA strands.}''\cite{leontis2003}}
-\item{``\textit{An RNA Motif is  a discrete sequence or combination of
+\item{``\textit{a discrete sequence or combination of
     base  juxtapositions   found  in  naturally   occurring  RNA's  in
     unexpectedly high abundance.}''\cite{moore1999}}
+\item{``\textit{conserved structural subunits that make
+    up the secondary structures of RNAs.}''\cite{holbrook2005}}
+\item{``\textit{ordered   stacked    arrays   of
+    non-Watson-Crick  base  pairs  that  form distinct  folds  on  the
+    phosphodiester backbones of RNA strands.}''\cite{leontis2003}}
 \end{itemize}
+
+The  kind of RNA  motifs addressed in this
+thesis are of the third type, that is, RNA \textbf{3D structure}
+motifs  which we henceforth term RNA  motifs.
 From our point of view RNA motifs are to be understood as  peculiar
-sets of geometrical  (in the rigid block sense)  arrangements in three
-dimensional space.
+sets of geometrical  (in the rigid block sense)  arrangements in
+three-dimensional space.
 
 Even  though there  is no  unique definition,  we can  think  of three
 practical  tasks regarding  RNA  motifs.   That is,  given  an RNA  3D
@@ -629,23 +636,24 @@ structure  automatically   identify  \cite{nasalean2009,  lemieux2006,
 Keeping always in  mind the greater scope of  the RNA folding problem,
 this thesis  addresses various issues of  RNA structural understanding
 using RNA crystallographic data from the Protein Data Bank (PDB). Such
-data  has been analyzed  statistically along  with the  use of  a very
-rigourous rigid body formalism.  In Chapter 2 the consensus clustering
-technique  is used to  classify RNA  base-step parameters  of non-ARNA
+data  has been  analyzed statistically  in terms  of a  very rigourous
+rigid-body formalism.  In Chapter 2 the consensus clustering technique
+is   used  to   classify   RNA  base-step   parameters  of   non-A-RNA
 conformations, and  the resulting groups are  localized and understood
 in the context  of rRNA.  Chapter 3 reconsiders  previous work carried
 out by  Dr. Yurong Xin  at the Olson's  lab, on classification  of RNA
 base-pairs by  resorting again to clustering  analysis techniques, and
 database  mining  of the  WWW  available  Base  Pair Structures  (BPS)
-database.  In Chapter 4  we explore,  using statistical  analysis, the
-data  available on  RNA helical  regions, and  use it  to  compute the
-persistence  length  of  double  stranded  RNA's  and  compare  it  to
-experimental results. In  Chapter 5 we provide a  new python software,
-pyRNAmotifs which  interfaces with  3DNA to do  a rigourous  search of
-existing  and perhaps  new RNA  motifs, and  finally in  Chapter  6 we
-propose the  measurement and classification of RNA  structures using a
-new graph  theoretical index named  folding index, based on  a helical
-region "view" of RNA's, which  is clearly concordant with the emerging
-necessity of new metrics beyond RMSD for structural understanding.
+database.  In  Chapter 4 we  explore, using statistical  analysis, the
+data available  on RNA  helical regions, and  use this  information to
+compute the persistence length of double-stranded RNA's and compare it
+to  experimental  results.  In  Chapter  5 we  provide  a  new  python
+software,  pyRNAmotifs which interfaces  with 3DNA  to do  a rigourous
+search of existing and perhaps  new RNA motifs, and finally in Chapter
+6  we propose  the measurement  and classification  of  RNA structures
+using a  new graph theoretical index  named folding index,  based on a
+helical region "view"  of RNA's, which is clearly  concordant with the
+emerging  necessity   of  new  metrics  beyond   RMSD  for  structural
+understanding.
 
 \bibliography{biblio}
