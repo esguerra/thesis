@@ -6,19 +6,18 @@
 \contentsline {chapter}{List of Figures}{viii}{chapter*.5}
 \gdef \the@ipfilectr {@-2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}RNA}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Standard reference frame and local parameters}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Base-pair and base-step parameters calculation}{2}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Local helical parameters calculation}{5}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}RNA folding}{5}{section.1.3}
-\contentsline {section}{\numberline {1.4}Is RNA folding a hard or easy problem?}{6}{section.1.4}
-\contentsline {section}{\numberline {1.5}Experimental folding techniques}{7}{section.1.5}
-\contentsline {section}{\numberline {1.6}RNA simulations}{7}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Local nucleotide interactions}{7}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}RNA secondary structure algorithms and the lack of tertiary ones}{8}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}RNA overall fold}{8}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}RNA motifs}{9}{subsection.1.6.4}
-\contentsline {section}{\numberline {1.7}Overview}{10}{section.1.7}
+\contentsline {section}{\numberline {1.1}RNA folding}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Is RNA folding a hard or easy problem?}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Experimental folding techniques}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Standard reference frame and local parameters}{3}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Base-pair and base-step parameters calculation}{3}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Local helical parameters calculation}{5}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}RNA simulations}{7}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Local nucleotide interactions}{7}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}RNA secondary structure algorithms and the lack of tertiary ones}{8}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}RNA overall fold}{8}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}RNA motifs}{9}{subsection.1.5.4}
+\contentsline {section}{\numberline {1.6}Overview}{10}{section.1.6}
 \contentsline {unnumberedsection}{References}{11}{chapter*.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}

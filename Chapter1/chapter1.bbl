@@ -65,47 +65,6 @@ Severcan, I., Geary, C., Verzemnieks, E., Chworos, A., and Jaeger, L. (Mar,
 {Square-Shaped RNA Particles from Different RNA Folds}.
 {\em Nanotechnology Letters,} {\bf 9}(3), 1270--1277.
 
-\bibitem{lu2003}
-Lu, X.-J. and Olson, W. (2003)
-3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
-  {V}isualization of the {T}hree-{D}imensional {N}ucleic {A}cid {S}tructures.
-{\em Nucleic {A}cids {R}esearch,} {\bf 31}(17), 5108--5121.
-
-\bibitem{babcock1994}
-Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
-Nucleic {A}cid {S}tructure {A}nalysis; {M}athematics for {L}ocal {C}artesian
-  and {H}elical {S}tructure {P}arameters that are {T}ruly {C}omparable
-  {B}etween {S}tructures.
-{\em Journal of {M}olecular {B}iology,} {\bf 237}, 125--156.
-
-\bibitem{berman2000}
-Berman, H.~M., Westbrook, J., Feng, Z., Gilliland, G., Bhat, T.~N., Weissig,
-  H., Shindyalov, I.~N., and Bourne, P.~E. (2000)
-The {P}rotein {D}ata {B}ank.
-{\em Nucleic {A}cids {R}esearch,} {\bf 28}, 235--242.
-
-\bibitem{olson2001}
-Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
-  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
-  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
-  (2001)
-A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
-  {B}ase-pair {G}eometry.
-{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
-
-\bibitem{lu1997}
-Lu, X.-J., Hassan, M. A.~E., and Hunter, C.~A. (1997)
-Structure and {C}onformation of {H}elical {N}ucleic {A}cids: {A}nalysis
-  {P}rogram ({SCHNA}a{P}).
-{\em Journal of {M}olecular {B}iology,} {\bf 273}, 668--680.
-
-\bibitem{bansal1995}
-Bansal, M., Bhattacharyya, D., and Ravi, B. (1995)
-{NUPARM and NUCGEN: Software for Analysis and Generation of Sequence Dependent
-  Nucleic Acid Structures}.
-{\em Computer {A}pplications in the {B}iosciences: {CABIOS},} {\bf 11},
-  281--287.
-
 \bibitem{robertus1974}
 Robertus, J.~D., Ladner, J.~E., Finch, J.~T., Rhodes, D., Brown, R.~S., Clark,
   B. F.~C., and Klug, A. (1974)
@@ -299,6 +258,47 @@ Collin, D., F.Ritort, Jarzynski, C., Smith, S.~B., Jr., I.~T., and Bustamante,
   Free Energies}.
 {\em Nature,} {\bf 437}, 231--234.
 
+\bibitem{lu2003}
+Lu, X.-J. and Olson, W. (2003)
+3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
+  {V}isualization of the {T}hree-{D}imensional {N}ucleic {A}cid {S}tructures.
+{\em Nucleic {A}cids {R}esearch,} {\bf 31}(17), 5108--5121.
+
+\bibitem{babcock1994}
+Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
+Nucleic {A}cid {S}tructure {A}nalysis; {M}athematics for {L}ocal {C}artesian
+  and {H}elical {S}tructure {P}arameters that are {T}ruly {C}omparable
+  {B}etween {S}tructures.
+{\em Journal of {M}olecular {B}iology,} {\bf 237}, 125--156.
+
+\bibitem{berman2000}
+Berman, H.~M., Westbrook, J., Feng, Z., Gilliland, G., Bhat, T.~N., Weissig,
+  H., Shindyalov, I.~N., and Bourne, P.~E. (2000)
+The {P}rotein {D}ata {B}ank.
+{\em Nucleic {A}cids {R}esearch,} {\bf 28}, 235--242.
+
+\bibitem{olson2001}
+Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
+  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
+  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
+  (2001)
+A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
+  {B}ase-pair {G}eometry.
+{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
+
+\bibitem{lu1997}
+Lu, X.-J., Hassan, M. A.~E., and Hunter, C.~A. (1997)
+Structure and {C}onformation of {H}elical {N}ucleic {A}cids: {A}nalysis
+  {P}rogram ({SCHNA}a{P}).
+{\em Journal of {M}olecular {B}iology,} {\bf 273}, 668--680.
+
+\bibitem{bansal1995}
+Bansal, M., Bhattacharyya, D., and Ravi, B. (1995)
+{NUPARM and NUCGEN: Software for Analysis and Generation of Sequence Dependent
+  Nucleic Acid Structures}.
+{\em Computer {A}pplications in the {B}iosciences: {CABIOS},} {\bf 11},
+  281--287.
+
 \bibitem{y_wang2004}
 Wang, Y., Rader, A.~J., Bahar, I., and Jernigan, R.~L. (2004)
 {Global Ribosome Motions Revealed with Elastic Network Model}.
@@ -484,10 +484,26 @@ Richardson, J.~S. (2000)
 {Early Ribbon Drawings of Proteins}.
 {\em Nature Structural Biology,} {\bf 7}, 624--625.
 
+\bibitem{holbrook2008}
+Holbrook, S.~R. (2008)
+{Structural Principles From large RNAs}.
+{\em Annual Review in Biophysics,} {\bf 37}, 445--464.
+
+\bibitem{sykes2009}
+Sykes, M.~T. and Williamson, J.~R. (2009)
+{A Complex Assembly Landscape for the 30S Ribosomal Subunit}.
+{\em Annual Review of Biophysics,} {\bf 38}, 197--215.
+
 \bibitem{richardson2002}
 Richardson, D.~C. and Richardson, J.~S. (2002)
 Teaching {M}olecular 3-{D} {L}iteracy.
 {\em Biochemistry and {M}olecular {B}iology {E}ducation,} {\bf 30}, 21--26.
+
+\bibitem{lu2008b}
+Lu, X.-J. and Olson, W.~K. (2008)
+{3DNA: A Versatile, Integrated Software System for the Analysis, Rebuilding and
+  Visualization of Three-Dimensional Nucleic-Acid Structures}.
+{\em Nature Protocols,} {\bf 3}, 1213--1227.
 
 \bibitem{andreeva2004}
 Andreeva, A., Howorth, D., Brenner, S.~E., Hubbard, T. J.~P., Chothia, C., and
@@ -508,6 +524,11 @@ Klosterman, P.~S., Hendrix, D.~K., Tamura, M., Holbrook, S.~R., and Brenner.,
   Database: Extruded Strands, Base Triples, Tetraloops and U-turns}.
 {\em Nucleic Acids Research,} {\bf 32}(8), 2342--2352.
 
+\bibitem{moore1999}
+Moore, P.~B. (1999)
+{Structural Motifs in RNA}.
+{\em Annual {R}eview of {B}iochemistry,} {\bf 68}, 287--300.
+
 \bibitem{holbrook2005}
 Holbrook, S.~R. (2005)
 {RNA Structure: The Long and the Short of it}.
@@ -517,11 +538,6 @@ Holbrook, S.~R. (2005)
 Leontis, N.~B. and Westhof, E. (2003)
 {Analysis of RNA Motifs}.
 {\em Current Opinion in Structural Biology,} {\bf 13}, 300--308.
-
-\bibitem{moore1999}
-Moore, P.~B. (1999)
-{Structural Motifs in RNA}.
-{\em Annual {R}eview of {B}iochemistry,} {\bf 68}, 287--300.
 
 \bibitem{nasalean2009}
 Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
@@ -549,11 +565,6 @@ Laing, C., Jung, S., Iqbal, A., and Schlick, T. (Oct, 2009)
 Laing, C. and Schlick, T. (Jul, 2009)
 {Analysis of Four-way Junctions in RNA Structures}.
 {\em Journal of Molecular Biology,} {\bf 390}(3), 547--559.
-
-\bibitem{holbrook2008}
-Holbrook, S.~R. (2008)
-{Structural Principles From large RNAs}.
-{\em Annual Review in Biophysics,} {\bf 37}, 445--464.
 
 \bibitem{spackova2006}
 Spacková, N. and Sponer, J. (2006)
