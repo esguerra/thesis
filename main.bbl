@@ -1,17 +1,25 @@
 \begin{thebibliography}{100}
 
-\bibitem{rangan2003}
-Rangan, P., Masquida, B., Westhof, E., and Woodson, S.~A. (2003)
-{Assembly of Core Helices and Rapid Tertiary Folding of a Small Bacterial Group
-  I Ribozyme}.
-{\em Proceedings of the National Academy of Sciences of the United States of
-  America,} {\bf 100}, 1574--1579.
+\bibitem{ndburl}
+\url{http://ndbserver.rutgers.edu/atlas/atlas_about.html}.
+
+\bibitem{saenger1984}
+Saenger, W. (1984)
+Principles of {N}ucleic {A}cid {S}tructure,
+Springer-Verlag, London.
 
 \bibitem{lu2003}
 Lu, X.-J. and Olson, W. (2003)
 3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
   {V}isualization of the {T}hree-{D}imensional {N}ucleic {A}cid {S}tructures.
 {\em Nucleic {A}cids {R}esearch,} {\bf 31}(17), 5108--5121.
+
+\bibitem{rangan2003}
+Rangan, P., Masquida, B., Westhof, E., and Woodson, S.~A. (2003)
+{Assembly of Core Helices and Rapid Tertiary Folding of a Small Bacterial Group
+  I Ribozyme}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 100}, 1574--1579.
 
 \bibitem{richardson2002}
 Richardson, D.~C. and Richardson, J.~S. (2002)
@@ -95,6 +103,41 @@ Severcan, I., Geary, C., Verzemnieks, E., Chworos, A., and Jaeger, L. (Mar,
   2009)
 {Square-Shaped RNA Particles from Different RNA Folds}.
 {\em Nanotechnology Letters,} {\bf 9}(3), 1270--1277.
+
+\bibitem{babcock1994}
+Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
+Nucleic {A}cid {S}tructure {A}nalysis; {M}athematics for {L}ocal {C}artesian
+  and {H}elical {S}tructure {P}arameters that are {T}ruly {C}omparable
+  {B}etween {S}tructures.
+{\em Journal of {M}olecular {B}iology,} {\bf 237}, 125--156.
+
+\bibitem{berman2000}
+Berman, H.~M., Westbrook, J., Feng, Z., Gilliland, G., Bhat, T.~N., Weissig,
+  H., Shindyalov, I.~N., and Bourne, P.~E. (2000)
+The {P}rotein {D}ata {B}ank.
+{\em Nucleic {A}cids {R}esearch,} {\bf 28}, 235--242.
+
+\bibitem{olson2001}
+Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
+  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
+  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
+  (2001)
+A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
+  {B}ase-pair {G}eometry.
+{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
+
+\bibitem{lu1997}
+Lu, X.-J., Hassan, M. A.~E., and Hunter, C.~A. (1997)
+Structure and {C}onformation of {H}elical {N}ucleic {A}cids: {A}nalysis
+  {P}rogram ({SCHNA}a{P}).
+{\em Journal of {M}olecular {B}iology,} {\bf 273}, 668--680.
+
+\bibitem{bansal1995}
+Bansal, M., Bhattacharyya, D., and Ravi, B. (1995)
+{NUPARM and NUCGEN: Software for Analysis and Generation of Sequence Dependent
+  Nucleic Acid Structures}.
+{\em Computer {A}pplications in the {B}iosciences: {CABIOS},} {\bf 11},
+  281--287.
 
 \bibitem{robertus1974}
 Robertus, J.~D., Ladner, J.~E., Finch, J.~T., Rhodes, D., Brown, R.~S., Clark,
@@ -282,40 +325,11 @@ Collin, D., F.Ritort, Jarzynski, C., Smith, S.~B., Jr., I.~T., and Bustamante,
   Free Energies}.
 {\em Nature,} {\bf 437}, 231--234.
 
-\bibitem{babcock1994}
-Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
-Nucleic {A}cid {S}tructure {A}nalysis; {M}athematics for {L}ocal {C}artesian
-  and {H}elical {S}tructure {P}arameters that are {T}ruly {C}omparable
-  {B}etween {S}tructures.
-{\em Journal of {M}olecular {B}iology,} {\bf 237}, 125--156.
-
-\bibitem{berman2000}
-Berman, H.~M., Westbrook, J., Feng, Z., Gilliland, G., Bhat, T.~N., Weissig,
-  H., Shindyalov, I.~N., and Bourne, P.~E. (2000)
-The {P}rotein {D}ata {B}ank.
-{\em Nucleic {A}cids {R}esearch,} {\bf 28}, 235--242.
-
-\bibitem{olson2001}
-Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
-  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
-  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
-  (2001)
-A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
-  {B}ase-pair {G}eometry.
-{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
-
-\bibitem{lu1997}
-Lu, X.-J., Hassan, M. A.~E., and Hunter, C.~A. (1997)
-Structure and {C}onformation of {H}elical {N}ucleic {A}cids: {A}nalysis
-  {P}rogram ({SCHNA}a{P}).
-{\em Journal of {M}olecular {B}iology,} {\bf 273}, 668--680.
-
-\bibitem{bansal1995}
-Bansal, M., Bhattacharyya, D., and Ravi, B. (1995)
-{NUPARM and NUCGEN: Software for Analysis and Generation of Sequence Dependent
-  Nucleic Acid Structures}.
-{\em Computer {A}pplications in the {B}iosciences: {CABIOS},} {\bf 11},
-  281--287.
+\bibitem{hyeon2009}
+Hyeon, C., Morrison, G., Pincus, D.~L., and Thirumalai, D. (2009)
+{Refolding Dynamics of Stretched Biopolymers Upon Force Quench}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 106}, 20288--20293.
 
 \bibitem{y_wang2004}
 Wang, Y., Rader, A.~J., Bahar, I., and Jernigan, R.~L. (2004)
@@ -601,11 +615,6 @@ Olson, W.~K. and Flory, P.~J. (1972)
 Spatial {C}onfigurations of {P}olynucleotide {C}hains. {I}. {S}teric
   {I}nteractions in {P}olyribonucleotides: {A} {V}irtual {B}ond {M}odel.
 {\em Biopolymers,} {\bf 11}, 1--23.
-
-\bibitem{saenger1984}
-Saenger, W. (1984)
-Principles of {N}ucleic {A}cid {S}tructure,
-Springer-Verlag, London.
 
 \bibitem{gautheret1993}
 Gautheret, D., Major, F., and Cedergren, R. (1993)
