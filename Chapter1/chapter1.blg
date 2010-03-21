@@ -1,52 +1,65 @@
 This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: Chapter1/chapter1.aux
 The style file: nar.bst
-Database file #1: biblio.bib
-Warning--empty author in iupac1983
-Warning--can't use both author and editor fields in burkard1999b
-ptr=1, stack=
-RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching
----the literal stack isn't empty for entry nasalean2009
-while executing---line 2203 of file nar.bst
-You've used 110 entries,
+I found no \bibdata command---while reading file Chapter1/chapter1.aux
+Warning--I didn't find a database entry for "woese1967"
+Warning--I didn't find a database entry for "crick1968"
+Warning--I didn't find a database entry for "orgel1968"
+Warning--I didn't find a database entry for "orgel2004"
+Warning--I didn't find a database entry for "fire1998"
+Warning--I didn't find a database entry for "schluenzen2000"
+Warning--I didn't find a database entry for "ban2000"
+Warning--I didn't find a database entry for "wimberly2000"
+Warning--I didn't find a database entry for "watson1953a"
+Warning--I didn't find a database entry for "weinberg2009"
+Warning--I didn't find a database entry for "severcan2009"
+Warning--I didn't find a database entry for "ndburl"
+Warning--I didn't find a database entry for "iupac1983"
+Warning--I didn't find a database entry for "saenger1984"
+Warning--I didn't find a database entry for "lee2004"
+Warning--I didn't find a database entry for "leontis2002b"
+Warning--I didn't find a database entry for "lemieux2002"
+Warning--I didn't find a database entry for "sponer1996"
+Warning--I didn't find a database entry for "sponer1997"
+You've used 0 entries,
             1881 wiz_defined-function locations,
-            1085 strings with 24344 characters,
-and the built_in function-call counts, 28812 in all, are:
-= -- 2925
-> -- 1294
-< -- 8
-+ -- 475
-- -- 365
-* -- 2753
-:= -- 4415
-add.period$ -- 110
-call.type$ -- 110
-change.case$ -- 104
+            479 strings with 3808 characters,
+and the built_in function-call counts, 20 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 9
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 112
-duplicate$ -- 1021
-empty$ -- 2732
-format.name$ -- 365
-if$ -- 6736
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 110
-missing$ -- 114
-newline$ -- 549
-num.names$ -- 107
-pop$ -- 153
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 404
+skip$ -- 1
 stack$ -- 0
-substring$ -- 2382
-swap$ -- 137
-text.length$ -- 8
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 217
-width$ -- 113
-write$ -- 990
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
 (There was 1 error message)

@@ -86,7 +86,10 @@ precise  quantum calculations  have  show otherwise  \cite{sponer1996,
 Sugar, and  backbone can adopt a variety  of conformations constrained
 to the values of their torsion  angles. In the case of the sugar these
 torsion angles are called puckers,  perhaps in analogy to the gestures
-made  by  human  lips.  Standards  to  describe the  conformations
+made  by  human  lips. The prefered sugar pucker in RNA is called
+C$_{3'endo}$, but in cases where an intercalated base is acommodated
+between two sequential bases, the sugar pucker changes to a
+non-prefered conformation called C$2'_{2'endo}$.  Standards  to  describe the  conformations
 resulting from the specific sets  of torsion angle values which sugars
 and  backbone  can attain  have  been developed  and  can  be seen  in
 textbooks  \cite{saenger1984}, in  the web  \cite{jenaurl}, and  in the
@@ -700,50 +703,43 @@ three-dimensional space.
 
 Even  though there  is no  unique definition,  we can  think  of three
 practical  tasks regarding  RNA  motifs.   That is,  given  an RNA  3D
-structure    automatically    identify,   describe    \cite{laing2009,
-  laing2009a, holbrook2008,  spackova2006, reblova2003}, and  find new
-\cite{sarver2008,  mokdad2008,  duarte2003,  stonge2007,  lemieux2006}
-motifs.   For   automatic  identification  of  RNA   motifs  Pyle  and
-collaborators have  developed a software called  AMIGOS. This software
-finds RNA motifs based on specific values of backbone
-virtual torsion  angles $\nabla$ and  $\theta$ \cite{yathindra, olson,
-  duarte2003} in  a way which resembles a  Ramachandran plot analysis.
-Lemieux  and Major  \cite{lemieux2006} provide  the  software MC-Fold,
-which implicitly finds  RNA motifs based on an  algorithm to determine
-so  called nucleic  cyclic motifs,  which are  just the  minimal cycle
-basis  of an RNA  secondary structure  interpreted as  a mathematical
-graph.   Leontis \cite{nasalean2009}  and  collaborators provide  FR3D
-(read as  FRED).  F3RD  is a matlab  windows executable  program which
-finds  RNA motifs based  on the  isostericity matrices  of base-pairs.
+structure automatically identify, describe,  and find new motifs.  For
+automatic  identification of  RNA motifs  Pyle and  collaborators have
+developed  a software called  AMIGOS. This  software finds  RNA motifs
+based on  specific values of backbone virtual  torsion angles $\eta$
+and  $\theta$  \cite{yathindra,  olson,  duarte2003} in  a  way  which
+resembles   a   Ramachandran  plot   analysis.    Lemieux  and   Major
+\cite{lemieux2006}  provide  the  software MC-Fold,  which  implicitly
+finds RNA motifs based on  an algorithm to determine so called nucleic
+cyclic  motifs, which  are  just the  minimal  cycle basis  of an  RNA
+secondary  structure  interpreted as  a  mathematical graph.   Leontis
+\cite{nasalean2009}  and collaborators  provide FR3D  (read  as FRED).
+F3RD is  a matlab  windows executable program  which finds  RNA motifs
+based on the isostericity matrices of base-pairs.
 
 For description of RNA motifs Schlick and collaborators have used FR3D
-to localize  RNA helical junctions of order  four (four-way junctions)
-or higher, and have visually analyzed if the helices in such junctions
-form   coaxial  stacks   or   not  and   clasified  them   accordingly
-\cite{laing2009, laing2009a}.  As  mentioned previously in the context
-of  RNA  folds, Holbrook,  and  Sykes,  describe  helical regions  and
-display them in two-dimensional representations.
+to  localize  RNA helical  junctions  of  order  four (i.e.   four-way
+junctions) or  higher, and performed a  visual analysis to  see if the
+helices  in  such junctions  form  coaxial  stacks  or not,  and  have
+classified   them   accordingly   \cite{laing2009,  laing2009a}.    As
+mentioned previously in the context of RNA folds, Holbrook, and Sykes,
+describe   helical  regions  and   display  them   in  two-dimensional
+representations. Sponer's group has carried out the description of RNA
+motifs present  in the ribosome using Molecular  Dynamics (MD) methods
+implemented  in   the  AMBER   package.   They  have   performed  25ns
+simulations  of   the  Sarcin-Ricin  Domain  (SRD)   of  the  ribosome
+\cite{spackova2006}, and also 80ns  simulations of hydration of loop E
+in the 5S subunit of the ribosome \cite{reblova2003}.
 
-
-so called COINS and
-provides their location in  secondary structure representations of the
-large ribosomal subunit \cite{holbrook2008}.
-
-
-
-order to produce a 3D structure from a sequence, which is based on their analysis of RNA
-secondary structures  through a  graph theoretical method  which finds
-the 
-
-
-
-
+The software programs which perform the task of identifying RNA motifs
+in RNA structures also have the ability to find new RNA motifs, as is
+the case for AMIGOS, MC-Fold, and FR3D.
 
 \section{Overview}
 Keeping always in  mind the greater scope of  the RNA folding problem,
 this thesis  addresses various issues of  RNA structural understanding
 using RNA crystallographic data from the Protein Data Bank (PDB). Such
-data  has been  analyzed statistically  in terms  of a  very rigourous
+data  has been  analyzed statistically  in terms  of a rigourous
 rigid-body formalism.  In Chapter 2 the consensus clustering technique
 is   used  to   classify   RNA  base-step   parameters  of   non-A-RNA
 conformations, and  the resulting groups are  localized and understood
