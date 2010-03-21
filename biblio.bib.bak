@@ -10505,6 +10505,12 @@
   url = {http://www.jstor.org/view/00368075/ap003631/00a00210/0}
 }
 
+@MISC{jenaurl,
+  howpublished = {\url{http://www.fli-leibniz.de/ImgLibDoc/nana/IMAGE_NANA.html}},
+  owner = {esguerra},
+  timestamp = {2010.03.21}
+}
+
 @MISC{ndburl,
   howpublished = {\url{http://ndbserver.rutgers.edu/atlas/atlas_about.html}},
   owner = {esguerra},
@@ -10512,14 +10518,13 @@
 }
 
 @ARTICLE{iupac1983,
-  title = {IUPAC-IUB Joint Commission on Biochemical Nomenclature (JCBN). Abbreviations
-	and symbols for the description of conformations of polynucleotide
-	chains. Recommendations 1982.},
+  title = {{IUPAC-IUB Joint Commission on Biochemical Nomenclature (JCBN). Abbreviations
+	and Symbols for the Description of Conformations of Polynucleotide
+	Chains. Recommendations 1982}},
   journal = {European Journal of Biochemistry},
   year = {1983},
   volume = {131},
   pages = {9-15},
-  __markedentry = {[esguerra]},
   doi = {10.1111/j.1432-1033.1983.tb07225.x},
   file = {:/home/esguerra/Articles/iupac1983.pdf:PDF},
   keywords = {Nucleic Acid Conformation; Terminology as Topic},

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.11.9)  21 MAR 2010 14:47
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.11.9)  21 MAR 2010 16:50
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -434,73 +434,77 @@ File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 
  (./Chapter1/chapter1.tex
 Chapter 1.
-<Chapter1/chemistry1b.png, id=429, 154.176pt x 166.221pt>
+<Chapter1/chemistry1b.png, id=434, 154.176pt x 166.221pt>
 File: Chapter1/chemistry1b.png Graphic file (type png)
 
 <use Chapter1/chemistry1b.png>
-Overfull \hbox (146.947pt too wide) in paragraph at lines 52--60
+Overfull \hbox (23.60605pt too wide) in paragraph at lines 52--62
  [][] 
  []
 
-
-LaTeX Warning: Float too large for page by 58.0888pt on input line 60.
-
-<Chapter1/saenger28b.png, id=439, 154.176pt x 126.83385pt>
+<Chapter1/saenger28b.png, id=446, 154.176pt x 126.83385pt>
 File: Chapter1/saenger28b.png Graphic file (type png)
 
 <use Chapter1/saenger28b.png>
-Overfull \hbox (37.57872pt too wide) in paragraph at lines 71--75
+Overfull \hbox (37.57872pt too wide) in paragraph at lines 73--77
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 96.
-(/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [1
+
+LaTeX Warning: Reference `fig:puckersbbone' on page 1 undefined on input line 9
+5.
+
+[1
 
 
 
 ] [2 <./Chapter1/chemistry1b.png>] [3 <./Chapter1/saenger28b.png>]
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 121.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 122.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 122.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 106.
 
-<Chapter1/standard.png, id=479, 352.9185pt x 159.7167pt>
+
+(/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 131.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 132.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 132.
+
+<Chapter1/standard.png, id=493, 352.9185pt x 159.7167pt>
 File: Chapter1/standard.png Graphic file (type png)
 
 <use Chapter1/standard.png> [4 <./Chapter1/standard.png>] [5]
-<Chapter1/allparam2.png, id=519, 831.85782pt x 884.55469pt>
+<Chapter1/allparam2.png, id=531, 831.85782pt x 884.55469pt>
 File: Chapter1/allparam2.png Graphic file (type png)
 
 <use Chapter1/allparam2.png>
-Overfull \hbox (29.36316pt too wide) in paragraph at lines 256--259
+Overfull \hbox (29.36316pt too wide) in paragraph at lines 266--269
  [][] 
  []
 
 [6] [7 <./Chapter1/allparam2.png (PNG copy)>]
-<Chapter1/rangan2003pnas.png, id=566, 1316.92pt x 558.085pt>
+<Chapter1/rangan2003pnas.png, id=573, 1316.92pt x 558.085pt>
 File: Chapter1/rangan2003pnas.png Graphic file (type png)
 
 <use Chapter1/rangan2003pnas.png> [8 <./Chapter1/rangan2003pnas.png (PNG copy)>
-] [9] [10] <Chapter1/overallfold.png, id=702, 308.352pt x 303.2931pt>
+] [9] [10] <Chapter1/overallfold.png, id=711, 308.352pt x 303.2931pt>
 File: Chapter1/overallfold.png Graphic file (type png)
 
 <use Chapter1/overallfold.png>
-<Chapter1/ribosome_ribozyme.png, id=705, 572.3784pt x 342.5598pt>
+<Chapter1/ribosome_ribozyme.png, id=714, 572.3784pt x 342.5598pt>
 File: Chapter1/ribosome_ribozyme.png Graphic file (type png)
 
 <use Chapter1/ribosome_ribozyme.png> [11 <./Chapter1/overallfold.png (PNG copy)
 >]
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 674.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 684.
 
  (/usr/share/texmf-texlive/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 674.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 684.
  [12 <./Chapter1/ribosome_ribozyme.png>] (./Chapter1/chapter1.bbl [13]
 References
 [14
@@ -510,7 +514,7 @@ References
 
  (./Chapter2/chapter2.tex
 Chapter 2.
-<Chapter2/rna2000_2009copy.png, id=796, 1204.5pt x 494.84875pt>
+<Chapter2/rna2000_2009copy.png, id=809, 1204.5pt x 494.84875pt>
 File: Chapter2/rna2000_2009copy.png Graphic file (type png)
 
 <use Chapter2/rna2000_2009copy.png> [21
@@ -519,7 +523,7 @@ File: Chapter2/rna2000_2009copy.png Graphic file (type png)
 
 
  <./Chapter2/rna2000_2009copy.png>]
-<Chapter2/histogram.png, id=809, 560.8152pt x 808.7013pt>
+<Chapter2/histogram.png, id=822, 560.8152pt x 808.7013pt>
 File: Chapter2/histogram.png Graphic file (type png)
 
 <use Chapter2/histogram.png>
@@ -533,11 +537,11 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 9.49997pt on input line 105.
-<Chapter2/murray2003.png, id=826, 351.3125pt x 430.60875pt>
+<Chapter2/murray2003.png, id=839, 351.3125pt x 430.60875pt>
 File: Chapter2/murray2003.png Graphic file (type png)
 
 <use Chapter2/murray2003.png> [22 <./Chapter2/histogram.png>]
-<Chapter2/eucli_cons_nonA-RNA.png, id=849, 1123.19624pt x 778.91pt>
+<Chapter2/eucli_cons_nonA-RNA.png, id=862, 1123.19624pt x 778.91pt>
 File: Chapter2/eucli_cons_nonA-RNA.png Graphic file (type png)
 
 <use Chapter2/eucli_cons_nonA-RNA.png>
@@ -545,7 +549,7 @@ File: Chapter2/eucli_cons_nonA-RNA.png Graphic file (type png)
 LaTeX Warning: Float too large for page by 39.92947pt on input line 169.
 
 [23 <./Chapter2/murray2003.png>]
-<Chapter2/collageb.png, id=856, 1204.5pt x 930.47626pt>
+<Chapter2/collageb.png, id=869, 1204.5pt x 930.47626pt>
 File: Chapter2/collageb.png Graphic file (type png)
 
 <use Chapter2/collageb.png>
@@ -683,17 +687,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 240--241
 \T1/phv/m/n/9 2017, 2516, 2755,
  []
 
-<Chapter2/hartigan_nuclu_steps_b.png, id=862, 1123.19624pt x 778.91pt>
+<Chapter2/hartigan_nuclu_steps_b.png, id=875, 1123.19624pt x 778.91pt>
 File: Chapter2/hartigan_nuclu_steps_b.png Graphic file (type png)
 
 <use Chapter2/hartigan_nuclu_steps_b.png>
-<Chapter2/pam_asw_2_80_steps.png, id=863, 560.8152pt x 808.7013pt>
+<Chapter2/pam_asw_2_80_steps.png, id=876, 560.8152pt x 808.7013pt>
 File: Chapter2/pam_asw_2_80_steps.png Graphic file (type png)
 
 <use Chapter2/pam_asw_2_80_steps.png> [24] [25 <./Chapter2/eucli_cons_nonA-RNA.
 png (PNG copy)>] [26 <./Chapter2/collageb.png>] [27] [28 <./Chapter2/hartigan_n
 uclu_steps_b.png (PNG copy)> <./Chapter2/pam_asw_2_80_steps.png>]
-<Chapter2/clussdissim.png, id=892, 798.985pt x 1129.21875pt>
+<Chapter2/clussdissim.png, id=905, 798.985pt x 1129.21875pt>
 File: Chapter2/clussdissim.png Graphic file (type png)
 
 <use Chapter2/clussdissim.png>
@@ -709,19 +713,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 352--352
 []\T1/phv/b/n/10 Structure
  []
 
-<Chapter2/hartigan_tor_b.png, id=896, 1123.19624pt x 778.91pt>
+<Chapter2/hartigan_tor_b.png, id=909, 1123.19624pt x 778.91pt>
 File: Chapter2/hartigan_tor_b.png Graphic file (type png)
 
 <use Chapter2/hartigan_tor_b.png>
-<Chapter2/lloyd_tor_b.png, id=897, 1123.19624pt x 778.91pt>
+<Chapter2/lloyd_tor_b.png, id=910, 1123.19624pt x 778.91pt>
 File: Chapter2/lloyd_tor_b.png Graphic file (type png)
 
 <use Chapter2/lloyd_tor_b.png>
-<Chapter2/forgy_tor_b.png, id=898, 1123.19624pt x 778.91pt>
+<Chapter2/forgy_tor_b.png, id=911, 1123.19624pt x 778.91pt>
 File: Chapter2/forgy_tor_b.png Graphic file (type png)
 
 <use Chapter2/forgy_tor_b.png>
-<Chapter2/macqueen_tor_b.png, id=899, 1123.19624pt x 778.91pt>
+<Chapter2/macqueen_tor_b.png, id=912, 1123.19624pt x 778.91pt>
 File: Chapter2/macqueen_tor_b.png Graphic file (type png)
 
 <use Chapter2/macqueen_tor_b.png> (./Chapter2/chapter2.bbl [29] [30 <./Chapter2
@@ -808,10 +812,10 @@ No file Chapter4/chapter4.bbl.
 
  (./Chapter5/chapter5.tex
 Chapter 5.
-<Chapter5/gnra.png, id=947, 706.64pt x 415.5525pt>
+<Chapter5/gnra.png, id=960, 706.64pt x 415.5525pt>
 File: Chapter5/gnra.png Graphic file (type png)
  <use Chapter5/gnra.png>
-<Chapter5/histocompare.png, id=948, 647.41875pt x 782.925pt>
+<Chapter5/histocompare.png, id=961, 647.41875pt x 782.925pt>
 File: Chapter5/histocompare.png Graphic file (type png)
 
 <use Chapter5/histocompare.png>
@@ -822,7 +826,7 @@ Overfull \hbox (48.18031pt too wide) in paragraph at lines 52--58
 
 LaTeX Warning: Float too large for page by 17.44608pt on input line 58.
 
-<Chapter5/eucli_cons.png, id=949, 1123.19624pt x 778.91pt>
+<Chapter5/eucli_cons.png, id=962, 1123.19624pt x 778.91pt>
 File: Chapter5/eucli_cons.png Graphic file (type png)
 
 <use Chapter5/eucli_cons.png>
@@ -896,7 +900,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 
 
-] <Appendix/appendixtree.png, id=999, 709.90219pt x 846.91406pt>
+] <Appendix/appendixtree.png, id=1012, 709.90219pt x 846.91406pt>
 File: Appendix/appendixtree.png Graphic file (type png)
 
 <use Appendix/appendixtree.png> [46]
@@ -952,7 +956,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\hbox' on input line 1.
 
-<Supplement/collage2.png, id=1041, 1204.5pt x 930.47626pt>
+<Supplement/collage2.png, id=1054, 1204.5pt x 930.47626pt>
 File: Supplement/collage2.png Graphic file (type png)
 
 <use Supplement/collage2.png>
@@ -975,20 +979,24 @@ Curriculum Vitae
 ] (./main.aux (./titles.aux) (./Chapter1/chapter1.aux)
 (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux)
 (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux) (./Appendix/appendix2a.aux)
-(./Appendix/appendix2b.aux) (./Supplement/supplements.aux) (./CV/cv.aux)) )
+(./Appendix/appendix2b.aux) (./Supplement/supplements.aux) (./CV/cv.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred when \iftrue on line 67 was incomplete) 
 Here is how much of TeX's memory you used:
- 5622 strings out of 95086
- 75991 string characters out of 1183255
- 143171 words of memory out of 1500000
- 8245 multiletter control sequences out of 10000+50000
+ 5627 strings out of 95086
+ 76061 string characters out of 1183255
+ 143233 words of memory out of 1500000
+ 8248 multiletter control sequences out of 10000+50000
  49680 words of font info for 77 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
  30i,14n,39p,737b,421s stack positions out of 5000i,500n,6000p,200000b,5000s
  </home/esguerra/.texmf-v
 ar/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/esguerra/.texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/esguerra/.texmf-var/fonts/pk/ljfo
-ur/jknappen/ec/ectt1095.600pk>{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r
+/pk/ljfour/jknappen/ec/ectt1095.600pk> </home/esguerra/.texmf-var/fonts/pk/ljfo
+ur/jknappen/ec/ecrm1095.600pk>{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r
 .enc}</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/te
 xmf-texlive/fonts/type1/bluesky/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/bluesky/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi
@@ -1002,9 +1010,9 @@ pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texm
 f-texlive/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type
 1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uh
 vr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (61 pages, 4695001 bytes).
+Output written on main.pdf (61 pages, 4698262 bytes).
 PDF statistics:
- 1263 PDF objects out of 1440 (max. 8388607)
- 316 named destinations out of 1000 (max. 131072)
+ 1276 PDF objects out of 1440 (max. 8388607)
+ 318 named destinations out of 1000 (max. 131072)
  521 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,6 +3,13 @@
 \bibitem{ndburl}
 \url{http://ndbserver.rutgers.edu/atlas/atlas_about.html}.
 
+\bibitem{iupac1983}
+(1983)
+Iupac-iub joint commission on biochemical nomenclature (jcbn). abbreviations
+  and symbols for the description of conformations of polynucleotide chains.
+  recommendations 1982..
+{\em European Journal of Biochemistry,} {\bf 131}, 9--15.
+
 \bibitem{saenger1984}
 Saenger, W. (1984)
 Principles of {N}ucleic {A}cid {S}tructure,
@@ -120,6 +127,21 @@ Lemieux, S. and Major, F. (Oct, 2002)
 {RNA Canonical and Non-Canonical Base Pairing Types: A Recognition Method and
   Complete Repertoire}.
 {\em Nucleic Acids Research,} {\bf 30}(19), 4250--4263.
+
+\bibitem{sponer1996}
+Sponer, J., Leszczynski, J., and Hobza, P. (1996)
+Nature of {N}ucleic {A}cid-{B}ase {S}tacking: {N}onempirical {A}b {I}nitio and
+  {E}mpirical {P}otential {C}haracterization of 10 {S}tacked {B}ase {D}imers.
+  {C}omparison of {S}tacked and {H}-{B}onded {B}ase {P}airs.
+{\em Journal of Physical Chemistry,} {\bf 100}, 5590--5596.
+
+\bibitem{sponer1997}
+Sponer, J., Leszczynski, J., and Hobza, P. (1997)
+Thioguanine and {T}hiouracil: {H}ydrogen-{B}onding and {S}tacking {P}roperties.
+{\em Journal of {P}hysical {C}hemistry {A},} {\bf 101}, 9489--9495.
+
+\bibitem{jenaurl}
+\url{http://www.fli-leibniz.de/ImgLibDoc/nana/IMAGE_NANA.html}.
 
 \bibitem{babcock1994}
 Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
@@ -376,18 +398,6 @@ Sanbonmatsu, K.~Y., Simpson, J., and Tung, C.-S. (2005)
 {Simulating Movement of tRNA into the Ribosome During Decoding}.
 {\em Proceedings of the National Academy of Sciences of the United States of
   America,} {\bf 102}, 15854--15859.
-
-\bibitem{sponer1996}
-Sponer, J., Leszczynski, J., and Hobza, P. (1996)
-Nature of {N}ucleic {A}cid-{B}ase {S}tacking: {N}onempirical {A}b {I}nitio and
-  {E}mpirical {P}otential {C}haracterization of 10 {S}tacked {B}ase {D}imers.
-  {C}omparison of {S}tacked and {H}-{B}onded {B}ase {P}airs.
-{\em Journal of Physical Chemistry,} {\bf 100}, 5590--5596.
-
-\bibitem{sponer1997}
-Sponer, J., Leszczynski, J., and Hobza, P. (1997)
-Thioguanine and {T}hiouracil: {H}ydrogen-{B}onding and {S}tacking {P}roperties.
-{\em Journal of {P}hysical {C}hemistry {A},} {\bf 101}, 9489--9495.
 
 \bibitem{sponer2000}
 Sponer, J., Berger, I., Spackova, N., Leszczynski, J., and Hobza, P. (2000)

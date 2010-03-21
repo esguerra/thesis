@@ -2,50 +2,51 @@ This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: Chapter1/chapter1.aux
 The style file: nar.bst
 Database file #1: biblio.bib
+Warning--empty author in iupac1983
 Warning--can't use both author and editor fields in burkard1999b
 ptr=1, stack=
 RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching
 ---the literal stack isn't empty for entry nasalean2009
 while executing---line 2203 of file nar.bst
-You've used 108 entries,
+You've used 110 entries,
             1881 wiz_defined-function locations,
-            1078 strings with 24054 characters,
-and the built_in function-call counts, 28551 in all, are:
-= -- 2902
-> -- 1292
+            1085 strings with 24344 characters,
+and the built_in function-call counts, 28812 in all, are:
+= -- 2925
+> -- 1294
 < -- 8
-+ -- 473
++ -- 475
 - -- 365
-* -- 2735
-:= -- 4387
-add.period$ -- 108
-call.type$ -- 108
-change.case$ -- 103
+* -- 2753
+:= -- 4415
+add.period$ -- 110
+call.type$ -- 110
+change.case$ -- 104
 chr.to.int$ -- 0
-cite$ -- 109
-duplicate$ -- 1007
-empty$ -- 2693
+cite$ -- 112
+duplicate$ -- 1021
+empty$ -- 2732
 format.name$ -- 365
-if$ -- 6670
+if$ -- 6736
 int.to.chr$ -- 0
-int.to.str$ -- 108
-missing$ -- 113
-newline$ -- 541
+int.to.str$ -- 110
+missing$ -- 114
+newline$ -- 549
 num.names$ -- 107
-pop$ -- 145
+pop$ -- 153
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 393
+skip$ -- 404
 stack$ -- 0
-substring$ -- 2370
-swap$ -- 135
+substring$ -- 2382
+swap$ -- 137
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 216
-width$ -- 111
-write$ -- 977
+warning$ -- 2
+while$ -- 217
+width$ -- 113
+write$ -- 990
 (There was 1 error message)

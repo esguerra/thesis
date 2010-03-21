@@ -42,10 +42,10 @@ of non-coding RNA  structures \cite{weinberg2009}, and the possibility
 of new engineered ones \cite{severcan2009}.
 
 \section{RNA chemistry}
-RNA is a poly-nucleotide chain, that is, the monomer of the polymer is
-the nucleotide.  The nucleotide unit  is composed of  three chemically
-distinct entities; base, sugar, and backbone. The bases can be of two
-types, purines, i.e. adenine and guanine, and pyrimidines,
+RNA is  a poly-nucleotide  chain, that is,  a polymer  whose monomeric
+unit  is the  nucleotide.  The  nucleotide unit  is composed  of three
+chemically distinct entities; base, sugar, and backbone. The bases can
+be of two  types, purines, i.e. adenine and  guanine, and pyrimidines,
 i.e. cytosine and uracyl as shown in Figure~\ref{fig:chemistry1}.
 \begin{figure}
 \centering
@@ -76,24 +76,26 @@ Lemieux-Major \cite{lemieux2002}.
 \label{fig:saenger28}
 \end{figure}  
 
-The other  non-covalent interaction  which is common  to the  bases is
-that of  stacking through London dispersion  forces, and electrostatic
-interactions.   It   has  been   hypothesized   that  $\pi$   electron
-interactions could also account for stacking, but very precise quantum
-calculations have show otherwise \cite{sponer1996, sponer1997}. 
+The other  non-covalent interaction which is common  to the nucleotide
+bases  is  that  of  stacking  through London  dispersion  forces  and
+electrostatic  interactions.   It  has  been hypothesized  that  $\pi$
+electron  interactions  could  also  account for  stacking,  but  very
+precise  quantum calculations  have  show otherwise  \cite{sponer1996,
+  sponer1997}.
 
-The  sugar, and  backbone  can  adopt a  variety of  conformations
-constrained  to  the values  of  their  torsion  angles. Standards  to
-describe  the  conformations  resulting  from  the  specific  sets  of
-torsional angle values which sugars  and backbone can attain have been
-developed and can be seen  in textbooks \cite{saenger1984}, in the web
-\cite{ndburl}, and in the IUPAC recommendations \iupac{1984}. We refer
-the reader  to this  sources since  we do not  intent to  reinvent the
-wheel in this brief introduction.
+Sugar, and  backbone can adopt a variety  of conformations constrained
+to the values of their torsion  angles. In the case of the sugar these
+torsion angles are called puckers,  perhaps in analogy to the gestures
+made  by  human  lips.  Standards  to  describe the  conformations
+resulting from the specific sets  of torsion angle values which sugars
+and  backbone  can attain  have  been developed  and  can  be seen  in
+textbooks  \cite{saenger1984}, in  the web  \cite{jenaurl}, and  in the
+IUPAC recommendations  \cite{iupac1983}. We refer the  reader to these
+sources for a  more detailed description, and limit  ourselves to show
+in Figure~\ref{fig:puckersbbone} a  brief description of these torsion
+angles.
 
 
-  Puckers
-Backbone
 
 A-RNA 
 Loops
@@ -698,10 +700,44 @@ three-dimensional space.
 
 Even  though there  is no  unique definition,  we can  think  of three
 practical  tasks regarding  RNA  motifs.   That is,  given  an RNA  3D
-structure  automatically   identify  \cite{nasalean2009,  lemieux2006,
-  duarte2003},  describe  \cite{laing2009,  laing2009a,  holbrook2008,
-  spackova2006,   reblova2003},   and   find   new   \cite{sarver2008,
-  mokdad2008, duarte2003, stonge2007, lemieux2006} motifs.
+structure    automatically    identify,   describe    \cite{laing2009,
+  laing2009a, holbrook2008,  spackova2006, reblova2003}, and  find new
+\cite{sarver2008,  mokdad2008,  duarte2003,  stonge2007,  lemieux2006}
+motifs.   For   automatic  identification  of  RNA   motifs  Pyle  and
+collaborators have  developed a software called  AMIGOS. This software
+finds RNA motifs based on specific values of backbone
+virtual torsion  angles $\nabla$ and  $\theta$ \cite{yathindra, olson,
+  duarte2003} in  a way which resembles a  Ramachandran plot analysis.
+Lemieux  and Major  \cite{lemieux2006} provide  the  software MC-Fold,
+which implicitly finds  RNA motifs based on an  algorithm to determine
+so  called nucleic  cyclic motifs,  which are  just the  minimal cycle
+basis  of an RNA  secondary structure  interpreted as  a mathematical
+graph.   Leontis \cite{nasalean2009}  and  collaborators provide  FR3D
+(read as  FRED).  F3RD  is a matlab  windows executable  program which
+finds  RNA motifs based  on the  isostericity matrices  of base-pairs.
+
+For description of RNA motifs Schlick and collaborators have used FR3D
+to localize  RNA helical junctions of order  four (four-way junctions)
+or higher, and have visually analyzed if the helices in such junctions
+form   coaxial  stacks   or   not  and   clasified  them   accordingly
+\cite{laing2009, laing2009a}.  As  mentioned previously in the context
+of  RNA  folds, Holbrook,  and  Sykes,  describe  helical regions  and
+display them in two-dimensional representations.
+
+
+so called COINS and
+provides their location in  secondary structure representations of the
+large ribosomal subunit \cite{holbrook2008}.
+
+
+
+order to produce a 3D structure from a sequence, which is based on their analysis of RNA
+secondary structures  through a  graph theoretical method  which finds
+the 
+
+
+
+
 
 \section{Overview}
 Keeping always in  mind the greater scope of  the RNA folding problem,
