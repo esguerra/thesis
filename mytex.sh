@@ -4,6 +4,6 @@ bibtex Chapter2/chapter2
 bibtex main
 bibtex Appendix/appendix2b
 makeindex main
-latex main
-latex main
+pdflatex main
+pdflatex main
 xpdf main.pdf
