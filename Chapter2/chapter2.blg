@@ -4,14 +4,14 @@ The style file: nar.bst
 Database file #1: biblio.bib
 You've used 22 entries,
             1881 wiz_defined-function locations,
-            601 strings with 7893 characters,
-and the built_in function-call counts, 5849 in all, are:
+            599 strings with 7888 characters,
+and the built_in function-call counts, 5832 in all, are:
 = -- 593
 > -- 285
 < -- 0
 + -- 103
 - -- 81
-* -- 560
+* -- 549
 := -- 922
 add.period$ -- 22
 call.type$ -- 22
@@ -19,9 +19,9 @@ change.case$ -- 21
 chr.to.int$ -- 0
 cite$ -- 22
 duplicate$ -- 200
-empty$ -- 539
+empty$ -- 536
 format.name$ -- 81
-if$ -- 1358
+if$ -- 1355
 int.to.chr$ -- 0
 int.to.str$ -- 22
 missing$ -- 23

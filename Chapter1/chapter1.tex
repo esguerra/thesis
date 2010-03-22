@@ -26,7 +26,8 @@ non-coding   RNA,    the   ribosome   \cite{schluenzen2000,   ban2000,
 Since its very beginnings,  structural understanding of RNA has proven
 to be a very complex problem. It was not until 1956, three years after
 the famous Nature triad of papers by Watson and Crick, Wilkins, Stoke,
-and  Wilson,  and  Franklin  and  Gosling  \cite{watson1953a}  on  the
+and  Wilson,  and  Franklin  and  Gosling  \cite{watson1953a,
+  wilkins1953, franklin1953}  on  the
 double-stranded structure of DNA, that Alex Rich and David Davies were
 able  to  produce   double-stranded  RNA  from  polyriboadenylic  acid
 (poly-rA)  and polyribouridylic  acid  (poly-rU) to  produce a  neatly
@@ -45,11 +46,12 @@ of new engineered ones \cite{severcan2009}.
 RNA is  a poly-nucleotide  chain, that is,  a polymer  whose monomeric
 unit  is the  nucleotide.  The  nucleotide unit  is composed  of three
 chemically distinct entities; base, sugar, and backbone. The bases can
-be of two  types, purines, i.e. adenine and  guanine, and pyrimidines,
-i.e. cytosine and uracyl as shown in Figure~\ref{fig:chemistry1}.
+be of two  types, purines (R), i.e. adenine (A) and  guanine (G), and
+pyrimidines (Y),
+i.e. cytosine (C) and uracyl (U) as shown in Figure~\ref{fig:chemistry1}.
 \begin{figure}
 \centering
-\includegraphics[scale=3.2]{Chapter1/chemistry1b.png}
+\includegraphics[scale=3.0]{Chapter1/chemistry1b.png}
 \caption{A  single strand  of  RNA drawn  in  the 5$'$  to 3$'$  sense
   showing the  main chemical entities  which compose it;  base, sugar,
   and backbone.  The four bases (A,  G, C, U) are colored according to
@@ -57,7 +59,7 @@ i.e. cytosine and uracyl as shown in Figure~\ref{fig:chemistry1}.
   backbone is colored gray, and the  sugars black. The bases G, and C,
   and the  furanose sugar  are numbered according  to the  IUPAC rules
   \cite{iupac1983}. This  figure is a  reproduction of Figure  2.1, in
-  Wolfram Saenger's book \cite{saenger1984}}
+  Wolfram Saenger's book \cite{saenger1984}.}
 \label{fig:chemistry1}
 \end{figure}  
 
@@ -76,38 +78,44 @@ Lemieux-Major \cite{lemieux2002}.
 \label{fig:saenger28}
 \end{figure}  
 
-The other  non-covalent interaction which is common  to the nucleotide
-bases  is  that  of  stacking  through London  dispersion  forces  and
+The other non-covalent interactions which are common to the nucleotide
+bases  are those  of  stacking through  London  dispersion forces  and
 electrostatic  interactions.   It  has  been hypothesized  that  $\pi$
 electron  interactions  could  also  account for  stacking,  but  very
-precise  quantum calculations  have  show otherwise  \cite{sponer1996,
-  sponer1997}.
+precise quantum calculations \cite{sponer1996, sponer1997} have show
+otherwise thus far.
 
 Sugar, and  backbone can adopt a variety  of conformations constrained
 to the values of their torsion  angles. In the case of the sugar these
 torsion angles are called puckers,  perhaps in analogy to the gestures
-made  by  human  lips. The prefered sugar pucker in RNA is called
-C$_{3'endo}$, but in cases where an intercalated base is acommodated
-between two sequential bases, the sugar pucker changes to a
-non-prefered conformation called C$2'_{2'endo}$.  Standards  to  describe the  conformations
-resulting from the specific sets  of torsion angle values which sugars
-and  backbone  can attain  have  been developed  and  can  be seen  in
-textbooks  \cite{saenger1984}, in  the web  \cite{jenaurl}, and  in the
-IUPAC recommendations  \cite{iupac1983}. We refer the  reader to these
-sources for a  more detailed description, and limit  ourselves to show
-in Figure~\ref{fig:puckersbbone} a  brief description of these torsion
-angles.
+made  by human  lips.   The prefered  sugar  pucker in  RNA is  called
+C$_{3'-\textrm{endo}}$,  but in  cases where  an intercalated  base is
+acommodated between two sequential  bases, the sugar pucker changes to
+a non-prefered  conformation called C$_{2'-\textrm{endo}}$.  Standards
+to  describe the  conformations resulting  from the  specific  sets of
+torsion angle  values which sugars  and backbone can attain  have been
+developed and can be seen  in textbooks \cite{saenger1984}, in the web
+\cite{jenaurl}, and in  the IUPAC recommendations \cite{iupac1983}. We
+refer the reader to these sources for a more detailed description, and
+limit  ourselves  to  show  in Figure~\ref{fig:puckersbbone}  a  brief
+description of these torsion angles.
 
+\begin{figure}
+\centering
+\includegraphics[scale=1.8, angle=0]{Chapter1/torsions.png}
+\caption{\textbf{Left:}      Backbone      and      Sugar      torsion
+  angles. \textbf{Right:}  The most common  sugar pucker conformations
+  in  RNA,  that is,  C3'endo  and  C2'endo,  reproduced from  Wolfram
+  Saenger's,         "Principles        of         Nucleic        Acid
+  Structure". \cite{saenger1984}.}
+\label{fig:puckersbbone}
+\end{figure}  
 
-
-A-RNA 
-Loops
-
-Reference:
-Pure \& Appl. Chem., Vol.55, No.8, pp.1273—1280, 1983
-
-\url{http://www.fli-leibniz.de/ImgLibDoc/nana/IMAGE_NANA.html}
-
+%A-RNA 
+%Loops
+%Reference:
+%Pure \& Appl. Chem., Vol.55, No.8, pp.1273—1280, 1983
+%\url{http://www.fli-leibniz.de/ImgLibDoc/nana/IMAGE_NANA.html}
 
 \section{Standard reference frame and local parameters}
 For  the  structural  description  of RNA  the  program  \textsf{3DNA}
@@ -707,7 +715,7 @@ structure automatically identify, describe,  and find new motifs.  For
 automatic  identification of  RNA motifs  Pyle and  collaborators have
 developed  a software called  AMIGOS. This  software finds  RNA motifs
 based on  specific values of backbone virtual  torsion angles $\eta$
-and  $\theta$  \cite{yathindra,  olson,  duarte2003} in  a  way  which
+and  $\theta$  \cite{olson1980, malathi1985,  duarte2003} in  a  way  which
 resembles   a   Ramachandran  plot   analysis.    Lemieux  and   Major
 \cite{lemieux2006}  provide  the  software MC-Fold,  which  implicitly
 finds RNA motifs based on  an algorithm to determine so called nucleic
