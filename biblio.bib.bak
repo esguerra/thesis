@@ -7962,6 +7962,8 @@
   year = {2008},
   volume = {56},
   pages = {215-252},
+  number = {1-2},
+  month = {Jan},
   abstract = {New methods are described for finding recurrent three-dimensional
 	(3D) motifs in RNA atomic-resolution structures. Recurrent RNA 3D
 	motifs are sets of RNA nucleotides with similar spatial arrangements.

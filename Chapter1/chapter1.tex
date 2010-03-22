@@ -42,52 +42,63 @@ of non-coding RNA  structures \cite{weinberg2009}, and the possibility
 of new engineered ones \cite{severcan2009}.
 
 \section{RNA chemistry}
-RNA is a poly-nucleotide chain, that is, the monomer of the polymer is
-the nucleotide.  The nucleotide unit  is composed of  three chemically
-distinct entities; base, sugar, and backbone. The bases can be of two
-types, purines, i.e. adenine and guanine, and pyrimidines,
-i.e. cytosine and uracyl depicted in Figure~\ref{fig:chemistry1}.
+RNA is  a poly-nucleotide  chain, that is,  a polymer  whose monomeric
+unit  is the  nucleotide.  The  nucleotide unit  is composed  of three
+chemically distinct entities; base, sugar, and backbone. The bases can
+be of two  types, purines, i.e. adenine and  guanine, and pyrimidines,
+i.e. cytosine and uracyl as shown in Figure~\ref{fig:chemistry1}.
 \begin{figure}
 \centering
-\includegraphics[scale=0.4]{Chapter1/chemistry1.png}
-\caption{A  single strand of  RNA showing  the main  chemical entities
-  which compose it; base, sugar, and backbone.  The four bases (A, G,
-  C,  U) are  colored according  to  the NDB  (Nucleic Acid  Database)
-  convention \cite{ndburl}, the backbone is colored gray, and
-  the sugars black.}
+\includegraphics[scale=3.2]{Chapter1/chemistry1b.png}
+\caption{A  single strand  of  RNA drawn  in  the 5$'$  to 3$'$  sense
+  showing the  main chemical entities  which compose it;  base, sugar,
+  and backbone.  The four bases (A,  G, C, U) are colored according to
+  the  NDB  (Nucleic  Acid  Database)  convention  \cite{ndburl},  the
+  backbone is colored gray, and the  sugars black. The bases G, and C,
+  and the  furanose sugar  are numbered according  to the  IUPAC rules
+  \cite{iupac1983}. This  figure is a  reproduction of Figure  2.1, in
+  Wolfram Saenger's book \cite{saenger1984}}
 \label{fig:chemistry1}
 \end{figure}  
 
-The bases form a diversity  of base-pairs through hydrogen bonding and
-can   be  classified   in   28  classes   as   suggested  by   Saenger
+Heterocyclic bases can form a diversity of base-pairs through hydrogen
+bonding and  can be classified in  28 classes as  suggested by Saenger
 \cite{saenger1984},   and  as   seen   in  Figure~\ref{fig:saenger28}.
-Nomenclatures which conform to Saengers classes have been developed by
-Lee-Gutell  \cite{lee2004},  Leontis-Westhof \cite{leontis2002b},  and
+Nomenclatures which  conform to Saenger's classes  have been developed
+by Lee-Gutell \cite{lee2004}, Leontis-Westhof \cite{leontis2002b}, and
 Lemieux-Major \cite{lemieux2002}.
 
 \begin{figure}
 \centering
-\includegraphics[scale=1.4, angle=90]{Chapter1/saenger28.png}
-\caption{Saenger base-pairing classes, taken from his book, "Principles of
-Nucleic Acid Structure". \cite{saenger1984}.}
+\includegraphics[scale=4.0, angle=90]{Chapter1/saenger28b.png}
+\caption{Saenger  base-pairing  classes,  reproduced  from  his  book,
+  "Principles of Nucleic Acid Structure". \cite{saenger1984}.}
 \label{fig:saenger28}
 \end{figure}  
 
+The other  non-covalent interaction which is common  to the nucleotide
+bases  is  that  of  stacking  through London  dispersion  forces  and
+electrostatic  interactions.   It  has  been hypothesized  that  $\pi$
+electron  interactions  could  also  account for  stacking,  but  very
+precise  quantum calculations  have  show otherwise  \cite{sponer1996,
+  sponer1997}.
 
-small change for dnagit
+Sugar, and  backbone can adopt a variety  of conformations constrained
+to the values of their torsion  angles. In the case of the sugar these
+torsion angles are called puckers,  perhaps in analogy to the gestures
+made  by  human  lips. The prefered sugar pucker in RNA is called
+C$_{3'endo}$, but in cases where an intercalated base is acommodated
+between two sequential bases, the sugar pucker changes to a
+non-prefered conformation called C$2'_{2'endo}$.  Standards  to  describe the  conformations
+resulting from the specific sets  of torsion angle values which sugars
+and  backbone  can attain  have  been developed  and  can  be seen  in
+textbooks  \cite{saenger1984}, in  the web  \cite{jenaurl}, and  in the
+IUPAC recommendations  \cite{iupac1983}. We refer the  reader to these
+sources for a  more detailed description, and limit  ourselves to show
+in Figure~\ref{fig:puckersbbone} a  brief description of these torsion
+angles.
 
-, and also 
 
-are hydrogen bonding and
-base stacking. RNA 
-
-Nucleotides
- Bases
-  Base-pairing
-  Base-stacking
-Sugar
-  Puckers
-Backbone
 
 A-RNA 
 Loops
@@ -692,16 +703,43 @@ three-dimensional space.
 
 Even  though there  is no  unique definition,  we can  think  of three
 practical  tasks regarding  RNA  motifs.   That is,  given  an RNA  3D
-structure  automatically   identify  \cite{nasalean2009,  lemieux2006,
-  duarte2003},  describe  \cite{laing2009,  laing2009a,  holbrook2008,
-  spackova2006,   reblova2003},   and   find   new   \cite{sarver2008,
-  mokdad2008, duarte2003, stonge2007, lemieux2006} motifs.
+structure automatically identify, describe,  and find new motifs.  For
+automatic  identification of  RNA motifs  Pyle and  collaborators have
+developed  a software called  AMIGOS. This  software finds  RNA motifs
+based on  specific values of backbone virtual  torsion angles $\eta$
+and  $\theta$  \cite{yathindra,  olson,  duarte2003} in  a  way  which
+resembles   a   Ramachandran  plot   analysis.    Lemieux  and   Major
+\cite{lemieux2006}  provide  the  software MC-Fold,  which  implicitly
+finds RNA motifs based on  an algorithm to determine so called nucleic
+cyclic  motifs, which  are  just the  minimal  cycle basis  of an  RNA
+secondary  structure  interpreted as  a  mathematical graph.   Leontis
+\cite{nasalean2009}  and collaborators  provide FR3D  (read  as FRED).
+F3RD is  a matlab  windows executable program  which finds  RNA motifs
+based on the isostericity matrices of base-pairs.
+
+For description of RNA motifs Schlick and collaborators have used FR3D
+to  localize  RNA helical  junctions  of  order  four (i.e.   four-way
+junctions) or  higher, and performed a  visual analysis to  see if the
+helices  in  such junctions  form  coaxial  stacks  or not,  and  have
+classified   them   accordingly   \cite{laing2009,  laing2009a}.    As
+mentioned previously in the context of RNA folds, Holbrook, and Sykes,
+describe   helical  regions  and   display  them   in  two-dimensional
+representations. Sponer's group has carried out the description of RNA
+motifs present  in the ribosome using Molecular  Dynamics (MD) methods
+implemented  in   the  AMBER   package.   They  have   performed  25ns
+simulations  of   the  Sarcin-Ricin  Domain  (SRD)   of  the  ribosome
+\cite{spackova2006}, and also 80ns  simulations of hydration of loop E
+in the 5S subunit of the ribosome \cite{reblova2003}.
+
+The software programs which perform the task of identifying RNA motifs
+in RNA structures also have the ability to find new RNA motifs, as is
+the case for AMIGOS, MC-Fold, and FR3D.
 
 \section{Overview}
 Keeping always in  mind the greater scope of  the RNA folding problem,
 this thesis  addresses various issues of  RNA structural understanding
 using RNA crystallographic data from the Protein Data Bank (PDB). Such
-data  has been  analyzed statistically  in terms  of a  very rigourous
+data  has been  analyzed statistically  in terms  of a rigourous
 rigid-body formalism.  In Chapter 2 the consensus clustering technique
 is   used  to   classify   RNA  base-step   parameters  of   non-A-RNA
 conformations, and  the resulting groups are  localized and understood

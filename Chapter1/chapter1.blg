@@ -1,51 +1,65 @@
 This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: Chapter1/chapter1.aux
 The style file: nar.bst
-Database file #1: biblio.bib
-Warning--can't use both author and editor fields in burkard1999b
-ptr=1, stack=
-RNA 3D Structural Motifs: Definition, Identification, Annotation, and Database Searching
----the literal stack isn't empty for entry nasalean2009
-while executing---line 2203 of file nar.bst
-You've used 105 entries,
+I found no \bibdata command---while reading file Chapter1/chapter1.aux
+Warning--I didn't find a database entry for "woese1967"
+Warning--I didn't find a database entry for "crick1968"
+Warning--I didn't find a database entry for "orgel1968"
+Warning--I didn't find a database entry for "orgel2004"
+Warning--I didn't find a database entry for "fire1998"
+Warning--I didn't find a database entry for "schluenzen2000"
+Warning--I didn't find a database entry for "ban2000"
+Warning--I didn't find a database entry for "wimberly2000"
+Warning--I didn't find a database entry for "watson1953a"
+Warning--I didn't find a database entry for "weinberg2009"
+Warning--I didn't find a database entry for "severcan2009"
+Warning--I didn't find a database entry for "ndburl"
+Warning--I didn't find a database entry for "iupac1983"
+Warning--I didn't find a database entry for "saenger1984"
+Warning--I didn't find a database entry for "lee2004"
+Warning--I didn't find a database entry for "leontis2002b"
+Warning--I didn't find a database entry for "lemieux2002"
+Warning--I didn't find a database entry for "sponer1996"
+Warning--I didn't find a database entry for "sponer1997"
+You've used 0 entries,
             1881 wiz_defined-function locations,
-            1063 strings with 23483 characters,
-and the built_in function-call counts, 27797 in all, are:
-= -- 2823
-> -- 1268
-< -- 8
-+ -- 464
-- -- 359
-* -- 2663
-:= -- 4275
-add.period$ -- 105
-call.type$ -- 105
-change.case$ -- 100
+            479 strings with 3808 characters,
+and the built_in function-call counts, 20 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 9
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 106
-duplicate$ -- 980
-empty$ -- 2616
-format.name$ -- 359
-if$ -- 6493
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 105
-missing$ -- 110
-newline$ -- 526
-num.names$ -- 104
-pop$ -- 142
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 381
+skip$ -- 1
 stack$ -- 0
-substring$ -- 2295
-swap$ -- 132
-text.length$ -- 8
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 210
-width$ -- 108
-write$ -- 950
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
 (There was 1 error message)
