@@ -11,11 +11,12 @@ The problem of classification of the space of conformations
 of RNA  is not  new, see for  example, Olson  1972 \cite{olson1_1972},
 Saenger     1984     \cite{saenger1984},     and    Gautheret     1993
 \cite{gautheret1993}.  This  problem had only been addressed  by a few
-researchers before the turn of  the twenty first century, but starting
-in  the year  2000 a  vast amount  of RNA  structural  information has
-become  available with  the elucidation  of the  structure of  the 30S
-small ribosomal subunit  of \textit{Thermus thermophilus}, a bacterial
-ribosome \cite{wimberly2000, schluenzen2000}, and the 50S large
+researchers  before the  turn of  the twenty  first century,  now this
+situation is changing rapidly. The reason for this fast change came in
+the year 2000, when a vast amount of RNA structural information became
+available  due the  elucidation  of  the structure  of  the 30S  small
+ribosomal  subunit  of   \textit{Thermus  thermophilus},  a  bacterial
+ribosome  \cite{wimberly2000,  schluenzen2000},   and  the  50S  large
 ribosomal subunit of \textit{Haloarcula marismortui}, an archaeal
 %\footnote{I emphasize the  phylogeny of rRNA's here since  there is an
 %  ongoing discussion among biologists on whether archaea are closer to
@@ -38,18 +39,17 @@ bases are found  in the Protein Data Bank (PDB),  and between 2000 and
 today  a  total of  931  RNA\index{RNA}  structures comprising  491158
 nucleotide bases are found.  That  is, the increase in information due
 to  the  solution of  large  RNA structures  is  about  two orders  of
-magnitude as pointed out by Noller \cite{noller2005}.  Looking at the
+magnitude as pointed out  by Noller \cite{noller2005}.  Looking at the
 growth  of RNA  structural information  from 2000  until today,  it is
 clear that  both the total number  of RNA structures  deposited to the
 PDB, and the total number  of nucleotide bases in these structures, is
-growing    in   an   exponential    way   (as    can   be    seen by
-the exponential fits  in
-Figure~\ref{fig:rnainpdb}).  It's important to  note that  such growth
-comes mainly from ribosomal structures which contain 88 percent of all
-RNA bases in  the PDB.  So, even though structural  interest in RNA is
-growing  since  ribosomal structures  became  available  in 2000,  and
-several Nobel prizes  have been awarded for work  in this field, along
-with   the   exciting   possibilities   of   deciphering   large   RNA
+growing in an exponential way (as  can be seen by the exponential fits
+in  Figure~\ref{fig:rnainpdb}).   It's  important  to note  that  such
+growth comes mainly from ribosomal structures which contain 88 percent
+of all RNA  bases in the PDB.  So, even  though structural interest in
+RNA is  growing since ribosomal  structures became available  in 2000,
+and several  Nobel prizes  have been awarded  for work in  this field,
+along  with  the  exciting  possibilities  of  deciphering  large  RNA
 \cite{weinberg2009}  structures  other than  the  ribosome, still  the
 growth of  the RNA structural  field is far  from that of  proteins if
 weighed by  the growth in  diversity of RNA structural  information in
@@ -59,10 +59,14 @@ Figure~\ref{fig:rnaranges}  it's clear  that there  are  great patches
 where there are no RNA  structures whatsoever, roughly between 600 and
 1400 bases  and between  1800 and 2700  bases. The area  of non-coding
 RNA's holds great promise for  finding structured RNA's in such length
-ranges as has recently been suggested by Breaker \cite{weinberg2009}
-A representative example of the characteristic ranges of RNA
-structures available to date in the PDB can be seen in
-Table~\ref{tab:rnarange} for structures larger than 300 bases.
+ranges    as    has     recently    been    suggested    by    Breaker
+\cite{weinberg2009}.  A representative  example of  the characteristic
+ranges of RNA  structures available to date in the PDB  can be seen in
+Table~\ref{tab:rnarange}  for structures  larger than  300  bases.  An
+interesting comparison between the  total number of structures of RNA,
+protein, dna, and nucleic acid plus protein, available at the PDB from
+the   seventies    until   today    can   be   seen    in   Supplement
+Figure~\ref{fig:allpolypdb}.
 
 \begin{figure}[H]
 \centering
@@ -91,12 +95,14 @@ one   glycosidic   torsion   angle   \cite{reijmers2001,   murray2003,
   hershkovitz2003,  schneider2004, hershkovitz2006};  or alternatively
 the  pseudo-bonds between consecutive  P and  C4$^{\rm{\prime}}$ atoms
 and   the  resulting   pseudo-torsion  angles   $\eta$   and  $\theta$
-\cite{olson1_1972,  duarte1998,  duarte2003,  wadley2007}.  The  third
-category  considers  the   networks  of  horizontal  hydrogen  bonding
-patterns coming  from a definition  of interacting edge  boundaries in
-the nucleotide bases  \cite{westhof2000, leontis2002, leontis2006}. In
-this  chapter  we  study   the  rigid  body  based  perspective  using
-clustering analysis.
+\cite{olson1_1972,               duarte1998,               duarte2003,
+  wadley2007} \footnote{Previously the pseudotorsion angles $\eta$ and
+  $\theta$    were    given     the    names    $\omega_{\nu}$,    and
+  $\omega_{\nu\rm{\prime}}$.\cite{malathi1985}}.   The  third category
+considers the networks of  horizontal hydrogen bonding patterns coming
+from  a definition of  interacting edge  boundaries in  the nucleotide
+bases \cite{westhof2000, leontis2002, leontis2006}. In this chapter we
+study the rigid body based perspective using clustering analysis.
 \begin{table}[htbp]
 \begin{center}
 {\small
@@ -139,13 +145,13 @@ distances.
 \end{figure}
 
 \subsection{Combining Fourier Averaging Results and Clustering Analysis}
-Using  the  coordinates  files  of  20  rRNA  structures  provided  by
-Schneider at al.\cite{schneider2004}  we used standard clustering
+Using  the  coordinate  files  of  20  rRNA  structures  provided  by
+Schneider  at  al.\cite{schneider2004}  we  used  standard  clustering
 analysis  (CA)  techniques (see  Appendix  A)  to  classify a  set  of
-non-ARNA  base-steps  using, rather  than  the more common torsion
-angles  space,   the  base-step  parameters  space,   that  is,  three
-translational parameters (Shift $D_x$, Slide $D_y$, Rise $D_z$), and
-three rotational parameters (Tilt $\tau$, Roll $\rho$, Twist $\omega$),
+non-ARNA base-steps using, rather  than the more common torsion angles
+space, the  base-step parameters  space, that is,  three translational
+parameters  (Shift   $D_x$,  Slide  $D_y$,  Rise   $D_z$),  and  three
+rotational  parameters  (Tilt $\tau$,  Roll  $\rho$, Twist  $\omega$),
 which we describe with the hexaparametric vector $\nu$:
 \begin{gather}
  \nu = (D_x, D_y, D_z, \tau, \rho, \omega)
@@ -184,13 +190,14 @@ extended conformations with bases  perpendicular to one another and is
 formed by structures {8, 9, 17}, Group  IV {18, 19, 20, 13, 11, 12, 5,
   3, 6, 7, 2, 4} contains  four major subgroups: (a) structures {2, 4}
 which are unstacked with bases neither parallel nor perpendicular; (b)
-structures {18, 19,  20} which are A-RNA related; (c) structures {11,
+structures {18, 19,  20} which closely related to A-RNA; (c) structures {11,
   12,  13}  which are  unstacked  and  have  parallel bases;  and  (d)
 structures {3,  5, 6,  7} which are  also unstacked and  have parallel
 bases. We also see in Group IV that the conformers in subgroups IV (c)
 and  IV (d)  are closely  related  and that  the dimers  in these  two
 subgroups are more closely related to those in subgroup IV (b) than to
 those in subgroup IV (a).
+
 
 When looking at Table~\ref{tab:nonA}, it's clear that there are 1858
 steps (67\%) which are not classified into any of the groups. The reason for
@@ -204,9 +211,6 @@ Perhaps it would be wise to filter the data by proximity to A-RNA like
 conformation, say, take all structures which are some RMSD, or
 manhattan, or euclidean distance appart from the cannonical A-RNA step
 parameters which are in table such and such.
-
-Leave this argument for second part.
-
 
 
 Table~\ref{tab:nonA}  shows  the

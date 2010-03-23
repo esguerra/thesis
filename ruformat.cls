@@ -6,7 +6,7 @@
 % Class description
 \NeedsTeXFormat{LaTeX2e}
 \def\fileversion{1.2}
-\def\filedate{3/22/95}
+\def\filedate{3/23/2010}
 \ProvidesClass{ruformat}[\filedate\space v\fileversion\space
              Standard LaTeX2e document class]
 % this style is really a driver for the report style, so pass all
@@ -96,7 +96,7 @@
                         % headsep + headheight + topmargin ~ 72 pt
 \textheight 648bp       % Height of text (including footnotes and  %%% was 620
                         % figures, excluding running head and foot).
-% Chanke textwidth to give 1.0 in not 1.5 in
+% Change textwidth to give 1.0in not 1.5in
 %\textwidth 412bp        % Give 92pt right margin;72 + extra for overfull boxes.
 \textwidth 432bp        % Give 92pt right margin;72 + extra for overfull boxes.
 % disappeared from LaTeX\footheight 11bp        %    Height of box containing running foot.
@@ -124,9 +124,9 @@
 %  font size that is used in the report style. Must  modify fonts used for 
 % other sectioning commands also.
 \newcommand\chapter@topskip{\null\vskip40bp} % Chapters sink this much before
-                                      % output.
+                                             % output.
 \newcommand\chapter@bottomskip{\vskip30bp} % Chapters sink this much
-                                         % after output. 
+                                           % after output. 
 \def\@makechapterhead#1{\chapter@topskip { \parindent 0pt \centering
 % Next line controls that Chapter # will show as Large and Boldface 
  \ifnum \c@secnumdepth >\m@ne {\Large \bf \@chapapp{} \thechapter}
@@ -562,4 +562,5 @@
  -1ex minus -.2ex}{1.5ex plus .2ex}{\centering\large\bfseries}}
 \newcommand\heading{\tempheading*}
 \newcommand\subheading{\subsection*}
+
 

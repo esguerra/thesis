@@ -210,7 +210,7 @@ Fast {F}olding and {C}omparison of {RNA} {S}econdary {S}tructures.
 {\em Monatshefte fur {C}hemie,} {\bf 125}, 167--188.
 
 \bibitem{borer1974}
-Borer, P.~N., Dengler, B., Tinoco, J.~I., and Uhlenbeck, O.~C. (1974)
+Borer, P.~N., Dengler, B., Tinoco, I., and Uhlenbeck, O.~C. (1974)
 {Stability of Ribonucleic Acid Double-Stranded Helices}.
 {\em Journal of {M}olecular {B}iology,} {\bf 86}, 843--853.
 
@@ -321,7 +321,7 @@ Zhuang, X. and Rief, M. (2003)
 {\em Current Opinion in Structural Biology,} {\bf 13}, 88--97.
 
 \bibitem{liphardt2001}
-Liphardt, J., Onoa, B., Smith, S., Jr., I.~T., and Bustamante, C. (2001)
+Liphardt, J., Onoa, B., Smith, S., Tinoco, I., and Bustamante, C. (2001)
 {Reversible Unfolding of Single RNA Molecules by Mechanical Force}.
 {\em Science,} {\bf 292}, 733--737.
 
@@ -349,7 +349,7 @@ Crooks, G.~E. (1999)
 {\em Physical Review E,} {\bf 60}, 2721--2726.
 
 \bibitem{collin2005}
-Collin, D., F.Ritort, Jarzynski, C., Smith, S.~B., Jr., I.~T., and Bustamante,
+Collin, D., F.Ritort, Jarzynski, C., Smith, S.~B., Tinoco, I., and Bustamante,
   C. (2005)
 {Verification of the Crooks Fluctuation Theorem and Recovery of RNA Folding
   Free Energies}.
@@ -427,7 +427,7 @@ Burkard, M.~E., Kierzek, R., and Turner, D.~H. (1999)
 {\em Journal of Molecular Biology,} {\bf 290}, 967--982.
 
 \bibitem{burkard1999b}
-Burkard, M.~E., Turner, D.~H., and Jr., I.~T.
+Burkard, M.~E., Turner, D.~H., and Tinoco, I.
 The {RNA} {W}orld chapter 10. The Interactions That Shape RNA Structure, pp.
   233--264
 Cold Spring Harbor Laboratory Press  2nd edition (1999).
@@ -588,6 +588,18 @@ Holbrook, S.~R. (2005)
 Leontis, N.~B. and Westhof, E. (2003)
 {Analysis of RNA Motifs}.
 {\em Current Opinion in Structural Biology,} {\bf 13}, 300--308.
+
+\bibitem{olson1980}
+Olson, W.~K. (1980)
+{Configurational Statistics of Polynucleotide Chains. An Updated Virtual Bond
+  Model to Treat Effects of Base Stacking}.
+{\em Macromolecules,} {\bf 13}, 721--728.
+
+\bibitem{malathi1985}
+Malathi, R. and Yathindra, N. (1985)
+{Backbone Conformation in Nucleic Acids: An Analysis of Local Helicity Through
+  Heminucleotide Scheme and a Proposal for a Unified Conformational Plot}.
+{\em Journal of Biomolecular Structure and Dynamics,} {\bf 3}, 127--144.
 
 \bibitem{duarte2003}
 Duarte, C.~M., Wadley, L.~M., and Pyle, A.~M. (2003)
