@@ -156,15 +156,15 @@ which we describe with the hexaparametric vector $\nu$:
 \begin{gather}
  \nu = (D_x, D_y, D_z, \tau, \rho, \omega)
 \end{gather}
-The results illustrated in Figures~\ref{fig:eucl_cons} ~\ref{fig:steps2}
-and~\ref{fig:nonAclus} were obtained by performing clustering analysis
-and consensus clustering on 20 structures provided by Schneider et al.
-\cite{schneider2004}.   These  twenty   structures  were  obtained  by
-Schneider applying a  Fourier averaging technique, and lexicographical
-clustering, to  torsion angles of  23S rRNA.  The methodology  we used
-follows   that  used  by   others  to   recover  the   periodic  table
-classification  from multidimensional  property  vectors for  elements
-\cite{restrepo2004, restrepo2006}.
+The     results     illustrated     in     Figures~\ref{fig:eucl_cons}
+~\ref{fig:steps2}  and~\ref{fig:nonAclus} were obtained  by performing
+clustering analysis and consensus clustering on 20 structures provided
+by  Schneider et al.   \cite{schneider2004}.  These  twenty structures
+were obtained by Schneider applying a Fourier averaging technique, and
+lexicographical  clustering,  to  torsion  angles of  23S  rRNA.   The
+methodology  we  used follows  that  used  by  others to  recover  the
+periodic table  classification from multidimensional  property vectors
+for elements \cite{restrepo2004, restrepo2006}.
 \begin{figure}[htbp]
  \centering
 \includegraphics[angle=90, scale=0.6]{Chapter2/eucli_cons_nonA-RNA.png}
@@ -182,21 +182,23 @@ consensus clustering of their hexadimensional base-step parameter vectors.}
  \label{fig:nonAclus}
 \end{figure}
 
-Group I  contains a single structure {1}  with base-plane normals
-pointing   in  opposite   directions,  Group   II   includes  extended
-conformations with neighboring bases  roughly parallel but not stacked
-and is formed by structures {15,  16, 10, 14}, Group III also contains
-extended conformations with bases  perpendicular to one another and is
-formed by structures {8, 9, 17}, Group  IV {18, 19, 20, 13, 11, 12, 5,
-  3, 6, 7, 2, 4} contains  four major subgroups: (a) structures {2, 4}
-which are unstacked with bases neither parallel nor perpendicular; (b)
-structures {18, 19,  20} which closely related to A-RNA; (c) structures {11,
-  12,  13}  which are  unstacked  and  have  parallel bases;  and  (d)
-structures {3,  5, 6,  7} which are  also unstacked and  have parallel
-bases. We also see in Group IV that the conformers in subgroups IV (c)
-and  IV (d)  are closely  related  and that  the dimers  in these  two
-subgroups are more closely related to those in subgroup IV (b) than to
-those in subgroup IV (a).
+
+
+The main features we see are that Group I contains a seven structure
+{1} with base-plane normals  pointing in opposite directions, Group II
+includes  extended   conformations  with  neighboring   bases  roughly
+parallel but not stacked and is formed by structures {15, 16, 10, 14},
+Group   III   also   contains   extended  conformations   with   bases
+perpendicular to one  another and is formed by  structures {8, 9, 17},
+Group IV  {18, 19, 20,  13, 11, 12,  5, 3, 6,  7, 2, 4}  contains four
+major subgroups: (a) structures {2,  4} which are unstacked with bases
+neither parallel nor perpendicular;  (b) structures {18, 19, 20} which
+closely  related to  A-RNA;  (c)  structures {11,  12,  13} which  are
+unstacked and  have parallel  bases; and (d)  structures {3, 5,  6, 7}
+which are also unstacked and have parallel bases. We also see in Group
+IV that  the conformers  in subgroups  IV (c) and  IV (d)  are closely
+related and  that the dimers in  these two subgroups  are more closely
+related to those in subgroup IV (b) than to those in subgroup IV (a).
 
 
 When looking at Table~\ref{tab:nonA}, it's clear that there are 1858
@@ -223,33 +225,23 @@ non-Atype groups identified.
 \begin{table}[htbp]
 \begin{center}
 {\footnotesize
-\begin{tabular}{p{3cm}|p{1,3cm}|c|c|p{3cm}|p{3cm}}
+\begin{tabular}{p{3cm}|p{1,3cm}|p{3cm}}
 \hline
-\bf{Total Number of Nucleotides} & \bf{RMSD Limit} & \bf{Group}
-& \bf{Base-steps} & \bf{Base-step Residue Number}
-& \bf{Overlaps} \\ \hline
-2754 & $ < 15$ & I & 3 & 892, 2006, 2390 &  \\ \hline
- &  & II & 5 & 459, 1279, 1653, 1919, 2302 &  \\ \hline
- &  & III & 1 & 2109 &  \\ \hline
- &  & IV & 35 & 79, 112, 128, 190, 213, 269, 358, 434, 488, 564, 706,
- 720, 775, 867, 966, 1292, 1503, 1543, 1614, 1766, 1874, 1908,
- 1971, 2017, 2257, 2427, 2516, 2540, 2755, 2782, 2810, 2826,
- 2874, 2882, 2913 &  \\ \hline
- &  & IVa & 1 & 882 &  \\ \hline
- &  & IVb & 807 &  &  \\ \hline
- &  & IVc & 9 & 306, 789, 854, 880, 1107, 1192, 1493, 1818, 2005 &  \\ \hline
- &  & IVd & 35 & 175, 213, 246, 264, 304, 358, 464, 518, 531, 534,
- 588, 795, 938, 1214, 1231, 1316, 1340, 1370, 1605, 1745, 1766, 
- 1971, 1976, 2010, 2017, 2291, 2320, 2428, 2469, 2481, 2516, 2532, 
- 2755, 2826, 2882 & Only IVd with IV (213, 358, 1766, 1971, 2017, 
- 2516, 2755, 2826, 2882) \\ \hline
+\bf{Number of Base-Steps} & \bf{Group} & \bf{Percentage}\\ \hline
+7    & I   & 0.25   \\ \hline
+28   & II  & 1.02   \\ \hline
+32   & III & 1.16   \\ \hline
+10   & IVa & 0.36   \\ \hline
+1995 & IVb & 72.47  \\ \hline
+45   & IVc & 1.63   \\ \hline
+268  & IVd & 9.73   \\ \hline
 \end{tabular}
 }
-\caption{Residue numbers for base-steps  with RMSD values less than 15
-between  the  reference base-step  vectors  from  the  four groups  of
+\caption{Number of base-steps  with RMSD values less than 1 \AA
+between  the  reference base-step vectors  from  the  four groups  of
 non-A-type  RNA dinucleotide conformations  and all  base-step vectors
-found  in  the 23S  strand  of  \textit{Haloarcula marismortui}  large
-ribosomal subunit.}
+found  in  the 23S  strand  of  \textit{Haloarcula marismortui}. The percentage is calculated with respect to a
+total of 2753 base-steps present in the 23S chain.}
 \label{tab:nonA}
 \end{center}
 \end{table}

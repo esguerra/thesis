@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.12.9)  23 MAR 2010 17:08
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.12.9)  24 MAR 2010 17:29
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -520,203 +520,207 @@ Overfull \hbox (15.46913pt too wide) in paragraph at lines 73--76
  [][] 
  []
 
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 101.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 101.
-
-LaTeX Warning: Citation `malathi1985' in file `Chapter2/chapter2' on page 22 un
-defined on input line 101.
-
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 9.49997pt on input line 108.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 111.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 9.49997pt on input line 111.
-<Chapter2/murray2003.png, id=797, 351.3125pt x 430.60875pt>
+<Chapter2/murray2003.png, id=798, 351.3125pt x 430.60875pt>
 File: Chapter2/murray2003.png Graphic file (type png)
 
 <use Chapter2/murray2003.png> [22 <./Chapter2/histogram.png>] [23 <./Chapter2/m
 urray2003.png>]
-<Chapter2/eucli_cons_nonA-RNA.png, id=827, 1123.19624pt x 778.91pt>
+<Chapter2/eucli_cons_nonA-RNA.png, id=828, 1123.19624pt x 778.91pt>
 File: Chapter2/eucli_cons_nonA-RNA.png Graphic file (type png)
 
 <use Chapter2/eucli_cons_nonA-RNA.png>
 
 LaTeX Warning: Float too large for page by 32.27849pt on input line 175.
 
-<Chapter2/collageb.png, id=828, 1204.5pt x 930.47626pt>
+<Chapter2/collageb.png, id=829, 1284.8pt x 992.70876pt>
 File: Chapter2/collageb.png Graphic file (type png)
 
 <use Chapter2/collageb.png>
-Underfull \hbox (badness 10000) in paragraph at lines 227--227
-[]\T1/phv/b/n/9 RMSD
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
-[]\T1/phv/b/n/9 Base-step Residue
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--231
-[]\T1/phv/m/n/9 459, 1279, 1653,
- []
-
-
-Underfull \hbox (badness 2932) in paragraph at lines 233--236
-[]\T1/phv/m/n/9 79, 112, 128, 190,
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 233--236
-\T1/phv/m/n/9 213, 269, 358, 434,
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 233--236
-\T1/phv/m/n/9 488, 564, 706, 720,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
-\T1/phv/m/n/9 1503, 1543, 1614,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
-\T1/phv/m/n/9 1766, 1874, 1908,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
-\T1/phv/m/n/9 1971, 2017, 2257,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
-\T1/phv/m/n/9 2427, 2516, 2540,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
-\T1/phv/m/n/9 2755, 2782, 2810,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
-\T1/phv/m/n/9 2826, 2874, 2882,
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 239--239
-[]\T1/phv/m/n/9 306, 789, 854, 880,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
-\T1/phv/m/n/9 1107, 1192, 1493,
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 240--243
-[]\T1/phv/m/n/9 175, 213, 246, 264,
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 240--243
-\T1/phv/m/n/9 304, 358, 464, 518,
- []
-
-
-Underfull \hbox (badness 1052) in paragraph at lines 240--243
-\T1/phv/m/n/9 531, 534, 588, 795,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
-\T1/phv/m/n/9 938, 1214, 1231,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
-\T1/phv/m/n/9 1316, 1340, 1370,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
-\T1/phv/m/n/9 1605, 1745, 1766,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
-\T1/phv/m/n/9 1971, 1976, 2010,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
-\T1/phv/m/n/9 2017, 2291, 2320,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
-\T1/phv/m/n/9 2428, 2469, 2481,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--243
-\T1/phv/m/n/9 2516, 2532, 2755,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-\T1/phv/m/n/9 358, 1766, 1971,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-\T1/phv/m/n/9 2017, 2516, 2755,
- []
-
-<Chapter2/hartigan_nuclu_steps_b.png, id=834, 1123.19624pt x 778.91pt>
-File: Chapter2/hartigan_nuclu_steps_b.png Graphic file (type png)
-
-<use Chapter2/hartigan_nuclu_steps_b.png> [24] [25 <./Chapter2/eucli_cons_nonA-
-RNA.png (PNG copy)>] [26 <./Chapter2/collageb.png>] [27]
-<Chapter2/pam_asw_2_80_steps.png, id=857, 560.8152pt x 808.7013pt>
-File: Chapter2/pam_asw_2_80_steps.png Graphic file (type png)
-
-<use Chapter2/pam_asw_2_80_steps.png>
-<Chapter2/clussdissim.png, id=859, 798.985pt x 1129.21875pt>
-File: Chapter2/clussdissim.png Graphic file (type png)
-
-<use Chapter2/clussdissim.png>
-Overfull \hbox (9.63931pt too wide) in paragraph at lines 319--322
+Overfull \hbox (26.59778pt too wide) in paragraph at lines 179--181
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 35.89203pt on input line 324.
+LaTeX Warning: Float too large for page by 0.62909pt on input line 183.
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 228.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.54997pt on input line 228.
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
+[]\T1/phv/b/n/9 RMSD
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--355
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+[]\T1/phv/b/n/9 Base-step Residue
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
+[]\T1/phv/m/n/9 459, 1279, 1653,
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 234--237
+[]\T1/phv/m/n/9 79, 112, 128, 190,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 234--237
+\T1/phv/m/n/9 213, 269, 358, 434,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 234--237
+\T1/phv/m/n/9 488, 564, 706, 720,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/phv/m/n/9 1503, 1543, 1614,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/phv/m/n/9 1766, 1874, 1908,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/phv/m/n/9 1971, 2017, 2257,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/phv/m/n/9 2427, 2516, 2540,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/phv/m/n/9 2755, 2782, 2810,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--237
+\T1/phv/m/n/9 2826, 2874, 2882,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 240--240
+[]\T1/phv/m/n/9 306, 789, 854, 880,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+\T1/phv/m/n/9 1107, 1192, 1493,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 241--244
+[]\T1/phv/m/n/9 175, 213, 246, 264,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 241--244
+\T1/phv/m/n/9 304, 358, 464, 518,
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 241--244
+\T1/phv/m/n/9 531, 534, 588, 795,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+\T1/phv/m/n/9 938, 1214, 1231,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+\T1/phv/m/n/9 1316, 1340, 1370,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+\T1/phv/m/n/9 1605, 1745, 1766,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+\T1/phv/m/n/9 1971, 1976, 2010,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+\T1/phv/m/n/9 2017, 2291, 2320,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+\T1/phv/m/n/9 2428, 2469, 2481,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
+\T1/phv/m/n/9 2516, 2532, 2755,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+\T1/phv/m/n/9 358, 1766, 1971,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+\T1/phv/m/n/9 2017, 2516, 2755,
+ []
+
+<Chapter2/hartigan_nuclu_steps_b.png, id=835, 1123.19624pt x 778.91pt>
+File: Chapter2/hartigan_nuclu_steps_b.png Graphic file (type png)
+
+<use Chapter2/hartigan_nuclu_steps_b.png> [24] [25 <./Chapter2/eucli_cons_nonA-
+RNA.png (PNG copy)>] [26 <./Chapter2/collageb.png>] [27]
+<Chapter2/pam_asw_2_80_steps.png, id=858, 560.8152pt x 808.7013pt>
+File: Chapter2/pam_asw_2_80_steps.png Graphic file (type png)
+
+<use Chapter2/pam_asw_2_80_steps.png>
+<Chapter2/clussdissim.png, id=860, 798.985pt x 1129.21875pt>
+File: Chapter2/clussdissim.png Graphic file (type png)
+
+<use Chapter2/clussdissim.png>
+Overfull \hbox (9.63931pt too wide) in paragraph at lines 320--323
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 35.89203pt on input line 325.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 []\T1/phv/b/n/10 Structure
  []
 
-<Chapter2/hartigan_tor_b.png, id=863, 1123.19624pt x 778.91pt>
+<Chapter2/hartigan_tor_b.png, id=864, 1123.19624pt x 778.91pt>
 File: Chapter2/hartigan_tor_b.png Graphic file (type png)
 
 <use Chapter2/hartigan_tor_b.png>
-<Chapter2/lloyd_tor_b.png, id=864, 1123.19624pt x 778.91pt>
+<Chapter2/lloyd_tor_b.png, id=865, 1123.19624pt x 778.91pt>
 File: Chapter2/lloyd_tor_b.png Graphic file (type png)
 
 <use Chapter2/lloyd_tor_b.png>
-<Chapter2/forgy_tor_b.png, id=865, 1123.19624pt x 778.91pt>
+<Chapter2/forgy_tor_b.png, id=866, 1123.19624pt x 778.91pt>
 File: Chapter2/forgy_tor_b.png Graphic file (type png)
 
 <use Chapter2/forgy_tor_b.png>
-<Chapter2/macqueen_tor_b.png, id=866, 1123.19624pt x 778.91pt>
+<Chapter2/macqueen_tor_b.png, id=867, 1123.19624pt x 778.91pt>
 File: Chapter2/macqueen_tor_b.png Graphic file (type png)
 
 <use Chapter2/macqueen_tor_b.png> (./Chapter2/chapter2.bbl [28 <./Chapter2/hart
@@ -777,7 +781,12 @@ entifier (name{cite.duarte2003}) has been already used, duplicate ignored
 l.93 \bibitem{duarte2003}
                           [35
 
-])) [36]
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.malathi
+1985}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 \bibitem{malathi1985}
+                           )) [36]
 \openout2 = `Supplement/supplements.aux'.
 
  (./Supplement/supplements.tex
@@ -798,11 +807,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\hbox' on input line 1.
 
-<Supplement/collage2.png, id=911, 1204.5pt x 930.47626pt>
+<Supplement/collage2.png, id=912, 1204.5pt x 930.47626pt>
 File: Supplement/collage2.png Graphic file (type png)
 
 <use Supplement/collage2.png>
-<Supplement/allmolecules_per_year.png, id=912, 1123.19624pt x 778.91pt>
+<Supplement/allmolecules_per_year.png, id=913, 1123.19624pt x 778.91pt>
 File: Supplement/allmolecules_per_year.png Graphic file (type png)
 
 <use Supplement/allmolecules_per_year.png>
@@ -832,20 +841,16 @@ No file Supplement/supplements.bbl.
 (./titles.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
 (./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
 (./Chapter6/chapter6.aux) (./Appendix/appendix2a.aux)
-(./Appendix/appendix2b.aux) (./Supplement/supplements.aux) (./CV/cv.aux))
-
-LaTeX Warning: There were undefined references.
-
- )
+(./Appendix/appendix2b.aux) (./Supplement/supplements.aux) (./CV/cv.aux)) )
 (\end occurred when \iftrue on line 68 was incomplete) 
 Here is how much of TeX's memory you used:
  5229 strings out of 256216
  70076 string characters out of 1917072
- 145206 words of memory out of 1500000
+ 145239 words of memory out of 1500000
  8036 multiletter control sequences out of 10000+200000
  48751 words of font info for 74 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 34i,14n,39p,1041b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 28i,14n,39p,1041b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
 pdfTeX warning (dest): na
 me{figure.5.3} has been referenced but does not exist, replaced by a fixed one
 
@@ -926,9 +931,9 @@ y/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/
 texmf/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/urw/helvet
 ic/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share
 /texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (47 pages, 5157672 bytes).
+Output written on main.pdf (47 pages, 5119635 bytes).
 PDF statistics:
- 1088 PDF objects out of 1200 (max. 8388607)
+ 1089 PDF objects out of 1200 (max. 8388607)
  274 named destinations out of 1000 (max. 131072)
  351 words of extra memory for PDF output out of 10000 (max. 10000000)
 
