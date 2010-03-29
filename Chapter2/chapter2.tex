@@ -25,11 +25,11 @@ ribosome \cite{ban2000}.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.38]{Chapter2/rna2000_2009copy.png}
-\caption{\textbf{Right:} Total  number of RNA  bases added to  the PDB
-database  between 2000 and  2010 (Exponential fit line in
-blue). \textbf{Left:}  Total number  of RNA structures  solved yearly
-by X-Ray  crystallography between  2000 and 2010 (Exponential fit line
-in red).}
+\caption{\textbf{Left:}  Total number of  RNA bases  added to  the PDB
+  database   between  2000   and   2010  (Exponential   fit  line   in
+  blue). \textbf{Right:} Total number  of RNA structures solved yearly
+  by X-Ray crystallography between 2000 and 2010 (Exponential fit line
+  in red).}
 \label{fig:rnainpdb}
 \end{figure}
 
@@ -156,15 +156,16 @@ which we describe with the hexaparametric vector $\nu$:
 \begin{gather}
  \nu = (D_x, D_y, D_z, \tau, \rho, \omega)
 \end{gather}
-The     results     illustrated     in     Figures~\ref{fig:eucl_cons}
-~\ref{fig:steps2}  and~\ref{fig:nonAclus} were obtained  by performing
-clustering analysis and consensus clustering on 20 structures provided
-by  Schneider et al.   \cite{schneider2004}.  These  twenty structures
-were obtained by Schneider applying a Fourier averaging technique, and
-lexicographical  clustering,  to  torsion  angles of  23S  rRNA.   The
-methodology  we  used follows  that  used  by  others to  recover  the
-periodic table  classification from multidimensional  property vectors
-for elements \cite{restrepo2004, restrepo2006}.
+The    results    illustrated    in    the   dendrogram    shown    in
+Figure~\ref{fig:eucl_cons}  and  whose  corresponding  structures  are
+shown in  Figures~\ref{fig:nonAclus}~\ref{fig:steps2} were obtained by
+performing  clustering   analysis  and  consensus   clustering  on  20
+structures provided by  Schneider et al.  \cite{schneider2004}.  These
+twenty  structures  were  obtained  by Schneider  applying  a  Fourier
+averaging technique, and lexicographical clustering, to torsion angles
+of 23S rRNA.   The methodology we used follows that  used by others to
+recover  the  periodic   table  classification  from  multidimensional
+property vectors for elements \cite{restrepo2004, restrepo2006}.
 \begin{figure}[htbp]
  \centering
 \includegraphics[angle=90, scale=0.6]{Chapter2/eucli_cons_nonA-RNA.png}
@@ -177,83 +178,123 @@ base-step parameter vectors.}
 \begin{figure}[htbp]
  \centering
 \includegraphics[angle=90, scale=0.5]{Chapter2/collageb.png}
- \caption{rRNA dinucleotide structures organized by clusters obtained from
-consensus clustering of their hexadimensional base-step parameter vectors.}
+ \caption{RNA dinucleotide structures  organized by clusters obtained
+   from  consensus  clustering   of  their  hexadimensional  base-step
+   parameter  vectors.  The  structures  have  been  centered  on  the
+   reference frame of  the first step, that is,  the adenine base, and
+   the minor  groove face of  the rigid block parameter  associated to
+   adenine is facing the viewer.}
  \label{fig:nonAclus}
 \end{figure}
 
-
-The main features we see are that Group I contains a seven structure
-{1} with base-plane normals  pointing in opposite directions, Group II
-includes  extended   conformations  with  neighboring   bases  roughly
-parallel but not stacked and is formed by structures {15, 16, 10, 14},
-Group   III   also   contains   extended  conformations   with   bases
-perpendicular to one  another and is formed by  structures {8, 9, 17},
-Group IV  {18, 19, 20,  13, 11, 12,  5, 3, 6,  7, 2, 4}  contains four
-major subgroups: (a) structures {2,  4} which are unstacked with bases
-neither parallel nor perpendicular;  (b) structures {18, 19, 20} which
-closely  related to  A-RNA;  (c)  structures {11,  12,  13} which  are
+In Figures~\ref{fig:nonAclus}, and~\ref{fig:steps2}  we see that Group
+I contains structure {1}  with base-plane normals pointing in opposite
+directions, Group II  includes extended conformations with neighboring
+bases roughly  parallel but  not stacked and  is formed  by structures
+{15, 16, 10, 14}, Group  III also contains extended conformations with
+bases perpendicular to one another  and is formed by structures {8, 9,
+  17}, Group IV  {18, 19, 20, 13, 11,  12, 5, 3, 6, 7,  2, 4} contains
+four major subgroups:  (a) structures {2, 4} which  are unstacked with
+bases neither parallel nor  perpendicular; (b) structures {18, 19, 20}
+which closely relate  to A-RNA; (c) structures {11,  12, 13} which are
 unstacked and  have parallel  bases; and (d)  structures {3, 5,  6, 7}
 which are also unstacked and have parallel bases. We also see in Group
 IV that  the conformers  in subgroups  IV (c) and  IV (d)  are closely
-related and  that the dimers in  these two subgroups  are more closely
+related, and that  the dimers in these two  subgroups are more closely
 related to those in subgroup IV (b) than to those in subgroup IV (a).
 
+To account for the representation of the groups obtained by clustering
+in the 23S  subunit of the ribosome we have  computed the RMSD between
+the average  step parameters of  the structures composing  each group,
+and the  step-parameters of 2753 steps  present in 23S.   That is, for
+each group we have obtained a  set of 2753 RMSD values which have been
+plotted   as   histograms   as  shown   in   Figures~\ref{fig:histo1},
+and~\ref{fig:histo2}.    The   results    are   also   summarized   in
+Table~\ref{tab:nonA}, where we can  see that they only constitute 31\%
+of the  total amount of steps in  the 23S subunit of  the ribosome. We
+used a cutoff of 10 \AA  to select the structures which belong to each
+group,  based   on  visual  analysis   of  superimposed  reconstructed
+structures. For example, for Group  I; if we reconstruct the ribosomal
+steps with an RMSD  of 10 \AA or less, we get  the figure shown in the
+left panel of Figure~\ref{fig:superimpose}. But if we reconstruct with
+the set of structures with an RMSD  of 15 \AA or less we start getting
+structures,  which after  being  superimposed based  on the  reference
+frames of the first base are clearly not related to that group, as can
+be seen in the right panel of Figure~\ref{fig:superimpose}.
 
-When looking at Table~\ref{tab:nonA}, it's clear that there are 1858
-steps (67\%) which are not classified into any of the groups. The reason for
-this is the mixing of Fourier averaging for backbones, and the
-base step perspective. It might also be that we are not using the
-other A-RNA like backbone based structures from schneider's paper.
+We have also  noticed that the starting structures  kindly provided to
+us by Dr. Berman,  have a large rise in the case  of A-RNA, that is, a
+value of  4.39 \AA, which is  larger than the 3.30  \AA value obtained
+from  the "classical"  A-RNA structure  from Arnott  and collaborators
+\cite{arnott1973}  and this  might have  a significant  effect  on the
+amount of structures which can be grouped under the A-RNA like group.
 
-Right now I am doing a validation with clValid, to see if anything
-pops up regarding the "optimal" number of clusters for the data.
-Perhaps it would be wise to filter the data by proximity to A-RNA like
-conformation, say, take all structures which are some RMSD, or
-manhattan, or euclidean distance appart from the cannonical A-RNA step
-parameters which are in table such and such.
+Because of not getting a good representation of the total diversity of
+base-steps  in the  23S  subunit of  the  ribosome, we  have opted  to
+perform an  analysis based fully  on base-step parameters.  We believe
+that the reason  for such poor representation is due  to the mixing of
+Fourier averaging for backbones, and  the base-step perspective, or it
+could also be  related to the fact that we  are ignoring the remaining
+A-RNA related set of structures in Berman and collaborators analysis.
 
-
-Table~\ref{tab:nonA}  shows  the
-residue  numbers of  bases  from 23S  rRNA  which belong  to the  main
-categories of Figure~\ref{fig:nonAclus}.   To match residues of
-23S  rRNA belonging  to the  non-Atype  clusters, a  root mean  squared
-deviation (RMSD)  of 15  or less was  required between  step parameter
-vectors  of 23S  rRNA  and the  mean  parameter vectors  for the  four
-non-Atype groups identified.
 \begin{table}[htbp]
 \begin{center}
 {\footnotesize
-\begin{tabular}{c|p{1,3cm}|c}
+\begin{tabular}{c|r|c}
 \hline
-\bf{Number of Base-Steps} & \bf{Group} & \bf{Percentage}\\ \hline
-7    & I   & 0.25   \\ \hline
-28   & II  & 1.02   \\ \hline
-32   & III & 1.16   \\ \hline
-10   & IVa & 0.36   \\ \hline
-1995 & IVb & 72.47  \\ \hline
-45   & IVc & 1.63   \\ \hline
-268  & IVd & 9.73   \\ \hline
+\bf{Group} & \bf{Percentage} & \bf{Number of Base-Steps}\\ \hline
+I   & 0.11  & 3   \\ \hline
+II  & 0.18  & 5  \\ \hline
+III & 0.04  & 1  \\ \hline
+IVa & 0.36  & 1  \\ \hline
+IVb & 29.31 & 807 \\ \hline
+IVc & 0.33  & 9  \\ \hline
+IVd & 1.27  & 35 \\ \hline \hline
+Total & 31.28 & 861   \\ \hline
 \end{tabular}
 }
-\caption{Number of base-steps  with RMSD values less than 1 \AA
-between  the  reference base-step vectors  from  the  four groups  of
-non-A-type  RNA dinucleotide conformations  and all  base-step vectors
-found  in  the 23S  strand  of  \textit{Haloarcula marismortui}. The percentage is calculated with respect to a
-total of 2753 base-steps present in the 23S chain.}
+\caption{Number of base-steps  with RMSD values less than  or equal to
+  10 \AA between the reference  base-step vectors from the four groups
+  of  non-A-type  RNA  dinucleotide  conformations and  all  base-step
+  vectors found in the  23S strand of \textit{Haloarcula marismortui}.
+  The  percentage  is calculated  with  respect  to  a total  of  2753
+  base-steps  present in  the  23S chain  of  the 50S  subunit of  the
+  ribosome.}
 \label{tab:nonA}
 \end{center}
 \end{table}
 
+\begin{figure}[htbp]
+ \centering
+\includegraphics[angle=90, scale=0.6]{Chapter2/RMSDschneider1.png}
+\caption{Root mean square deviation of the main four groups show in
+  Figure~\ref{fig:nonAclus}. The color of the histograms is the same
+  as that of the boxes surrounding the structures of
+  Figure~\ref{fig:nonAclus}}
+ \label{fig:histo1}
+\end{figure}
 
+\begin{figure}[htbp]
+ \centering
+\includegraphics[angle=90, scale=0.6]{Chapter2/RMSDschneider2.png}
+\caption{Root mean square deviation histograms for the subgroups
+  present in group IV. Notice how subgroup IVb has the highest
+  proportion of small RMSD values as compared to others since we know
+  that A-RNA like base-step parameters should account for a large
+  amount of all base-steps in the 23S strucuture of the ribosome.}
+ \label{fig:histo2}
+\end{figure}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% INCLUDE HERE PICTURES OF POSITIONING OF NON-ARNA GROUPS IN
-% RIBOSOME.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\begin{figure}[htp]
+ \centering
+\includegraphics[angle=0, scale=0.3]{Chapter2/G1at10_15.png}
+\caption{\textbf{Left}: With an RMSD cutoff of less than of equal to
+  10 \AA, we identify three steps from the 23S subunit. \textbf{Right}:
+  With an RMSD less than or equal to 15 \AA we get a total of seven
+  structures, where we clearly see that three of them are farther from
+the original Group I main structure of Figure~\ref{fig:nonAclus}}
+ \label{fig:superimpose}
+\end{figure}
 
 \subsection{Partitional Clustering for Rigid Body Parameters}
 The argument I thought could have been made was that with clustering
@@ -295,8 +336,6 @@ later included and discussed here.
  \caption{Average silhouette width against number of clusters.}
  \label{fig:aswSteps}
 \end{figure}
-
-
 
 \subsection{Hierarchical Clustering for Rigid Body Parameters}
 
@@ -359,59 +398,6 @@ AII-RNA & 1.01 & -2.52 & 3.33 & 2.94 & 9.75 & 25.12 & Schneider \\ \hline
 \label{tab:step_conf}
 \end{center}
 \end{table}
-
-
-
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[angle=90, scale=0.50]{Chapter2/hartigan_tor_b.png}
-\caption{
-K-means of torsion  angle vectors of 2753 dinucleotide steps
-present in  23S rRNA using the  \textit{Hartigan-Wong} algorithm.  The
-number  of  partitions  is  \textbf{2}.   The  upper  diagonal  matrix
-displays the values  of the linear correlation coefficient  $r$, and a
-histogram showing  the torsion angle distribution is rendered  in the
-diagonal.}
-\label{fig:hartigan}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[angle=90, scale=0.50]{Chapter2/lloyd_tor_b.png}
-\caption{
-K-means of torsion  angle vectors of 2753 dinucleotide steps
-present in  23S rRNA using the  \textit{Lloyd} algorithm.  The
-number  of  partitions  is  \textbf{2}.   The  upper  diagonal  matrix
-displays the values  of the linear correlation coefficient  $r$, and a
-histogram showing  the torsion angle  distribution is rendered  in the
-diagonal.}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[angle=90, scale=0.50]{Chapter2/forgy_tor_b.png}
-\caption{
-K-means of torsion  angle vectors of 2753 dinucleotide steps
-present in  23S rRNA using the  \textit{Forgy} algorithm.  The
-number  of  partitions  is  \textbf{2}.   The  upper  diagonal  matrix
-displays the values  of the linear correlation coefficient  $r$, and a
-histogram showing  the torsion angle  distribution is rendered  in the
-diagonal.}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[angle=90, scale=0.50]{Chapter2/macqueen_tor_b.png}
-\caption{
-K-means of torsion  angle vectors of 2753 dinucleotide steps
-present in  23S rRNA using the  \textit{McQueen} algorithm.  The
-number  of  partitions  is  \textbf{2}.   The  upper  diagonal  matrix
-displays the values  of the linear correlation coefficient  $r$, and a
-histogram showing  the torsion angle  distribution is rendered  in the
-diagonal.}
-\label{fig:macqueen}
-\end{figure}
 
 
 
