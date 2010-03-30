@@ -71,9 +71,9 @@ Figure~\ref{fig:allpolypdb}.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.60, angle=270]{Chapter2/histogram.png}
-\caption{Frequency of nucleotide bases in RNA molecules found in the
-  PDB classified by the size of RNA molecules. We define the size as the
-  total number of nucleotide bases present per molecule.}
+\caption{Frequency of  nucleotide bases in RNA molecules  found in the
+  PDB classified by  the size of RNA molecules. We  define the size as
+  the total number of nucleotide bases present per molecule.}
   \label{fig:rnaranges}
 \end{figure}
 %The table and Figure 1.1 come from downloading all structures from
@@ -117,7 +117,8 @@ study the rigid body based perspective using clustering analysis.
 1ffk & 50S rRNA Subunit & Archaea & 2828 & 2000 \\ \hline
 \end{tabular}
 }
-\caption{Some large RNA structures ($>$300 bases) elucidated in the last decade.}
+\caption{Some large  RNA structures  ($>$300 bases) elucidated  in the
+  last decade.}
 \end{center}
 \label{tab:rnarange}
 \end{table}
@@ -225,9 +226,9 @@ be seen in the right panel of Figure~\ref{fig:superimpose}.
 We have also  noticed that the starting structures  kindly provided to
 us by Dr. Berman,  have a large rise in the case  of A-RNA, that is, a
 value of  4.39 \AA, which is  larger than the 3.30  \AA value obtained
-from  the "classical"  A-RNA structure  from Arnott  and collaborators
-\cite{arnott1973}  and this  might have  a significant  effect  on the
-amount of structures which can be grouped under the A-RNA like group.
+for  the "classical"  A-RNA  structure from  Arnott and  collaborators
+\cite{arnott1973}. This might have  a significant effect on the amount
+of structures which can be grouped under the A-RNA like group.
 
 Because of not getting a good representation of the total diversity of
 base-steps  in the  23S  subunit of  the  ribosome, we  have opted  to
@@ -296,108 +297,15 @@ the original Group I main structure of Figure~\ref{fig:nonAclus}}
  \label{fig:superimpose}
 \end{figure}
 
-\subsection{Partitional Clustering for Rigid Body Parameters}
-The argument I thought could have been made was that with clustering
-analysis alone on the whole data set, the A-RNA data would split
-naturally, without recurring to other ideas like Fourier Filtering of
-Bergman et al.
+\subsection{Selection of a Clustering Methodology}
+In order to analyze our dataset of base-step parameters we must choose
+a methodology. We have used the clValid from R to analyze a variety of
+clustering methods in order to choose one. We can  see from diagrams
+that the best is hierarchical clustering.
 
-We also analyze the 2753 base-step parameter vectors in the ribosome.
-For the partitional clustering case,
-again, there  is no known  number of clusters  in which the  data must
-group, therefore  we've calculated the within clusters  sum of squares
-and also the average silhouette  widths, for a particular selection of
-the  number   of  partitions  of   the  data  for   $k=[2-80]$.   From
-figure~\ref{fig:wssSteps}  we can't  conclude  much. We  see that  the
-value of  the within clusters  sum of squares becomes  constant around
-$k=47$ and there´s also a  change of curvature around $k=13$.  For the
-case where  the average  silhoutte width has  been computed,  that is,
-figure~\ref{fig:aswSteps}, we  see that the maximum is  for $k=2$, and
-there are  some interesting  maxima at $k=9,12$.   Now that we  have a
-clue as to  which number of partitions the data  optimally has we have
-plotted the  k-means results for  $k=13$ and $k=47$ in  Figures number
-and number, and the PAM results for $k=2, 9, 12$ in Figure number.
+We have then split the data into A-RNA like, and non-ARNA.
+The A-RNA group has about 70 percent of the data.
 
-We have also  filtered the data according to the  16 possible RNA base
-steps, that is,  AA, AG, GA, GG, UU,  UC, CU, CC, UA, UG,  CA, CG, AU,
-AC, GU, and  GC.  Tables showing how many  representatives steps there
-are belonging to non-helical,  helical, and watson-crick sets, will be
-later included and discussed here.
-\begin{figure}[htbp]
-\centering
-\includegraphics[angle=0, scale=0.40]{Chapter2/hartigan_nuclu_steps_b.png}
-\caption{Sum of all within clusters sum of squares against number of clusters.}
-\label{fig:wssSteps}
-\end{figure}
-
-\begin{figure}[htbp]
- \centering
- \includegraphics[angle=270, scale=0.50]{Chapter2/pam_asw_2_80_steps.png}
- \caption{Average silhouette width against number of clusters.}
- \label{fig:aswSteps}
-\end{figure}
-
-\subsection{Hierarchical Clustering for Rigid Body Parameters}
-
-Also as has been carried out for torsion angles, hierarchical clustering has
-also been performed on rigid body parameters, the results are yet to be
-included here. A cluster dissimilarity tree can be seen in
-Figure~\ref{fig:clusdis} for the 12 trees resulting from the four clustering
-methods and three distance definitions used to cluster the base step data.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.60]{Chapter2/clussdissim.png}
-\caption{Cluster dissimilarities for the twelve hierarchical trees
-  obtained from clustering of the six-dimensional base-step parameters
-obtained from the large subunit of the ribosome (PDB-ID:1jj2)}
-\label{fig:clusdis}
-\end{figure}
-
-
-\section{RNA Conformations}
-There are two main RNA conformations, A-RNA ,and A'RNA, and maybe even a
-third unconfirmed one A"RNA \cite{saenger1984}.
-Their values for their standard torsion angles and step parameters can be seen
-in Tables~\ref{tab:tor_conf} and ~\ref{tab:step_conf} 
-
-\begin{table}[htbp]
-\begin{center}
-{\small
-\begin{tabular}{c|c|c|c|c|c|c|c|c}
-\hline
-\bf{Structure Name} & $\alpha$ & $\beta$ & $\gamma$ & $\delta$ & $\epsilon$
-& $\zeta$ & $\chi$ & \bf{Reference} \\ \hline
-A-RNA & -68.9 & 179.5 & 54.5 & 82.2 & -153.9 & -70.8 & -161.1 & Arnott \\ \hline
-A'-RNA & -70.0 & 176.6 & 60.8 & 76.7 & -153.4 & -69.4 & -163.4 & Arnott \\ \hline
-AII-RNA & -65.0 & 175.1 & 52.9 & 81.1 & -166.0 & -68.0 & -157.0 & Schneider \\ \hline
-\end{tabular}
-}
-\caption{Base step torsion angles for the different known RNA conformations.}
-\label{tab:tor_conf}
-\end{center}
-\end{table}
-
-\begin{table}[htbp]
-\begin{center}
-{\small
-\begin{tabular}{p{2cm}|c|c|c|c|c|c|c}
-\hline
-\bf{Structure Name} & Shift ($D_x$) & Slide ($D_y$) & Rise ($D_z$) & Tilt
-($\tau$) & Roll ($\rho$) & Twist ($\Omega$) & \bf{Reference} \\ \hline
-A-DNA & 0.36 & -1.39 & 3.29 & 2.46 & 12.50 & 30.19 & \\ \hline
-B-DNA & 0.44 & 0.47 & 3.33 & 4.63 & 1.77 & 35.67 & \\ \hline
-A-RNA & -0.08 & -1.48 & 3.30 & -0.43 & 8.64 & 31.57 & Arnott \\ \hline
-A'-RNA & 0.05 & -1.88 & 3.39 & -0.12 & 5.43 & 29.52 & Arnott \\ \hline
-AII-RNA & 1.01 & -2.52 & 3.33 & 2.94 & 9.75 & 25.12 & Schneider \\ \hline
-\end{tabular}
-}
-\caption{Base step parameters for the different known RNA
-  conformations. Notice that the base step parameters are for single
-  bases rather than base-pairs.}
-\label{tab:step_conf}
-\end{center}
-\end{table}
 
 
 
