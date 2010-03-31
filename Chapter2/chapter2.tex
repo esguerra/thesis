@@ -205,23 +205,27 @@ related, and that  the dimers in these two  subgroups are more closely
 related to those in subgroup IV (b) than to those in subgroup IV (a).
 
 To account for the representation of the groups obtained by clustering
-in the 23S  subunit of the ribosome we have  computed the RMSD between
-the average  step parameters of  the structures composing  each group,
-and the  step-parameters of 2753 steps  present in 23S.   That is, for
-each group we have obtained a  set of 2753 RMSD values which have been
-plotted   as   histograms   as  shown   in   Figures~\ref{fig:histo1},
-and~\ref{fig:histo2}.    The   results    are   also   summarized   in
-Table~\ref{tab:nonA}, where we can  see that they only constitute 31\%
-of the  total amount of steps in  the 23S subunit of  the ribosome. We
-used a cutoff of 10 \AA  to select the structures which belong to each
-group,  based   on  visual  analysis   of  superimposed  reconstructed
-structures. For example, for Group  I; if we reconstruct the ribosomal
-steps with an RMSD  of 10 \AA or less, we get  the figure shown in the
-left panel of Figure~\ref{fig:superimpose}. But if we reconstruct with
-the set of structures with an RMSD  of 15 \AA or less we start getting
-structures,  which after  being  superimposed based  on the  reference
-frames of the first base are clearly not related to that group, as can
-be seen in the right panel of Figure~\ref{fig:superimpose}.
+in   the  23S   subunit  of   the  ribosome   we  have   computed  the
+root-mean-square deviation (RMSD)  between the average step parameters
+of the structures composing each group, and the step-parameters of the
+2753 steps present in 23S.  That is, for each group we have obtained a
+set of RMSD  values which have been plotted as  histograms as shown in
+Figures~\ref{fig:histo1}, and~\ref{fig:histo2}.   The results are also
+summarized in  Table~\ref{tab:nonA}, where we  can see that  they only
+constitute 31\% of the total amount of steps in the 23S subunit of the
+ribosome.   We  used  a  cutoff  of 10  \AA  \footnote{We  retain  the
+  traditional unit  of Angstroms  to refers to  our RMSD's, but  it is
+  important  to note that  since we  are not  refering to  an all-atom
+  model such unit does not  have a direct physical meaning.} to select
+the structures which belong to each group, based on visual analysis of
+superimposed reconstructed structures. For example, for Group I; if we
+reconstruct the ribosomal steps with an RMSD of 10 \AA or less, we get
+the      figure      shown     in      the      left     panel      of
+Figure~\ref{fig:superimpose}. But  if we  reconstruct with the  set of
+structures with an RMSD of 15 \AA or less we start getting structures,
+which after  being superimposed based  on the reference frames  of the
+first base  are clearly not related to  that group, as can  be seen in
+the right panel of Figure~\ref{fig:superimpose}.
 
 We have also  noticed that the starting structures  kindly provided to
 us by Dr. Berman,  have a large rise in the case  of A-RNA, that is, a
@@ -234,9 +238,10 @@ Because of not getting a good representation of the total diversity of
 base-steps  in the  23S  subunit of  the  ribosome, we  have opted  to
 perform an  analysis based fully  on base-step parameters.  We believe
 that the reason  for such poor representation is due  to the mixing of
-Fourier averaging for backbones, and  the base-step perspective, or it
-could also be  related to the fact that we  are ignoring the remaining
-A-RNA related set of structures in Berman and collaborators analysis.
+Fourier averaging for backbones, and  the base-step perspective.
+%% or it could also be  related to the fact that we  are ignoring the
+%% remaining A-RNA related set of structures in Berman and
+%% collaborators analysis.
 
 \begin{table}[htbp]
 \begin{center}
@@ -298,13 +303,134 @@ the original Group I main structure of Figure~\ref{fig:nonAclus}}
 \end{figure}
 
 \subsection{Selection of a Clustering Methodology}
-In order to analyze our dataset of base-step parameters we must choose
-a methodology. We have used the clValid from R to analyze a variety of
-clustering methods in order to choose one. We can  see from diagrams
-that the best is hierarchical clustering.
+In  order to  analyze  our  dataset of  base-step  parameters we  have
+decided  to  use  clustering  analysis  methods.  Clustering  analysis
+methods can  be broadly classiffied  in two main categories,  that is,
+they  can be  partitional or  hierarchical.  In  either case  the main
+problem  one faces for classification purposes is that of deciding
+which  is the  optimal number  of hierarchies  or partitions  that the
+analyzed  data is split  into.  To  obtain a  criteria for  an optimal
+number of  clusters, and also to  decide which method  might be better
+for  our  dataset,  we  have  used two  types  of  cluster  validation
+techniques.   They  are  known  as  internal  measures  and  stability
+measures. Full detail on the  definition of such measures are provided
+in  appendix~\ref{appendix_a}.   To  perform the  validation  analysis
+mentioned above  we used a  cluster validation package  implemented in
+the  R  \cite{rcite}   statistical  analysis  program  called  clValid
+\cite{brock2008}.
 
-We have then split the data into A-RNA like, and non-ARNA.
-The A-RNA group has about 70 percent of the data.
+In  Figures~\ref{fig:internal} and~\ref{fig:stability} we  present the
+results for  internal and  stability validation results  exploring the
+same  dataset of  base-step  paramaters  for the  23S  subunit of  the
+ribosome that we've used before.  Our analysis computed the validation
+scores  for a  number of  clusters ranging  from $k=2$,  up  to $k=80$
+clusters,  and evaluated  hierarchical methods  (hierarchical, diana),
+and partitional  methods (kmeans,  pam, som, sota).   The connectivity
+measure  must   be  minimized,   and  the  average   silhouette  width
+(silhoutte) and  dunn index must be  maximized. With this  in mind, we
+see that the  method labeled as hierarchical\footnote{The hierarchical
+  label refers precisely to the agglomerative technique, the euclidean
+  metric, and the average  method} performs better in connectivity and
+dunn index for  the whole range, and it is also  the best performer in
+silhoutte from $k=12$ onwards.
+
+In the  case of the  stability measures it  is important to  note here
+that mainly this  measures are well suited for  highly correlated data
+sets,  therefore they are  not very  indicative for  our data  set. We
+include  them  for  completeness.    In  the  case  of  the  stability
+measurements in  all cases  they are better  the smaller  their values
+are.   We  have  quantified  three  measures,  that  is,  the  average
+proportion of  non-overlap (APN), the  average distance (AD),  and the
+average  distance  between means  (ADM),  again  the  details of  such
+measures are given in the Appendix~\ref{appendix_a}.  As seen in
+Figure~\ref{fig:stability} the method with the best stability measures
+is sota for the case of APN,  and ADM almost in all the range until it
+reaches a number of cluster of  around 70. For the AD measure the best
+performers  are pam  and sota  in the  whole range.   Notice  that the
+hierarchical method  performs similarly to other methods,  and that in
+general, apart from  the APN measure and the  sota method, all methods
+have a  similar behaviour  due to the  fact that  our data set  is not
+highly correlated.
+
+In all cases  we also see that the best overall  number of clusters is
+two,  which  is  not   surprising  since  we  haven't  filtered  A-RNA
+structures out  from our  data set, leaving  two main groups;  that of
+A-RNA type base-steps, and those which are not A-RNA like.
+
+\begin{figure}
+ \centering
+\includegraphics[angle=0, scale=0.4]{Chapter2/STval_int.png}
+\caption{Cluster validity scores for internal measures. Notice how the
+  agglomerative hierarchical method, labeled as 1 and in black color,
+  behaves better for the whole range of connectivity and dunn index,
+  and it also outperforms all others after $k=12$ for the average
+  silhoutte width scores.}
+ \label{fig:internal}
+\end{figure}
+
+\begin{figure}
+ \centering
+\includegraphics[angle=0, scale=0.4]{Chapter2/STval_sta.png}
+\caption{Cluster validity scores for stability measures. 
+  }
+ \label{fig:stability}
+\end{figure}
+
+Since we  would like  to see the  behaviour of the  cluster validation
+methods in the group of structures which are not so closely related to
+A-RNA, we have filtered  them out based on Figure~\ref{fig:dormsd} and
+end out  with a data set  of 797 (about  29$%$ of the total  number of
+steps) base-step parameters  whose values are greater than  an RMSD of
+18 \AA.   These RMSD values  have been computed between  the base-step
+parameters  of 23S  RNA and  the standard  base-step  parameter values
+derived  from Arnott and  collaborators \cite{arnott1973}  work.  Such
+standard values can be seen in table~\ref{tab:conformations}.
+
+\begin{figure}
+ \centering
+\includegraphics[angle=0, scale=0.4]{Chapter2/dormsd.png}
+\caption{RMSD values between base-step parameters of the 23S subunit of
+  ribosomal RNA and the standard base-step parameters derived from
+  Arnott and collaborators \cite{arnott1973} work.}
+ \label{fig:stability}
+\end{figure}
+
+\begin{table}[htbp]
+\begin{center}
+{\small
+\begin{tabular}{p{2cm}|c|c|c|c|c|c|c}
+\hline
+\textbf{Structure Name} & Shift ($D_x$) & Slide ($D_y$) & Rise ($D_z$) & Tilt
+($\tau$) & Roll ($\rho$) & Twist ($\Omega$) & \textbf{Reference} \\ \hline
+A-DNA & 0.36 & -1.39 & 3.29 & 2.46 & 12.50 & 30.19 & \\ \hline
+B-DNA & 0.44 & 0.47 & 3.33 & 4.63 & 1.77 & 35.67 & \\ \hline
+A-RNA & -0.08 & -1.48 & 3.30 & -0.43 & 8.64 & 31.57 & Arnott \\ \hline
+A'-RNA & 0.05 & -1.88 & 3.39 & -0.12 & 5.43 & 29.52 & Arnott \\ \hline
+AII-RNA & 1.01 & -2.52 & 3.33 & 2.94 & 9.75 & 25.12 & Schneider \\ \hline
+\end{tabular}
+}
+\caption{Base step parameters for common DNA and RNA
+  conformations. The base-step parameters are computed for
+  a single-stranded base-step rather than a double-stranded base-pair step.}
+\label{tab:conformations}
+\end{center}
+\end{table}
+
+With  the filtered dataset,  which we  will refer  to as  the non-ARNA
+dataset, we  have again performed a cluster  validation analysis using
+only the  hierarchical methods, that is,  the agglomerative clustering
+method  (labeled  hierarchical  in Figure~\ref{fig:noarna}),  and  the
+divise  clustering method  (labeled as  diana).  The  reason  for only
+choosing the  hierarchical methods  is based on  the results  from
+validation of  the whole dataset.  In  Figure~\ref{fig:noarna} we have
+plotted the results  of the internal validation scores  and we can see
+that the connectivity and silhouette measures still give us an optimal
+number of  cluster of two,  whereas the dunn  index tells us  that the
+optimal number of clusters is 64.  We find it interesting that for the
+case of  the dunn index we  see that this measure  becomes constant at
+values of 17, 30, 56, and 64.
+
+
 
 
 

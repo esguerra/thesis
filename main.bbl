@@ -719,6 +719,17 @@ Arnott, S., Hukins, D. W.~L., Dover, S.~D., Fuller, W., and Hodgson, A.~R.
   Polycytidylic acid}.
 {\em Journal of Molecular Biology,} {\bf 81}, 107--122.
 
+\bibitem{rcite}
+{R Development Core Team}
+R: A Language and Environment for Statistical Computing
+R Foundation for Statistical Computing Vienna, Austria (2009)
+{ISBN} 3-900051-07-0.
+
+\bibitem{brock2008}
+Brock, G., Pihur, V., Datta, S., and Datta, S. (2008)
+{clValid: An R Package for Cluster Validation}.
+{\em Journal of Statistical Software,} {\bf 25}, 1--22.
+
 \bibitem{jolliffe2002}
 Jolliffe, I.~T. (2002)
 Principal Component Analyses,

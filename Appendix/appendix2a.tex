@@ -103,11 +103,15 @@ Let's calculate explicitily the Manhattan distance between structures 2 and 3,
 d(2, 3)= |-2.00 - 6.00| + |2.00 - -2.00| = 12
 \end{gather}
 
-Now that we have calculated the distances we need a clustering method, in this
-case, we will use the average linkage clustering method. The first step is to
-group whatever structures are closer, that is, structures 3 and 5
-($d(3, 5)=3$). Now we find the mean distance between the elements of
-this cluster and the remaining unclustered structures, that is,
+Now that we have calculated the distances we need a clustering method,
+in this case, we will use the average linkage clustering method. There
+are two hierarchical techiques called agglomerative, or bottom-up, and
+divisive, or  top-down. We will use the  agglomerative technique, that
+is, going  from the bottom where  no objects are grouped,  to the top,
+where all objects  constitute one final group. The  first step is then
+to group whatever  structures are closer, that is,  structures 3 and 5
+($d(3, 5)=3$). Now  we find the mean distance  between the elements of
+this  cluster  and  the  remaining unclustered  structures,  that  is,
 structures 1, 2 and 4, we obtain the following mean distances
 \begin{gather}
 D(\{3,5\}, 1)=\frac{1}{2*1}*(8+11) = 4.5 \label{eq:dist}\\
