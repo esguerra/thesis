@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {2.1}Consensus Clustering of Single Stranded Base Step Parameters}{23}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Combining Fourier Averaging Results and Clustering Analysis}{23}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Selection of a Clustering Methodology}{24}{subsection.2.1.2}
-\contentsline {unnumberedsection}{References}{33}{chapter*.7}
+\contentsline {unnumberedsection}{References}{34}{chapter*.7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \contentsline {chapter}{\numberline {3}RNA Base-Pairing}{37}{chapter.3}
