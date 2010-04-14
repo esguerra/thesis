@@ -24,8 +24,8 @@
 \usepackage{chapterbib}
 \usepackage{makeidx}
 \makeindex
-\includeonly{titles, Chapter2/chapter2,
-  Appendix/appendix2a, Supplement/supplements}
+\includeonly{titles, Chapter1/chapter1, Chapter2/chapter2,
+ Appendix/appendix1a,  Appendix/appendix2a, Supplement/supplements}
 %  Chapter2/chapter2, Chapter3/chapter3, Chapter4/chapter4, 
 %  Chapter5/chapter5, Chapter6/chapter6, Appendix/appendix2a,
 %  Appendix/appendix2b, Supplement/supplements, CV/cv} 
@@ -83,21 +83,15 @@
 \include{Chapter5/chapter5}
 \include{Chapter6/chapter6}
 \appendix
+\include{Appendix/appendix1a}
 \include{Appendix/appendix2a}
 \include{Appendix/appendix2b}
-\makeatletter 
-\setcounter{chapter}{0}
-\setcounter{section}{0}
-\setcounter{figure}{0}
-\setcounter{table}{0}
-\renewcommand{\thefigure}{S\@arabic\c@figure}
-\renewcommand{\thetable}{S\@arabic\c@table}
-\renewcommand{\thesection}{S\@arabic\c@section}
-\renewcommand\@chapapp{Supplement}
-\makeatother 
+\supplement
+%\makeatother 
 \include{Supplement/supplements}
 %\include{index}
 %\printindex
+\makeatletter
 \include{CV/cv}
 \end{document}
 

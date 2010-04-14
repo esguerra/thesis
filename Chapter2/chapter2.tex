@@ -68,7 +68,7 @@ protein, dna, and nucleic acid plus protein, available at the PDB from
 the   seventies    until   today    can   be   seen    in   Supplement
 Figure~\ref{fig:allpolypdb}.
 
-\begin{figure}[H]
+\begin{figure}
 \centering
 \includegraphics[scale=0.60, angle=270]{Chapter2/histogram.png}
 \caption{Frequency of  nucleotide bases in RNA molecules  found in the
@@ -284,8 +284,8 @@ Total & 31.28 & 861   \\ \hline
  \centering
 \includegraphics[angle=90, scale=0.6]{Chapter2/RMSDschneider2.png}
 \caption{Root  mean  square  deviation  histograms for  the  subgroups
-  present in group IV.  Since subgroup IVb is composed of A-RNA like
-  conformations we see in the upper left histogram that the highest
+  present in group  IV.  Since subgroup IVb is  composed of A-RNA like
+  conformations we  see in the  upper left histogram that  the highest
   proportion of small RMSD values belongs to this group.}
  \label{fig:histo2}
 \end{figure}
@@ -293,11 +293,18 @@ Total & 31.28 & 861   \\ \hline
 \begin{figure}[htp]
  \centering
 \includegraphics[angle=0, scale=0.3]{Chapter2/G1at10_15.png}
-\caption{\textbf{Left}: With an RMSD cutoff of less than or equal to
-  10 \AA, we identify three steps from the 23S subunit. \textbf{Right}:
-  With an RMSD less than or equal to 15 \AA ~we get a total of seven
-  structures, where we clearly see that three of them are farther from
-the original Group I main structure of Figure~\ref{fig:nonAclus}}
+\caption{Rigid block  representation of dinucleotide  steps. The major
+  groove side  of the first  nucleotide block is oriented  towards the
+  viewer  and shaded  gray. \textbf{Left:}  Drawn in  blue,  the block
+  representing       the        Group       I       cluster       from
+  Figure~\ref{fig:nonAclus}. Superimposed  to the Group  I cluster are
+  three  structures whose  step-parameter RMSD's  with respect  to the
+  Group I  cluster are less than  or equal to  10 \AA. \textbf{Right}:
+  With an RMSD less than or equal  to 15 \AA ~we "identify" a total of
+  seven structures  from the  ribosome. We clearly  see that  three of
+  them (encircled in  cyan blobs) are farther apart  from the original
+  Group I  main structure of Figure~\ref{fig:nonAclus}  which is drawn
+  in blue.}
  \label{fig:superimpose}
 \end{figure}
 
@@ -348,7 +355,7 @@ measures for completeness.
 
 \begin{figure}
  \centering
-\includegraphics[angle=0, scale=0.38]{Chapter2/noarna_step.png}
+\includegraphics[angle=90, scale=0.6]{Chapter2/noarna_step.png}
 \caption{Pairs  scatterplot for  base-step  parameters, shift,  slide,
   rise,  tilt,  roll, and  twist,  for  the  non-ARNA dataset  colored
   according   to  purine-pyrimidine   (black),   purine-purine  (red),
@@ -422,11 +429,11 @@ DNA are provided in table~\ref{tab:conformations}.
 \hline
 \textbf{Structure Name} & Shift ($D_x$) & Slide ($D_y$) & Rise ($D_z$) & Tilt
 ($\tau$) & Roll ($\rho$) & Twist ($\Omega$) & \textbf{Reference} \\ \hline
-A-DNA & 0.36 & -1.39 & 3.29 & 2.46 & 12.50 & 30.19 & \\ \hline
-B-DNA & 0.44 & 0.47 & 3.33 & 4.63 & 1.77 & 35.67 & \\ \hline
-A-RNA & -0.08 & -1.48 & 3.30 & -0.43 & 8.64 & 31.57 & Arnott \\ \hline
-A'-RNA & 0.05 & -1.88 & 3.39 & -0.12 & 5.43 & 29.52 & Arnott \\ \hline
-AII-RNA & 1.01 & -2.52 & 3.33 & 2.94 & 9.75 & 25.12 & Schneider \\ \hline
+A-DNA & 0.36 & -1.39 & 3.29 & 2.46 & 12.50 & 30.19 & Arnott \cite{arnott1999} \\ \hline
+B-DNA & 0.44 & 0.47 & 3.33 & 4.63 & 1.77 & 35.67   & Arnott \cite{arnott1999} \\ \hline
+A-RNA & -0.08 & -1.48 & 3.30 & -0.43 & 8.64 & 31.57 & Arnott \cite{arnott1999} \\ \hline
+A'-RNA & 0.05 & -1.88 & 3.39 & -0.12 & 5.43 & 29.52 & Arnott \cite{arnott1999} \\ \hline
+AII-RNA & 1.01 & -2.52 & 3.33 & 2.94 & 9.75 & 25.12 & Schneider \cite{schneider2004} \\ \hline
 \end{tabular}
 }
 \caption{Base step parameters for common DNA and RNA

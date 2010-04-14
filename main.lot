@@ -3,9 +3,9 @@
 \gdef \the@ipfilectr {@-2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Some large RNA structures ($>$300 bases) elucidated in the last decade.}}{28}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Number of base-steps with RMSD values less than or equal to 10 \r A\nobreakspace {}between the reference base-step vectors from the four groups of non-A-type RNA dinucleotide conformations and all base-step vectors found in the 23S strand of \textit {Haloarcula marismortui}. The percentage is calculated with respect to a total of 2753 base-steps present in the 23S chain of the 50S subunit of the ribosome.}}{32}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Base step parameters for common DNA and RNA conformations. The base-step parameters are computed for a single-stranded base-step rather than a double-stranded base-pair step.}}{39}{table.2.3}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Some large RNA structures ($>$300 bases) elucidated in the last decade.}}{22}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Number of base-steps with RMSD values less than or equal to 10 \r A\nobreakspace {}between the reference base-step vectors from the four groups of non-A-type RNA dinucleotide conformations and all base-step vectors found in the 23S strand of \textit {Haloarcula marismortui}. The percentage is calculated with respect to a total of 2753 base-steps present in the 23S chain of the 50S subunit of the ribosome.}}{27}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Base step parameters for common DNA and RNA conformations. The base-step parameters are computed for a single-stranded base-step rather than a double-stranded base-pair step.}}{32}{table.2.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
 \gdef \the@ipfilectr {}
@@ -16,11 +16,13 @@
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {table}{\numberline {A.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{48}{table.A.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{55}{table.B.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-12}
 \gdef \the@ipfilectr {}

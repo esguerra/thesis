@@ -564,3 +564,33 @@
 \newcommand\subheading{\subsection*}
 
 
+
+%%New definition for supplements chapters: Added April 14, 2010.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\suppnumberline}[1]{\advance\hangindent\@tempdima \hbox{Supplement #1. }} 
+\newcommand{\supplement}{\par
+ \setcounter{chapter}{0}
+ \setcounter{section}{0}
+ \setcounter{figure}{0}
+ \setcounter{table}{0}
+ \renewcommand{\thefigure}{S\@arabic\c@figure}
+ \renewcommand{\thetable}{S\@arabic\c@table}
+ \renewcommand{\thesection}{S\@arabic\c@section}
+ \renewcommand\@chapapp{Supplement}
+ \renewcommand\thechapter{\Alph{chapter}}
+
+% Redefine @chapter  so that appnumberline (ratherline) is used.
+ \def\@chapter[##1]##2{\ifnum \c@secnumdepth >\m@ne
+  \refstepcounter{chapter}
+  \typeout{\@chapapp\space\thechapter.}
+  \addcontentsline{toc}{chapter}{\protect
+  \suppnumberline{\thechapter}##1} \else 
+  \addcontentsline{toc}{chapter}{##1}\fi
+  \chaptermark{##1}
+  % Don't add extra space to lists of figures and tables after chapters.
+  %  \addtocontents{lof}{\protect\addvspace{10pt}}
+  %  \addtocontents{lot}{\protect\addvspace{10pt}}
+  \if@twocolumn
+  \@topnewpage[\@makechapterhead{##2}] 
+  \else \@makechapterhead{##2}
+  \@afterheading \fi}}
