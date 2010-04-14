@@ -735,6 +735,17 @@ R: A Language and Environment for Statistical Computing
 R Foundation for Statistical Computing Vienna, Austria (2009)
 {ISBN} 3-900051-07-0.
 
+\bibitem{ihaka1996}
+Ihaka, R. and Gentleman, R. (1996)
+R: a language for data analysis and graphics.
+{\em Journal of {C}omputational and {G}raphical {S}tatistics,} {\bf 5},
+  299--314.
+
+\bibitem{hornik2005}
+Hornik, K. (2005)
+{A CLUE for CLUster Ensembles}.
+{\em Journal of Statistical Software,} {\bf 14}, 1--25.
+
 \bibitem{jolliffe2002}
 Jolliffe, I.~T. (2002)
 Principal Component Analyses,

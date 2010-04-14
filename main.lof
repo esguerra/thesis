@@ -38,7 +38,7 @@
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Clustering tree for 5 bidimensional vectors using the Manhattan distance definition and the average linkage clustering method.}}{48}{figure.A.1}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Clustering tree for 5 bidimensional vectors using the Manhattan distance definition and the average linkage clustering method.}}{49}{figure.A.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
 \gdef \the@ipfilectr {}

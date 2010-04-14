@@ -52,7 +52,9 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
 \contentsline {chapter}{\appnumberline {A}Clustering Analysis (CA)}{45}{appendix.A}
-\contentsline {section}{\numberline {A.1}Hierarchical methods}{45}{section.A.1}
+\contentsline {section}{\numberline {A.1}General Methodology}{45}{section.A.1}
+\contentsline {section}{\numberline {A.2}Hierarchical methods}{46}{section.A.2}
+\contentsline {unnumberedsection}{References}{50}{appendix*.7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
 \contentsline {chapter}{\appnumberline {B}Dimension Reduction}{48}{appendix.B}

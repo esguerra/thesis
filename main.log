@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.12.9)  9 APR 2010 17:08
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.12.9)  13 APR 2010 14:54
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -423,7 +423,7 @@ File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 
  (./Chapter2/chapter2.tex
 Chapter 2.
-<Chapter2/rna2000_2009copy.png, id=358, 1204.5pt x 494.84875pt>
+<Chapter2/rna2000_2009copy.png, id=368, 1204.5pt x 494.84875pt>
 File: Chapter2/rna2000_2009copy.png Graphic file (type png)
 
 <use Chapter2/rna2000_2009copy.png> [25
@@ -433,7 +433,7 @@ File: Chapter2/rna2000_2009copy.png Graphic file (type png)
 
 
  <./Chapter2/rna2000_2009copy.png>]
-<Chapter2/histogram.png, id=376, 560.8152pt x 808.7013pt>
+<Chapter2/histogram.png, id=386, 560.8152pt x 808.7013pt>
 File: Chapter2/histogram.png Graphic file (type png)
 
 <use Chapter2/histogram.png>
@@ -454,19 +454,19 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 111.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 9.49997pt on input line 111.
- <Chapter2/murray2003.png, id=401, 351.3125pt x 430.60875pt>
+ <Chapter2/murray2003.png, id=411, 351.3125pt x 430.60875pt>
 File: Chapter2/murray2003.png Graphic file (type png)
 
 <use Chapter2/murray2003.png> [27 <./Chapter2/histogram.png>] [28 <./Chapter2/m
 urray2003.png>]
-<Chapter2/eucli_cons_nonA-RNA.png, id=436, 1123.19624pt x 778.91pt>
+<Chapter2/eucli_cons_nonA-RNA.png, id=447, 1123.19624pt x 778.91pt>
 File: Chapter2/eucli_cons_nonA-RNA.png Graphic file (type png)
 
 <use Chapter2/eucli_cons_nonA-RNA.png>
 
 LaTeX Warning: Float too large for page by 32.27849pt on input line 177.
 
-<Chapter2/collageb.png, id=437, 1284.8pt x 992.70876pt>
+<Chapter2/collageb.png, id=448, 1284.8pt x 992.70876pt>
 File: Chapter2/collageb.png Graphic file (type png)
 
 <use Chapter2/collageb.png>
@@ -483,30 +483,30 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 251.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.54997pt on input line 251.
- <Chapter2/RMSDschneider1.png, id=465, 1123.19624pt x 778.91pt>
+ <Chapter2/RMSDschneider1.png, id=476, 1123.19624pt x 778.91pt>
 File: Chapter2/RMSDschneider1.png Graphic file (type png)
 
 <use Chapter2/RMSDschneider1.png>
 
 LaTeX Warning: Float too large for page by 32.27849pt on input line 281.
 
-<Chapter2/RMSDschneider2.png, id=470, 1123.19624pt x 778.91pt>
+<Chapter2/RMSDschneider2.png, id=481, 1123.19624pt x 778.91pt>
 File: Chapter2/RMSDschneider2.png Graphic file (type png)
 
 <use Chapter2/RMSDschneider2.png>
 
 LaTeX Warning: Float too large for page by 45.8785pt on input line 291.
 
-<Chapter2/G1at10_15.png, id=471, 881.2925pt x 598.235pt>
+<Chapter2/G1at10_15.png, id=482, 881.2925pt x 598.235pt>
 File: Chapter2/G1at10_15.png Graphic file (type png)
 
 <use Chapter2/G1at10_15.png> [32] [33 <./Chapter2/RMSDschneider1.png (PNG copy)
 >] [34 <./Chapter2/RMSDschneider2.png (PNG copy)>] [35 <./Chapter2/G1at10_15.pn
-g>] <Chapter2/noarna_step.png, id=506, 1123.19624pt x 778.91pt>
+g>] <Chapter2/noarna_step.png, id=517, 1123.19624pt x 778.91pt>
 File: Chapter2/noarna_step.png Graphic file (type png)
 
 <use Chapter2/noarna_step.png>
-<Chapter2/STval_int.png, id=509, 1244.65pt x 1758.57pt>
+<Chapter2/STval_int.png, id=520, 1244.65pt x 1758.57pt>
 File: Chapter2/STval_int.png Graphic file (type png)
 
 <use Chapter2/STval_int.png>
@@ -517,7 +517,7 @@ Overfull \hbox (3.21652pt too wide) in paragraph at lines 381--387
 
 LaTeX Warning: Float too large for page by 40.21912pt on input line 389.
 
-<Chapter2/STval_sta.png, id=510, 1244.65pt x 1758.57pt>
+<Chapter2/STval_sta.png, id=521, 1244.65pt x 1758.57pt>
 File: Chapter2/STval_sta.png Graphic file (type png)
 
 <use Chapter2/STval_sta.png>
@@ -530,7 +530,7 @@ LaTeX Warning: Float too large for page by 13.0191pt on input line 396.
 
 [36 <./Chapter2/noarna_step.png (PNG copy)>] [37 <./Chapter2/STval_int.png>]
 [38 <./Chapter2/STval_sta.png>]
-<Chapter2/dormsd.png, id=529, 1123.19624pt x 778.91pt>
+<Chapter2/dormsd.png, id=540, 1123.19624pt x 778.91pt>
 File: Chapter2/dormsd.png Graphic file (type png)
 
 <use Chapter2/dormsd.png>
@@ -539,7 +539,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 423--423
  []
 
 [39 <./Chapter2/dormsd.png (PNG copy)>]
-<Chapter2/noarna_val.png, id=543, 560.8152pt x 808.7013pt>
+<Chapter2/noarna_val.png, id=554, 560.8152pt x 808.7013pt>
 File: Chapter2/noarna_val.png Graphic file (type png)
 
 <use Chapter2/noarna_val.png>
@@ -550,7 +550,7 @@ Overfull \hbox (34.97363pt too wide) in paragraph at lines 490--496
 
 LaTeX Warning: Float too large for page by 113.25511pt on input line 498.
 
-<Chapter2/k67_17.png, id=544, 1284.8pt x 1816.7875pt>
+<Chapter2/k67_17.png, id=555, 1284.8pt x 1816.7875pt>
 File: Chapter2/k67_17.png Graphic file (type png)
 
 <use Chapter2/k67_17.png>
@@ -596,12 +596,26 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 
 
-] [46] <Appendix/appendixtree.png, id=596, 709.90219pt x 846.91406pt>
+] [46] [47] [48]
+<Appendix/appendixtree.png, id=628, 709.90219pt x 846.91406pt>
 File: Appendix/appendixtree.png Graphic file (type png)
 
-<use Appendix/appendixtree.png> [47]
-No file Appendix/appendix2a.bbl.
-) [48 <./Appendix/appendixtree.png (PNG copy)>]
+<use Appendix/appendixtree.png> (./Appendix/appendix2a.bbl [49 <./Appendix/appe
+ndixtree.png (PNG copy)>]
+References
+pdfTeX warning (ext4): destination with the same identifier (name{cite.restrepo
+2004}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.3 \bibitem{restrepo2004}
+                          pdfTeX warning (ext4): destination with the same iden
+tifier (name{cite.restrepo2006}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9 \bibitem{restrepo2006}
+                          )) [50
+
+]
 \openout2 = `Supplement/supplements.aux'.
 
  (./Supplement/supplements.texpdfTeX warning (ext4): destination with the same 
@@ -633,7 +647,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.A.1})
                    \relax 
 l.4 \section{Supplement Figures for Chapter 2}
                                               
-<Supplement/collage2.png, id=611, 3312.375pt x 2559.5625pt>
+<Supplement/collage2.png, id=642, 3312.375pt x 2559.5625pt>
 File: Supplement/collage2.png Graphic file (type png)
 
 <use Supplement/collage2.png>
@@ -656,7 +670,7 @@ l.10 ...he page and the Major Groove pointing up.}
 
 LaTeX Warning: Float too large for page by 20.81882pt on input line 12.
 
-<Supplement/allmolecules_per_year.png, id=612, 1123.19624pt x 778.91pt>
+<Supplement/allmolecules_per_year.png, id=643, 1123.19624pt x 778.91pt>
 File: Supplement/allmolecules_per_year.png Graphic file (type png)
 
 <use Supplement/allmolecules_per_year.png>
@@ -664,7 +678,12 @@ File: Supplement/allmolecules_per_year.png Graphic file (type png)
 LaTeX Warning: Float too large for page by 15.15233pt on input line 32.
 
 No file Supplement/supplements.bbl.
-) [50
+)pdfTeX warning (ext4): destination with the same identifier (name{page.50}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98 \include{Supplement/supplements}
+                                      [50
 
 
 
@@ -682,10 +701,10 @@ pdfTeX warning: pdflatex (file ./Supplement/collage2.png): large interlaced PNG
 (./Appendix/appendix2b.aux) (./Supplement/supplements.aux) (./CV/cv.aux)) )
 (\end occurred when \iftrue on line 68 was incomplete) 
 Here is how much of TeX's memory you used:
- 5048 strings out of 256216
- 66623 string characters out of 1917072
- 144505 words of memory out of 1500000
- 7975 multiletter control sequences out of 10000+200000
+ 5063 strings out of 256216
+ 66847 string characters out of 1917072
+ 145636 words of memory out of 1500000
+ 7981 multiletter control sequences out of 10000+200000
  46907 words of font info for 71 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  30i,14n,39p,1041b,423s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -841,15 +860,16 @@ esky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/sh
 are/texmf/fonts/type1/bluesky/cm/cmmi6.pfb></usr/share/texmf/fonts/type1/bluesk
 y/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/t
 exmf/fonts/type1/bluesky/cm/cmmi9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/
-cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/f
-onts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy5
-.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts
-/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvb8a.p
-fb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf/font
-s/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (38 pages, 3146336 bytes).
+cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf/f
+onts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.
+pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy5.pfb></usr/share/texmf/fonts/
+type1/bluesky/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb><
+/usr/share/texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf/fonts/ty
+pe1/urw/helvetic/uhvr8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvro8a.
+pfb>
+Output written on main.pdf (40 pages, 3158881 bytes).
 PDF statistics:
- 714 PDF objects out of 1000 (max. 8388607)
- 170 named destinations out of 1000 (max. 131072)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 747 PDF objects out of 1000 (max. 8388607)
+ 177 named destinations out of 1000 (max. 131072)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
