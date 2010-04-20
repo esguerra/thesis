@@ -63,6 +63,31 @@ Franklin, R.~E. and Gosling, R.~G. (1953)
 {Molecular Configuration in Sodium Thymonucleate}.
 {\em Nature,} {\bf 171}, 740--741.
 
+\bibitem{holley1965}
+Holley, R.~W., Apgar, J., Everett, G.~A., Madison, J.~T., Marquisee, M.,
+  Merrill, S.~H., Penswick, J.~R., and Zamir, A. (1965)
+{Structure of a Ribonucleic Acid}.
+{\em Science,} {\bf 147}, 1462--1465.
+
+\bibitem{robertus1974}
+Robertus, J.~D., Ladner, J.~E., Finch, J.~T., Rhodes, D., Brown, R.~S., Clark,
+  B. F.~C., and Klug, A. (1974)
+Structure of {Y}east {P}henylalanine t{RNA} at 3 {{\AA}} {R}esolution.
+{\em Nature,} {\bf 250}, 546.
+
+\bibitem{kim1974}
+Kim, S.~H. (1974)
+Three-{D}imensional {T}ertiary {S}tructure of {Y}east {P}henylalanine
+  {T}ransfer {RNA}.
+{\em Science,} {\bf 185}, 435.
+
+\bibitem{stout1976}
+Stout, C.~D., Mizuno, H., Rubin, J., Brennan, T., Rao, S.~T., and
+  Sundaralingam, M. (1976)
+{Atomic Coordinates and Molecular Conformation of Yeast Phenylalanyl tRNA. An
+  Independent Investigation}.
+{\em Nucleic Acids Research,} {\bf 3}, 1111--1123.
+
 \bibitem{weinberg2009}
 Weinberg, Z., Perreault, J., Meyer, M.~M., and Breaker, R.~R. (2009)
 {Exceptional Structured Noncoding RNAs Revealed by Bacterial Metagenome
@@ -120,25 +145,6 @@ Thioguanine and {T}hiouracil: {H}ydrogen-{B}onding and {S}tacking {P}roperties.
 
 \bibitem{jenaurl}
 \url{http://www.fli-leibniz.de/ImgLibDoc/nana/IMAGE_NANA.html}.
-
-\bibitem{robertus1974}
-Robertus, J.~D., Ladner, J.~E., Finch, J.~T., Rhodes, D., Brown, R.~S., Clark,
-  B. F.~C., and Klug, A. (1974)
-Structure of {Y}east {P}henylalanine t{RNA} at 3 {{\AA}} {R}esolution.
-{\em Nature,} {\bf 250}, 546.
-
-\bibitem{kim1974}
-Kim, S.~H. (1974)
-Three-{D}imensional {T}ertiary {S}tructure of {Y}east {P}henylalanine
-  {T}ransfer {RNA}.
-{\em Science,} {\bf 185}, 435.
-
-\bibitem{stout1976}
-Stout, C.~D., Mizuno, H., Rubin, J., Brennan, T., Rao, S.~T., and
-  Sundaralingam, M. (1976)
-{Atomic Coordinates and Molecular Conformation of Yeast Phenylalanyl tRNA. An
-  Independent Investigation}.
-{\em Nucleic Acids Research,} {\bf 3}, 1111--1123.
 
 \bibitem{noller2005}
 Noller, H.~F. (2005)

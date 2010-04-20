@@ -1,31 +1,36 @@
 \chapter{Standard reference frame and local parameters}
 \label{appendix_1a}
-\bibliographystyle{nar}
-For  the  structural  description  of RNA  the  program  \textsf{3DNA}
-\cite{lu2003} has been used.  In \textsf{3DNA} there are three sets of
-symmetric local parameters:
+\bibliographystyle{nar}  In   addition  to  the   description  of  RNA
+structures  at the  level of  torsion  angles, one  can also  describe
+structure  in  terms  of  the  spatial  arrangements  of  adjacent  or
+associated bases.  The structural description  of RNA used  here comes
+from the program \textsf{3DNA} \cite{lu2003}, which reports three sets
+of parameters that define the local arrangements of bases.
 \begin{enumerate}
 \item Base-pair parameters,
 \item Base (base-pair) step parameters,
 \item Base (base-pair) local helical parameters.
 \end{enumerate}
-Bases or base  pairs are treated as ``rigid  bodies'' using ideas from
-classical mechanics.
-%% The first two are based on cartesiancoordinates
+The bases  or base pairs and  the paramenters are  the quantities that
+bring  into coincidence  coordinate frames  on the  two  objects using
+ideas from classical mechanics.
+%% The first two are based on cartesian coordinates
 %% (``objectcentered'', reference frame),
 %% whereas the third is referred as helical coordinates
 %% (non-object centered)
 The first two  sets of parameters are based  on Cartesian coordinates,
 whereas the  third set  of helical coordinates,  resembles cylindrical
-coordinates and is based on Chasles's theorem \cite{babcock1994}.
+coordinates and is based on the single rotation that brings coordinate
+frames  on   the  two  bases  into   coincidence  (Chasles's  theorem)
+\cite{babcock1994}.
 
 \section{Base-pair and base-step parameters}
-In  \textsf{3DNA}   one  starts  with   a  Protein  Data   Bank  (PDB)
+In  \textsf{3DNA}   one  starts  with   a  Protein  Data   Bank  (PDB) formatted
 \cite{berman2000}  file   which  is  usually   based  on  experimental
 information\footnote{This is the most common  case but the PDB file is
   sometimes  the result of  theoretical modeling.}   and which  can be
-downloaded from the NDB or  PDB. This file contains the experimentally
-obtained Cartesian  coordinates of  the atoms. With  this experimental
+downloaded from the Nucleic Acid Database (NDB) or  PDB. This file contains the experimentally
+derived Cartesian  coordinates of  the atoms. With  this experimental
 data one  performs a least-squares  fit to a standard  reference frame
 \cite{olson2001}. This can be done using the \textsf{octave} script at
 \url{http://rutchem.rutgers.edu/\~esguerra/RNA/scripts.html}   as  a
@@ -38,15 +43,15 @@ this frame is illustrated in Figure~\ref{fig:standard}
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.8]{Chapter1/standard.png}
-\caption{Standard   reference   frame  of   an   A-T  base-pair.   The
-  \textit{y}-axis (dashed green line) is  chosen to be parallel to the
-  line connecting the C1$^{'}$ of  adenine and the C1$^{'}$ of thymine
-  associated in  an ideal Watson-Crick  base-pair. The \textit{x}-axis
-  is the perpendicular  bisector of the C1$^{'}$ -  C1$^{'}$ line, and
-  the origin is located at the intersection of the \textit{x}-axis and
-  the  line connecting  the C8  atom  of adenine  and the  C6 atom  of
-  thymine. The  \textit{z}-axis is the cross product  of the $\hat{x}$
-  and $\hat{y}$ unit vectors.}
+\caption{Standard    reference    frame    of   an    A-T    base-pair
+  \cite{olson2001}.  The \textit{y}-axis (dashed green line) is chosen
+  to be  parallel to the line  connecting the C1$^{'}$  of adenine and
+  the  C1$^{'}$  of  thymine   associated  in  an  ideal  Watson-Crick
+  base-pair. The \textit{x}-axis is  the perpendicular bisector of the
+  C1$^{'}$  -  C1$^{'}$  line,  and  the  origin  is  located  at  the
+  intersection of  the \textit{x}-axis and the line  connecting the C8
+  atom of adenine  and the C6 atom of  thymine. The \textit{z}-axis is
+  the cross product of the $\hat{x}$ and $\hat{y}$ unit vectors.}
 \label{fig:standard}
 \end{figure}
 

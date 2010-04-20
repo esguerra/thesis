@@ -1,60 +1,5 @@
 \begin{thebibliography}{100}
 
-\bibitem{ndburl}
-\url{http://ndbserver.rutgers.edu/atlas/atlas_about.html}.
-
-\bibitem{iupac1983}
-(1983)
-{IUPAC-IUB Joint Commission on Biochemical Nomenclature (JCBN). Abbreviations
-  and Symbols for the Description of Conformations of Polynucleotide Chains.
-  Recommendations 1982}.
-{\em European Journal of Biochemistry,} {\bf 131}, 9--15.
-
-\bibitem{saenger1984}
-Saenger, W. (1984)
-Principles of {N}ucleic {A}cid {S}tructure,
-Springer-Verlag, London.
-
-\bibitem{rangan2003}
-Rangan, P., Masquida, B., Westhof, E., and Woodson, S.~A. (2003)
-{Assembly of Core Helices and Rapid Tertiary Folding of a Small Bacterial Group
-  I Ribozyme}.
-{\em Proceedings of the National Academy of Sciences of the United States of
-  America,} {\bf 100}, 1574--1579.
-
-\bibitem{richardson2002}
-Richardson, D.~C. and Richardson, J.~S. (2002)
-Teaching {M}olecular 3-{D} {L}iteracy.
-{\em Biochemistry and {M}olecular {B}iology {E}ducation,} {\bf 30}, 21--26.
-
-\bibitem{lu2008b}
-Lu, X.-J. and Olson, W.~K. (2008)
-{3DNA: A Versatile, Integrated Software System for the Analysis, Rebuilding and
-  Visualization of Three-Dimensional Nucleic-Acid Structures}.
-{\em Nature Protocols,} {\bf 3}, 1213--1227.
-
-\bibitem{murray2003}
-Murray, L. J.~W., III, W. B.~A., Richardson, D.~C., and Richardson, J.~S.
-  (2003)
-{RNA Backbone is Rotameric}.
-{\em Proceedings of the National Academy of Sciences of the United States of
-  America,} {\bf 100}, 13904--13909.
-
-\bibitem{arnott1973}
-Arnott, S., Hukins, D. W.~L., Dover, S.~D., Fuller, W., and Hodgson, A.~R.
-  (1973)
-{Structures of Synthetic Polynucleotides in the A-RNA and A$'$-RNA
-  Conformations: X-ray Diffraction Analyses of the Molecular Conformations of
-  Polyadenylic Acid $\cdot$ Polyuridylic Acid and Polyinosinic Acid $\cdot$
-  Polycytidylic acid}.
-{\em Journal of Molecular Biology,} {\bf 81}, 107--122.
-
-\bibitem{lu2003}
-Lu, X.-J. and Olson, W. (2003)
-3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
-  {V}isualization of the {T}hree-{D}imensional {N}ucleic {A}cid {S}tructures.
-{\em Nucleic {A}cids {R}esearch,} {\bf 31}, 5108--5121.
-
 \bibitem{woese1967}
 Woese, C. (1967)
 The Genetic Code, the Molecular Basis for Genetic Expression,
@@ -118,6 +63,31 @@ Franklin, R.~E. and Gosling, R.~G. (1953)
 {Molecular Configuration in Sodium Thymonucleate}.
 {\em Nature,} {\bf 171}, 740--741.
 
+\bibitem{holley1965}
+Holley, R.~W., Apgar, J., Everett, G.~A., Madison, J.~T., Marquisee, M.,
+  Merrill, S.~H., Penswick, J.~R., and Zamir, A. (1965)
+{Structure of a Ribonucleic Acid}.
+{\em Science,} {\bf 147}, 1462--1465.
+
+\bibitem{robertus1974}
+Robertus, J.~D., Ladner, J.~E., Finch, J.~T., Rhodes, D., Brown, R.~S., Clark,
+  B. F.~C., and Klug, A. (1974)
+Structure of {Y}east {P}henylalanine t{RNA} at 3 {{\AA}} {R}esolution.
+{\em Nature,} {\bf 250}, 546.
+
+\bibitem{kim1974}
+Kim, S.~H. (1974)
+Three-{D}imensional {T}ertiary {S}tructure of {Y}east {P}henylalanine
+  {T}ransfer {RNA}.
+{\em Science,} {\bf 185}, 435.
+
+\bibitem{stout1976}
+Stout, C.~D., Mizuno, H., Rubin, J., Brennan, T., Rao, S.~T., and
+  Sundaralingam, M. (1976)
+{Atomic Coordinates and Molecular Conformation of Yeast Phenylalanyl tRNA. An
+  Independent Investigation}.
+{\em Nucleic Acids Research,} {\bf 3}, 1111--1123.
+
 \bibitem{weinberg2009}
 Weinberg, Z., Perreault, J., Meyer, M.~M., and Breaker, R.~R. (2009)
 {Exceptional Structured Noncoding RNAs Revealed by Bacterial Metagenome
@@ -128,6 +98,21 @@ Weinberg, Z., Perreault, J., Meyer, M.~M., and Breaker, R.~R. (2009)
 Severcan, I., Geary, C., Verzemnieks, E., Chworos, A., and Jaeger, L. (2009)
 {Square-Shaped RNA Particles from Different RNA Folds}.
 {\em Nanotechnology Letters,} {\bf 9}, 1270--1277.
+
+\bibitem{ndburl}
+\url{http://ndbserver.rutgers.edu/atlas/atlas_about.html}.
+
+\bibitem{iupac1983}
+(1983)
+{IUPAC-IUB Joint Commission on Biochemical Nomenclature (JCBN). Abbreviations
+  and Symbols for the Description of Conformations of Polynucleotide Chains.
+  Recommendations 1982}.
+{\em European Journal of Biochemistry,} {\bf 131}, 9--15.
+
+\bibitem{saenger1984}
+Saenger, W. (1984)
+Principles of {N}ucleic {A}cid {S}tructure,
+Springer-Verlag, London.
 
 \bibitem{lee2004}
 Lee, J.~C. and Gutell, R.~R. (2004)
@@ -160,25 +145,6 @@ Thioguanine and {T}hiouracil: {H}ydrogen-{B}onding and {S}tacking {P}roperties.
 
 \bibitem{jenaurl}
 \url{http://www.fli-leibniz.de/ImgLibDoc/nana/IMAGE_NANA.html}.
-
-\bibitem{robertus1974}
-Robertus, J.~D., Ladner, J.~E., Finch, J.~T., Rhodes, D., Brown, R.~S., Clark,
-  B. F.~C., and Klug, A. (1974)
-Structure of {Y}east {P}henylalanine t{RNA} at 3 {{\AA}} {R}esolution.
-{\em Nature,} {\bf 250}, 546.
-
-\bibitem{kim1974}
-Kim, S.~H. (1974)
-Three-{D}imensional {T}ertiary {S}tructure of {Y}east {P}henylalanine
-  {T}ransfer {RNA}.
-{\em Science,} {\bf 185}, 435.
-
-\bibitem{stout1976}
-Stout, C.~D., Mizuno, H., Rubin, J., Brennan, T., Rao, S.~T., and
-  Sundaralingam, M. (1976)
-{Atomic Coordinates and Molecular Conformation of Yeast Phenylalanyl tRNA. An
-  Independent Investigation}.
-{\em Nucleic Acids Research,} {\bf 3}, 1111--1123.
 
 \bibitem{noller2005}
 Noller, H.~F. (2005)
@@ -242,6 +208,13 @@ Kinetics of {F}olding of {P}roteins and {RNA}.
 Tinoco, I. and Bustamante, C. (1999)
 {How RNA Folds}.
 {\em Journal of {M}olecular {B}iology,} {\bf 293}, 271--281.
+
+\bibitem{rangan2003}
+Rangan, P., Masquida, B., Westhof, E., and Woodson, S.~A. (2003)
+{Assembly of Core Helices and Rapid Tertiary Folding of a Small Bacterial Group
+  I Ribozyme}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 100}, 1574--1579.
 
 \bibitem{moore1999a}
 Moore, P.~B.
@@ -453,6 +426,13 @@ Berman, H.~M., Olson, W.~K., Beveridge, D.~L., Westbrook, J., Gelbin, A.,
   Three-Dimensional Structures of Nucleic Acids}.
 {\em Biophysical Journal,} {\bf 63}, 751--759.
 
+\bibitem{murray2003}
+Murray, L. J.~W., III, W. B.~A., Richardson, D.~C., and Richardson, J.~S.
+  (2003)
+{RNA Backbone is Rotameric}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 100}, 13904--13909.
+
 \bibitem{schneider2004}
 Schneider, B., Moravek, Z., and Berman, H. (2004)
 {RNA Conformational Classes}.
@@ -528,6 +508,17 @@ Holbrook, S.~R. (2008)
 Sykes, M.~T. and Williamson, J.~R. (2009)
 {A Complex Assembly Landscape for the 30S Ribosomal Subunit}.
 {\em Annual Review of Biophysics,} {\bf 38}, 197--215.
+
+\bibitem{richardson2002}
+Richardson, D.~C. and Richardson, J.~S. (2002)
+Teaching {M}olecular 3-{D} {L}iteracy.
+{\em Biochemistry and {M}olecular {B}iology {E}ducation,} {\bf 30}, 21--26.
+
+\bibitem{lu2008b}
+Lu, X.-J. and Olson, W.~K. (2008)
+{3DNA: A Versatile, Integrated Software System for the Analysis, Rebuilding and
+  Visualization of Three-Dimensional Nucleic-Acid Structures}.
+{\em Nature Protocols,} {\bf 3}, 1213--1227.
 
 \bibitem{andreeva2004}
 Andreeva, A., Howorth, D., Brenner, S.~E., Hubbard, T. J.~P., Chothia, C., and
@@ -684,6 +675,15 @@ Restrepo, G., Llanos, E.~J., and Meza, H. (2006)
 Topological {S}pace of the {C}hemical {E}lements and its {P}roperties.
 {\em Journal of {M}athematical {C}hemistry,} {\bf 39}, 401--416.
 
+\bibitem{arnott1973}
+Arnott, S., Hukins, D. W.~L., Dover, S.~D., Fuller, W., and Hodgson, A.~R.
+  (1973)
+{Structures of Synthetic Polynucleotides in the A-RNA and A$'$-RNA
+  Conformations: X-ray Diffraction Analyses of the Molecular Conformations of
+  Polyadenylic Acid $\cdot$ Polyuridylic Acid and Polyinosinic Acid $\cdot$
+  Polycytidylic acid}.
+{\em Journal of Molecular Biology,} {\bf 81}, 107--122.
+
 \bibitem{handl2005}
 Handl, J., Knowles, J., and Kell, D.~B. (2005)
 {Computational Cluster Validation in Post-Genomic Data Analysis}.
@@ -704,6 +704,18 @@ R Foundation for Statistical Computing Vienna, Austria (2009)
 Arnott, S. (1999)
 Oxford Handbook of Nucleic Acid Structure,
 Oxford Science Publications, .
+
+\bibitem{olson2009}
+Olson, W.~K., Esguerra, M., Xin, Y., and Lu, X.-J. (2009)
+{New Information Content in RNA Base Pairing Deduced from Quantitative Analysis
+  of High-Resolution Structures}.
+{\em Methods,} {\bf 47}, 177--186.
+
+\bibitem{lu2003}
+Lu, X.-J. and Olson, W. (2003)
+3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
+  {V}isualization of the {T}hree-{D}imensional {N}ucleic {A}cid {S}tructures.
+{\em Nucleic {A}cids {R}esearch,} {\bf 31}, 5108--5121.
 
 \bibitem{babcock1994}
 Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
