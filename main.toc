@@ -26,9 +26,9 @@
 \contentsline {unnumberedsection}{References}{39}{chapter*.7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {chapter}{\numberline {3}RNA Base-Pairing}{37}{chapter.3}
-\contentsline {section}{\numberline {3.1}Canonical and Noncanonical Base-pairs, Methods Paper}{37}{section.3.1}
-\contentsline {section}{\numberline {3.2}Clustering of Yurong's Classification}{37}{section.3.2}
+\contentsline {chapter}{\numberline {3}RNA Base-Pairing}{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}Canonical and Noncanonical Base-pairs}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}Clustering of Yurong's Classification}{41}{section.3.2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {4}RNA Base Pair Steps}{38}{chapter.4}
