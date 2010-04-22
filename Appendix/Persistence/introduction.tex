@@ -1,12 +1,20 @@
 \part{Introduction}
 Biopolymers can be either rigid or flexible. 
 
-They are classified according to whether their persistence lenghts are
-greater, smaller, or similar to the total lenght of the polymer.
+They can be classified  according to whether their persistence lenghts
+are greater, smaller, or similar to the total length of the polymer.
 
-Flexible          $lp < L$\\
-Rigid             $lp > L$\\
-Semi-flexible     $lp \approx L$\\
+\begin{table}[htbp]
+\begin{center}  
+\begin{tabular}{c|c|c}
+\hline
+Rigid Rod       & Rigid          &        $lp > L$   \\
+Gaussian chain  & Flexible       &        $lp < L$   \\
+Worm-like chain & Semi-flexible  &    $lp \approx L$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
 
 Rigid biopolymers:
 actin, microtubules
@@ -31,14 +39,73 @@ roughly the same direction, that is, this nearby points are
 persistent. Points farther away than the bend-persistence length are
 said to be uncorrelated.''
 
-
 there is also twist-persistence length.
 that is, there is, a rubber rod not only resists bending but also twisting.
 
+"length at which the orientation of the sequential bonds which make
+up a polymer chain, stop being correlated. That is, if you have just
+two bonds, they will be correlated, which is the case in most
+molecules, but, in polymers, you have a long chain of sequential
+bonds. At some length, bonds will become uncorreleted, but up to that
+lenght they were correlated, this is what is meant by persistence
+length, and, in this context it's obvious that is an exclusive
+property of polymers."
 
 
+
+\begin{table}[htbp]
+\begin{center}
 \begin{tabular}{|l|l|l|l|}
 \hline 
 polymer & lp(\AA) & T (Kelvin) & Phase \\ \hline
 DNA     & 500     &  273       & water \\ \hline
 \end{tabular}
+\end{center}
+\end{table}
+
+
+
+\section{end-to-end}
+The end-to-end vector  $r$ is the vector which connects  the ends of a
+chain.  It  can be defined  as the sum  of the vectors connecting the
+monomer units in a chain. These connecting vectors are sometimes called
+virtual  bond vectors  $l$. From  the end-to-end  vector  the quantity
+which is usually of interest is it's magnitude.
+
+\begin{gather}
+\label{eq:end2end}
+r = \sum_{i=1}^{n} l_{i}\\
+r^2 = r \cdot r = \sum_{i,j}l_{i} \cdot l_{j}
+\end{gather}
+Equation \ref{eq:end2end}, can also be written:
+\begin{gather}
+r^2 = \sum_{i}l_{i}^{2} + 2 \sum_{i\neq j} l_{i} \cdot l_{j}
+\end{gather}  
+
+To  describe a  polymer  it's  necessary to  think  about the  various
+conformations it can adopt  due to its flexibility, therefore, it
+is important  to think of polymer  related quantities in  terms of the
+average of their possible conformations. For the end-to-end vector the
+average of  its values  is denoted  as $<r>$, and  the average  of its
+norm, also called the second moment of the end-to-end distribution, is
+denoted by $<r^2>$:
+\begin{gather}
+\label{eq:secmom}  
+<r^2>=\sum_{i}<l_{i}^2> + 2\sum_{i<j}<l_{i} \cdot l_{j}>
+\end{gather}  
+
+When there is no correlation between succesive bonds we can write:
+
+\begin{gather}
+\label{eq:nocorr}
+<l_{i} \cdot l_{j}> = 0
+\end{gather}
+
+And equation \ref{eq:secmom} reduces to having only the bond self
+correlation term:
+
+\begin{gather}
+<r^2> = \sum_{i}<l_{i}^2> = n<l^2>
+\end{gather}  
+
+This equation is used to describe a so-called freely-jointed chain.
