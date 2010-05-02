@@ -1,16 +1,16 @@
 \part{Introduction}
 Biopolymers can be either rigid or flexible. 
 
-They can be classified  according to whether their persistence lenghts
-are greater, smaller, or similar to the total length of the polymer.
+They can be classified  according to whether their persistence lenghts ($a$)
+are greater, smaller, or similar to the total length of the polymer ($L$).
 
 \begin{table}[htbp]
 \begin{center}  
 \begin{tabular}{c|c|c}
 \hline
-Rigid Rod       & Rigid          &        $lp > L$   \\
-Gaussian chain  & Flexible       &        $lp < L$   \\
-Worm-like chain & Semi-flexible  &    $lp \approx L$ \\
+Rigid Rod       & Rigid          &        $a > L$   \\
+Gaussian chain  & Flexible       &        $a < L$   \\
+Worm-like chain & Semi-flexible  &    $a \approx L$ \\
 \hline
 \end{tabular}
 \end{center}
@@ -21,15 +21,31 @@ actin, microtubules
 
 Flexible biopolymers:
 
-
-Semi-flexible:
+Semi-flexible biopolymers:
 
 If the persistence lenght is of the same order of the length of the
 polymer, then the polymer is classified as  semi-flexible
 
+
+\begin{table}[htbp]
+\begin{center}  
+\begin{tabular}{c|c}
+\hline
+Polymer       & $a$ (nm)    \hline \\
+\alpha-helix & 80-100\\
+coiled-coil & 150-300\\
+Ideal DNA  &  51  \\
+Ideal RNA & 70-80 \\
+\hline
+\end{tabular}
+\caption{Persistence lengths for some biopolymers with filament structures.}
+\end{center}
+\end{table}
+
+
 \section{Persistence Lenght Definitions}
 
-``bend-persistence length: 
+``\textbf{Bend-persistence length}:\\ 
 A length scale beyond which the elastic cost of bending is totally
 negligible''
 
@@ -51,6 +67,8 @@ lenght they were correlated, this is what is meant by persistence
 length, and, in this context it's obvious that is an exclusive
 property of polymers."
 
+"the average sum of the projections of all bonds $ j \geq i$  in an 
+indefinetely long chain."
 
 
 \begin{table}[htbp]
@@ -66,10 +84,12 @@ DNA     & 500     &  273       & water \\ \hline
 
 
 \section{end-to-end}
-The end-to-end vector  $r$ is the vector which connects  the ends of a
-chain.  It  can be defined  as the sum  of the vectors connecting the
+The end-to-end vector  $r$ is the vector which connects  the ends of a 
+polymer chain.  It  can be defined  as the sum  of the vectors connecting the
 monomer units in a chain. These connecting vectors are sometimes called
-virtual  bond vectors  $l$. From  the end-to-end  vector  the quantity
+virtual  bond vectors $l$.  
+
+From  the end-to-end  vector  the quantity
 which is usually of interest is it's magnitude.
 
 \begin{gather}
