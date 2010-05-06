@@ -1,5 +1,5 @@
 \part{Introduction}
-To quantify the rigidity of a polymer
+
 
 Biopolymers can be either rigid or flexible. 
 
@@ -10,31 +10,24 @@ are greater, smaller, or similar to the total length of the polymer ($L$).
 \begin{center}  
 \begin{tabular}{c|c|c}
 \hline
-Model Type      & Polymer Characteristic & a to L relation\\ \hline
 Rigid Rod       & Rigid          &        $a > L$   \\
 Gaussian chain  & Flexible       &        $a < L$   \\
-Worm-like chain & Semi-flexible  &    $a \approx L$ \\
+ FJC Worm-like chain & Semi-flexible  &    $a \approx L$ \\
 \hline
 \end{tabular}
 \end{center}
 \end{table}
 
-Worm-like-chain = Porod-Kratky = Freely Rotating Chain in limit l=0
-and n=infinity
-\\
-
 Rigid biopolymers:
 actin, microtubules
-\\
 
 Flexible biopolymers:
-\\
 
 Semi-flexible biopolymers:
-High force extension DNA.
-\\
+High 
 
-If the persistence length is of the same order of the length of the
+
+If the persistence lenght is of the same order of the length of the
 polymer, then the polymer is classified as  semi-flexible
 
 
@@ -148,12 +141,6 @@ This equation is used to describe a so-called freely-jointed chain.
 
 
 \section{Models}
-
-\subsection{Kuhn - Freely Jointed Chain (FJC)}
-
-\subsection{Porod-Kratky - Worm Like Chain (WLC)}
-
-\subsection{Olson - Realistic}
 
 
 
