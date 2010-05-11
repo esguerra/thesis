@@ -29,7 +29,7 @@
 \contentsline {chapter}{\numberline {3}RNA Base-Pairing}{42}{chapter.3}
 \contentsline {section}{\numberline {3.1}Canonical and Noncanonical Base-pairs}{42}{section.3.1}
 \contentsline {section}{\numberline {3.2}Clustering of Yurong's Classification}{42}{section.3.2}
-\contentsline {unnumberedsection}{References}{44}{chapter*.6}
+\contentsline {unnumberedsection}{References}{44}{chapter*.8}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {chapter}{\numberline {4}RNA Base Pair Steps}{45}{chapter.4}
@@ -53,13 +53,13 @@
 \contentsline {chapter}{\appnumberline {A}Standard reference frame and local parameters}{53}{appendix.A}
 \contentsline {section}{\numberline {A.1}Base-pair and base-step parameters}{53}{section.A.1}
 \contentsline {section}{\numberline {A.2}Local helical parameters}{56}{section.A.2}
-\contentsline {unnumberedsection}{References}{59}{appendix*.11}
+\contentsline {unnumberedsection}{References}{59}{appendix*.9}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
 \contentsline {chapter}{\appnumberline {B}Clustering Analysis (CA)}{60}{appendix.B}
 \contentsline {section}{\numberline {B.1}General Methodology}{60}{section.B.1}
 \contentsline {section}{\numberline {B.2}Hierarchical methods}{61}{section.B.2}
-\contentsline {unnumberedsection}{References}{65}{appendix*.12}
+\contentsline {unnumberedsection}{References}{65}{appendix*.10}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
 \contentsline {chapter}{\appnumberline {C}Dimension Reduction}{66}{appendix.C}
