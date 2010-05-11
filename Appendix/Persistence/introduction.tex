@@ -1,15 +1,26 @@
 \part{Introduction}
-Nucleic Acids and other polymers can behave like mechanical objects,
-therefore an engineering type of approach to understand them is
-usually applied. The objects which engineers deal with are for example
-steel bars, or wooden plancks, or more felxible objects like rubber
-tubes, or pipes. What has been learned by engineers can be applied to
-biopolymers. On the other hand biopolymers are molecules, and
-therefore are to be understood at the same time as molecules. In the
-case of our interest, that is, the RNA molecule, we can see it as an
-engineers material, but we can also see it as a molecule. When we see
-it as a molecule we usually say that we are concerned with sequence
-dependent effects.
+\bibliographystyle{nar}
+Nucleic Acids and other polymers can be understood as mechanical
+objects \cite{marko2003, nelson2004} and therefore engineering
+approaches can be used for their understanding. Usually the methods
+followed by the engineering approach neglect details which can be
+intrinsic to the local chemistry of the subunits which make up the
+polymer. Dr. Olson and collaborators have suggested a formal approach
+refered to as the "realistic" model, which takes into account details
+at the sequence level for the case of nucleic acids. This model is
+dependent on a knowledge-based approach, where, force constant analogs
+are derived from crystallographic data using a so called covariation,
+or go model \cite{go1974}.
+
+
+
+
+
+Continuous vs discrete models.
+
+
+
+
 
 The previous is not exactly true, we are using a completely physical
 model, the only thing is that we are linking different parts, that is,
@@ -187,11 +198,29 @@ This equation is used to describe a so-called freely-jointed chain.
 
 \section{Models}
 
+Nelson in book says:
+
+\begin{gather}
+dE={1}{2}\kappa_{B}T[A\beta^2+Bu^2+C\omega^2+2Du\omega]ds
+\end{gather}  
+
+A$\kappa \beta$ T = Bend stiffness
+B$\kappa \beta$ T = Stretch stiffness
+C$\kappa \beta$ T = Twist stiffness
+D$\kappa \beta$ T = Twist-stretch coupling
+
+If only the bend stiffness survives then the model is called an
+inextensible model, also Porod-Kratky, or WLC.
+
 \subsection{Kuhn - Freely Jointed Chain (FJC)}
 
 \subsection{Porod-Kratky - Worm Like Chain (WLC)}
 
 \subsection{Olson - Realistic}
+
+The Hamiltonian for a \cite{czapla2009}
+
+
 
 
 
@@ -201,3 +230,4 @@ From Equilibrium Statistics of Plischke and Bergersen they suggest to
 read:
 Des Cloiseaoux and Janik ()
 Rubinstein and Colby (Polymer Physics)
+\bibliography{biblio}
