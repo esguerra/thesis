@@ -23,12 +23,26 @@
 \BOOKMARK [1][-]{section.3.1}{Canonical and Noncanonical Base-pairs}{chapter.3}
 \BOOKMARK [1][-]{section.3.2}{Clustering of Yurong's Classification}{chapter.3}
 \BOOKMARK [0][-]{chapter*.8}{References}{}
+\BOOKMARK [0][-]{chapter.4}{RNA Base Pair Steps}{}
+\BOOKMARK [1][-]{section.4.1}{Analysis \(Albany Poster\) and Django Webserver}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Persistence Length of RNA}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{AMBER: Persistence Length of Base-Pair Step Patterns}{chapter.4}
+\BOOKMARK [0][-]{chapter*.9}{References}{}
 \BOOKMARK [0][-]{appendix.A}{Appendix A. Standard reference frame and local parameters}{}
 \BOOKMARK [1][-]{section.A.1}{Base-pair and base-step parameters}{appendix.A}
 \BOOKMARK [1][-]{section.A.2}{Local helical parameters}{appendix.A}
-\BOOKMARK [0][-]{appendix*.9}{References}{}
+\BOOKMARK [0][-]{appendix*.10}{References}{}
 \BOOKMARK [0][-]{appendix.B}{Appendix B. Clustering Analysis \(CA\)}{}
 \BOOKMARK [1][-]{section.B.1}{General Methodology}{appendix.B}
 \BOOKMARK [1][-]{section.B.2}{Hierarchical methods}{appendix.B}
-\BOOKMARK [0][-]{appendix*.10}{References}{}
-\BOOKMARK [0][-]{appendix.A}{Supplement A. Figure Supplements}{}
+\BOOKMARK [0][-]{appendix*.11}{References}{}
+\BOOKMARK [-1][-]{part.1}{I Introduction}{}
+\BOOKMARK [0][-]{section.C.2}{Persistence Lenght Definitions}{part.1}
+\BOOKMARK [1][-]{section.C.3}{end-to-end}{section.C.2}
+\BOOKMARK [1][-]{section.C.4}{Models}{section.C.2}
+\BOOKMARK [2][-]{subsection.C.4.1}{Kuhn - Freely Jointed Chain \(FJC\)}{section.C.4}
+\BOOKMARK [2][-]{subsection.C.4.2}{Porod-Kratky - Worm Like Chain \(WLC\)}{section.C.4}
+\BOOKMARK [2][-]{subsection.C.4.3}{Olson - Realistic}{section.C.4}
+\BOOKMARK [1][-]{section.C.5}{Suggested Reads}{section.C.2}
+\BOOKMARK [0][-]{appendix*.12}{References}{part.1}
+\BOOKMARK [0][-]{appendix.A}{Supplement A. Figure Supplements}{part.1}

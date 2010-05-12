@@ -1,0 +1,233 @@
+\part{Introduction}
+\label{appendix4a}
+\bibliographystyle{nar}
+Nucleic Acids and other polymers can be understood as mechanical
+objects \cite{marko2003, nelson2004} and therefore engineering
+approaches can be used for their understanding. Usually the methods
+followed by the engineering approach neglect details which can be
+intrinsic to the local chemistry of the subunits which make up the
+polymer. Dr. Olson and collaborators have suggested a formal approach
+refered to as the "realistic" model \cite{olson1993}, which takes into account details
+at the sequence level for the case of nucleic acids. This model is
+dependent on a knowledge-based approach, where, force constant analogs
+are derived from crystallographic data using a so called covariation,
+or go model \cite{go1974}.
+
+
+
+
+
+Continuous vs discrete models.
+
+
+
+
+
+The previous is not exactly true, we are using a completely physical
+model, the only thing is that we are linking different parts, that is,
+we are assuming that the connected parts have springs with different
+constants, that't it. It is as if we were connecting pieces of steel,
+with pieces of rubber, and pieces of wood, let's say.
+
+Global properties of DNA as a polymer do not depend so much in
+structural detail, but local properties are definetely described at
+the chemical-molecular-atomic level.
+
+The realistic model, in a way, bridges the gap between non-sequence
+dependent elasticity theory models, and sequence dependent
+molecular-bond (can be virtual-bond) based models.
+
+
+that is, like rigid rods, say a steel bar, or like flexible rods, say
+a rubber tube.
+
+The "realistic model" is general an can be simplified to other models,
+for example to the freely rotating model, just by making the twisting
+constant zero, that is, the polymer will not be elastic when twisted.
+when stretching constan 
+
+
+
+To quantify the rigidity of a polymer
+
+Biopolymers can be either rigid or flexible. 
+
+They can be classified  according to whether their persistence length ($a$)
+is greater, smaller, or similar to the contour length ($L$) of the polymer.
+
+\begin{table}[htbp]
+\begin{center}  
+\begin{tabular}{c|c|c}
+\hline
+Model Type      & Polymer Characteristic & $a$ to $L$ relation\\ \hline
+Rigid Rod       & Rigid          &        $a >> L$   \\
+Gaussian chain  & Flexible       &        $a << L$   \\
+Worm-like chain & Semi-flexible  &    $a \approx L$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Worm-like-chain = Porod-Kratky = Freely Rotating Chain in limit l=0
+and n=infinity
+\\
+
+Rigid biopolymers:
+actin, microtubules
+\\
+
+Flexible biopolymers:
+\\
+
+Semi-flexible biopolymers:
+High force extension DNA.
+\\
+
+If the persistence length is of the same order of the length of the
+polymer, then the polymer is classified as  semi-flexible
+
+
+\begin{table}[htbp]
+\begin{center}  
+\begin{tabular}{c|c}
+\hline
+Polymer       & $a$ (nm)   \\ \hline
+$\alpha$-helix & 80-100\\
+coiled-coil & 150-300\\
+Ideal DNA  &  51  \\
+Ideal RNA & 70-80 \\
+\hline
+\end{tabular}
+\caption{Persistence lengths for some biopolymers with filament structures.}
+\end{center}
+\end{table}
+
+Think about the "energy" based perspective of Nicolas, and the
+stochastic based perspective of Flory and others.
+
+
+
+
+\section{Persistence Lenght Definitions}
+
+``\textbf{Bend-persistence length}:\\ 
+A length scale beyond which the elastic cost of bending is totally
+negligible''
+
+``In a randomly shaken rod any particular point in the rod will be
+pointing in a random direction, but nearby points will be pointing in
+roughly the same direction, that is, this nearby points are
+persistent. Points farther away than the bend-persistence length are
+said to be uncorrelated.''
+
+there is also twist-persistence length.
+that is, there is, a rubber rod not only resists bending but also twisting.
+
+"length at which the orientation of the sequential bonds which make
+up a polymer chain, stop being correlated. That is, if you have just
+two bonds, they will be correlated, which is the case in most
+molecules, but, in polymers, you have a long chain of sequential
+bonds. At some length, bonds will become uncorreleted, but up to that
+lenght they were correlated, this is what is meant by persistence
+length, and, in this context it's obvious that is an exclusive
+property of polymers."
+
+"the average sum of the projections of all bonds $ j \geq i$  in an 
+indefinetely long chain."
+
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline 
+polymer & lp(\AA) & T (Kelvin) & Phase \\ \hline
+DNA     & 500     &  273       & water \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+\section{end-to-end}
+The end-to-end vector  $r$ is the vector which connects  the ends of a 
+polymer chain.  It  can be defined  as the sum  of the vectors connecting the
+monomer units in a chain. These connecting vectors are sometimes called
+virtual  bond vectors $l$.  
+
+From  the end-to-end  vector  the quantity
+which is usually of interest is it's magnitude.
+
+\begin{gather}
+\label{eq:end2end}
+r = \sum_{i=1}^{n} l_{i}\\
+r^2 = r \cdot r = \sum_{i,j}l_{i} \cdot l_{j}
+\end{gather}
+Equation \ref{eq:end2end}, can also be written:
+\begin{gather}
+r^2 = \sum_{i}l_{i}^{2} + 2 \sum_{i\neq j} l_{i} \cdot l_{j}
+\end{gather}  
+
+To  describe a  polymer  it's  necessary to  think  about the  various
+conformations it can adopt  due to its flexibility, therefore, it
+is important  to think of polymer  related quantities in  terms of the
+average of their possible conformations. For the end-to-end vector the
+average of  its values  is denoted  as $<r>$, and  the average  of its
+norm, also called the second moment of the end-to-end distribution, is
+denoted by $<r^2>$:
+\begin{gather}
+\label{eq:secmom}  
+<r^2>=\sum_{i}<l_{i}^2> + 2\sum_{i<j}<l_{i} \cdot l_{j}>
+\end{gather}  
+
+When there is no correlation between succesive bonds we can write:
+
+\begin{gather}
+\label{eq:nocorr}
+<l_{i} \cdot l_{j}> = 0
+\end{gather}
+
+And equation \ref{eq:secmom} reduces to having only the bond self
+correlation term:
+
+\begin{gather}
+<r^2> = \sum_{i}<l_{i}^2> = n<l^2>
+\end{gather}  
+
+This equation is used to describe a so-called freely-jointed chain.
+
+
+\section{Models}
+
+Nelson in book says:
+
+\begin{gather}
+dE={1}{2}\kappa_{B}T[A\beta^2+Bu^2+C\omega^2+2Du\omega]ds
+\end{gather}  
+
+A$\kappa \beta$ T = Bend stiffness
+B$\kappa \beta$ T = Stretch stiffness
+C$\kappa \beta$ T = Twist stiffness
+D$\kappa \beta$ T = Twist-stretch coupling
+
+If only the bend stiffness survives then the model is called an
+inextensible model, also Porod-Kratky, or WLC.
+
+\subsection{Kuhn - Freely Jointed Chain (FJC)}
+
+\subsection{Porod-Kratky - Worm Like Chain (WLC)}
+
+\subsection{Olson - Realistic}
+
+The Hamiltonian for a \cite{czapla2009}
+
+
+
+
+
+\section{Suggested Reads}
+
+From Equilibrium Statistics of Plischke and Bergersen they suggest to
+read:
+Des Cloiseaoux and Janik ()
+Rubinstein and Colby (Polymer Physics)
+\bibliography{biblio}
