@@ -33,6 +33,17 @@ Czapla, L., Swigon, D., and Olson, W.~K. (2006)
 Sequence-dependent effects in the cyclization of short dna.
 {\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
 
+\bibitem{flory1969}
+Flory, P.~J. (1969)
+Statistical Mechanics of Chain Molecules,
+Interscience Publishers, .
+
+\bibitem{olson1995}
+Olson, W.~K., Babcock, M.~S., Gorin, A., Liu, G., Marky, N.~L., Martino, J.~A.,
+  Pedersen, S.~C., Srinivasan, A.~R., Tobias, I., and Westcott, T.~P. (1995)
+{Flexing and Folding Double Helical DNA}.
+{\em Biophysical Chemistry,} {\bf 55}, 7--29.
+
 \bibitem{czapla2009}
 Czapla, L.
 {The Statistical Mechanics of Free and Protein-Bound DNA by Monte Carlo
