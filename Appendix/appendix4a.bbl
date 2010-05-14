@@ -10,10 +10,28 @@ Nelson, P. (2004)
 Biological Physics: Energy, Information, Life,
 W. H. Freeman and Company, .
 
-\bibitem{go1974}
-Go, N., Go, M., and Scheraga, H. (1974)
-New method for calculating the conformational entropy of a regular helix.
-{\em Macromolecules,} {\bf 7}, 137--139.
+\bibitem{olson1993}
+Olson, W.~K., Marky, N.~L., Jernigan, R.~L., and Zhurkin, V.~B. (1993)
+{Influence of Fluctuations on DNA Curvature. A Comparison of Flexible and
+  Static Wedge Models of Intrinsically Bent DNA}.
+{\em Journal of Molecular Biology,} {\bf 232}, 530--554.
+
+\bibitem{go1976}
+Go, M. and Go, N. (1976)
+{Fluctuations of an Alpha-Helix}.
+{\em Biopolymers,} {\bf 15}, 1119--1127.
+
+\bibitem{olson1998}
+Olson, W.~K., Gorin, A.~A., Lu, X.-J., Hock, L.~M., and Zhurkin, V.~B. (1998)
+D{NA} sequence-dependent deformability deduced from protein-{DNA} crystal
+  complexes.
+{\em Proceedings of the {N}ational {A}cademy of {S}ciences,} {\bf 95},
+  11163--11168.
+
+\bibitem{czapla2006}
+Czapla, L., Swigon, D., and Olson, W.~K. (2006)
+Sequence-dependent effects in the cyclization of short dna.
+{\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
 
 \bibitem{czapla2009}
 Czapla, L.

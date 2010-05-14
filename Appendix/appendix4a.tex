@@ -1,54 +1,89 @@
-\part{Introduction}
+\chapter{Persistence Length}
 \label{appendix4a}
 \bibliographystyle{nar}
-Nucleic Acids and other polymers can be understood as mechanical
-objects \cite{marko2003, nelson2004} and therefore engineering
-approaches can be used for their understanding. Usually the methods
-followed by the engineering approach neglect details which can be
-intrinsic to the local chemistry of the subunits which make up the
-polymer. Dr. Olson and collaborators have suggested a formal approach
-refered to as the "realistic" model \cite{olson1993}, which takes into account details
-at the sequence level for the case of nucleic acids. This model is
-dependent on a knowledge-based approach, where, force constant analogs
-are derived from crystallographic data using a so called covariation,
-or go model \cite{go1974}.
+Nucleic  Acids and  other  polymers can  be  understood as  mechanical
+objects   \cite{marko2003,  nelson2004}   and   therefore  engineering
+approaches can  be used for their understanding.   Usually the methods
+followed by  the engineering approach  consider the polymer as  a long
+continuous rod, and  are known as continuum elastic  theory. This type
+of approach leaves little space  for taking into account the nature of
+the  subunits  which  make up  the  polymer,  that  is, it  is  mainly
+applicable to  homopolymers made up of identical  subunits. In nucleic
+acids this is not necesarily  the case, a more general approach should
+take into account the  possibility of having different subunits making
+up  the polymer.  Olson  and collaborators  have developed  a sequence
+dependent model, refered to as the "realistic" model \cite{olson1993}.
+Such model is harmonic  and depends on determination of force-constant
+analogs  derived  from  X-Ray  cristallographic data  taken  from  the
+Nucleic  Acid  Database  (NDB)  \cite{go1976, olson1998}.  Within  the
+context of the "realistic" model Czapla et al.  \cite{czapla2006} have
+suggested   a   gaussian  sampling   methodology   which  allows   the
+determination of global polymer properties like the persistence length
+$a$ following  a matrix  approach suggested by  Flory \cite{flory1969}
+and expanded upon by Olson et al. \cite{maroun1998, marky1994}
+
+In what follows we summarize various definitions of persistence length
+and how it's computed using different models.
+%The "realistic model" can be simplified to other  models, for example
+%to the  freely rotating model, just by  making the  twisting constant
+%zero, that is, the polymer will not be elastic when twisted.
+\section{Persistence Lenght Definitions}
+
+``\textbf{Bend-persistence length}:\\ 
+A length scale beyond which the elastic cost of bending is totally
+negligible'' Philip Nelson, Yearbook of Science and Technology, McGraw
+Hill 1999
+
+``In a randomly shaken rod any particular point in the rod will be
+pointing in a random direction, but nearby points will be pointing in
+roughly the same direction, that is, this nearby points are
+persistent. Points farther away than the bend-persistence length are
+said to be uncorrelated.'' Philip Nelson, Yearbook of Science and
+Technology, McGraw Hill 1999
+
+``\textbf{twist-persistence length}:\\
+that is, a rubber rod not only resists bending but also twisting''
+
+"basic mechanical property that quantifies stiffness"
+Abels et al, Biophysical Journal, 2005, 2737-2744
+
+"length at which the orientation of the sequential bonds which make
+up a polymer chain, stop being correlated. That is, if you have just
+two bonds, they will be correlated, which is the case in most
+molecules, but, in polymers, you have a long chain of sequential
+bonds. At some length, bonds will become uncorrelated, but up to that
+length they were correlated, this is what is meant by persistence
+length, and, in this context it's obvious that is an exclusive
+property of polymers."
+
+"the average sum of the projections of all bonds $ j \geq i$  on bond
+$i$ in an indefinetely long chain. The bond $i$ is taken to be remote
+from either end of the chain, i.e., $1 \ll i \ll n$". Paul J. Flory,
+Statistical Mechanics of Chain Molecules
+
+"Classical elasticity tells us that a thin, straight rod that is bent
+into an arc has a bending energy $E=Bl/2R^2$, where $B$ is the bending
+elastic constant of the rod, $l$ is the length of the rod and $R$ is
+the radius of arc. Setting $R=l$ gives us the energy of a 1 radian
+bend along the rod, and solving for when $E \kappa_{B}T$ gives us the
+length of rod along which a thermally excited bend of 1 radian
+typically occurs: $l B/\kappa_{B}T$. This is called the persistence
+length..." John F. Marko and Simona Cocco, Physics World, March 2003
+
+"persistence length, $a$, a measure of the distance over which the
+direction of the DNA is maintained. Mathematically, $a$ is the mean
+projection in the limit of infinite chain length of a flexible DNA
+along its initial direction." \cite{olson1995}
+
+"The persistence length $a$ is a measure of the stiffness of a polymer
+chain and is related to the limiting value of the characteristic ratio
+at infinite chain length
+\begin{gather}
+a=\frac{\nu}{2}(C_{\infty}+1)
+\end{gather}
+"
 
 
-
-
-
-Continuous vs discrete models.
-
-
-
-
-
-The previous is not exactly true, we are using a completely physical
-model, the only thing is that we are linking different parts, that is,
-we are assuming that the connected parts have springs with different
-constants, that't it. It is as if we were connecting pieces of steel,
-with pieces of rubber, and pieces of wood, let's say.
-
-Global properties of DNA as a polymer do not depend so much in
-structural detail, but local properties are definetely described at
-the chemical-molecular-atomic level.
-
-The realistic model, in a way, bridges the gap between non-sequence
-dependent elasticity theory models, and sequence dependent
-molecular-bond (can be virtual-bond) based models.
-
-
-that is, like rigid rods, say a steel bar, or like flexible rods, say
-a rubber tube.
-
-The "realistic model" is general an can be simplified to other models,
-for example to the freely rotating model, just by making the twisting
-constant zero, that is, the polymer will not be elastic when twisted.
-when stretching constan 
-
-
-
-To quantify the rigidity of a polymer
 
 Biopolymers can be either rigid or flexible. 
 
@@ -60,13 +95,20 @@ is greater, smaller, or similar to the contour length ($L$) of the polymer.
 \begin{tabular}{c|c|c}
 \hline
 Model Type      & Polymer Characteristic & $a$ to $L$ relation\\ \hline
-Rigid Rod       & Rigid          &        $a >> L$   \\
-Gaussian chain  & Flexible       &        $a << L$   \\
+Rigid Rod       & Rigid          &        $a \gg L$   \\
+Gaussian chain  & Flexible       &        $a \ll L$   \\
 Worm-like chain & Semi-flexible  &    $a \approx L$ \\
 \hline
 \end{tabular}
 \end{center}
 \end{table}
+Notice that for $a \gg L$, there is a definition problem, since $L$
+has to be large enough to be a good approximation to the definition of
+persistence length, which is defined for an infinite chain length.
+
+
+
+
 
 Worm-like-chain = Porod-Kratky = Freely Rotating Chain in limit l=0
 and n=infinity
@@ -104,49 +146,6 @@ Ideal RNA & 70-80 \\
 
 Think about the "energy" based perspective of Nicolas, and the
 stochastic based perspective of Flory and others.
-
-
-
-
-\section{Persistence Lenght Definitions}
-
-``\textbf{Bend-persistence length}:\\ 
-A length scale beyond which the elastic cost of bending is totally
-negligible''
-
-``In a randomly shaken rod any particular point in the rod will be
-pointing in a random direction, but nearby points will be pointing in
-roughly the same direction, that is, this nearby points are
-persistent. Points farther away than the bend-persistence length are
-said to be uncorrelated.''
-
-there is also twist-persistence length.
-that is, there is, a rubber rod not only resists bending but also twisting.
-
-"length at which the orientation of the sequential bonds which make
-up a polymer chain, stop being correlated. That is, if you have just
-two bonds, they will be correlated, which is the case in most
-molecules, but, in polymers, you have a long chain of sequential
-bonds. At some length, bonds will become uncorreleted, but up to that
-lenght they were correlated, this is what is meant by persistence
-length, and, in this context it's obvious that is an exclusive
-property of polymers."
-
-"the average sum of the projections of all bonds $ j \geq i$  in an 
-indefinetely long chain."
-
-
-\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{|l|l|l|l|}
-\hline 
-polymer & lp(\AA) & T (Kelvin) & Phase \\ \hline
-DNA     & 500     &  273       & water \\ \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-
 
 \section{end-to-end}
 The end-to-end vector  $r$ is the vector which connects  the ends of a 
@@ -186,14 +185,16 @@ When there is no correlation between succesive bonds we can write:
 <l_{i} \cdot l_{j}> = 0
 \end{gather}
 
-And equation \ref{eq:secmom} reduces to having only the bond self
-correlation term:
+So that equation \ref{eq:secmom} keeps only the bond auto-correlation term:
 
 \begin{gather}
 <r^2> = \sum_{i}<l_{i}^2> = n<l^2>
 \end{gather}  
 
 This equation is used to describe a so-called freely-jointed chain.
+
+
+
 
 
 \section{Models}

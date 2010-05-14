@@ -7,6 +7,18 @@ Abels, J.~A., Moreno-Herrero, F., van~derHeijden, T., Dekker, C., and Dekker,
   RNA}.
 {\em Biophysical Journal,} {\bf 88}, 2737--2744.
 
+\bibitem{caliskan2005}
+Caliskan, G., Hyeon, C., Perez-Salas, U., Briber, R.~M., Woodson, S.~A., and
+  Thirumalai, D. (2005)
+{Persistence Length Changes Dramatically as RNA Folds}.
+{\em Phys Rev Lett,} {\bf 95}, 268303.
+
+\bibitem{olson1995}
+Olson, W.~K., Babcock, M.~S., Gorin, A., Liu, G., Marky, N.~L., Martino, J.~A.,
+  Pedersen, S.~C., Srinivasan, A.~R., Tobias, I., and Westcott, T.~P. (1995)
+{Flexing and Folding Double Helical DNA}.
+{\em Biophysical Chemistry,} {\bf 55}, 7--29.
+
 \bibitem{olson1998}
 Olson, W.~K., Gorin, A.~A., Lu, X.-J., Hock, L.~M., and Zhurkin, V.~B. (1998)
 D{NA} sequence-dependent deformability deduced from protein-{DNA} crystal
@@ -25,20 +37,5 @@ Olson, W.~K., Esguerra, M., Xin, Y., and Lu, X.-J. (2009)
 {New Information Content in RNA Base Pairing Deduced from Quantitative Analysis
   of High-Resolution Structures}.
 {\em Methods,} {\bf 47}, 177--186.
-
-\bibitem{marko2003}
-Marko, J.~F. and Cocco, S. (2003)
-{The Micromechanics of DNA}.
-{\em Physics World,} {\bf 16}, 37--41.
-
-\bibitem{nelson2004}
-Nelson, P. (2004)
-Biological Physics: Energy, Information, Life,
-W. H. Freeman and Company, .
-
-\bibitem{go1974}
-Go, N., Go, M., and Scheraga, H. (1974)
-New method for calculating the conformational entropy of a regular helix.
-{\em Macromolecules,} {\bf 7}, 137--139.
 
 \end{thebibliography}
