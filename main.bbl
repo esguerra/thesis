@@ -49,15 +49,6 @@ Arnott, S., Hukins, D. W.~L., Dover, S.~D., Fuller, W., and Hodgson, A.~R.
   Polycytidylic acid}.
 {\em Journal of Molecular Biology,} {\bf 81}, 107--122.
 
-\bibitem{olson2001}
-Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
-  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
-  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
-  (2001)
-A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
-  {B}ase-pair {G}eometry.
-{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
-
 \bibitem{lu2003}
 Lu, X.-J. and Olson, W. (2003)
 3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
@@ -770,6 +761,15 @@ Berman, H.~M., Westbrook, J., Feng, Z., Gilliland, G., Bhat, T.~N., Weissig,
   H., Shindyalov, I.~N., and Bourne, P.~E. (2000)
 The {P}rotein {D}ata {B}ank.
 {\em Nucleic {A}cids {R}esearch,} {\bf 28}, 235--242.
+
+\bibitem{olson2001}
+Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
+  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
+  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
+  (2001)
+A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
+  {B}ase-pair {G}eometry.
+{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
 
 \bibitem{lu1997}
 Lu, X.-J., Hassan, M. A.~E., and Hunter, C.~A. (1997)

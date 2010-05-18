@@ -36,7 +36,7 @@
 \contentsline {section}{\numberline {4.1}Analysis (Albany Poster) and Django Webserver}{45}{section.4.1}
 \contentsline {section}{\numberline {4.2}Persistence Length of RNA}{45}{section.4.2}
 \contentsline {section}{\numberline {4.3}AMBER: Persistence Length of Base-Pair Step Patterns}{46}{section.4.3}
-\contentsline {unnumberedsection}{References}{47}{chapter*.9}
+\contentsline {unnumberedsection}{References}{47}{chapter*.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {chapter}{\numberline {5}RNA Motifs}{47}{chapter.5}
@@ -50,36 +50,36 @@
 \contentsline {chapter}{\numberline {6}RNA Helical Regions and Graph Theory}{52}{chapter.6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {chapter}{\appnumberline {A}Standard reference frame and local parameters}{53}{appendix.A}
-\contentsline {section}{\numberline {A.1}Base-pair and base-step parameters}{53}{section.A.1}
-\contentsline {section}{\numberline {A.2}Local helical parameters}{56}{section.A.2}
-\contentsline {unnumberedsection}{References}{59}{appendix*.10}
+\contentsline {chapter}{\appnumberline {A}Standard reference frame and local parameters}{45}{appendix.A}
+\contentsline {section}{\numberline {A.1}Base-pair and base-step parameters}{45}{section.A.1}
+\contentsline {section}{\numberline {A.2}Local helical parameters}{48}{section.A.2}
+\contentsline {unnumberedsection}{References}{51}{appendix*.8}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {chapter}{\appnumberline {B}Clustering Analysis (CA)}{60}{appendix.B}
-\contentsline {section}{\numberline {B.1}General Methodology}{60}{section.B.1}
-\contentsline {section}{\numberline {B.2}Hierarchical methods}{61}{section.B.2}
-\contentsline {unnumberedsection}{References}{65}{appendix*.11}
+\contentsline {chapter}{\appnumberline {B}Clustering Analysis (CA)}{52}{appendix.B}
+\contentsline {section}{\numberline {B.1}General Methodology}{52}{section.B.1}
+\contentsline {section}{\numberline {B.2}Hierarchical methods}{53}{section.B.2}
+\contentsline {unnumberedsection}{References}{57}{appendix*.9}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
-\contentsline {chapter}{\appnumberline {C}Dimension Reduction}{66}{appendix.C}
-\contentsline {section}{\numberline {C.1}Principal Component Analysis}{66}{section.C.1}
-\contentsline {unnumberedsection}{References}{68}{appendix*.13}
+\contentsline {chapter}{\appnumberline {B}Dimension Reduction}{48}{appendix.B}
+\contentsline {section}{\numberline {B.1}Principal Component Analysis}{48}{section.B.1}
+\contentsline {unnumberedsection}{References}{49}{appendix*.9}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
-\contentsline {chapter}{\appnumberline {D}Persistence Length}{69}{appendix.D}
-\contentsline {section}{\numberline {D.1}Persistence Lenght Definitions}{69}{section.D.1}
-\contentsline {section}{\numberline {D.2}end-to-end}{71}{section.D.2}
-\contentsline {section}{\numberline {D.3}Models}{72}{section.D.3}
-\contentsline {subsection}{\numberline {D.3.1}Kuhn - Freely Jointed Chain (FJC)}{73}{subsection.D.3.1}
-\contentsline {subsection}{\numberline {D.3.2}Porod-Kratky - Worm Like Chain (WLC)}{73}{subsection.D.3.2}
-\contentsline {subsection}{\numberline {D.3.3}Olson - Realistic}{73}{subsection.D.3.3}
-\contentsline {section}{\numberline {D.4}Suggested Reads}{73}{section.D.4}
-\contentsline {unnumberedsection}{References}{74}{appendix*.12}
+\contentsline {chapter}{\appnumberline {C}Persistence Length}{50}{appendix.C}
+\contentsline {section}{\numberline {C.1}Persistence Lenght Definitions}{50}{section.C.1}
+\contentsline {section}{\numberline {C.2}end-to-end}{53}{section.C.2}
+\contentsline {section}{\numberline {C.3}Models}{54}{section.C.3}
+\contentsline {subsection}{\numberline {C.3.1}Kuhn - Freely Jointed Chain (FJC)}{54}{subsection.C.3.1}
+\contentsline {subsection}{\numberline {C.3.2}Porod-Kratky - Worm Like Chain (WLC)}{54}{subsection.C.3.2}
+\contentsline {subsection}{\numberline {C.3.3}Olson - Realistic}{54}{subsection.C.3.3}
+\contentsline {section}{\numberline {C.4}Suggested Reads}{54}{section.C.4}
+\contentsline {unnumberedsection}{References}{55}{appendix*.7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-12}
-\contentsline {chapter}{\suppnumberline {A}Figure Supplements}{75}{appendix.A}
+\contentsline {chapter}{\suppnumberline {A}Figure Supplements}{50}{appendix.A}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-13}
-\contentsline {unnumberedsection}{Curriculum Vitae}{72}{appendix*.14}
+\contentsline {unnumberedsection}{Curriculum Vitae}{52}{appendix*.10}
 \gdef \the@ipfilectr {}
