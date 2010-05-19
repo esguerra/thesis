@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{marko2003}
 Marko, J.~F. and Cocco, S. (2003)
@@ -37,6 +37,18 @@ Sequence-dependent effects in the cyclization of short dna.
 Flory, P.~J. (1969)
 Statistical Mechanics of Chain Molecules,
 Interscience Publishers, .
+
+\bibitem{maroun1988a}
+Maroun, R.~C. and Olson, W.~K. (1988)
+{Base Sequence Effects in Double-Helical DNA. II. Configurational Statistics of
+  Rodlike Chains}.
+{\em Biopolymers,} {\bf 27}, 561--584.
+
+\bibitem{marky1994a}
+Marky, N.~L. and Olson, W.~K. (1994)
+{Configurational Statistics of the DNA Duplex: Extended Generator Matrices to
+  Treat the Rotations and Translations of Adjacent Residues}.
+{\em Biopolymers,} {\bf 34}, 109--120.
 
 \bibitem{olson1995}
 Olson, W.~K., Babcock, M.~S., Gorin, A., Liu, G., Marky, N.~L., Martino, J.~A.,

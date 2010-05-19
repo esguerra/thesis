@@ -49,6 +49,15 @@ Arnott, S., Hukins, D. W.~L., Dover, S.~D., Fuller, W., and Hodgson, A.~R.
   Polycytidylic acid}.
 {\em Journal of Molecular Biology,} {\bf 81}, 107--122.
 
+\bibitem{olson2001}
+Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
+  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
+  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
+  (2001)
+A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
+  {B}ase-pair {G}eometry.
+{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
+
 \bibitem{lu2003}
 Lu, X.-J. and Olson, W. (2003)
 3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
@@ -717,6 +726,11 @@ Olson, W.~K., Esguerra, M., Xin, Y., and Lu, X.-J. (2009)
   of High-Resolution Structures}.
 {\em Methods,} {\bf 47}, 177--186.
 
+\bibitem{hagerman1997}
+Hagerman, P.~J. (1997)
+{Flexibility of RNA}.
+{\em Annual Review Biophysics Biomolecular Structure,} {\bf 26}, 139--156.
+
 \bibitem{abels2005}
 Abels, J.~A., Moreno-Herrero, F., van~derHeijden, T., Dekker, C., and Dekker,
   N.~H. (2005)
@@ -761,15 +775,6 @@ Berman, H.~M., Westbrook, J., Feng, Z., Gilliland, G., Bhat, T.~N., Weissig,
   H., Shindyalov, I.~N., and Bourne, P.~E. (2000)
 The {P}rotein {D}ata {B}ank.
 {\em Nucleic {A}cids {R}esearch,} {\bf 28}, 235--242.
-
-\bibitem{olson2001}
-Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
-  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
-  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
-  (2001)
-A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
-  {B}ase-pair {G}eometry.
-{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
 
 \bibitem{lu1997}
 Lu, X.-J., Hassan, M. A.~E., and Hunter, C.~A. (1997)
@@ -830,6 +835,18 @@ Sequence-dependent effects in the cyclization of short dna.
 Flory, P.~J. (1969)
 Statistical Mechanics of Chain Molecules,
 Interscience Publishers, .
+
+\bibitem{maroun1988a}
+Maroun, R.~C. and Olson, W.~K. (1988)
+{Base Sequence Effects in Double-Helical DNA. II. Configurational Statistics of
+  Rodlike Chains}.
+{\em Biopolymers,} {\bf 27}, 561--584.
+
+\bibitem{marky1994a}
+Marky, N.~L. and Olson, W.~K. (1994)
+{Configurational Statistics of the DNA Duplex: Extended Generator Matrices to
+  Treat the Rotations and Translations of Adjacent Residues}.
+{\em Biopolymers,} {\bf 34}, 109--120.
 
 \bibitem{czapla2009}
 Czapla, L.
