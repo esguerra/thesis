@@ -1,4 +1,8 @@
+<<<<<<< HEAD:main.log
 This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.5.19)  19 MAY 2010 09:58
+=======
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.5.19)  19 MAY 2010 09:18
+>>>>>>> oldappendix:main.log
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -434,10 +438,6 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
  (./Chapter4/chapter4.tex
 Chapter 4.
-
-LaTeX Warning: Citation `hagerman1998' in file `Chapter4/chapter4' on page 45 u
-ndefined on input line 19.
-
 (./Chapter4/chapter4.bbl [45
 
 
@@ -473,7 +473,9 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\hbox' on input line 1.
 
+[69
 
+<<<<<<< HEAD:main.log
 LaTeX Warning: Citation `maroun1998' in file `Appendix/appendix4a' on page 69 u
 ndefined on input line 23.
 
@@ -482,6 +484,8 @@ LaTeX Warning: Citation `marky1994' in file `Appendix/appendix4a' on page 69 un
 defined on input line 23.
 
 [69
+=======
+>>>>>>> oldappendix:main.log
 
 
 
@@ -495,9 +499,14 @@ defined on input line 23.
 
 
 
+<<<<<<< HEAD:main.log
 
 ] [70]
 Underfull \hbox (badness 10000) in paragraph at lines 132--135
+=======
+] [70]
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
+>>>>>>> oldappendix:main.log
 
  []
 
@@ -527,7 +536,11 @@ l.24 \bibitem{olson1998}
 fier (name{cite.olson1995}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
+<<<<<<< HEAD:main.log
 l.41 \bibitem{olson1995}
+=======
+l.53 \bibitem{olson1995}
+>>>>>>> oldappendix:main.log
                         )) [74
 
 ] (./main.aux (./titles.aux)
@@ -535,6 +548,7 @@ l.41 \bibitem{olson1995}
 (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
 (./Appendix/appendix1a.aux) (./Appendix/appendix2a.aux)
 (./Appendix/appendix2b.aux) (./Appendix/appendix4a.aux)
+<<<<<<< HEAD:main.log
 (./Supplement/supplements.aux) (./CV/cv.aux))
 
 LaTeX Warning: There were undefined references.
@@ -549,6 +563,18 @@ Here is how much of TeX's memory you used:
  31636 words of font info for 49 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  27i,9n,39p,1041b,349s stack positions out of 5000i,500n,6000p,200000b,15000s
+=======
+(./Supplement/supplements.aux) (./CV/cv.aux)) )
+(\end occurred when \iftrue on line 67 was incomplete) 
+Here is how much of TeX's memory you used:
+ 4952 strings out of 256216
+ 64645 string characters out of 1917072
+ 144632 words of memory out of 1500000
+ 7925 multiletter control sequences out of 10000+200000
+ 31636 words of font info for 49 fonts, out of 1200000 for 2000
+ 645 hyphenation exceptions out of 8191
+ 27i,8n,39p,1041b,349s stack positions out of 5000i,500n,6000p,200000b,15000s
+>>>>>>> oldappendix:main.log
 pdfTeX warning (dest): na
 me{figure.B.1} has been referenced but does not exist, replaced by a fixed one
 
@@ -673,11 +699,19 @@ pdfTeX warning (dest): name{table.2.1} has been referenced but does not exist,
 replaced by a fixed one
 
 pdfTeX warning (dest): name{appendix*.14} has been referenced but does not exis
+<<<<<<< HEAD:main.log
 t, replaced by a fixed one
 
 pdfTeX warning (dest): name{appendix*.13} has been referenced but does not exis
 t, replaced by a fixed one
 
+=======
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix*.13} has been referenced but does not exis
+t, replaced by a fixed one
+
+>>>>>>> oldappendix:main.log
 pdfTeX warning (dest): name{section.C.1} has been referenced but does not exist
 , replaced by a fixed one
 
@@ -798,9 +832,15 @@ e/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky
 /cm/cmsy6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/te
 xmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helve
 tic/uhvr8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
+<<<<<<< HEAD:main.log
 Output written on main.pdf (21 pages, 163064 bytes).
 PDF statistics:
  571 PDF objects out of 1000 (max. 8388607)
+=======
+Output written on main.pdf (21 pages, 163550 bytes).
+PDF statistics:
+ 575 PDF objects out of 1000 (max. 8388607)
+>>>>>>> oldappendix:main.log
  146 named destinations out of 1000 (max. 131072)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -24,7 +24,11 @@
 \gdef \the@ipfilectr {@-10}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
+<<<<<<< HEAD:main.lot
 \contentsline {table}{\numberline {D.1}{\ignorespaces Persistence lengths for some biopolymers with filament structures.}}{72}{table.D.1}
+=======
+\contentsline {table}{\numberline {D.1}{\ignorespaces Persistence lengths for some biopolymers with filament structures.}}{71}{table.D.1}
+>>>>>>> oldappendix:main.lot
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-12}
 \gdef \the@ipfilectr {}
