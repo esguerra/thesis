@@ -69,8 +69,8 @@
 \gdef \the@ipfilectr {@-11}
 \contentsline {chapter}{\appnumberline {D}Persistence Length}{69}{appendix.D}
 \contentsline {section}{\numberline {D.1}Persistence Length Definition}{69}{section.D.1}
-\contentsline {section}{\numberline {D.2}end-to-end}{71}{section.D.2}
-\contentsline {section}{\numberline {D.3}Models}{73}{section.D.3}
+\contentsline {section}{\numberline {D.2}End-to-end vector}{71}{section.D.2}
+\contentsline {section}{\numberline {D.3}Models}{72}{section.D.3}
 \contentsline {subsection}{\numberline {D.3.1}Kuhn - Freely Jointed Chain (FJC)}{73}{subsection.D.3.1}
 \contentsline {subsection}{\numberline {D.3.2}Porod-Kratky - Worm Like Chain (WLC)}{73}{subsection.D.3.2}
 \contentsline {subsection}{\numberline {D.3.3}Olson - Realistic}{73}{subsection.D.3.3}
@@ -78,7 +78,7 @@
 \contentsline {unnumberedsection}{References}{74}{appendix*.7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-12}
-\contentsline {chapter}{\suppnumberline {A}Figure Supplements}{75}{appendix.A}
+\contentsline {chapter}{\suppnumberline {A}Figure Supplements}{74}{appendix.A}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-13}
 \contentsline {unnumberedsection}{Curriculum Vitae}{72}{appendix*.14}
