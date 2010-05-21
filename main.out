@@ -9,7 +9,8 @@
 \BOOKMARK [0][-]{chapter*.6}{References}{}
 \BOOKMARK [0][-]{appendix.D}{Appendix D. Persistence Length}{}
 \BOOKMARK [1][-]{section.D.1}{Persistence Length Definition}{appendix.D}
-\BOOKMARK [1][-]{section.D.2}{End-to-end vector}{appendix.D}
+\BOOKMARK [1][-]{section.D.2}{Freely Jointed Chain \(FJC\)}{appendix.D}
+\BOOKMARK [2][-]{subsection.D.2.1}{End-to-end Vector}{section.D.2}
 \BOOKMARK [1][-]{section.D.3}{Models}{appendix.D}
 \BOOKMARK [2][-]{subsection.D.3.1}{Kuhn - Freely Jointed Chain \(FJC\)}{section.D.3}
 \BOOKMARK [2][-]{subsection.D.3.2}{Porod-Kratky - Worm Like Chain \(WLC\)}{section.D.3}

@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.5.19)  20 MAY 2010 17:47
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.5.19)  21 MAY 2010 18:28
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -473,6 +473,8 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\hbox' on input line 1.
 
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 42.
 [69
 
 
@@ -488,7 +490,11 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 
 
-] [70] [71] [72] (./Appendix/appendix4a.bbl [73]
+] [70] [71]
+
+LaTeX Warning: Reference `eq:end2end' on page 72 undefined on input line 184.
+
+[72] (./Appendix/appendix4a.bbl [73]
 References
 pdfTeX warning (ext4): destination with the same identifier (name{cite.olson199
 8}) has been already used, duplicate ignored
@@ -505,23 +511,27 @@ fier (name{cite.hagerman1997}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.70 \bibitem{hagerman1997}
-                           )) [74
+                            [74
 
-] (./main.aux (./titles.aux)
+])) [75] (./main.aux (./titles.aux)
 (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
 (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
 (./Appendix/appendix1a.aux) (./Appendix/appendix2a.aux)
 (./Appendix/appendix2b.aux) (./Appendix/appendix4a.aux)
-(./Supplement/supplements.aux) (./CV/cv.aux)) )
+(./Supplement/supplements.aux) (./CV/cv.aux))
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred when \iftrue on line 68 was incomplete) 
 Here is how much of TeX's memory you used:
- 5020 strings out of 256217
- 65626 string characters out of 1917095
- 149076 words of memory out of 1500000
- 7987 multiletter control sequences out of 10000+200000
- 32790 words of font info for 50 fonts, out of 1200000 for 2000
+ 5055 strings out of 256216
+ 66011 string characters out of 1917072
+ 148074 words of memory out of 1500000
+ 8003 multiletter control sequences out of 10000+200000
+ 39962 words of font info for 65 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 27i,14n,39p,1041b,349s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 28i,14n,39p,1041b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
 pdfTeX warning (dest): na
 me{figure.B.1} has been referenced but does not exist, replaced by a fixed one
 
@@ -764,16 +774,17 @@ replaced by a fixed one
 
  </home/esguerra/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.60
 0pk>{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1
-/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/shar
-e/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky
-/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/te
-xmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helve
-tic/uhvr8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (21 pages, 168336 bytes).
+/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb></us
+r/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/b
+luesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/sh
+are/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky
+/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/t
+exmf/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/urw/helveti
+c/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/
+texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (22 pages, 175037 bytes).
 PDF statistics:
- 590 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 131072)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 131072)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

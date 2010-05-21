@@ -32,14 +32,16 @@ it's computed using different models.
 \section{Persistence Length Definition}
 %%Perhaps it would be good to say, "parallel and equivalent" perspect.
 In  general there  are two  parallel and  analog perspectives  used to
-define  the persistence  length  of  nucleic acids.   One  has a  more
+define  the persistence  length  of  polymers.   One  has a  more
 intrinsically mathematical,  or physical flavour,  and it's understood
 as the resistence to deformation  of; a curve in space (a mathematical
 object), or a thin rod (a physical object).  The other is a stochastic
 one, where it's  understood as ``a measure of  the distance over which
-the direction  of the DNA (polymer)  is maintained'' \cite{olson1995}.
-In both cases the persistence  length definition can be undestood as a
-measure of polymer stiffness.
+the direction of the  polymer\footnote{In the original citation DNA is
+  used instead of polymer. The citation has been modified here for
+  clarity.} is maintained'' \cite{olson1995}.  In both cases the
+persistence length definition can be undestood as a measure of polymer
+stiffness.
 
 Within the context of the ``physicists'' definition we cite Marko's
 and Nelson's definitions:
@@ -63,11 +65,10 @@ twist  persistence  lengths.)''   Philip Nelson,  Biological  Physics:
 Energy, Information, Life, 2004.
 
 These definitions coming from the point of view of physicists refer to
-a  thin rod  as stated  before. Marko  refers to  the bend-persistence
-length, whereas  in the  second case, that  of Nelson's  definition, a
-more  general  notion  of  persistence  length is  refered  to,  which
-includes, besides the bend  persistence length, also twist and stretch
-persistence lengths.
+an ideal  continuous thin rod.  Marko, refers  to the bend-persistence
+length,  whereas Nelson's  definition uses  a more  general  notion of
+persistence length which includes besides the bend persistence length,
+also twist and stretch persistence lengths.
 
 From the ``stochastic'' perspective we cite Flory's definition:
 
@@ -86,16 +87,16 @@ the bonds  connecting the monomeric units  is zero, and  the number of
 monomers reaches very large numbers, formally, infinity.
 
 When talking about persistence length it's usually difficult to have a
-good idea of what such values mean by themselves, that is, if we are
-told that  the persistence length of  DNA is, say, 510 \AA~ under some
-specific concentration  and temperature conditions, I  don't know what
-this tells me  about its stiffness, I can only  believe the author who
-tells me that DNA is one of the stiffest biopolymers. To give a better
-understanding of the meaning of  the values of the persistence length,
-we  have  collected   in  Table~\ref{tab:perval}  measured  values  of
-persistence length  for various filamentous biopolymers.  In this case
-we  can see  that  definetely B-DNA  is  quite a  stiff biopolymer  if
-compared to poly-glicine, or poly-alanine.
+good idea of the meaning of the quantity by itself, that is, if we are
+told that the  persistence length of DNA is, say,  530 \AA~ under some
+specific concentration and temperature  conditions, one does not know
+what this is telling us about its stiffness, one can only believe the
+author who states that DNA is one of the stiffest biopolymers. To give
+a better understanding of the meaning of the values of the persistence
+length,  we   have  collected  in   Table~\ref{tab:perval}  values  of
+persistence  length for various  filamentous biopolymers.   Looking at
+Table~\ref{tab:perval}  it's  clear  that   B-DNA  is  quite  a  stiff
+biopolymer if compared to poly-glycine, or poly-alanine.
 
 \begin{table}[htbp]
 \begin{center}
@@ -105,7 +106,7 @@ compared to poly-glicine, or poly-alanine.
 Polymer               & $a$ (nm) & Citation  \\ \hline
 Polymethylene         & 0.6      & Flory\tnote{a}      \\  
 Polystyrene           & 0.9      & Flory\tnote{a}      \\
-Polyglicine           & 0.6      & Flory \tnote{b}     \\
+Polyglycine           & 0.6      & Flory \tnote{b}     \\
 Poly-L-alanine        & 2        & Flory \tnote{b}     \\
 Poly-L-proline        & 22       & Cantor and Schimel \cite{cantor1980} \\
 B-DNA                 & 53       & Rivetti \cite{rivetti1996}     \\
@@ -120,9 +121,9 @@ Microtubule           & 5200000  & Lakkaraju \cite{lakkaraju2009} \\
 \end{tabular}
 \begin{tablenotes}
 \item [a] Computed using  characteristic ratios reported in Table 1
-  of Flory's \cite{flory1969} with C-C bond length $\nu = 1.54$ \AA.
+  of Flory's book \cite{flory1969} with C-C bond length $\nu = 1.54$ \AA.
 \item [b] Computed using  characteristic ratios reported in Table 3
-  of Flory's \cite{flory1969} with C$^{\alpha}_{i}$ to C$^{\alpha}_{i+1}$ virtual
+  of Flory's book \cite{flory1969} with C$^{\alpha}_{i}$ to C$^{\alpha}_{i+1}$ virtual
   bond length $\nu = 3.80$ \AA.
 \end{tablenotes}
 \end{threeparttable}
@@ -132,69 +133,79 @@ Microtubule           & 5200000  & Lakkaraju \cite{lakkaraju2009} \\
 \end{center}
 \end{table}
 
-Using  the  persistence  length  $a$  one  can  classify  biopolymers
-according to  their stiffness into rigid,  flexible, and semi-flexible
-polymers as shown in Table~\ref{tab:pers}.
-\begin{table}[H]
-\begin{center}  
-\begin{tabular}{c|c|c|c}
-\hline
-Model           & Polymer Type & $a$ to $L$ relation & Examples\\ \hline
-Rigid Rod       & Rigid          &  $a \gg L$     &  Actin, Microtubules\\
-Gaussian chain  & Flexible       &  $a \ll L$     &  \\
-Worm-like chain & Semi-flexible  &  $a \approx L$ &  High Force Extension DNA\\
-\hline
-\end{tabular}
-\label{tab:pers}
-\caption{Relation of persistence length ($a$) to contour length ($L$)
-  and polymer classification.}
-\end{center}
-\end{table}
+%Using  the  persistence  length  $a$  one  can  classify  biopolymers
+%according to  their stiffness into rigid,  flexible, and semi-flexible
+%polymers as shown in Table~\ref{tab:pers}.
+%\begin{table}[H]
+%\begin{center}  
+%\begin{tabular}{c|c|c|c}
+%\hline
+%Model           & Polymer Type & $a$ to $L$ relation & Examples\\ \hline
+%Rigid Rod       & Rigid          &  $a \gg L$     &  Actin, Microtubules\\
+%Gaussian chain  & Flexible       &  $a \ll L$     &  \\
+%Worm-like chain & Semi-flexible  &  $a \approx L$ &  High Force Extension DNA\\
+%\hline
+%\end{tabular}
+%\label{tab:pers}
+%\caption{Relation of persistence length ($a$) to contour length ($L$)
+%  and polymer classification.}
+%\end{center}
+%\end{table}
 
+There are other definitions of persistence length which arise when one
+wants   to   take   into   account   the   electrostatic   nature   of
+polyelectrolytes, for example; Skolnick and Fixman \cite{skolnick1977}
+propose  and  electrostatic  persistence  length  as a  result  of  an
+extension  of the  so-called  Porod-Kratky chain  to include  charges.
+Another  approach is  that of  Manning, which  proposes an  ideal case
+where  the charge  of the  polyelectrolyte (DNA)  would  be completely
+neutralized\footnote{Manning defines DNA* as the null charge isomer of
+  charged DNA.}  and for  such neutralized molecule a null persistence
+length  is  defined  \cite{manning2006}.  Yet  another  definition  of
+persistence length by Trifonov et al. \cite{trifonov1987} appears when
+``static''  and   ``dynamic''  components  are   considered.  In  such
+definition  the ``static''  components  comes from  static bends  like
+those produced from phased A-tracts in DNA.
 
-\section{End-to-end vector}
-The end-to-end vector  $r$ is the vector which connects  the ends of a
-polymer chain.  It can be defined as the sum of the vectors connecting
-the monomer units  in a chain. These connecting  vectors are sometimes
-called virtual bond vectors $l$.
-
-The magnitude of the end-to-end vector is usually the quantity of interest.
+\section{Freely Jointed Chain (FJC)}
+\subsection{End-to-end Vector}
+The end-to-end  vector $\mathbf{r}$ is  the vector which  connects the
+ends of a polymer chain.  It can  be defined as the sum of the vectors
+connecting the monomer units in  a chain. These connecting vectors are
+sometimes called virtual bond  vectors $\mathbf{l}$.  The magnitude of
+the end-to-end vector is usually the quantity of interest.
 
 \begin{gather}
-\label{eq:end2end}
-r = \sum_{i=1}^{n} l_{i}\\
-r^2 = r \cdot r = \sum_{i,j}l_{i} \cdot l_{j}
+\mathbf{r} = \sum_{i=1}^{n} \mathbf{l}_{i}\\
+r  =  \sqrt{\mathbf{r}
+  \cdot    \mathbf{r}}    =    \sqrt{\sum_{i,j}\mathbf{l}_{i}    \cdot
+  \mathbf{l}_{j}}
 \end{gather}
-Equation \ref{eq:end2end}, can also be written:
+Equation \ref{eq:end2end}, can also be written as:
 \begin{gather}
-r^2 = \sum_{i}l_{i}^{2} + 2 \sum_{i\neq j} l_{i} \cdot l_{j}
+r^2 = \sum_{i}l_{i}^{2} + 2 \sum_{i\neq j} \mathbf{l}_{i} \cdot \mathbf{l}_{j}
 \end{gather}  
 
 To  describe a  polymer  it's  necessary to  think  about the  various
-conformations it can adopt  due to its flexibility, therefore, it
-is important  to think of polymer  related quantities in  terms of the
+conformations it  can adopt due  to its flexibility, therefore,  it is
+important  to think  of polymer  related  quantities in  terms of  the
 average of their possible conformations. For the end-to-end vector the
 average of  its values  is denoted  as $<r>$, and  the average  of its
-norm, also called the second moment of the end-to-end distribution, is
-denoted by $<r^2>$:
+squared  value,  also  called  the  second moment  of  the  end-to-end
+distribution, is denoted by $<r^2>$:
 \begin{gather}
 \label{eq:secmom}  
 <r^2>=\sum_{i}<l_{i}^2> + 2\sum_{i<j}<l_{i} \cdot l_{j}>
 \end{gather}  
-
 When there is no correlation between succesive bonds we can write:
-
 \begin{gather}
 \label{eq:nocorr}
 <l_{i} \cdot l_{j}> = 0
 \end{gather}
-
 So that equation \ref{eq:secmom} keeps only the bond auto-correlation term:
-
 \begin{gather}
 <r^2> = \sum_{i}<l_{i}^2> = n<l^2>
 \end{gather}  
-
 This equation is used to describe a so-called freely-jointed chain (FJC).
 
 \section{Models}
