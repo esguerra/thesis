@@ -32,7 +32,7 @@ it's computed using different models.
 \section{Persistence Length Definition}
 %%Perhaps it would be good to say, "parallel and equivalent" perspect.
 In  general there  are two  parallel and  analog perspectives  used to
-define  the persistence  length  of  polymers.   One  has a  more
+define  the persistence  length  of  polymers. One of these has a  more
 intrinsically mathematical,  or physical flavour,  and it's understood
 as the resistence to deformation  of; a curve in space (a mathematical
 object), or a thin rod (a physical object).  The other is a stochastic
@@ -68,7 +68,7 @@ These definitions coming from the point of view of physicists refer to
 an ideal  continuous thin rod.  Marko, refers  to the bend-persistence
 length,  whereas Nelson's  definition uses  a more  general  notion of
 persistence length which includes besides the bend persistence length,
-also twist and stretch persistence lengths.
+twist and a stretch persistence lengths.
 
 From the ``stochastic'' perspective we cite Flory's definition:
 
@@ -168,29 +168,27 @@ definition  the ``static''  components  comes from  static bends  like
 those produced from phased A-tracts in DNA.
 
 \section{Freely Jointed Chain (FJC)}
-\subsection{End-to-end Vector}
 The end-to-end  vector $\mathbf{r}$ is  the vector which  connects the
-ends of a polymer chain.  It can  be defined as the sum of the vectors
-connecting the monomer units in  a chain. These connecting vectors are
-sometimes called virtual bond  vectors $\mathbf{l}$.  The magnitude of
-the end-to-end vector is usually the quantity of interest.
-
+ends of a polymer  chain and can be defined as the  sum of the vectors
+connecting the monomeric units  in the chain. These connecting vectors
+can be  either ``real-bond''  vectors or ``virtual-bond''  vectors and
+are denoted  by $\mathbf{l}$.  The magnitude of  the end-to-end vector
+is usually the quantity of interest.
 \begin{gather}
 \mathbf{r} = \sum_{i=1}^{n} \mathbf{l}_{i}\\
-r  =  \sqrt{\mathbf{r}
-  \cdot    \mathbf{r}}    =    \sqrt{\sum_{i,j}\mathbf{l}_{i}    \cdot
-  \mathbf{l}_{j}}
+\label{eq:end2end}
+r = \sqrt{\mathbf{r} \cdot \mathbf{r}}
+  = \sqrt{\sum_{i,j}\mathbf{l}_{i} \cdot \mathbf{l}_{j}}
 \end{gather}
 Equation \ref{eq:end2end}, can also be written as:
 \begin{gather}
 r^2 = \sum_{i}l_{i}^{2} + 2 \sum_{i\neq j} \mathbf{l}_{i} \cdot \mathbf{l}_{j}
 \end{gather}  
-
 To  describe a  polymer  it's  necessary to  think  about the  various
 conformations it  can adopt due  to its flexibility, therefore,  it is
 important  to think  of polymer  related  quantities in  terms of  the
-average of their possible conformations. For the end-to-end vector the
-average of  its values  is denoted  as $<r>$, and  the average  of its
+average properties of their conformations. For the end-to-end vector the
+average of an ensemble is denoted  as $<r>$, and  the average  of its
 squared  value,  also  called  the  second moment  of  the  end-to-end
 distribution, is denoted by $<r^2>$:
 \begin{gather}
@@ -202,21 +200,20 @@ When there is no correlation between succesive bonds we can write:
 \label{eq:nocorr}
 <l_{i} \cdot l_{j}> = 0
 \end{gather}
-So that equation \ref{eq:secmom} keeps only the bond auto-correlation term:
+The geometrical interpretation  of this is that every  bond is allowed
+to  rotate  freely  around  its  immediate neighbors.  What  is  meant
+precisely by  ``freely'', is that  bond angles can randomly  assume any
+value between 0  and 360 degrees, there are  no bond-angle constraints
+whatsoever.  When the number  of conformations  tends to  infinity the
+cosine of bond angles will be zero, and so will the dot product in the
+previous equation.
+Equation \ref{eq:secmom} keeps only the bond auto-correlation term:
 \begin{gather}
 <r^2> = \sum_{i}<l_{i}^2> = n<l^2>
 \end{gather}  
-This equation is used to describe a so-called freely-jointed chain (FJC).
-
-\section{Models}
-
-Nelson in book says:
-
-
-
-\subsection{Kuhn - Freely Jointed Chain (FJC)}
-
-\subsection{Porod-Kratky - Worm Like Chain (WLC)}
+This equation is used to describe a so-called freely-jointed chain
+(FJC). 
+\subsection{Porod-Kratky or Worm Like Chain (WLC)}
 
 \subsection{Olson - Realistic}
 

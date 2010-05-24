@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.5.19)  21 MAY 2010 18:28
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.5.19)  24 MAY 2010 15:01
 entering extended mode
  %&-line parsing enabled.
 **main
@@ -438,7 +438,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
  (./Chapter4/chapter4.tex
 Chapter 4.
-(./Chapter4/chapter4.bbl [45
+(./Chapter4/chapter4.bbl [47
 
 
 
@@ -448,9 +448,9 @@ Chapter 4.
 
 
 
-] [46]
+] [48]
 References
-)) [47
+)) [49
 
 ]
 \openout2 = `Appendix/appendix4a.aux'.
@@ -490,11 +490,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 
 
-] [70] [71]
-
-LaTeX Warning: Reference `eq:end2end' on page 72 undefined on input line 184.
-
-[72] (./Appendix/appendix4a.bbl [73]
+] [70] [71] [72] (./Appendix/appendix4a.bbl [73]
 References
 pdfTeX warning (ext4): destination with the same identifier (name{cite.olson199
 8}) has been already used, duplicate ignored
@@ -518,17 +514,13 @@ l.70 \bibitem{hagerman1997}
 (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
 (./Appendix/appendix1a.aux) (./Appendix/appendix2a.aux)
 (./Appendix/appendix2b.aux) (./Appendix/appendix4a.aux)
-(./Supplement/supplements.aux) (./CV/cv.aux))
-
-LaTeX Warning: There were undefined references.
-
- )
+(./Supplement/supplements.aux) (./CV/cv.aux)) )
 (\end occurred when \iftrue on line 68 was incomplete) 
 Here is how much of TeX's memory you used:
- 5055 strings out of 256216
- 66011 string characters out of 1917072
- 148074 words of memory out of 1500000
- 8003 multiletter control sequences out of 10000+200000
+ 5049 strings out of 256216
+ 65919 string characters out of 1917072
+ 148148 words of memory out of 1500000
+ 8000 multiletter control sequences out of 10000+200000
  39962 words of font info for 65 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  28i,14n,39p,1041b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -782,9 +774,9 @@ are/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky
 exmf/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/urw/helveti
 c/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/
 texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (22 pages, 175037 bytes).
+Output written on main.pdf (22 pages, 173595 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 131072)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 597 PDF objects out of 1000 (max. 8388607)
+ 151 named destinations out of 1000 (max. 131072)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 

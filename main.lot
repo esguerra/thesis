@@ -3,12 +3,12 @@
 \gdef \the@ipfilectr {@-2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Some large RNA structures ($>$300 bases) elucidated in the last decade.}}{23}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Number of base-steps with RMSD values less than or equal to 10 \r A\nobreakspace {}between the reference base-step vectors from the four groups of non-A-type RNA dinucleotide conformations and all base-step vectors found in the 23S strand of \textit {Haloarcula marismortui}. The percentage is calculated with respect to a total of 2753 base-steps present in the 23S chain of the 50S subunit of the ribosome.}}{28}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Base step parameters for common DNA and RNA conformations. The base-step parameters are computed for a single-stranded base-step rather than a double-stranded base-pair step.}}{33}{table.2.3}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Some large RNA structures ($>$300 bases) elucidated in the last decade.}}{25}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Number of base-steps with RMSD values less than or equal to 10 \r A\nobreakspace {}between the reference base-step vectors from the four groups of non-A-type RNA dinucleotide conformations and all base-step vectors found in the 23S strand of \textit {Haloarcula marismortui}. The percentage is calculated with respect to a total of 2753 base-steps present in the 23S chain of the 50S subunit of the ribosome.}}{30}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Base step parameters for common DNA and RNA conformations. The base-step parameters are computed for a single-stranded base-step rather than a double-stranded base-pair step.}}{38}{table.2.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
-\contentsline {table}{\numberline {3.1}{\ignorespaces Classification of RNA Types in Non-Redundant Dataset at less than 3.5 \r A\nobreakspace {}(For Base-Pairs in Helices of 3 base-pairs or more).}}{43}{table.3.1}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Classification of RNA Types in Non-Redundant Dataset at less than 3.5 \r A\nobreakspace {}(For Base-Pairs in Helices of 3 base-pairs or more).}}{45}{table.3.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \gdef \the@ipfilectr {}
@@ -19,7 +19,7 @@
 \gdef \the@ipfilectr {@-8}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{63}{table.B.1}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{64}{table.B.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
 \gdef \the@ipfilectr {}
