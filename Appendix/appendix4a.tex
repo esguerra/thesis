@@ -110,7 +110,7 @@ Polyglycine           & 0.6      & Flory \tnote{b}     \\
 Poly-L-alanine        & 2        & Flory \tnote{b}     \\
 Poly-L-proline        & 22       & Cantor and Schimel \cite{cantor1980} \\
 B-DNA                 & 53       & Rivetti \cite{rivetti1996}     \\
-A-RNA                 & 70-80    & Hagerman  \cite{hagerman1997}  \\
+%A-RNA                 & 70-80    & Hagerman  \cite{hagerman1997}  \\
 A-RNA                 & 62-64    & Abels     \cite{abels2005}     \\
 $\alpha$-helix        & 80-100   & Lakkaraju \cite{lakkaraju2009} \\
 Coiled-coil           & 150-300  & Lakkaraju \cite{lakkaraju2009} \\
@@ -176,6 +176,7 @@ can be  either ``real-bond''  vectors or ``virtual-bond''  vectors and
 are denoted  by $\mathbf{l}$.  The magnitude of  the end-to-end vector
 is usually the quantity of interest.
 \begin{gather}
+\label{eq:e2e}
 \mathbf{r} = \sum_{i=1}^{n} \mathbf{l}_{i}\\
 \label{eq:end2end}
 r = \sqrt{\mathbf{r} \cdot \mathbf{r}}
@@ -230,7 +231,7 @@ curvature over the contour length of the chain as:
 The average sum of the squared end-to-end distance is then:
 \begin{eqnarray}
 \label{eq:wlc}
-<\textbf{r}^2> & = & <\textbf{r} \cdot \textbf{r}> \nonumber \\
+<r^2> & = & <\textbf{r} \cdot \textbf{r}> \nonumber \\
                & = & <\int_{0}^{L}\hat{t}(s)ds \cdot \int_{0}^{L}\hat{t}(s')ds' >\nonumber \\
                & = & \int_{0}^{L} ds \int_{0}^{L}<\hat{t}(s) \cdot \hat{t}(s')>ds' \nonumber \\
                & = & \int_{0}^{L} ds \int_{0}^{L} <\cos{\theta}_{ss'}>~ ds' \nonumber \\
@@ -242,25 +243,54 @@ Where  for   a  chain  of  infinite   length  $<\cos{\theta_{ss'}}>  =
 last   equation  in   \ref{eq:wlc}   is  used   to   describe  a   so-called
 worm-like-chain (WLC).
 
-\section{Olson - Realistic}
+\section{Sequence Dependent}
+The expression in equation \ref{eq:e2e} can be rewritten as:
+\begin{eqnarray}
+\label{eq:real1}  
+\textbf{r} = \textbf{l}_{1} & + & \textbf{T}_{12}\textbf{l}_{2}
++\textbf{T}_{12}\textbf{T}_{23}\textbf{l}_{3} \nonumber \\
+ & + & ... + \textbf{T}_{12}\textbf{T}_{23}...\textbf{T}_{N-1,N} \textbf{l}_{N}
+\end{eqnarray}
+Where the transformation matrices $\textbf{T}_{N-1,N}$ transform the
+vectors $\textbf{l}_{N+1}$ in coordinate frame $N+1$ to their
+representation $\textbf{l}_{N}$ in coordinate frame $N$.
+Following Flory \cite{flory1969} equation \ref{eq:real1} can be
+written as a matrix product in the following way:
+\begin{gather}
+\textbf{r}= \begin{bmatrix}\textbf{E}_{3}~ 0 \end{bmatrix} \textbf{A}_{1:N}\begin{bmatrix} 0 \\ 1 \end{bmatrix}
+\end{gather}
+Where $\textbf{A}_{1:N}$ is the serial product of generator matrices
+$\textbf{A}_{n}$ \cite{marky1994a}, and $\textbf{E}_{3}$ is the
+identity matrix of order 3:
+\begin{gather}
+\textbf{A}_{n} =
+\begin{bmatrix}
+\textbf{T}_{n} & \textbf{l}_{n} \\
+0 & 1
+\end{bmatrix}\\
+\textbf{A}_{1:N}=\textbf{A}_{1}\textbf{A}_{2}...\textbf{A}_{N}
+\end{gather}
+The  generator  matrices  perform  a coordinate  transformation  which
+incorporates  the   displacement  vectors  $\textbf{l}_{n}$   and  the
+rotation matrices  $\textbf{T}_{n}$. It is  within the product  of the
+generator  matrices where  the sequence  model comes  into  play since
+every  generator  matrix  contains  the  specific  sequence  dependent
+geometric  information based  on  the rigid  block  model for  nucleic
+acids.  For full detail of the model and how the polymer configuration
+space is  sampled using the  gaussian sampling technique we  refer the
+reader to Luke Czapla's doctoral thesis \cite{czapla2009}.
 
 
 
-The Hamiltonian for a \cite{czapla2009}
 
-
-
-
-
-
-"length at which the orientation of the sequential bonds which make up
-a polymer chain, stop being correlated.  That is, if you have just two
-bonds, or a  few, they will be correlated, which is  the case in small
-molecules,  but, in  polymers, you  have  a long  chain of  sequential
-bonds. At some length, bonds  will become uncorrelated, but up to that
-length  they were  correlated, this  is what  is meant  by persistence
-length,  and,  in this  context  it's  obvious  that is  an  exclusive
-property of polymers." My understanding so far.
+%"length at which the orientation of the sequential bonds which make up
+%a polymer chain, stop being correlated.  That is, if you have just two
+%bonds, or a  few, they will be correlated, which is  the case in small
+%molecules,  but, in  polymers, you  have  a long  chain of  sequential
+%bonds. At some length, bonds  will become uncorrelated, but up to that
+%length  they were  correlated, this  is what  is meant  by persistence
+%length,  and,  in this  context  it's  obvious  that is  an  exclusive
+%property of polymers." My understanding so far.
 
 
 
