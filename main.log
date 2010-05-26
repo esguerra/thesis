@@ -1,21 +1,16 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.5.19)  25 MAY 2010 14:53
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.5.25)  26 MAY 2010 01:36
 entering extended mode
  %&-line parsing enabled.
 **main
 (./main.tex
 LaTeX2e <2005/12/01>
 Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
-erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
- french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
-us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
-tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
-turkish, ukenglish, ukrainian, loaded.
+yphenation, loaded.
 (./ruformat.cls
 Document Class: ruformat 3/23/2010 v1.2 Standard LaTeX2e document class
-(/usr/share/texmf/tex/latex/base/report.cls
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
 Document Class: report 2005/09/16 v1.4f Standard LaTeX document class
-(/usr/share/texmf/tex/latex/base/size11.clo
+(/usr/share/texmf-texlive/tex/latex/base/size11.clo
 File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -31,24 +26,24 @@ File: size11.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -89,42 +84,42 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2001/10/25 v2.2f
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
 )
-(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2002/01/22 v2.2d
 )
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texmf/tex/latex/config/graphics.cfg
+(/etc/texmf/tex/latex/config/graphics.cfg
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 90.
 
-(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
 \Gread@gobject=\count100
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/share/texmf/tex/latex/subfigure/subfigure.sty
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip46
 \subfigcapskip=\skip47
@@ -140,11 +135,11 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/share/texmf/tex/latex/subfigure/subfigure.cfg)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip50
 \subfig@bottom=\skip51
 )
-(/usr/share/texmf/tex/latex/tools/longtable.sty
+(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip52
 \LTright=\skip53
@@ -162,7 +157,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count109
 \LT@p@ftn=\toks20
 )
-(/usr/share/texmf/tex/latex/float/float.sty
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count110
 \float@exts=\toks21
@@ -170,25 +165,25 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks22
 \@floatcapt=\box33
 )
-(/usr/share/texmf/tex/latex/ltxmisc/url.sty
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip11
 Package: url 2005/06/27  ver 3.2  Verb mode for urls, etc.
 )
-(/usr/share/texmf/tex/latex/setspace/setspace.sty
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
 Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
 
 Package: `setspace' 6.7 <2000/12/01>
-) (/usr/share/texmf/tex/latex/oberdiek/pdflscape.sty
+) (/usr/share/texmf-texlive/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2006/04/24 v0.6 Landscape pages in PDF (HO)
 
-(/usr/share/texmf/tex/latex/graphics/lscape.sty
+(/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ))
-(/usr/share/texmf/tex/latex/ltxmisc/threeparttable.sty
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box34
 )
-(/usr/share/texmf/tex/latex/geometry/geometry.sty
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
 Package: geometry 2002/07/08 v3.2 Page Geometry
 \Gm@cnth=\count111
 \Gm@cntv=\count112
@@ -198,12 +193,13 @@ Package: geometry 2002/07/08 v3.2 Page Geometry
 \Gm@odd@mp=\dimen119
 \Gm@even@mp=\dimen120
 \Gm@dimlist=\toks23
-)
-(/usr/share/texmf/tex/latex/cite/chapterbib.sty
+
+(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+(/usr/share/texmf-texlive/tex/latex/cite/chapterbib.sty
 \c@inputfile=\count114
 Package: chapterbib 2004/02/29  v 1.11
 )
-(/usr/share/texmf/tex/latex/base/makeidx.sty
+(/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
 Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 )
 \@indexfile=\write3
@@ -211,19 +207,19 @@ Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
 
 
 Writing index file main.idx
-(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2007/02/07 v6.75r Hypertext links for LaTeX
 \@linkdim=\dimen121
 \Hy@linkcounter=\count115
 \Hy@pagecounter=\count116
 
-(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2007/02/07 v6.75r Hyperref: PDFDocEncoding definition (HO)
 )
-(/usr/share/texmf/tex/latex/config/hyperref.cfg
+(/etc/texmf/tex/latex/config/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-(/usr/share/texmf/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2006/08/22 v2.4 Connects package keyval with LaTeX options (
 HO)
 )
@@ -251,25 +247,26 @@ Package hyperref Info: Link coloring OFF on input line 3122.
 \c@Hfootnote=\count120
 )
 *hyperref using driver hpdftex*
-(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2007/02/07 v6.75r Hyperref driver for pdfTeX
 \Fld@listcount=\count121
 )
-(/usr/share/texmf/tex/latex/base/fontenc.sty
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texmf/tex/latex/base/t1enc.def
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-(/usr/share/texmf/tex/latex/psnfss/helvet.sty
+(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (./main.aux (./titles.aux)
-(./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
-(./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
-(./Appendix/appendix1a.aux) (./Appendix/appendix2a.aux)
-(./Appendix/appendix2b.aux) (./Appendix/appendix4a.aux)
-(./Supplement/supplements.aux) (./CV/cv.aux))
+) (./main.aux
+(./titles.aux) (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux)
+(./Chapter3/chapter3.aux) (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux)
+(./Chapter6/chapter6.aux)
+No file Appendix/appendix1a.aux.
+(./Appendix/appendix2a.aux) (./Appendix/appendix2b.aux)
+(./Appendix/appendix4a.aux) (./Supplement/supplements.aux) (./CV/cv.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
@@ -288,11 +285,25 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
 LaTeX Font Info:    ... okay on input line 53.
 LaTeX Font Info:    Try loading font information for T1+phv on input line 53.
 
-(/usr/share/texmf/tex/latex/psnfss/t1phv.fd
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 10.40245pt on input line 53.
+
+(/usr/share/texmf/tex/context/base/supp-pdf.tex
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count122
+\scratchdimen=\dimen124
+\scratchbox=\box35
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen125
+\MPnumerator=\count126
+\everyMPtoPDFconversion=\toks27
+)
 -------------------- Geometry parameters
 paper: class default
 landscape: --
@@ -333,25 +344,24 @@ driver: pdftex
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
 Package hyperref Info: Link coloring OFF on input line 53.
-
-(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
 
-(/usr/share/texmf/tex/latex/oberdiek/refcount.sty
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count127
 )
 LaTeX Info: Redefining \ref on input line 53.
 LaTeX Info: Redefining \pageref on input line 53.
- (./main.out) (./main.out)
+ (./main.out)
+(./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 \openout2 = `titles.aux'.
 
-
-(./titles.tex)
+ (./titles.tex)
 Title
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 13.67995pt on input line 68.
@@ -363,7 +373,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.40245pt on input line 68.
-\@aplines=\count123
+\@aplines=\count128
 [1
 
 
@@ -402,23 +412,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--69
 
 ] (./main.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
- (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
-(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 ) [5
 
-] [6])
+])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [7] (./main.lot)
+ [6] [7] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
-
 
 [8
 
@@ -429,11 +438,11 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 5.69998pt on input line 6.
  [9
 
-] [10] [11])
+] [10])
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [12]
+ [11] [12]
 \openout2 = `Chapter4/chapter4.aux'.
 
  (./Chapter4/chapter4.tex
@@ -456,7 +465,7 @@ References
 \openout2 = `Appendix/appendix4a.aux'.
 
  (./Appendix/appendix4a.tex
-Appendix D.
+Appendix C.
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 (hyperref)                removing `\advance' on input line 1.
@@ -475,7 +484,7 @@ Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 8.54997pt on input line 42.
-[69
+[50
 
 
 
@@ -490,7 +499,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 
 
-] [70] [71] [72] (./Appendix/appendix4a.bbl [73]
+] [51] [52] [53] [54] (./Appendix/appendix4a.bbl [55]
 References
 pdfTeX warning (ext4): destination with the same identifier (name{cite.olson199
 8}) has been already used, duplicate ignored
@@ -507,34 +516,25 @@ fier (name{cite.hagerman1997}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.70 \bibitem{hagerman1997}
-                            [74
+                            [56
 
-])) [75] (./main.aux (./titles.aux)
+])) [57] (./main.aux (./titles.aux)
 (./Chapter1/chapter1.aux) (./Chapter2/chapter2.aux) (./Chapter3/chapter3.aux)
 (./Chapter4/chapter4.aux) (./Chapter5/chapter5.aux) (./Chapter6/chapter6.aux)
-(./Appendix/appendix1a.aux) (./Appendix/appendix2a.aux)
-(./Appendix/appendix2b.aux) (./Appendix/appendix4a.aux)
-(./Supplement/supplements.aux) (./CV/cv.aux)) )
+No file Appendix/appendix1a.aux.
+(./Appendix/appendix2a.aux) (./Appendix/appendix2b.aux)
+(./Appendix/appendix4a.aux) (./Supplement/supplements.aux) (./CV/cv.aux)) )
 (\end occurred when \iftrue on line 68 was incomplete) 
 Here is how much of TeX's memory you used:
- 5049 strings out of 256216
- 65919 string characters out of 1917072
- 148148 words of memory out of 1500000
- 8000 multiletter control sequences out of 10000+200000
- 39962 words of font info for 65 fonts, out of 1200000 for 2000
- 645 hyphenation exceptions out of 8191
- 28i,14n,39p,1041b,421s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 5331 strings out of 95087
+ 70342 string characters out of 1183278
+ 149656 words of memory out of 1500000
+ 8173 multiletter control sequences out of 10000+50000
+ 43228 words of font info for 67 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 32i,14n,39p,1041b,421s stack positions out of 5000i,500n,6000p,200000b,5000s
 pdfTeX warning (dest): na
-me{figure.B.1} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.lu2003} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.A.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.olson2001} has been referenced but does not ex
-ist, replaced by a fixed one
+me{figure.A.2} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.A.1} has been referenced but does not exist,
  replaced by a fixed one
@@ -632,7 +632,7 @@ pdfTeX warning (dest): name{cite.ndburl} has been referenced but does not exist
 pdfTeX warning (dest): name{figure.1.1} has been referenced but does not exist,
  replaced by a fixed one
 
-pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, 
+pdfTeX warning (dest): name{table.A.1} has been referenced but does not exist, 
 replaced by a fixed one
 
 pdfTeX warning (dest): name{table.3.1} has been referenced but does not exist, 
@@ -647,22 +647,10 @@ replaced by a fixed one
 pdfTeX warning (dest): name{table.2.1} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{appendix*.14} has been referenced but does not exis
+pdfTeX warning (dest): name{appendix*.10} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{appendix*.13} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.C.1} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix.C} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.11} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.B.2} has been referenced but does not exist
+pdfTeX warning (dest): name{appendix*.9} has been referenced but does not exist
 , replaced by a fixed one
 
 pdfTeX warning (dest): name{section.B.1} has been referenced but does not exist
@@ -670,12 +658,6 @@ pdfTeX warning (dest): name{section.B.1} has been referenced but does not exist
 
 pdfTeX warning (dest): name{appendix.B} has been referenced but does not exist,
  replaced by a fixed one
-
-pdfTeX warning (dest): name{appendix*.10} has been referenced but does not exis
-t, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.A.2} has been referenced but does not exist
-, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -764,19 +746,21 @@ pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
 pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
 replaced by a fixed one
 
- </home/esguerra/.texlive2007/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.60
-0pk>{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1
-/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/b
-luesky/cm/cmmi8.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/sh
-are/texmf/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf/fonts/type1/bluesky
-/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy6.pfb></usr/share/t
-exmf/fonts/type1/bluesky/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/urw/helveti
-c/uhvb8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/
-texmf/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (22 pages, 173603 bytes).
+ </home/esguerra/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk>{/usr/sh
+are/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texlive/fonts/t
+ype1/bluesky/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cme
+x10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share
+/texmf-texlive/fonts/type1/bluesky/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts
+/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cm
+r10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/t
+exmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/
+type1/bluesky/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cms
+y8.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/shar
+e/texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/f
+onts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (23 pages, 178277 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 151 named destinations out of 1000 (max. 131072)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 580 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 131072)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 

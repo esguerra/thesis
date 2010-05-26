@@ -5,21 +5,21 @@ Nucleic Acids and other polymers, due to their size, can be understood
 as  mechanical  objects  \cite{marko2003,  nelson2004}  and  therefore
 engineering approaches  can be used for  their understanding.  Usually
 the methods followed by  the engineering approach consider the polymer
-as  a  long  continuous  rod,  and  are  known  as  continuum  elastic
-theory.  This type  of  continuous approach  leaves  little space  for
-taking  into account  the nature  of the  subunits which  make  up the
-polymer, that is,  it is mainly applicable to  homopolymers made up of
-identical subunits. In nucleic acids  this is not necesarily the case,
-a more  general approach should  take into account the  possibility of
-having  different   subunits  making   up  the  polymer.    Olson  and
-collaborators have developed a sequence dependent model, refered to as
-the ``realistic'' model \cite{olson1993}.   Such model is harmonic and
-depends on determination of  force-constant analogs derived from X-Ray
-cristallographic  data  taken from  the  Nucleic  Acid Database  (NDB)
-\cite{go1976,  olson1998}.  Within  the context  of  the ``realistic''
-model  Czapla  et al.   \cite{czapla2006}  have  suggested a  gaussian
-sampling  methodology  which  allows  us  to  compute  global  polymer
-properties  like  the  persistence  length  following  a  matrix
+as a long  continuous rod, and are known  as continuum elastic theory.
+This type of  continuous approach leaves little space  for taking into
+account the nature of the subunits which make up the polymer, that is,
+it  is  mainly  applicable   to  homopolymers  made  up  of  identical
+subunits. In  nucleic acids  this is not  necesarily the case,  a more
+general approach  should take into  account the possibility  of having
+different  subunits making  up the  polymer.  Olson  and collaborators
+have  developed  a  sequence   dependent  model,  refered  to  as  the
+``realistic'' model  \cite{olson1993}.  Such model  follows a harmonic
+approximation and  depends on determination  of force-constant analogs
+derived from  X-Ray cristallographic data taken from  the Nucleic Acid
+Database (NDB)  \cite{go1976, olson1998}.   Within the context  of the
+``realistic'' model Czapla et  al.  \cite{czapla2006} have suggested a
+gaussian  sampling  methodology  which  allows us  to  compute  global
+polymer  properties like  the  persistence length  following a  matrix
 approach  suggested by  Flory  \cite{flory1969} and  expanded upon  by
 Olson et al. \cite{maroun1988a, marky1994a}
 
@@ -34,7 +34,7 @@ it's computed using different models.
 In  general there  are two  parallel and  analog perspectives  used to
 define  the persistence  length  of  polymers. One of these has a  more
 intrinsically mathematical,  or physical flavour,  and it's understood
-as the resistence to deformation  of; a curve in space (a mathematical
+as the resistance to deformation  of; a curve in space (a mathematical
 object), or a thin rod (a physical object).  The other is a stochastic
 one, where it's  understood as ``a measure of  the distance over which
 the direction of the  polymer\footnote{In the original citation DNA is
@@ -205,16 +205,43 @@ to  rotate  freely around  its  immediate  neighbors.   What is  meant
 precisely by ``freely'',  is that bond angles can  randomly assume any
 value between 0  and 360 degrees, there are  no bond-angle constraints
 whatsoever.   When the number  of conformations  tend to  infinity the
-cosine of bond angles will be zero, and so will the dot product in the
-previous  equation.   Equation  \ref{eq:secmom}  keeps only  the  bond
-auto-correlation term:
+average cosine of bond  angles will be zero.  Equation \ref{eq:secmom}
+then keeps only the bond auto-correlation term:
 \begin{gather}
-<r^2> = \sum_{i}<l_{i}^2> = n<l^2>
+<r^2> = \sum_{i=1}^{n}<l_{i}^2> = nl^2
 \end{gather}  
 This equation is used to describe a so-called freely-jointed chain (FJC). 
-\subsection{Porod-Kratky or Worm Like Chain (WLC)}
 
-\subsection{Olson - Realistic}
+\section{Porod-Kratky or Worm Like Chain (WLC)}
+If a polymer is modelled as a linear (not branched) continous and
+homogenous chain its curvature at an arclength $s$ is given by the
+tangential unit vector $\hat{t}$:
+\begin{gather}
+\hat{t}(s)=\frac{\partial{\textbf{r}(s)}}{\partial{s}}
+\end{gather}
+Where $\textbf{r}(s)$ is the position vector of a point in the chain
+centered in the coordinate origin.
+The end-to-end vector is then defined as the integral sum of the chain
+curvature over the contour length of the chain as:
+\begin{gather}
+\textbf{r}=\int_{0}^{L}\hat{t}(s)ds
+\end{gather}
+The average sum of the squared end-to-end distance is then:
+\begin{eqnarray}
+\label{eq:wlc}
+<\textbf{r}^2> & = & <\textbf{r} \cdot \textbf{r}> \nonumber \\
+               & = & <\int_{0}^{L}\hat{t}(s)ds \cdot \int_{0}^{L}\hat{t}(s')ds' >\nonumber \\
+               & = & \int_{0}^{L} ds \int_{0}^{L}<\hat{t}(s) \cdot \hat{t}(s')>ds' \nonumber \\
+               & = & \int_{0}^{L} ds \int_{0}^{L} <\cos{\theta}_{ss'}>~ ds' \nonumber \\
+               & = & \int_{0}^{L} ds \int_{0}^{L} \exp^{-\frac{|s-s'|}{a}} ds' \nonumber \\
+               & = & 2aL \{ 1 - \frac{a}{L}(1-\exp^{-\frac{L}{a}})\}
+\end{eqnarray}
+Where  for   a  chain  of  infinite   length  $<\cos{\theta_{ss'}}>  =
+\exp^{-\frac{|s-s'|}{a}}$, with $a$ being the persistence length.  The
+last   equation  in   \ref{eq:wlc}   is  used   to   describe  a   so-called
+worm-like-chain (WLC).
+
+\section{Olson - Realistic}
 
 The Hamiltonian for a \cite{czapla2009}
 
@@ -236,10 +263,9 @@ property of polymers." My understanding so far.
 
 
 
-\section{Suggested Reads}
-
-From Equilibrium Statistics of Plischke and Bergersen they suggest to
-read:
-Des Cloiseaoux and Janik ()
-Rubinstein and Colby (Polymer Physics)
+%\section{Suggested Reads}
+%From Equilibrium Statistics of Plischke and Bergersen they suggest to
+%read:
+%Des Cloiseaoux and Janik ()
+%Rubinstein and Colby (Polymer Physics)
 \bibliography{biblio}
