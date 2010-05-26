@@ -49,6 +49,21 @@ Arnott, S., Hukins, D. W.~L., Dover, S.~D., Fuller, W., and Hodgson, A.~R.
   Polycytidylic acid}.
 {\em Journal of Molecular Biology,} {\bf 81}, 107--122.
 
+\bibitem{olson2001}
+Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
+  Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
+  H., Suzuki, M., Tung, C.-S., Westhof, E., Wolberger, C., and Berman, H.~M.
+  (2001)
+A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
+  {B}ase-pair {G}eometry.
+{\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
+
+\bibitem{lu2003}
+Lu, X.-J. and Olson, W. (2003)
+3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
+  {V}isualization of the {T}hree-{D}imensional {N}ucleic {A}cid {S}tructures.
+{\em Nucleic {A}cids {R}esearch,} {\bf 31}, 5108--5121.
+
 \bibitem{woese1967}
 Woese, C. (1967)
 The Genetic Code, the Molecular Basis for Genetic Expression,
@@ -747,6 +762,43 @@ Balasubramanian, S., Xu, F., and Olson, W.~K. (2009)
 {DNA Sequence-Directed Organization of Chromatin: Structure-Based Computational
   Analysis of Nucleosome-Binding Sequences}.
 {\em Biophysical Journal,} {\bf 96}, 2245--2260.
+
+\bibitem{babcock1994}
+Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
+Nucleic {A}cid {S}tructure {A}nalysis; {M}athematics for {L}ocal {C}artesian
+  and {H}elical {S}tructure {P}arameters that are {T}ruly {C}omparable
+  {B}etween {S}tructures.
+{\em Journal of {M}olecular {B}iology,} {\bf 237}, 125--156.
+
+\bibitem{berman2000}
+Berman, H.~M., Westbrook, J., Feng, Z., Gilliland, G., Bhat, T.~N., Weissig,
+  H., Shindyalov, I.~N., and Bourne, P.~E. (2000)
+The {P}rotein {D}ata {B}ank.
+{\em Nucleic {A}cids {R}esearch,} {\bf 28}, 235--242.
+
+\bibitem{lu1997}
+Lu, X.-J., Hassan, M. A.~E., and Hunter, C.~A. (1997)
+Structure and {C}onformation of {H}elical {N}ucleic {A}cids: {A}nalysis
+  {P}rogram ({SCHNA}a{P}).
+{\em Journal of {M}olecular {B}iology,} {\bf 273}, 668--680.
+
+\bibitem{bansal1995}
+Bansal, M., Bhattacharyya, D., and Ravi, B. (1995)
+{NUPARM and NUCGEN: Software for Analysis and Generation of Sequence Dependent
+  Nucleic Acid Structures}.
+{\em Computer {A}pplications in the {B}iosciences: {CABIOS},} {\bf 11},
+  281--287.
+
+\bibitem{ihaka1996}
+Ihaka, R. and Gentleman, R. (1996)
+R: a language for data analysis and graphics.
+{\em Journal of {C}omputational and {G}raphical {S}tatistics,} {\bf 5},
+  299--314.
+
+\bibitem{hornik2005}
+Hornik, K. (2005)
+{A CLUE for CLUster Ensembles}.
+{\em Journal of Statistical Software,} {\bf 14}, 1--25.
 
 \bibitem{jolliffe2002}
 Jolliffe, I.~T. (2002)
