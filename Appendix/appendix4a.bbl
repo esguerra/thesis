@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{marko2003}
 Marko, J.~F. and Cocco, S. (2003)
@@ -38,11 +38,63 @@ Flory, P.~J. (1969)
 Statistical Mechanics of Chain Molecules,
 Interscience Publishers, .
 
+\bibitem{maroun1988a}
+Maroun, R.~C. and Olson, W.~K. (1988)
+{Base Sequence Effects in Double-Helical DNA. II. Configurational Statistics of
+  Rodlike Chains}.
+{\em Biopolymers,} {\bf 27}, 561--584.
+
+\bibitem{marky1994a}
+Marky, N.~L. and Olson, W.~K. (1994)
+{Configurational Statistics of the DNA Duplex: Extended Generator Matrices to
+  Treat the Rotations and Translations of Adjacent Residues}.
+{\em Biopolymers,} {\bf 34}, 109--120.
+
 \bibitem{olson1995}
 Olson, W.~K., Babcock, M.~S., Gorin, A., Liu, G., Marky, N.~L., Martino, J.~A.,
   Pedersen, S.~C., Srinivasan, A.~R., Tobias, I., and Westcott, T.~P. (1995)
 {Flexing and Folding Double Helical DNA}.
 {\em Biophysical Chemistry,} {\bf 55}, 7--29.
+
+\bibitem{cantor1980}
+Cantor, C.~R. and Schimmel, P.~R. (1980)
+Biophysical Chemistry,
+W. H. Freeman and Company, .
+
+\bibitem{rivetti1996}
+Rivetti, C., Guthold, M., and Bustamante, C. (1996)
+{Scanning Force Microscopy of DNA Deposited onto Mica: Equilibration Versus
+  Kinetic Trapping Studied by Statistical Polymer Chain Analysis}.
+{\em Journal of Molecular Biology,} {\bf 264}, 919--932.
+
+\bibitem{abels2005}
+Abels, J.~A., Moreno-Herrero, F., van~derHeijden, T., Dekker, C., and Dekker,
+  N.~H. (2005)
+{Single-Molecule Measurements of the Persistence Length of Double-Stranded
+  RNA}.
+{\em Biophysical Journal,} {\bf 88}, 2737--2744.
+
+\bibitem{lakkaraju2009}
+Lakkaraju, S.~K. and Hwang, W. (2009)
+{Critical Buckling Length Versus Persistence Length: What Governs Biofilament
+  Conformation?}.
+{\em Physical Review Letters,} {\bf 102}, 118102.
+
+\bibitem{skolnick1977}
+Skolnick, J. and Fixman, M. (1977)
+{Electrostatic Persistence Length of a Wormlike Polyelectrolyte}.
+{\em Macromolecules,} {\bf 10}, 944--948.
+
+\bibitem{manning2006}
+Manning, G.~S. (2006)
+{The Persistence Length of DNA is Reached from the Persistence Length of its
+  Null Isomer Through an Internal Electrostatic Stretching Force}.
+{\em Biophysical Journal,} {\bf 91}, 3607--3616.
+
+\bibitem{trifonov1987}
+Trifonov, E.~N., Tan, R.~K., and Harvey, S.~C.
+DNA Bending Curvature p. 243
+Academic Press (1987).
 
 \bibitem{czapla2009}
 Czapla, L.
