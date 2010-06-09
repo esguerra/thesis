@@ -1,4 +1,4 @@
-#!/bin/bash
+B#!/bin/bash
 bibtex Chapter1/chapter1
 bibtex Chapter2/chapter2
 1bibtex Chapter3/chapter3
@@ -13,4 +13,4 @@ bibtex Appendix/appendix4a
 makeindex main
 pdflatex main
 pdflatex main
-xpdf main.pdf
+#xpdf main.pdf
