@@ -330,7 +330,7 @@ Total & 31.28 & 861   \\ \hline
  \label{fig:superimpose}
 \end{figure}
 
-\subsection{Selection of a Clustering Methodology}
+\subsection{Selection of a Clustering Methodology} 
 In  order to  analyze  our  dataset of  base-step  parameters we  have
 decided  to  use  clustering  analysis methods.   Clustering  analysis
 methods  can be broadly  classified into  two main  categories, either
@@ -340,12 +340,12 @@ optimal number of hierarchies or partitions that the analyzed data are
 split into.  To obtain a  criterion for an optimal number of clusters,
 and also  to decide which method  might be better for  our dataset, we
 have used two types  of cluster-validation techniques.  They are known
-as  internal measures  and  stability measures.  Full  details of  the
+as  internal measures  and stability  measures.  Full  details  of the
 definitions  of   such  measures  are   provided  in  \cite{handl2005,
-  brock2008} and Appendix~\ref{appendix_c}.  To perform the validation
-analysis we  used a  cluster validation package  implemented in  the R
-\cite{rcite}    statistical    analysis    program   called    clValid
-\cite{brock2008}.
+brock2008} and  Appendix~\ref{appendix_c}.  To perform  the validation
+analysis  we   used  a  cluster  validation   package  called  clValid
+\cite{brock2008},   which  is  implemented   in  the   R  \cite{rcite}
+statistical analysis package.
 
 In  Figures~\ref{fig:internal} and~\ref{fig:stability} we  present the
 results  for  internal  and  stability  validation  of  the  base-step
@@ -376,14 +376,14 @@ stability measures for completeness.
  \centering
 \includegraphics[angle=90, scale=0.5]{Chapter2/noarna_step.png}
 \caption{Pairs  scatterplot for  base-step  parameters, shift,  slide,
-  rise,  tilt,  roll, and  twist,  for  the  non-ARNA dataset  colored
-  according   to  purine-pyrimidine   (black),   purine-purine  (red),
-  pyrimidine-pyrimidine   (green),    and   pyrimidine-purine   (blue)
-  steps. Here the correlation coefficients of each of the scatterplots
-  shown  in the  lower half  of  the graph  are listed  in the  mirror
-  position in  the upper  half of the  diagram, i.e.,  the shift-twist
-  ($D_{x}, \Omega$)  correlation coefficient 0.88  of the data  in the
-  lower left corner, is printed in the upper right corner.}
+rise,  tilt,  roll,  and  twist,  for the  non-A-RNA  dataset  colored
+according   to   purine-pyrimidine   (black),   purine-purine   (red),
+pyrimidine-pyrimidine    (green),    and   pyrimidine-purine    (blue)
+steps. Here  the correlation coefficients of each  of the scatterplots
+shown in the lower half of the graph are listed in the mirror position
+in  the upper  half of  the  diagram, i.e.,  the shift-twist  ($D_{x},
+\Omega$) correlation  coefficient (0.88) of the plotted  data shown in
+the lower left corner, is printed in the upper right corner.}
  \label{fig:pairsnoarna}
 \end{figure}
 
@@ -392,15 +392,15 @@ the smaller their values, of  these. We have determined three measures
 for  each of  the hierarchical  and partitional  methods,  namely, the
 average proportion  of non-overlap  (APN), the average  distance (AD),
 and  the average  distance between  means (ADM).   The detail  of such
-measures  is given  in  Brock  et al.  \cite{brock2008}.   As seen  in
+measures  is given  in Brock  et  al.  \cite{brock2008}.   As seen  in
 Figure~\ref{fig:stability} the method with the best stability measures
 is sota for APN  and ADM almost for the whole range,  up to ~ 70.  For
-the  AD measure  the best  performers are  pam and  sota over  the whole
+the AD  measure the best  performers are pam  and sota over  the whole
 range.  Notice that the hierarchical  method follows the same trend as
 the other methods, and that in general, apart from the APN measure and
-the sota method, all methods exhibit a similar behavior due to the fact
-that our data set is not highly correlated. That is, the dataset cannot be
-split into a few principal components.
+the sota  method, all  methods exhibit a  similar behavior due  to the
+fact that our data set is  not highly correlated. That is, the dataset
+cannot be split into a few principal components.
 
 In all cases  we also see that the best overall  number of clusters is
 two, which is not surprising since we haven't filtered out A-RNA
