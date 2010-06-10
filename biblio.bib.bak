@@ -901,6 +901,34 @@
   timestamp = {2006.01.30}
 }
 
+@ARTICLE{bouchiat1999,
+  author = {C. Bouchiat and M. D. Wang and J. Allemand and T. Strick and S. M.
+	Block and V. Croquette},
+  title = {{Estimating the Persistence Length of a Worm-Like Chain Molecule
+	from Force-Extension Measurements}},
+  journal = {Biophysical Journal},
+  year = {1999},
+  volume = {76},
+  pages = {409-413},
+  abstract = {We describe a simple computation of the worm-like chain model and
+	obtain the corresponding force-versus-extension curve. We propose
+	an improvement to the Marko and Siggia interpolation formula of Bustamante
+	et al (Science 1994, 265:1599-1600) that is useful for fitting experimental
+	data. We apply it to the experimental elasticity curve of single
+	DNA molecules. Finally, we present a tool to study the agreement
+	between the worm-like chain model and experiments.},
+  doi = {10.1016/S0006-3495(99)77207-3},
+  file = {bouchiat1999.pdf:bouchiat1999.pdf:PDF},
+  institution = {LPT, ENS, Laboratoire propre du CNRS, Paris, France.},
+  keywords = {Biophysical Phenomena; Biophysics; Computer Simulation; DNA, chemistry;
+	Elasticity; Models, Chemical; Nucleic Acid Conformation; Thermodynamics},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {esguerra},
+  pmid = {9876152},
+  timestamp = {2010.05.21}
+}
+
 @ARTICLE{brock2008,
   author = {Guy Brock and Vasyl Pihur and Susmita Datta and Somnath Datta},
   title = {{clValid: An R Package for Cluster Validation}},
@@ -1066,6 +1094,15 @@
   file = {:cannone2002.pdf:PDF},
   owner = {Alphabetical},
   timestamp = {2008.03.21}
+}
+
+@BOOK{cantor1980,
+  title = {Biophysical Chemistry},
+  publisher = {W. H. Freeman and Company},
+  year = {1980},
+  author = {Charles R. Cantor and Paul R. Schimmel},
+  owner = {esguerra},
+  timestamp = {2010.05.20}
 }
 
 @ARTICLE{cao2005,
@@ -1460,6 +1497,19 @@
   pmid = {19215125},
   timestamp = {2009.04.24},
   url = {http://dx.doi.org/10.1021/jp807967e}
+}
+
+@ARTICLE{coleman2003,
+  author = {Bernard D. Coleman and Wilma K. Olson and David Swigon},
+  title = {{Theory of Sequence-Dependent DNA Elasticity}},
+  journal = {Journal of Chemical Physics},
+  year = {2003},
+  volume = {118},
+  pages = {7127-7140},
+  doi = {10.1063/1.1559690},
+  file = {coleman2003.pdf:coleman2003.pdf:PDF},
+  owner = {esguerra},
+  timestamp = {2010.05.26}
 }
 
 @ARTICLE{collin2005,
@@ -1957,7 +2007,6 @@
   year = {1989},
   volume = {17},
   pages = {1797-1803},
-  note = {It has additional info.},
   abstract = {We report here recommendations for the definitions and nomenclature
 	of nucleic acid structure parameters. {T}hese recommendations result
 	from discussions at an {EMBO} {W}orkshop on {DNA} {C}urvature and
@@ -4805,6 +4854,37 @@
   pmid = {19445952},
   timestamp = {2009.10.30},
   url = {http://dx.doi.org/10.1016/j.jmb.2009.04.084}
+}
+
+@ARTICLE{lakkaraju2009,
+  author = {Sirish Kaushik Lakkaraju and Wonmuk Hwang},
+  title = {{Critical Buckling Length Versus Persistence Length: What Governs
+	Biofilament Conformation?}},
+  journal = {Physical Review Letters},
+  year = {2009},
+  volume = {102},
+  pages = {118102},
+  abstract = {We numerically study the length dependence in the bending stiffness
+	of alpha helices, coiled coils, and a linear chain model. As the
+	length approaches what we named the critical buckling length lc,
+	the chain appears to become increasingly more flexible. This is due
+	to weak nonbonded attractions that eventually lead to buckling instability
+	and alter the chain's conformational ensemble. For alpha helices
+	and coiled coils, lc is much less than their respective persistence
+	lengths, so lc is the defining length scale for their conformations.
+	These results elucidate the importance of weak nonspecific attractions
+	that are inherent in many biofilaments in physiological conditions.},
+  doi = {10.1103/PhysRevLett.102.118102},
+  file = {lakkaraju2009.pdf:lakkaraju2009.pdf:PDF},
+  institution = {M University College Station, Texas 77843, USA.},
+  keywords = {Peptides, chemistry; Polylysine, chemistry; Protein Folding; Protein
+	Structure, Secondary; Solutions; Structure-Activity Relationship;
+	Thermodynamics; Vacuum},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {esguerra},
+  pmid = {19392240},
+  timestamp = {2010.05.19}
 }
 
 @ARTICLE{landau2004,
@@ -8390,6 +8470,95 @@
   timestamp = {2008.01.31}
 }
 
+@ARTICLE{rittman2009,
+  author = {Martyn Rittman and Emma Gilroy and Hashem Koohya and Alison Rodger
+	and Adair Richards},
+  title = {{Is DNA a Worm-Like Chain in Couette Flow? In Search of Persistence
+	Length, a Critical Review}},
+  journal = {Science Progress},
+  year = {2009},
+  volume = {92},
+  pages = {163-204},
+  abstract = {Persistence length is the foremost measure of DNA flexibility. Its
+	origins lie in polymer theory which was adapted for DNA following
+	the determination of BDNA structure in 1953. There is no single definition
+	of persistence length used, and the links between published definitions
+	are based on assumptions which may, or may not be, clearly stated.
+	DNA flexibility is affected by local ionic strength, solvent environment,
+	bound ligands and intrinsic sequence-dependent flexibility. This
+	article is a review of persistence length providing a mathematical
+	treatment of the relationships between four definitions of persistence
+	length, including: correlation, Kuhn length, bending, and curvature.
+	Persistence length has been measured using various microscopy, force
+	extension and solution methods such as linear dichroism and transient
+	electric birefringence. For each experimental method a model of DNA
+	is required to interpret the data. The importance of understanding
+	the underlying models, along with the assumptions required by each
+	definition to determine a value of persistence length, is highlighted
+	for linear dichroism data, where it transpires that no model is currently
+	available for long DNA or medium to high shear rate experiments.},
+  doi = {10.3184/003685009X462205},
+  file = {rittman2009.pdf:rittman2009.pdf:PDF},
+  institution = {Molecular Organisation and Assembly in Cells Doctoral Training Centre,
+	University of Warwick, Coventry CV4 7AL, UK.},
+  keywords = {Animals; Biopolymers, chemistry; Cattle; DNA, chemistry; Models, Molecular;
+	Molecular Structure; Nucleic Acid Conformation; Spectrum Analysis;
+	Viscosity},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {esguerra},
+  pmid = {19697713},
+  timestamp = {2010.05.20}
+}
+
+@ARTICLE{rivetti1996,
+  author = {C. Rivetti and M. Guthold and C. Bustamante},
+  title = {{Scanning Force Microscopy of DNA Deposited onto Mica: Equilibration
+	Versus Kinetic Trapping Studied by Statistical Polymer Chain Analysis}},
+  journal = {Journal of Molecular Biology},
+  year = {1996},
+  volume = {264},
+  pages = {919-932},
+  abstract = {This paper reports a study of the deposition process of DNA molecules
+	onto a mica surface for imaging under the scanning force microscope
+	(SFM). Kinetic experiments indicate that the transport of DNA molecules
+	from the solution drop onto the surface is governed solely by diffusion,
+	and that the molecules are irreversibly adsorbed onto the substrate.
+	A statistical polymer chain analysis has been applied to DNA molecules
+	to determine the deposition conditions that lead to equilibrium and
+	those that result in trapped configurations. Using the appropriate
+	conditions, DNA molecules deposited onto freshly cleaved mica, are
+	able to equilibrate on the surface as in an ideal two-dimensional
+	solution. A persistence length of 53 nm was determined from those
+	molecules. DNA fragments that were labeled on both ends with a horseradish
+	peroxidase streptavidin fusion protein were still able to equilibrate
+	on the surface, despite the additional protein-surface interaction.
+	In contrast, DNA molecules deposited onto glow-discharged mica or
+	H+-exchanged mica do not equilibrate on the surface. These molecules
+	adopt conformations similar to those expected for a simple projection
+	onto the surface plane, suggesting a process of kinetic trapping.
+	These results validate recent SFM application to quantitatively analyze
+	the conformation of complex macromolecular assemblies deposited on
+	mica. Under equilibration conditions, the present study indicates
+	that the SFM can be used to determine the persistence length of DNA
+	molecules to a high degree of precision.},
+  doi = {10.1006/jmbi.1996.0687},
+  file = {rivetti1996.pdf:rivetti1996.pdf:PDF},
+  institution = {Institute of Molecular Biology, University of Oregon, Eugene 97403,
+	USA.},
+  keywords = {Adsorption; Aluminum Silicates; DNA, genetics/isolation /&/ purification/ultrastructure;
+	Image Processing, Computer-Assisted; Kinetics; Microscopy, Atomic
+	Force, methods; Models, Chemical; Monte Carlo Method; Nucleic Acid
+	Conformation; Polymerase Chain Reaction; Proteins, chemistry},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {Persistence Length},
+  pii = {S0022-2836(96)90687-7},
+  pmid = {9000621},
+  timestamp = {2010.05.20},
+  url = {http://dx.doi.org/10.1006/jmbi.1996.0687}
+}
+
 @ARTICLE{robertus1974,
   author = {J. D. Robertus and Jane E. Ladner and J. T. Finch and Daniela Rhodes
 	and R. S. Brown and B. F. C. Clark and A. Klug},
@@ -8637,6 +8806,42 @@
   pmid = {17694311},
   timestamp = {2009.09.09},
   url = {http://dx.doi.org/10.1007/s00285-007-0110-x}
+}
+
+@ARTICLE{sawada2010,
+  author = {Tomohisa Sawada and Makoto Fujita},
+  title = {{A Single Watson-Crick G.C Base Pair in Water: Aqueous Hydrogen Bonds
+	in Hydrophobic Cavities}},
+  journal = {Journal of the American Chemical Society},
+  year = {2010},
+  volume = {132},
+  pages = {7194-7201},
+  __markedentry = {[esguerra]},
+  abstract = {Hydrogen bond (H-bond) formation in water has been a challenging task
+	because water molecules are constant competitors. In biological systems,
+	however, stable H-bonds are formed by shielding the H-bonding sites
+	from the competing water molecules within hydrophobic pockets. Inspired
+	by the nature's elaborated way, we found that even mononucleotides
+	(G and C) can form the minimal G x C Watson-Crick pair in water by
+	simply providing a synthetic cavity that efficiently shields the
+	Watson-Crick H-bonding sites. The minimal Watson-Crick structure
+	in water was elucidated by NMR study and firmly characterized by
+	crystallographic analysis. The crystal structure also displays that,
+	within the cavity, coencapsulated anions and solvents efficiently
+	mediate the minimal G x C Watson-Crick pair formation. Furthermore,
+	the competition experiments with the other nucleobases clearly revealed
+	the evident selectivity for the G x C base pairing in water. These
+	results show the fact that a H-bonded nucleobase pair was effectively
+	induced and stabilized in the local environment of an artificial
+	hydrophobic cavity.},
+  doi = {10.1021/ja101718c},
+  institution = { Bunkyo-ku, Tokyo 113-8656, Japan.},
+  language = {eng},
+  medline-pst = {ppublish},
+  owner = {esguerra},
+  pmid = {20429562},
+  timestamp = {2010.05.24},
+  url = {http://dx.doi.org/10.1021/ja101718c}
 }
 
 @ARTICLE{schluenzen2000,
@@ -8978,6 +9183,19 @@
   doi = {10.1126/science.285.5430.1074},
   file = {silvian.pdf:silvian.pdf:PDF},
   timestamp = {2005.12.01}
+}
+
+@ARTICLE{skolnick1977,
+  author = {J. Skolnick and M. Fixman},
+  title = {{Electrostatic Persistence Length of a Wormlike Polyelectrolyte}},
+  journal = {Macromolecules},
+  year = {1977},
+  volume = {10},
+  pages = {944-948},
+  doi = {10.1021/ma60059a011},
+  file = {skolnick1977.pdf:skolnick1977.pdf:PDF},
+  owner = {esguerra},
+  timestamp = {2010.05.21}
 }
 
 @ARTICLE{sorin2002,
@@ -10142,6 +10360,16 @@
   owner = {RNA Folding}
 }
 
+@INBOOK{trifonov1987,
+  pages = {243},
+  title = {DNA Bending Curvature},
+  publisher = {Academic Press},
+  year = {1987},
+  author = {E. N. Trifonov and R. K. Tan and S. C. Harvey},
+  owner = {esguerra},
+  timestamp = {2010.05.21}
+}
+
 @BOOK{trinajstic1983a,
   title = {Chemical graph Theory Volume I},
   publisher = {CRC Press},
@@ -10181,6 +10409,20 @@
   doi = {10.1529/biophysj.104.040162},
   file = {tung2004.pdf:tung2004.pdf:PDF},
   owner = {Modeling}
+}
+
+@ARTICLE{ulyanov2010,
+  author = {Nikolai B. Ulyanov and Thomas L. James},
+  title = {{RNA Structural Motifs that Entail Hydrogen Bonds Involving Sugar–Phosphate
+	Backbone Atoms of RNA}},
+  journal = {New Journal of Chemistry},
+  year = {2010},
+  volume = {34},
+  pages = {910-917},
+  doi = {10.1039/b9nj00754g},
+  file = {ulyanov2010.pdf:ulyanov2010.pdf:PDF},
+  owner = {esguerra},
+  timestamp = {2010.05.24}
 }
 
 @ARTICLE{unrau1998,
@@ -10785,17 +11027,6 @@
   pmid = {17526525},
   timestamp = {2009.05.08},
   url = {http://dx.doi.org/10.1093/nar/gkm274}
-}
-
-@ARTICLE{xu2010,
-  author = {Yan Xu and Takumi Ishizuka and Takashi Kimura and Makoto Komiyama},
-  title = {{A U-Tetrad Stabilizes Human Telomeric RNA G-Quadruplex Structure}},
-  journal = {Journal of the American Chemical Society},
-  year = {2010},
-  doi = {10.1021/ja909708a},
-  file = {xu2010.pdf:xu2010.pdf:PDF},
-  owner = {esguerra},
-  timestamp = {2010.05.14}
 }
 
 @ARTICLE{xu2010,
