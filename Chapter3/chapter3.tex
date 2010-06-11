@@ -1,7 +1,7 @@
 \chapter{RNA Base-Pairing}
 \label{basepairs} 
 \bibliographystyle{nar}
-\section{Canonical and Noncanonical Base-pairs} 
+\section{Canonical and Noncanonical Base-pairs}
 As  shown   in  Figure  \ref{fig:saenger28},  there   can  be  various
 base-pairing patterns between heterocyclic  bases in nucleic acids due
 to the  variety of possible  hydrogen bonding interactions.   The most
@@ -9,40 +9,25 @@ prevalent  hydrogen   bonding  pattern   is  that  of   the  canonical
 Watson-Crick  base-pair.  All  other  possible patterns  are known  as
 non-canonical base-pairs and  are more common in RNA  than in DNA.  We
 used the 3DNA \cite{lu2003} software package to find all base-pairs in
-a  non-redundant   database  of  RNA  structures   obtained  by  X-ray
+a  non-redundant   dataset  of   RNA  structures  obtained   by  X-ray
 crystallography with  resolution better  than 3.5 \AA  downloaded from
 the  protein data  bank  (PDB).   We also  constrained  our search  to
-helical regions  in RNA.  Such  helical regions are defined  as having
-three  consecutive base-pairs  or  more, and  need  not be  covalently
-bonded by the sugar-phosphate backbone between consecutive base-pairs.
-For   more    details   the   reader   is   refered    to   Olson   et
-al. \cite{olson2009}.
+helical regions defined as having three consecutive base-pairs or more
+which need  not be covalently  bonded by the  sugar-phosphate backbone
+between consecutive base-pairs \cite{olson2009}.
 
-
-
-
-
-
-In the helical regions data we quantify:
-
-Abundances (Counts)
-Deformabilites
-Helical Context
-
-NON-REDUNDANT DATABASE AND CONSTRAIN TO HELICAL REGIONS.
-
-We use a non-redundant dataset of RNA structures.  By non-redundant we
-mean to say  that, for the main source  of RNA structural information,
-which is  the ribosome, we used  only one of  the available structures
-per   organism,  that   is,   one  for   each  of   \textit{Deinococus
-  Radiodurans},  \textit{Haloarcula  marismortui},  \textit{Escherichi
-  coli},  and  \textit{Thermus thermophilus}.
-
+Our database is  non-redundant in the sense that  from the main source
+of RNA structural information, which is the ribosome, we used only one
+of the  available structures  per organism, that  is, one for  each of
+\textit{Deinococus   radiodurans},   \textit{Haloarcula  marismortui},
+\textit{Escherichi          coli},         and         \textit{Thermus
+  thermophilus}. Table~\ref{tab:dbase}  shows in detail  the number of
+bases per RNA type.
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{|l|c|r|r|r|r|}
 \hline
-RNA Type & \multicolumn{1}{l|}{Counts} & \multicolumn{1}{c|}{G} &
+RNA Type & \multicolumn{1}{p{2cm}|}{Number of Structures} & \multicolumn{1}{c|}{G} &
 \multicolumn{1}{c|}{C} & \multicolumn{1}{c|}{A} &
 \multicolumn{1}{c|}{U} \\ \hline \hline
 small helices & 78 & 891 & 753 & 404 & 442 \\ \hline
@@ -56,9 +41,17 @@ Total & 469 & \multicolumn{1}{c|}{12504} & \multicolumn{1}{c|}{10421} & \multico
 \end{tabular}
 \caption{Classification of RNA Types in Non-Redundant Dataset at less
   than 3.5 \AA~(For Base-Pairs in Helices of 3 base-pairs or more).}
-\label{dbase}
+\label{tab:dbase}
 \end{center}
 \end{table}
+
+
+
+In the helical regions data we quantify:
+
+Abundances (Counts)
+Deformabilites
+Helical Context
 
 
 
