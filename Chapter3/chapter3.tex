@@ -10,11 +10,12 @@ Watson-Crick  base-pair.  All  other  possible patterns  are known  as
 non-canonical base-pairs and  are more common in RNA  than in DNA.  We
 used the 3DNA \cite{lu2003} software package to find all base-pairs in
 a  non-redundant   dataset  of   RNA  structures  obtained   by  X-ray
-crystallography with  resolution better  than 3.5 \AA  downloaded from
+crystallography with  resolution better than 3.5  \AA~ downloaded from
 the  protein data  bank  (PDB).   We also  constrained  our search  to
-helical regions defined as having three consecutive base-pairs or more
-which need  not be covalently  bonded by the  sugar-phosphate backbone
-between consecutive base-pairs \cite{olson2009}.
+helical  regions,  which  are  defined  as  having  three  consecutive
+base-pairs  or  more  which  need  not be  covalently  bonded  by  the
+sugar-phosphate     backbone     between    consecutive     base-pairs
+\cite{olson2009}.
 
 Our database is  non-redundant in the sense that  from the main source
 of RNA structural information, which is the ribosome, we used only one
@@ -22,7 +23,8 @@ of the  available structures  per organism, that  is, one for  each of
 \textit{Deinococus   radiodurans},   \textit{Haloarcula  marismortui},
 \textit{Escherichi          coli},         and         \textit{Thermus
   thermophilus}. Table~\ref{tab:dbase}  shows in detail  the number of
-bases per RNA type.
+bases per  RNA type in  our dataset. It's  interesting to see  that in
+general the content of G and C, is higher than that of A and U.
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{|l|c|r|r|r|r|}
@@ -44,6 +46,14 @@ Total & 469 & \multicolumn{1}{c|}{12504} & \multicolumn{1}{c|}{10421} & \multico
 \label{tab:dbase}
 \end{center}
 \end{table}
+
+We classified the RNA base-pairs  in our dataset using three criteria.
+(1) The Leontis-Westhof edge classification scheme \cite{leontis1998}.
+(2)  The  six  rotational  and translational  base-pairing  rigid-body
+parameters,  Shear, Stretch, Stagger,  Buckle, Propeller  and Opening.
+(3) The location of base-pairs  in helices, that is, their location in
+``intact''   covalently  bonded   backbones,  and   in  the   ends  of
+``quasi-continuous'' backbones.
 
 
 
