@@ -1,31 +1,33 @@
-\chapter{RNA Base-Pairing}
+\chapter{RNA Base-Pairs}
 \label{basepairs} 
 \bibliographystyle{nar}
 \section{Canonical and Noncanonical Base-pairs}
 As  shown   in  Figure  \ref{fig:saenger28},  there   can  be  various
 base-pairing patterns between heterocyclic  bases in nucleic acids due
 to the  variety of possible  hydrogen bonding interactions.   The most
-prevalent  hydrogen   bonding  pattern   is  that  of   the  canonical
-Watson-Crick  base-pair.  All  other  possible patterns  are known  as
-non-canonical base-pairs and  are more common in RNA  than in DNA.  We
-used the 3DNA \cite{lu2003} software package to find all base-pairs in
-a  non-redundant   dataset  of   RNA  structures  obtained   by  X-ray
-crystallography with  resolution better than 3.5  \AA~ downloaded from
-the  protein data  bank  (PDB).   We also  constrained  our search  to
-helical  regions,  which  are  defined  as  having  three  consecutive
-base-pairs  or  more  which  need  not be  covalently  bonded  by  the
-sugar-phosphate     backbone     between    consecutive     base-pairs
+prevalent hydrogen  bonding pattern  in nucleic acids  is that  of the
+canonical  Watson-Crick  (W-C)  base-pair.   Other  possible  patterns
+besides the W-C one are known as non-canonical base-pairs and are more
+common in  RNA than in DNA.   We used the  3DNA \cite{lu2003} software
+package  to find  all base-pairs  in  a non-redundant  dataset of  RNA
+structures  obtained by X-ray  crystallography with  resolution better
+than 3.5  \AA~ downloaded from the  protein data bank  (PDB).  We also
+constrained our search to helical regions, which are defined as having
+three  consecutive base-pairs  or more  which need  not  be covalently
+bonded by the  sugar-phosphate backbone between consecutive base-pairs
 \cite{olson2009}.
 
-Our database is  non-redundant in the sense that  from the main source
+Our dataset is  non-redundant in the sense that  from the main source
 of RNA structural information, which is the ribosome, we used only one
 of the  available structures  per organism, that  is, one for  each of
 \textit{Deinococus   radiodurans},   \textit{Haloarcula  marismortui},
 \textit{Escherichi          coli},         and         \textit{Thermus
   thermophilus}. Table~\ref{tab:dbase}  shows in detail  the number of
 bases per  RNA type in  our dataset. It's  interesting to see  that in
-general the content of G and C, is higher than that of A and U.
-\begin{table}[htbp]
+general the content of  G and C, is higher than that  of A and U which
+might be due to the  highest overall stability of G$\cdot$C base-pairs
+against A$\cdot$U base-pairs.
+\begin{table}[H]
 \begin{center}
 \begin{tabular}{|l|c|r|r|r|r|}
 \hline
@@ -47,13 +49,143 @@ Total & 469 & \multicolumn{1}{c|}{12504} & \multicolumn{1}{c|}{10421} & \multico
 \end{center}
 \end{table}
 
+In Table  \ref{tab:bpcomp} we show  all possible base-pairs  formed by
+unmodified nucleotides in our dataset,  it's clear from the table that
+the G$\cdot$C  and A$\cdot$U base-pairs  dominate widely the  space of
+possible  RNA base-pairs  in helical  regions  making up  80\% of  all
+base-pairs  and  if  we  only  count those  that  form  canonical  W-C
+base-pairs, they make up about 73\% of all base-pair in helical regions.
+
+As will be show later on, a considerable amount of A$\cdot$U's pair in
+the Hoogsteen  fashion. There are a few  examples of U$\cdot$A$\cdot$U
+triplets made by W-C and  Hoogsteen base-pairs in RNA helical regions,
+which are the focus of our dataset.
+
+The third base in such associations almost always comes from
+a  single-stranded  region.  The  ``melted''  Watson-Crick  pairs  are
+structurally perturbed compared to the canonical pairs. The bases tend
+to be  more widely spaced in  terms the so-called Stretch  (Fig. 1) or
+slipped  past one another  via Shear,  with concomitant  disruption of
+hydrogen-bonding.  About 20\% of  the helical base pairs associate via
+non-canonical forms.
+
+
+
+
+
+
+3.2. Dominant base pairs
+
 We classified the RNA base-pairs  in our dataset using three criteria.
 (1) The Leontis-Westhof edge classification scheme \cite{leontis1998}.
-(2)  The  six  rotational  and translational  base-pairing  rigid-body
+(2)  The rotational  and translational  base-pairing  rigid-body
 parameters,  Shear, Stretch, Stagger,  Buckle, Propeller  and Opening.
 (3) The location of base-pairs  in helices, that is, their location in
-``intact''   covalently  bonded   backbones,  and   in  the   ends  of
-``quasi-continuous'' backbones.
+``intact''  covalently bonded  sugar-phosphate backbones,  and  in the
+ends   of   ``quasi-continuous''    helices   with   breaks   in   the
+sugar-phosphate backbone.
+
+Most  ($\sim$90\%)  of the  base  pairs  in  the RNA  helical  domains
+associate  in   one  of  seven   distinct  hydrogen-bonding  patterns:
+canonical Watson-Crick G$\cdot$C and A$\cdot$U pairs; wobble G$\cdot$U
+pairs;  sheared  G$\cdot$A pairs;  Hoogsteen  A$\cdot$U pairs,  wobble
+U$\cdot$U pairs;  and Watson- Crick-like  G$\cdot$A pairs (Fig.  3 and
+Table 2). The relative populations of the canonical and the two wobble
+complexes are roughly comparable to those found previously from visual
+characterization  of   rRNA  base  pairs  [36].   The  constraints  of
+double-helical structure and the consideration of other RNA structures
+contribute to the lower relative abundance of the other pairs.
+
+3.3. Structural context
+
+Each of the dominant base  pairs has a unique spatial signature within
+the RNA helical domains (Table 3). That is, some base pairs occur with
+greater frequency within the interior  than at a ``nick'' or at either
+end  of  a  stacked  double-helical  fragment.  Other  pairs  resemble
+intercalating ligands  in that  they insert between  covalently linked
+base pairs or stack  at the end of a duplex. Like  a nick in a regular
+DNA duplex,  a ``nick'' in the  RNA helices corresponds to  a break in
+the  covalent  link between  stacked  base  pairs.  The RNA  backbone,
+however, is  ``broken'' in the sense  that the stacked  bases occur in
+sequentially distant nucleotides.   Thus, the A$\cdot$U Hoogsteen pair
+(A$\cdot$U$_{H}$) stands  out from  other base pairs  in terms  of its
+intercalative   properties  and   unlikely  presence   within  intact,
+chemically continuous  dinucleotide steps. By  contrast, the G$\cdot$A
+Watson-Crick-like pair (G$\cdot$A$_{WC}$) has a higher propensity than
+other base  pairs to  flank ``nicks'' within  quasi-continuous helical
+domains, and  the sheared G$\cdot$A  pair (G$\cdot$A$_{s}$) to  lie at
+the  ends   of  stacked   helical  arrays.  The   canonical  G$\cdot$C
+Watson-Crick  pair  (G$\cdot$C$_{WC}$)   differs  from  its  A$\cdot$U
+counterpart  (A$\cdot$U$_{WC}$) in  being more  likely to  terminate a
+helical fragment. The G$\cdot$U  wobble pair (G$\cdot$U$_{w}$) is more
+apt than either  of the canonical pairs to flank a  ``nick'' in an RNA
+helix, and the U$\cdot$U wobble pair (U$\cdot$U$_{w}$) has an apparent
+inability to stack at the  ends of a duplex.  The overall distribution
+of  base pairs within  the RNA  helical arrays  resembles that  of the
+dominant G$\cdot$C Watson-Crick pairs.  The ``nicks'' and inserts that
+disrupt the organized structures  occur, on average, every fourth base
+pair. The mean  length of the quasi-continuous helical  domains in the
+dataset, obtained from the quotient of the number of base pairs in the
+interior and the number at the  termini of the stacked arrays, is 11.3
+bp.
+
+
+3.4. Base-pair deformability
+
+The  superposed   images  of  hydrogen-bonding  patterns   in  Fig.  3
+illustrate  the  overall deformability  of  the base-pair  structures.
+Table  4 quantifies  this information  in  terms of  the mean  values,
+standard deviations, and volumes  of conformation space sampled by the
+rigid-body  parameters  that  relate  the dominant  base  pairs.   The
+variability is  also apparent in  the dispersion of  distances between
+hydrogen-bond  donor  and acceptor  atoms  (Table  2).  The  composite
+information  reveals an intrinsic  deformability in  the non-canonical
+pairs beyond  that in the Watson-Crick  arrangements.  The enhancement
+in deformation  stems from greater  variation in the  three rigid-body
+parameters  -  Shear,  Stretch,  and  Opening  -  that  determine  the
+hydrogen-bonding  patterns  (Table 4).  By  contrast, the  ``stiffer''
+Watson-Crick pairs tend to  distort via Stagger, Propeller, and Buckle
+- the three parameters that  control the planarity of associated bases
+[15]. The hydrogen-bonding pattern is accordingly more variable in the
+non-canonical  than   in  the   canonical  pairs.  Evidence   of  this
+variability appears  in the fraction  of base pairs with  the expected
+hydrogen-bond   pattern   (Table  2).   Whereas   $\sim$90\%  of   the
+Watson-Crick  pairs  associate  through  the  expected  donor-acceptor
+patterns,  the proportion  of  non-canonical pairs  with the  expected
+patterns is lower, e.g., only 54\% of U$\cdot$U wobble pairs associate
+through O2$\vdots$H-N3  and N3- H$\vdots$O4 interactions.  Some of the
+non-canonical pairs are  ``melted'' in the sense that  they form fewer
+hydrogen   bonds,   but    others   make   additional   donor-acceptor
+contacts.  The  units  of  the  rigid-body  parameters,  i.e.,  angles
+expressed  in  degrees and  distances  in  Ångstrom units,  complicate
+assessment of the relative  deformabilities of different base pairs in
+terms of the  accessible conformational volume V. A  larger value of V
+does not  necessarily indicate  greater overall spatial  movement. The
+root-mean-square  deviations  of  the  superimposed images  yield  the
+following  deformability   rankings:  U$\cdot$U$_{w}$  (0.74   \AA)  >
+G$\cdot$A$_{WC}$  (0.54 \AA)  $\approx$ G$\cdot$A$_{s}$  (0.50  \AA) >
+G$\cdot$U$_{w}$  (0.45  \AA) $\approx$  A$\cdot$U$_{H}$  (0.43 \AA)  >
+G$\cdot$C$_{WC}$ (0.38  \AA) $\approx$ A$\cdot$U$_{WC}$  (0.36 \AA), a
+slightly  different ordering  from  the computed  values  of V  (Table
+3). Surprisingly,  some of the  most deformable base pairs  occur with
+greater likelihood  in the duplex interior e.g.,  the U$\cdot$U wobble
+pair, and some of the more  rigid pairs occur at ``nicks'' or resemble
+drug-like inserts,  e.g., the  A$\cdot$U Hoogsteen pair.  The relative
+stiffness of  the latter arrangements  comes at no surprise  given the
+preferential crystallization of free A  and U in Hoogsteen pairs [26].
+Finally,  the  non-canonical  base  pairs  have  unique  deformability
+profiles  partially  reflective of  the  pattern  of interaction.  For
+example,  G  and  U tend  to  fluctuate  via  Shear along  the  short,
+hydrogenbonded axis of the G$\cdot$U wobble  pair, but G and A tend to
+slide  past one another  via Stretch  along the  long axis  of contact
+between sheared  G$\cdot$A pairs.  The A$\cdot$U Hoogsteen  bases move
+along both  axes and  rotate in the  base-pair plane via  Opening. The
+major fluctuations of the  U$\cdot$U wobble and G$\cdot$A Watson-Crick
+pairs entail Shear and Opening.
+
+
+
+
 
 
 
