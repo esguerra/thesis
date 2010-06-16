@@ -1,4 +1,4 @@
-B#!/bin/bash
+#!/bin/bash
 bibtex Chapter1/chapter1
 bibtex Chapter2/chapter2
 bibtex Chapter3/chapter3

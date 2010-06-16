@@ -31,22 +31,25 @@
 \gdef \the@ipfilectr {@-5}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces GNRA Tetraloop from \textit {Thermus Thermophilus} 23S Ribosomal RNA PDB-ID:1ffk.}}{48}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Normalized histograms showing the distribution of overlap values in the 23S subunit or \textit {Thermus Thermophilus} rRNA, PDB-ID:1jjk. In histogram (a) all values are included, but in histogram (b) only values greater than zero are included. Notice the high preponderance of zero values, exactly 897 out of a total of 2705.}}{49}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Dendrogram for consensus clustering of overlap scores in the ribosome. Zero values filtered out and remaining data normalized.}}{50}{figure.5.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Standard reference frame of an A-T base-pair \cite {olson2001}. The \textit {y}-axis (dashed green line) is chosen to be parallel to the line connecting the C1$^{'}$ of adenine and the C1$^{'}$ of thymine associated in an ideal Watson-Crick base-pair. The \textit {x}-axis is the perpendicular bisector of the C1$^{'}$ - C1$^{'}$ line, and the origin is located at the intersection of the \textit {x}-axis and the line connecting the C8 atom of adenine and the C6 atom of thymine. The \textit {z}-axis is the cross product of the $\mathaccentV {hat}05E{x}$ and $\mathaccentV {hat}05E{y}$ unit vectors.}}{55}{figure.A.1}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Illustration of base pair and base step parameters \cite {lu2003}}}{58}{figure.A.2}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Standard reference frame of an A-T base-pair \cite {olson2001}. The \textit {y}-axis (dashed green line) is chosen to be parallel to the line connecting the C1$^{'}$ of adenine and the C1$^{'}$ of thymine associated in an ideal Watson-Crick base-pair. The \textit {x}-axis is the perpendicular bisector of the C1$^{'}$ - C1$^{'}$ line, and the origin is located at the intersection of the \textit {x}-axis and the line connecting the C8 atom of adenine and the C6 atom of thymine. The \textit {z}-axis is the cross product of the $\mathaccentV {hat}05E{x}$ and $\mathaccentV {hat}05E{y}$ unit vectors.}}{53}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Illustration of base pair and base step parameters \cite {lu2003}}}{56}{figure.A.2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Clustering tree for 5 bidimensional vectors using the Manhattan distance definition and the average linkage clustering method.}}{65}{figure.B.1}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Clustering tree for 5 bidimensional vectors using the Manhattan distance definition and the average linkage clustering method.}}{63}{figure.B.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
-\contentsline {figure}{\numberline {S1}{\ignorespaces Non A-RNA Type base steps centered on the standard reference frame of Adenine. Top view with the Minor Groove side of Adenine pointing down the page and the Major Groove pointing up.}}{78}{figure.A.1}
-\contentsline {figure}{\numberline {S2}{\ignorespaces The total number of structures available in the pdb up to the end of year 2009. The scale of the axis in the left (in black), is ten times that in the right (in green). The black y-axis sets the scale for the number of protein structures available in the PDB up to the end of the year 2009. The green y-axis sets the scale for the number of molecular structures containing, rna only (in red), dna only (in blue), and protein plus nucleic acid (in green). One can clearly see that the total number of protein, rna, and protein plus nucleic acid structures is growing exponentially. It is also clear that the number of DNA structures is perhaps tending toward a constant number, that is, it might not be growing. It is also interesting to see how the number of RNA structures really lifts off in the middle of the nineties, whereas for DNA the growth started earlier and is settling down.}}{79}{figure.A.2}
-\contentsline {figure}{\numberline {S3}{\ignorespaces Histogram showing the distribution of helical regions in our non-redundant helical dataset composed of structures whose resolution is better than 3.5 \r A.}}{80}{figure.A.3}
+\contentsline {figure}{\numberline {S1}{\ignorespaces Non A-RNA Type base steps centered on the standard reference frame of Adenine. Top view with the Minor Groove side of Adenine pointing down the page and the Major Groove pointing up.}}{76}{figure.A.1}
+\contentsline {figure}{\numberline {S2}{\ignorespaces The total number of structures available in the pdb up to the end of year 2009. The scale of the axis in the left (in black), is ten times that in the right (in green). The black y-axis sets the scale for the number of protein structures available in the PDB up to the end of the year 2009. The green y-axis sets the scale for the number of molecular structures containing, rna only (in red), dna only (in blue), and protein plus nucleic acid (in green). One can clearly see that the total number of protein, rna, and protein plus nucleic acid structures is growing exponentially. It is also clear that the number of DNA structures is perhaps tending toward a constant number, that is, it might not be growing. It is also interesting to see how the number of RNA structures really lifts off in the middle of the nineties, whereas for DNA the growth started earlier and is settling down.}}{77}{figure.A.2}
+\contentsline {figure}{\numberline {S3}{\ignorespaces Histogram showing the distribution of helical regions in our non-redundant helical dataset composed of structures whose resolution is better than 3.5 \r A.}}{78}{figure.A.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-12}
 \gdef \the@ipfilectr {}

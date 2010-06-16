@@ -286,65 +286,45 @@ strictly.    What's  occurring   with  the   additional  non-canonical
 base-pairs  which  are  not  included in  the  hydrogen-bond  distance
 averages  is that  they  are  either ``melting'',  that  is, they  are
 forming less  hydrogen bonds  in order to  pair, or, they  are forming
-different types of heavy atoms bridges mediated by hydrogen.
-
-
-A direct
-quantification of conformational volume by looking at the partitioning
-of  the covariational  space for  base-pair parameters  cannot  give a
-direct 
-
-the distribution
-of the covariation 
-
-
-trough use  of  the space  of
-base-pair parameters does not strictly give a 
-
-
-The  units  of  the  rigid-body  parameters,  i.e.,  angles
-expressed  in  degrees and  distances  in  Ångstrom units,  complicate
-assessment of the relative  deformabilities of different base pairs in
-terms of the  accessible conformational volume V.
-
-A  larger value of V
-does not  necessarily indicate  greater overall spatial  movement. The
-root-mean-square  deviations  of  the  superimposed images  yield  the
-following  deformability   rankings:  U$\cdot$U$_{w}$  (0.74   \AA)  >
-G$\cdot$A$_{WC}$  (0.54 \AA)  $\approx$ G$\cdot$A$_{s}$  (0.50  \AA) >
-G$\cdot$U$_{w}$  (0.45  \AA) $\approx$  A$\cdot$U$_{H}$  (0.43 \AA)  >
-G$\cdot$C$_{WC}$ (0.38  \AA) $\approx$ A$\cdot$U$_{WC}$  (0.36 \AA), a
-slightly  different ordering  from  the computed  values  of V  (Table
-3).
-
-Surprisingly,  some of the  most deformable base pairs  occur with
-greater likelihood  in the duplex interior e.g.,  the U$\cdot$U wobble
-pair, and some of the more  rigid pairs occur at ``nicks'' or resemble
-drug-like inserts,  e.g., the  A$\cdot$U Hoogsteen pair.
-
-The relative
-stiffness of  the latter arrangements  comes at no surprise  given the
-preferential crystallization of free A  and U in Hoogsteen pairs [26].
-
-Finally,  the  non-canonical  base  pairs  have  unique  deformability
-profiles  partially  reflective of  the  pattern  of interaction.
-
-For
-example,  G  and  U tend  to  fluctuate  via  Shear along  the  short,
-hydrogenbonded axis of the G$\cdot$U wobble  pair, but G and A tend to
-slide  past one another  via Stretch  along the  long axis  of contact
-between sheared  G$\cdot$A pairs.
-
-The A$\cdot$U Hoogsteen  bases move
-along both  axes and  rotate in the  base-pair plane via  Opening. The
-major fluctuations of the  U$\cdot$U wobble and G$\cdot$A Watson-Crick
-pairs entail Shear and Opening.
+different types of  heavy atom bridges mediated by  hydrogen. The fact
+of  combining  units  of   degrees  and  angstroms  in  the  base-pair
+parameters makes  the analysis of the conformational  volume score not
+straightforward.   Nonetheless   the  general  trend   gives  a  clear
+indication  of three main  levels of  deformation, that  is, canonical
+G$\cdot$C and A$\cdot$U are not  very deformed in this space, having a
+score around  six. G$\cdot$U$_{\text{w}}$, G$\cdot$A$_{\text{s}}$, and
+A$\cdot$U$_{\text{H}}$ have all values  around 25, are definitely more
+deformed    than    the   canonical's    but    not    as   much    as
+U$\cdot$U$_{\text{w}}$    and    G$\cdot$A$_{\text{WC}}$.    A    more
+straightforward  interpretation of  spatial  deformability comes  from
+root mean square deviation (rmsd) values. These values are computed by
+reconstructing  all atom  base-pair structures  using  their base-pair
+parameters.   The  rmsd values  are  then  obtained  from an  all-atom
+superposition  which uses  the  traditional Kabsh  algorithm and  then
+finds the average  of all rmsd values which  are computed with respect
+to the  mean structure. The rmsd  values have been  obtained using the
+vmd   software  package   \cite{eargle2006}.   The   deformability  of
+base-pairs as ranked by their rmsd values is as follows:
+U$\cdot$U$_{w}$  (0.74 \AA)  > G$\cdot$A$_{WC}$  (0.54  \AA) $\approx$
+G$\cdot$A$_{s}$  (0.50  \AA) >  G$\cdot$U$_{w}$  (0.45 \AA)  $\approx$
+A$\cdot$U$_{H}$  (0.43 \AA)  > G$\cdot$C$_{WC}$  (0.38  \AA) $\approx$
+A$\cdot$U$_{WC}$ (0.36 \AA)  and as it can be seen  it does not follow
+exactly the same trend as  that of the conformational volume score, it
+does nonetheless roughly maintain the  order of having three levels of
+deformability,  although  in   this  case  the  G$\cdot$A$_{\text{WC}}$
+base-pair   perhaps   should   be   grouped  with   the   intermediate
+deformability non-canonical steps.  An interesting observation is that
+the   base-pair  with   the  biggest   deformability,  that   is,  the
+U$\cdot$U$_{\text{w}}$ base-pair is more  prominent in the interior of
+intact helical regions, while most ofthe intermediate deformable
+non-canonicals show a preference for nicked or inserted regions in RNA
+helical regions.
 
 \begin{sidewaystable}[htbp]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
-Base-pair & \multicolumn{7}{c|}{Rigid-body parameters} \\
+Base-pair & \multicolumn{8}{c|}{Rigid-body parameters} \\
 \hline
  & Shear (\AA) & Stretch (\AA) & Stagger (\AA) & Buckle (deg) &
 Propeller (deg) & Opening (deg) & V (deg$^{\text{3}}$
@@ -355,8 +335,8 @@ A$\cdot$U$_{\text{WC}}$ &  0.04 (0.34) & -0.14 (0.15) &  0.04 (0.39) & -0.3 (8.4
 G$\cdot$U$_{\text{w}}$  & -2.11 (0.84) & -0.52 (0.27) & -0.04 (0.43) & -0.1 (8.2)  &  -7.4  (7.5) & -0.6  (6.9)  & 25.1  & 0.45\\
 G$\cdot$A$_{\text{s}}$  &  6.78 (0.23) & -4.40 (0.55) &  0.14 (0.52) &  1.5 (11.0) &  -3.2  (9.1) & -5.3  (8.2)  & 27.2  & 0.50\\
 A$\cdot$U$_{\text{H}}$  & -4.06 (0.80) & -1.92 (0.84) &  0.07 (0.61) & -0.4 (7.3)  &   1.0 (10.8) & -95.1 (17.4) & 25.9  & 0.43\\
-G$\cdot$A$_{\text{WC}}$ & -2.34 (0.59) & -1.63 (0.31) & -0.09 (0.47) &  0.6 (8.8)  & -11.1  (7.8) & -0.2  (17.4) & 49.8  & 0.74\\
-U$\cdot$U$_{\text{w}}$  &  0.00 (0.64) &  1.52 (0.40) & -0.29 (0.41) &  7.8 (10.8) & -10.8  (9.6) & -17.2 (13.5) & 86.2  & 0.54\\
+G$\cdot$A$_{\text{WC}}$ & -2.34 (0.59) & -1.63 (0.31) & -0.09 (0.47) &  0.6 (8.8)  & -11.1  (7.8) & -0.2  (17.4) & 86.2  & 0.54\\
+U$\cdot$U$_{\text{w}}$  &  0.00 (0.64) &  1.52 (0.40) & -0.29 (0.41) &  7.8 (10.8) & -10.8  (9.6) & -17.2 (13.5) & 49.8  & 0.74\\
 \hline
 \end{tabular}
 \caption{Rigid-body base-pair parameters, their standard deviations
@@ -365,10 +345,7 @@ U$\cdot$U$_{\text{w}}$  &  0.00 (0.64) &  1.52 (0.40) & -0.29 (0.41) &  7.8 (10.
 \end{center}
 \end{sidewaystable}
 
-
-
-
-\section{Clustering of Yurong's Classification}
+%\section{Clustering of Yurong's Classification}
 
 \bibliography{biblio}
 
