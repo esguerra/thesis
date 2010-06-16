@@ -1,16 +1,15 @@
 \chapter{Clustering Analysis (CA)}
 \label{appendix_a}
 \bibliographystyle{nar}
-
 \section{General Methodology}
-We considered  each of the 20  structures as a vector  composed of the
-six  base step  parameters.  We  grouped these  vectors  using cluster
-analysis following an automated process shown to succesfully reproduce
-well  known patterns  of the  periodic table  from a  selected  set of
-variables, such as, electronegativity, ionization potential, and other
-elemental properties \cite{restrepo2004}.  The procedure followed here
-is  an adaptation  of the  clustering used  to construct  the periodic
-table.
+We considered  each of  the 20 non-A-RNA  type structures as  a vector
+composed of  six base step  parameters.  We group these  vectors using
+cluster analysis  following an automated process  shown to succesfully
+reproduce well  known patterns of  the periodic table from  a selected
+set  of variables, such  as, electronegativity,  ionization potential,
+and  other elemental  properties  \cite{restrepo2004}.  The  procedure
+followed  here  is  an  adaptation   of  how  clustering  is  used  to
+re-construct the periodic table classification of the elements.
 
 We start by normalizing the vectors of step parameters,
 \begin{gather}
@@ -29,12 +28,12 @@ To cluster  these vectors into groups,  it's necessary  to define the
 distance between  the vectors. In  this work we used  three distance
 definitions.   These distances  are  often referred  to as  Manhattan,
 Euclidean  and   maximum  distances.  The  first   two  distances  are
-particular cases of what is known as Minkowski's metric
+particular cases of what is known as Minkowski's metric:
 \begin{gather}
 d(X,Y)= \Big( \sum_{i=1}^N |x_i-y_i|^k \Big)^\frac{1}{k}
 \end{gather}
 where $d(X,Y)$ refers to the distance between two vectors $X$ and $Y$,
-$N$  is  the  dimensionality of  the  vector,  for  the case  of  step
+where $N$ is  the dimensionality of the vector.  For  the case of step
 parameters, $N$ is  six.  In the case where \textit{k}  is equal to 1,
 the  definition  corresponds to  the  Manhattan  distance (a  distance
 measured by  following along the edges  of blocks). In  the case where
@@ -46,9 +45,8 @@ d(X,Y) = max |x_{i}-y_{i}|
 where  the  distance  between  vectors  $X$ and  $Y$  is  the  maximum
 difference between vector variables.
 
-With  these distance  definitions,  we use  a hierarchical  clustering
-method.
-
+\noindent Once the  distance si defined, we use  a hierarchical method
+to cluster the space of distances between base-step parameters.
 The clustering algorithm first finds the two closest vectors (given by
 one of  the distance  definitions) and groups  them together.  Then it
 compares the  distance of the elements  in the newly  formed group and
@@ -147,9 +145,9 @@ Structure & Property I & Property II\\
 \end{table}
 
 The  first step  is  to chose  a  distance definition.   We chose  the
-Manhattan distance.  The Manhattan distance  values between structures
-can  be   displayed  in   a  lower  triangular   matrix  as   seen  in
-equation~\ref{eq:man}
+Manhattan distance.  The  Manhattan distance values between structures
+can be displayed in a  lower triangular matrix (usually refered simply
+as the distance matrix) as seen in equation~\ref{eq:man}
 \begin{gather} 
 d(X, Y)=
 \begin{vmatrix}
@@ -163,15 +161,15 @@ d(X, Y)=
 \label{eq:man}
 \end{gather}
 
-Let's calculate explicitily  the Manhattan distance between structures
-2 and 3,
+Now,  let's  calculate  explicitily  the  Manhattan  distance  between
+structures 2 and 3,
 
 \begin{gather}
 d(2, 3)= |-2.00 - 6.00| + |2.00 - -2.00| = 12
 \end{gather}
 
-Now that we have calculated the distances we need a clustering method,
-in this case, we will use the average linkage clustering method. There
+Once we have calculated the  distances we pick a clustering method, in
+this case,  we will use  the average linkage clustering  method. There
 are two hierarchical techiques called agglomerative, or bottom-up, and
 divisive, or  top-down. We will use the  agglomerative technique, that
 is, going  from the bottom where  no objects are grouped,  to the top,
@@ -198,12 +196,51 @@ them. The only  remaining possibility for grouping is,  group \{1, 2\}
 and \{4, 3, 5\}, so we do it as illustrated in Figure~\ref{fig:tree}.
 \begin{figure}[t]
 \centering
-\includegraphics[scale=0.4]{Appendix/appendixtree.png}
+\includegraphics[scale=0.3]{Appendix/appendixtree.png}
 \caption{Clustering  tree  for   5  bidimensional  vectors  using  the
   Manhattan  distance definition  and the  average  linkage clustering
   method.}
 \label{fig:tree}
 \end{figure}
+
+\section{Clustering Validation Techniques}
+The main objective of automated  clustering methods is that of finding
+a reduced number of groups which share common characteristics in large
+datasets. The main problem with the practical approaches used to solve
+this task is that clustering methods do not offer 'a priori' an answer
+to the  optimal number  of groups  that a large  dataset can  be split
+into. In  our simple example  shown in Figure \ref{fig:tree}  our data
+splits into two main groups.  Since this assesment is dependent on the
+distances  and clustering methods  used in  particular cases,  then an
+emergent necessity is that of  being able to determine the validity of
+an   optimal  number   of   clusters  solution.   Such  methods,   not
+surprisingly, are  known as clustering validation  techniques, and are
+crucial  in the analysis  of the  gigantic amounts  of data  which are
+being produced in the  the post-genomic boom of biological information
+\cite{handl2005} having  as a  particular case the  one dealt  with in
+this thesis.
+
+We have  used the package clValid \cite{brock2008}  which implements a
+variety  of  clustering   validation  algorithms  in the  programming
+language  \textbf{R}  \cite{rcite}.   The  clValid  package  comprises
+measures which reflect  the compactness, connectedness, and separation
+of cluster partitions. The concept  of compactness of a cluster refers
+to the extent of  intra-cluster variation, the conectedness concept is
+a more local  concept and means that neighboring  data elements should
+belong to the same  cluster, finally the separation concept quantifies
+the degree of separation between individual clusters.
+
+There are two main types of measures in the clValid package, these are
+called internal measures, and stability measures. In general, internal
+measures are those which exclusively  use as input the dataset and the
+clustering  partitions,  and  intrinsic  information in  the  data  to
+quantify the  quality of  a clustering, the  stability measures  are a
+special type of internal measure.
+
+\subsection{Internal Measures}
+
+\subsection{Stability Measures}
+
 
 
 %\newline

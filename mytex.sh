@@ -9,7 +9,6 @@ bibtex main
 bibtex Appendix/appendix1a
 bibtex Appendix/appendix2a
 bibtex Appendix/appendix2b
-bibtex Appendix/appendix2c
 bibtex Appendix/appendix4a
 makeindex main
 pdflatex main
