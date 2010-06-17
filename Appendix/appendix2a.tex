@@ -213,33 +213,90 @@ into. In  our simple example  shown in Figure \ref{fig:tree}  our data
 splits into two main groups.  Since this assesment is dependent on the
 distances  and clustering methods  used in  particular cases,  then an
 emergent necessity is that of  being able to determine the validity of
-an   optimal  number   of   clusters  solution.   Such  methods,   not
+an   optimal  number   of  clusters   solution.   Such   methods,  not
 surprisingly, are  known as clustering validation  techniques, and are
 crucial  in the analysis  of the  gigantic amounts  of data  which are
 being produced in the  the post-genomic boom of biological information
-\cite{handl2005} having  as a  particular case the  one dealt  with in
+\cite{handl2005}, having  as a particular  case the one dealt  with in
 this thesis.
 
 We have  used the package clValid \cite{brock2008}  which implements a
-variety  of  clustering   validation  algorithms  in the  programming
+variety  of  clustering validation  algorithms  using the  programming
 language  \textbf{R}  \cite{rcite}.   The  clValid  package  comprises
 measures which reflect  the compactness, connectedness, and separation
 of cluster partitions. The concept  of compactness of a cluster refers
 to the extent of  intra-cluster variation, the conectedness concept is
 a more local  concept and means that neighboring  data elements should
-belong to the same  cluster, finally the separation concept quantifies
-the degree of separation between individual clusters.
+belong to the same cluster, and the separation concept quantifies the
+degree of separation between individual clusters. An illustration of
+this concepts can be seen in Figure \ref{fig:concomsep}
 
-There are two main types of measures in the clValid package, these are
-called internal measures, and stability measures. In general, internal
-measures are those which exclusively  use as input the dataset and the
-clustering  partitions,  and  intrinsic  information in  the  data  to
-quantify the  quality of  a clustering, the  stability measures  are a
-special type of internal measure.
+\begin{figure}
+
+\end{figure}  
 
 \subsection{Internal Measures}
+There are two main types of measures in the clValid package, these are
+called internal measures, and stability measures. In general, internal
+measures are those which use, exclusively, the dataset, the clustering
+partitions,  and intrinsic  information in  the data  to  quantify the
+quality of a  clustering result. In clValid three  indices are used to
+account for compactness, conectedness and separation, the connectivity
+index is used to measure cluster connectedness, and the the silhouette
+width  and  Dunn index  combine  measures  of  cluster separation  and
+compactness.
+
+\subsubsection{Connectivity Index}
+The connectivity index is defined as:
+\begin{gather}
+Conn(\mathcal{C}) = \sum_{i=1}^{N}\sum_{j=1}^{L} x_{i,nn_{i(j)}}
+\end{gather}
+Where $nn_{i(j)}$ stands for the $j^{th}$ nearest neighbor (nn) to the
+$i^{th}$ observation.  If $i$,  and it's neareast neighbor $nn_{i(j)}$
+are in  the same  cluster the term  $x_{i,nn_{i(j)}}$ is zero,  and if
+they don't  belong to the  same cluster then  this term is  assigned a
+value of $1/j$.  The parameter $L$ resembles a radius, in
+the sense that it determines how many nearest neighbors are taken into
+account per connectivity weight.
+\begin{gather}
+x_{i,nn_{i(j)}} =
+    \begin{cases}
+      0           &  \text{if } i \text{ and } nn_{i(j)} \in C_{k} \\
+      \frac{1}{j} &  \text{otherwise.}
+    \end{cases}
+\end{gather}  
+The  connectivity is  defined  for a  particular clustering  partition
+$\mathcal{C} =  {C_{1},..., C_{K}}$, that is, for  a particular number
+of clusters $K$ where the total number of observations is $N$.
+
+\subsubsection{Silhouette Width}
+
+\begin{gather}
+S(i) = \frac{b_{i}-a_{i}}{\max(a_{i},b_{i})}
+\end{gather}
+
+\begin{gather}
+a_{i}  
+\end{gather}  
+
+
+\begin{gather}
+S(i) = \frac{b_{i} - a_{i}}{\max(a_{i}, b_{i})}
+\end{gather}
+
+
+\subsubsection{Dunn Index}
+
+\begin{gather}
+D(C) = \min_{C_{k} \in C} ( \min_{C_{k} \in C} \frac{d(C_{k},C_{l})}{\max_{C_{m} \in C} diam(C_{m})} )
+\end{gather}
+
 
 \subsection{Stability Measures}
+Stability measures  are a
+special type of  internal measure which evaluate the  consistency of a
+clustering result by comparing clusterings after sequential removal of
+a column of data.
 
 
 
