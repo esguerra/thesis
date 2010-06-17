@@ -38,4 +38,9 @@ R: A Language and Environment for Statistical Computing
 R Foundation for Statistical Computing Vienna, Austria (2009)
 {ISBN} 3-900051-07-0.
 
+\bibitem{kaufman1990}
+Kaufman, L. and Rousseeuw, P.~J. (1990)
+Finding Groups in Data,
+Wiley - Interscience, .
+
 \end{thebibliography}
