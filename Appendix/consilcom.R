@@ -10,13 +10,13 @@ alldata <- cbind(x,y)
 scaled <- scale(alldata)
 plot(x,y,xlim=c(0,10),ylim=c(0,10))
 
-intern <- clValid(scaled,2:5,clMethods=c("pam", 
+intern <- clValid(alldata,2:5,clMethods=c("pam", 
                                 "hierarchical", "diana"),
                   validation = "internal")
 summary(intern)
 
 
-stability <- clValid(scaled,2:5,clMethods=c("pam", "som",
+stability <- clValid(alldata,2:5,clMethods=c("pam", "som",
                                    "hierarchical", "diana"),
                      validation = "stability")
 summary(stability)
