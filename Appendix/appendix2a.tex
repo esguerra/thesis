@@ -236,13 +236,15 @@ this concepts can be seen in Figure \ref{fig:concomsep}.
 \includegraphics[scale=0.3]{Appendix/consilcom.png}
 \caption{In this  figure we illustrate in a  bidimensional toy example
   the  concepts  of compactness,  connectedness,  and separation.   In
-  images a\) trough e\) we  have have solutions for k-means clustering
-  considering $K=[1-5]$ clusters.  We  see that c\) is  clearly the best
-  answer, since  it has better  separation betwen clusters and  at the
-  same time better compactness. This is illustrated by the optimal asw
-  score  which  is  given  at  the  rigth  side  of  the  image.   The
-  connectivity which is defined as  a nearest neighbors weight is also
-  clearly better in c\) than in any other case.}
+  images a)  trough d) we  have solutions for  hierarchical clustering
+  considering $K=[2-5]$  clusters. For the  case of three  clusters we
+  can  see that  compared to  the other  solutions, it  appears  to be
+  composed of  more compact and  separated groups, this fact  would be
+  quantified in  clValid with the asw  index and the  Dunn Index. For
+  the two cluster  solution we see that it  is clearly more connected
+  than  all other solutions,  but we  can also  appreciate that  as we
+  group  data into  more clusters  connectivity will  be progressively
+  lost just due to the fact of splitting data appart.}
 \label{fig:concomsep}
 \end{figure}  
 
@@ -279,7 +281,7 @@ x_{i,nn_{i(j)}} =
 The  connectivity is  defined  for a  particular clustering  partition
 $\mathcal{C} =  {C_{1},..., C_{K}}$, that is, for  a particular number
 of clusters $K$ where the total number of observations is $N$. 
-The connectivity index can give values between zero and $\infinity$,
+The connectivity index can give values between zero and $\infty$,
 and smaller values mean better connectivity.
 
 \subsubsection{Average Silhouette Width}
@@ -304,34 +306,40 @@ b_{i} = \min_{C_{k} \in \mathcal{C}} \sum_{j \in C_{k}}\frac{d(i,j)}{n(C_{k})}
 The dissimilarity $d(i,j)$ is usually just a distance, for example the
 Euclidean of  Manhattan distances, although formally it  does not need
 to be  a metric, hence a  dissimilarity.  Notice that  due to equation
-\ref{fig:silval}  the  average silhoutte  width  (asw)  can only  have
+\ref{eq:silval}  the  average silhoutte  width  (asw)  can only  have
 values    in   the    range   $[-1:1]$.     Kaufman    and   Rousseeuw
 \cite{kaufman1990}  suggest  that  acceptable classifications  usually
 have an asw value above 0.5  and those with values below 0.2 should be
 considered as not  well classified.  Notice in the  lower left plot of
 Figure   \ref{fig:internal}  that   all  values   for   validation  of
-hierachical clustering for single-base step-parameters are above 0.5.
-The asw is then an index which quantifies the separation and compactness of
-clustering solutions.
+hierachical clustering for  single-base step-parameters are above 0.5.
+The  asw  is  then  an  index  which  quantifies  the  separation  and
+compactness of clustering solutions.
 
 \subsubsection{Dunn Index}
-The Dunn index, as is similar to the asw index in the sense that it
-also quantifies the separation and compactness of clustering
-solutions. It is an index which measures the ratio between the
-smallest inter-cluster distance and the largest intra-cluster distance in a
-partitioning.
-The index is defined by:
+The Dunn index is  similar to the asw index in the  sense that it also
+quantifies the separation and  compactness of clustering solutions. It
+is   an  index  which   measures  the   ratio  between   the  smallest
+inter-cluster  distance and  the largest  intra-cluster distance  in a
+partitioning.  The index is defined by:
 \begin{gather}
-D(C) = \min_{C_{k} \in C} ( \min_{C_{k} \in C} \frac{d(C_{k},C_{l})}{\max_{C_{m} \in C} diam(C_{m})} )
+D(C) = \min_{C_{k} \in C} \left(  \frac{\min_{C_{l} \in C}
+  d(C_{k},C_{l})}{\max_{C_{m} \in C} diam(C_{m})} \right)
 \end{gather}
-Where $\min_{C_{l \in C}} d(C_{k},C_{l})$ is the minimal inter-cluster
-distance, and is the maximum intra-cluster distance. 
+Where $\min_{C_{l \in C}} d(C_{k},C_{l})$ is the minimum inter-cluster
+distance,  and  $\max_{C_{m}  \in   C}  diam(C_{m})$  is  the  maximum
+intra-cluster distance.   The Dunn index can have  values between zero
+and $infty$, and a higher  value means a better cluster separation and
+compactness.
 
 \subsection{Stability Measures}
-Stability measures  are a
-special type of  internal measure which evaluate the  consistency of a
-clustering result by comparing clusterings after sequential removal of
-a column of data.
+Stability  measures  are a  special  type  of  internal measure  which
+evaluate  the   consistency  of  a  clustering   result  by  comparing
+clusterings after sequential removal of a column of data.
+
+
+
+
 
 
 
