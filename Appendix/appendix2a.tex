@@ -234,17 +234,18 @@ this concepts can be seen in Figure \ref{fig:concomsep}.
 \begin{figure}
 \centering
 \includegraphics[scale=0.3]{Appendix/consilcom.png}
-\caption{In this  figure we illustrate in a  bidimensional toy example
-  the  concepts  of compactness,  connectedness,  and separation.   In
-  images a)  trough d) we  have solutions for  hierarchical clustering
-  considering $K=[2-5]$  clusters. For the  case of three  clusters we
-  can  see that  compared to  the other  solutions, it  appears  to be
-  composed of  more compact and  separated groups, this fact  would be
-  quantified in  clValid with the asw  index and the  Dunn Index. For
-  the two cluster  solution we see that it  is clearly more connected
-  than  all other solutions,  but we  can also  appreciate that  as we
-  group  data into  more clusters  connectivity will  be progressively
-  lost just due to the fact of splitting data appart.}
+\caption{We  illustrate in  this figure  the concepts  of compactness,
+  connectedness, and separation in a bidimensional example.  In images
+  (a)  trough  (d)  we  have  solutions  for  hierarchical  clustering
+  considering  $K=[2-5]$ clusters.   For the  case of  three clusters,
+  i.e. $K=3$,  we see that compared  to the other  solutions, this one
+  stands out as  being composed of more compact  and separated groups,
+  this fact would be quantified in  clValid with the asw index and the
+  Dunn Index.  For  the two cluster solution in (a) we  see that it is
+  clearly more  connected than  all other solutions,  but we  can also
+  appreciate that  as we group  data into more  clusters, connectivity
+  will be progressively  lost just due to the fact  of dat being split
+  apart.}
 \label{fig:concomsep}
 \end{figure}  
 
@@ -337,9 +338,19 @@ Stability  measures  are a  special  type  of  internal measure  which
 evaluate  the   consistency  of  a  clustering   result  by  comparing
 clusterings after sequential removal of a column of data.
 
+\subsubsection{Average Proportion of Non-overlap (APN)}
+
+\begin{gather}
+APN(\mathcal{C}) - \frac{1}{MN} \sum_{i=1}^{N}\sum_{l=1}^{M} \left( 1
+- \frac{n(C^{i,j} \cap C^{i,0})}{n(C^{i,0})} \right)
+\end{gather}  
+
+
+\subsubsection{Average Distance (AD)}
 
 
 
+\subsubsection{Average Distance Between Means (ADM)}
 
 
 
