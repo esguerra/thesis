@@ -809,6 +809,12 @@ Kaufman, L. and Rousseeuw, P.~J. (1990)
 Finding Groups in Data,
 Wiley - Interscience, .
 
+\bibitem{datta2003}
+Datta, S. and Datta, S. (2003)
+Comparisons and validation of statistical clustering techniques for microarray
+  gene expression data..
+{\em Bioinformatics,} {\bf 19}, 459--466.
+
 \bibitem{marko2003}
 Marko, J.~F. and Cocco, S. (2003)
 {The Micromechanics of DNA}.
@@ -851,6 +857,12 @@ Marky, N.~L. and Olson, W.~K. (1994)
 {Configurational Statistics of the DNA Duplex: Extended Generator Matrices to
   Treat the Rotations and Translations of Adjacent Residues}.
 {\em Biopolymers,} {\bf 34}, 109--120.
+
+\bibitem{kratky1949}
+Kratky, O. and Porod, G. (1949)
+{X-Ray Investigation of Dissolved Chain Molecules}.
+{\em Recueil des Travaux Chimiques des Pays-Bas et de la Belgique,} {\bf 68},
+  1106--1122.
 
 \bibitem{cantor1980}
 Cantor, C.~R. and Schimmel, P.~R. (1980)

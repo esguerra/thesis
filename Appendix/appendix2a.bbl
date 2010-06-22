@@ -43,4 +43,10 @@ Kaufman, L. and Rousseeuw, P.~J. (1990)
 Finding Groups in Data,
 Wiley - Interscience, .
 
+\bibitem{datta2003}
+Datta, S. and Datta, S. (2003)
+Comparisons and validation of statistical clustering techniques for microarray
+  gene expression data..
+{\em Bioinformatics,} {\bf 19}, 459--466.
+
 \end{thebibliography}

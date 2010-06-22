@@ -1,8 +1,38 @@
 \chapter{RNA Base Pair Steps}
 \label{basepairsteps} 
 \bibliographystyle{nar}
-\section{Analysis (Albany Poster) and Django Webserver}
+
+- Base-pair steps generalities
+mechanical computational scheme - refer to appendix.
+unique base-pair steps
+historical background from DNA work
+
+
+- Collection of base-pair steps data in helical regions.
+  - Yurong's bps database
+  - Yurong's pyhton 3dnaparser
+  - scripts to change signs, assamble unique steps, and do stats.
+  - scripts to cull data
+  - scripts for deformation score
+  - reconstruction and RMSD calculation
+  - scripts for force-constant-matrices
+
+
+
+
+\section{RNA Base-Pair-Steps Database and Webframework}
+A minimal MySQL database has been  created to store the mean values of
+base-step   parameters,   their   standard   deviations,   and   their
+corresponding  force constant  matrices. The  purpose of  creating the
+database is for  later automatization of the process  of the reduction
+of data, that is.
+
+\section{Analysis of Base-Pair-Steps}
 Results shown in Albany poster and steps part of methods paper.
+
+
+
+
 
 After the work done for the methods paper we extract the force
 constant matrices for the 10 unique canonical base-pair steps of RNA
@@ -13,27 +43,27 @@ model) of Olson and collaborators.
 \section{Persistence Length of RNA}
 A quantity commonly used to  quantify the stiffness of polymers is the
 so-called persistence  length $a$. To determine this  quantity for DNA
-or RNA a variety of  theoretical and experimental techniques are used.
-Some  common experimental  techniques  to determine  $a$ are  Electron
-Microscopy   (EM),  gel  electrophoresis,   sedimentation  velocities,
-electrical  birefringence,  atomic force  microscopy  (AFM) ,  magnetic
-tweezers,  and small angle  X-Ray scattering  (SAXS).  For  reviews of
-such  techniques  applied  to  the determination  of  RNA  persistence
-length, we refer the  reader to Hagerman \cite{hagerman1997}, Abels et
-al.  \cite{abels2005},  and Caliskan et  al.  \cite{caliskan2005}.  We
-will  use their  results for  comparison  with those  coming from  the
-"realistic"    model   developed    by    Olson   and    collaborators
-\cite{olson1995} to  describe DNA. The "realistic"  model is dependent
-on  high resolution  crystallographic data.   Initial  studies started
-with small numbers  of data for the deformabilities  of the ten unique
-base-pair steps  \cite{olson1995}. A more complete  picture applied to
-the study of DNA  sequence dependent deformability became available in
-1998 \cite{olson1998}.  The base-pair  step deformability data for DNA
-has  been   constantly  refined  as  more  high   resolution  DNA  and
-DNA-protein  structures have been  added to  the Nucleic  Acid Database
-(NDB)  \cite{balasubramanian2009}.    Although  such  data   has  been
-available for  DNA since 1998, such was not the case for  RNA, until now
-\cite{olson2009}.
+or RNA,  a variety of  theoretical and experimental techniques  can be
+used.  Some  common experimental  techniques to determine  $a$ include
+electron   microscopy   (EM),   gel   electrophoresis,   sedimentation
+velocities, electrical birefringence,  atomic force microscopy (AFM) ,
+magnetic  tweezers,  and small  angle  X-Ray  scattering (SAXS).   For
+reviews  of  such  techniques  applied  to the  determination  of  RNA
+persistence    length,    we   refer    the    reader   to    Hagerman
+\cite{hagerman1997}, Abels  et al.  \cite{abels2005},  and Caliskan et
+al.   \cite{caliskan2005}.  We  will compare  our  simulation results,
+based on  the "realistic" model  developed by Olson  and collaborators
+\cite{olson1995} to describe DNA, with their findings. The "realistic"
+model is dependent  on high-resolution crystallographic data.  Initial
+studies started with small numbers  of data for the deformabilities of
+the  ten unique  base-pair  steps \cite{olson1995}.   A more  complete
+picture applied  to the study of DNA  sequence-dependent deformability
+became  available   in  1998  \cite{olson1998}.    The  base-pair-step
+deformability  data  for  DNA  has  been constantly  refined  as  more
+high-resolution DNA and DNA-protein  structures have been added to the
+Nucleic Acid Database (NDB) \cite{balasubramanian2009}.  Although such
+data has been available for DNA  since 1998, such was not the case for
+RNA, until now \cite{olson2009}.
 
 A detailed description of the  ``realistic'' model along with the scheme
 of the C++  code developed by Czapla and Zheng to  implement it, and a

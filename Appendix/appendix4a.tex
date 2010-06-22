@@ -3,47 +3,47 @@
 \bibliographystyle{nar}
 Nucleic Acids and other polymers, due to their size, can be understood
 as  mechanical  objects  \cite{marko2003,  nelson2004}  and  therefore
-engineering approaches  can be used for  their understanding.  Usually
-the methods followed by  the engineering approach consider the polymer
-as a long  continuous rod, and are known  as continuum elastic theory.
-This type of  continuous approach leaves little space  for taking into
-account the nature of the subunits which make up the polymer, that is,
-it  is  mainly  applicable   to  homopolymers  made  up  of  identical
-subunits. In  nucleic acids  this is not  necesarily the case,  a more
-general approach  should take into  account the possibility  of having
-different  subunits making  up the  polymer.  Olson  and collaborators
-have  developed  a  sequence   dependent  model,  refered  to  as  the
-``realistic'' model  \cite{olson1993}.  Such model  follows a harmonic
-approximation and  depends on determination  of force-constant analogs
-derived from  X-Ray cristallographic data taken from  the Nucleic Acid
-Database (NDB)  \cite{go1976, olson1998}.   Within the context  of the
-``realistic'' model Czapla et  al.  \cite{czapla2006} have suggested a
-gaussian  sampling  methodology  which  allows us  to  compute  global
-polymer  properties like  the  persistence length  following a  matrix
-approach  suggested by  Flory  \cite{flory1969} and  expanded upon  by
-Olson et al. \cite{maroun1988a, marky1994a}
+engineering approaches  are often  used for their  understanding.  The
+methods which consider the polymer as a long continuous rod, are known
+as continuum elastic  theory.  This type of model  leaves little space
+for taking into  account the nature of the subunits  which make up the
+polymer. That is,  it is mainly applicable to  homopolymers made up of
+identical  subunits  with   limited  bending,  twisting,  and  stretch
+motion. In nucleic  acids this is not necesarily the  case, and a more
+general approach  is needed  to take into  account the  possibility of
+having different subunits and subunits with different levels of motion
+in   the  polymer.    Olson   and  collaborators   have  developed   a
+sequence-dependent  model,  refered  to  as  the  ``realistic''  model
+\cite{olson1993}  to treat  long, fluctuating  DNA helices.  The model
+uses a harmonic  approximation to treat the motion  of base-pair steps
+and  uses   force-constants  and   rest  states  derived   from  X-Ray
+crystallographic   data   from  the   Nucleic   Acid  Database   (NDB)
+\cite{go1976,  olson1998}.  Within  the context  of  the ``realistic''
+model,  Czapla et  al.   \cite{czapla2006} have  developed a  Gaussian
+sampling  methodology  to generate  random  chains configurations  and
+adapted matrix  methods to compute global polymer  properties like the
+persistence   length  from   Flory  \cite{flory1969}   and   Olson  et
+al. \cite{maroun1988a, marky1994a}
 
 In what follows we summarize definitions of persistence length and how
-it's computed using different models.
+it is computed using different models.
 %The "realistic model" can be simplified to other  models, for example
 %to the  freely rotating model, just by  making the  twisting constant
 %zero, that is, the polymer will not be elastic when twisted.
 
 \section{Persistence Length Definition}
 %%Perhaps it would be good to say, "parallel and equivalent" perspect.
-In  general there  are two  parallel and  analog perspectives  used to
-define the  persistence length  of polymers. One  of these has  a more
-intrinsically mathematical,  or physical flavour,  and it's understood
-as the resistance to deformation  of; a curve in space (a mathematical
-object), or a thin rod (a physical object).  The other is a stochastic
-one, where it's  understood as ``a measure of  the distance over which
-the direction of the  polymer\footnote{In the original citation DNA is
-  used instead  of polymer.  The citation has  been modified  here for
-  clarity.}  is  maintained''  \cite{olson1995}.   In both  cases  the
-persistence length definition can be undestood as a measure of polymer
-stiffness.
+In  general there  are two  parallel perspectives  used to  define the
+persistence length of polymers. One  of these has a more intrinsically
+mathematical, or  physical flavor, in which the  persistence length is
+understood as  the resistance  to deformation of  a curve in  space (a
+mathematical object), or a thin rod (a physical object).  The other is
+a stochastic definition, where the persistence length is understood as
+``a measure of the distance over which the direction of the polymer is
+maintained'' \cite{kratky1949}.  In  both cases the persistence length
+can be understood as a measure of polymer stiffness.
 
-Within the context of the ``physicists'' definition we cite Marko's
+Within the context of the ``mathematical physics'' definition we cite Marko's
 and Nelson's definitions:
 
 ``Classical elasticity tells us that a thin, straight rod that is bent
@@ -59,16 +59,16 @@ length...'' John F. Marko and Simona Cocco, Physics World, March 2003
 segment       of       rod       is       $dE=\frac{1}{2}       K_{B}T
 [A\beta^2+Bu^2+C\omega^2+2Du\omega]  ds$.  Here  $AK_{B}T$, $CK_{B}T$,
 $BK_{B}T$,  and $DK_{B}T$  are  the bend  stiffness, twist  stiffness,
-stretch stiffness, and twist-stretch coupling, and ds is the length of
-the segment.   (The quantities A  and C are  also called the  bend and
+stretch stiffness, and twist-stretch coupling, and $ds$ is the length of
+the segment.   (The quantities $A$  and $C$ are  also called the  bend and
 twist  persistence  lengths.)''   Philip Nelson,  Biological  Physics:
 Energy, Information, Life, 2004.
 
 These definitions coming from the point of view of physicists refer to
 an ideal  continuous thin rod.  Marko, refers  to the bend-persistence
 length,  whereas Nelson's  definition uses  a more  general  notion of
-persistence length which includes besides the bend persistence length,
-twist and a stretch persistence lengths.
+persistence length which includes, besides the bend persistence length,
+twist and stretch persistence lengths.
 
 From the ``stochastic'' perspective we cite Flory's definition:
 
@@ -79,24 +79,25 @@ Statistical Mechanics of Chain Molecules. 1969
 
 This  second perspective  is more  familiar to  the chemist,  since it
 assumes  some type  of  bonded connectivity  between polymeric  units,
-where the bond can be either ``real'', or ``virtual''.
+where the bond can be either ``real'' or ``virtual''.
 
-Both perspectives are  analog to one another since  the latter one can
-be made to appear like the first  in the limit where the length of the
-bonds  connecting the  monomeric  units  is zero,  and  the number  of
-monomers reaches very large numbers, formally, infinity.
+Both  perspectives  are  analogs  of  one  another  since  the  latter
+definition can  be made to appear  like the former in  the limit where
+the length  of the bonds connecting  the monomeric units  is zero, and
+the  number  of  monomers  reaches  a  very  large  number,  formally,
+infinity.
 
-When talking about persistence length it's usually difficult to have a
-good idea of the meaning of the quantity by itself, that is, if we are
-told that the  persistence length of DNA is, say,  530 \AA~ under some
-specific concentration and temperature  conditions, we don't know what
-this is telling  us about its stiffness since we  don't know any other
-standard values to relate this  one to. To give a better understanding
-of  the meaning  of  the values  of  the persistence  length, we  have
-collected in  Table~\ref{tab:perval} values of  persistence length for
-various  filamentous biopolymers.   Looking  at Table~\ref{tab:perval}
-it's  clear that  B-DNA is  quite a  stiff biopolymer  if  compared to
-poly-glycine, or poly-alanine.
+When talking about persistence length  it is usually difficult to have
+a good idea of  the meaning of the quantity by itself.  That is, if we
+are told  that the persistence length  of DNA is, say,  530 \AA~ under
+some specific concentration and  temperature conditions, we don't know
+what this  is telling us about  its stiffness since we  don't know any
+other  standard  values  to relate  this  one  to.  To give  a  better
+understanding of the meaning of  the values of the persistence length,
+we have collected in  Table~\ref{tab:perval} values of the persistence
+length    for   various    filamentous   biopolymers.     Looking   at
+Table~\ref{tab:perval}  it  is  clear  that  B-DNA is  quite  a  stiff
+biopolymer if compared to poly-glycine, or poly-alanine.
 
 \begin{table}[htbp]
 \begin{center}
@@ -156,9 +157,9 @@ Microtubule           & 5200000  & Lakkaraju \cite{lakkaraju2009} \\
 There are other definitions of persistence length which arise when one
 wants   to   take   into   account   the   electrostatic   nature   of
 polyelectrolytes, for example; Skolnick and Fixman \cite{skolnick1977}
-propose  and  electrostatic  persistence  length  as a  result  of  an
+proposed  an  electrostatic  persistence  length  as a  result  of  an
 extension  of the  so-called  Porod-Kratky chain  to include  charges.
-Another  approach is  that of  Manning, which  proposes an  ideal case
+Another  approach is  that of  Manning, which  proposed an  ideal case
 where  the charge  of the  polyelectrolyte (DNA)  would  be completely
 neutralized\footnote{Manning defines DNA* as the null charge isomer of
   charged DNA.}  and for  such neutralized molecule a null persistence
@@ -175,6 +176,7 @@ connecting the monomeric units  in the chain. These connecting vectors
 can be  either ``real-bond''  vectors or ``virtual-bond''  vectors and
 are denoted  by $\mathbf{l}$.  The magnitude of  the end-to-end vector
 is usually the quantity of interest.
+
 \begin{gather}
 \label{eq:e2e}
 \mathbf{r} = \sum_{i=1}^{n} \mathbf{l}_{i}\\
@@ -182,17 +184,22 @@ is usually the quantity of interest.
 r = \sqrt{\mathbf{r} \cdot \mathbf{r}}
   = \sqrt{\sum_{i,j}\mathbf{l}_{i} \cdot \mathbf{l}_{j}}
 \end{gather}
+
 Equation \ref{eq:end2end}, can also be written as:
+
 \begin{gather}
 r^2 = \sum_{i}l_{i}^{2} + 2 \sum_{i\neq j} \mathbf{l}_{i} \cdot \mathbf{l}_{j}
 \end{gather}  
-To  describe a  polymer  it's  necessary to  think  about the  various
-conformations it  can adopt due  to its flexibility, therefore,  it is
-important  to think  of polymer  related  quantities in  terms of  the
-average properties  of their conformations. For  the end-to-end vector
-the average of an ensemble is denoted as $<r>$, and the average of its
-squared  value,  also  called  the  second moment  of  the  end-to-end
-distribution, is denoted by $<r^2>$:
+
+To  describe a  polymer it  is necessary  to think  about  the various
+conformations    that   the    chain    can   adopt    due   to    its
+flexibility. Therefore,  it is  important to think  of polymer-related
+quantities   in   terms   of   the   average   properties   over   all
+conformations. For the end-to-end vector the average of an ensemble is
+denoted as $<\mathbf{r}>$, and the  average of its squared value, also
+called the second moment of the end-to-end distribution, is denoted by
+$<r^2>$:
+
 \begin{gather}
 \label{eq:secmom}  
 <r^2>=\sum_{i}<l_{i}^2> + 2\sum_{i<j}<l_{i} \cdot l_{j}>
@@ -202,33 +209,42 @@ When there is no correlation between succesive bonds we can write:
 \label{eq:nocorr}
 <l_{i} \cdot l_{j}> = 0
 \end{gather}
+
 The geometrical interpretation  of this is that every  bond is allowed
 to  rotate  freely around  its  immediate  neighbors.   What is  meant
 precisely by ``freely'',  is that bond angles can  randomly assume any
-value between 0  and 360 degrees, there are  no bond-angle constraints
-whatsoever.   When the number  of conformations  tend to  infinity the
-average cosine of bond  angles will be zero.  Equation \ref{eq:secmom}
-then keeps only the bond auto-correlation term:
+value  between 0 and  360 degrees,  and that  there are  no bond-angle
+constraints  whatsoever.  When  the number  of  conformations approach
+infinity the average cosine of the bond angles will be zero.  Equation
+\ref{eq:secmom} then keeps only the bond auto-correlation term:
+
 \begin{gather}
 <r^2> = \sum_{i=1}^{n}<l_{i}^2> = nl^2
 \end{gather}  
-This equation is used to describe a so-called freely-jointed chain (FJC). 
+
+This equation is used to describe a so-called freely-jointed chain
+(FJC), which also corresponds to a 3D random walk.
 
 \section{Porod-Kratky or Worm Like Chain (WLC)}
 If a polymer is modelled as a linear (not branched) continous and
 homogenous chain its curvature at an arclength $s$ is given by the
 tangential unit vector $\hat{t}$:
+
 \begin{gather}
 \hat{t}(s)=\frac{\partial{\textbf{r}(s)}}{\partial{s}}
 \end{gather}
-Where $\textbf{r}(s)$ is the position vector of a point in the chain
-centered in the coordinate origin.
+
+here $\textbf{r}(s)$ is the position vector of a point in the chain
+with respect to the coordinate origin.
 The end-to-end vector is then defined as the integral sum of the chain
 curvature over the contour length of the chain as:
+
 \begin{gather}
 \textbf{r}=\int_{0}^{L}\hat{t}(s)ds
 \end{gather}
+
 The average sum of the squared end-to-end distance is then:
+
 \begin{eqnarray}
 \label{eq:wlc}
 <r^2> & = & <\textbf{r} \cdot \textbf{r}> \nonumber \\
@@ -238,30 +254,36 @@ The average sum of the squared end-to-end distance is then:
                & = & \int_{0}^{L} ds \int_{0}^{L} \exp^{-\frac{|s-s'|}{a}} ds' \nonumber \\
                & = & 2aL \{ 1 - \frac{a}{L}(1-\exp^{-\frac{L}{a}})\}
 \end{eqnarray}
-Where  for   a  chain  of  infinite   length  $<\cos{\theta_{ss'}}>  =
+
+where  for   a  chain  of  infinite   length  $<\cos{\theta_{ss'}}>  =
 \exp^{-\frac{|s-s'|}{a}}$, with $a$ being the persistence length.  The
 last   equation  in   \ref{eq:wlc}   is  used   to   describe  a   so-called
 worm-like-chain (WLC).
 
 \section{Sequence Dependent}
 The expression in equation \ref{eq:e2e} can be rewritten as:
+
 \begin{eqnarray}
 \label{eq:real1}  
 \textbf{r} = \textbf{l}_{1} & + & \textbf{T}_{12}\textbf{l}_{2}
 +\textbf{T}_{12}\textbf{T}_{23}\textbf{l}_{3} \nonumber \\
  & + & ... + \textbf{T}_{12}\textbf{T}_{23}...\textbf{T}_{N-1,N} \textbf{l}_{N}
 \end{eqnarray}
-Where the transformation matrices $\textbf{T}_{N-1,N}$ transform the
+
+where the transformation matrices $\textbf{T}_{N-1,N}$ transform the
 vectors $\textbf{l}_{N+1}$ in coordinate frame $N+1$ to their
 representation $\textbf{l}_{N}$ in coordinate frame $N$.
 Following Flory \cite{flory1969} equation \ref{eq:real1} can be
 written as a matrix product in the following way:
+
 \begin{gather}
 \textbf{r}= \begin{bmatrix}\textbf{E}_{3}~ 0 \end{bmatrix} \textbf{A}_{1:N}\begin{bmatrix} 0 \\ 1 \end{bmatrix}
 \end{gather}
-Where $\textbf{A}_{1:N}$ is the serial product of generator matrices
+
+here $\textbf{A}_{1:N}$ is the serial product of generator matrices
 $\textbf{A}_{n}$ \cite{marky1994a}, and $\textbf{E}_{3}$ is the
 identity matrix of order 3:
+
 \begin{gather}
 \textbf{A}_{n} =
 \begin{bmatrix}
@@ -270,14 +292,15 @@ identity matrix of order 3:
 \end{bmatrix}\\
 \textbf{A}_{1:N}=\textbf{A}_{1}\textbf{A}_{2}...\textbf{A}_{N}
 \end{gather}
+
 The  generator  matrices  perform  a coordinate  transformation  which
 incorporates  the   displacement  vectors  $\textbf{l}_{n}$   and  the
 rotation matrices  $\textbf{T}_{n}$. It is  within the product  of the
 generator  matrices where  the sequence  model comes  into  play since
-every  generator  matrix  contains  the  specific  sequence  dependent
+every  generator  matrix  contains  the  specific-sequence  dependent
 geometric  information based  on  the rigid  block  model for  nucleic
-acids.  For full detail of the model and how the polymer configuration
-space is  sampled using the  gaussian sampling technique we  refer the
+acids.  For full details of the model and how the polymer configuration
+space is  sampled using the  Gaussian sampling technique we  refer the
 reader to Luke Czapla's doctoral thesis \cite{czapla2009}.
 
 

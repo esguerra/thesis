@@ -56,25 +56,9 @@ weighed by  the growth in  diversity of RNA structural  information in
 the past decade.  If we look  at the current distribution of the sizes
 of  RNA   structures  counted  in   terms  of  the  number   of  bases
 (Figure~\ref{fig:rnaranges}) it is clear  that there are large patches
-where there are  no RNA structures whatsoever.  That  is, there are no
-solved structures  of RNA with  roughly 600 to  1400 bases or  1800 to
-2700  bases.  The  area of  non-coding RNA's  holds great  promise for
-finding structured RNA's  in such length ranges, as  has recently been
-suggested by Breaker \cite{weinberg2009}.  A representative example of
-the characteristic ranges  of RNA structures available to  date in the
-PDB can be seen in Table~\ref{tab:rnarange} for structures larger than
-300  bases. A  comparison between  the total  number of  structures of
-protein, protein plus nucleic acid, DNA, and RNA, available at the PDB
-from   the  seventies   until  today   can  be   seen   in  Supplement
-Figure~\ref{fig:allpolypdb}.  The most  notable feature of this figure
-is  the  large difference  between  the  number  of deposited  protein
-structures and  nucleic acid structures, which have  to be represented
-with an offset  of an order of magnitude in  number of structures. The
-other prominent feature is that of the difference in growth of DNA vs.
-RNA structural information. RNA structures seem to be growing steadily
-since the mid-nineties, whereas DNA structural information seems to be
-tending to a constant number, or having a very small growth.
-\begin{figure}{htbp}
+where there are  no RNA structures whatsoever.
+
+\begin{figure}{h}
 \centering
 \includegraphics[scale=0.50, angle=-90]{Chapter2/histogram.png}
 \caption{Frequency of  nucleotide bases in RNA molecules  found in the
@@ -84,9 +68,48 @@ tending to a constant number, or having a very small growth.
   molecules.}
   \label{fig:rnaranges}
 \end{figure}
+
+That is,  there are no  solved structures of  RNA with roughly  600 to
+1400 bases or 1800 to 2700  bases.  The area of non-coding RNA's holds
+great promise for  finding structured RNA's in such  length ranges, as
+has  recently  been   suggested  by  Breaker  \cite{weinberg2009}.   A
+representative example of the  characteristic ranges of RNA structures
+available to date in the PDB can be seen in Table 2.1 
+for structures larger  than 300 bases. A comparison  between the total
+number of structures  of protein, protein plus nucleic  acid, DNA, and
+RNA, available at  the PDB from the seventies until  today can be seen
+in Supplement  Figure~\ref{fig:allpolypdb}.  The most  notable feature
+of this figure is the large difference between the number of deposited
+protein  structures and  nucleic  acid structures,  which  have to  be
+represented  with an  offset of  an order  of magnitude  in  number of
+structures. The other  prominent feature is that of  the difference in
+growth of DNA vs.  RNA  structural information. RNA structures seem to
+be  growing steadily  since the  mid-nineties, whereas  DNA structural
+information seems to be tending to a constant number, or having a very
+small growth.
+
 %The table and Figure 1.1 come from downloading all structures from
 %2000, until today that have RNA in the pdb and that have a resolution
 %better that 3.0A, they are 460 structures.
+\begin{table}[htbp]
+\begin{center}
+{\small
+\begin{tabular}{c|p{5cm}|c|c|c}
+\hline
+\bf{PDBID} & \bf{Structure Name} & \bf{Phylogenetic Group} & \bf{Number of bases} & \bf{Year} \\ \hline
+1l8v & Mutant of P4-P6 Domain of Group I Intron & Eukaryote & 314 & 2002 \\ \hline
+3igi & Group II Intron & Bacteria & 395 & 2009 \\ \hline
+1fg0 & Central Loop in Domain V of 23S rRNA & Archaea & 499 & 2000 \\ \hline
+2nz4 & GlmS Ribozyme & Eukaryote & 604 & 2006 \\ \hline
+1xmq & 30S rRNA & Bacteria & 1522 & 2004 \\ \hline
+1ffk & 50S rRNA Subunit & Archaea & 2828 & 2000 \\ \hline
+\end{tabular}
+}
+\caption{Some large  RNA structures  ($>$300 bases) elucidated  in the
+  last decade.}
+\end{center}
+\label{tab:rnarange}
+\end{table}
 
 \noindent The analysis of  the conformational information contained in
 RNA  structures  can  be  divided  into three  main  perspectives:  an
@@ -113,25 +136,7 @@ bases \cite{westhof2000, leontis2002, leontis2006}. In this chapter we
 study the  rigid-body based perspective using  clustering analysis and
 discuss  the  relationship  of  these  findings  to  other  previously
 reported perspectives on RNA conformation.
-\begin{table}[htbp]
-\begin{center}
-{\small
-\begin{tabular}{c|p{5cm}|c|c|c}
-\hline
-\bf{PDBID} & \bf{Structure Name} & \bf{Phylogenetic Group} & \bf{Number of bases} & \bf{Year} \\ \hline
-1l8v & Mutant of P4-P6 Domain of Group I Intron & Eukaryote & 314 & 2002 \\ \hline
-3igi & Group II Intron & Bacteria & 395 & 2009 \\ \hline
-1fg0 & Central Loop in Domain V of 23S rRNA & Archaea & 499 & 2000 \\ \hline
-2nz4 & GlmS Ribozyme & Eukaryote & 604 & 2006 \\ \hline
-1xmq & 30S rRNA & Bacteria & 1522 & 2004 \\ \hline
-1ffk & 50S rRNA Subunit & Archaea & 2828 & 2000 \\ \hline
-\end{tabular}
-}
-\caption{Some large  RNA structures  ($>$300 bases) elucidated  in the
-  last decade.}
-\end{center}
-\label{tab:rnarange}
-\end{table}
+
 
 \section{Consensus Clustering of Single Stranded Base Step Parameters}
 To  our  knowledge there  has  been  no  classification of  rigid-body
@@ -181,7 +186,7 @@ Table  classification of the  elements from  multidimensional property
 vectors of the elements \cite{restrepo2004, restrepo2006}.
 \begin{figure}[htbp]
  \centering
-\includegraphics[angle=90, scale=0.6]{Chapter2/eucli_cons_nonA-RNA.png}
+\includegraphics[angle=90, scale=0.5]{Chapter2/eucli_cons_nonA-RNA.png}
 \caption{Dendrogram showing the results  of consensus clustering of 20
 non-A-type  rRNA  dinucleotides   according  to  their  hexadimensional
 base-step parameter vectors.}
@@ -211,7 +216,7 @@ roughly perpendicular  to each other  in all cases --  structures {15,
 the uracil on the minor-groove edge of adenine the bases perpendicular
 to one another the uracil lies  in the "C8-carbon" of adenine in these
 cases -- structures {8, 9, 17}. The bases in each of the conformers in
-Group IV  are moer parallel to  one another but are  displaced in four
+Group IV  are more parallel to  one another but are  displaced in four
 different  ways.   The bases  in  Group IV  a  structures  {2, 4}  are
 unstacked and neither parallel nor  perpendicular. Those in Group IV b
 -- structures {18, 19, 20} are  closely related to A-RNA with parallel
@@ -229,10 +234,10 @@ which   were   obtained   by   clustering   we   have   computed   the
 root-mean-square deviation (RMSD)  between the average normalized step
 parameters of the  structures composing each of the  seven groups, and
 the   normalized  \footnote{For  details   on  the   normalization  of
-  step-parameters see Equation~\ref{eq:normalization}} step-parameters of the
-2753 steps present  in the 23S subunit of  the large ribosomal subunit
-(PDB\_ID:1jj2).  That  is, for  each group we  have obtained a  set of
-RMSD  values  which  have  been  plotted as  histograms  as  shown  in
+  step-parameters see Equation~\ref{eq:normalization}} step-parameters
+of the  2753 steps present in  the 23S subunit of  the large ribosomal
+subunit (PDB\_ID:1jj2).   That is, for  each group we have  obtained a
+set of RMSD  values which have been plotted as  histograms as shown in
 Figures~\ref{fig:histo1}, and~\ref{fig:histo2}.
 
 The results are also  summarized in Table~\ref{tab:nonA}, where we can
@@ -344,14 +349,14 @@ and also  to decide which method  might be better for  our dataset, we
 have used two types  of cluster-validation techniques.  They are known
 as  internal measures  and stability  measures.  Full  details  of the
 definitions  of   such  measures  are   provided  in  \cite{handl2005,
-brock2008} and  Appendix~\ref{appendix_a}.  To perform  the validation
-analysis  we   used  a  cluster  validation   package  called  clValid
-\cite{brock2008},   which  is  implemented   in  the   R  \cite{rcite}
+  brock2008}   and  Appendix~\ref{sec:validation}.   To   perform  the
+validation  analysis  we  used  a cluster  validation  package  called
+clValid \cite{brock2008},  which is implemented in  the R \cite{rcite}
 statistical analysis package.
 
 In  Figures~\ref{fig:internal} and~\ref{fig:stability} we  present the
 results  for  internal  and  stability  validation  of  the  base-step
-parameters  in  the  23S  ribosomal  subunit.  In  clustering  anlysis
+parameters  in  the  23S  ribosomal  subunit.  In  clustering  analysis
 literature it is customary to use  a variable $k$ to define the number
 of clusters.
 
@@ -359,20 +364,20 @@ We computed  the validation  scores for a  number of  clusters ranging
 from  $k=2$, up  to $k=80$,  and evaluated  both  hierarchical methods
 (hierarchical, diana)  and partitional (kmeans, pam,  som, sota).  The
 connectivity  measure must  be minimized,  and the  average silhouette
-width  (silhoutte) and  Dunn index  must be  maximized.  With  this in
+width  (silhouette) and  Dunn index  must be  maximized.  With  this in
 mind,  we see  that the  hierarchical\footnote{The  hierarchical label
   refers  precisely to  the agglomerative  (bottom-up)  technique, the
   Euclidean metric, and the average method.} method performs better in
-connectivity and  dunn index for the  whole range, and it  is also the
-best performer in silhoutte from $k=12$ onwards.
+connectivity and  Dunn index for the  whole range, and it  is also the
+best performer in silhouette from $k=12$ onwards.
 
 Stability measures  (~\ref{fig:stability}) are well  suited for highly
-correlated data sets with linear correlation between variables, but
-they are not very useful for our data set,
-which show  only such correlation in  shift and twist, as  can be seen
-from  the values on  the upper  right corner  of the  pairs scatteplot
-shown  in   Figure~\ref{fig:pairsnoarna}.   We  include   the  cluster
-stability measures for completeness.
+correlated data  sets with  linear correlation between  variables, but
+they  are not  very useful  for  our data  set, which  show only  such
+correlation in shift and twist, as  can be seen from the values on the
+upper   right    corner   of   the   pairs    scatterplot   shown   in
+Figure~\ref{fig:pairsnoarna}.    We  include  the   cluster  stability
+measures for completeness.
 
 \begin{figure}
  \centering
@@ -419,7 +424,7 @@ type base-steps, and non-A-RNA steps.
   hierarchical method, labeled as 1 in black color,
   behaves better for the whole range of Connectivity (smaller values)
   and Dunn (higher values),
-  and it also outperforms all others after $k=12$ for Silhoutte
+  and it also outperforms all others after $k=12$ for Silhouette
   (higher values) scores.}
  \label{fig:internal}
 \end{figure}
@@ -427,7 +432,10 @@ type base-steps, and non-A-RNA steps.
 \begin{figure}
  \centering
 \includegraphics[angle=0, scale=0.38]{Chapter2/STval_sta.png}
-\caption{Cluster validity scores for stability measures.}
+\caption{Cluster  validity scores  for stability  measures.  Note that
+  stability  measures  are  usually  useful  for  datasets  of  highly
+  correlated data, which is not the case for our dataset but are shown
+  here for consistency with the validation package clValid.}
  \label{fig:stability}
 \end{figure}
 
@@ -443,7 +451,7 @@ canonical   A-RNA  helix  determined   by  Arnott   and  collaborators
 common    double-stranded    RNA     and    DNA    are    listed    in
 Table~\ref{tab:conformations}.
 
-\begin{figure}
+\begin{figure}[ht]
  \centering
 \includegraphics[angle=0, scale=0.3]{Chapter2/dormsd.png}
 \caption{RMSD values between base-step parameters of the 23S subunit of
@@ -452,22 +460,22 @@ Table~\ref{tab:conformations}.
  \label{fig:dormsd}
 \end{figure}
 
-\begin{table}
+\begin{table}[ht]
 \begin{center}
 {\small
-\begin{tabular}{p{1.8cm}|c|c|c|c|c|c|c|c}
+\begin{tabular}{p{1.4cm}|c|c|c|c|c|c|c|c}
 \hline
 \textbf{Structure Name} & Shift ($D_x$) & Slide ($D_y$) & Rise ($D_z$) & Tilt
 ($\tau$) & Roll ($\rho$) & Twist ($\Omega$) & \textbf{Reference} &
 \textbf{Method} \\ \hline
 A-DNA & 0.36 & -1.39 & 3.29 & 2.46 & 12.50 & 30.19 & Arnott
-\cite{arnott1999} & fiber-diffraction \\ \hline
+\cite{arnott1999} & fiber-diff. \\ \hline
 B-DNA & 0.44 & 0.47 & 3.33 & 4.63 & 1.77 & 35.67   & Arnott
-\cite{arnott1999} & fiber-diffraction \\ \hline
+\cite{arnott1999} & fiber-diff. \\ \hline
 A-RNA & -0.08 & -1.48 & 3.30 & -0.43 & 8.64 & 31.57 & Arnott
-\cite{arnott1999} & fiber-diffraction \\ \hline
+\cite{arnott1999} & fiber-diff. \\ \hline
 A'-RNA & 0.05 & -1.88 & 3.39 & -0.12 & 5.43 & 29.52 & Arnott
-\cite{arnott1999} & fiber-diffraction \\ \hline
+\cite{arnott1999} & fiber-diff. \\ \hline
 AII-RNA & 1.01 & -2.52 & 3.33 & 2.94 & 9.75 & 25.12 & Schneider
 \cite{schneider2004} & X-ray \\ \hline
 \end{tabular}
@@ -500,7 +508,7 @@ Figure~\ref{fig:noarnak67} the  set of 20 structures  derived from the
 work  of Schneider et  al.\cite{schneider2004}, and  the whole  set of
 non-A-RNA  dinucleotide  steps in  a  common  reference  frame on  the
 adenine  of  an ApU  step.   All  structures  are centered  using  the
-standard  reference frame  embeded in  the  first base,  which in  our
+standard  reference frame  embedded in  the  first base,  which in  our
 reconstructions corresponds to a red block representing adenine, whose
 minor groove  edge is oriented to  the left, its major  groove edge is
 oriented  to the  right, and  its so-called  Watson-Crick base-pairing
@@ -515,7 +523,7 @@ groups represented are not as  compact as one would desire, they start
 to  give an  indication of  geometrical  preferences on  the space  of
 dinucleotide step-parameters.  For example, it is remarkable to see in
 group  7, labeled  as  g7.png in  Figure~\ref{fig:noarnak67} that  the
-blocks  representing  uracyl  in   cyan  color,  orient  their  planes
+blocks  representing  uracil  in   cyan  color,  orient  their  planes
 orthogonally to  the major groove  side of the red  block representing
 adenine.
 
@@ -535,7 +543,7 @@ using  appropriate validated clustering  analysis techniques.
   seen  clearly  that  the   optimal  method  for  clustering  is  the
   hierarchical one,  as measured by  lower values in  the connectivity
   scores, and higher  values in the Dunn score.  The optimal number of
-  clusters given  by the dunn  score is 67,  we also see  shoulders at
+  clusters given  by the Dunn  score is 67,  we also see  shoulders at
   $k=67$, for the connectivity and silhouette scores.}
  \label{fig:noarna}
 \end{figure}
@@ -548,7 +556,7 @@ using  appropriate validated clustering  analysis techniques.
   fashion. Each group  is centered on the base  reference frame of the
   adenine  block  drawn in  red.  In the  lower  right  corner of  the
   "contact sheet" the full space  of 797 reconstructed steps is shown,
-  along with the  20 steps derived from schneider  et al. work. Notice
+  along with the  20 steps derived from Schneider  et al. work. Notice
   how the only "hollow" side of the "onion" formed by the full space of
   base-step  conformations is that  corresponding to  the Watson-Crick
   base-pairing edge.}

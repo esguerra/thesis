@@ -11,35 +11,36 @@ of parameters that define the local arrangements of bases.
 \item Base (base-pair) step parameters,
 \item Base (base-pair) local helical parameters.
 \end{enumerate}
-The bases  or base pairs and  the paramenters are  the quantities that
-bring  into coincidence  coordinate frames  on the  two  objects using
-ideas from classical mechanics.
+The base or  base-pairs parameters are the quantities  that bring into
+coincidence  coordinate  frames  on   two  objects  using  ideas  from
+classical mechanics.
 %% The first two are based on cartesian coordinates
 %% (``objectcentered'', reference frame),
 %% whereas the third is referred as helical coordinates
 %% (non-object centered)
-The first two  sets of parameters are based  on Cartesian coordinates,
-whereas the  third set  of helical coordinates,  resembles cylindrical
-coordinates and is based on the single rotation that brings coordinate
-frames  on   the  two  bases  into   coincidence  (Chasles's  theorem)
-\cite{babcock1994}.
+The first two sets of parameters are based on Cartesian coordinates of
+two base or  base-pairs, whereas the third set  of helical parameters,
+resembles cylindrical coordinates and are based on the single rotation
+that  brings  coordinate  frames  on  two  bases  or  base-pairs  into
+coincidence (Chasles's theorem) \cite{babcock1994}.
 
 \section{Base-pair and base-step parameters}
 In \textsf{3DNA} one  starts with a Protein Data  Bank (PDB) formatted
-\cite{berman2000}  file   which  is  usually   based  on  experimental
-information\footnote{This is the most common  case but the PDB file is
-  sometimes  the result of  theoretical modeling.}   and which  can be
-downloaded  from the  Nucleic Acid  Database (NDB)  or PDB.  This file
-contains  the  experimentally  derived  Cartesian coordinates  of  the
-atoms. With this experimental data one performs a least-squares fit to
-a standard  reference frame \cite{olson2001}.  This can be  done using
-the               \textsf{octave}               script              at
-\url{http://rutchem.rutgers.edu/\~esguerra/RNA/scripts.html}    as   a
-tutorial  example.  The  coordinate origin  which is  embedded  in the
-standard  reference frame  is kept  and used  for both  base  and base
-pairs.  In  the case of single  unpaired bases, the  program keeps the
-origin of one  base of an ideal Watson-Crick  pair.  The definition of
-this frame is illustrated in Figure~\ref{fig:standard}
+\cite{berman2000}  file,  which   is  usually  based  on  experimental
+information\footnote{A PDB file is sometimes the result of theoretical
+  modeling.}   and  which can  be  downloaded  from  the Nucleic  Acid
+Database (NDB)  or PDB.  This file contains  the Cartesian coordinates
+and other  information, such as sequence composition,  about the given
+structure of  the atoms.  With  this experimental data one  performs a
+least-squares fit to a  standard reference frame \cite{olson2001}. The
+\textsf{octave}                        script                       at
+\url{http://rutchem.rutgers.edu/\~esguerra/RNA/scripts.html}   provides
+a useful tutorial example.  The coordinate origin which is embedded in
+the standard  reference frame, is  used for the determination  of both
+base and base-pair parameters.  In  the case of single unpaired bases,
+the  program keeps the  origin of  one base  of an  ideal Watson-Crick
+pair.    The   definition   of    this   frame   is   illustrated   in
+Figure~\ref{fig:standard}
 
 \begin{figure}[htbp]
 \centering
@@ -52,17 +53,21 @@ this frame is illustrated in Figure~\ref{fig:standard}
   C1$^{'}$  -  C1$^{'}$  line,  and  the  origin  is  located  at  the
   intersection of  the \textit{x}-axis and the line  connecting the C8
   atom of adenine  and the C6 atom of  thymine. The \textit{z}-axis is
-  the cross product of the $\hat{x}$ and $\hat{y}$ unit vectors.}
+  normal  to the  base-pair plane  (defined in  a positive  sense with
+  respect to the leading base, here A) and the direction of the x-axis
+  is defined by the cross  product of the $\hat{x}$ and $\hat{y}$ unit
+  vectors.}
 \label{fig:standard}
 \end{figure}
 
-Once one has determined the coordinate origins for the two consecutive
-bases or base pairs comprising a  step one defines a middle step triad
-(MST) \cite{lu1997}. This can be described by the following procedure:
+After the  coordinate origins for  two consecutive base  of base-pairs
+comprising a  step have  been computed, then  a so-called  middle step
+triad (MST)  \cite{lu1997} is defined. Defining the  middle step triad
+is described by the following procedure:
 
 1) Find the angle $\Gamma$ between consecutive normals, \textit{i.e.},
-\textit{z}-axis. Since these are unit vectors, the angle is defined by
-the dot product:
+\textit{z}-axes. Since these are unit vectors, the angle is defined by
+the scalar product:
 
 \begin{gather}
 \Gamma = \cos^{-1} (\hat{z}_i \cdot \hat{z}_{i+1})
@@ -70,7 +75,7 @@ the dot product:
 
 2)  Then find the  vector which  is perpendicular  to the  two normals
 (\textit{z}-axis). This  vector is obtained from the  cross product of
-the  consecutive \textit{z}-axis  (that is,  the normal  to  the plane
+the  consecutive \textit{z}-axes  (that is,  the normal  to  the plane
 formed by the two vectors). This axis is called the roll-tilt axis and
 is normalized to form the unit vector $\hat{r_t}$,
 
@@ -84,9 +89,11 @@ is normalized to form the unit vector $\hat{r_t}$,
 %% the vectorial representation?
 3) To make consecutive \textit{z}  vectors coincide, one uses a linear
 homogeneous transformation  $R(\theta)$ about the  roll-tilt axis such
-that the original orientation matrices $T_i$ and $T_{i+1}$ are rotated
-by $ \theta  = \pm \Gamma / 2$ to yield  the transformed $T_i^{'}$ and
-$T_{i+1}^{'}$ orientation matrices.
+that the  original orientation matrices $T_i$ and  $T_{i+1}$, i.e. the
+set  of unit  vectors  along  the x,  y  and z-axes  of  each base  or
+base-pair specified in the columns of  each, are rotated by $ \theta =
+\pm \Gamma /  2$ to yield the transformed  $T_i^{'}$ and $T_{i+1}^{'}$
+orientation matrices.
 %% NEED to include GRAPHICS of ANGLES and COORDINATES in general.
 
 \begin{gather}
@@ -94,8 +101,8 @@ T_i^{'} = R_{rt}(\pm \Gamma/2) T_{i} \\
 T_{i+1}^{'} = R_{rt}(\mp \Gamma/2) T_{i+1}
 \end{gather}
 
-The origin  for the middle step  triad is the average  of the position
-vectors for the $i$ and $i+1$ reference frames,
+The origin  for the middle step  triad (MST) is the average  of the position
+vectors $r_{i}$ and $r_{i+1}$ for the $i$ and $i+1$ reference frames,
 
 \begin{gather}
 r_{MST} = \frac{(r_i + r_{i+1})} {2}
@@ -103,13 +110,14 @@ r_{MST} = \frac{(r_i + r_{i+1})} {2}
 
 4) Again  using the  dot product  one can find  the angle  between the
 transformed  $\hat{y}^{'}$  vectors.   This  angle  is  equal  to  the
-magnitude  of   the  Twist  ($\Omega$).    The  dot  product   of  the
-$\hat{z}_{MST}$ unit  vector with the vector resulting  from the cross
-product of $\hat{y}_{i}^{'}$ and $\hat{y}_{i+1}^{'}$ gives the sign of
-$\Omega$. Since  the transformed  \textit{x-y} plane is  orthogonal to
-$\hat{z}$ then this applies in the same manner for \textit{x},
-%%The  vector resulting  from (yi  X yi+1  has got  to be  parallel or
-%%anti-parallel to zMST, there's no other possibility.
+magnitude of the Twist ($\Omega$)  in the base of consecutive bases or
+base-pairs.  The  dot product  of the $z$  unit vector for  the middle
+step triad  (MST) $\hat{z}_{MST}$ with  the vector resulting  from the
+cross product  of $\hat{y}_{i}^{'}$ and  $\hat{y}_{i+1}^{'}$ gives the
+sign  of  $\Omega$.  Since   the  transformed  \textit{x-y}  plane  is
+orthogonal  to $\hat{z}$  then this  applies  in the  same manner  for
+\textit{x},  %%The vector  resulting from  (yi X  yi+1 has  got  to be
+parallel or %%anti-parallel to zMST, there's no other possibility.
 
 \begin{gather}
 \Omega = cos^{-1}(\hat{y}_{i}^{'} \cdot \hat{y}_{i+1}^{'})\\
@@ -144,27 +152,34 @@ of the bending angle and the phase angle:
 \tau = \Gamma sin (\phi)
 \end{gather}
 
-Now to  get the remaining  three translational degrees of  freedom for
-step  parameters  ($Dx,  Dy,  Dz$)  one  just  needs  to  express  the
+To  get the remaining  three translational degrees of  freedom for
+step  parameters  ($Dx,  Dy,  Dz$)  one  needs  to  express  the
 displacement vector in the middle step triad frame:
 
 \begin{gather}
 [D_xD_yD_z]=T_{MST}(r_{i+1} - r_{i})
 \end{gather}
 
-The  procedure  is  completely  analogous  to  compute  the  base-pair
-parameters.   The  opening $\omega$,  buckle  $\kappa$, and  propeller
+The  procedure  to  compute  the base-pair  parameters  is  completely
+analogous.   The  opening  $\omega$,  buckle $\kappa$,  and  propeller
 $\sigma$  are the  analogs of  twist $\Omega$,  roll $\rho$,  and tilt
-$\tau$, and  the middle  step triad is  called middle base  triad MBT.
-The axis  which are made to  coincide are the  \textit{y}-axis and not
-the \textit{z}-axis as in the base-pair step case \cite{lu1997}.
+$\tau$, and the middle step triad is called the middle base triad MBT.
+The axes  which are made to  coincide are the  \textit{y}-axes and not
+the \textit{z}-axes as in the base-pair step case \cite{lu1997}.
 
 The parameters obtained by  this procedure are depicted graphically in
 Figure~\ref{fig:allparam}.
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.6]{Chapter1/allparam2.png}
-\caption{Illustration of base pair and base step parameters \cite{lu2003}}
+\caption{Illustration   of   base-pair   and  base   step   parameters
+  \cite{lu2003}.   As seen  in the  upper  right corner  the base  and
+  base-pair step parameters correspond  to the three translational and
+  three rotational degrees or freedom which describe the geometry of a
+  rigid-body. Thus the three  translational degrees of freedom, Shift,
+  Slide, and Rise, are expressed  as linear displacements along the x,
+  y and  z axis,  and the three  rotational degrees of  freedom, Tilt,
+  Roll, and Twist, as angular displacements around x, y, and z.}
 \label{fig:allparam}
 \end{figure}
 
@@ -197,16 +212,17 @@ states \cite{babcock1994}:
   continuous motion along a unique axis of rotation.}''
 \end{quote}
 
-\noindent For  the three dimensional  case of nucleic acid  base steps
-what   this  means   is   that,  instead   of   rotating  around   one
-reference-frame  centered  axis  and  then translating  along  another
+\noindent For  the case of  three-dimensional nucleic acid  base steps
+what  this means  is  that, instead  of  rotating around  a series  of
+reference-frame  centered  axes  and  then translating  along  another
 reference-frame centered  axis, one rotates about  and also translates
 along   only   one  common   axis,   which   is  not   reference-frame
-centered. This allows one to  define the orientation of a helical axis
-(or unique  rotational-translational axis) as  a unit vector  given by
-equation 2.15:
+centered. This allows us to  define the orientation of a local helical
+axis (or unique rotational-translational  axis) as a unit vector given
+by equation~\ref{eq:helaxis}:
 
 \begin{gather}
+\label{eq:helaxis}  
 h=\left[ \begin{array}{c}
 h_x\\
 h_y\\

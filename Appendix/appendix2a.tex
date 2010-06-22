@@ -204,6 +204,7 @@ and \{4, 3, 5\}, so we do it as illustrated in Figure~\ref{fig:tree}.
 \end{figure}
 
 \section{Clustering Validation Techniques}
+\label{sec:validation}
 The main objective of automated  clustering methods is that of finding
 a reduced number of groups which share common characteristics in large
 datasets. The main problem with the practical approaches used to solve
@@ -305,7 +306,7 @@ a_{i} = \frac{1}{n(C(i))} \sum_{j \in C(i)} d(i,j)\\
 b_{i} = \min_{C_{k} \in \mathcal{C}} \sum_{j \in C_{k}}\frac{d(i,j)}{n(C_{k})}
 \end{gather}  
 The dissimilarity $d(i,j)$ is usually just a distance, for example the
-Euclidean of  Manhattan distances, although formally it  does not need
+Euclidean or  Manhattan distances, although formally it  does not need
 to be  a metric, hence a  dissimilarity.  Notice that  due to equation
 \ref{eq:silval}  the  average silhoutte  width  (asw)  can only  have
 values    in   the    range   $[-1:1]$.     Kaufman    and   Rousseeuw
@@ -334,25 +335,63 @@ and $infty$, and a higher  value means a better cluster separation and
 compactness.
 
 \subsection{Stability Measures}
-Stability  measures  are a  special  type  of  internal measure  which
-evaluate  the   consistency  of  a  clustering   result  by  comparing
-clusterings after sequential removal of a column of data.
+Stability  measures are  a  special type  of  internal measures  which
+evaluate the consistency of a clustering result by comparing clustered
+groups after sequential removal  of a column of data \cite{datta2003}.
+In  the following  definitions  $N$  stands for  the  total number  of
+datapoints  (rows of data)  and $M$  is the  total number  of columns,
+dimensions  in the  data.  The  dimensions in  datapoints  usually are
+taken as  a collection of samples  or time points.  These measures are
+specially suited  for highly correlated  data as is commonly  the case
+for  high-throughput genomic  data,  like micro-arrays.  In the  cases
+shown here an average is taken over the combined space of the full
+data and reduced data sets.
 
 \subsubsection{Average Proportion of Non-overlap (APN)}
-
+APN is a measure of the  proportion of datapoints which are not placed
+in the  same cluster when a  comparison is made between  the full data
+clustering,  and that  done with  one column  of data  removed  and is
+defined as:
 \begin{gather}
 APN(\mathcal{C}) - \frac{1}{MN} \sum_{i=1}^{N}\sum_{l=1}^{M} \left( 1
 - \frac{n(C^{i,j} \cap C^{i,0})}{n(C^{i,0})} \right)
 \end{gather}  
+Where $C^{i,0}$ is the cluster which contains the datapoint $i$ in the
+full dataset, and $C^{i,l}$ is the cluster which contains point $i$ in
+the  reduced dimensionality  dataset, where  the column  $l$  has been
+removed.  The  value of APN is  ranges between $[0-1]$  and is optimal
+for values closer to zero.
 
 
 \subsubsection{Average Distance (AD)}
-
-
+The  AD  measure  computes   the  distance  between  datapoints  in  a
+particular cluster of the full  dimensional dataset and that where one
+column, or dimension has been taken off.
+\begin{gather}
+AD(\mathcal{C})=\frac{1}{MN}       \sum_{i=1}^{N}\sum_{l=1}^{M}      -
+\frac{1}{n(C^{i,0})n(C^{i,l})}  \left[  \sum_{i  \in  C^{i,0},  j  \in
+    C^{i,l}} d(i,j) \right]
+\end{gather}
+Where $d(i,j)$ is the distance between points $i$ in the full dimensional
+dataset and points $j$ in the reduced dimension dataset.
+The values of AD range  between $[0-\infty]$ and are optimal when they
+come closer to zero.
 
 \subsubsection{Average Distance Between Means (ADM)}
-
-
+The ADM  score measures  the distance between  the mean  of datapoints
+values within  a cluster  with the full  number of dimensions  and the
+mean of datapoints  of the same cluster when  reduced by one dimension
+or column.
+\begin{gather}
+ADM(\mathcal{C})= \frac{1}{MN} \sum_{i=1}^{N} \sum_{l=1}^{M}
+d(\bar{x}_{C^{i,l}}, \bar{x}_{C^{i,0}})
+\end{gather}  
+Where  $\bar{x}_{C^{i,0}}$ is  the  mean value  of  datapoints in  the
+cluster   which  contains  point   $i$  in   the  full   dataset,  and
+$\bar{x}_{C^{i,l}}$  is the mean  value of  datapoints in  the cluster
+containing point $i$ with column $l$ removed.  The values of ADM range
+between $[0-\infty]$  and are  also as AD  and APN optimal  the closer
+they are to zero.
 
 %\newline
 %Distance can be defined by Minkowski's metric:
