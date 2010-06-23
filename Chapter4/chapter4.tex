@@ -1,23 +1,41 @@
 \chapter{RNA Base Pair Steps}
 \label{basepairsteps} 
 \bibliographystyle{nar}
+In this chapter we describe the
+geometry  of base-pair  stacking within  the same  dataset as  the one
+mentioned previously, i.e., a  dataset of RNA helical regions composed
+of data derived from X-ray crystallographic information.
 
-- Base-pair steps generalities
 mechanical computational scheme - refer to appendix.
 unique base-pair steps
-historical background from DNA work
+historical background from DNA work, gorin etc
+data culling
+
+The   results  obtained   from  the  analysis   of  RNA
+configurational  information allow  us to  explore RNA  at  the global
+level, that is, as a polymer chain, and compute the persistence length
+of some RNA sequences.
+
+\section{}
+
+- Base-pair steps generalities
 
 
-- Collection of base-pair steps data in helical regions.
-  - Yurong's bps database
-  - Yurong's pyhton 3dnaparser
-  - scripts to change signs, assamble unique steps, and do stats.
-  - scripts to cull data
-  - scripts for deformation score
-  - reconstruction and RMSD calculation
-  - scripts for force-constant-matrices
+
+% Technical pipeline details
+%- Collection of base-pair steps data in helical regions.
+%  - Yurong's bps database
+%  - Yurong's python 3dnaparser
+%  - scripts to change signs, assamble unique steps, and do stats.
+%  - scripts to cull data
+%  - scripts for deformation score
+%  - reconstruction and RMSD calculation
+%  - scripts for force-constant-matrices
 
 
+91 unique steps for the seven major populated but only 21 when
+Gwobble-Uwobble is included.
+  
 
 
 \section{RNA Base-Pair-Steps Database and Webframework}
@@ -28,8 +46,113 @@ database is for  later automatization of the process  of the reduction
 of data, that is.
 
 \section{Analysis of Base-Pair-Steps}
-Results shown in Albany poster and steps part of methods paper.
 
+
+The  sequences  of  dimers  found within  the  intact,  double-helical
+stretches of  high-resolution RNA structures reveal  the propensity of
+the  non-canonical  pairs to  stack  against  canonical G$\cdot$C  and
+A$\cdot$U  pairs rather  than  other non-canonical  pairs.  Of the  91
+unique base-pair steps  that can be assembled from  the seven dominant
+base-pairing  patterns, only  48 occur  in the  present  dataset, with
+structural examples  for only  15 of the  45 possible  combinations of
+consecutive, or tandem, non-canonical pairs (Table 5). The number of
+non-canonical pairs  chemically linked  to Watson-Crick pairs  is over
+six times  the number of dimers constituted  from tandem non-canonical
+pairs. Some of the non-canonical  base pairs, however, occur only in
+the   latter  context,   e.g.,  the   5'-UpA-3'$\cdot$5'-GpA-3'
+(UA$\cdot$GA)  and 5'-ApG-3'$\cdot$5'-ApU-3'  (AG$\cdot$AU) dimers
+made up of  an A$\cdot$U Hoogsteen pair linked  to a sheared G$\cdot$A
+or A$\cdot$G pair. Most  of the dimers containing tandem non-canonical
+pairs,  however, are  constructs  of wobble  G$\cdot$U and/or  sheared
+G$\cdot$A  pairs.  As  expected  from the  large-number  of  canonical
+G$\cdot$C  pairs in the  dataset, well  over a  third of  the observed
+dimers are  G$\cdot$C constructs, and, surprisingly,  more than half
+of these are GG$\cdot$CC steps.
+
+The areas  of dimeric overlap, also  included in Table  5, confirm the
+well-known   stacking    propensities   of   sequential   Watson-Crick
+pairs. That is, the purine-pyrimidine steps show the greatest stacking
+overlap  and  the pyrimidine-purine  steps  the  least.  The trend  is
+similar but  the stacking is  more pronounced when a  G$\cdot$U wobble
+pair  replaces  one or  both  Watson-Crick  pairs,  with the  greatest
+overlap  occurring  in  self-complementary GU$\cdot$GU  steps.  Tandem
+sheared G$\cdot$A pairs and dimers constituted from U$\cdot$U wobble
+and sheared G$\cdot$A pairs also show appreciable overlap.  The degree
+of  base  overlap, however,  does  not  seem  to govern  the  observed
+populations, e.g., wobble U$\cdot$U pairs form preferentially next to
+canonical  G$\cdot$C  pairs in  relatively  unstacked GU$\cdot$UC  (or
+UC$\cdot$GU) dimers.
+
+The  sequence-dependent variation of  base-pair overlap  accompanies
+other  subtle changes  in dimeric  structure. For  example,  the twist
+angle between  tandem Watson-Crick  G$\cdot$C pairs increases  and the
+bending,  via Roll,  becomes  more negative  with  greater base-pair
+overlap,  i.e., TwistCG  < TwistGG  < TwistGC  and RollCG  >  RollGG >
+RollGC,  where CG,  GG, and  GC denote  the sequence  of bases  on the
+leading strand of each dimer. Similar differences occur in DNA, albeit
+over  a  much  wider  range  of  conformational  states.  The
+sequence-dependent patterns in RNA dimeric structure, illustrated in
+Fig. 4 by atomic-level  representations of tandem G$\cdot$C pairs with
+the mean step parameters and phosphorus positions found in the current
+dataset, are less striking  than the corresponding differences among
+the dimeric arrangements of  tandem G$\cdot$U pairs. The non-canonical
+pair introduces  noticeable asymmetry in  the sugar-phosphate backbone
+at  the  GG$\cdot$UU  step  (Fig.  4).  The  phosphorus  atom  on  the
+G-containing strand is displaced by 1.5 \AA and that on the U-containing
+strand  by 1.0  \AA relative  to the  corresponding positions  in tandem
+G$\cdot$C pairs. Although the phosphorus displacement is smaller and
+more  symmetric,  the  twist   angle  differs  appreciably  in  the
+G$\cdot$U-containing purine-pyrimidine and pyrimidine-purine dimers
+compared to their Watson-Crick counterparts, with the GU$\cdot$GU step
+overtwisted  by 15$\circ$  and  the UG$\cdot$UG  step undertwisted  by
+-12$\circ$ compared to the GC$\cdot$GC and CG$\cdot$CG steps, respectively. Some
+of these  differences reflect the computation  of base-pair parameters
+with respect to  a common standard, rather than  a series of reference
+frames, one  specific for each  non-canonical pair, that  minimize the
+apparent ``discrepancies''.
+
+
+
+Steps part of methods paper.
+
+
+
+
+\begin{sidewaystable}[htbp]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+C$\cdot$G$_{\text{WC}}$ & G$\cdot$C$_{\text{WC}}$ & U$\cdot$A$_{\text{WC}}$ &
+A$\cdot$U$_{\text{WC}}$ & U$\cdot$G$_{\text{w}}$ &
+G$\cdot$U$_{\text{w}}$ & A$\cdot$G$_{\text{s}}$ &
+G$\cdot$A$_{\text{s}}$ & U$\cdot$A$_{\text{H}}$ &
+A$\cdot$U$_{\text{H}}$ & U$\cdot$U$_{\text{w}}$ &
+A$\cdot$G$_{\text{WC}}$ & G$\cdot$A$_{\text{WC}}$ & bp$_{i}$/bp$_{i+1}$\\ 
+\hline  
+604 & 1335 & 747 & 574 & 77 & 192 & 66 & -- & -- & -- & 18 & 4 & 5 & G$\cdot$C$_{\text{WC}}$\\
+ & 608 & 511 & 572 & 161 & 252 & 33 & -- & -- & -- & 69 & 20 & 5 & C$\cdot$G$_{\text{WC}}$\\
+ &  & 97 & 249 & 20 & 45 & 7 & -- & -- & -- & 2 & -- & 3 & A$\cdot$U$_{\text{WC}}$\\
+ &  &  & 126 & 48 & 79 & 6 & -- & -- & -- & 20 & 1 & 14 & U$\cdot$A$_{\text{WC}}$\\
+ &  &  &  & 31 & 42 & 32 & 1 & -- & -- & 5 & -- & -- & G$\cdot$U$_{\text{w}}$\\
+ &  &  &  &  & 11 & -- & -- & -- & -- & -- & 4 & 7 & U$\cdot$G$_{\text{w}}$\\
+ &  &  &  &  &  & -- & 13 & -- & -- & 6 & -- & -- & G$\cdot$A$_{\text{s}}$\\ 
+ &  &  &  &  &  &  & 20 & 7 & 2 & -- & -- & -- & A$\cdot$G$_{\text{s}}$\\
+ &  &  &  &  &  &  &  & -- & -- & -- & -- & -- & A$\cdot$U$_{\text{H}}$\\
+ &  &  &  &  &  &  &  &  & -- & -- & -- & -- & U$\cdot$A$_{\text{H}}$\\
+ &  &  &  &  &  &  &  &  &  & 3 & -- & -- & U$\cdot$U$_{\text{w}}$\\
+ &  &  &  &  &  &  &  &  &  &  & -- & 1 & G$\cdot$A$_{\text{WC}}$\\
+ &  &  &  &  &  &  &  &  &  &  &  & -- & A$\cdot$G$_{\text{WC}}$\\
+\hline
+\end{tabular}
+\caption{Unique base-pair steps parameters counts and overlap values
+  in RNA helical regions.}
+\label{tab:91steps}
+\end{center}
+\end{sidewaystable}
+
+
+
+Results from Albany
 
 -Potentials curve plots for steps.
 
