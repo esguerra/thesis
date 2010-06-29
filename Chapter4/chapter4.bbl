@@ -1,11 +1,27 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{olson1998}
 Olson, W.~K., Gorin, A.~A., Lu, X.-J., Hock, L.~M., and Zhurkin, V.~B. (1998)
-D{NA} sequence-dependent deformability deduced from protein-{DNA} crystal
-  complexes.
+{DNA Sequence-Dependent Deformability Deduced from Protein-DNA Crystal
+  Complexes}.
 {\em Proceedings of the {N}ational {A}cademy of {S}ciences,} {\bf 95},
   11163--11168.
+
+\bibitem{go1976}
+Go, M. and Go, N. (1976)
+{Fluctuations of an Alpha-Helix}.
+{\em Biopolymers,} {\bf 15}, 1119--1127.
+
+\bibitem{wilson1955}
+Wilson, E.~B., Decius, J.~C., and Cross, P.~C. (1955)
+Molecular Vibrations: The Theory of Infrared and Raman Vibrational Spectra,
+McGraw-Hill, .
+
+\bibitem{yang2003}
+Yang, H. and Jossinet, F. (2003)
+Tools for the {A}utomatic {I}dentification and {C}lassification of {RNA} base
+  pairs.
+{\em Nucleic {A}cids {R}esearch,} {\bf 31}, 3450--3460.
 
 \bibitem{hagerman1997}
 Hagerman, P.~J. (1997)
