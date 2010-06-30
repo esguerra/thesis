@@ -128,7 +128,7 @@ A$\cdot$G$_{\text{WC}}$ & G$\cdot$A$_{\text{WC}}$ & bp$_{i}$/bp$_{i+1}$\\
 \section{RNA Base-Pair-Steps Database and Webframework}
 With the step-parameters from the intact helical regions we can
 construct an harmonic energy function model, that is, we can think of
-base-pairs  as  rigid  blocks  which  are  connected  by a spring  and
+base-pairs  as  rigid  blocks  connected  by a spring  and
 described by an harmonic potential function $\Psi(x)$:
 \begin{gather}
 \Psi (x) = \frac{1}{2}\sum_{i,j} F_{i,j} \Delta x_{i} \Delta x_{j}\\
@@ -142,7 +142,7 @@ the correlation of  displacements in the space of  variables, that is,
 they show that these correlations are proportional to $kT$ with a
 proportionality coefficient equal to the $i,j$ elements of the inverse
 matrix of  second derivatives  with respect to  energy, i.e.,   the $F$
-matrix, an analog to the ``classical'' treatment by Wilson et
+matrix, an analog to the ``classical'' treatment for atoms by Wilson et
 al. \cite{wilson1955}.
 \begin{gather}
 <x_i x_j> = kT (F_{n}^{-1})_{i,j}
@@ -171,7 +171,7 @@ developers and  later automatization of the process of data reduction.
 The process of data reduction can be summarized as follows:
 \begin{itemize}
 \item{Collect a non-redundant dataset of RNA X-ray crystallographic
-  structures restricted to resolutions better than 3.5\AA with up to
+  structures restricted to resolutions better than 3.5\AA~with up to
   date data from the PDB.}
 \item{Find base-pair and base-pair step parameters for all structures
   using 3DNA.}
@@ -190,11 +190,11 @@ step deformation measures.}
 The database and its web-framework can be found at
 \url{http://napoli.rutgers.edu/}. You will find the table for the 21
 unique dimers formed by canonical Watson-Crick G$\cdot$C, A$\cdot$U,
-and wobble G$\cdot$U, as shown in Figure ~\ref{}.
+and wobble G$\cdot$U, as shown in Figure ~\ref{fig:average}.
 
-\begin{figure}
+\begin{figure}[htbp]
 \centering
-\includegraphics[angle=0, scale=0.6]{Chapter4/average.png}
+\includegraphics[angle=0, scale=0.4]{Chapter4/average.png}
 \caption{Snapshot of the unique base-pair step parameters table for
   intact helical region RNA's, showing the fields which it can be
   sorted by.}
@@ -207,15 +207,28 @@ Twist, Volume, and RMSD. Also the scatterplot corresponding to each
 step is displayed when clicking in the counts column, along with a
 potential energy contour in the Roll-Twist plane at 4.5 $kT$. A
 snapshot of the energy contour for the GG$\cdot$CC step from the
-web-framework is shown in Figure ~\ref{}.
-
-
+web-framework is shown in Figure ~\ref{fig:contour}.
+\begin{figure}[htbp]
+\centering
+\includegraphics[angle=0, scale=0.4]{Chapter4/contour.png}
+\caption{Snapshot from the web-framework of a scatterplot in the
+  Roll-Twist plane with an energy contour. The full data before
+  culling is show in red dots, and the culled data is shown as blue dots.} 
+\label{fig:contour}
+\end{figure}
 
 The other values included in the web-framework are those of the
 force-constants corresponding to the unique steps. A snapshot of the
-force-constant matrix for the GG$\cdot$CC is shown in Figure ~\ref{}
+force-constant matrix for the GG$\cdot$CC is shown in Figure ~\ref{fig:forceconst}
 
-
+\begin{figure}[htbp]
+\centering
+\includegraphics[angle=0, scale=0.6]{Chapter4/forceconst.png}
+\caption{Figure showing a snapshot of the RNA Base-Pair Steps
+  web-framework where the force constant matrix for the GG$\cdot$CC dimeric
+  step is shown.}
+\label{fig:forceconst}
+\end{figure}  
 
 \section{Persistence Length of RNA}
 A quantity commonly used to  quantify the stiffness of polymers is the
@@ -246,6 +259,11 @@ A detailed description of the  ``realistic'' model along with the scheme
 of the C++  code developed by Czapla and Zheng to  implement it, and a
 brief account of various  definitions of persistence length and models
 from which $a$ can be derived are included in Appendix~\ref{appendix4a}
+
+
+
+
+
 
 %\section{AMBER: Persistence Length of Base-Pair Step Patterns}
 %I guess it needs some input here in order to work on latex compilation.
