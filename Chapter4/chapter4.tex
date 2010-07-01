@@ -68,7 +68,7 @@ GG$\cdot$CC steps.
 
 Overlap values between base-pairs  are given in parentheses along with
 the  counts  of dimeric  steps  in  intact  helical regions  in  Table
-\ref{tab:91steps}. Looking  at this values  the common trend  seen for
+\ref{tab:91steps}. Looking  at these values the common  trend seen for
 overlaps of DNA base-pairs  is mantained, i.e., purine-pyrimidine (RY)
 steps have the greatest overlap values, and pyrimidine-purine (YR) the
 smallest.   When   the  G$\cdot$U  wobble  base-pair   is  taken  into
@@ -79,8 +79,8 @@ are those of the dimers  composed of sheared G$\cdot$A pairs and those
 composed  of sheared G$\cdot$A  and U$\cdot$U  wobble.  The  degree of
 overlap doesn't necesarily correlate with greater dimer stabilities as
 judged from  the propensities of observed dimers,  for example, wobble
-U$\cdot$U pairs prefer to stack along canonical G$\cdot$C pairs with a
-relatively small overlap.
+U$\cdot$U pairs prefer to stack with canonical G$\cdot$C pairs showing
+a relatively small overlap.
 
 %\begin{sidewaystable}
 \begin{table}  
@@ -260,7 +260,36 @@ of the C++  code developed by Czapla and Zheng to  implement it, and a
 brief account of various  definitions of persistence length and models
 from which $a$ can be derived are included in Appendix~\ref{appendix4a}
 
+Using  the mean  values and  force  constants of  RNA base-pair  steps
+available at our  web-framework we can use the  ``realistic'' model as
+implemented by  Czapla to compute the persistence  length at different
+chain lengths for  the ten unique base-pair steps  formed by canonical
+Watson-Crick G$\cdot$C and  A$\cdot$U. We used two rest  states in our
+calculations,  one which  corresponds  to a  naturally straight  chain
+using  the  standard  dimeric  parameters  for a  typical  A-RNA  type
+conformation, that is,  $x_{i}^{0} = {0, 0, 3.30, 0,  0, 31.6}$ with a
+helical repeat of 11 base-pairs, and another where we used the average
+base-step parameters for each of  the dimeric steps as can be obtained
+from our web-framework. It is important to note that one cannot have a
+chain composed  of pure GC$\cdot$GC  steps, since necesarily  the step
+which follow it  has to be a CG$\cdot$CG step,  therefore eight of the
+ten chains  formed by  the unique base-pair  steps will be  mixed, and
+only two will be made purely  from a step alone, that is, those chains
+formed from the GG$\cdot$CC and AA$\cdot$UU dimers.
 
+The results are seen in Figure \ref{fig:aunique} where we see that
+
+We also computed the persistence length at increasing chain lengths
+for a mixed sequence RNA, where we see that a curved.
+
+
+For comparison to the DNA case we computed the persistence length of a
+1000 bp sequence with larger sampling for chains made up from the
+unique dimers and using as rest state the values for a naturally
+straight chain. We also constructed a random sequence with a
+1:1 ratio of A$\cdot$U and G$\cdot$C which is compared to the
+values obtained by Abels et al, and those of Hagerman in Table
+\ref{tab:compare}. 
 
 
 
