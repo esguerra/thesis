@@ -42,8 +42,8 @@ available data as will be shown in the next section.
 
 The results obtained from  the analysis of RNA knowledge-based dimeric
 information allow us to explore RNA at the global level, that is, as a
-polymer  chain,  and  compute  the  persistence  length  of  some  RNA
-sequences as shown in the last section of this chapter.
+polymer  chain. Therefore we can compute  the  persistence  length  of
+some  RNA sequences as shown in the last section of this chapter.
 
 \section{Base-Pair-Steps in Intact Helical Regions}
 From  the  dataset  of  base-pairs  described in  Chapter  2  we  also
@@ -156,19 +156,19 @@ U(x_{i}) = \sum_{n=1}^{N} \Psi_{n}
 \end{gather}
 
 In order to obtain  quasi-Gaussian distributions of the base-pair step
-parameters and also to  exclude protein-induced extreme conformational
+parameters and also  to exclude protein-induced extreme conformational
 deformation  in steps,  we culled  our data  by restricting  it  to be
 within a radius  of 3 standard deviations from the  mean value of step
-parameters, this data was used then to obtaing the force constants
-by finding the inverse of the correlation matrix.
+parameters, this data  was used then to obtain  the force constants by
+finding the inverse of the correlation matrix.
 
-A minimal MySQL database was created to store the mean values of
-base-step   parameters,   their   standard   deviations,   their
-corresponding  force constant  matrices, and step deformation measures
-such as the conformation volume, and RMSD. The  purpose of  creating the
-database is for ease of sharing information with force-field
-developers and  later automatization of the process of data reduction.
-The process of data reduction can be summarized as follows:
+A  minimal MySQL  database was  created to  store the  mean  values of
+base-step parameters,  their standard deviations,  their corresponding
+force  constant matrices, and  step deformation  measures such  as the
+conformation volume, and RMSD. The purpose of creating the database is
+for ease of sharing  information with force-field developers and later
+automatization of the process of  data reduction.  The process of data
+reduction can be summarized as follows:
 \begin{itemize}
 \item{Collect a non-redundant dataset of RNA X-ray crystallographic
   structures restricted to resolutions better than 3.5\AA~with up to
@@ -187,26 +187,31 @@ The process of data reduction can be summarized as follows:
 step deformation measures.}  
 \end{itemize}  
 
-The database and its web-framework can be found at
-\url{http://napoli.rutgers.edu/}. You will find the table for the 21
-unique dimers formed by canonical Watson-Crick G$\cdot$C, A$\cdot$U,
+The    database   and    its   web-framework    can   be    found   at
+\url{http://napoli.rutgers.edu/}. You  will find the table  for the 21
+unique dimers  formed by canonical  Watson-Crick G$\cdot$C, A$\cdot$U,
 and wobble G$\cdot$U, as shown in Figure ~\ref{fig:average}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[angle=0, scale=0.4]{Chapter4/average.png}
 \caption{Snapshot of the unique base-pair step parameters table for
-  intact helical region RNA's, showing the fields which it can be
-  sorted by.}
+  intact helical region RNA's, showing the fields that it can be
+  sorted by. In this case it has been sorted by dimer step
+  counts. There are three stack types purine-purine (RR),
+  pyrimidine-purine (YR), and purine-pyrimidine (RY). The steps are
+  denoted in a 5' to 3' sense, e.g., GG\_CC stands for a G$\cdot$C
+  base-pair stacked on top of another G$\cdot$C pair with intact
+  covalent linkage between G's, that is, GpG, and C's, i.e., CpG.}
 \label{fig:average}
 \end{figure}  
 
-The values in the table can be sorted by any of the included fields,
-that is, Stack Type, Step Count, Shift, Slide, Rise, Tilt, Roll,
-Twist, Volume, and RMSD. Also the scatterplot corresponding to each
-step is displayed when clicking in the counts column, along with a
-potential energy contour in the Roll-Twist plane at 4.5 $kT$. A
-snapshot of the energy contour for the GG$\cdot$CC step from the
+The values in  the table can be sorted by any  of the included fields,
+that  is, Stack  Type, Step  Count,  Shift, Slide,  Rise, Tilt,  Roll,
+Twist, Volume,  and RMSD. Also  the scatterplot corresponding  to each
+step is  displayed when  clicking in the  counts column, along  with a
+potential  energy contour  in  the  Roll-Twist plane  at  4.5 $kT$.  A
+snapshot  of the  energy contour  for  the GG$\cdot$CC  step from  the
 web-framework is shown in Figure ~\ref{fig:contour}.
 \begin{figure}[htbp]
 \centering
@@ -217,9 +222,10 @@ web-framework is shown in Figure ~\ref{fig:contour}.
 \label{fig:contour}
 \end{figure}
 
-The other values included in the web-framework are those of the
-force-constants corresponding to the unique steps. A snapshot of the
-force-constant matrix for the GG$\cdot$CC is shown in Figure ~\ref{fig:forceconst}
+The  other values  included  in  the web-framework  are  those of  the
+force-constants corresponding  to the unique steps. A  snapshot of the
+force-constant  matrix   for  the  GG$\cdot$CC  is   shown  in  Figure
+~\ref{fig:forceconst}
 
 \begin{figure}[htbp]
 \centering
@@ -269,10 +275,10 @@ calculations,  one which  corresponds  to a  naturally straight  chain
 using  the  standard  dimeric  parameters  for a  typical  A-RNA  type
 conformation, that is,  $x_{i}^{0} = {0, 0, 3.30, 0,  0, 31.6}$ with a
 helical repeat of 11 base-pairs, and another where we used the average
-base-step parameters for each of  the dimeric steps as can be obtained
-from our web-framework. It is important to note that one cannot have a
+base-step parameters for each dimeric  step which can be obtained from
+our  web-framework. It is  important to  note that  one cannot  have a
 chain composed  of pure GC$\cdot$GC  steps, since necesarily  the step
-which follow it  has to be a CG$\cdot$CG step,  therefore eight of the
+which follows it has to be  a CG$\cdot$CG step, therefore eight of the
 ten chains  formed by  the unique base-pair  steps will be  mixed, and
 only two will be made purely  from a step alone, that is, those chains
 formed from the GG$\cdot$CC and AA$\cdot$UU dimers.

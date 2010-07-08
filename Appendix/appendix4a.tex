@@ -130,11 +130,13 @@ Microtubule           & 5200000  & Lakkaraju \cite{lakkaraju2009} \\
 \hline
 \end{tabular}
 \begin{tablenotes}
-\item [a] Computed using  characteristic ratios reported in Table 1
-  of Flory's book \cite{flory1969} with C-C bond length $\nu = 1.54$ \AA.
+\item [a] Computed using  characteristic ratios $C_{\infty}$ reported in Table 1
+  of Flory's book \cite{flory1969} using a C-C bond length $\nu = 1.54$
+  \AA. The derivation and formula for $C_{\infty}$ can be found in section \ref{sec:fjc}.
 \item [b] Computed using  characteristic ratios reported in Table 3
-  of Flory's book \cite{flory1969} with C$^{\alpha}_{i}$ to C$^{\alpha}_{i+1}$ virtual
-  bond length $\nu = 3.80$ \AA.
+  of Flory's book \cite{flory1969} using a virtual bond length $\nu = 3.80$ \AA~
+between sequential c-alpha atoms C${\alpha}_{i}$-C${\alpha}_{i+1}$.
+
 \end{tablenotes}
 \end{threeparttable}
 \caption{Persistence lengths for common polymers, and biopolymers with
@@ -178,12 +180,15 @@ definition the ``static'' components come from static bends like those
 produced by phased A-tracts in DNA.
 
 \section{Freely Jointed Chain (FJC)}
-The end-to-end  vector $\mathbf{r}$ is  the vector which  connects the
-ends of a polymer  chain and can be defined as the  sum of the vectors
-connecting the monomeric units  in the chain. These connecting vectors
-can be  either ``real-bond''  vectors or ``virtual-bond''  vectors and
-are denoted  by $\mathbf{l}$.  The magnitude of  the end-to-end vector
-is usually the quantity of interest.
+\label{sec:fjc}
+The end-to-end  vector $\mathbf{r}$\footnote{Note  that we will
+  be using bold  face letters to denote vectors.}  is the vector which
+connects the ends of a polymer chain and isdefined as the sum of
+the  vectors  connecting  the  monomeric  units in  a  chain.  These
+connecting   vectors   can   be   either  ``real-bond''   vectors   or
+``virtual-bond''  vectors  and   are  denoted  by  $\mathbf{l}$.   The
+magnitude  of  the  end-to-end  vector  is  usually  the  quantity  of
+interest as given by equation \ref{eq:end2end}.
 
 \begin{gather}
 \label{eq:e2e}
@@ -193,45 +198,111 @@ r = \sqrt{\mathbf{r} \cdot \mathbf{r}}
   = \sqrt{\sum_{i,j}\mathbf{l}_{i} \cdot \mathbf{l}_{j}}
 \end{gather}
 
-Equation \ref{eq:end2end}, can also be written as:
+To distinguish between the scalar product of bond vectors with
+themselves and with their neighbors equation \ref{eq:end2end} is
+rewritten as:
 
 \begin{gather}
-r^2 = \sum_{i}l_{i}^{2} + 2 \sum_{i\neq j} \mathbf{l}_{i} \cdot \mathbf{l}_{j}
+r^2 = \sum_{i=1}^{n}l_{i}^{2} + 2 \sum_{i\neq j}^{n}
+\mathbf{l}_{i} \cdot \mathbf{l}_{j}
 \end{gather}  
 
-To  describe a  polymer it  is necessary  to think  about  the various
-conformations    that   the    chain    can   adopt    due   to    its
-flexibility. Therefore,  it is  important to think  of polymer-related
+The previous description takes into account only a single case for a chain
+conformation, but to describe a  polymer it's necessary to think about
+the   various  conformations   the  chain   can  adopt   due   to  its
+flexibility. Therefore,  it's  important to think  of polymer-related
 quantities   in   terms   of   the   average   properties   over   all
-conformations. For the end-to-end vector the average of an ensemble is
-denoted as $<\mathbf{r}>$, and the  average of its squared value, also
-called the second moment of the end-to-end distribution, is denoted by
-$<r^2>$:
+conformations (i.e.,  an ensemble). The  average of the ensemble  of 
+end-to-end vectors  is denoted by $\left< \mathbf{r}  \right>$, and the
+average of its  squared value, also known as the  second moment of the
+end-to-end  distribution is denoted  by $\left<  r^2 \right>$  and is
+given by the expression:
 
 \begin{gather}
 \label{eq:secmom}  
-<r^2>=\sum_{i}<l_{i}^2> + 2\sum_{i<j}<l_{i} \cdot l_{j}>
+\left<r^2\right>=\sum_{i}^{n}\left<l_{i}^2\right> +
+2\sum_{i<j}^{n}\left<\mathbf{l}_{i} \cdot \mathbf{l}_{j}\right>
 \end{gather}  
-When there is no correlation between succesive bonds we can write:
+
+When there is no correlation between succesive bonds the average
+scalar product between them vanishes.
+
 \begin{gather}
 \label{eq:nocorr}
-<l_{i} \cdot l_{j}> = 0
+\left<\mathbf{l}_{i} \cdot \mathbf{l}_{j}\right> = 0
 \end{gather}
 
-The geometrical interpretation  of this is that every  bond is allowed
-to  rotate  freely around  its  immediate  neighbors.   What is  meant
-precisely by ``freely'',  is that bond angles can  randomly assume any
-value  between 0 and  360 degrees,  and that  there are  no bond-angle
-constraints  whatsoever.  When  the number  of  conformations approach
-infinity the average cosine of the bond angles will be zero.  Equation
-\ref{eq:secmom} then keeps only the bond auto-correlation term:
+A geometrical interpretation of this  is that every bond is allowed to
+rotate freely around its immediate neighbors.  What is meant precisely
+by  ``freely'', is  that bond  angles  can randomly  assume any  value
+between  0  and  360  degrees,   and  that  there  are  no  bond-angle
+constraints whatsoever.   When the number  of conformations approaches
+infinity the average cosine of  bond angles will be zero and therefore
+it's  scalar product.   Equation \ref{eq:secmom} keeps  only the
+bond auto-correlation term:
 
 \begin{gather}
-<r^2> = \sum_{i=1}^{n}<l_{i}^2> = nl^2
+\label{eq:fjc}  
+\left<r^2 \right> = \sum_{i=1}^{n}\left<l_{i}^2\right> = nl^2
 \end{gather}  
 
 This equation is used to describe a so-called freely-jointed chain
 (FJC), which also corresponds to a 3D random walk.
+
+A quantity to quickly check if a chain behaves as a FJC is the
+characteristic ratio:
+
+\begin{gather}
+C_{n}=\frac{\left<r^{2}\right>}{nl^{2}}
+\end{gather}
+
+Which will be unity for a FJC. In most cases as $n \to \infty$ the
+characteristic ratio is greater than one.
+
+Using equation \ref{eq:fjc} and expanding the second right
+hand term of equation \ref{eq:secmom} we have:
+
+\begin{gather}
+\label{eq:char}  
+<r^{2}> = nl^{2} + 2 \sum_{j=2}^{n}
+\left<  \mathbf{l}_{1} \cdot \mathbf{l}_{j}\right> +
+2 \sum_{j=i+1}^{n}\sum_{i=2}^{n}
+\left<  \mathbf{l}_{i} \cdot \mathbf{l}_{j}\right>
+\end{gather}
+
+And from the definition of persistence lenght as the average sum of
+projections of n bonds on the direction of the first bond when $n \to
+\infty$ we have:
+
+\begin{gather}
+a = \sum_{i=1}^{n} \left<\mathbf{l}_{i}\right> \cdot (\mathbf{l}_{1}/l_{1})
+\end{gather}
+  
+Then, when $n \to \infty$ the second term in the right hand side of
+equation \ref{eq:chara} can be rewritten as:
+
+\begin{gather}
+\sum_{j=1}^{n} \left<\mathbf{l}_{j}\right> \cdot l(\mathbf{l}_{1}/l_{1}) -(\mathbf{l}_{1}
+\cdot \mathbf{l}_{1}) = al - l^{2}
+\end{gather}  
+
+In a similar fashion one can see that for the third term in
+\ref{eq:chara} for $n \to \infty$ the term becomes $al-l^{2}$.
+Then the expression for the second moment of the end-to-end
+distribution when $n \to \infty$ will be given by:
+
+\begin{gather}
+\left<r^{2}\right> = nl^{2} + 2n(al-l^{2})\\
+\left<r^{2}\right> = 2nla - nl^{2}
+\end{gather}  
+
+And the characteristic ratio for a chain where $n \to \infty$ is then:
+
+\begin{eqnarray}
+C_{\infty} & =  & \frac{\left<r^{2}\right>}{ nl^{2}}\\
+          & =  & \frac{2nla - nl^{2}}{nl^{2}}\\
+          & =  & \frac{2a}{l-1}
+\end{eqnarray}  
 
 \section{Porod-Kratky or Worm Like Chain (WLC)}
 If a polymer is modelled as a linear (not branched) continous and
@@ -255,15 +326,15 @@ The average sum of the squared end-to-end distance is then:
 
 \begin{eqnarray}
 \label{eq:wlc}
-<r^2> & = & <\textbf{r} \cdot \textbf{r}> \nonumber \\
-               & = & <\int_{0}^{L}\hat{t}(s)ds \cdot \int_{0}^{L}\hat{t}(s')ds' >\nonumber \\
-               & = & \int_{0}^{L} ds \int_{0}^{L}<\hat{t}(s) \cdot \hat{t}(s')>ds' \nonumber \\
-               & = & \int_{0}^{L} ds \int_{0}^{L} <\cos{\theta}_{ss'}>~ ds' \nonumber \\
+\left<r^2\right> & = & \left<\textbf{r} \cdot \textbf{r}\right> \nonumber \\
+               & = & \left<\int_{0}^{L}\hat{t}(s)ds \cdot \int_{0}^{L}\hat{t}(s')ds' \right>\nonumber \\
+               & = & \int_{0}^{L} ds \int_{0}^{L} \left<\hat{t}(s) \cdot \hat{t}(s')\right>ds' \nonumber \\
+               & = & \int_{0}^{L} ds \int_{0}^{L} \left<\cos{\theta}_{ss'}\right>~ ds' \nonumber \\
                & = & \int_{0}^{L} ds \int_{0}^{L} \exp^{-\frac{|s-s'|}{a}} ds' \nonumber \\
                & = & 2aL \{ 1 - \frac{a}{L}(1-\exp^{-\frac{L}{a}})\}
 \end{eqnarray}
 
-where  for   a  chain  of  infinite   length  $<\cos{\theta_{ss'}}>  =
+where  for   a  chain  of  infinite   length  $\left<\cos{\theta_{ss'}}\right>  =
 \exp^{-\frac{|s-s'|}{a}}$, with $a$ being the persistence length.  The
 last   equation  in   \ref{eq:wlc}   is  used   to   describe  a   so-called
 worm-like-chain (WLC).
