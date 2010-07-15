@@ -352,7 +352,7 @@ case the characteristic ratio for a WLC becomes:
 C_{\infty}=\frac{2aL}{nl^{2}}  
 \end{gather}  
 
-\section{Sequence Dependent}
+\section{Sequence Dependent Model}
 Equation \ref{eq:e2e} can be expressed with respect to the reference
 frame of the first bond, or bond-vector via transformation matrices as:
 
@@ -400,10 +400,11 @@ A of Luke Czapla's doctoral thesis \cite{czapla2009}.
 
 Besides from being able to express the end-to-end distance using
 generator matrices we can also find the persistence length as the
-component in row three and column four of the generator matrix when
-it's sampling has been done for a large number of conformations such
-that the terms in the rotation matrix $\mathbf{T}_{n}$ approach very
-small numbers.
+component in row three and column four of the product of average
+generator matrices, that is, the normal axis component of the
+translation vector, when sampling has been done for a large number of
+conformations such that the terms in the rotation matrix
+$\mathbf{T}_{n}$ approach very small numbers.
 
 \begin{gather}
 \mathbf{P}_{N} = \left<\mathbf{A}_{1}\right> \left<\mathbf{A}_{2}\right> ... \left<
@@ -413,7 +414,21 @@ a = \lim_{N \to \infty} \left[\begin{array}{cccc}0 & 0 & 1 & 0\end{array}
 \left[\begin{array}{c} 0\\ 0\\ 0\\ 1\end{array}\right]
 \end{gather}  
 
-\section{Code Implementation}
+A sketch of the pseudocode used to implement the sequence dependent
+method in C++ by Luke Czapla is shown in Figure~\ref{fig:sketch}.
+
+\begin{figure}
+\centering
+\includegraphics[angle=0, scale=0.5]{Appendix/generalschema.png}
+\caption{A condensed diagram of the main functions used to implement a
+  C++  program using the  sequence dependent  model based  on Gaussian
+  sampling of the known space  of base-step parameters. The program is
+  used for calculating persistence lengths only, but it can be easily
+  adapted  to compute  other  global chain  properties  such as  the
+  average end-to-end  distance and  the bend and  twist angle  for the
+  sampled ensemble (e.g. see Maroun and Olson \cite{maroun1988b}).}
+\label{fig:sketch}
+\end{figure}  
 
 
 

@@ -247,7 +247,7 @@ magnetic  tweezers,  and small  angle  X-Ray  scattering (SAXS).   For
 reviews  of  such  techniques  applied  to the  determination  of  RNA
 persistence    length,    we   refer    the    reader   to    Hagerman
 \cite{hagerman1997}, Abels  et al.  \cite{abels2005},  and Caliskan et
-al.   \cite{caliskan2005}.  We  will compare  our  simulation results,
+al.   \cite{caliskan2005}.  We  compare  our  simulation results,
 based on  the "realistic" model  developed by Olson  and collaborators
 \cite{olson1995} to describe DNA, with their findings. The "realistic"
 model is dependent  on high-resolution crystallographic data.  Initial
@@ -259,35 +259,50 @@ deformability  data  for  DNA  has  been constantly  refined  as  more
 high-resolution DNA and DNA-protein  structures have been added to the
 Nucleic Acid Database (NDB) \cite{balasubramanian2009}.  Although such
 data has been available for DNA  since 1998, such was not the case for
-RNA, until now \cite{olson2009}.
+RNA, until recently \cite{olson2009}.
 
-A detailed description of the  ``realistic'' model along with the scheme
-of the C++  code developed by Czapla and Zheng to  implement it, and a
-brief account of various  definitions of persistence length and models
-from which $a$ can be derived are included in Appendix~\ref{appendix4a}
+The  description of the  ``realistic'' model  along with  a simplified
+schema of  the C++ code  developed by Luke  Czapla to implement  it, is
+given  in Appendix~\ref{appendix4a}.  Also  in such  Appendix a  brief
+account of  various definitions of  persistence length and  the models
+generally used to compute it is given.
 
 Using  the mean  values and  force  constants of  RNA base-pair  steps
 available at our  web-framework we can use the  ``realistic'' model as
-implemented by  Czapla to compute the persistence  length at different
-chain lengths for  the ten unique base-pair steps  formed by canonical
-Watson-Crick G$\cdot$C and  A$\cdot$U. We used two rest  states in our
-calculations,  one which  corresponds  to a  naturally straight  chain
-using  the  standard  dimeric  parameters  for a  typical  A-RNA  type
-conformation, that is,  $x_{i}^{0} = {0, 0, 3.30, 0,  0, 31.6}$ with a
-helical repeat of 11 base-pairs, and another where we used the average
-base-step parameters for each dimeric  step which can be obtained from
-our  web-framework. It is  important to  note that  one cannot  have a
-chain composed  of pure GC$\cdot$GC  steps, since necesarily  the step
-which follows it has to be  a CG$\cdot$CG step, therefore eight of the
-ten chains  formed by  the unique base-pair  steps will be  mixed, and
-only two will be made purely  from a step alone, that is, those chains
-formed from the GG$\cdot$CC and AA$\cdot$UU dimers.
+implemented  by  Czapla~\ref{czapla2006}  to compute  the  persistence
+length  of chains  of increasing  lengths formed  from the  ten unique
+base-pair  steps  of canonical  Watson-Crick  G$\cdot$C and  A$\cdot$U
+pairs.   We  used two  rest  states  in  our calculations,  one  which
+corresponds to  a naturally straight chain using  the standard dimeric
+parameters for  the A-RNA conformation,  that is, $x_{i}^{0} =  \{0, 0,
+  3.30,  0,  0,  31.6\}$ with   a  helical  repeat  of  11  base-pairs
+\cite{arnott1999}.   The  other  rest  states  used  are  the  average
+base-step   parameters   for    unique   steps   obtained   from   our
+web-framework. It's  important to  note that one  cannot have  a chain
+composed of  pure GC$\cdot$GC  steps, for example,  since the  step in
+between two  such steps is  necessarily a CG$\cdot$CG  step, therefore
+eight of the  ten chains formed by the unique  base-pair steps will be
+mixed, and  only two will be made  purely from a single  kind of step,
+that  is, those  chains formed  from the  GG$\cdot$CC  and AA$\cdot$UU
+dimers.
 
-The results are seen in Figure \ref{fig:aunique} where we see that
+As is expected the persistence lengths for naturally straight chains
+are larger than the corresponding chains whose rest states are those
+coming from the averaged crystallographic data as seen in
+Figure~\ref{fig:perVlen}.
+
+\begin{figure}
+\centering
+\includegraphics[angle=0, scale=2.8]{Chapter4/perVlen.png}
+\caption{In the lower frame persistence length vs chain length in
+  base-pairs for naturally straigth chains. In the upper frame the
+  persistence length vs. chain length of ``real'' chains.}
+\label{fig:perVlen}
+\end{figure}
+
 
 We also computed the persistence length at increasing chain lengths
 for a mixed sequence RNA, where we see that a curved.
-
 
 For comparison to the DNA case we computed the persistence length of a
 1000 bp sequence with larger sampling for chains made up from the
