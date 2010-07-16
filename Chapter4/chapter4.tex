@@ -269,7 +269,7 @@ generally used to compute it is given.
 
 Using  the mean  values and  force  constants of  RNA base-pair  steps
 available at our  web-framework we can use the  ``realistic'' model as
-implemented  by  Czapla~\ref{czapla2006}  to compute  the  persistence
+implemented  by  Czapla~\cite{czapla2006}  to compute  the  persistence
 length  of chains  of increasing  lengths formed  from the  ten unique
 base-pair  steps  of canonical  Watson-Crick  G$\cdot$C and  A$\cdot$U
 pairs.   We  used two  rest  states  in  our calculations,  one  which
@@ -288,7 +288,7 @@ dimers.
 
 As is expected the persistence lengths for naturally straight chains
 are larger than the corresponding chains whose rest states are those
-coming from the averaged crystallographic data as seen in
+coming from the averaged crystallographic data, as seen in
 Figure~\ref{fig:perVlen}.
 
 \begin{figure}
@@ -300,18 +300,55 @@ Figure~\ref{fig:perVlen}.
 \label{fig:perVlen}
 \end{figure}
 
+For comparison to the DNA case we computed the persistence length of a
+1000 bp sequence for the chains made up from the repeating unique
+base-pair step units using a million samples of the gaussian sampler
+and the naturally straight chain as can be seen in Table
+\ref{tab:compare}. In general as expected the persistence length
+values are bigger due to the stiffness of the A-RNA conformation.
+
+\begin{table}  
+\begin{center}
+%\scalebox{0.7}{
+\begin{tabular}{|c|c|c|c|}
+\hline
+Stack Type & Base-pair Step & $a$ (\AA) RNA & $a$ (\AA) DNA\\
+\hline \hline
+RR &  AA$\cdot$UU & 758      &  789   \\
+   &  AG$\cdot$CU & 1116     &  919   \\
+   &  GG$\cdot$CC & 1099     &  808   \\
+   &  GA$\cdot$UC & 1115     &  785   \\
+\hline
+RY &  AC$\cdot$GU & 539      &  1245   \\
+   &  AU$\cdot$AU & 818      &  490   \\
+   &  GC$\cdot$GC & 1166     &  904   \\
+\hline
+YR &  CA$\cdot$UG & 536      &  779   \\
+   &  UA$\cdot$UA & 820      &  435   \\
+   &  CG$\cdot$CG & 1117     &  534   \\
+\hline
+   & Mixed Sequence  & 911   &       \\
+   & Hagerman   & 700-800    &       \\
+   & Abels et al.   & 622    &       \\ 
+   & Abels et al.   & 638    &       \\
+   & Ideal DNA    &          & 510   \\
+\hline
+\end{tabular}
+%}
+\caption{Persistence lengths for chains of a 1000 base-pairs from the
+  ten unique base-pair steps. For DNA the corresponding steps would
+  have T instead of U.}
+\label{tab:compare}
+\end{center}
+\end{table}
+
+We also constructed a random sequence with a
+1:1 ratio of A$\cdot$U and G$\cdot$C which is compared to the
+values obtained by Abels et al, and those of Hagerman in Table
+
 
 We also computed the persistence length at increasing chain lengths
 for a mixed sequence RNA, where we see that a curved.
-
-For comparison to the DNA case we computed the persistence length of a
-1000 bp sequence with larger sampling for chains made up from the
-unique dimers and using as rest state the values for a naturally
-straight chain. We also constructed a random sequence with a
-1:1 ratio of A$\cdot$U and G$\cdot$C which is compared to the
-values obtained by Abels et al, and those of Hagerman in Table
-\ref{tab:compare}. 
-
 
 
 

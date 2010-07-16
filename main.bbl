@@ -789,6 +789,11 @@ Balasubramanian, S., Xu, F., and Olson, W.~K. (2009)
   Analysis of Nucleosome-Binding Sequences}.
 {\em Biophysical Journal,} {\bf 96}, 2245--2260.
 
+\bibitem{czapla2006}
+Czapla, L., Swigon, D., and Olson, W.~K. (2006)
+{Sequence-Dependent Effects in the Cyclization of Short DNA}.
+{\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
+
 \bibitem{babcock1994}
 Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
 Nucleic {A}cid {S}tructure {A}nalysis; {M}athematics for {L}ocal {C}artesian
@@ -852,11 +857,6 @@ Olson, W.~K., Marky, N.~L., Jernigan, R.~L., and Zhurkin, V.~B. (1993)
 {Influence of Fluctuations on DNA Curvature. A Comparison of Flexible and
   Static Wedge Models of Intrinsically Bent DNA}.
 {\em Journal of Molecular Biology,} {\bf 232}, 530--554.
-
-\bibitem{czapla2006}
-Czapla, L., Swigon, D., and Olson, W.~K. (2006)
-Sequence-dependent effects in the cyclization of short dna.
-{\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
 
 \bibitem{flory1969}
 Flory, P.~J. (1969)
