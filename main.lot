@@ -16,17 +16,17 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
 \contentsline {table}{\numberline {4.1}{\ignorespaces Unique base-pair steps parameters counts and overlap values in RNA helical regions.}}{53}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Persistence lengths for chains of a 1000 base-pairs from the ten unique base-pair steps. For DNA the corresponding steps would have T instead of U.}}{60}{table.4.2}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Persistence lengths for chains of 1000 base-pairs constructed from the ten unique base-pair steps. A scaling factor $\zeta $ is used to reproduce the experimentally obtained values of persistence length of a random sequence with equal weights of G$\cdot $C and A$\cdot $U base-pairs, and with an equally weighed composition of the sixteen unique base-pair steps.}}{61}{table.4.2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{76}{table.B.1}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{77}{table.B.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {table}{\numberline {C.1}{\ignorespaces Persistence lengths for common polymers, and biopolymers with filament structures.}}{86}{table.C.1}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Persistence lengths for common polymers, and biopolymers with filament structures.}}{87}{table.C.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
 \gdef \the@ipfilectr {}

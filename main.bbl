@@ -49,6 +49,11 @@ Arnott, S., Hukins, D. W.~L., Dover, S.~D., Fuller, W., and Hodgson, A.~R.
   Polycytidylic acid}.
 {\em Journal of Molecular Biology,} {\bf 81}, 107--122.
 
+\bibitem{czapla2006}
+Czapla, L., Swigon, D., and Olson, W.~K. (2006)
+{Sequence-Dependent Effects in the Cyclization of Short DNA}.
+{\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
+
 \bibitem{olson2001}
 Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
   Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
@@ -788,11 +793,6 @@ Balasubramanian, S., Xu, F., and Olson, W.~K. (2009)
 {DNA Sequence-Directed Organization of Chromatin: Structure-Based Computational
   Analysis of Nucleosome-Binding Sequences}.
 {\em Biophysical Journal,} {\bf 96}, 2245--2260.
-
-\bibitem{czapla2006}
-Czapla, L., Swigon, D., and Olson, W.~K. (2006)
-{Sequence-Dependent Effects in the Cyclization of Short DNA}.
-{\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
 
 \bibitem{babcock1994}
 Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)

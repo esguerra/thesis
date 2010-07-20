@@ -145,9 +145,9 @@ matrix of  second derivatives  with respect to  energy, i.e.,   the $F$
 matrix, an analog to the ``classical'' treatment for atoms by Wilson et
 al. \cite{wilson1955}.
 \begin{gather}
-<x_i x_j> = kT (F_{n}^{-1})_{i,j}
+\left<x_i x_j\right> = kT (F_{n}^{-1})_{i,j}
 \end{gather}
-Where $<x_i  x_j>$ stands for  the correlation between  base-pair step
+Where $\left< x_i  x_j \right>$ stands for  the correlation between  base-pair step
 parameter  displacements,  $k$  is  Boltzman's constant,  and  $T$  is
 temperature. The total potential for a system of $N$ base-pair steps would
 then be given by:
@@ -160,12 +160,13 @@ parameters and also  to exclude protein-induced extreme conformational
 deformation  in steps,  we culled  our data  by restricting  it  to be
 within a radius  of 3 standard deviations from the  mean value of step
 parameters, this data  was used then to obtain  the force constants by
-finding the inverse of the correlation matrix.
+finding the inverse correlation matrix.
 
 A  minimal MySQL  database was  created to  store the  mean  values of
 base-step parameters,  their standard deviations,  their corresponding
 force  constant matrices, and  step deformation  measures such  as the
-conformation volume, and RMSD. The purpose of creating the database is
+conformation volume, and RMSD for all atoms excluding hydrogen. The
+purpose of creating the database is
 for ease of sharing  information with force-field developers and later
 automatization of the process of  data reduction.  The process of data
 reduction can be summarized as follows:
@@ -194,7 +195,7 @@ and wobble G$\cdot$U, as shown in Figure ~\ref{fig:average}.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[angle=0, scale=0.4]{Chapter4/average.png}
+\includegraphics[angle=0, scale=0.5]{Chapter4/average.png}
 \caption{Snapshot of the unique base-pair step parameters table for
   intact helical region RNA's, showing the fields that it can be
   sorted by. In this case it has been sorted by dimer step
@@ -202,7 +203,7 @@ and wobble G$\cdot$U, as shown in Figure ~\ref{fig:average}.
   pyrimidine-purine (YR), and purine-pyrimidine (RY). The steps are
   denoted in a 5' to 3' sense, e.g., GG\_CC stands for a G$\cdot$C
   base-pair stacked on top of another G$\cdot$C pair with intact
-  covalent linkage between G's, that is, GpG, and C's, i.e., CpG.}
+  covalent linkage between G's, that is, GpG, and C's, i.e., CpC.}
 \label{fig:average}
 \end{figure}  
 
@@ -215,9 +216,9 @@ snapshot  of the  energy contour  for  the GG$\cdot$CC  step from  the
 web-framework is shown in Figure ~\ref{fig:contour}.
 \begin{figure}[htbp]
 \centering
-\includegraphics[angle=0, scale=0.4]{Chapter4/contour.png}
+\includegraphics[angle=0, scale=0.6]{Chapter4/contour.png}
 \caption{Snapshot from the web-framework of a scatterplot in the
-  Roll-Twist plane with an energy contour. The full data before
+  Roll-Twist plane with an energy contour at 4.5$kT$. The full data before
   culling is show in red dots, and the culled data is shown as blue dots.} 
 \label{fig:contour}
 \end{figure}
@@ -247,25 +248,26 @@ magnetic  tweezers,  and small  angle  X-Ray  scattering (SAXS).   For
 reviews  of  such  techniques  applied  to the  determination  of  RNA
 persistence    length,    we   refer    the    reader   to    Hagerman
 \cite{hagerman1997}, Abels  et al.  \cite{abels2005},  and Caliskan et
-al.   \cite{caliskan2005}.  We  compare  our  simulation results,
-based on  the "realistic" model  developed by Olson  and collaborators
-\cite{olson1995} to describe DNA, with their findings. The "realistic"
-model is dependent  on high-resolution crystallographic data.  Initial
-studies started with small numbers  of data for the deformabilities of
-the  ten unique  base-pair  steps \cite{olson1995}.   A more  complete
-picture applied  to the study of DNA  sequence-dependent deformability
-became  available   in  1998  \cite{olson1998}.    The  base-pair-step
-deformability  data  for  DNA  has  been constantly  refined  as  more
-high-resolution DNA and DNA-protein  structures have been added to the
-Nucleic Acid Database (NDB) \cite{balasubramanian2009}.  Although such
-data has been available for DNA  since 1998, such was not the case for
-RNA, until recently \cite{olson2009}.
+al.  \cite{caliskan2005}.  We compare our simulation results, based on
+the   "realistic"   model  developed   by   Olson  and   collaborators
+\cite{olson1995} to describe DNA,  with their findings keeping in mind
+that   the   "realistic"  model   is   dependent  on   high-resolution
+crystallographic data.  Initial studies  started with small numbers of
+data  for  the  deformabilities  of  the ten  unique  base-pair  steps
+\cite{olson1995}.  A more complete picture applied to the study of DNA
+sequence-dependent    deformability   became    available    in   1998
+\cite{olson1998}.  The  base-pair-step deformability data  for DNA has
+been constantly  refined as  more high-resolution DNA  and DNA-protein
+structures  have  been  added  to  the  Nucleic  Acid  Database  (NDB)
+\cite{balasubramanian2009}.  Although such data has been available for
+DNA  since  1998,  such was  not  the  case  for RNA,  until  recently
+\cite{olson2009}.
 
-The  description of the  ``realistic'' model  along with  a simplified
-schema of  the C++ code  developed by Luke  Czapla to implement  it, is
-given  in Appendix~\ref{appendix4a}.  Also  in such  Appendix a  brief
-account of  various definitions of  persistence length and  the models
-generally used to compute it is given.
+A brief description of the ``realistic'' model along with a simplified
+schema  of the  C++ code  developed by  Dr. Luke  Czapla  and modified
+slightly by  the author, is given  in Appendix~\ref{appendix4a}.  Also
+in such Appendix a brief account of various definitions of persistence
+length and the models generally used to compute it is given.
 
 Using  the mean  values and  force  constants of  RNA base-pair  steps
 available at our  web-framework we can use the  ``realistic'' model as
@@ -277,8 +279,8 @@ corresponds to  a naturally straight chain using  the standard dimeric
 parameters for  the A-RNA conformation,  that is, $x_{i}^{0} =  \{0, 0,
   3.30,  0,  0,  31.6\}$ with   a  helical  repeat  of  11  base-pairs
 \cite{arnott1999}.   The  other  rest  states  used  are  the  average
-base-step   parameters   for    unique   steps   obtained   from   our
-web-framework. It's  important to  note that one  cannot have  a chain
+base-step   parameters   of the ten unique steps obtained   from   our
+web-framework. It is  important to  note that one  cannot have  a chain
 composed of  pure GC$\cdot$GC  steps, for example,  since the  step in
 between two  such steps is  necessarily a CG$\cdot$CG  step, therefore
 eight of the  ten chains formed by the unique  base-pair steps will be
@@ -286,14 +288,22 @@ mixed, and  only two will be made  purely from a single  kind of step,
 that  is, those  chains formed  from the  GG$\cdot$CC  and AA$\cdot$UU
 dimers.
 
-As is expected the persistence lengths for naturally straight chains
-are larger than the corresponding chains whose rest states are those
-coming from the averaged crystallographic data, as seen in
-Figure~\ref{fig:perVlen}.
+As expected the persistence lengths for naturally straight chains
+are larger than the corresponding persistence lenghts for chains whose
+rest states are those  coming from the averaged crystallographic data,
+as is  clearly seen in  Figure~\ref{fig:perVlen}. As is the  case with
+DNA,  the polyAA  chains show  a smaller  persistence length  than the
+polyGG chains, although the difference is not as dramatic as that shown
+by  Maroun  and  Olson   \cite{maroun1988a}  for  DNA,  that  is,  the
+difference for DNA is about $\sim 500$ \AA, and for RNA the difference
+is about  $\sim 400$ \AA. The  stiffer polyGG chains in  this case can
+also be attributed to a more symmetrical energy surface as is the case
+for  DNA,  this can  easily  be  seen  from the  corresponding  energy
+surfaces available at our web-framework.
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=2.8]{Chapter4/perVlen.png}
+\includegraphics[angle=0, scale=3.2]{Chapter4/perVlen.png}
 \caption{In the lower frame persistence length vs chain length in
   base-pairs for naturally straigth chains. In the upper frame the
   persistence length vs. chain length of ``real'' chains.}
@@ -327,17 +337,21 @@ YR &  CA$\cdot$UG & 536      &  779   \\
    &  UA$\cdot$UA & 820      &  435   \\
    &  CG$\cdot$CG & 1117     &  534   \\
 \hline
-   & Mixed Sequence  & 911   &       \\
-   & Hagerman   & 700-800    &       \\
-   & Abels et al.   & 622    &       \\ 
-   & Abels et al.   & 638    &       \\
-   & Ideal DNA    &          & 510   \\
+   & Random Sequence  & 911   &        \\
+   & Hagerman   & 700-800    &        \\
+   & Abels et al.   & 622    &        \\ 
+   & Abels et al.   & 638    &        \\
+   & Ideal DNA    &          & 510    \\
+   & $\zeta$ (scaling factor)  & 0.65 & 0.50 \\
 \hline
 \end{tabular}
 %}
-\caption{Persistence lengths for chains of a 1000 base-pairs from the
-  ten unique base-pair steps. For DNA the corresponding steps would
-  have T instead of U.}
+\caption{Persistence lengths for chains of 1000 base-pairs constructed
+  from the ten unique base-pair steps. A scaling factor $\zeta$ is used to
+  reproduce the experimentally obtained values of persistence length
+  of a random sequence with equal weights of G$\cdot$C and A$\cdot$U
+  base-pairs, and with an equally weighed composition of the sixteen
+  unique base-pair steps.}
 \label{tab:compare}
 \end{center}
 \end{table}
@@ -349,6 +363,16 @@ values obtained by Abels et al, and those of Hagerman in Table
 
 We also computed the persistence length at increasing chain lengths
 for a mixed sequence RNA, where we see that a curved.
+
+\begin{figure}
+\centering
+\includegraphics[angle=0, scale=0.6]{Chapter4/dampedlike.png}
+\caption{Persistence length vs. chain length for an RNA sequence made up
+  from the repeating unit poly- ACACACGGGGG and sampled using the gaussian
+  sampling technique of Czapla et al. \cite{czapla2006}. The curved
+  pattern is indicative of curved configurations of RNA induced by sequence.}
+\label{fig:curved}
+\end{figure}
 
 
 
