@@ -269,6 +269,15 @@ slightly by  the author, is given  in Appendix~\ref{appendix4a}.  Also
 in such Appendix a brief account of various definitions of persistence
 length and the models generally used to compute it is given.
 
+\begin{figure}
+\centering
+\includegraphics[angle=0, scale=3.2]{Chapter4/perVlen.png}
+\caption{In the lower frame persistence length vs chain length in
+  base-pairs for naturally straigth chains. In the upper frame the
+  persistence length vs. chain length of ``real'' chains.}
+\label{fig:perVlen}
+\end{figure}
+
 Using  the mean  values and  force  constants of  RNA base-pair  steps
 available at our  web-framework we can use the  ``realistic'' model as
 implemented  by  Czapla~\cite{czapla2006}  to compute  the  persistence
@@ -288,34 +297,38 @@ mixed, and  only two will be made  purely from a single  kind of step,
 that  is, those  chains formed  from the  GG$\cdot$CC  and AA$\cdot$UU
 dimers.
 
-As expected the persistence lengths for naturally straight chains
-are larger than the corresponding persistence lenghts for chains whose
+As expected the persistence  lengths for naturally straight chains are
+greater  than the  corresponding persistence  lenghts for  chains whose
 rest states are those  coming from the averaged crystallographic data,
 as is  clearly seen in  Figure~\ref{fig:perVlen}. As is the  case with
 DNA,  the polyAA  chains show  a smaller  persistence length  than the
-polyGG chains, although the difference is not as dramatic as that shown
-by  Maroun  and  Olson   \cite{maroun1988a}  for  DNA,  that  is,  the
-difference for DNA is about $\sim 500$ \AA, and for RNA the difference
-is about  $\sim 400$ \AA. The  stiffer polyGG chains in  this case can
+polyGG  chains, although  the difference  is not  as dramatic  as that
+shown by  Maroun and  Olson \cite{maroun1988a} for  DNA, that  is, the
+difference for DNA is about  $\sim$500 \AA, and for RNA the difference
+is about $\sim$100 \AA.  The stiffer polyGG chains in this case can
 also be attributed to a more symmetrical energy surface as is the case
 for  DNA,  this can  easily  be  seen  from the  corresponding  energy
 surfaces available at our web-framework.
 
-\begin{figure}
-\centering
-\includegraphics[angle=0, scale=3.2]{Chapter4/perVlen.png}
-\caption{In the lower frame persistence length vs chain length in
-  base-pairs for naturally straigth chains. In the upper frame the
-  persistence length vs. chain length of ``real'' chains.}
-\label{fig:perVlen}
-\end{figure}
+For comparison to the DNA case we also computed the persistence length
+of RNA sequences of a length of 1000 bp sequences made up from repeats
+of  the unique  base-pair  steps  taking a  million  samples with  the
+gaussian sampler  and assuming  a naturally straight  chain as  can be
+seen  in  Table  \ref{tab:compare}.   In  general,  as  expected,  the
+persistence length values  are bigger than those obtained  for DNA due
+to the stiffness of the A-RNA conformation.
 
-For comparison to the DNA case we computed the persistence length of a
-1000 bp sequence for the chains made up from the repeating unique
-base-pair step units using a million samples of the gaussian sampler
-and the naturally straight chain as can be seen in Table
-\ref{tab:compare}. In general as expected the persistence length
-values are bigger due to the stiffness of the A-RNA conformation.
+We also constructed a random RNA sequence with a 1:1 ratio of A$\cdot$U
+to G$\cdot$C base-pairs, and equally weighed base-pair steps, this
+results can be compared to those obtained by Abels et al., and those
+reported by Hagerman. As we see in Table \ref{tab:compare}  the
+obtained values are larger than their experimental counterparts, as is
+also the case for the DNA values, therefore a scaling of the force
+constants used to compute the persistence lenghts given in column
+three of Table \ref{tab:compare} is recommended. To obtain values
+according to those of Abels et al. a $\zeta$ scaling value of 0.65 is
+necessary to bring the persistence length of the random sequence RNA
+to a value of 638 \AA.
 
 \begin{table}  
 \begin{center}
@@ -356,13 +369,18 @@ YR &  CA$\cdot$UG & 536      &  779   \\
 \end{center}
 \end{table}
 
-We also constructed a random sequence with a
-1:1 ratio of A$\cdot$U and G$\cdot$C which is compared to the
-values obtained by Abels et al, and those of Hagerman in Table
-
-
 We also computed the persistence length at increasing chain lengths
-for a mixed sequence RNA, where we see that a curved.
+of a mixed sequence RNA (polyACACACGGGGG) as seen in Figure
+\ref{fig:curved}. We see that in contrast to Figure \ref{perVlen} this
+function seems to be "damped", which is usually the case for the
+appearance of curved structures. A set of a hundred sampled conformations
+of a 150 bp long chain using the gaussian sampling technique were
+rebuilt using 3DNA and are shown in Figure \ref{fig:rnatree} and can
+also be seen as a movie at the web address
+\url{http://napoli.rutgers.edu/site_media/movie.htm}, where we
+clearly see the tendency to curve and therefore reduce the persistence
+length of RNA, which is about $\sim$340 \AA for this sequence, much
+smaller than it is for any of the chains shown in Figure \ref{fig:perVlen}.
 
 \begin{figure}
 \centering
@@ -373,6 +391,22 @@ for a mixed sequence RNA, where we see that a curved.
   pattern is indicative of curved configurations of RNA induced by sequence.}
 \label{fig:curved}
 \end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[angle=0, scale=0.6]{Chapter4/polyacacacggggg.png}
+\caption{RNA chains of polyACACACGGGGG of 150bp length superimposed in
+the reference frame of the first base-step. Shown are a 100 snapshots
+of the output produced from rebuilding the step-parameters which are
+sampled with the gaussian sampling technique of czapla et al. \cite{czapla2006}.
+In the figure the ribbon is a representation of the connection of
+sequential phosphorous atoms which have been reconstructed using 3DNA
+from the base-step parameters which are generated to compute the
+generator matrices descibed in Appendix \ref{appendix4a}.}
+\end{figure}  
+
+
+
 
 
 
