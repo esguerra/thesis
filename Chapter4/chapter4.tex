@@ -22,16 +22,16 @@ steps which can be formed in RNA as mentioned above is given in Figure
 \centering
 \includegraphics[angle=0, scale=0.4]{Chapter4/unique.png}
 \caption{Unique base-pair dimers of RNA formed by canonical G$\cdot$C,
-  canonical    A$\cdot$U    Watson-Crick,    and   wobble    G$\cdot$U
-  base-pairs.  In purple  boxes the  10 unique  base-pair steps
-  formed  by canonical G$\cdot$C  and A$\cdot$U,  and in  beige boxes
-  the  additional  11   base-pair  steps  which   result  from
-  considering G$\cdot$U  wobble base-pairs as dimer  building block to
-  give a total of 21 unique  dimers. The coloring scheme used to color
-  the bases is that  used in the NDB, where A is red,  U is cyan, G is
-  green, and C is yellow. The first  base-pair in the step in the 5' to
-  3' sense is  identified as pair $i$ and the  second is identified by
-  $i+1$ as shown in the upper left corner of this figure.}
+  canonical A$\cdot$U  Watson-Crick, and wobble  G$\cdot$U base-pairs.
+  In  grey boxes  the 10  unique base-pair  steps formed  by canonical
+  G$\cdot$C  and  A$\cdot$U,  and  in  pink boxes  the  additional  11
+  base-pair  steps  which  result  from considering  G$\cdot$U  wobble
+  base-pairs as  dimer building  blocks to give  a total of  21 unique
+  dimers. The coloring scheme used to  color the bases is that used in
+  the NDB, where A is red, U is cyan, G is green, and C is yellow. The
+  first base-pair in  the step in the 5' to 3'  sense is identified as
+  pair $i$ and the second is identified by $i+1$ as shown in the upper
+  left corner of this figure.}
 \label{fig:unique}
 \end{figure}  
 
@@ -56,15 +56,15 @@ non-canonical  one.  The  number of  steps formed  by  a non-canonical
 base-pair and a  canonical one is six times higher  than that of steps
 formed  by  two non-canonical  pairs.   Some non-canonical  base-pairs
 occur exclusively in  the context of a stack  of non-canonicals, e.g.,
-GA$_{s}$$\cdot$GA$_{s}$, where two  sheared base-pairs stack together,
-or also  on stacks  of a sheared  G$\cdot$A base-pair and  a Hoogsteen
-A$\cdot$U  base-pair.  The  majority of  stacks  between non-canonical
-base-pairs  occurs  on  dimeric  steps  composed  of  combinations  of
-G$\cdot$U  wobble  and  sheared  G$\cdot$A  base-pairs.   Overall  the
-majority  of dimeric  steps are  those formed  by  canonical G$\cdot$C
-base-pairs  making up  more than  a third  of the  whole.  It  is also
-interesting that  more than half  of this kind  of steps is  formed by
-GG$\cdot$CC steps.
+GA$_{\text{s}}$$\cdot$GA$_{\text{s}}$,  where  two sheared  base-pairs
+stack together, or also  on stacks of a sheared G$\cdot$A$_{\text{s}}$
+base-pair  and  a  Hoogsteen  A$\cdot$U$_{\text{H}}$  base-pair.   The
+majority of stacks between  non-canonical base-pairs occurs on dimeric
+steps  composed  of  combinations  of  G$\cdot$U  wobble  and  sheared
+G$\cdot$A base-pairs.  Overall the majority of dimeric steps are those
+formed by canonical  G$\cdot$C base-pairs making up more  than a third
+of the whole.  It is also interesting that more than half of this kind
+of steps is formed by GG$\cdot$CC steps.
 
 Overlap values between base-pairs  are given in parentheses along with
 the  counts  of dimeric  steps  in  intact  helical regions  in  Table
@@ -73,7 +73,7 @@ overlaps of DNA base-pairs  is mantained, i.e., purine-pyrimidine (RY)
 steps have the greatest overlap values, and pyrimidine-purine (YR) the
 smallest.   When   the  G$\cdot$U  wobble  base-pair   is  taken  into
 consideration the trend remains  true, but the values are considerably
-increased, for example for the  GU$\cdot$GU dimer the overlap value is
+increased, for example, for the GU$\cdot$GU dimer the overlap value is
 14.4 \AA$^{\text{2}}$.   The other values  which show a  large overlap
 are those of the dimers  composed of sheared G$\cdot$A pairs and those
 composed  of sheared G$\cdot$A  and U$\cdot$U  wobble.  The  degree of
@@ -83,7 +83,7 @@ U$\cdot$U pairs prefer to stack with canonical G$\cdot$C pairs showing
 a relatively small overlap.
 
 %\begin{sidewaystable}
-\begin{table}  
+\begin{table}[hb]  
 \begin{center}
 \scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
@@ -171,20 +171,20 @@ for ease of sharing  information with force-field developers and later
 automatization of the process of  data reduction.  The process of data
 reduction can be summarized as follows:
 \begin{itemize}
-\item{Collect a non-redundant dataset of RNA X-ray crystallographic
+\item{Collection of a non-redundant dataset of RNA X-ray crystallographic
   structures restricted to resolutions better than 3.5\AA~with up to
   date data from the PDB.}
-\item{Find base-pair and base-pair step parameters for all structures
+\item{Finding base-pair and base-pair step parameters for all structures
   using 3DNA.}
-\item{Find the Leontis-Westhof classification of base-pairs using
+\item{Finding the Leontis-Westhof classification of base-pairs using
   rnaview \cite{yang2003}.}
-\item{Build a relational database to relate various classifications,
+\item{Building a relational database to relate various classifications,
   for example the Leontis-Westhof classification and the helical
   classification given by 3DNA.}
-\item{Select steps present in intact helical regions alone.}
-\item{Cull unique base-pair step parameters using a radius of three
+\item{Selection of steps present in intact helical regions alone.}
+\item{Culling unique base-pair step parameters using a radius of three
   standard deviations.}
-\item{Compute means, standard deviations, force constant matrices, and
+\item{Computing means, standard deviations, force constant matrices, and
 step deformation measures.}  
 \end{itemize}  
 
@@ -216,7 +216,7 @@ snapshot  of the  energy contour  for  the GG$\cdot$CC  step from  the
 web-framework is shown in Figure ~\ref{fig:contour}.
 \begin{figure}[htbp]
 \centering
-\includegraphics[angle=0, scale=0.6]{Chapter4/contour.png}
+\includegraphics[angle=0, scale=0.58]{Chapter4/contour.png}
 \caption{Snapshot from the web-framework of a scatterplot in the
   Roll-Twist plane with an energy contour at 4.5$kT$. The full data before
   culling is show in red dots, and the culled data is shown as blue dots.} 
@@ -225,15 +225,16 @@ web-framework is shown in Figure ~\ref{fig:contour}.
 
 The  other values  included  in  the web-framework  are  those of  the
 force-constants corresponding  to the unique steps. A  snapshot of the
-force-constant  matrix   for  the  GG$\cdot$CC  is   shown  in  Figure
+force-constant  matrix for  the GG$\cdot$CC  step is  shown  in Figure
 ~\ref{fig:forceconst}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[angle=0, scale=0.6]{Chapter4/forceconst.png}
-\caption{Figure showing a snapshot of the RNA Base-Pair Steps
-  web-framework where the force constant matrix for the GG$\cdot$CC dimeric
-  step is shown.}
+\caption{Snapshot of  the RNA Base-Pair Steps  web-framework where the
+  force constant matrix for the GG$\cdot$CC dimeric step is shown. The
+  force  constant  matrix  is  derived  from the  covariance  of  step
+  parameter values following Go and Go \cite{go1976}.}
 \label{fig:forceconst}
 \end{figure}  
 
@@ -248,30 +249,31 @@ magnetic  tweezers,  and small  angle  X-Ray  scattering (SAXS).   For
 reviews  of  such  techniques  applied  to the  determination  of  RNA
 persistence    length,    we   refer    the    reader   to    Hagerman
 \cite{hagerman1997}, Abels  et al.  \cite{abels2005},  and Caliskan et
-al.  \cite{caliskan2005}.  We compare our simulation results, based on
+al.  \cite{caliskan2005}.  We compare our simulation results based on
 the   "realistic"   model  developed   by   Olson  and   collaborators
-\cite{olson1995} to describe DNA,  with their findings keeping in mind
+\cite{olson1995} to describe DNA  with their findings, keeping in mind
 that   the   "realistic"  model   is   dependent  on   high-resolution
-crystallographic data.  Initial studies  started with small numbers of
-data  for  the  deformabilities  of  the ten  unique  base-pair  steps
-\cite{olson1995}.  A more complete picture applied to the study of DNA
-sequence-dependent    deformability   became    available    in   1998
-\cite{olson1998}.  The  base-pair-step deformability data  for DNA has
-been constantly  refined as  more high-resolution DNA  and DNA-protein
-structures  have  been  added  to  the  Nucleic  Acid  Database  (NDB)
-\cite{balasubramanian2009}.  Although such data has been available for
-DNA  since  1998,  such was  not  the  case  for RNA,  until  recently
-\cite{olson2009}.
+crystallographic data.
+
+Initial  studies   started  with  small   numbers  of  data   for  the
+deformabilities of the ten unique base-pair steps \cite{olson1995}.  A
+more complete  picture applied to the study  of DNA sequence-dependent
+deformability   became  available   in  1998   \cite{olson1998}.   The
+base-pair-step deformability data for  DNA has been constantly refined
+as more high-resolution DNA and DNA-protein structures have been added
+to  the   Nucleic  Acid  Database   (NDB)  \cite{balasubramanian2009}.
+Although such data has been available for DNA since 1998, such was not
+the case for RNA, until recently \cite{olson2009}.
 
 A brief description of the ``realistic'' model along with a simplified
 schema  of the  C++ code  developed by  Dr. Luke  Czapla  and modified
 slightly by  the author, is given  in Appendix~\ref{appendix4a}.  Also
 in such Appendix a brief account of various definitions of persistence
-length and the models generally used to compute it is given.
+length and the models generally used to compute it are given.
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=3.2]{Chapter4/perVlen.png}
+\includegraphics[angle=0, scale=2.8]{Chapter4/perVlen.png}
 \caption{In the lower frame persistence length vs chain length in
   base-pairs for naturally straigth chains. In the upper frame the
   persistence length vs. chain length of ``real'' chains.}
@@ -308,27 +310,31 @@ difference for DNA is about  $\sim$500 \AA, and for RNA the difference
 is about $\sim$100 \AA.  The stiffer polyGG chains in this case can
 also be attributed to a more symmetrical energy surface as is the case
 for  DNA,  this can  easily  be  seen  from the  corresponding  energy
-surfaces available at our web-framework.
+surfaces available at our web-framework where the energy contour for
+the GG$\cdot$CC step is circular and the one for AA$\cdot$UU base-pair
+step has the shape of an ellipse.
 
 For comparison to the DNA case we also computed the persistence length
 of RNA sequences of a length of 1000 bp sequences made up from repeats
 of  the unique  base-pair  steps  taking a  million  samples with  the
 gaussian sampler  and assuming  a naturally straight  chain as  can be
-seen  in  Table  \ref{tab:compare}.   In  general,  as  expected,  the
-persistence length values  are bigger than those obtained  for DNA due
-to the stiffness of the A-RNA conformation.
+seen  in  the results  in  Table  \ref{tab:compare}.   In general,  as
+expected, the persistence length values are bigger than those obtained
+for DNA,  this is due  to the stiffness  of the A-RNA  conformation in
+contrast  to the  more flexible  B-DNA conformation  which  RNA cannot
+assume.
 
-We also constructed a random RNA sequence with a 1:1 ratio of A$\cdot$U
-to G$\cdot$C base-pairs, and equally weighed base-pair steps, this
-results can be compared to those obtained by Abels et al., and those
-reported by Hagerman. As we see in Table \ref{tab:compare}  the
-obtained values are larger than their experimental counterparts, as is
-also the case for the DNA values, therefore a scaling of the force
-constants used to compute the persistence lenghts given in column
-three of Table \ref{tab:compare} is recommended. To obtain values
-according to those of Abels et al. a $\zeta$ scaling value of 0.65 is
-necessary to bring the persistence length of the random sequence RNA
-to a value of 638 \AA.
+We  also  constructed  a random  RNA  sequence  with  a 1:1  ratio  of
+A$\cdot$U  to  G$\cdot$C  base-pairs,  and equally  weighed  base-pair
+steps, this results can be compared to those obtained by Abels et al.,
+and those reported  by Hagerman. As we see  in Table \ref{tab:compare}
+the obtained  values are larger than  their experimental counterparts,
+as is  also the case  for the DNA  values, therefore a scaling  of the
+force  constants used  to compute the  persistence  lenghts given  in
+column  three of  Table  \ref{tab:compare} is  recommended. To  obtain
+values according to  those of Abels et al. a  $\zeta$ scaling value of
+0.65  is necessary  to  bring  the persistence  length  of the  random
+sequence RNA to a value of 638 \AA.
 
 \begin{table}  
 \begin{center}
@@ -369,40 +375,43 @@ YR &  CA$\cdot$UG & 536      &  779   \\
 \end{center}
 \end{table}
 
-We also computed the persistence length at increasing chain lengths
-of a mixed sequence RNA (polyACACACGGGGG) as seen in Figure
-\ref{fig:curved}. We see that in contrast to Figure \ref{perVlen} this
-function seems to be "damped", which is usually the case for the
-appearance of curved structures. A set of a hundred sampled conformations
-of a 150 bp long chain using the gaussian sampling technique were
-rebuilt using 3DNA and are shown in Figure \ref{fig:rnatree} and can
-also be seen as a movie at the web address
-\url{http://napoli.rutgers.edu/site_media/movie.htm}, where we
-clearly see the tendency to curve and therefore reduce the persistence
-length of RNA, which is about $\sim$340 \AA for this sequence, much
-smaller than it is for any of the chains shown in Figure \ref{fig:perVlen}.
+We also computed the persistence length at increasing chain lengths of
+a   mixed   sequence  RNA   (polyACACACGGGGG)   as   seen  in   Figure
+\ref{fig:curved}. We see that  in contrast to Figure \ref{fig:perVlen}
+this function seems to be "damped",  which is usually the case for the
+appearance of curved polymeric structures.  A set of a hundred sampled
+conformations  of a  150 bp  long  chain using  the gaussian  sampling
+technique   were  rebuilt  using   3DNA  and   are  shown   in  Figure
+\ref{fig:rnatree} and can  also be seen as a movie  at the web address
+\url{http://napoli.rutgers.edu/site_media/movie.htm}, where we clearly
+see the tendency to curve  and therefore reduce the persistence length
+of RNA, which  is about $\sim$340 \AA~for  this sequence, much smaller
+than it is for any of the chains shown in Figure \ref{fig:perVlen}.
 
 \begin{figure}
 \centering
 \includegraphics[angle=0, scale=0.6]{Chapter4/dampedlike.png}
-\caption{Persistence length vs. chain length for an RNA sequence made up
-  from the repeating unit poly- ACACACGGGGG and sampled using the gaussian
-  sampling technique of Czapla et al. \cite{czapla2006}. The curved
-  pattern is indicative of curved configurations of RNA induced by sequence.}
+\caption{Persistence length vs. chain  length for an RNA sequence made
+  up from the  repeating unit poly- ACACACGGGGG and  sampled using the
+  gaussian sampling technique of  Czapla et al. \cite{czapla2006}. The
+  curved pattern is indicative of curved configurations of RNA induced
+  by sequence.}
 \label{fig:curved}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=0.6]{Chapter4/polyacacacggggg.png}
+\includegraphics[angle=0, scale=0.6]{Chapter4/polyacacacggggg_all.png}
 \caption{RNA chains of polyACACACGGGGG of 150bp length superimposed in
-the reference frame of the first base-step. Shown are a 100 snapshots
-of the output produced from rebuilding the step-parameters which are
-sampled with the gaussian sampling technique of czapla et al. \cite{czapla2006}.
-In the figure the ribbon is a representation of the connection of
-sequential phosphorous atoms which have been reconstructed using 3DNA
-from the base-step parameters which are generated to compute the
-generator matrices descibed in Appendix \ref{appendix4a}.}
+  the  reference  frame  of  the  first base-step.  Shown  are  a  100
+  snapshots of the output produced from rebuilding the step-parameters
+  which are sampled with the  gaussian sampling technique of czapla et
+  al. \cite{czapla2006}.  In the figure the ribbon is a representation
+  of the  connection of sequential  phosphorous atoms which  have been
+  reconstructed  using 3DNA  from the  base-step parameters  which are
+  generated  to compute  the generator  matrices descibed  in Appendix
+  \ref{appendix4a}.}
+\label{rnatree}
 \end{figure}  
 
 
