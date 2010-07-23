@@ -31,9 +31,6 @@
   Chapter3/chapter3, Chapter4/chapter4, Chapter5/chapter5, Appendix/appendix1a,
   Appendix/appendix2a, Appendix/appendix4a, Supplement/supplements}
 %\usepackage{pdflscape}
-\usepackage{hyperref}  %%Note: In TeXShop hyperref needs to be at the end of package calls.
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Fonts in Document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,6 +44,14 @@
 \renewcommand*\familydefault{\sfdefault}
 %\renewcommand*{\encodingdefault}{T1}
 % For more options go to: http://www.tug.dk/FontCatalogue/
+
+\usepackage[pdftex]{hyperref}%%Note: In TeXShop hyperref needs to be at the end of package calls.
+\hypersetup{%
+  pdftitle = {Mauricio Esguerra Doctoral Thesis},
+  pdfkeywords = {rna, persistence length, rna motifs},
+  pdfauthor = {Mauricio Esguerra},
+  bookmarks = true
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Here begins the document
