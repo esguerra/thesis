@@ -6,4 +6,10 @@ M.A.~El Hassan and C.~R. Calladine.
   {D}ouble-{H}elical {DNA}; a {N}ew {L}ocal {C}alculation {S}cheme.
 \newblock {\em Journal of {M}olecular {B}iology}, 251:648--664, 1995.
 
+\bibitem{lemieux2006}
+Sebastien Lemieux and Francois Major.
+\newblock {Automated Extraction and Classification of RNA Tertiary Structure
+  Cyclic Motifs}.
+\newblock {\em Nucleic Acids Research}, 34:2340--2346, 2006.
+
 \end{thebibliography}
