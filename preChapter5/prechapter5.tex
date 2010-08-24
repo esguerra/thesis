@@ -27,33 +27,15 @@
 % Here begins the document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\title{Pre-Chapter 5}
+\title{RNA Motifs}
 \author{Mauricio Esguerra}
 \maketitle
 
-\section{Introduction}
-The most common perspectives in RNA reconstruction and conformational
-searches are backbone based, an atom based.  We want to use a
-different  perspective,  that which  comes  from  a more  ``mechanical
-engineering''   set    of   mind,   that    is,   the   calladine-drew
-\cite{elhassan1995}  take  on nucleic-acids  geometry,  or the  helical
-perspective. 3DNA  is the ideal tool  for this work  since it computes
-pair  and  step parameters,  and  helical  parameters.  In short  here
-follows a table with the parameters given by 3DNA and what they are:
+As mentioned in  Chapter 2 the most common  perspectives for RNA motif
+recognition  and  discovery are  the  atom  and  bond based  ones, the
+rigid-body-based perspective has been  rather unexplored. The two main
+questions that we would like to answer in this context are:
 
-
-\section{Canonical "Noise"}
-To be able to say anything about motifs it's crucial to get rid of the
-"noise" which is given by the canonical base-pair steps.
-One would think that perhaps  the X3DNA-Parser of Dr. Yurong Xin could
-help  in the  task, but  then, it  can't, because  it's based  on what
-base-pairs  have  been found,  therefore,  it  tells  me about  single
-stranded interactions,  it doesn't tell  me about bases which  are not
-forming interactions and are alone.
-
-\section{GNRA tetraloop}
-In order to compare our work to that of others on RNA structural motif
-localization and discovery, we ask the following questions:
 \begin{enumerate}
 \item{Can  the geometric rigid-block  description of  base-pairing and
   base-stacking solve the problem of defining RNA structural motifs?}
@@ -61,40 +43,67 @@ localization and discovery, we ask the following questions:
   make and automatic  search for a known motif,  for example, the GNRA
   tetraloop motif, and perhaps find unknown motifs?}
 \end{enumerate}
-In the  ROC meeting of May,  2009 a reduced dataset  of RNA structures
-found  at:\\  http://docs.google.com/Doc?id=dhrmkfmn\_13ftpbjcgq\\ was
-made available  to participants with  the purpose of allowing  them to
-search for RNA motifs, which would later be compared between groups.
-We  have modestly, and  as of  yet unsuccessfully,  started to  aim at
-solving question number  two. Initially we are trying  to identify all
-instances of the well known GNRA tetraloop motif in the 23S subunit of
-ribosomal  RNA  of  \textit{Thermus Thermophilus},  PDB-ID:1ffk  using
-results  from 3DNA  and 3DNA-Parser,  and using  an  automated process
-which could be later reproduced  for any desired dataset.  Our hope is
-that  these baby  steps  will allow  us to  tackle  the whole  ROC
-dataset.
 
-\subsection{3DNA-Parser}
-We started by using Dr. Yurong Xin's 3DNA-Parser hoping that the
-description of the enclosing base pair in the loop, that is, the
-sheared G$\cdot$A, would have a characteristic signature.
-We found that such is not the case. We know from Major et
-al. \cite{lemieux2006} that there should be at least 21 GNRA tetraloops
-in the 23S subunit of rRNA. We used the G2696 N2697 R2698 A2699
-tetraloop as a seed (as can be seen in Figure 1.1) and found out
-that according to Dr. Xin's helical classification the enclosing G is
-classified as $S_{hq}$ and A is classified as $H_{e}$. 
-\begin{figure}[htbp]
+We have  started with  the second  question and have  chosen as
+workhorse the well known GNRA tetraloop motif. We have also used other
+quantities  (e.g.  endocyclic  and  exocyclic base-overlaps)  obtained
+with  the 3DNA  \cite{lu2003, lu2008b}  package, and  quantified their
+relationship to RNA motifs.
+
+\section{The GNRA Tetraloop}
+
+Description and brief survey of the motif.
+First  formally  described  by  Woese \cite{woese1990}  in  1990  from
+comparative  sequence analysis,  although supossedly  recognized since
+1985. First characterized in NMR by Heus and Pardi \cite{heus1991}
+
+
+
+
+
 \centering 
 \includegraphics[angle=0, scale=0.5]{gnra.png}
-\caption{GNRA Tetraloop from \textit{Thermus Thermophilus} 23S Ribosomal RNA PDB-ID:1ffk.}
+\caption{GNRA   Tetraloop  from   \textit{Thermus   Thermophilus}  23S
+  Ribosomal RNA PDB-ID:1ffk.}
 \end{figure}
-We then searched all such instances for G$\cdot$A base-pairs and we found seven hits,
-but none were in fact GNRA tetraloops.
+
+
+In the  RNA ontology consortium (ROC)  meeting of May,  2009 a reduced
+dataset        of        RNA        structures        found        at:
+\url{https://docs.google.com/Doc?id=dhrmkfmn_13ftpbjcgq}    was   made
+available to participants with the  purpose of allowing them to search
+for RNA motifs, which would later be compared between groups.
+
+
+
+
+
+%\section{Canonical "Noise"}
+%To be able to say anything about motifs it's crucial to get rid of the
+%"noise" which is given by the canonical base-pair steps.
+%One would think that perhaps  the X3DNA-Parser of Dr. Yurong Xin could
+%help  in the  task, but  then, it  can't, because  it's based  on what
+%base-pairs  have  been found,  therefore,  it  tells  me about  single
+%stranded interactions,  it doesn't tell  me about bases which  are not
+%forming interactions and are alone.
+
+%\subsection{3DNA-Parser}
+%We started by using Dr. Yurong Xin's 3DNA-Parser hoping that the
+%description of the enclosing base pair in the loop, that is, the
+%sheared G$\cdot$A, would have a characteristic signature.
+%We found that such is not the case. We know from Major et
+%al. \cite{lemieux2006} that there should be at least 21 GNRA tetraloops
+%in the 23S subunit of rRNA. We used the G2696 N2697 R2698 A2699
+%tetraloop as a seed (as can be seen in Figure 1.1) and found out
+%that according to Dr. Xin's helical classification the enclosing G is
+%classified as $S_{hq}$ and A is classified as $H_{e}$. 
+
+%We then searched all such instances for G$\cdot$A base-pairs and we found seven hits,
+%but none were in fact GNRA tetraloops.
 
 \subsection{Overlap Scores} 
 We clustered the overlap values impossing a cutoff of values
-of [1-8]. There are many values which are exactly zero (33\%), so,
+of [1-8]. Since a large amount of overlap values are exactly zero (33\%), so,
 without the cutoff the zero values "overshadow" the data.
 \begin{figure}[htbp]
 \centering 
