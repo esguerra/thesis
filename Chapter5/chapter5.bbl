@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{lu2003}
+Lu, X.-J. and Olson, W. (2003)
+{3DNA: A Software Package for the Analysis, Rebuilding and Visualization of the
+  Three-Dimensional Nucleic Acid Structures}.
+{\em Nucleic Acids Research,} {\bf 31}, 5108--5121.
+
+\bibitem{lu2008b}
+Lu, X.-J. and Olson, W.~K. (2008)
+{3DNA: A Versatile, Integrated Software System for the Analysis, Rebuilding and
+  Visualization of Three-Dimensional Nucleic-Acid Structures}.
+{\em Nature Protocols,} {\bf 3}, 1213--1227.
+
+\bibitem{woese1990}
+Woese, C.~R., Winker, S., and Gutell, R.~R. (1990)
+{Architecture of Ribosomal RNA: Constraints on the Sequence of "Tetra-Loops"}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 87}, 8467--8471.
+
+\bibitem{heus1991}
+Heus, H.~A. and Pardi, A. (1991)
+{Structural Features That Give Rise to the Unusual Stability of RNA Hairpins
+  Containing GNRA Loops}.
+{\em Science,} {\bf 253}, 191--194.
+
+\bibitem{depaul2010}
+Depaul, A.~J., Thompson, E.~J., Patel, S.~S., Haldeman, K., and Sorin, E.~J.
+  (2010)
+{Equilibrium Conformational Dynamics in an RNA Tetraloop From Massively
+  Parallel Molecular Dynamics}.
+{\em Nucleic Acids Research,}.
+
+\bibitem{antonioli2010}
+Antonioli, A.~H., Cochrane, J.~C., Lipchock, S.~V., and Strobel, S.~A. (2010)
+{Plasticity of the RNA Kink Turn Structural Motif}.
+{\em RNA,}.
+
+\end{thebibliography}

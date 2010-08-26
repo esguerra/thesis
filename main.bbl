@@ -59,6 +59,11 @@ Czapla, L., Swigon, D., and Olson, W.~K. (2006)
 {Sequence-Dependent Effects in the Cyclization of Short DNA}.
 {\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
 
+\bibitem{antonioli2010}
+Antonioli, A.~H., Cochrane, J.~C., Lipchock, S.~V., and Strobel, S.~A. (2010)
+{Plasticity of the RNA Kink Turn Structural Motif}.
+{\em RNA,}.
+
 \bibitem{olson2001}
 Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
   Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
@@ -70,9 +75,9 @@ A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
 
 \bibitem{lu2003}
 Lu, X.-J. and Olson, W. (2003)
-3{DNA}: {A} {S}oftware {P}ackage for the {A}nalysis, {R}ebuilding and
-  {V}isualization of the {T}hree-{D}imensional {N}ucleic {A}cid {S}tructures.
-{\em Nucleic {A}cids {R}esearch,} {\bf 31}, 5108--5121.
+{3DNA: A Software Package for the Analysis, Rebuilding and Visualization of the
+  Three-Dimensional Nucleic Acid Structures}.
+{\em Nucleic Acids Research,} {\bf 31}, 5108--5121.
 
 \bibitem{maroun1988b}
 Maroun, R.~C. and Olson, W.~K. (1988)
@@ -799,6 +804,25 @@ Maroun, R.~C. and Olson, W.~K. (1988)
 {Base Sequence Effects in Double-Helical DNA. II. Configurational Statistics of
   Rodlike Chains}.
 {\em Biopolymers,} {\bf 27}, 561--584.
+
+\bibitem{woese1990}
+Woese, C.~R., Winker, S., and Gutell, R.~R. (1990)
+{Architecture of Ribosomal RNA: Constraints on the Sequence of "Tetra-Loops"}.
+{\em Proceedings of the National Academy of Sciences of the United States of
+  America,} {\bf 87}, 8467--8471.
+
+\bibitem{heus1991}
+Heus, H.~A. and Pardi, A. (1991)
+{Structural Features That Give Rise to the Unusual Stability of RNA Hairpins
+  Containing GNRA Loops}.
+{\em Science,} {\bf 253}, 191--194.
+
+\bibitem{depaul2010}
+Depaul, A.~J., Thompson, E.~J., Patel, S.~S., Haldeman, K., and Sorin, E.~J.
+  (2010)
+{Equilibrium Conformational Dynamics in an RNA Tetraloop From Massively
+  Parallel Molecular Dynamics}.
+{\em Nucleic Acids Research,}.
 
 \bibitem{babcock1994}
 Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)

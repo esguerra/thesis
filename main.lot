@@ -23,10 +23,10 @@
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{80}{table.B.1}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{83}{table.B.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {table}{\numberline {C.1}{\ignorespaces Persistence lengths for common polymers, and biopolymers with filament structures.}}{91}{table.C.1}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Persistence lengths for common polymers, and biopolymers with filament structures.}}{94}{table.C.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
 \gdef \the@ipfilectr {}
