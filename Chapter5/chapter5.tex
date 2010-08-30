@@ -1,17 +1,18 @@
 \chapter{RNA Motifs}
 \label{motifs} 
 \bibliographystyle{nar}
-As mentioned in  Chapter 2 the most common  perspectives for RNA motif
-recognition  and  discovery are  the  atom  and  bond based  ones, the
-rigid-body-based perspective has been  rather unexplored. The two main
-questions that we would like to address in this context are:
+As  mentioned  in  pages 24  and  25  in  Chapter  2 the  most  common
+perspectives for RNA motif recognition  and discovery are the atom and
+bond  based ones,  the  rigid-body-based perspective  has been  rather
+unexplored.  The two  main questions that we would  like to address in
+this context are:
 
 \begin{enumerate}
 \item{Can  the geometric rigid-block  description of  base-pairing and
   base-stacking solve the problem of defining RNA structural motifs?}
-\item{Can we use quantities derived  from the 3DNA software package to
-  make and automatic  search for a known motif,  for example, the GNRA
-  tetraloop motif, and perhaps find unknown motifs?}
+\item{Can other  quantities derived from the 3DNA  software package be
+  used to make and automatic search for known motifs, for example, the
+  GNRA tetraloop motif, and perhaps find unknown motifs?}
 \end{enumerate}
 
 We have started with the  second question and have chosen as workhorse
@@ -25,68 +26,108 @@ The GNRA motif  was initially found to be  an important constituent of
 the small subunit  of the ribosome using the  technique of comparative
 sequence analysis \cite{woese1990}, that is, it was seen that the GNRA
 sequence was frequently repeated  among various organisms, and so were
-other tetraloops. The most abundant  of all tetraloops in the ribosome
-is GNRA  and its structural  stability was initially  characterized by
-NMR studies  \cite{pardi1991}. The  description of the  GNRA tetraloop
-motif is  a typical case of  the problem of RNA  motif definition, for
-example, in  the context of sequence  alone a GNRA motif  would be one
-which follows, in  a consecutive manner, the GNRA  pattern, whereas it
-has  been noticed  that there  can be  GNRA structures  which  are not
-consecutive  in sequence but  have the  same geometric  arrangement of
-bases in  three-dimensional space \cite{lemieux2006}.   A considerable
-amount of studies \cite{depaul2010, sorin2002} have been undertaken using
-MD  techniques  to  explore  the  conformational  space  of  the  GNRA
-tetraloop, for example,
+the CUUG  and UNCG  tetralops which  amount to more  than 70\%  of all
+tetraloops found in the 16S subunit of ribosomal RNA \cite{woese1990,
+  depaul2010}.   The  most  abundant  of  all the  tetraloops  in  the
+ribosome  is   GNRA  and   its  structural  stability   was  initially
+characterized by NMR studies by  Heus and Pardi \cite {heus1991} which
+determined that the loops contain a non-canonical sheared GA base-pair
+flanking the  sequence, a hydrogen bond  between a guanine  base and a
+phosphate, extensive base stacking, and a hydrogen bond between the OH
+of a sugar 2$'$ end and a base \cite{heus1991}.
 
+The description of  the GNRA tetraloop motif is a  typical case of the
+problem  of RNA  motif  definition,  for example,  in  the context  of
+sequence  alone  a  GNRA  motif  would  be one  which  follows,  in  a
+consecutive manner, the GNRA pattern, whereas it has been noticed that
+there can be GNRA structures which are not consecutive in sequence but
+have  the same  geometric  arrangement of  bases in  three-dimensional
+space, and also structures have  the same geometric arrangement as the
+GNRA  tetraloop but  do  not  follow the  same  sequence pattern,  for
+example, UCAA,  UCAC, CAGA  and CAAC \cite{lemieux2006}.   These other
+sequences  which are  geometrically equivalent  to the  GNRA tetraloop
+motif  make a  non-canonical base-pair  which is  isosteric to  the GA
+base-pair,  that is, the  UA, UC,  CA, and  CC base-pairs  closing the
+tetraloops are isosteric to the GA pair \cite{lemieux2006}.
 
+Studies  have   also  been   carried  out  using   molecular  dynamics
+simulations to explore the  conformational space of the GNRA tetraloop
+and the relation  of the conformational states found  in their results
+to existing  X-Ray and  NMR structures available  at the  protein data
+bank \cite{sorin2002, depaul2010}. Also other MD studies have used the
+the  well  known GNRA  motif conformation  as starting  point for
+simulation of  other tetraloops which  do not necessarily turn  out to
+retain a GNRA-like three-dimensional structure \cite{srinivasan1998}.
 
-
-others  have just  used  the  well known  GNRA  motif conformation  as
-starting point for  their simulation of other tetraloops  which do not
-necessarily turn out to retain a GNRA-like three-dimensional structure.
-
-
-
-Case and collaborators used continuum solvent models 
-
-regarding the GNRA motif have been undertaken to
-determine 
-
-MD studies\cite{depaul2010}
-
-Folding by MD.
-
-Conformational Space of GNRA motif
-
+\subsection{GNRA Motif Search Program}
+We have  devised a simple algorithm to search for GNRA  motifs based on
+their base  step parameters.  The  algorithm is illustrated  in Figure
+\ref{fig:getGNRA}.
 
 \begin{figure}
-\centering 
-\includegraphics[angle=0, scale=2]{Chapter5/gnra24.png}
-\caption{GNRA Tetraloop from the \textit{Azoarcus} group I intron,
-  PDB-ID:3iin   \cite{antonioli2010}.}
+\centering
+\includegraphics[angle=0, scale=0.4]{Chapter5/getGNRA.png}
+\caption{Simple algorithm  for GNRA motif  finding based on  base step
+  parameters.}
+\label{fig:getGNRA}
 \end{figure}
+  
+The algorithm allows for any seed to  be used, but for now we only use
+the step parameters  of the GNRA motif as seed  for our algorithm.  We
+are  currently constructing  a  database of  base-step parameters  for
+known motifs, so  that our simple program ``getGNRA''  can be expanded
+to include any known motif the  user wishes to localize in a given RNA
+structure.
 
-We have built an algorithm to search for GNRA motifs, the algortihm is
-illustrated in figure such.
+The  algorithm has  been programed  as a  simple, yet  very  fast bash
+script  which interfaces  with two  other components,  one  written in
+python and the  other written in the statistical  analysis software R.
+For example, for  the large subunit of the  ribosome, PDB-ID:1jj2, the
+program  takes  22.049  seconds  to  download and  analyze  the  whole
+structure. 
 
-The algorithm could take any seed but for now only GNRA. In the future
-the aim is to make a database of motif base-step parameters.
-The seed  is made  up of known  GNRA structures whose  parameters have
-been calculated with 3DNA.
-We have taken the mean single stranded base-step parameters in 14 GNRA
-tetraloops found  in the 1ffk  for the GN,  NR, RA steps and  put them
-into a 3 by 6 matrix. The values can be seen in table:
+The  program, which  we have  called ``getGNRA'',  allows the  user to
+query any pdb id. That is, the user only needs to input in the command
+line of a UNIX/LINUX terminal the command, ``getGNRA'' followed by the
+PDB ID of the RNA molecule of interest. As a result the user obtains a
+list composed of residue numbers  corresponding to the location of the
+start of the motif in the  structure, and a score which stands for how
+close or far  a four nucleotide sequential structure  is from the GNRA
+motif seed.   The advantage  of our program  over other  windows based
+motif  recognition softwares,  besides from  providing a  new analysis
+based on rigid-body parameters, is that it allows for easy integration
+of  automated  scripts  for   processing  large  lists  of  known  pdb
+structures  without  user  intervention   for  the  analysis  of  every
+structure. For  example, in the RNA ontology  consortium (ROC) meeting
+of  May,  2009   a  reduced  dataset  of  RNA   structures  found  at:
+\url{https://docs.google.com/Doc?id=dhrmkfmn_13ftpbjcgq}    was   made
+available to participants with the  purpose of allowing them to search
+for RNA  motifs which  would later be  compared between  groups. Using
+windows  based  softwares   like  FR3D  \cite{sarver2008}  it's  quite
+difficult,  if not  impossible, for  the user  to submit  a  large job
+composed  of many  pdb structures  to a  queing system,  or  a cluster
+computing server, such task is quite simple using getGNRA.
+
+We  have  taken the  mean  single stranded  base-step
+parameters in 14 GNRA tetraloops found  in the 1ffk for the GN, NR, RA
+steps and  put them into a  3 by 6 matrix.  The values can  be seen in
+table:
 
 We  compute the  sum of  the difference  between the  GNRA  matrix and
 sequential 3 by six  matrices resulting from the step-parameter output
 of 3DNA. With  this score we can find the GNRA  tetraloops given a pdb
 file.
 
-In the  RNA ontology consortium (ROC)  meeting of May,  2009 a reduced
-dataset        of        RNA        structures        found        at:
-\url{https://docs.google.com/Doc?id=dhrmkfmn_13ftpbjcgq}    was   made
-available to participants with the  purpose of allowing them to search
-for RNA motifs, which would later be compared between groups.
+\begin{figure}
+\centering 
+%\includegraphics[angle=0]{Chapter5/gnra24.png}
+\includegraphics[angle=0, scale=2]{Chapter5/gnra24.png}
+\caption{A GNRA Tetraloop from the \textit{Azoarcus} group I intron,
+  PDB-ID:3iin  \cite{antonioli2010}  found  using our  simple  program
+  getGNRA.}
+\end{figure}
+
+
 
 We have started with just a few, five. The results are shown in:
 

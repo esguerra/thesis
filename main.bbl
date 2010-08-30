@@ -811,18 +811,24 @@ Woese, C.~R., Winker, S., and Gutell, R.~R. (1990)
 {\em Proceedings of the National Academy of Sciences of the United States of
   America,} {\bf 87}, 8467--8471.
 
-\bibitem{heus1991}
-Heus, H.~A. and Pardi, A. (1991)
-{Structural Features That Give Rise to the Unusual Stability of RNA Hairpins
-  Containing GNRA Loops}.
-{\em Science,} {\bf 253}, 191--194.
-
 \bibitem{depaul2010}
 Depaul, A.~J., Thompson, E.~J., Patel, S.~S., Haldeman, K., and Sorin, E.~J.
   (2010)
 {Equilibrium Conformational Dynamics in an RNA Tetraloop From Massively
   Parallel Molecular Dynamics}.
 {\em Nucleic Acids Research,}.
+
+\bibitem{heus1991}
+Heus, H.~A. and Pardi, A. (1991)
+{Structural Features That Give Rise to the Unusual Stability of RNA Hairpins
+  Containing GNRA Loops}.
+{\em Science,} {\bf 253}, 191--194.
+
+\bibitem{sorin2002}
+Sorin, E.~J., Engelhardt, M.~A., and Herschlag, D. (2002)
+Rna simulations: Probing hairpin unfolding and the dynamics of a gnra
+  tetraloop.
+{\em Journal of Molecular Biology,} {\bf 317}, 493--506.
 
 \bibitem{babcock1994}
 Babcock, M.~S., Pednault, E. P.~D., and Olson, W.~K. (1994)
