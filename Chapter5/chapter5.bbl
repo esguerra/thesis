@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{lu2003}
 Lu, X.-J. and Olson, W. (2003)
@@ -39,9 +39,20 @@ Lemieux, S. and Major, F. (2006)
 
 \bibitem{sorin2002}
 Sorin, E.~J., Engelhardt, M.~A., and Herschlag, D. (2002)
-Rna simulations: Probing hairpin unfolding and the dynamics of a gnra
-  tetraloop.
+{RNA Simulations: Probing Hairpin Unfolding and the Dynamics of a GNRA
+  Tetraloop}.
 {\em Journal of Molecular Biology,} {\bf 317}, 493--506.
+
+\bibitem{srinivasan1998}
+Srinivasan, J., Miller, J., Kollman, P.~A., and Case, D.~A. (1998)
+{Continuum Solvent Studies of the Stability of RNA Hairpin Loops and Helices}.
+{\em Journal of Biomolecular Structure and Dynamics,} {\bf 16}, 671--682.
+
+\bibitem{sarver2008}
+Sarver, M., Zirbel, C.~L., Stombaugh, J., Mokdad, A., and Leontis, N.~B. (2008)
+{FR3D: Finding Local and Composite Recurrent Structural Motifs in RNA 3D
+  Structures}.
+{\em Journal of Mathematical Biology,} {\bf 56}, 215--252.
 
 \bibitem{antonioli2010}
 Antonioli, A.~H., Cochrane, J.~C., Lipchock, S.~V., and Strobel, S.~A. (2010)
