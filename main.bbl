@@ -1,5 +1,11 @@
 \begin{thebibliography}{100}
 
+\bibitem{lemieux2006}
+Lemieux, S. and Major, F. (2006)
+{Automated Extraction and Classification of RNA Tertiary Structure Cyclic
+  Motifs}.
+{\em Nucleic Acids Research,} {\bf 34}, 2340--2346.
+
 \bibitem{ndburl}
 \url{http://ndbserver.rutgers.edu/atlas/atlas_about.html}.
 
@@ -611,12 +617,6 @@ R{NA} {S}tructure {C}omparison, {M}otif {S}earch and {D}iscovery {U}sing a
   {R}educed {R}epresentation of {RNA} {C}onformational {S}pace.
 {\em Nucleic {A}cids {R}esearch,} {\bf 31}, 4755--4761.
 
-\bibitem{lemieux2006}
-Lemieux, S. and Major, F. (2006)
-{Automated Extraction and Classification of RNA Tertiary Structure Cyclic
-  Motifs}.
-{\em Nucleic Acids Research,} {\bf 34}, 2340--2346.
-
 \bibitem{nasalean2009}
 Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
 Vol. 13,  of  Springer Series in Biophysics chapter Chapter I, pp. 1--26
@@ -834,6 +834,13 @@ Sorin, E.~J., Engelhardt, M.~A., and Herschlag, D. (2002)
 Srinivasan, J., Miller, J., Kollman, P.~A., and Case, D.~A. (1998)
 {Continuum Solvent Studies of the Stability of RNA Hairpin Loops and Helices}.
 {\em Journal of Biomolecular Structure and Dynamics,} {\bf 16}, 671--682.
+
+\bibitem{spackova2010}
+Spackova, N., Reblova, K., and Sponer, J. (2010)
+{Structural Dynamics of the Box C/D RNA Kink-Turn and its Complex with
+  Proteins: The Role of the A-Minor 0 Interaction, Long-Residency Water
+  Bridges, and Structural Ion-Binding Sites Revealed by Molecular Simulations}.
+{\em Journal of Physical Chemistry B,} {\bf 114}, 10581--10593.
 
 \bibitem{sarver2008}
 Sarver, M., Zirbel, C.~L., Stombaugh, J., Mokdad, A., and Leontis, N.~B. (2008)
