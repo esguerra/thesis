@@ -33,9 +33,21 @@ the tetraloops in  the ribosome is the GNRA  motif, and its structural
 stability was  initially characterized using NMR  spectroscopy by Heus
 and  Pardi \cite{heus1991}  who determined  that the  loops  contain a
 non-canonical  sheared G$\cdot$A  base-pair flanking  the  sequence, a
-hydrogen bond between a guanine base and a phosphate, extensive base
-stacking, and a hydrogen bond between the hydroxyl group of a ribose
-and a base \cite{heus1991}.
+hydrogen bond between  a guanine base and a  phosphate, extensive base
+stacking, and a  hydrogen bond between the hydroxyl  group of a ribose
+and  a base  \cite{heUs1991},  such  features can  be  seen in  Figure
+\ref{fig:gnrablocks}
+
+\begin{figure}
+\centering
+%\includegraphics[angle=0]{Chapter5/gnra24.png}
+\includegraphics[angle=0, scale=2]{Chapter5/gnra24.png}
+\caption{A GNRA Tetraloop from the \textit{Azoarcus} group I intron,
+  PDB-ID:3iin  \cite{antonioli2010}  found  using our  simple  program
+  getMotif.}
+\label{fig:gnrablocks}
+\end{figure}
+
 
 The description of  the GNRA tetraloop motif is a  typical case of the
 problem  of RNA  motif  definition,  for example,  in  the context  of
@@ -177,25 +189,206 @@ our  purposes of  GNRA motif  identification we  want to  select those
 scores  which reflect  a  shorter  distance to  our  seed GNRA  motif,
 therefore we have used a cutoff of 150 in our score.
 
-Using our program  in the list of 355 of RNA  strucutures given by the
+Using our  program in the list of  355 of RNA structures  given by the
 ROC, and the selected cutoff value of 150 we find that 60 out of these
-355 structures have at least one GNRA  3D motif in them. A list of all
-identified motifs in these 60 structures can be seen in Table such.
-
-\begin{}
-\end{}
+355 structures have at least one GNRA  3D motif in them and a total of
+166 GNRA Motifs are found. A list of all identified motifs in these 60
+structures can be seen in Table \ref{tab:gnrascores}.
 
 
+\begin{center}
+\begin{longtable}{c|c|c|c}
+\caption{GNRA Motif Scores.}
+\label{tab:gnrascores}\\
+%This is the header for the first page of the table...
+\bf{pdb\_id} & \bf{resnum} & \bf{score} &
+\bf{num\_gnra}   \\  \hline \hline
+\endfirsthead
+
+%This is the header for the remaining page(s) of the table...
+\multicolumn{4}{r}{{\tablename} \thetable{} -- Continued} \\
+\bf{pdb\_id} & \bf{resnum} & \bf{score} &
+\bf{num\_gnra} \\  \hline \hline
+
+\endhead
+
+%This is the footer for all pages except the last page of the table...
+\multicolumn{4}{r}{Continued on Next Page\ldots} \\
+\endfoot
+%This is the footer for the last page of the table...
+\endlastfoot
+
+1a9n & 13 & 102.64 & 1 \\ \hline
+1a9n & 13 & 90.29 & 2 \\ \hline
+1e8o & 113 & 140.89 & 1 \\ \hline
+1eiy & 33 & 142.7 & 1 \\ \hline
+1eiy & 55 & 144.01 & 2 \\ \hline
+1ffy & 55 & 115.03 & 1 \\ \hline
+1fg0 & 2249 & 96.68 & 1 \\ \hline
+1fg0 & 2412 & 62.7 & 2 \\ \hline
+1fg0 & 2598 & 114.58 & 3 \\ \hline
+1fg0 & 2630 & 116.28 & 4 \\ \hline
+1g1x & 591 & 85.73 & 1 \\ \hline
+1g1x & 591 & 119.13 & 2 \\ \hline
+1g1x & 727 & 89.86 & 3 \\ \hline
+1gax & 954 & 81.57 & 1 \\ \hline
+1gax & 954 & 148.97 & 2 \\ \hline
+1gid & 150 & 92.03 & 1 \\ \hline
+1gid & 150 & 97.91 & 2 \\ \hline
+1hmh & 21 & 68.09 & 1 \\ \hline
+1hmh & 21 & 54.61 & 2 \\ \hline
+1hmh & 21 & 54.91 & 3 \\ \hline
+1i9v & 33 & 106.15 & 1 \\ \hline
+1j1u & 556 & 91.83 & 1 \\ \hline
+1kxk & 34 & 90.35 & 1 \\ \hline
+1lng & 209 & 55.75 & 1 \\ \hline
+1mfq & 198 & 64.23 & 1 \\ \hline
+1mme & 31 & 116.21 & 1 \\ \hline
+1msy & 2659 & 137.88 & 1 \\ \hline
+1mzp & 15 & 126.76 & 1 \\ \hline
+1mzp & 26 & 44.65 & 2 \\ \hline
+1mzp & 39 & 115.47 & 3 \\ \hline
+1q93 & 14 & 35.06 & 1 \\ \hline
+1q93 & 14 & 47.76 & 2 \\ \hline
+1q93 & 14 & 84.13 & 3 \\ \hline
+1qa6 & 144 & 111.23 & 1 \\ \hline
+1qa6 & 144 & 111.22 & 2 \\ \hline
+1qrs & 55 & 118.61 & 1 \\ \hline
+1ser & 57 & 125.96 & 1 \\ \hline
+1u0b & 33 & 119.89 & 1 \\ \hline
+1u0b & 55 & 88.45 & 2 \\ \hline
+1u9s & 100 & 86.55 & 1 \\ \hline
+1u9s & 171 & 92.83 & 2 \\ \hline
+1u9s & 205 & 83.06 & 3 \\ \hline
+1un6 & 83 & 63.76 & 1 \\ \hline
+1un6 & 83 & 56.8 & 2 \\ \hline
+1wz2 & 967 & 90.89 & 1 \\ \hline
+1wz2 & 967 & 105.98 & 2 \\ \hline
+1x8w & 150 & 95.32 & 1 \\ \hline
+1x8w & 150 & 108.74 & 2 \\ \hline
+1x8w & 150 & 92.85 & 3 \\ \hline
+1x8w & 150 & 126.85 & 4 \\ \hline
+1x8w & 323 & 111.79 & 5 \\ \hline
+1x8w & 323 & 106.96 & 6 \\ \hline
+1x8w & 323 & 73.53 & 7 \\ \hline
+1x8w & 323 & 135.09 & 8 \\ \hline
+1x8w & 150 & 87.62 & 9 \\ \hline
+1y0q & 102 & 84.92 & 1 \\ \hline
+1y0q & 131 & 70.43 & 2 \\ \hline
+1y0q & 205 & 119.3 & 3 \\ \hline
+1y0q & 227 & 73.19 & 4 \\ \hline
+1y39 & 145 & 77.72 & 1 \\ \hline
+1y39 & 318 & 148.69 & 2 \\ \hline
+1y39 & 346 & 67.49 & 3 \\ \hline
+1yrj & 2 & 149.47 & 1 \\ \hline
+299d & 31 & 104.46 & 1 \\ \hline
+2a2e & 115 & 120.39 & 1 \\ \hline
+2a2e & 146 & 138.22 & 2 \\ \hline
+2avy & 159 & 85.66 & 1 \\ \hline
+2avy & 187 & 139.27 & 2 \\ \hline
+2avy & 261 & 134.84 & 3 \\ \hline
+2avy & 297 & 63.03 & 4 \\ \hline
+2avy & 324 & 63.76 & 5 \\ \hline
+2avy & 727 & 120.93 & 6 \\ \hline
+2avy & 863 & 56.25 & 7 \\ \hline
+2avy & 898 & 72.34 & 8 \\ \hline
+2avy & 1013 & 105.65 & 9 \\ \hline
+2avy & 1077 & 70.67 & 10 \\ \hline
+2avy & 1178 & 142.03 & 11 \\ \hline
+2avy & 1266 & 122.78 & 12 \\ \hline
+2avy & 1516 & 120.63 & 13 \\ \hline
+2aw4 & 307 & 63.02 & 1 \\ \hline
+2aw4 & 463 & 71.97 & 2 \\ \hline
+2aw4 & 476 & 85.39 & 3 \\ \hline
+2aw4 & 500 & 132.94 & 4 \\ \hline
+2aw4 & 568 & 130.13 & 5 \\ \hline
+2aw4 & 630 & 29.51 & 6 \\ \hline
+2aw4 & 1066 & 147.12 & 7 \\ \hline
+2aw4 & 1094 & 85.04 & 8 \\ \hline
+2aw4 & 1223 & 109.33 & 9 \\ \hline
+2aw4 & 1283 & 134.11 & 10 \\ \hline
+2aw4 & 1364 & 142.24 & 11 \\ \hline
+2aw4 & 1753 & 148.22 & 12 \\ \hline
+2aw4 & 2357 & 140.4 & 13 \\ \hline
+2aw4 & 2375 & 118.98 & 14 \\ \hline
+2aw4 & 2563 & 101.67 & 15 \\ \hline
+2aw4 & 2595 & 63 & 16 \\ \hline
+2aw4 & 2659 & 98.64 & 17 \\ \hline
+2aw4 & 2857 & 124.47 & 18 \\ \hline
+2azx & 555 & 128.91 & 1 \\ \hline
+2azx & 555 & 120.26 & 2 \\ \hline
+2azx & 533 & 86.63 & 3 \\ \hline
+2bte & 55 & 111.73 & 1 \\ \hline
+2bte & 55 & 113.08 & 2 \\ \hline
+2bte & 47 & 97.52 & 3 \\ \hline
+2cv1 & 555 & 110.38 & 1 \\ \hline
+2cv1 & 555 & 143.3 & 2 \\ \hline
+2cv1 & 533 & 115.68 & 3 \\ \hline
+2d6f & 955 & 123.47 & 1 \\ \hline
+2der & 55 & 97.46 & 1 \\ \hline
+2der & 55 & 109.27 & 2 \\ \hline
+2du3 & 954 & 91.11 & 1 \\ \hline
+2ez6 & 12 & 40.55 & 1 \\ \hline
+2ez6 & 12 & 78.64 & 2 \\ \hline
+2fk6 & 55 & 82.88 & 1 \\ \hline
+2gis & 50 & 76.69 & 1 \\ \hline
+2gis & 74 & 120.46 & 2 \\ \hline
+2nuf & 12 & 53.81 & 1 \\ \hline
+2nuf & 12 & 85.88 & 2 \\ \hline
+2oiu & 11 & 54.12 & 1 \\ \hline
+2oiu & 11 & 40.81 & 2 \\ \hline
+2oiu & 29 & 68.1 & 3 \\ \hline
+2oiu & 29 & 46.09 & 4 \\ \hline
+2oiu & 60 & 82.5 & 5 \\ \hline
+2oiu & 60 & 54.12 & 6 \\ \hline
+2oiu & 11 & 40.81 & 7 \\ \hline
+2oiu & 11 & 68.1 & 8 \\ \hline
+2oiu & 60 & 46.09 & 9 \\ \hline
+2oiu & 60 & 82.5 & 10 \\ \hline
+2pxb & 154 & 122 & 1 \\ \hline
+2qbz & 69 & 64.96 & 1 \\ \hline
+2r8s & 150 & 96.51 & 1 \\ \hline
+2v0g & 55 & 115.9 & 1 \\ \hline
+2zjr & 318 & 124 & 1 \\ \hline
+2zjr & 474 & 81.77 & 2 \\ \hline
+2zjr & 487 & 85.41 & 3 \\ \hline
+2zjr & 499 & 98.72 & 4 \\ \hline
+2zjr & 510 & 73.97 & 5 \\ \hline
+2zjr & 641 & 66.46 & 6 \\ \hline
+2zjr & 1105 & 141.11 & 7 \\ \hline
+2zjr & 1236 & 126.54 & 8 \\ \hline
+2zjr & 1296 & 105.81 & 9 \\ \hline
+2zjr & 1664 & 116.55 & 10 \\ \hline
+2zjr & 1857 & 72.89 & 11 \\ \hline
+2zjr & 1927 & 133.68 & 12 \\ \hline
+2zjr & 2336 & 88.12 & 13 \\ \hline
+2zjr & 2354 & 79.55 & 14 \\ \hline
+2zjr & 2542 & 126.04 & 15 \\ \hline
+2zjr & 2574 & 111.64 & 16 \\ \hline
+2zjr & 2638 & 57.66 & 17 \\ \hline
+2zjr & 2832 & 138.56 & 18 \\ \hline
+2zni & 33 & 105.61 & 1 \\ \hline
+397d & 25 & 143.85 & 1 \\ \hline
+3cul & 9 & 138.6 & 1 \\ \hline
+3cul & 71 & 123.88 & 2 \\ \hline
+3cul & 108 & 87.43 & 3 \\ \hline
+3d0u & 143 & 98 & 1 \\ \hline
+3e5c & 20 & 44.19 & 1 \\ \hline
+3e5c & 43 & 76.79 & 2 \\ \hline
+3epj & 55 & 131.24 & 1 \\ \hline
+3epj & 55 & 84.37 & 2 \\ \hline
+3f4e & 19 & 87.02 & 1 \\ \hline
+3f4e & 70 & 129.22 & 2 \\ \hline
+3foz & 55 & 119.39 & 1 \\ \hline
+3foz & 55 & 103.9 & 2 \\ \hline
+3gca & 8 & 99.44 & 1 \\ \hline
+430d & 14 & 48.21 & 1 \\ \hline
+488d & 31 & 144.68 & 1 \\ \hline
+\end{longtable}
+\end{center}
 
 
-\begin{figure}
-\centering 
-%\includegraphics[angle=0]{Chapter5/gnra24.png}
-\includegraphics[angle=0, scale=2]{Chapter5/gnra24.png}
-\caption{A GNRA Tetraloop from the \textit{Azoarcus} group I intron,
-  PDB-ID:3iin  \cite{antonioli2010}  found  using our  simple  program
-  getMotif.}
-\end{figure}
+Automation "Problems/Issues".
 
 
 The  algorithm still  falls for  cases  where the  pdb structures  are
@@ -203,6 +396,14 @@ non-sequential and  have large jumps  in sequence, or where  there are
 more than one  single stranded chain, for example  in 1ffk since there
 are two residues which are numbered 90, one in the 23S, and one in the
 5S, then it finds a mismatch on the 23S.
+
+Also on 1hmh has an offset  in the motif starting residue number. Even
+though the score is right, the sequence number for the motif is offset
+by four.
+
+Need to split chains and treat separately.
+
+
 
 
 %\section{Canonical "Noise"}
