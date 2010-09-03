@@ -41,13 +41,16 @@ and  a base  \cite{heUs1991},  such  features can  be  seen in  Figure
 \begin{figure}
 \centering
 %\includegraphics[angle=0]{Chapter5/gnra24.png}
-\includegraphics[angle=0, scale=2]{Chapter5/gnra24.png}
-\caption{A GNRA Tetraloop from the \textit{Azoarcus} group I intron,
-  PDB-ID:3iin  \cite{antonioli2010}  found  using our  simple  program
-  getMotif.}
+\includegraphics[angle=0, scale=0.8]{Chapter5/gnra21L2.png}
+\caption{The   GNRA  tetraloop  motif   in  the   hammerhead  ribozyme
+  PDBIB:1hmh \cite{pley1994} is not a newly recognized GNRA tetraloop,
+  but it's positively recognized using our rigid-body parameters based
+  motif  search program ``getMotif''  in a  non-redundant list  of RNA
+  structures made available by the RNA ontology consortium (ROC).  The
+  hydrogen bonds between purines and purine-sugar purine-phosphate are
+  shown in black dashed lines.}
 \label{fig:gnrablocks}
 \end{figure}
-
 
 The description of  the GNRA tetraloop motif is a  typical case of the
 problem  of RNA  motif  definition,  for example,  in  the context  of
@@ -193,8 +196,11 @@ Using our  program in the list of  355 of RNA structures  given by the
 ROC, and the selected cutoff value of 150 we find that 60 out of these
 355 structures have at least one GNRA  3D motif in them and a total of
 166 GNRA Motifs are found. A list of all identified motifs in these 60
-structures can be seen in Table \ref{tab:gnrascores}.
+structures  can  be  seen  in  Table  \ref{tab:gnrascores},  where  an
+additional  check for consistency  is that  of having  zero endocyclic
+overlap in the first step of the tetraloop.
 
+It takes 7m 29s to find the GNRA motifs in the ROC list.
 
 \begin{center}
 \begin{longtable}{c|c|c|c}
@@ -386,25 +392,6 @@ structures can be seen in Table \ref{tab:gnrascores}.
 488d & 31 & 144.68 & 1 \\ \hline
 \end{longtable}
 \end{center}
-
-
-Automation "Problems/Issues".
-
-
-The  algorithm still  falls for  cases  where the  pdb structures  are
-non-sequential and  have large jumps  in sequence, or where  there are
-more than one  single stranded chain, for example  in 1ffk since there
-are two residues which are numbered 90, one in the 23S, and one in the
-5S, then it finds a mismatch on the 23S.
-
-Also on 1hmh has an offset  in the motif starting residue number. Even
-though the score is right, the sequence number for the motif is offset
-by four.
-
-Need to split chains and treat separately.
-
-
-
 
 %\section{Canonical "Noise"}
 %To be able to say anything about motifs it's crucial to get rid of the
