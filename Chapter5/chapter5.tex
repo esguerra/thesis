@@ -1,10 +1,9 @@
 \chapter{RNA Motifs}
 \label{motifs} 
-\bibliographystyle{nar}
-As  mentioned  in  pages 24  and  25  of  Chapter  2 the  most  common
-perspectives for RNA motif recognition  and discovery are the atom and
-bond  based ones,  the  rigid-body-based perspective  has been  rather
-unexplored.  The two  main questions that we would  like to address in
+\bibliographystyle{nar} As mentioned  in pages 24 and 25  of Chapter 2
+the most  common perspectives for RNA motif  recognition and discovery
+are the atom and bond based ones, the rigid-body-based perspective has
+been rather  unexplored.  The  two main questions  that we  address in
 this context are:
 
 \begin{enumerate}
@@ -15,11 +14,11 @@ this context are:
   GNRA tetraloop motif, and perhaps find unknown motifs?}
 \end{enumerate}
 
-We have started with the  second question and have chosen as workhorse
-the  well  known  GNRA  tetraloop  motif.  We  have  also  used  other
+We start with the  second question and have chosen as workhorse
+the  well  known  GNRA  tetraloop  motif.  We  also  used  other
 quantities  (e.g.  endocyclic  and  exocyclic base-overlaps)  obtained
-with  the  3DNA \cite{lu2003,  lu2008b}  package,  and explored  their
-relationship to RNA motifs.
+with the 3DNA \cite{lu2003, lu2008b} package to  complement the
+automated search for GNRA tetraloop motifs.
 
 \section{The GNRA Tetraloop}
 The GNRA motif  was initially found to be  an important constituent of
@@ -35,20 +34,21 @@ and  Pardi \cite{heus1991}  who determined  that the  loops  contain a
 non-canonical  sheared G$\cdot$A  base-pair flanking  the  sequence, a
 hydrogen bond between  a guanine base and a  phosphate, extensive base
 stacking, and a  hydrogen bond between the hydroxyl  group of a ribose
-and  a base  \cite{heUs1991},  such  features can  be  seen in  Figure
-\ref{fig:gnrablocks}
+and  a base  \cite{heus1991},  such  features can  be  seen in  Figure
+\ref{fig:gnrablocks}.
 
 \begin{figure}
 \centering
 %\includegraphics[angle=0]{Chapter5/gnra24.png}
-\includegraphics[angle=0, scale=0.8]{Chapter5/gnra21L2.png}
+\includegraphics[angle=0, scale=0.38]{Chapter5/gnra21L2.png}
 \caption{The   GNRA  tetraloop  motif   in  the   hammerhead  ribozyme
-  PDBIB:1hmh \cite{pley1994} is not a newly recognized GNRA tetraloop,
-  but it's positively recognized using our rigid-body parameters based
-  motif  search program ``getMotif''  in a  non-redundant list  of RNA
-  structures made available by the RNA ontology consortium (ROC).  The
-  hydrogen bonds between purines and purine-sugar purine-phosphate are
-  shown in black dashed lines.}
+  PDBIB:1hmh  \cite{pley1994}  although not  a  newly recognized  GNRA
+  tetraloop,   it's  positively   recognized   using  our   rigid-body
+  parameters RNA motif search  program ``getMotif''. The structure was
+  selected from a non-redundant list of RNA structures provided by the
+  RNA  ontology consortium (ROC).   The hydrogen  bonding interactions
+  described  by  Heus and  Pardi  \cite{heus1991}  as  results of  NMR
+  experiments are shown in black dashed lines.}
 \label{fig:gnrablocks}
 \end{figure}
 
@@ -192,206 +192,44 @@ our  purposes of  GNRA motif  identification we  want to  select those
 scores  which reflect  a  shorter  distance to  our  seed GNRA  motif,
 therefore we have used a cutoff of 150 in our score.
 
-Using our  program in the list of  355 of RNA structures  given by the
-ROC, and the selected cutoff value of 150 we find that 60 out of these
-355 structures have at least one GNRA  3D motif in them and a total of
-166 GNRA Motifs are found. A list of all identified motifs in these 60
-structures  can  be  seen  in  Table  \ref{tab:gnrascores},  where  an
-additional  check for consistency  is that  of having  zero endocyclic
-overlap in the first step of the tetraloop.
+Using our program in a list of 355 RNA structures provided by the ROC,
+and  the selected cutoff  value of  150 we  find in  7 minutes  and 29
+seconds that 75  out of these 355 structures  are identified as having
+at least one GNRA 3D motif,  and a total of 211 GNRA Motif candidates.
+The list of  all identified motifs in these 75  structures in shown in
+Table \ref{tab:gnrascores}, where  an additional check for consistency
+is that  of having zero  endocyclic overlap in  the first step  of the
+tetraloop, as can be seen in the next to last column of the table.  We
+also see that 67\% of  the identified GNRA motif candidates start with
+a GN  step, and  interestingly, almost one  third (27\%) of  the first
+steps identified  are UN  steps, also a  few of the  identified motifs
+start with AN and CN steps.
 
-It takes 7m 29s to find the GNRA motifs in the ROC list.
+To  further  analyze the  result  of  identification  of motifs  using
+``getMotif'' we focused our  attention on the ribosomal structure with
+PDBID:2jo1 which is included in the ROC list.  As can be seen in Table
+\ref{tab:gnrascores} for the 2jo1 entry, the program recognizes twenty
+GNRA tetraloop motif candidates, which  are all in fact tetraloops, 14
+of  them conform  to the  GNRA  sequence, 5  start with  UN, one  with
+A. When  aligned using the reference  frame of the first  two bases we
+see  that  they   belong  to  two  main  groups.    Which  are  mainly
+differentiated by the rise of the last step.
 
-\begin{center}
-\begin{longtable}{c|c|c|c}
-\caption{GNRA Motif Scores.}
-\label{tab:gnrascores}\\
-%This is the header for the first page of the table...
-\bf{pdb\_id} & \bf{resnum} & \bf{score} &
-\bf{num\_gnra}   \\  \hline \hline
-\endfirsthead
+The first step of the  identified candidates is shown in a scatterplot
+\ref{fig:scattergnra} of step-parameter  values, where it's clear that
+they  constitute  a well  defined  region  of  the space  of  possible
+rigid-body parameter configuration space  for the large subunit of the
+ribosome.
 
-%This is the header for the remaining page(s) of the table...
-\multicolumn{4}{r}{{\tablename} \thetable{} -- Continued} \\
-\bf{pdb\_id} & \bf{resnum} & \bf{score} &
-\bf{num\_gnra} \\  \hline \hline
-
-\endhead
-
-%This is the footer for all pages except the last page of the table...
-\multicolumn{4}{r}{Continued on Next Page\ldots} \\
-\endfoot
-%This is the footer for the last page of the table...
-\endlastfoot
-
-1a9n & 13 & 102.64 & 1 \\ \hline
-1a9n & 13 & 90.29 & 2 \\ \hline
-1e8o & 113 & 140.89 & 1 \\ \hline
-1eiy & 33 & 142.7 & 1 \\ \hline
-1eiy & 55 & 144.01 & 2 \\ \hline
-1ffy & 55 & 115.03 & 1 \\ \hline
-1fg0 & 2249 & 96.68 & 1 \\ \hline
-1fg0 & 2412 & 62.7 & 2 \\ \hline
-1fg0 & 2598 & 114.58 & 3 \\ \hline
-1fg0 & 2630 & 116.28 & 4 \\ \hline
-1g1x & 591 & 85.73 & 1 \\ \hline
-1g1x & 591 & 119.13 & 2 \\ \hline
-1g1x & 727 & 89.86 & 3 \\ \hline
-1gax & 954 & 81.57 & 1 \\ \hline
-1gax & 954 & 148.97 & 2 \\ \hline
-1gid & 150 & 92.03 & 1 \\ \hline
-1gid & 150 & 97.91 & 2 \\ \hline
-1hmh & 21 & 68.09 & 1 \\ \hline
-1hmh & 21 & 54.61 & 2 \\ \hline
-1hmh & 21 & 54.91 & 3 \\ \hline
-1i9v & 33 & 106.15 & 1 \\ \hline
-1j1u & 556 & 91.83 & 1 \\ \hline
-1kxk & 34 & 90.35 & 1 \\ \hline
-1lng & 209 & 55.75 & 1 \\ \hline
-1mfq & 198 & 64.23 & 1 \\ \hline
-1mme & 31 & 116.21 & 1 \\ \hline
-1msy & 2659 & 137.88 & 1 \\ \hline
-1mzp & 15 & 126.76 & 1 \\ \hline
-1mzp & 26 & 44.65 & 2 \\ \hline
-1mzp & 39 & 115.47 & 3 \\ \hline
-1q93 & 14 & 35.06 & 1 \\ \hline
-1q93 & 14 & 47.76 & 2 \\ \hline
-1q93 & 14 & 84.13 & 3 \\ \hline
-1qa6 & 144 & 111.23 & 1 \\ \hline
-1qa6 & 144 & 111.22 & 2 \\ \hline
-1qrs & 55 & 118.61 & 1 \\ \hline
-1ser & 57 & 125.96 & 1 \\ \hline
-1u0b & 33 & 119.89 & 1 \\ \hline
-1u0b & 55 & 88.45 & 2 \\ \hline
-1u9s & 100 & 86.55 & 1 \\ \hline
-1u9s & 171 & 92.83 & 2 \\ \hline
-1u9s & 205 & 83.06 & 3 \\ \hline
-1un6 & 83 & 63.76 & 1 \\ \hline
-1un6 & 83 & 56.8 & 2 \\ \hline
-1wz2 & 967 & 90.89 & 1 \\ \hline
-1wz2 & 967 & 105.98 & 2 \\ \hline
-1x8w & 150 & 95.32 & 1 \\ \hline
-1x8w & 150 & 108.74 & 2 \\ \hline
-1x8w & 150 & 92.85 & 3 \\ \hline
-1x8w & 150 & 126.85 & 4 \\ \hline
-1x8w & 323 & 111.79 & 5 \\ \hline
-1x8w & 323 & 106.96 & 6 \\ \hline
-1x8w & 323 & 73.53 & 7 \\ \hline
-1x8w & 323 & 135.09 & 8 \\ \hline
-1x8w & 150 & 87.62 & 9 \\ \hline
-1y0q & 102 & 84.92 & 1 \\ \hline
-1y0q & 131 & 70.43 & 2 \\ \hline
-1y0q & 205 & 119.3 & 3 \\ \hline
-1y0q & 227 & 73.19 & 4 \\ \hline
-1y39 & 145 & 77.72 & 1 \\ \hline
-1y39 & 318 & 148.69 & 2 \\ \hline
-1y39 & 346 & 67.49 & 3 \\ \hline
-1yrj & 2 & 149.47 & 1 \\ \hline
-299d & 31 & 104.46 & 1 \\ \hline
-2a2e & 115 & 120.39 & 1 \\ \hline
-2a2e & 146 & 138.22 & 2 \\ \hline
-2avy & 159 & 85.66 & 1 \\ \hline
-2avy & 187 & 139.27 & 2 \\ \hline
-2avy & 261 & 134.84 & 3 \\ \hline
-2avy & 297 & 63.03 & 4 \\ \hline
-2avy & 324 & 63.76 & 5 \\ \hline
-2avy & 727 & 120.93 & 6 \\ \hline
-2avy & 863 & 56.25 & 7 \\ \hline
-2avy & 898 & 72.34 & 8 \\ \hline
-2avy & 1013 & 105.65 & 9 \\ \hline
-2avy & 1077 & 70.67 & 10 \\ \hline
-2avy & 1178 & 142.03 & 11 \\ \hline
-2avy & 1266 & 122.78 & 12 \\ \hline
-2avy & 1516 & 120.63 & 13 \\ \hline
-2aw4 & 307 & 63.02 & 1 \\ \hline
-2aw4 & 463 & 71.97 & 2 \\ \hline
-2aw4 & 476 & 85.39 & 3 \\ \hline
-2aw4 & 500 & 132.94 & 4 \\ \hline
-2aw4 & 568 & 130.13 & 5 \\ \hline
-2aw4 & 630 & 29.51 & 6 \\ \hline
-2aw4 & 1066 & 147.12 & 7 \\ \hline
-2aw4 & 1094 & 85.04 & 8 \\ \hline
-2aw4 & 1223 & 109.33 & 9 \\ \hline
-2aw4 & 1283 & 134.11 & 10 \\ \hline
-2aw4 & 1364 & 142.24 & 11 \\ \hline
-2aw4 & 1753 & 148.22 & 12 \\ \hline
-2aw4 & 2357 & 140.4 & 13 \\ \hline
-2aw4 & 2375 & 118.98 & 14 \\ \hline
-2aw4 & 2563 & 101.67 & 15 \\ \hline
-2aw4 & 2595 & 63 & 16 \\ \hline
-2aw4 & 2659 & 98.64 & 17 \\ \hline
-2aw4 & 2857 & 124.47 & 18 \\ \hline
-2azx & 555 & 128.91 & 1 \\ \hline
-2azx & 555 & 120.26 & 2 \\ \hline
-2azx & 533 & 86.63 & 3 \\ \hline
-2bte & 55 & 111.73 & 1 \\ \hline
-2bte & 55 & 113.08 & 2 \\ \hline
-2bte & 47 & 97.52 & 3 \\ \hline
-2cv1 & 555 & 110.38 & 1 \\ \hline
-2cv1 & 555 & 143.3 & 2 \\ \hline
-2cv1 & 533 & 115.68 & 3 \\ \hline
-2d6f & 955 & 123.47 & 1 \\ \hline
-2der & 55 & 97.46 & 1 \\ \hline
-2der & 55 & 109.27 & 2 \\ \hline
-2du3 & 954 & 91.11 & 1 \\ \hline
-2ez6 & 12 & 40.55 & 1 \\ \hline
-2ez6 & 12 & 78.64 & 2 \\ \hline
-2fk6 & 55 & 82.88 & 1 \\ \hline
-2gis & 50 & 76.69 & 1 \\ \hline
-2gis & 74 & 120.46 & 2 \\ \hline
-2nuf & 12 & 53.81 & 1 \\ \hline
-2nuf & 12 & 85.88 & 2 \\ \hline
-2oiu & 11 & 54.12 & 1 \\ \hline
-2oiu & 11 & 40.81 & 2 \\ \hline
-2oiu & 29 & 68.1 & 3 \\ \hline
-2oiu & 29 & 46.09 & 4 \\ \hline
-2oiu & 60 & 82.5 & 5 \\ \hline
-2oiu & 60 & 54.12 & 6 \\ \hline
-2oiu & 11 & 40.81 & 7 \\ \hline
-2oiu & 11 & 68.1 & 8 \\ \hline
-2oiu & 60 & 46.09 & 9 \\ \hline
-2oiu & 60 & 82.5 & 10 \\ \hline
-2pxb & 154 & 122 & 1 \\ \hline
-2qbz & 69 & 64.96 & 1 \\ \hline
-2r8s & 150 & 96.51 & 1 \\ \hline
-2v0g & 55 & 115.9 & 1 \\ \hline
-2zjr & 318 & 124 & 1 \\ \hline
-2zjr & 474 & 81.77 & 2 \\ \hline
-2zjr & 487 & 85.41 & 3 \\ \hline
-2zjr & 499 & 98.72 & 4 \\ \hline
-2zjr & 510 & 73.97 & 5 \\ \hline
-2zjr & 641 & 66.46 & 6 \\ \hline
-2zjr & 1105 & 141.11 & 7 \\ \hline
-2zjr & 1236 & 126.54 & 8 \\ \hline
-2zjr & 1296 & 105.81 & 9 \\ \hline
-2zjr & 1664 & 116.55 & 10 \\ \hline
-2zjr & 1857 & 72.89 & 11 \\ \hline
-2zjr & 1927 & 133.68 & 12 \\ \hline
-2zjr & 2336 & 88.12 & 13 \\ \hline
-2zjr & 2354 & 79.55 & 14 \\ \hline
-2zjr & 2542 & 126.04 & 15 \\ \hline
-2zjr & 2574 & 111.64 & 16 \\ \hline
-2zjr & 2638 & 57.66 & 17 \\ \hline
-2zjr & 2832 & 138.56 & 18 \\ \hline
-2zni & 33 & 105.61 & 1 \\ \hline
-397d & 25 & 143.85 & 1 \\ \hline
-3cul & 9 & 138.6 & 1 \\ \hline
-3cul & 71 & 123.88 & 2 \\ \hline
-3cul & 108 & 87.43 & 3 \\ \hline
-3d0u & 143 & 98 & 1 \\ \hline
-3e5c & 20 & 44.19 & 1 \\ \hline
-3e5c & 43 & 76.79 & 2 \\ \hline
-3epj & 55 & 131.24 & 1 \\ \hline
-3epj & 55 & 84.37 & 2 \\ \hline
-3f4e & 19 & 87.02 & 1 \\ \hline
-3f4e & 70 & 129.22 & 2 \\ \hline
-3foz & 55 & 119.39 & 1 \\ \hline
-3foz & 55 & 103.9 & 2 \\ \hline
-3gca & 8 & 99.44 & 1 \\ \hline
-430d & 14 & 48.21 & 1 \\ \hline
-488d & 31 & 144.68 & 1 \\ \hline
-\end{longtable}
-\end{center}
+\begin{figure}
+\centering 
+\includegraphics[angle=0, scale=0.5]{Chapter5/GNRAin1ffk.png}
+\caption{Scatterplot  of  base-step parameter  values  for GNRA  motif
+  candidates identified in a list given by the ROC, against a backdrop
+  of the range of values  for the step-parameters in the large subunit
+  of the ribosome PDBID:1ffk.}
+\label{fig:scattergnra}
+\end{figure}
 
 %\section{Canonical "Noise"}
 %To be able to say anything about motifs it's crucial to get rid of the
@@ -416,39 +254,39 @@ It takes 7m 29s to find the GNRA motifs in the ROC list.
 %We then searched all such instances for G$\cdot$A base-pairs and we
 %found seven hits, but none were in fact GNRA tetraloops.
 
-\subsection{Overlap Scores} 
-We  clustered the  overlap  values  impossing a  cutoff  of values  of
-[1-8]. Since a large amount of overlap values are exactly zero (33\%),
-so, without the cutoff the zero values "overshadow" the data.
-\begin{figure}[htbp]
-\centering 
-\includegraphics[angle=0, scale=0.8]{Chapter5/histocompare.png}
-\caption{Normalized  histograms showing  the  distribution of  overlap
-  values  in the  23S subunit  or \textit{Thermus  Thermophilus} rRNA,
-  PDB-ID:1jjk.  In  histogram (a)  all  values  are  included, but  in
-  histogram (b) only values greater than zero are included. Notice the
-  high preponderance  of zero  values, exactly 897  out of a  total of
-  2705.}
-\end{figure}
-For this case we obtained a ``good'' dendrogram as seen in Figure 1.2.
-\begin{figure}[htbp]
-\centering 
-\includegraphics[angle=90, scale=0.6]{Chapter5/eucli_cons.png}
-\caption{Dendrogram for consensus clustering  of overlap scores in the
-  ribosome.  Zero values filtered out and remaining data normalized.}
-\end{figure}
+%\subsection{Overlap Scores} 
+%We  clustered the  overlap  values  impossing a  cutoff  of values  of
+%[1-8]. Since a large amount of overlap values are exactly zero (33\%),
+%so, without the cutoff the zero values "overshadow" the data.
+%\begin{figure}[htbp]
+%\centering 
+%\includegraphics[angle=0, scale=0.8]{Chapter5/histocompare.png}
+%\caption{Normalized  histograms showing  the  distribution of  overlap
+%  values  in the  23S subunit  or \textit{Thermus  Thermophilus} rRNA,
+%  PDB-ID:1jjk.  In  histogram (a)  all  values  are  included, but  in
+%  histogram (b) only values greater than zero are included. Notice the
+%  high preponderance  of zero  values, exactly 897  out of a  total of
+%  2705.}
+%\end{figure}
+%For this case we obtain the dendrogram shown in Figure 1.2.
+%\begin{figure}[htbp]
+%\centering 
+%\includegraphics[angle=90, scale=0.6]{Chapter5/eucli_cons.png}
+%\caption{Dendrogram for consensus clustering  of overlap scores in the
+%  ribosome.  Zero values filtered out and remaining data normalized.}
+%\end{figure}
 
-The next  step in this analysis  will be to find  the structures which
-correspond  to this  clusters  and superimpose  and  align them  using
-Kabsh's algorithm to be able to determine their RMSD's.
+%The next  step in this analysis  will be to find  the structures which
+%correspond  to this  clusters  and superimpose  and  align them  using
+%Kabsh's algorithm to be able to determine their RMSD's.
 
-Many people  start their  RNA Motif identification  and classification
-algorithms by splitting  RNA structures into what is  helical and what
-is not,  and then  finding interactions between  these two  groups. We
-believe that  we could do  a similar exercise  with 3DNA by  using the
-scalar  product   of  helical  axis  vectors  and   once  helical  and
-non-helical regions are  found we might be able to  use 3DNA Parser to
-look for characteristic interactions.
+%Many people  start their  RNA Motif identification  and classification
+%algorithms by splitting  RNA structures into what is  helical and what
+%is not,  and then  finding interactions between  these two  groups. We
+%believe that  we could do  a similar exercise  with 3DNA by  using the
+%scalar  product   of  helical  axis  vectors  and   once  helical  and
+%non-helical regions are  found we might be able to  use 3DNA Parser to
+%look for characteristic interactions.
 
 %\section{Triplets on RNA (comparison to Laing et al.)}
 

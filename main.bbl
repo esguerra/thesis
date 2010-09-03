@@ -65,6 +65,17 @@ Czapla, L., Swigon, D., and Olson, W.~K. (2006)
 {Sequence-Dependent Effects in the Cyclization of Short DNA}.
 {\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
 
+\bibitem{pley1994}
+Pley, H.~W., Flaherty, K.~M., and McKay, D.~B. (1994)
+{Three-Dimensional Structure of a Hammerhead Ribozyme}.
+{\em Nature,} {\bf 372}, 68--74.
+
+\bibitem{heus1991}
+Heus, H.~A. and Pardi, A. (1991)
+{Structural Features That Give Rise to the Unusual Stability of RNA Hairpins
+  Containing GNRA Loops}.
+{\em Science,} {\bf 253}, 191--194.
+
 \bibitem{olson2001}
 Olson, W.~K., Bansal, M., Burley, S.~K., Dickerson, R.~E., Gerstein, M.,
   Harvey, S.~C., Heinemann, U., Lu, X.-J., Neidle, S., Shakked, Z., Sklenar,
@@ -812,12 +823,6 @@ Depaul, A.~J., Thompson, E.~J., Patel, S.~S., Haldeman, K., and Sorin, E.~J.
 {Equilibrium Conformational Dynamics in an RNA Tetraloop From Massively
   Parallel Molecular Dynamics}.
 {\em Nucleic Acids Research,}.
-
-\bibitem{heus1991}
-Heus, H.~A. and Pardi, A. (1991)
-{Structural Features That Give Rise to the Unusual Stability of RNA Hairpins
-  Containing GNRA Loops}.
-{\em Science,} {\bf 253}, 191--194.
 
 \bibitem{sorin2002}
 Sorin, E.~J., Engelhardt, M.~A., and Herschlag, D. (2002)

@@ -20,17 +20,19 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {table}{\numberline {5.1}{\ignorespaces GNRA motif seed composed of the average base step parameter values for 20 GNRA motifs found in the large subunit of the ribosome PDBID:1ffk \cite {lemieux2006}.}}{70}{table.5.1}
-\contentsline {table}{\numberline {5.2}{GNRA Motif Scores.}}{72}{table.5.2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
-\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{94}{table.B.1}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{87}{table.B.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {table}{\numberline {C.1}{\ignorespaces Persistence lengths for common polymers, and biopolymers with filament structures.}}{105}{table.C.1}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Persistence lengths for common polymers, and biopolymers with filament structures.}}{98}{table.C.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
+\contentsline {table}{\numberline {D.1}{GNRA Motif Scores.}}{108}{table.D.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
+\gdef \the@ipfilectr {}
+\gdef \the@ipfilectr {@-12}
 \gdef \the@ipfilectr {}
