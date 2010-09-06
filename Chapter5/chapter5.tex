@@ -185,41 +185,70 @@ Figure \ref{fig:gnrahist}.
 \end{figure}
 
 In this histogram we see that the majority of scores have a peak value
-in bin 16,  which corresponds to scores between  350-360, these values
-correspond to  tri-step sequences located withing  helical regions and
-which are  more or less evenly  distant from the  GNRA tetraloops. For
-our  purposes of  GNRA motif  identification we  want to  select those
-scores  which reflect  a  shorter  distance to  our  seed GNRA  motif,
-therefore we have used a cutoff of 150 in our score.
+in bin 8,  which corresponds to scores between  350-400, these values
+correspond to tri-step sequences located withing helical regions which
+are  more or less  evenly distant  from the  GNRA tetraloops.  For our
+purposes of GNRA  motif identification we want to  select those scores
+which reflect a shorter distance  to our seed GNRA motif, therefore we
+have used  a cutoff of  150 in our  score which is represented  by the
+values below the red vertical line in Figure \ref{fig:gnrahist}.
 
 Using our program in a list of 355 RNA structures provided by the ROC,
-and  the selected cutoff  value of  150 we  find in  7 minutes  and 29
-seconds that 75  out of these 355 structures  are identified as having
-at least one GNRA 3D motif,  and a total of 211 GNRA Motif candidates.
-The list of  all identified motifs in these 75  structures in shown in
-Table \ref{tab:gnrascores}, where  an additional check for consistency
-is that  of having zero  endocyclic overlap in  the first step  of the
-tetraloop, as can be seen in the next to last column of the table.  We
-also see that 67\% of  the identified GNRA motif candidates start with
-a GN  step, and  interestingly, almost one  third (27\%) of  the first
-steps identified  are UN  steps, also a  few of the  identified motifs
-start with AN and CN steps.
+and the  selected cutoff  value of 150  we find \footnote{The  time it
+  took to search for GNRA tetraloop motifs in the 355 structures was 7
+  minutes  and 29 seconds}  that 75  out of  these 355  structures are
+identified as having at least one GNRA 3D motif candidate, and a total
+of 211  GNRA motif candidates.  The  list of all  identified motifs in
+these 75  structures is shown in Table  \ref{tab:gnrascores}, where an
+additional  check for consistency  is that  of having  zero endocyclic
+overlap in the first step of the tetraloop, as can be seen in the next
+to last column of the table.   We also see that 67\% of the identified
+GNRA motif candidates start with  a GN step, and interestingly, almost
+one third  (27\%) of the first  steps identified are UN  steps, also a
+few of the identified motifs start with AN and CN steps.
 
 To  further  analyze the  result  of  identification  of motifs  using
 ``getMotif'' we focused our  attention on the ribosomal structure with
 PDBID:2jo1 which is included in the ROC list.  As can be seen in Table
 \ref{tab:gnrascores} for the 2jo1 entry, the program recognizes twenty
-GNRA tetraloop motif candidates, which  are all in fact tetraloops, 14
-of  them conform  to the  GNRA  sequence, 5  start with  UN, one  with
-A. When  aligned using the reference  frame of the first  two bases we
-see  that  they   belong  to  two  main  groups.    Which  are  mainly
-differentiated by the rise of the last step.
+GNRA tetraloop motif candidates, which  are all in fact tetraloops, 13
+of them conform to the GNRA sequence, 5 start with UN, one starts with
+A and  one with C.  When  we align the GNRA  motif candidate sequences
+using the  reference frame  of the  first two bases  we see  that they
+belong to two main groups, one with about eleven members and the other
+with 7  members, the two remaining  structures fit well  the first two
+steps, with  both groups I and  II, but do  not fit well on  the third
+step. In Figure \ref{fig:groupsB} we show the two main groups. Group I
+is colored in blue,  and we see that this one is  closer to the common
+GNRA motif, and  Group II is colored in red. Group  II loops are close
+to being  a common GNRA motif, but  insted they have a  larger rise in
+the  last step,  nonetheless  the  first two  steps  are very  closely
+related in every  case, in a sense  it looks as if there  was a subtle
+switching  between  being a  triloop,  a  tetraloop,  or a  pentaloop,
+governed by the rise in the last step.
 
-The first step of the  identified candidates is shown in a scatterplot
-\ref{fig:scattergnra} of step-parameter  values, where it's clear that
-they  constitute  a well  defined  region  of  the space  of  possible
-rigid-body parameter configuration space  for the large subunit of the
-ribosome.
+\begin{figure}
+\centering 
+\includegraphics[angle=0, scale=0.5]{Chapter5/groupsB.png}
+\caption{Scatterplot  of  base-step parameter  values  for GNRA  motif
+  candidates identified in a list given by the ROC, against a backdrop
+  of the range of values  for the step-parameters in the large subunit
+  of the ribosome PDBID:1ffk.}
+\label{fig:groupsB}
+\end{figure}
+
+
+Interestingly in the  GNRA candidates identified in group  II they are
+part    of   a    highly   symmetrical    extended    loop   "kissing"
+interaction. These can be seen in figure where they are supperimposed,
+and in their orirginal orientation in the ribosome.
+
+From the three steps which make up the GNRA tetraloop the first one is
+the  one farthest away  from a  typical ARNA  type base-step,  we have
+plotted the step-parameter values for this first step in a scatterplot
+\ref{fig:scattergnra}, where it's clear  that this steps constitutes a
+well  defined  region  in  the  space  of  rigid-body  step  parameter
+configuration space for the large subunit of the ribosome.
 
 \begin{figure}
 \centering 
