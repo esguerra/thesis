@@ -264,32 +264,15 @@ those in subgroup IVa.
 
 In order  to map the groups,  which were obtained  by clustering, back
 into the 23S subunit of  the ribosome, we compute the root-mean-square
-deviation (RMSD) between the average of step parameters 
+deviation (RMSD)  between the average  of the step parameters  of each
+clustered  group,  and  the  step   parameters  of  the   23S  subunit
+(PDB\_ID:1JJ2).   Before computing  the RMSD  values we  normalize the
+step  parameters  using  the   ratio  between  the  difference  of
+step-parameters to their minimum value, and their range.  This is
+expressed in Equation~\ref{eq:normalization}.
 
-
-
-clustered groups and the base-steps
-parameters of  the 23S  subunit (PDB\_ID:1JJ2).  Before  computing the
-RMSD  values we  normalize the  step  parameters by  taking the  ratio
-between  the  step-parameters  and  their  minimum  value,  and  their
-range. This is expressed in Equation~\ref{eq:normalization}
-
-
-
-between the average normalized step
-parameters of the  structures composing each of the  seven groups, and
-the normalized \footnote{For normalization
-
-  
-
-
-} step-parameters of the
-2753 steps present in the 23S subunit (PDB\_ID:1jj2).
-
-That  is, for
-each  group we  have obtained  a set  of RMSD  values which  have been
-plotted   as   histograms   as  shown   in   Figures~\ref{fig:histo1},
-and~\ref{fig:histo2}.
+The  RMSD  results for  each  group are  show  in  histogram plots  in
+Figures~\ref{fig:histo1}, and~\ref{fig:histo2}.
 
 The results are also  summarized in Table~\ref{tab:nonA}, where we can
 see that they only constitute 31\% of the total amount of steps in the
