@@ -265,7 +265,7 @@ those in subgroup IVa.
 In order  to map the groups,  which were obtained  by clustering, back
 into the 23S subunit of  the ribosome, we compute the root-mean-square
 deviation (RMSD)  between the average  of the step parameters  of each
-clustered  group,  and  the  step   parameters  of  the   23S  subunit
+clustered  group  and  the  step   parameters  of  the   23S  subunit
 (PDB\_ID:1JJ2).   Before computing  the RMSD  values we  normalize the
 step  parameters  using  the   ratio  between  the  difference  of
 step-parameters to their minimum value, and their range.  This is
@@ -274,23 +274,38 @@ expressed in Equation~\ref{eq:normalization}.
 The  RMSD  results for  each  group are  show  in  histogram plots  in
 Figures~\ref{fig:histo1}, and~\ref{fig:histo2}.
 
-The results are also  summarized in Table~\ref{tab:nonA}, where we can
-see that they only constitute 31\% of the total amount of steps in the
-23S subunit of the ribosome.  We  used a cutoff of 10 \AA \footnote{We
-  retain the  traditional unit of  Angstroms to refers to  our RMSD's,
-  but it  is important to  note that since  we are not refering  to an
-  all-atom model such  unit does not have a  direct physical meaning.}
-to select the  structures which belong to each  group, based on visual
-analysis  of superimposed reconstructed  structures. For  example, for
-Group I; if we reconstruct the ribosomal steps with an RMSD of 10 \AA~
-or   less,  we   get  the   figure  shown   in  the   left   panel  of
-Figure~\ref{fig:superimpose}. But  if we  reconstruct with the  set of
-structures  with  an  RMSD  of  15  \AA~  or  less  we  start  getting
-structures,  which after  being  superimposed based  on the  reference
-frames of the first base are clearly not related to that group, as can
-be seen in the right panel of Figure~\ref{fig:superimpose}.
+The distribution  of conformer groups  is presented in  an alternative
+way in Table~\ref{tab:nonA}, where  we count all base-steps which fall
+below an  RMSD score  of 10.  It  is important  to note here  that the
+computed  RMSD is  not  an all-atom  RMSD  as is  commonly used  after
+superimposition of molecular structures,  but the deviation between an
+average  base-step parameter  vector  and each  step  (described as  a
+vector) in the 23S subunit, where there is no need for superimposition
+since the base-step parameter vectors are computed using a middle step
+reference frame between the step bases \cite{lu2003a}.  The reason for
+choosing 10 as the RMSD cutoff  value is based on visual inspection of
+superimposed  reconstructed structures at  different RMSD  values. For
+example, for  Group I; if we  reconstruct the ribosomal  steps with an
+RMSD of 10  or less using their base-step  parameter values, we obtain
+the  set  of  superimposed  structures  shown in  the  left  panel  of
+Figure~\ref{fig:superimpose}.   But if  we reconstruct  the base-steps
+using  the set of  parameter values  which fall  within a  larger RMSD
+cutoff  value   of  15  as   can  be  seen   in  the  left   panel  of
+Figure~\ref{fig:superimpose} there will be three new structures (whose
+second base  is show  in blue ``clouds'')  in the set  of superimposed
+structures which clearly do not overlap well with the structures which
+fall  under  the  lower   cutoff  value  and  therefore  are  unlikely
+candidates for being part of such conformational group
 
-We find  that the  A-RNA starting structure  kindly provided to  us by
+  
+
+In  Table~\ref{tab:nonA} we see  that the  total number  of structures
+which fall into any of the four conformational groups is 31 percent of
+the total number of steps in  the 23S subunit in the ribosome, meaning
+that 69  percent of base-steps  are not recognized. We  attribute this
+problem to two main factors, one that 
+
+A-RNA starting structure  kindly provided to  us by
 Schneider et al. differ from canonical A-RNA in that the rise value is
 4.39 \AA, rather than the  3.30 \AA~ standard value obtained for A-RNA
 by Arnott and collaborators  \cite{arnott1973}. This might have affect
