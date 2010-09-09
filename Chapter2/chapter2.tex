@@ -196,15 +196,15 @@ $\omega$), in a hexaparametric vector $\nu$:
 \end{gather}
 The    results    illustrated    in    the   dendrogram    shown    in
 Figure~\ref{fig:eucl_cons}  were  obtained  by  performing  clustering
-analysis and consensus clustering of the 20 structures provided by
-Schneider et al.   \cite{schneider2004}. These structures which
-are  illustrated  in Figures~\ref{fig:nonAclus}  and~\ref{fig:steps2},
-were  obtained by  applying a  Fourier averaging
-technique and  lexicographical clustering to the  torsion angles found
-in the large 23S subunit of ribosomal RNA (PDB\_ID:1jj2).  The methodology
-we used follows  the approach taken by others  to recover the Periodic
-Table  classification of the  elements from  multidimensional property
-vectors of the elements \cite{restrepo2004, restrepo2006}.
+analysis  and consensus clustering  of the  20 structures  provided by
+Schneider  et al.   \cite{schneider2004}. These  structures  which are
+illustrated  in Figures~\ref{fig:nonAclus}  and~\ref{fig:steps2}, were
+obtained by applying a Fourier averaging technique and lexicographical
+clustering to  the torsion  angles found in  the large 23S  subunit of
+ribosomal  RNA (PDB\_ID:1jj2).   The methodology  we used  follows the
+approach taken by others  to recover the Periodic Table classification
+of the elements from multidimensional property vectors of the elements
+\cite{restrepo2004, restrepo2006}.
 \begin{figure}[htbp]
  \centering
 \includegraphics[angle=90, scale=0.5]{Chapter2/eucli_cons_nonA-RNA.png}
@@ -282,7 +282,7 @@ superimposition of molecular structures,  but the deviation between an
 average  base-step parameter  vector  and each  step  (described as  a
 vector) in the 23S subunit, where there is no need for superimposition
 since the base-step parameter vectors are computed using a middle step
-reference frame between the step bases \cite{lu2003a}.  The reason for
+reference frame between the step bases \cite{lu2003}.  The reason for
 choosing 10 as the RMSD cutoff  value is based on visual inspection of
 superimposed  reconstructed structures at  different RMSD  values. For
 example, for  Group I; if we  reconstruct the ribosomal  steps with an
@@ -290,33 +290,36 @@ RMSD of 10  or less using their base-step  parameter values, we obtain
 the  set  of  superimposed  structures  shown in  the  left  panel  of
 Figure~\ref{fig:superimpose}.   But if  we reconstruct  the base-steps
 using  the set of  parameter values  which fall  within a  larger RMSD
-cutoff  value   of  15  as   can  be  seen   in  the  left   panel  of
-Figure~\ref{fig:superimpose} there will be three new structures (whose
-second base  is show  in blue ``clouds'')  in the set  of superimposed
-structures which clearly do not overlap well with the structures which
-fall  under  the  lower   cutoff  value  and  therefore  are  unlikely
-candidates for being part of such conformational group
-
+cutoff  value   of  15,  as  can   be  seen  in  the   left  panel  of
+Figure~\ref{fig:superimpose},  there  will  be  three  new  structures
+(whose  second  base  is  show  in  blue ``clouds'')  in  the  set  of
+superimposed  structures which clearly  do not  overlap well  with the
+structures which fall  under the lower cutoff value  and therefore are
+unlikely candidates for being part of such conformational group.
   
-
 In  Table~\ref{tab:nonA} we see  that the  total number  of structures
 which fall into any of the four conformational groups is 31 percent of
-the total number of steps in  the 23S subunit in the ribosome, meaning
-that 69  percent of base-steps  are not recognized. We  attribute this
-problem to two main factors, one that 
+the total number of steps in  the 23S subunit of the ribosome, meaning
+that  69 percent  of base-steps  are not  recognized. We  believe this
+problem might be due to three factors; 1) That the A-RNA (Structure 20
+in Figures \ref{fig:collageb} and \ref{fig:collage2}) structure kindly
+provided to  us by Schneider et  al.  differs from  canonical A-RNA in
+that the  rise value is 4.39  \AA, rather than the  3.30 \AA~ standard
+value    obtained   for    A-RNA   by    Arnott    and   collaborators
+\cite{arnott1973}.   This  might  have  an  effect on  the  number  of
+structures which  can be  grouped under the  A-RNA like Group  IVb, 2)
+That we  are ignoring the richer classification  of ARNA conformations
+described  by Schneider  et  al.  \cite{schneider2004}  by only  using
+conformers 19 and 20 in Group  IVb and ignoring the remaining 12 A-RNA
+like conformers, and 3) That  mixing results from Fourier averaging of
+sugar-phosphate  backbone  torsion  angles, and  base-step  parameters
+consensus clustering, might result in  ignoring intermediate base-step
+conformations which could be highly populated.
 
-A-RNA starting structure  kindly provided to  us by
-Schneider et al. differ from canonical A-RNA in that the rise value is
-4.39 \AA, rather than the  3.30 \AA~ standard value obtained for A-RNA
-by Arnott and collaborators  \cite{arnott1973}. This might have affect
-on the number of structures which  can be grouped under the A-RNA like
-group.
-
-Because of not getting a good representation of the total diversity of
-base-steps  in the  23S  subunit of  the  ribosome, we  have opted  to
-perform an  analysis based fully  on base-step parameters.  We believe
-that the reason  for such poor representation is due  to the mixing of
-Fourier averaging for backbones, and  the base-step perspective.
+Due to this  problem we choose to investigate the  whole space of RNA
+conformations  in the  23S  subunit of  the ribosome  (PDBID\_ID:1JJ2)
+using  base-step parameters alone  and clustering  analysis validation
+techniques.
 %% or it could also be  related to the fact that we  are ignoring the
 %% remaining A-RNA related set of structures in Berman and
 %% collaborators analysis.
@@ -324,26 +327,26 @@ Fourier averaging for backbones, and  the base-step perspective.
 \begin{table}[htbp]
 \begin{center}
 {\footnotesize
-\begin{tabular}{c|r|c}
+\begin{tabular}{c|r|r|r}
 \hline
-\bf{Group} & \bf{Percentage} & \bf{Number of Base-Steps}\\ \hline
-I   & 0.11  & 3   \\ \hline
-II  & 0.18  & 5  \\ \hline
-III & 0.04  & 1  \\ \hline
-IVa & 0.36  & 1  \\ \hline
-IVb & 29.31 & 807 \\ \hline
-IVc & 0.33  & 9  \\ \hline
-IVd & 1.27  & 35 \\ \hline \hline
-Total & 31.28 & 861   \\ \hline
+ & \multicolumn{3}{c}{\bf{RMSD Cutoff Value}}\\ \hline
+Group   & \bf{10} & \bf{15} & \bf{20}\\ \hline
+I & 3 (0.11) & 7 (0.25)& \\ \hline
+II & 5 (0.18) & 13 (0.47)& \\ \hline
+III & 1 (0.04) & 5 (0.18)& \\ \hline
+IVa & 1 (0.04) & 1 (0.04)& \\ \hline
+IVb & 807 (29.31) & 1696 (61.61)& \\ \hline
+IVc & 9 (0.33) & 22 (0.80)& \\ \hline
+IVd & 35 (1.27) & 99 (3.60)& \\ \hline \hline
+Total & 861 (31.28) & 1843 (66.95)& \\ \hline
 \end{tabular}
 }
-\caption{Number of base-steps  with RMSD values less than  or equal to
-  10 \AA ~between the reference  base-step vectors from the four groups
-  of  non-A-type  RNA  dinucleotide  conformations and  all  base-step
-  vectors found in the  23S strand of \textit{Haloarcula marismortui}.
-  The  percentage  is calculated  with  respect  to  a total  of  2753
-  base-steps  present in  the  23S chain  of  the 50S  subunit of  the
-  ribosome.}
+\caption{Number of base-steps in the 23S subunit of \textit{Haloarcula
+    marismortui} with RMSD values less than or equal to 10 between the
+  average  base-step vectors  of  the four  groups  of non-A-type  RNA
+  dinucleotide  conformations and  the 2753  base-step vectors  in 23S
+  rRNA.  The  percentage  is  calculated  with  respect  to  the  2753
+  base-steps present in the 23S subunit of the ribosome.}
 \label{tab:nonA}
 \end{center}
 \end{table}
@@ -373,12 +376,12 @@ Total & 31.28 & 861   \\ \hline
 \includegraphics[angle=0, scale=0.3]{Chapter2/G1at10_15.png}
 \caption{Rigid block  representation of dinucleotide  steps. The major
   groove side  of the first  nucleotide block is oriented  towards the
-  viewer  and shaded  gray. \textbf{Left:}  Drawn in  blue,  the block
-  representing       the        Group       I       cluster       from
+  viewer  and colored  black. \textbf{Left:}  Drawn in  blue,  the block
+  representing     the        Group       I       cluster       from
   Figure~\ref{fig:nonAclus}. Superimposed  to the Group  I cluster are
   three  structures whose  step-parameter RMSD's  with respect  to the
-  Group I  cluster are less than  or equal to  10 \AA. \textbf{Right}:
-  With an RMSD less than or equal  to 15 \AA ~we "identify" a total of
+  Group I  cluster are less than  or equal to  10. \textbf{Right}:
+  With an RMSD less than or equal  to 15 we "identify" a total of
   seven structures  from the  ribosome. We clearly  see that  three of
   them (encircled in  cyan blobs) are farther apart  from the original
   Group I  main structure of Figure~\ref{fig:nonAclus}  which is drawn
