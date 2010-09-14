@@ -4,7 +4,7 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
 \contentsline {table}{\numberline {2.1}{\ignorespaces Some large RNA structures ($>$300 bases) elucidated in the last decade.}}{24}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Number of base-steps in the 23S subunit of \textit {Haloarcula marismortui} with RMSD values less than or equal to 10, 15, and 20 between average base-step vectors of the four groups of non-A-type RNA dinucleotide conformations and the 2753 base-step vectors in 23S rRNA. In parentheses the corresponding percentage is shown, the percentage is computed with respect to the 2753 base-steps present in the 23S subunit of the ribosome.}}{33}{table.2.2}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Number of base-steps in the 23S subunit of \textit {Haloarcula marismortui} with RMSD values less than or equal to 10, 15, and 20 between the average base-step vectors of the four groups of non-A-type RNA dinucleotide conformations and the 2753 base-step vectors in 23S rRNA. The numbers in parentheses are the corresponding percentages computed with respect to the 2753 base-steps present in the 23S subunit of the ribosome.}}{33}{table.2.2}
 \contentsline {table}{\numberline {2.3}{\ignorespaces Base step parameters for common DNA and RNA conformations. The base-step parameters are computed for a single-stranded base-step rather than a double-stranded base-pair step.}}{37}{table.2.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
