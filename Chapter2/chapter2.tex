@@ -36,7 +36,7 @@ ribosome \cite{ban2000}.
 \noindent Between  1978 and  2000 a total  of 116 RNA  structures with
 resolution better than 3.5  \AA, and comprising around 5500 nucleotide
 bases were added to the Protein  Data Bank (PDB), and between 2000 and
-today  931  RNA\index{RNA}  structures  comprising  491158  nucleotide
+today  931  RNA\index{RNA}  structures comprising  491,158  nucleotide
 bases.  That  is, the increase in  information due to  the solution of
 large RNA structures, is about two orders of magnitude, as pointed out
 by  Noller \cite{noller2005}.   It is  clear  from the  growth of  RNA
@@ -55,7 +55,7 @@ growth of  the RNA structural field  is far from that  of proteins, if
 weighed by  the growth in  diversity of RNA structural  information in
 the past decade.  If we look  at the current distribution of the sizes
 of  RNA   structures  counted  in   terms  of  the  number   of  bases
-(Figure~\ref{fig:rnaranges}) it is clear  that there are large patches
+(Figure~\ref{fig:rnaranges}), it is clear that there are large patches
 of chain lengths where there are no RNA structures whatsoever.
 
 \begin{figure}{h}
@@ -64,7 +64,7 @@ of chain lengths where there are no RNA structures whatsoever.
 \caption{Frequency of  nucleotide bases in RNA molecules  found in the
   PDB classified by  the size of RNA molecules. We  define the size as
   the total  number of nucleotide  bases present per  molecule. Notice
-  the  areas  in  transparent  blue  boxes  which  are  devoid of  RNA
+  the  areas  in  transparent  blue  boxes, which  are  devoid of  RNA
   molecules.}
   \label{fig:rnaranges}
 \end{figure}
@@ -72,18 +72,19 @@ of chain lengths where there are no RNA structures whatsoever.
 That is,  there are no  solved structures of  RNA with roughly  600 to
 1400 bases or 1800 to 2700  bases.  The area of non-coding RNA's holds
 great promise for  finding structured RNA's in such  length ranges, as
-has  recently  been   suggested  by  Breaker  \cite{weinberg2009}.   A
-representative example of the  characteristic ranges of RNA structures
-available to date  in the PDB can be  seen in Table \ref{tab:rnarange}
-for structures larger  than 300 bases. A comparison  between the total
-number of structures  of protein, protein plus nucleic  acid, DNA, and
-RNA, available at  the PDB from the seventies until  today -- shown in
-Figure~\ref{fig:allpolypdb}  -- reveals  large differences  between the
-number  of deposited protein  and nucleic  acid structures.   There is
-over an order of magnitude more protein than nucleic acid. The rate of
-growth of  DNA vs.  RNA structural information  is also  changing. RNA
-structures have been growing  steadily since the mid-nineties and seem
-to parallel the growth on DNA structures.
+has recently been suggested  by the Breaker group \cite{weinberg2009}.
+A  representative   example  of  the  characteristic   ranges  of  RNA
+structures  available  to  date  in  the  PDB can  be  seen  in  Table
+\ref{tab:rnarange} for structures larger  than 300 bases. A comparison
+between  the  total number  of  structures  of  protein, protein  plus
+nucleic acid,  DNA, and RNA, available  at the PDB  from the seventies
+until today  -- shown in Figure~\ref{fig:allpolypdb}  -- reveals large
+differences between  the number of deposited protein  and nucleic acid
+structures.  There  is over  an order of  magnitude more  protein than
+nucleic  acid.  The  rate  of   growth  of  DNA  vs.   RNA  structural
+information  is  also  changing.  RNA  structures  have  been  growing
+steadily since the mid-nineties and seem to parallel the growth of DNA
+structures.
 
 %The table and Figure 1.1 come from downloading all structures from
 %2000, until today that have RNA in the pdb and that have a resolution
@@ -128,35 +129,33 @@ to parallel the growth on DNA structures.
 \label{fig:allpolypdb}
 \end{figure}
 
-\noindent The analysis of  the conformational information contained in
-RNA  structures  can  be  divided  into three  main  perspectives:  an
-atom-based perspective; a bond-based  perspective; and a third, as yet
-unexplored  to our  knowledge, rigid-body-based  perspective.   In the
-atom-based perspective,  either a  direct comparison of  backbone atom
-positions  is  made  \cite{reijmers2001},   or  a  comparison  of  the
-distances between  a reduced  set of atoms  taken from  the nucleotide
-backbone,   sugar,   and   base  \cite{sykes2005}.    The   bond-based
-perspective  is  divided  into   three  main  categories.   The  first
-considers the  spatial arrangements of the  consecutive covalent bonds
-in  the RNA backbone  and the  glycosidic bond  between the  sugar and
-base,  that is,  the six  backbone torsion  angles and  one glycosidic
-torsion   angle   \cite{reijmers2001,   murray2003,   hershkovitz2003,
-  schneider2004,   hershkovitz2006}.    The   second   considers   the
-pseudo-bonds  between consecutive P  and C4$^{\rm{\prime}}$  atoms and
-the    resulting   pseudo-torsion    angles   $\eta$    and   $\theta$
-\cite{olson1_1972,  duarte1998, duarte2003,  wadley2007} \footnote{The
-  $\eta$ and $\theta$ pseudo-torsion angles correspond to consecutive
-  $\chi$  rotation angles  as described  by Olson  \cite{olson1980} in
-  relating  the  structural  parameters  of  polynucleotide  chains  to
-  virtual bond vectors $\mathbf{v}_{a}$ and $\mathbf{v}_{b}$.}.
-
-The  third  category considers  the  networks  of horizontal  hydrogen
-bonding  patterns  coming  from   a  definition  of  interacting  edge
-boundaries  in the  nucleotide  bases \cite{westhof2000,  leontis2002,
-  leontis2006}.   In  this  chapter  we  study  the  rigid-body  based
-perspective using clustering analysis  and discuss the relationship of
-these  findings  to  other  previously reported  perspectives  on  RNA
-conformation.
+\noindent The  conformational information contained  in RNA structures
+can  be   examined  from   three  main  perspectives:   an  atom-based
+perspective; a bond-based perspective;  and a third, as yet unexplored
+to  our knowledge,  rigid-body-based perspective.   In  the atom-based
+perspective, either a direct  comparison of backbone atom positions is
+made \cite{reijmers2001},  or a comparison of the  distances between a
+reduced set  of atoms taken  from the nucleotide backbone,  sugar, and
+base  \cite{sykes2005}.  The  bond-based perspective  is  divided into
+three main  categories.  The first considers  the spatial arrangements
+of  the  consecutive  covalent  bonds  in the  RNA  backbone  and  the
+glycosidic bond between the sugar  and base, that is, the six backbone
+torsion  angles and one  glycosidic torsion  angle \cite{reijmers2001,
+  murray2003,  hershkovitz2003, schneider2004,  hershkovitz2006}.  The
+second   considers  the   pseudo-bonds  between   consecutive   P  and
+C4$^{\rm{\prime}}$  atoms  and  the  resulting  pseudo-torsion  angles
+$\eta$   and  $\theta$   \cite{olson1_1972,   duarte1998,  duarte2003,
+  wadley2007} \footnote{The $\eta$  and $\theta$ pseudo-torsion angles
+  correspond  to consecutive  $\chi$ rotation  angles as  described by
+  Olson  \cite{olson1980}  in relating  the  structural parameters  of
+  polynucleotide chains  to virtual bond  vectors $\mathbf{v}_{a}$ and
+  $\mathbf{v}_{b}$.}.  The third  category considers  the  networks of
+horizontal  hydrogen  bonding patterns  coming  from  a definition  of
+interacting edge boundaries in the nucleotide bases \cite{westhof2000,
+  leontis2002, leontis2006}.  In this  chapter we study the rigid-body
+based   perspective  using   clustering  analysis   and   discuss  the
+relationship   of  these   findings  to   other   previously  reported
+perspectives on RNA conformation.
 
 \section{Consensus Clustering of Single Stranded Base Step Parameters}
 To  our  knowledge there  has  been  no  classification of  rigid-body
@@ -167,9 +166,9 @@ has been  shown by Richardson  and collaborators from the  analysis of
 van  der Waals  steric  clashes.  This  can  be seen  more clearly  in
 Figure~\ref{fig:murray},    reproduced    from    Richardson's    work
 \cite{murray2003}, where the red and orange dots in the backbone atoms
-region denote steric clashes and the green and yellow dots in the base
-atoms region  denote very good  agreement with expected van  der Waals
-distances.
+region (Figure \ref{fig:murray} b) denote steric clashes and the green
+and yellow dots in the base atoms region (Figure \ref{fig:murray} a)
+denote very good agreement with expected van der Waals distances.
 \begin{figure}[htbp]
  \centering
  \includegraphics[scale=0.4]{Chapter2/murray2003.png}
@@ -354,7 +353,7 @@ Total & 861 (31.28) & 1843 (66.95) & 2259 (82.06)\\ \hline
 
 \begin{figure}[htbp]
  \centering
-\includegraphics[angle=90, scale=0.6]{Chapter2/RMSDschneider1.png}
+\includegraphics[angle=90, scale=0.5]{Chapter2/RMSDschneider1.png}
 \caption{Root mean square deviation of the main four groups show in
   Figure~\ref{fig:nonAclus}. The color of the histograms is the same
   as that of the boxes surrounding the structures of
@@ -364,7 +363,7 @@ Total & 861 (31.28) & 1843 (66.95) & 2259 (82.06)\\ \hline
 
 \begin{figure}[htbp]
  \centering
-\includegraphics[angle=90, scale=0.6]{Chapter2/RMSDschneider2.png}
+\includegraphics[angle=90, scale=0.5]{Chapter2/RMSDschneider2.png}
 \caption{Root  mean  square  deviation  histograms for  the  subgroups
   present in group  IV.  Since subgroup IVb is  composed of A-RNA like
   conformations we  see in the  upper left histogram that  the highest
