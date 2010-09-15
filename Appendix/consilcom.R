@@ -24,10 +24,10 @@ scaled <- scale(alldata)
 normal <- cbind(normcol(x),normcol(y))
 #plot(x,y,xlim=c(0,10),ylim=c(0,10), pch=21)
 png(filename="comconsep.png", width=600, height=600)
-plot(normal[,1],normal[,2], pch=21, xlab="x", ylab="y")
+plot(normal[,1],normal[,2], pch=21, xlab="x", ylab="y", cex.lab=1.7, cex.axis=1.5)
 
 points(normal, pch=21, bg="red", col="blue")
-text(normal[,1], normal[,2], cex=1.0, pos=4, col="blue") 
+#text(normal[,1], normal[,2], cex=1.3, pos=4, col="blue") 
 dev.off()
 
 
