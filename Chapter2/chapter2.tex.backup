@@ -425,62 +425,50 @@ to define the number of clusters  which we will be using frequently in
 the text.
 
 In  Figure~\ref{fig:internal} we  see the  results from  computing the
-validation scores (connectivity, silhoutte  width, and Dunn index) for
-cluster groups ranging  from $k=2$, up to $k=80$,  and evaluated using
-both, hierarchical (hierarchical, diana) and partitional (kmeans, pam,
-som, sota) methods. An optimal connectivity measure must be minimized,
-and the average  silhouette width (silhouette) and Dunn  index must be
-maximized.  Keeping in mind the previously described optimal trends we
-see  that  for   the  three  graphs  shown  in   this  figure  the
-hierarchical\footnote{The  hierarchical method can  be carried  out in
-  various ways,  for example,  using different metrics,  and different
-  grouping methodologies.  In this specific case we are referring to a
-  hierarchical method  carried out in the  agglomerative, or bottom-up
-  manner, meaning that  we start by grouping pairs  of steps which are
-  initially  ungrouped,   and  group  them   progresively  with  other
-  ungrouped  steps using  the  average method  criteria (explained  in
-  Appendix~\ref{appendix_a}),  which  in turn  depends  on a  distance
-  definition  which in  this  case  is that  of  the Euclidean  metric
-  (defined in  Appendix~\ref{appendix_a}).}  method (black  trend line
-marked  as one.)  performs  better in connectivity and  Dunn index
-for the whole range of two to eighty clusters, and it is also the best
-performer in silhouette from $k=12$ onwards.
+validation scores (connectivity, silhoutte width, and Dunn index) for 
+cluster groups ranging from $k=2$, up to $k=80$,
+and evaluated using both, hierarchical (hierarchical, diana) and partitional
+(kmeans, pam, som, sota) methods. An optimal connectivity measure must
+be minimized,  and the average silhouette width  (silhouette) and Dunn
+index  must be maximized.   Keeping in  mind the  previously described
+optimal trends we see that for the three graphs shown in in this figure
+the hierarchical\footnote{The hierarchical
+  method  can be  carried  out  in various  ways,  for example,  using
+  different  metrics, and  different grouping  methodologies.  In this
+  specific case we are referring  to a hierarchical method carried out
+  in the agglomerative, or bottom-up  manner, meaning that we start by
+  grouping  pairs of steps  which are  initially ungrouped,  and group
+  them  progresively  with other  ungrouped  steps  using the  average
+  method criteria  (explained in Appendix~\ref{appendix_a}),  which in
+  turn depends on a distance definition  which in this case is that of
+  the   Euclidean  metric  (defined   in  Appendix~\ref{appendix_a}).}
+method (black trend line and marked as one.)  performs  better in connectivity and Dunn index for  the whole
+range of two to eighty clusters, and  it is  also the best  performer in silhouette  from $k=12$
+onwards.
 
 Stability  measures (Figure~\ref{fig:stability})  are well  suited for
-highly  correlated  data sets  with  linear  correlation between  many
-variables, but they  are not very useful for our  data set since, even
-though there is correlation between our variables this only occurs for
-shift vs. twist, and rise vs. tilt,  as can be seen from the values in
-the    upper   right    corner   of    the   pairs    scatterplot   in
-Figure~\ref{fig:pairsnoarna},  that   is,  of  the   fifteen  possible
-correlated  pairs,   only  two  are  linearly   correlated,  and  such
-correlation  is  not very  strong  since  the correlation  coefficient
-values are below 0.95, which  means that 90\% of the variation between
-variables can be  explained by a linear relationship  between them. We
-include the cluster stability measures for completeness in the cluster
-validation scheme.
+highly correlated data sets with linear correlation between variables,
+but  they  are not  very  useful  for our  data  set.   The only  such
+correlations occur  in shift and twist,  and rise and tilt,  as can be
+seen  from  the  values  in  the  upper  right  corner  of  the  pairs
+scatterplot in  Figure~\ref{fig:pairsnoarna}.  We include  the cluster
+stability measures for completeness.
 
-The    stability   measurements   we    have   computed    (shown   in
-Figure~\ref{fig:stability})  are  indicative  of a  better  clustering
-methodology the smaller their values.  We have computed three measures
-for  each of  the hierarchical  and partitional  methods,  namely, the
-average proportion  of non-overlap  (APN), the average  distance (AD),
-and the  average distance  between means (ADM).   The details  of such
-measures  are   given  in  Brock  et  al.    \cite{brock2008}  and  in
-Appendix~\ref{appendix_a}.  As  seen in Figure~\ref{fig:stability} the
-method which performs the best  according to the stability measures is
-sota (second-order tolerance  analysis) for APN and ADM  since one can
-clearly see that  in the corresponding curve in  cyan color and marked
-with number  five the  values are smaller  consistenly for  almost the
-whole range,  up to $k=70$.   In the case  of the AD measure  the best
-performers  (those with smaller  values) are  pam (green  curve marked
-with number three) and sota  (cyan curve marked with number five) over
-the whole range.  Notice that the hierarchical method follows the same
-trend as  the other methods, and  that in general, apart  from the APN
-measure and  the sota method,  all methods exhibit a  similar behavior
-probably due  to the fact that  our data set is  not highly correlated
-(that  is,  the dataset  cannot  be reduced  to  a  smaller amount  of
-dimensions).
+
+The  stability measurements we  have computed  are better  the smaller
+their  values. We  have  determined  three measures  for  each of  the
+hierarchical and  partitional methods, namely,  the average proportion
+of  non-overlap (APN),  the  average distance  (AD),  and the  average
+distance between means (ADM).  The  details of such measures are given
+in     Brock    et    al.      \cite{brock2008}.     As     seen    in
+Figure~\ref{fig:stability} the method with the best stability measures
+is sota for APN and ADM for almost the whole range, up to 70.  For the
+AD measure the best performers are  pam and sota over the whole range.
+Notice  that the  hierarchical method  follows the  same trend  as the
+other methods, and that in general, apart from the APN measure and the
+sota method,  all methods exhibit a  similar behavior due  to the fact
+that  our data  set is  not highly  correlated. That  is,  the dataset
+cannot be split into a few principal components.
 
 In all cases  we also see that the best overall  number of clusters is
 two,  which is  not surprising  since  we haven't  filtered out  A-RNA
@@ -489,32 +477,29 @@ base-steps, and non-A-RNA steps.
 
 \begin{figure}
  \centering
-\includegraphics[angle=0, scale=0.34]{Chapter2/STval_int.png}
-\caption{Cluster  validity   scores  for  internal   measures  of  all
-  base-step   parameters  in   the  23S   subunit  of   ribosomal  RNA
-  (PDB\_ID:1JJ2). Notice  how the hierarchical method,  labeled as one
-  and drawn  as a black  line, behaves better  for the whole  range of
-  connectivity (smaller values) and  Dunn (higher values), and it also
-  outperforms all  others after $k=12$ for  silhouette (higher values)
-  scores.}
+\includegraphics[angle=0, scale=0.36]{Chapter2/STval_int.png}
+\caption{Cluster validity scores for internal measures. Notice how the
+  hierarchical method, labeled as 1 in black color,
+  behaves better for the whole range of Connectivity (smaller values)
+  and Dunn (higher values),
+  and it also outperforms all others after $k=12$ for Silhouette
+  (higher values) scores.}
  \label{fig:internal}
 \end{figure}
 
 \begin{figure}
  \centering
-\includegraphics[angle=0, scale=0.34]{Chapter2/STval_sta.png}
-\caption{Cluster  validity  scores   for  stability  measures  of  all
-  base-step   parameters  in   the  23S   subunit  of   ribosomal  RNA
-  (PDB\_ID:1JJ2).  Note that stability measures work specially well for
-  datasets of  highly correlated data, which  is not the  case for our
-  dataset  but are  shown  here for  consistency  with the  validation
-  package clValid.}
+\includegraphics[angle=0, scale=0.36]{Chapter2/STval_sta.png}
+\caption{Cluster  validity scores  for stability  measures.  Note that
+  stability  measures  are  usually  useful  for  datasets  of  highly
+  correlated data, which is not the case for our dataset but are shown
+  here for consistency with the validation package clValid.}
  \label{fig:stability}
 \end{figure}
 
 \begin{figure}
  \centering
-\includegraphics[angle=90, scale=0.48]{Chapter2/noarna_step.png}
+\includegraphics[angle=90, scale=0.5]{Chapter2/noarna_step.png}
 \caption{Scatterplots  for base-step  parameters, shift,  slide, rise,
   tilt, roll, and twist, for the non-A-RNA dataset (taken as the steps
   with RMSD's greater than 18) colored according
@@ -546,13 +531,9 @@ listed in Table \ref{tab:conf} .
 \begin{figure}[ht]
  \centering
 \includegraphics[angle=0, scale=0.38]{Chapter2/dormsd.png}
-\caption{Histogram of RMSD values  between base-step parameters of the
-  23S subunit  of ribosomal RNA and the  standard base-step parameters
-  derived  from  Arnott and  collaborators  \cite{arnott1973} work.  A
-  black vertical  line is drawn at  an RMSD value of  18 denoting that
-  the  corresponding  base-steps  below  this value  are  assigned  to
-  A-RNA-like conformations, and those above this value are assigned to
-  non-A-RNA-like conformations.}
+\caption{RMSD values between base-step parameters of the 23S subunit of
+  ribosomal RNA and the standard base-step parameters derived from
+  Arnott and collaborators \cite{arnott1973} work.}
  \label{fig:dormsd}
 \end{figure}
 
@@ -583,33 +564,17 @@ AII-RNA & 1.01 & -2.52 & 3.33 & 2.9 & 9.8 & 25.1 & Schneider
 \end{table}
 
 With the filtered dataset, which we refer to as the non-A-RNA dataset,
-we  have  again  performed  a  clustering  validation  analysis  using
-internal  measures   and  the   computed  results  are   displayed  in
-Figure~\ref{fig:nonarna}.  As was the  case for  the whole  dataset of
-``A-RNA  like'' and ``non-ARNA-like''  base-steps the  best clustering
-methodology to be  applied to the dataset according  to the validation
-results, is  the hierarchical  clustering methodology. This  is clear
-from   each   one   of   the   validation   score   plots   shown   in
-Figure~\ref{fig:noarna},  where the  trend line  for  the hierarchical
-method  is show in  black and  marked as  one and  is small  for the
-connectivy and  silhoutte scores and  large for the Dunn  index score,
-which,  as  stated for  the  case of  the  full  dataset analysis,  is
-indicative of an optimal method.
-
-Looking  at the  upper right  plot of  Figure  \ref{fig:noarna}, which
-plots the results for cluster  validation using the Dunn index, we see
-that the  optimal number of clusters  is $k=67$. The  Dunn index works
-under the idea of finding the best possible separation and compactness
-(see  Appendix  \ref{appendix_a}  for  definition  of  separation  and
-compactness) between clusters, so,  accordingly the result of grouping
-the 797  base-steps into 67  groups should produce well  separated and
-compact groups. The  other two indices show, as  for the whole dataset
-case,  that the  optimal number  of  clusters is  two. Nonetheless,  a
-common indicative of optimal cluster solutions in the connectivity and
-silhouette  plots is  given by  the presence  of shoulders.  In Figure
-\ref{fig:noarna} we  see that there is  a shoulder also  at $k=67$ for
-the  connectivity (in  the upper  left) and  silhouette plots  (in the
-lower left).
+we  have repeated  the cluster  validation analysis  for  the internal
+measures  (Figure~\ref{fig:noarna}). From this  analysis we  see again
+that the  best method for  clustering our dataset is  the hierarchical
+method. The Dunn index, which works under the idea of finding the best
+possible separation  and compactness  between clusters, shows  us that
+the optimal number of clusters  is $k=67$. The other two indices show,
+as for the whole dataset case,  that the optimal number of clusters is
+two. Nonetheless, a common  indicative of optimal cluster solutions in
+the  connectivity and  silhouette plots  is given  by the  presence of
+shoulders.  We  see that there  is a shoulder  also at $k=67$  for the
+connectivity and silhouette plots.
 
 We selected the 67 clusters given by the hierarchical method, and took
 their   corresponding  step-parameter   values   to  reconstruct   the
@@ -657,7 +622,7 @@ by using appropriate validated clustering analysis techniques.
 
 \begin{figure}
  \centering
-\includegraphics[angle=0, scale=0.72]{Chapter2/noarna_val.png}
+\includegraphics[angle=0, scale=0.76]{Chapter2/noarna_val.png}
 \caption{Cluster validity  scores for the non-ARNA dataset.  It can be
   seen  clearly  that  the   optimal  method  for  clustering  is  the
   hierarchical one,  as measured by  lower values in  the connectivity
