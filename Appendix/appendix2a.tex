@@ -45,10 +45,22 @@ d(X,Y) = max |x_{i}-y_{i}|
 where  the  distance  between  vectors  $X$ and  $Y$  is  the  maximum
 difference between vector variables.
 
-\noindent Once the  distance si defined, we use  a hierarchical method
-to cluster the space of distances between base-step parameters.
-The clustering algorithm first finds the two closest vectors (given by
-one of  the distance  definitions) and groups  them together.  Then it
+Yet  another distance  definition used  in  this text,  which is  more
+frequently interpreted as an statistical measure of error, is the root
+mean square  deviation (RMSD). The  root mean square deviation  can be
+seen as a  mean euclidean distance, in the sense  that it's defined as
+the square  root of the ratio  between the sum  of squared differences
+between vector variables, and the dimensionality of the vectors $N$.
+
+\begin{gather}
+RMSD(X,Y)      =     \Big(      \frac{\sum_{i=1}^2     |x_i-y_i|^2}{N}
+\Big)^\frac{1}{2} \label{eq:rmsd}
+\end{gather}
+
+\noindent Once the  distance is defined, we use  a hierarchical method
+to cluster  the space of distances between  base-step parameters.  The
+clustering algorithm first finds the two closest vectors (given by one
+of  the  distance definitions)  and  groups  them  together.  Then  it
 compares the  distance of the elements  in the newly  formed group and
 the  elements remaining  to be  grouped, according  to  the particular
 clustering method.  For example,  the single linkage clustering method
@@ -118,6 +130,27 @@ x_i -\frac{1}{N_x}\sum_{j=1}^{N_x} x_j\right|^2
 \end{gather} }
 \end{enumerate}
 
+%Yet  another clustering  tecnhique  used  in this  thesis  is that  of
+%consensus  clustering. In  our case  we have  only used  one consensus
+%clustering     algorithm      known     as     Euclidean     consensus
+%clustering.   Euclidean  consensus   clustering  consists   simply  in
+%minimizing a function which is  the weighted sum of the absolute value
+%of the  squared difference between ultrametrics for  all hierachies or
+%partitions which are to be queried for consensus.
+
+%\begin{gather}
+%L(U) = \sum_{b} w_{b} \|U-U_{b}\|^{2}\\
+%min L(U)
+%\end{gather}  
+
+%Where an ultrametric  $U$, refers to a metric  which instead of having
+%to comply to  the triangle inequality, it has to  comply to the strong
+%triangle inequality:
+
+%\begin{gather}
+%d(X,Y) \le max(d(X,Z),d(Y,Z))
+%\end{gather}  
+
 As an example lets think of a case where we have five structures. Each
 one of  them is descibed by  a bidimensional vector  as illustrated in
 Table~\ref{tab:data}.
@@ -179,21 +212,20 @@ to group whatever  structures are closer, that is,  structures 3 and 5
 this  cluster  and  the  remaining unclustered  structures,  that  is,
 structures 1, 2 and 4, we obtain the following mean distances
 \begin{gather}
-D(\{3,5\}, 1)=\frac{1}{2*1}*(8+11) = 4.5 \label{eq:dist}\\
+D(\{3,5\}, 1)=\frac{1}{2*1}*(8+11) = 9.5 \\
 D(\{3,5\}, 2)=\frac{1}{2*1}*(12+15) = 13.5\\
-D(\{3,5\}, 4)=\frac{1}{2*1}*(5+6) = 5.5
+D(\{3,5\}, 4)=\frac{1}{2*1}*(5+6) = 5.5 \label{eq:dist}
 \end{gather}
 Since  the distances between  \{3, 5\}  and all  remaining unclustered
 vectors is  higher than  the distance between  vectors 1 and  2 ($d(1,
 2)=4$) then \{1, 2\} are grouped. The following value, in hierarchical
-increasing   order   is   4.5    between   \{3,   5\}   and   1   (see
-equation~\ref{eq:dist}),  but since  1 and  2 are  already  grouped we
-can't group  \{3, 5\} with 1.  The next value, following  the lower to
-higher hierarchy,  is 5 ($d(3, 4)=5$),  but we have  already grouped 3
-with 5, so we have to  keep advancing in the hierarchy. The next value
-is 5.5, which  corresponds to grouping \{3, 5\} with  4, so we cluster
-them. The only  remaining possibility for grouping is,  group \{1, 2\}
-and \{4, 3, 5\}, so we do it as illustrated in Figure~\ref{fig:tree}.
+increasing   order   is   5.5    between   \{3,   5\}   and   4   (see
+equation~\ref{eq:dist}), so  we group them. The  next value, following
+the lower to higher hierarchy, is 6 ($d(4, 5)=6$), but we have already
+grouped 3  with 5, so we have  to keep advancing in  the hierarchy and
+we'll find that  the only remaining posibility for  grouping is, group
+\{1, 2\} and \{4, 3, 5\},  so we group them together as illustrated in
+Figure~\ref{fig:tree}.
 \begin{figure}[t]
 \centering
 \includegraphics[scale=0.3]{Appendix/appendixtree.png}
