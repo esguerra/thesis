@@ -314,7 +314,7 @@ that  69 percent  of base-steps  are not  recognized. We  believe this
 problem might be  due to three factors: 1) the  A-RNA (Structure 20 in
 Figures \ref{fig:nonAclus}  and \ref{fig:steps2}) structure identified
 by Schneider  et al.   differs from canonical  A-RNA in that  the rise
-value is 4.39 \AA, rather than the standard value of 3.30 \AA obtained
+value is 4.39 \AA, rather than the standard value of 3.30 \AA~obtained
 for A-RNA  by Arnott and collaborators  \cite{arnott1973}.  This might
 have an effect on the number  of structures which can be grouped under
 the A-RNA like Group IVb; 2) we are ignoring the richer classification
@@ -452,7 +452,7 @@ variables, but they  are not very useful for our  data set since, even
 though there is correlation between our variables this only occurs for
 shift vs. twist, and rise vs. tilt,  as can be seen from the values in
 the    upper   right    corner   of    the   pairs    scatterplot   in
-Figure~\ref{fig:pairsnoarna},  that   is,  of  the   fifteen  possible
+Figure~\ref{fig:allsteps},  that   is,  of  the   fifteen  possible
 correlated  pairs,   only  two  are  linearly   correlated,  and  such
 correlation  is  not very  strong  since  the correlation  coefficient
 values are below 0.95, which  means that 90\% of the variation between
@@ -517,7 +517,7 @@ A-RNA.   We have extracted  797 such  steps (about  29\% of  the total
 number  of steps)  from  the  dataset based  on  the root-mean  square
 deviation  between step  parameters  (Figure~\ref{fig:dormsd}).  These
 base-step parameters are  those with RMSD values greater  than 18 \AA.
-These RMSD values have  been computed between the base-step parameters
+RMSD values have  been computed between the base-step parameters
 of  all  dinucleotides  in  the  23S rRNA  subunit  and  the  standard
 base-step parameter values of  the canonical A-RNA helix determined by
 Arnott   and  collaborators   \cite{arnott1973}  work.   The  standard
@@ -528,13 +528,16 @@ listed in Table \ref{tab:conf} .
  \centering
 \includegraphics[angle=0, scale=0.38]{Chapter2/dormsd.png}
 \caption{Histogram of RMSD values  between base-step parameters of the
-  23S subunit  of ribosomal RNA and the  standard base-step parameters
-  derived  from  Arnott and  collaborators  \cite{arnott1973} work.  A
-  black vertical  line is drawn at  an RMSD value of  18 denoting that
-  the  corresponding  base-steps  below  this value  are  assigned  to
-  A-RNA-like conformations, and those above this value are assigned to
-  non-A-RNA-like conformations.}
- \label{fig:dormsd}
+23S  subunit of ribosomal  RNA and  the standard  base-step parameters
+derived from Arnott and collaborators \cite{arnott1973} work.  A black
+vertical  line is  drawn at  an  RMSD value  of 18  denoting that  the
+corresponding base-steps  below this value are  assigned to A-RNA-like
+conformations,   and  those   above   this  value   are  assigned   to
+non-A-RNA-like  conformations.   A   histogram  which  is  practically
+identical to the one shown  here is obtained if prior to normalization
+of  the   dataset  of  step-parameters   their  rotational  components
+(i.e. tilt, roll, twist) are expressed in radians instead of degrees.}
+\label{fig:dormsd}
 \end{figure}
 
 \begin{table}[ht]
@@ -567,42 +570,39 @@ AII-RNA & 1.01 & -2.52 & 3.33 & 2.9 & 9.8 & 25.1 & Schneider
  \centering
 \includegraphics[angle=90, scale=0.48]{Chapter2/warna_step.png}
 \caption{Scatterplots for  base-step parameters, shift  (D_{X}), slide
-  (D_{y}),  rise  (D_{z}), tilt  ($\tau$),  roll  ($\rho$), and  twist
-  ($\omega$), for the A-RNA (colored red) and non-A-RNA (colored blue)
-  datasets
-
-
-  colored   according   to    purine-pyrimidine   (black),
-  purine-purine    (red),     pyrimidine-pyrimidine    (green),    and
-  pyrimidine-purine (blue) steps. Here the correlation coefficients of
-  each of  the scatterplots shown in  the lower half of  the graph are
-  listed  in the mirror  position in  the upper  half of  the diagram,
-  i.e.,  the  shift-twist  ($D_{x}, \Omega$)  correlation  coefficient
-  (0.88)  of the  plotted  data shown  in  the lower  left corner,  is
-  printed in the upper right corner.  As seen from the coloring scheme
-  there is  no clear  sequence preference for  purine-pyrimidine (RY),
-  purine-purine  (RR), or  pyrimidine-pyrimidine  (YY) single-stranded
-  steps.}
- \label{fig:allsteps}
+(D_{y}),  rise  (D_{z}),  tilt  ($\tau$),  roll  ($\rho$),  and  twist
+($\omega$), for  the A-RNA (colored red) and  non-A-RNA (colored blue)
+datasets. The datasets where split  apart based on an RMSD cutoff less
+than or  equal to  18, between the  base-step parameters of  the A-RNA
+structure determined  by Arnott et  al. \cite{arnott1973} and  all the
+base-step   parameters   of  the   23S   subunit   of  ribosomal   RNA
+(PDB\_ID:1JJ@).  Here  the correlation  coefficients  of  each of  the
+scatterplots shown  in the lower half  of the graph are  listed in the
+mirror  position  in  the  upper   half  of  the  diagram,  i.e.,  the
+shift-twist  ($D_{x}, \Omega$) correlation  coefficient (0.89)  of the
+plotted data shown  in the lower left corner, is  printed in the upper
+right corner.}
+\label{fig:allsteps}
 \end{figure}
 
 \begin{figure}
- \centering
+\centering
 \includegraphics[angle=90, scale=0.48]{Chapter2/noarna_step.png}
-\caption{Scatterplots  for base-step  parameters, shift,  slide, rise,
-  tilt, roll, and twist, for the non-A-RNA dataset (taken as the steps
-  with RMSD's greater than 18) colored according
-  to      purine-pyrimidine     (black),      purine-purine     (red),
-  pyrimidine-pyrimidine   (green),    and   pyrimidine-purine   (blue)
-  steps. Here the correlation coefficients of each of the scatterplots
-  shown  in the  lower half  of  the graph  are listed  in the  mirror
-  position in  the upper  half of the  diagram, i.e.,  the shift-twist
-  ($D_{x}, \Omega$) correlation coefficient (0.88) of the plotted data
-  shown  in the  lower  left corner,  is  printed in  the upper  right
-  corner.  As  seen  from the  coloring  scheme there  is no  clear
-  sequence preference for  purine-pyrimidine (RY), purine-purine (RR),
-  or pyrimidine-pyrimidine (YY) single-stranded steps.}
- \label{fig:pairsnoarna}
+\caption{Scatterplots for base-step parameters, shift (D$_{x}$), slide
+(D$_{y}$),  rise (D$_{z}$),  tilt ($\tau$),  roll ($\rho$),  and twist
+($\omega$), for the non-A-RNA dataset  (taken as the steps with RMSD's
+greater  than  18).    Points  are  color  coded  in   terms  of  base
+compositions;   purine-pyrimidine    (black);   purine-purine   (red);
+pyrimidine-pyrimidine    (green);    and   pyrimidine-purine    (blue)
+steps. Here  the correlation coefficients of each  of the scatterplots
+shown in the lower half of the graph are listed in the mirror position
+in  the upper  half of  the  diagram, i.e.,  the shift-twist  ($D_{x},
+\Omega$) correlation  coefficient (0.88) of the plotted  data shown in
+the lower left corner, is printed  in the upper right corner.  As seen
+from the  coloring scheme  there is no  clear sequence  preference for
+single-stranded   purine-pyrimidine  (RY),   purine-purine   (RR),  or
+pyrimidine-pyrimidine (YY).}
+\label{fig:pairsnoarna}
 \end{figure}
 
 With the filtered dataset, which we refer to as the non-A-RNA dataset,
