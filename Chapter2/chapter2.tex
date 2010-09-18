@@ -330,24 +330,21 @@ conformational groupings. We believe this result might stem from three
 factors: 1) the A-RNA  (Structure 20 in Figures \ref{fig:nonAclus} and
 \ref{fig:steps2})  structure identified by  Schneider et  al.  differs
 from canonical A-RNA  in that the rise value is  4.39 \AA, rather than
-the  standard value  of  3.30  \AA~obtained for  A-RNA  by Arnott  and
-collaborators  \cite{arnott1973}.  This  might have  an effect  on the
+the standard  value of 3.30 \AA~  obtained for A-RNA  fibers by Arnott
+and collaborators \cite{arnott1973}.  This might have an effect on the
 number of structures  which can be grouped under  the A-RNA like Group
-IVb;  2)   we  are  ignoring   the  richer  classification   of  A-RNA
+IVb;  2) our  treatment  ignores the  richer  classification of  A-RNA
 conformations described  by Schneider et  al.  \cite{schneider2004} by
-only  using  conformers  19 and  20  in  Group  IVb and  ignoring  the
-remaining 12 A-RNA-like conformers, and 3) mixing results from Fourier
-averaging  of sugar-phosphate backbone  torsion angles,  and base-step
-parameters   consensus  clustering,  might   result  in   omission  of
-intermediate base-step conformations which could be highly populated.
+using  only  conformers  19 and  20  in  Group  IVb and  omitting  the
+remaining 12  A-RNA-like conformers;  and 3) the  mix here  of results
+from Fourier averaging of  sugar-phosphate backbone torsion angles and
+base-step  parameters consensus  clustering,  might omit  intermediate
+base-step conformations which could be highly populated.
 
-Due to this  problem we chose to investigate the  whole space of RNA
-conformations  in the  23S  subunit of  the ribosome  (PDBID\_ID:1JJ2)
-using  base-step parameters alone  and clustering  analysis validation
-techniques as described in the following section.
-%% or it could also be  related to the fact that we  are ignoring the
-%% remaining A-RNA related set of structures in Berman and
-%% collaborators analysis.
+We therefore chose to investigate the whole space of RNA conformations
+in  the 23S  subunit  of  the ribosome  (PDBID\_ID:1JJ2)  in terms  of
+base-step  parameters alone  with the  clustering  analysis validation
+techniques described in the following section.
 
 \begin{table}[htbp]
 \begin{center}
@@ -367,12 +364,11 @@ Total & 861 (31.28) & 1843 (66.95) & 2259 (82.06)\\ \hline
 \end{tabular}
 }
 \caption{Number of base-steps in the 23S subunit of \textit{Haloarcula
-    marismortui} with RMSD values less than or equal to 10, 15, and 20
-  between  the  average  base-step  vectors  of  the  four  groups  of
-  non-A-type  RNA dinucleotide  conformations and  the  2753 base-step
-  vectors  in   23S  rRNA.   The   numbers  in  parentheses   are  the
-  corresponding  percentages   computed  with  respect   to  the  2753
-  base-steps present in the 23S subunit of the ribosome.}
+marismortui} ribosome with  RMSD values less than or  equal to 10, 15,
+and  20 from  the  average base-step  vectors  of the  four groups  of
+non-A-type RNA dinucleotide  conformations. The numbers in parentheses
+are the  corresponding percentages computed  with respect to  the 2753
+base steps present in the 23S subunit.}
 \label{tab:nonA}
 \end{center}
 \end{table}
@@ -380,20 +376,23 @@ Total & 861 (31.28) & 1843 (66.95) & 2259 (82.06)\\ \hline
 \begin{figure}[htbp]
  \centering
 \includegraphics[angle=90, scale=0.5]{Chapter2/RMSDschneider1.png}
-\caption{Root mean square deviation of the main four groups show in
-  Figure~\ref{fig:nonAclus}. The color of the histograms is the same
-  as that of the boxes surrounding the structures of
-  Figure~\ref{fig:nonAclus}}
+\caption{Root-mean-square deviation  of the dinucleotide  steps in the
+23S  subunit  of the  ribosome  from the  main  four  groups shown  in
+Figures~\ref{fig:nonAclus}  and  \ref{fig:steps2}.  The color  of  the
+histograms  is  the same  as  that  of  the outlines  surrounding  the
+structures in Figure~\ref{fig:nonAclus}}
  \label{fig:histo1}
 \end{figure}
 
 \begin{figure}[htbp]
  \centering
 \includegraphics[angle=90, scale=0.5]{Chapter2/RMSDschneider2.png}
-\caption{Root  mean  square  deviation  histograms for  the  subgroups
-  present in group  IV.  Since subgroup IVb is  composed of A-RNA like
-  conformations we  see in the  upper left histogram that  the highest
-  proportion of small RMSD values belongs to this group.}
+\caption{Root-mean-square  deviation histograms of  dinucleotide steps
+in the 23S  subunit of the ribosome from the  four types of conformers
+within the  Group IV category shown in  Figures \ref{fig:nonAclus} and
+\ref{fig:steps2}. Note that most of the dimers resemble the A-RNA-like
+conformers in subgroup IVb in  the upper left histogram where there is
+the highest proportion of small RMSD values.}
  \label{fig:histo2}
 \end{figure}
 
