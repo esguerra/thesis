@@ -414,21 +414,21 @@ the highest proportion of small RMSD values.}
  \label{fig:superimpose}
 \end{figure}
 
-\subsection{Selection of a Clustering Methodology} 
-In order to  analyze our dataset of base-step  parameters we have used
-clustering  analysis  methods.   Clustering  analysis methods  can  be
-broadly  classified into  two main  categories, either  partitional or
-hierarchical.   In  either  case   the  main  problem  one  faces  for
-classification  purposes is  that of  deciding the  optimal  number of
-hierarchies or partitions  that the analyzed data are  split into.  To
-obtain  a criterion for  an optimal  number of  clusters, and  also to
-decide which method might be better  for our dataset, we have used two
-types of  cluster-validation techniques.   They are known  as internal
-measures and  stability measures.  Full details of  the definitions of
-such  measures   are  provided  in   the  literature  \cite{handl2005,
-  brock2008}  and in  Appendix~\ref{sec:validation}.   To perform  the
-validation  analysis  we  used  a cluster  validation  package  called
-clValid \cite{brock2008},  which is implemented in  the R \cite{rcite}
+\subsection{Selection of a Clustering Methodology} In order to analyze
+our dataset  of base-step parameters we have  used clustering analysis
+methods.  Clustering  analysis methods can be  broadly classified into
+two main  categories, either  partitional or hierarchical.   In either
+case the main problem one faces for classification purposes is that of
+deciding the  optimal number of  hierarchies or partitions  into which
+the analyzed data can be split.   To obtain a criterion for an optimal
+number of  clusters, and also to  decide which method  might be better
+for  our  dataset,  we  have  used  two  types  of  cluster-validation
+techniques.   They  are  known  as  internal  measures  and  stability
+measures.   Full  details of  the  definitions  of  such measures  are
+provided  in   the  literature  \cite{handl2005,   brock2008}  and  in
+Appendix~\ref{sec:validation}.  To perform  the validation analysis we
+used  a freely  available  cluster validation  package called  clValid
+\cite{brock2008},   which  is  implemented   in  the   R  \cite{rcite}
 statistical analysis package.
 
 In  Figures~\ref{fig:internal} and~\ref{fig:stability} we  present the
@@ -438,115 +438,113 @@ clustering analysis literature  it is customary to use  a variable $k$
 to define the number of clusters  which we will be using frequently in
 the text.
 
-In  Figure~\ref{fig:internal} we  see the  results from  computing the
-validation scores (connectivity, silhoutte  width, and Dunn index) for
-cluster groups ranging  from $k=2$, up to $k=80$,  and evaluated using
-both, hierarchical (hierarchical, diana) and partitional (kmeans, pam,
-som, sota) methods. An optimal connectivity measure must be minimized,
-and the average  silhouette width (silhouette) and Dunn  index must be
+In   Figure~\ref{fig:internal}   we    see   the   validation   scores
+(connectivity,  silhoutte width,  and Dunn  index) for  cluster groups
+ranging  from   $k=2$,  up  to  $k=80$,  and   evaluated  using  both,
+hierarchical (hierarchical, diana)  and partitional (kmeans, pam, som,
+sota) methods. An optimal  connectivity measure must be minimized, and
+the  average silhouette  width  (silhouette) and  Dunn  index must  be
 maximized.  Keeping in mind the previously described optimal trends we
-see  that  for   the  three  graphs  shown  in   this  figure  the
+see   that  for   the  three   graphs   shown  in   this  figure   the
 hierarchical\footnote{The  hierarchical method can  be carried  out in
-  various ways,  for example,  using different metrics,  and different
-  grouping methodologies.  In this specific case we are referring to a
-  hierarchical method  carried out in the  agglomerative, or bottom-up
-  manner, meaning that  we start by grouping pairs  of steps which are
-  initially  ungrouped,   and  group  them   progresively  with  other
-  ungrouped  steps using  the  average method  criteria (explained  in
-  Appendix~\ref{appendix_a}),  which  in turn  depends  on a  distance
-  definition  which in  this  case  is that  of  the Euclidean  metric
-  (defined in  Appendix~\ref{appendix_a}).}  method (black  trend line
-marked  as one.)  performs  better in connectivity and  Dunn index
-for the whole range of two to eighty clusters, and it is also the best
-performer in silhouette from $k=12$ onwards.
+various ways, for example, using  different metrics (i.e.  a mesure of
+the   distance    between   datapoints),   and    different   grouping
+methodologies.   In   this  specific  case  we  are   referring  to  a
+hierarchical  method carried  out  in an  agglomerative, or  bottom-up
+manner, meaning  that we  start by grouping  pairs of steps  which are
+initially ungrouped, and group  them progresively with other ungrouped
+steps    using   the   average    method   criteria    (explained   in
+Appendix~\ref{appendix_a}),  which  in  turn  depends  on  a  distance
+definition which in this case is that of the Euclidean (square root of
+the  sum of the  squared differences  between vector  elements) metric
+(defined  in Appendix~\ref{appendix_a}).}   method (series  of numeral
+1's shown in  black) performs better in terms  of the connectivity and
+Dunn index for the entire  range of eighty clusters $k=(2-80)$, and it
+is also the best performer in silhouette from $k=12$ onwards.
 
 Stability  measures (Figure~\ref{fig:stability})  are well  suited for
-highly  correlated  data sets  with  linear  correlation between  many
-variables, but they  are not very useful for our  data set since, even
-though there is correlation between our variables this only occurs for
-shift vs. twist, and rise vs. tilt,  as can be seen from the values in
-the    upper   right    corner   of    the   pairs    scatterplot   in
-Figure~\ref{fig:allsteps},  that   is,  of  the   fifteen  possible
-correlated  pairs,   only  two  are  linearly   correlated,  and  such
-correlation  is  not very  strong  since  the correlation  coefficient
-values are below 0.95, which  means that 90\% of the variation between
-variables can be  explained by a linear relationship  between them. We
-include the cluster stability measures for completeness in the cluster
-validation scheme.
+highly  correlated  datasets  with  linear  correlation  between  many
+variables, but  they are  not very useful  for our dataset,  where the
+only correlations between variables occur for shift vs. twist and rise
+vs.   tilt, as  can  be  seen from  the  scatterplots and  correlation
+coefficients reported  in Figure~\ref{fig:allsteps}.  That  is, of the
+fifteen possible  correlated pairs, only two  are linearly correlated,
+and  such  correlations are  not  very  strong.  The values  of  these
+correlation coefficients  are less than  0.95, meaning that  less than
+90\%  of the variation  between variables  can be  accounted for  by a
+linear  relationship  between  them.   We, nevertheless,  include  the
+cluster stability measures for completeness.
 
-The    stability   measurements   we    have   computed    (shown   in
-Figure~\ref{fig:stability})  are  indicative  of a  better  clustering
-methodology the smaller their values.  We have computed three measures
-for  each of  the hierarchical  and partitional  methods,  namely, the
-average proportion  of non-overlap  (APN), the average  distance (AD),
-and the  average distance  between means (ADM).   The details  of such
-measures  are   given  in  Brock  et  al.    \cite{brock2008}  and  in
-Appendix~\ref{appendix_a}.  As  seen in Figure~\ref{fig:stability} the
-method which performs the best  according to the stability measures is
-sota (second-order tolerance  analysis) for APN and ADM  since one can
-clearly see that  in the corresponding curve in  cyan color and marked
-with number  five the  values are smaller  consistenly for  almost the
-whole range,  up to $k=70$.   In the case  of the AD measure  the best
-performers  (those with smaller  values) are  pam (green  curve marked
-with number three) and sota  (cyan curve marked with number five) over
-the whole range.  Notice that the hierarchical method follows the same
-trend as  the other methods, and  that in general, apart  from the APN
-measure and  the sota method,  all methods exhibit a  similar behavior
-probably due  to the fact that  our data set is  not highly correlated
-(that  is,  the dataset  cannot  be reduced  to  a  smaller amount  of
-dimensions).
+We  have  computed  three  measures  of  stability  for  each  of  the
+hierarchical and  partitional methods, namely,  the average proportion
+of  non-overlap (APN),  the  average distance  (AD),  and the  average
+distance between means (ADM).  The  details of such measures are given
+in      Brock      et      al.       \cite{brock2008}      and      in
+Appendix~\ref{appendix_a}. The  best clustering methodology  will have
+low values of these quantities.  As seen in Figure~\ref{fig:stability}
+the best performing method according  to these APN and ADM criteria is
+sota (second-order  tolerance analysis). One can clearly  see from the
+corresponding series of  cyan numerals (5's) that the  sota values are
+smaller consistenly  than those for  all other methods for  almost all
+cluster sizes up  to $k=70$.  The best performers  (those with smaller
+values) over the  whole range of $k$ according to  the AD criteria are
+pam (series of green 3's) and som (series of blue 4's). Notice that in
+the AD  and ADM plots, perhaps  with the exception of  the sota method,
+all methods  seem to  follow the same  trend, meaning that  they would
+predict the same number of optimal clusters.
 
-In all cases  we also see that the best overall  number of clusters is
-two,  which is  not surprising  since  we haven't  filtered out  A-RNA
-structures  from our  data set.  The two  main groups  are  A-RNA type
-base-steps, and non-A-RNA steps.
+\subsection{Splitting  A-RNA Like  and Non-ARNA-Like  Steps.}   In all
+cases the validation  results tell us that the  best overall number of
+clusters is  two, which is not  surprising since we do  not filter the
+A-RNA structures from our data set.  The two main groups are thus A-RNA
+type base-steps, and non-A-RNA steps.
 
 \begin{figure}
  \centering
 \includegraphics[angle=0, scale=0.34]{Chapter2/STval_int.png}
-\caption{Cluster  validity   scores  for  internal   measures  of  all
-  base-step   parameters  in   the  23S   subunit  of   ribosomal  RNA
-  (PDB\_ID:1JJ2). Notice  how the hierarchical method,  labeled as one
-  and drawn  as a black  line, behaves better  for the whole  range of
-  connectivity (smaller values) and  Dunn (higher values), and it also
-  outperforms all  others after $k=12$ for  silhouette (higher values)
-  scores.}
+\caption{Cluster  validity   scores  for  internal   measures  of  the
+distances between all sets of  base-step parameters in the 23S subunit
+of ribosomal  RNA (PDB\_ID:1JJ2). Notice how  the hierarchical method,
+labeled as one  and drawn as series of  black numerals, behaves better
+for the whole range of  connectivity (smaller values) and Dunn (higher
+values) scores,  and how it  also outperforms all others  after $k=12$
+for silhouette (higher values) scores.}
  \label{fig:internal}
 \end{figure}
 
 \begin{figure}
  \centering
 \includegraphics[angle=0, scale=0.34]{Chapter2/STval_sta.png}
-\caption{Cluster  validity  scores   for  stability  measures  of  all
-  base-step   parameters  in   the  23S   subunit  of   ribosomal  RNA
-  (PDB\_ID:1JJ2).  Note that stability measures work specially well for
-  datasets of  highly correlated data, which  is not the  case for our
-  dataset  but are  shown  here for  consistency  with the  validation
-  package clValid.}
+\caption{Cluster  validity  scores   for  stability  measures  of  the
+distances between all sets of  base-step parameters in the 23S subunit
+of ribosomal RNA (PDB\_ID:1JJ2). The average proportion of non-overlap
+(APN), average distance (AD), and average distance between means (ADM)
+are  plotted  against the  number  of  clusters.  Note that  stability
+measures work  specially well for datasets of  highly correlated data,
+which is  not the case for  our dataset.  These values  are shown here
+for consistency with the validation package clValid.}
  \label{fig:stability}
 \end{figure}
 
 We focus  our attention on the  group of structures  which differ from
-A-RNA.   We have extracted  797 such  steps (about  29\% of  the total
-number  of steps)  from  the  dataset based  on  the root-mean  square
-deviation  between step  parameters  (Figure~\ref{fig:dormsd}).  These
-base-step parameters are  those with RMSD values greater  than 18 \AA.
-RMSD values have  been computed between the base-step parameters
-of  all  dinucleotides  in  the  23S rRNA  subunit  and  the  standard
-base-step parameter values of  the canonical A-RNA helix determined by
-Arnott   and  collaborators   \cite{arnott1973}  work.   The  standard
-base-step parameter values for  common double-stranded RNA and DNA are
-listed in Table \ref{tab:conf} .
+A-RNA.  To  define an  A-RNA like step  we use the  standard base-step
+parameter values of the canonical A-RNA helix determined by Arnott and
+collaborators \cite{arnott1973}.  We find that there are 797 non-A-RNA
+like steps (about  29\% of the total number of steps)  in the 23S rRNA
+subunit by counting the steps  which have a root-mean square deviation
+between the ribosomal  steps and the standard A-RNA  step greater than
+18 \AA (see Figure~\ref{fig:dormsd}). The standard base-step parameter
+values  for common  double-stranded RNA  and DNA  are listed  in Table
+\ref{tab:conf}.
 
 \begin{figure}[ht]
  \centering
 \includegraphics[angle=0, scale=0.38]{Chapter2/dormsd.png}
 \caption{Histogram of RMSD values  between base-step parameters of the
-23S  subunit of ribosomal  RNA and  the standard  base-step parameters
-derived from Arnott and collaborators \cite{arnott1973} work.  A black
-vertical  line is  drawn at  an  RMSD value  of 18  denoting that  the
-corresponding base-steps  below this value are  assigned to A-RNA-like
-conformations,   and  those   above   this  value   are  assigned   to
+23S  subunit  of  ribosomal  RNA  and  the  standard  A-RNA  base-step
+parameters  derived from  Arnott  and collaborators  \cite{arnott1973}
+work. The black vertical line drawn at an RMSD value of 18 denotes the
+limit   used    to   distinguish   A-RNA-like    conformations,   from
 non-A-RNA-like  conformations.   A   histogram  which  is  practically
 identical to the one shown  here is obtained if prior to normalization
 of  the   dataset  of  step-parameters   their  rotational  components
@@ -557,10 +555,10 @@ of  the   dataset  of  step-parameters   their  rotational  components
 \begin{table}[ht]
 \centering
 \small\addtolength{\tabcolsep}{-2pt}
-\begin{tabular}{p{1.4cm}|c|c|c|c|c|c|c|c}
+\begin{tabular}{p{1.4cm}|c|c|c|c|c|c|c|p{1.4cm}}
 \hline
 \textbf{Structure Name} & Shift ($D_x$) & Slide ($D_y$) & Rise ($D_z$) & Tilt
-($\tau$) & Roll ($\rho$) & Twist ($\Omega$) & \textbf{Reference} &
+($\tau$) & Roll ($\rho$) & Twist ($\Omega$) & \textbf{Structure Source} &
 \textbf{Method} \\ \hline
 A-DNA & 0.36 & -1.39 & 3.29 & 2.5 & 12.5 & 30.2 & Arnott
 \cite{arnott1999} & fiber-diff. \\ \hline
@@ -573,7 +571,7 @@ A'-RNA & 0.05 & -1.88 & 3.39 & -0.1 & 5.4 & 29.5 & Arnott
 AII-RNA & 1.01 & -2.52 & 3.33 & 2.9 & 9.8 & 25.1 & Schneider
 \cite{schneider2004} & X-ray \\ \hline
 \end{tabular}
-\caption{Base    step   parameters    for   common    DNA    and   RNA
+\caption{Base-step   parameters    for   common    DNA    and   RNA
   conformations.   The  base-step  parameters   are  computed   for  a
   single-stranded  base-step rather  than a  double-stranded base-pair
   step.}
@@ -619,36 +617,30 @@ pyrimidine-pyrimidine (YY).}
 \label{fig:pairsnoarna}
 \end{figure}
 
-With the filtered dataset, which we refer to as the non-A-RNA dataset,
-we  have  again  performed  a  clustering  validation  analysis  using
-internal  measures   and  the   computed  results  are   displayed  in
-Figure~\ref{fig:noarna}.  As was the  case for  the whole  dataset of
-``A-RNA  like'' and ``non-ARNA-like''  base-steps the  best clustering
-methodology to be  applied to the dataset according  to the validation
-results, is  the hierarchical  clustering methodology. This  is clear
-from   each   one   of   the   validation   score   plots   shown   in
-Figure~\ref{fig:noarna},  where the  trend line  for  the hierarchical
-method  is show in  black and  marked as  one and  is small  for the
-connectivy and  silhoutte scores and  large for the Dunn  index score,
-which,  as  stated for  the  case of  the  full  dataset analysis,  is
-indicative of an optimal method.
+Using  the  filtered dataset,  which  we  refer  to as  the  non-A-RNA
+dataset,    we   repeated    the   clustering    validation   analysis
+(Figure~\ref{fig:noarna}).  As  was the case for the  whole dataset of
+``A-RNA like''  and ``non-ARNA-like'' base-steps,  the best clustering
+methodology  in  terms  of  the  validation  results  is  hierarchical
+clustering.  This is  clear from  each of  the validation  score plots
+where the values  for the hierarchical method (black  number ones) are
+small for the connectivy and  silhouette scores and large for the Dunn
+index score.
 
-Looking  at the  upper right  plot of  Figure  \ref{fig:noarna}, which
-plots the results for cluster  validation using the Dunn index, we see
-that the  optimal number of clusters  is $k=67$. The  Dunn index works
-under the idea of finding the best possible separation and compactness
-(see  Appendix  \ref{appendix_a}  for  definition  of  separation  and
-compactness) between clusters, so,  accordingly the result of grouping
-the 797  base-steps into 67  groups should produce well  separated and
-compact groups. The  other two indices show, as  for the whole dataset
-case,  that the  optimal number  of  clusters is  two. Nonetheless,  a
-common indicative of optimal cluster solutions in the connectivity and
-silhouette  plots is  given by  the presence  of shoulders.  In Figure
-\ref{fig:noarna} we  see that there is  a shoulder also  at $k=67$ for
-the  connectivity (in  the upper  left) and  silhouette plots  (in the
-lower left).
+According to  Dunn Index score (Figure  \ref{fig:noarna}), the optimal
+number of clusters  is $k=67$. The Dunn index works  under the idea of
+finding  the best  possible separation  and compactness  (see Appendix
+\ref{appendix_a}  for  definitions   of  separation  and  compactness)
+between clusters. Thus the grouping  the 797 base-steps into 67 groups
+should  produce  well-separated  and  compact groups.  The  other  two
+indices (connectivity and silhouette)  show, as for the whole dataset,
+that  the optimal  number  of  clusters of  the  non-A-RNA dataset  is
+two.  The presence  of shoulders  in the  connectivity  and silhouette
+plots of  the hierarchical clustering data  is, nonetheless indicative
+of optimal clusters. Moreover these  shoulders occur at $k=67$ for the
+connectivity (upper left) and silhouette (lower left) plots.
 
-We selected the 67 clusters given by the hierarchical method, and took
+We used the 67 clusters given by the hierarchical method, and took
 their   corresponding  step-parameter   values   to  reconstruct   the
 dinucleotide      step       structures      using      3DNA.       In
 Figure~\ref{fig:noarnak67} we draw the first seventeen groups with ten
