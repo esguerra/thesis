@@ -493,7 +493,7 @@ the AD  and ADM plots, perhaps  with the exception of  the sota method,
 all methods  seem to  follow the same  trend, meaning that  they would
 predict the same number of optimal clusters.
 
-\subsection{Splitting  A-RNA Like  and Non-ARNA-Like  Steps.}   In all
+\subsection{Splitting A-RNA-Like and Non-ARNA-Like Steps.}  In all
 cases the validation  results tell us that the  best overall number of
 clusters is  two, which is not  surprising since we do  not filter the
 A-RNA structures from our data set.  The two main groups are thus A-RNA
@@ -555,7 +555,7 @@ of  the   dataset  of  step-parameters   their  rotational  components
 \begin{table}[ht]
 \centering
 \small\addtolength{\tabcolsep}{-2pt}
-\begin{tabular}{p{1.4cm}|c|c|c|c|c|c|c|p{1.4cm}}
+\begin{tabular}{p{1.4cm}|c|c|c|c|c|c|p{2.2cm}|c}
 \hline
 \textbf{Structure Name} & Shift ($D_x$) & Slide ($D_y$) & Rise ($D_z$) & Tilt
 ($\tau$) & Roll ($\rho$) & Twist ($\Omega$) & \textbf{Structure Source} &
@@ -564,7 +564,7 @@ A-DNA & 0.36 & -1.39 & 3.29 & 2.5 & 12.5 & 30.2 & Arnott
 \cite{arnott1999} & fiber-diff. \\ \hline
 B-DNA & 0.44 & 0.47 & 3.33 & 4.6 & 1.8 & 35.7   & Arnott
 \cite{arnott1999} & fiber-diff. \\ \hline
-A-RNA & -0.08 & -1.48 & 3.30 & -0.4 & 8.6 & 31.6 & Arnott
+A-RNA & 0.02 & -1.48 & 3.30 & 0.0 & 8.6 & 31.6 & Arnott
 \cite{arnott1999} & fiber-diff. \\ \hline
 A'-RNA & 0.05 & -1.88 & 3.39 & -0.1 & 5.4 & 29.5 & Arnott
 \cite{arnott1999} & fiber-diff. \\ \hline
@@ -666,7 +666,7 @@ crystal  structure. On  the other  hand, although  the  17 represented
 groups  are not  as compact  as the  observed data,  they hint  of the
 geometrical preferences of the space of dinucleotide step-parameters.
 
-For example, it  is remarkable to see in the  group, labeled as g7.png
+For example, it  is remarkable to see in the  group, labeled as g7
 in  Figure~\ref{fig:noarnak67}  that   the  cyan  blocks  representing
 uracil, orient their  planes orthogonally to the major  groove side of
 the red block representing adenine.
@@ -677,16 +677,16 @@ complexity  of the  conformation  space described  from a  base-viewed
 perspective rather  than of the more common  backbone perspective.  As
 is well  known small changes in  backbone can have  drastic effects of
 array  of  bases,  for  example  converting  right-handed  helices  to
-left-handed   helices\cite{olson1976}.  On   the  other   hand,  large
+left-handed helices \cite{olson1976}.  On the other hand, large
 concerted changes in  the torsions can preserve the  structures of RNA
-and DNA helices.
+and DNA helices \cite{olson1981}.
 
 This image suggests that the task of finding order in this broad range
 of  possible conformations  is somewhat  analogous to  solving  a ball
 puzzle.   There are  various  ball  puzzles, but  the  one which  most
 resembles this  case is that  of a so-called masterball  puzzle, which
-consists of a  sphere with two parallel lines  at roughly 60$\circ$ of
-latitude  north  and  south  from  the  sphere's  equator,  and  eight
+consists of a  sphere with two parallel lines  at roughly 60$^{\circ}$
+of  latitude north  and south  from  the sphere's  equator, and  eight
 meridians, as seen in the left side of Figure \ref{fig:masterball}. We
 believe  the puzzle  can be  effectively solved  by  using appropriate
 validated clustering analysis techniques.
@@ -695,40 +695,44 @@ validated clustering analysis techniques.
 \begin{figure}
  \centering
 \includegraphics[angle=0, scale=0.72]{Chapter2/noarna_val.png}
-\caption{Cluster validity  scores for the non-ARNA dataset.  It can be
-  seen  clearly  that  the   optimal  method  for  clustering  is  the
-  hierarchical one,  as measured by  lower values in  the connectivity
-  scores, and higher  values in the Dunn score.  The optimal number of
-  clusters given  by the Dunn  score is 67,  we also see  shoulders at
-  $k=67$, for the connectivity and silhouette scores.}
+\caption{Cluster validity scores for the distances between all sets of
+  base-steps  parameters in  the non-A-RNA  dataset.  It  can  be seen
+  clearly that  the optimal method for clustering  is the hierarchical
+  one, as  measured by  lower values in  the connectivity  scores, and
+  higher values  in the  Dunn score.  The  optimal number  of clusters
+  given by the Dunn score is  67, we also see shoulders at $k=67$, for
+  the connectivity and silhouette scores.}
  \label{fig:noarna}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=0.32]{Chapter2/k67_17.png}
-\caption{17  out of  the 67  groups clustered  using  the hierarchical
-  clustering algorithm are  drawn. Each group is centered  on the base
-  reference frame  of the  adenine block drawn  in red.  In  the lower
-  right  corner  of  the  "contact   sheet"  the  full  space  of  797
-  reconstructed steps is  shown, along with the 20  steps derived from
-  Schneider  et al. work.  Notice how  the only  "hollow" side  of the
+\includegraphics[angle=0, scale=0.30]{Chapter2/k67_17.png}
+\caption{The array  of bases  are represented in  all cases by  an ApU
+  step generated from step parameters  using 3DNA. The first 17 of the
+  67  groups  of  dinucleotide  conformers from  clustered  using  the
+  hierarchical clustering  algorithm.  Each  group is centered  on the
+  base  reference frame of  the adenine  block drawn  in red.   In the
+  lower  right corner of  the "contact  sheet" the  full space  of 797
+  reconstructed steps  is shown,  along with the  20 steps  derived by
+  Schneider et  al.  \cite{schneider2004}  from the torsion  angles in
+  the same  structure.  Notice  how the only  "hollow" section  of the
   "onion" formed by the full  space of base-step conformations is that
-  corresponding to the Watson-Crick base-pairing edge.}
+  corresponding  to the  Watson-Crick base-pairing  edges,  space that
+  would be occupied by the  bases paired to adenine by Watson-Crick or
+  other non-canonical base-pairing interactions.}
 \label{fig:noarnak67}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[angle=0, scale=0.4]{Chapter2/masterball2.png}
-\caption{Rebuilt  base-step  parameters  of  the 23S  subunit  of  the
+\caption{Rebuilt-base-step  parameters  of  the  23S  subunit  of  the
   ribosome using the reference frame of adenine (drawn as a red block)
-  in the left side of the figure, resemble a jumbled masterball puzzle
-  on the right side.}
+  in the  left side  of the figure,  compared to a  jumbled masterball
+  puzzle on the right side.}
 \label{fig:masterball}
 \end{figure}
-
-
 
 
 \bibliography{biblio}

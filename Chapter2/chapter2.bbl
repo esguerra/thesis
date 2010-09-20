@@ -171,8 +171,19 @@ R Foundation for Statistical Computing Vienna, Austria (2009)
 {ISBN} 3-900051-07-0.
 
 \bibitem{arnott1999}
-Arnott, S. (1999)
-Oxford Handbook of Nucleic Acid Structure,
-Oxford Science Publications, .
+Arnott, S.
+Oxford Handbook of Nucleic Acid Structure pp. 1--38
+Oxford Science Publications (1999).
+
+\bibitem{olson1976}
+Olson, W.~K. (1976)
+{The Spatial Configuration of Ordered Polynucleotide Chains. I. Helix Formation
+  and Base Stacking}.
+{\em Biopolymers,} {\bf 15}, 859--878.
+
+\bibitem{olson1981}
+Olson, W.~K. (1981)
+{Understanding the Motions of DNA}.
+{\em Biomolecular Stereodynamics,} {\bf 1}, 327--343.
 
 \end{thebibliography}

@@ -103,7 +103,7 @@ Severcan, I., Geary, C., Verzemnieks, E., Chworos, A., and Jaeger, L. (2009)
 \url{http://ndbserver.rutgers.edu/atlas/atlas_about.html}.
 
 \bibitem{iupac1983}
-(1983)
+IUPAC-IUB (1983)
 {IUPAC-IUB Joint Commission on Biochemical Nomenclature (JCBN). Abbreviations
   and Symbols for the Description of Conformations of Polynucleotide Chains.
   Recommendations 1982}.
@@ -116,8 +116,8 @@ Springer-Verlag, London.
 
 \bibitem{lee2004}
 Lee, J.~C. and Gutell, R.~R. (2004)
-Diversity of base-pair conformations and their occurrence in rrna structure and
-  rna structural motifs.
+{Diversity of Base-pair Conformations and their Occurrence in rRNA Structure
+  and RNA Structural Motifs}.
 {\em Journal of Molecular Biology,} {\bf 344}, 1225--1249.
 
 \bibitem{leontis2002b}

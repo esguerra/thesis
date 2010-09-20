@@ -23,13 +23,19 @@ Depaul, A.~J., Thompson, E.~J., Patel, S.~S., Haldeman, K., and Sorin, E.~J.
   (2010)
 {Equilibrium Conformational Dynamics in an RNA Tetraloop From Massively
   Parallel Molecular Dynamics}.
-{\em Nucleic Acids Research,}.
+{\em Nucleic Acids Research,} {\bf 38}, 4856--4867.
 
 \bibitem{heus1991}
 Heus, H.~A. and Pardi, A. (1991)
 {Structural Features That Give Rise to the Unusual Stability of RNA Hairpins
   Containing GNRA Loops}.
 {\em Science,} {\bf 253}, 191--194.
+
+\bibitem{pley1994b}
+Pley, H.~W., Flaherty, K.~M., and McKay, D.~B. (1994)
+{Model for an RNA tertiary interaction from the structure of an intermolecular
+  complex between a GAAA tetraloop and an RNA helix}.
+{\em Nature,} {\bf 372}, 111--113.
 
 \bibitem{pley1994}
 Pley, H.~W., Flaherty, K.~M., and McKay, D.~B. (1994)
@@ -87,8 +93,8 @@ Springer Verlag Berlin Heidelberg (November, 2009).
 Cannone, J.~J., Subramanian, S., Schnare, M.~N., Collett, J.~R., DSouza, L.~M.,
   Du, Y., Feng, B., Lin, N., Madabusi, L.~V., Muller, K.~M., Pande, N., Shang,
   Z., Yu, N., and Gutell, R.~R. (2002)
-The comparative rna web (crw) site: an online database of comparative sequence
-  and structure information for ribosomal, intron, and other rnas.
+{The Comparative RNA Web (CRW) Site: An Online Database of Comparative Sequence
+  and Structure Information for Ribosomal, Intron, and Other RNA's}.
 {\em BMC Bioinformatics,} {\bf 3}, 1--31.
 
 \end{thebibliography}
