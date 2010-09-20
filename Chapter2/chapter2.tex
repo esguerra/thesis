@@ -627,61 +627,69 @@ where the values  for the hierarchical method (black  number ones) are
 small for the connectivy and  silhouette scores and large for the Dunn
 index score.
 
-According to  Dunn Index score (Figure  \ref{fig:noarna}), the optimal
-number of clusters  is $k=67$. The Dunn index works  under the idea of
-finding  the best  possible separation  and compactness  (see Appendix
-\ref{appendix_a}  for  definitions   of  separation  and  compactness)
-between clusters. Thus the grouping  the 797 base-steps into 67 groups
-should  produce  well-separated  and  compact groups.  The  other  two
-indices (connectivity and silhouette)  show, as for the whole dataset,
-that  the optimal  number  of  clusters of  the  non-A-RNA dataset  is
-two.  The presence  of shoulders  in the  connectivity  and silhouette
-plots of  the hierarchical clustering data  is, nonetheless indicative
-of optimal clusters. Moreover these  shoulders occur at $k=67$ for the
-connectivity (upper left) and silhouette (lower left) plots.
+According   to  Dunn  Index   score  (upper   right  plot   of  Figure
+\ref{fig:noarna}), the optimal number  of clusters is $k=67$. The Dunn
+index works under the idea of finding the best possible separation and
+compactness   (see  Appendix   \ref{appendix_a}  for   definitions  of
+separation and  compactness) between  clusters. Thus, the  grouping the
+797  base-steps  into  67  groups should  produce  well-separated  and
+compact groups.   The other two indices  (connectivity and silhouette)
+show, as for the whole dataset, that the optimal number of clusters of
+the  non-A-RNA dataset  is  two.   The presence  of  shoulders in  the
+connectivity and silhouette plots  of the hierarchical clustering data
+is,  nonetheless  indicative   of  optimal  clusters.  Moreover  these
+shoulders  occur  at $k=67$  for  the  connectivity  (upper left)  and
+silhouette (lower left) plots.
 
-We used the 67 clusters given by the hierarchical method, and took
-their   corresponding  step-parameter   values   to  reconstruct   the
-dinucleotide      step       structures      using      3DNA.       In
-Figure~\ref{fig:noarnak67} we draw the first seventeen groups with ten
-or  more structures,  which account  for 80  percent of  the non-A-RNA
-steps.    We    also   plot   in    the   lower   right    corner   of
-Figure~\ref{fig:noarnak67} the  set of 20 structures  derived from the
-work  of Schneider et  al.\cite{schneider2004}, and  the whole  set of
-non-A-RNA  dinucleotide  steps in  a  common  reference  frame on  the
-adenine  of  an ApU  step.   All  structures  are centered  using  the
-standard  reference frame  embedded in  the first  base, which  in our
-reconstructions corresponds  to a red block  representing adenine. The
-minor-groove  edge  of  the  adenine  is oriented  to  the  left,  its
-major-groove  edge  to  the  right,  and  the  so-called  Watson-Crick
-base-pairing edge is pointed toward the viewer.
+We used the  67 clusters, given by the  hierarchical method, and their
+corresponding  step-parameter values  to reconstruct  ApU dinucleotide
+step  structures with  the 3DNA  software.  Figure~\ref{fig:noarnak67}
+illustrates the first seventeen groups  of structures with ten or more
+members, which account for 80 percent of the non-A-RNA steps.  We also
+plot in  the lower right corner of  Figure~\ref{fig:noarnak67} the set
+of   20   structures  derived   from   the   work   of  Schneider   et
+al.\cite{schneider2004}, and  the whole set  of non-A-RNA dinucleotide
+steps in a common reference frame  on the adenine of an ApU step.  All
+structures are centered using the standard reference frame embedded in
+the  first base,  which in  our reconstructions  corresponds to  a red
+block  representing adenine.  The minor-groove  or sugar  edge  of the
+adenine is oriented to the left, the major-groove or Hoogsteen edge to
+the right, and the so-called Watson-Crick base-pairing edge is pointed
+toward the viewer.
 
-When comparing the 17 groups of non-ARNA dinucleotide steps with those
-found  by Schneider and  collaborators, we  see that  in their  set of
-structures there are no steps  represented at the major-groove side of
-the red block representing adenine, that is, the right side of the red
-adenine  block, although  there are  many  such steps  in the  crystal
-structure, we also see, that even though the 17 represented groups
-are  not  as compact  as  one  would desire,  they  start  to give  an
-indication of the geometrical preferences of the space of dinucleotide
-step-parameters.  For  example, it  is remarkable to  see in  Group 7,
-labeled as  g7.png in Figure~\ref{fig:noarnak67} that  the cyan blocks
-representing  uracil, orient  their planes  orthogonally to  the major
-groove side of the red block representing adenine.
+Comparison of the 17 groups of non-A-RNA dinucleotide steps with those
+found by Schneider and collaborators, shows that there are no steps in
+the Schneider  et al. dataset represented on  the major-groove (right)
+side of the red block representing adenine. That is, the right side of
+the  red adenine  block, although  there are  many such  steps  in the
+crystal  structure. On  the other  hand, although  the  17 represented
+groups  are not  as compact  as the  observed data,  they hint  of the
+geometrical preferences of the space of dinucleotide step-parameters.
 
-The reason we choose to include am image of all non-ARNA base-steps
-in Figure~\ref{fig:noarnak67} is that of  giving the reader an idea of
-the complexity of the conformation space described from
-a  base  viewed  perspective  instead  of  the  more  common  backbone
-perspective. This image suggests that the task of finding order in this
-broad range of possible conformations is somewhat analogous to solving
-a ball puzzle. There are various ball puzzles, but the one which most
+For example, it  is remarkable to see in the  group, labeled as g7.png
+in  Figure~\ref{fig:noarnak67}  that   the  cyan  blocks  representing
+uracil, orient their  planes orthogonally to the major  groove side of
+the red block representing adenine.
+
+We    include    images     of    the    non-A-RNA    base-steps    in
+Figure~\ref{fig:noarnak67} in order to give  the reader an idea of the
+complexity  of the  conformation  space described  from a  base-viewed
+perspective rather  than of the more common  backbone perspective.  As
+is well  known small changes in  backbone can have  drastic effects of
+array  of  bases,  for  example  converting  right-handed  helices  to
+left-handed   helices\cite{olson1976}.  On   the  other   hand,  large
+concerted changes in  the torsions can preserve the  structures of RNA
+and DNA helices.
+
+This image suggests that the task of finding order in this broad range
+of  possible conformations  is somewhat  analogous to  solving  a ball
+puzzle.   There are  various  ball  puzzles, but  the  one which  most
 resembles this  case is that  of a so-called masterball  puzzle, which
-consists of  a sphere with two  parallel lines at  roughly 60$\deg$ of
-latitude  north  and  south  from  the  sphere's  equator,  and  eigth
-meridians,    as    seen    in     the    left    side    of    Figure
-\ref{fig:masterball}. We believe the puzzle can be effectively solved
-by using appropriate validated clustering analysis techniques.
+consists of a  sphere with two parallel lines  at roughly 60$\circ$ of
+latitude  north  and  south  from  the  sphere's  equator,  and  eight
+meridians, as seen in the left side of Figure \ref{fig:masterball}. We
+believe  the puzzle  can be  effectively solved  by  using appropriate
+validated clustering analysis techniques.
 
 
 \begin{figure}
