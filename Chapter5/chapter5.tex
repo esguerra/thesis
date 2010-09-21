@@ -53,7 +53,8 @@ can be seen in Figure \ref{fig:gnrablocks}.
   selected from a non-redundant list of RNA structures provided by the
   RNA  ontology consortium  (ROC)  \cite{leontis2006b}.  The  hydrogen
   bonding  interactions described  by Heus  and  Pardi \cite{heus1991}
-  detected in NMR experiments are shown by black dashed lines.}
+  detected  in NMR  experiments are  shown  by black  and blue  dashed
+  lines.}
 \label{fig:gnrablocks}
 \end{figure}
 
@@ -286,8 +287,8 @@ as the lonepair triloop motif found by sequence covariation techniques
 \cite{lee2003}.  The GNRA motif  candidates found by ``getMotif'' have
 been named recently by Nasalean et al. \cite{nasalean2009} as internal
 and composite motifs.  In our  case the GNRA motif candidates in Group
-I correspond to the internal motifs, and the Group II candidates
-correspond to the composite motifs.
+I  correspond to  the internal  motifs,  and the  Group II  candidates
+correspond to the composite motifs of Nasalean and collaborators.
 
 \begin{figure}
 \centering 
@@ -384,37 +385,53 @@ ribosome.
 
 %\section{Triplets on RNA (comparison to Laing et al.)}
 
-\section{Conclusions}
-We  answer  the questions  at  the begining  of  this  chapter in  the
-following way:
+\section{Results on RNA Motif Recognition via Step-Parameters}
 
-Can   the  geometric  rigid-block   description  of
-base-pairing  and base-stacking  solve the  problem of  defining RNA
-structural motifs?
+We previously asked ourselves if the geometric rigid-block description
+of  base-pairing and  base-stacking could  help define  RNA structural
+motifs.
 
-The  problem of  defining RNA structural  motifs is
-clearly more complicated than what can be understood by anyone
-structural  research   methodology  alone,  such   as  the  backbone
-torsions, or the all-atom fitting.  We have shown
-that  the  rigid-body   parameters  relating  sequential  base-pairs
-facilitate motif searches in RNA atomic structures as well as in
-the rigorous description of structural motifs. We believe
-that this type of characterization should prove useful to the
-community interested in ontological characterization of RNA.
+We  believe that  the problem  of  defining RNA  structural motifs  is
+clearly more complicated than what can be understood by any structural
+research  methodology  alone,  such  as  those based  on  analysis  of
+backbone  torsions,  or all-atom  fitting.   We  have  shown that  the
+rigid-body  parameters  relating  sequential  bases  facilitate  motif
+searches  in  RNA  atomic  structures  as  well  as  in  the  rigorous
+description of structural  motifs. It has also been  shown in previous
+work  on  RNA  in   the  Olson  group  \cite{yurongthesis},  that  the
+rigid-body parameters  describing RNA base-pairs can help  to find and
+describe novel  RNA tertiary interactions  important for understanding
+the three-dimensional fold of the ribosome, for example, the role that
+the  noncanonical sugar-edge  sugar-edge parallel  G$\cdot$A base-pair
+plays as linker of sequentially  distant regions in the 50S subunit of
+the  ribosome (PDB\_ID:1JJ2), and  it's relation  to known  RNA motifs
+such  as  the   kink-turn  motif.  We  consider  that   this  type  of
+characterizations and  their automation  with simple programs  such as
+``getMotif''  should  prove  useful  to the  community  interested  in
+ontological characterization of RNA.
 
+Yet another specific question we  formulated inquires if we can use
+quantities  derived  from  the  3DNA  software  package  to  make  and
+automatic search  for a known  motif, for example, the  GNRA tetraloop
+motif, and perhaps find unknown motifs?
 
-Can we use quantities derived from the 3DNA software
-package to make and automatic search for a known motif, for example,
-the GNRA tetraloop motif, and perhaps find unknown motifs?
-  
-Yes. by defining seeds from known motifs we can find
-new motifs in  the boundaries of known ones  via base-pairs steps. But
-we  can also  do  other,  yet simpler,  not  as ``precise''  searches,
-e.g. by clustering  the results of base overlaps.  Other searches have
-not  been explored  but could  also be  useful, for  example exploring
-helical  parameters like x-displacement,  y-displacement, inclination,
-tip.} 
+We have found that by defining seeds from known motifs we can find new
+motifs at the boundaries of  these ones through their base-steps.  For
+example, we  started a GNRA  motif search using its  average base-step
+parameters  from the  GNRA's found  in the  23S ribosomal  subunit and
+found a closely related motif which  we have called Group II motif and
+which in turn is part of a composite motif \cite{nasalean2009} that is
+known as the lonepair triloop motif \cite{lee2003}.
 
+We can also  perform other, simpler, but not  as ``precise'' RNA motif
+searches,   e.g.  by   following  the   proposed   cluster  validation
+methodology used in Chapter 2 to find an optimal method for clustering
+other  3DNA-computed  properties of  smaller  dimensionality than  the
+base-step parameters, for example, sequential base overlaps.
+
+Searches of other rigid-body  parameters which have not been explored,
+could also  be useful (such as the  helical parameters x-displacement,
+y-displacement, inclination and tip relating sequential base steps).
 
 \bibliography{biblio}
 
