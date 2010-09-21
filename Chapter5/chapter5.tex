@@ -102,23 +102,24 @@ summarized in Figure \ref{fig:getMotif}.
 \label{fig:getMotif}
 \end{figure}
   
-The algorithm  allows for any  motif seed to  be used, but for  now we
-only  use the  step parameters  of the  GNRA motifs  found in  the 23S
-subunit of rRNA (PDB\_ID:1FFK) by Lemieux et al. \cite{lemieux2006} as
-the seed for our algorithm.   We are currently constructing a database
-of  the base-step  parameters for  known  motifs, so  that our  simple
-program can  be expanded to include  various known motifs  that a user
-wishes to localize in an arbitrary RNA structure.
+The algorithm allows for any motif  seed to be integrated into it, but
+for now  we limit ourselves to  the use of  a seed formed by  the step
+parameters  of  the GNRA  motifs  found in  the  23S  subunit of  rRNA
+(PDB\_ID:1FFK)  by   Lemieux  et  al.    \cite{lemieux2006}.   We  are
+currently  constructing a  database  of the  base-step parameters  for
+known motifs,  so that our simple  program can be  expanded to include
+various known  motifs that a user  wishes to localize  in an arbitrary
+RNA structure or set of structures.
 
 The  algorithm has  been programed  as a  simple, yet  very  fast bash
 script \footnote{For  ease of use and  development a future  aim is to
   code the algorithm fully in python without compromising the speed of
   structure analysis.}  which interfaces  with three components -- one
 written in  python, the  second being the  3DNA package, and  the last
-written in the statistical analysis  software R.  For example, for the
-large subunit  of the ribosome,  PDB\_ID:1JJ2, the program  takes 22.1
-seconds to download  and analyze the whole structure  on an Intel Core
-Duo of 2.13GHz with 8Gb of RAM.
+written in the statistical analysis software \textbf{R}.  For example,
+for the large subunit of the ribosome, PDB\_ID:1JJ2, the program takes
+22.1 seconds to  download and analyze the whole  structure on an Intel
+Core Duo of 2.13GHz with 8Gb of RAM.
 
 The program  allows the user to  query any PDB\_ID. That  is, the user
 only needs to  input in the command line of  a UNIX/LINUX terminal the
@@ -144,11 +145,12 @@ task is made simple using getMotif.
 
 To construct  the seed for  the GNRA motif  we extracted the  first 20
 GNRA tetraloop motifs found by Lemieux and Major \cite{lemieux2006} in
-the large subunit of the ribosome (PDB\_ID:1FFK) as show in Figure 3 of
-their results. After computing the  base-step parameters with 3DNA for
-each of these motifs, we arranged their average values in a 3 x 6
-matrix $S$ where each row corresponds to one of the three steps in the
-tetraloop. These average values are show in Table \ref{tab:seed}.
+the  large subunit  of the  ribosome (PDB\_ID:1FFK)  as  summarized in
+Figure 3  of their results.  After computing  the base-step parameters
+with 3DNA for  each of these motifs, we  arranged their average values
+in a three by six matrix $S$  where each row corresponds to one of the
+three steps in the tetraloop.   These average values are show in Table
+\ref{tab:seed}.
 
 \begin{table}[hb]  
 \begin{center}
@@ -197,8 +199,8 @@ Figure \ref{fig:gnrahist}.
 
 In  this  histogram  we   see  that  the  majority  of  trinucleotides
 (tristeps)  have scores  between  350-400.  These  values most  likely
-correspond to tri-step sequences  with base-step parameters similar to
-those  of   A-RNA-like  steps.   For   our  purposes  of   GNRA  motif
+correspond  to  tri-step  sequences  formed  by  base-step  parameters
+similar to those of A-RNA-like  steps.  For our purposes of GNRA motif
 identification we want to select those steps with scores which reflect
 a shorter distance  to our seed GNRA motif.  Therefore  we have used a
 cutoff score of 150, which is  represented by the values below the red
@@ -210,15 +212,29 @@ by the  ROC, with a  cutoff value of  150 finds \footnote{The  time it
   structures was 7  minutes and 29 seconds} 75  of these structures to
 have at  least one GNRA  3D motif candidate,  and a total of  211 GNRA
 motif  candidates.  The  list of  all  identified motifs  in these  75
-structures including the parameters at the first step, is presented in
-Table  \ref{tab:gnrascores}, which  includes an  additional  check for
-consistency  in the  next  to last  column.  The latter  entry is  the
-overlap or the ring atoms of the first two base pairs of the tetraloop
-which showed  zero in the described  structures.  We see  that 67\% of
-the  identified  GNRA motif  candidates  start  with  a GN  step,  and
+structures including  the parameters at the first  step, are presented
+in  Figure \ref{fig:steptype}  and  Table \ref{tab:gnrascores},  which
+includes  an additional  check for  consistency  in the  next to  last
+column.  The  latter entry  is the  overlap or the  ring atoms  of the
+first two  bases of the tetraloop  which showed zero  in the described
+structures.  Additionally the second  to last column shows the overlap
+between  bases when  additional  exocyclic atoms  are considered,  for
+example, the N4  amino atoms in cytosines \cite{lu2003}.   We see that
+67\% of the identified GNRA motif candidates start with a GN step, and
 interestingly that, almost one third  (27\%) of the first steps are UN
 steps, and  that a few of the  identified motifs start with  AN and CN
 dimers.
+
+\begin{figure}
+\centering
+\includegraphics[angle=0, scale=0.5]{Chapter5/steptypesdist.png}
+\caption{The barplot  above shows  the frequencies of  base-step types
+  for the  first steps in  the candidate GNRA motifs  identified using
+  ``getMotif''.  The  motifs have been  identified by similarity  to a
+  base-step parameter seed constructed  from GNRA motifs found in the
+  23S subunit of rRNA (PDB\_ID:1JJ2).}
+\label{fig:steptype}
+\end{figure}
 
 To  further  analyze  the  results  of  the  motifs  identified  using
 ``getMotif'',  we   focused  attention  on   the  ribosomal  structure
@@ -369,34 +385,36 @@ ribosome.
 %\section{Triplets on RNA (comparison to Laing et al.)}
 
 \section{Conclusions}
-
 We  answer  the questions  at  the begining  of  this  chapter in  the
 following way:
 
-\begin{enumerate}
-\item{\textbf{Q.}  Can   the  geometric  rigid-block   description  of
-  base-pairing  and base-stacking  solve the  problem of  defining RNA
-  structural motifs?}
-\item{\textbf{A.}  The  problem of  defining RNA structural  motifs is
-  clearly  more  complicated  than  what  can  be  understood  by  any
-  structural  research  methodology  alone,  say,  just  the  backbone
-  methodology, or  the all atom  analysis methodology.  We  have shown
-  that the  rigid-body parameter view  of RNA can easily  automate the
-  process of motif searches in  RNA atomic structures, and it helps in
-  the rigorous structural description  of motifs, therefore we believe
-  that  this type  of characterization  should not  be ignored  by the
-  community and included in ontological efforts such as the ROC one.}
-\item{\textbf{Q.} Can we use quantities derived from the 3DNA software
-  package to make and automatic search for a known motif, for example,
-  the GNRA tetraloop motif, and perhaps find unknown motifs?}
-\item{\textbf{A.} Yes. by defining seeds from known motifs we can find
+Can   the  geometric  rigid-block   description  of
+base-pairing  and base-stacking  solve the  problem of  defining RNA
+structural motifs?
+
+The  problem of  defining RNA structural  motifs is
+clearly more complicated than what can be understood by anyone
+structural  research   methodology  alone,  such   as  the  backbone
+torsions, or the all-atom fitting.  We have shown
+that  the  rigid-body   parameters  relating  sequential  base-pairs
+facilitate motif searches in RNA atomic structures as well as in
+the rigorous description of structural motifs. We believe
+that this type of characterization should prove useful to the
+community interested in ontological characterization of RNA.
+
+
+Can we use quantities derived from the 3DNA software
+package to make and automatic search for a known motif, for example,
+the GNRA tetraloop motif, and perhaps find unknown motifs?
+  
+Yes. by defining seeds from known motifs we can find
 new motifs in  the boundaries of known ones  via base-pairs steps. But
 we  can also  do  other,  yet simpler,  not  as ``precise''  searches,
 e.g. by clustering  the results of base overlaps.  Other searches have
 not  been explored  but could  also be  useful, for  example exploring
 helical  parameters like x-displacement,  y-displacement, inclination,
 tip.} 
-\end{enumerate}
+
 
 \bibliography{biblio}
 
