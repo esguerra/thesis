@@ -42,22 +42,24 @@ Pley, H.~W., Flaherty, K.~M., and McKay, D.~B. (1994)
 {Three-Dimensional Structure of a Hammerhead Ribozyme}.
 {\em Nature,} {\bf 372}, 68--74.
 
+\bibitem{leontis2006b}
+Leontis, N.~B., Altman, R.~B., Berman, H.~M., Brenner, S.~E., Brown, J.~W.,
+  Engelke, D.~R., Harvey, S.~C., Holbrook, S.~R., Jossinet, F., Lewis, S.~E.,
+  Major, F., Mathews, D.~H., Richardson, J.~S., Williamson, J.~R., and Westhof,
+  E. (2006)
+{The RNA Ontology Consortium: An Open Invitation to the RNA Community}.
+{\em RNA,} {\bf 12}, 533--541.
+
+\bibitem{lee2003}
+Lee, J.~C., Cannone, J.~J., and Gutell, R.~R. (2003)
+{The Lonepair Triloop: A New Motif in RNA Structure}.
+{\em Journal of Molecular Biology,} {\bf 325}, 65--83.
+
 \bibitem{lemieux2006}
 Lemieux, S. and Major, F. (2006)
 {Automated Extraction and Classification of RNA Tertiary Structure Cyclic
   Motifs}.
 {\em Nucleic Acids Research,} {\bf 34}, 2340--2346.
-
-\bibitem{sorin2002}
-Sorin, E.~J., Engelhardt, M.~A., and Herschlag, D. (2002)
-{RNA Simulations: Probing Hairpin Unfolding and the Dynamics of a GNRA
-  Tetraloop}.
-{\em Journal of Molecular Biology,} {\bf 317}, 493--506.
-
-\bibitem{srinivasan1998}
-Srinivasan, J., Miller, J., Kollman, P.~A., and Case, D.~A. (1998)
-{Continuum Solvent Studies of the Stability of RNA Hairpin Loops and Helices}.
-{\em Journal of Biomolecular Structure and Dynamics,} {\bf 16}, 671--682.
 
 \bibitem{cornell1995}
 Cornell, W.~D., Cieplak, P., Bayly, C.~I., Gould, I.~R., Merz, K.~M., Ferguson,
@@ -66,6 +68,12 @@ Cornell, W.~D., Cieplak, P., Bayly, C.~I., Gould, I.~R., Merz, K.~M., Ferguson,
   and Organic Molecules}.
 {\em Journal of the American Chemical Society,} {\bf 117}, 5179--5197.
 
+\bibitem{sorin2002}
+Sorin, E.~J., Engelhardt, M.~A., and Herschlag, D. (2002)
+{RNA Simulations: Probing Hairpin Unfolding and the Dynamics of a GNRA
+  Tetraloop}.
+{\em Journal of Molecular Biology,} {\bf 317}, 493--506.
+
 \bibitem{spackova2010}
 Spackova, N., Reblova, K., and Sponer, J. (2010)
 {Structural Dynamics of the Box C/D RNA Kink-Turn and its Complex with
@@ -73,16 +81,16 @@ Spackova, N., Reblova, K., and Sponer, J. (2010)
   Bridges, and Structural Ion-Binding Sites Revealed by Molecular Simulations}.
 {\em Journal of Physical Chemistry B,} {\bf 114}, 10581--10593.
 
+\bibitem{srinivasan1998}
+Srinivasan, J., Miller, J., Kollman, P.~A., and Case, D.~A. (1998)
+{Continuum Solvent Studies of the Stability of RNA Hairpin Loops and Helices}.
+{\em Journal of Biomolecular Structure and Dynamics,} {\bf 16}, 671--682.
+
 \bibitem{sarver2008}
 Sarver, M., Zirbel, C.~L., Stombaugh, J., Mokdad, A., and Leontis, N.~B. (2008)
 {FR3D: Finding Local and Composite Recurrent Structural Motifs in RNA 3D
   Structures}.
 {\em Journal of Mathematical Biology,} {\bf 56}, 215--252.
-
-\bibitem{lee2003}
-Lee, J.~C., Cannone, J.~J., and Gutell, R.~R. (2003)
-{The Lonepair Triloop: A New Motif in RNA Structure}.
-{\em Journal of Molecular Biology,} {\bf 325}, 65--83.
 
 \bibitem{nasalean2009}
 Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
