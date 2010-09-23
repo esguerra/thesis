@@ -2,20 +2,19 @@
 \label{basepairs} 
 \bibliographystyle{nar}
 \section{Canonical and Non-canonical Base-pairs}
-As  shown   in  Figure  \ref{fig:saenger28},  there   can  be  various
-base-pairing patterns between heterocyclic  bases in nucleic acids due
-to the  variety of possible  hydrogen bonding interactions.   The most
+As  shown  in  Figure  \ref{fig:saenger28},  there  is  a  variety  of
+base-pairing patterns between the  heterocyclic bases in nucleic acids
+due  to the  many possible  hydrogen bonding  interactions.   The most
 prevalent hydrogen  bonding pattern  in nucleic acids  is that  of the
-canonical  Watson-Crick  (WC)  base-pair.   Other  possible  patterns
-besides the WC one are known as non-canonical base-pairs and are more
-common in  RNA than in DNA.   We used the  3DNA \cite{lu2003} software
-package  to find  all base-pairs  in  a non-redundant  dataset of  RNA
-structures  obtained by X-ray  crystallography with  resolution better
-than 3.5  \AA~ downloaded from the  protein data bank  (PDB).  We also
-constrained our search to helical regions, which are defined as having
-three  consecutive base-pairs  or more  which need  not  be covalently
-bonded by the  sugar-phosphate backbone between consecutive base-pairs
-\cite{olson2009}.
+canonical  Watson-Crick (WC)  base-pair.  Patterns  other than  the WC
+pairs are known as non-canonical base pairs and are more common in RNA
+than in DNA.  We used  the 3DNA \cite{lu2003} software package to find
+all base  pairs in a  non-redundant dataset of RNA  crystal structures
+with resolution better than 3.5  \AA~ downloaded from the Protein Data
+Bank (PDB).  We also constrained  our search to helical regions, which
+are  defined  as stretches  of  three  or  more spatially  consecutive
+base-pairs which need not  be covalently bonded by the sugar-phosphate
+backbone between sequentially consecutive base pairs \cite{olson2009}.
 
 \begin{table}[htbp]
 \begin{center}
@@ -24,62 +23,68 @@ bonded by the  sugar-phosphate backbone between consecutive base-pairs
 RNA Type & \multicolumn{1}{p{2cm}|}{Number of Structures} & \multicolumn{1}{c|}{G} &
 \multicolumn{1}{c|}{C} & \multicolumn{1}{c|}{A} &
 \multicolumn{1}{c|}{U} \\ \hline 
-small helices & 78 & 891 & 753 & 404 & 442 \\ \hline
-drug-RNA & 36 & 932 & 862 & 365 & 433 \\ \hline
-protein-RNA & 207 & 4001 & 3457 & 1771 & 1731 \\ \hline
-protein-tRNA & 9 & 175 & 155 & 98 & 87 \\ \hline
-rRNA & 13 & 3866 & 2949 & 1939 & 1785 \\ \hline
-tRNA & 13 & 205 & 159 & 124 & 112 \\ \hline
-ribozyme & 113 & 2434 & 2086 & 1438 & 1150 \\ \hline
-Total & 469 & \multicolumn{1}{c|}{12504} & \multicolumn{1}{c|}{10421} & \multicolumn{1}{c|}{6139} & \multicolumn{1}{c|}{5740} \\ \hline
+small helices & 78 & 36 & 30 & 16 & 18 \\ \hline
+drug-RNA & 36 & 36 & 33 & 14 & 17 \\ \hline
+protein-RNA & 207 & 37 & 32 & 16 & 16 \\ \hline
+protein-tRNA & 9 & 34 & 30 & 19 & 17 \\ \hline
+rRNA & 13 & 37 & 28 & 18 & 17 \\ \hline
+tRNA & 13 & 34 & 27 & 21 & 19 \\ \hline
+ribozyme & 113 & 34 & 29 & 20 & 16 \\ \hline
+Total & 469 & \multicolumn{1}{c|}{36} & \multicolumn{1}{c|}{30} & \multicolumn{1}{c|}{18} & \multicolumn{1}{c|}{16} \\ \hline
 \end{tabular}
-\caption{Description   of  the   type   of  RNA   structures  in   the
-  non-redundant  dataset  at  less  than 3.5  \AA~(for  base-pairs  in
-  helices of 3 base-pairs or more).}
+\caption{Description  of the  types  of RNA  structures  and the  base
+  content of  each group in  the non-redundant dataset of  RNA crystal
+  structures with resolution better than 3.5 \AA given as a percentage
+  of  the total  number of  structures  per group.   The listed  bases
+  comprise  the base  pairs in  helices of  three or  more base-pairs.
+  Further detail on the structures which compose the dataset including
+  PDB\_ID's  and NDB\_ID's  can  be obtained  online as  supplementary
+  material attached to Olson et al. \cite{olson2009} results.}
 \label{tab:dbase}
 \end{center}
 \end{table}
 
-Our dataset is  non-redundant in the sense that  from the main source
-of RNA structural information, which is the ribosome, we used only one
-of the  available structures  per organism, that  is, one for  each of
+Our dataset is non-redundant in the sense that from the main source of
+RNA structural information, which is the ribosome, we used only one of
+the  available structures  per  organism,  that is,  one  for each  of
 \textit{Deinococus   radiodurans},   \textit{Haloarcula  marismortui},
 \textit{Escherichi          coli},         and         \textit{Thermus
   thermophilus}. Table~\ref{tab:dbase}  shows in detail  the number of
-bases per  RNA type in  our dataset. It's  interesting to see  that in
-general the content of  G and C, is higher than that  of A and U which
-might be due to the  highest overall stability of G$\cdot$C base-pairs
-against A$\cdot$U base-pairs.
+bases for each  RNA type in our dataset of  helical structures.  It is
+interesting to see  that in general the content of G  and C, is higher
+than that  of A  and U. The  difference might  be related to  a higher
+overall  stability  of  G$\cdot$C  base-pairs  compared  to  A$\cdot$U
+base-pairs.
 
-In Table  \ref{tab:bpcomp} we show  all possible base-pairs  formed by
-unmodified nucleotides in our dataset,  it's clear from this table that
-the G$\cdot$C  and A$\cdot$U base-pairs  dominate widely the  space of
-possible  RNA base-pairs  in helical  regions  making up  80\% of  all
-base-pairs,  and  if  we  only  count those  that  form  canonical  WC
-base-pairs (9500  G$\cdot$C, and 3069  A$\cdot$U), they make  up about
-73\% of all base-pairs in helical regions.
+In  Table  \ref{tab:bpcomp}  we  show  the  number  of  base-pairs  of
+different  chemical  types formed  by  unmodified  nucleotides in  our
+dataset,  it is  clear from  the  table that  G$\cdot$C and  A$\cdot$U
+base-pairs  dominate the  RNA  base-pairs formed  in helical  regions,
+making up 80\% of all the base-pairs. If we count only those that form
+canonical  WC base-pairs  (9500  G$\cdot$C, and  3069 A$\cdot$U),  the
+number corresponds to 73\% of all base-pairs in helical regions.
 
-As will  be show later (Table~\ref{tab:seven}),  a considerable amount
-of A$\cdot$U's  pair in the  Hoogsteen fashion. Few of  these examples
-form    U$\cdot$A$\cdot$U   triplets   containing    a   WC    and   a
-Hoogsteen \footnote{Hoogsteen base-pairs  are illustrated by structure
-  XXIII  of  the Saenger  classification  of  base-pairs  as shown  in
-  Figure~\ref{fig:saenger28}} base-pair in RNA helical regions.
+As will  be show later (Table~\ref{tab:seven}),  a considerable number
+of the A$\cdot$U's  pairs associate in a Hoogsteen  arrangement. A few
+of these examples form  U$\cdot$A$\cdot$U triplets containing a WC and
+a   Hoogsteen  \footnote{Hoogsteen   base-pairs  are   illustrated  by
+  structure XXIII of the Saenger classification of base-pairs as shown
+  in Figure~\ref{fig:saenger28}} base pair in the RNA helical regions.
 
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-A    &      G    &      C    &      U    &      B$_{\text{1}}$$\cdot$B$_{\text{2}}$ \\ \hline
+A    &      G    &      C    &      U    &      B/B$'$ \\ \hline
 384  &    980    &    313    &   3975    &      A  \\ \hline
      &    128    &   9913    &   1282    &      G  \\ \hline
      &           &     63    &    103    &      C  \\ \hline
      &           &           &    187    &      U  \\ \hline
 \end{tabular}
-\caption{Composition  of  base-pairs  in  non-redundant  dataset  with
-  resolutions better  than 3.5  \AA~ (for base-pairs  in helices  of 3
-  base-pairs or more).  Note that 9500 out of  9913 G$\cdot$C and 3069
-  out of 3975 A$\cdot$U are canonical WC base-pairs.}
+\caption{Composition  of base  pairs in  the  non-redundant structural
+  dataset. Note that 9500 out of 9913 G$\cdot$C and 3069
+  out of  3975 A$\cdot$U  are canonical WC  base pairs. See  legend to
+  Table \ref{tab:dbase} for dataset details.}
 \label{tab:bpcomp}
 \end{center}
 \end{table}

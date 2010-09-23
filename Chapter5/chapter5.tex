@@ -313,16 +313,28 @@ correspond to the composite motifs of Nasalean and collaborators.
 \includegraphics[angle=0, scale=0.34]{Chapter5/lonepairtlooptertF.png}
 \caption{Subset   of   the  Group   II   structures  identified   with
   ``getMotif'',  which  correspond   to  the  lonepair  triloop  motif
-  identified by Gutell and collaborators \cite{lee2003}.  In the upper
-  left  corner of  the figure  sequentially distant  adenine  drawn in
-  pink,  forms  a  sheared  G$\cdot$A base-pair  with  the  identified
-  GroupII structure, which is drawn in red.  In the upper right corner
-  of the figure the three  lonepair triloop motifs, or structural GNRA
-  motifs are superimposed  in the reference frame of  residues two and
-  three. In the lower portion of  the figure the location of the first
-  residue of  the identified GNRA structural motifs  is highlighted in
-  pink on top  of the secondary structure of the  large subunit of the
-  ribosome, taken from Gutell Lab's website \cite{cannone2002}.  }
+  identified by Gutell and collaborators \cite{lee2003}.
+  In   the  upper   left  corner   of  the   figure   a  space-filling
+  representation   of  the   \textit{Thermus   thermophilus}  ribosome
+  (PDB\_ID:2J01) is shown, where the 50S subunit is drawn in blue, 30S
+  subunit is drawn in  gray, and three interacting GNRA-like tetraloop
+  motifs, known as lone-pair triloop  motifs, are drawn in orange (I),
+  green (II), and red (II) color respectively.
+  In  the upper  right corner  of  the figure  a zoomed  image of  the
+  interacting lone-pair triloop motifs is shown. Each one of the Group
+  II  GNRA tetraloop motif  candidates are  drawn in  blue in  a stick
+  model representation. Sequentially  distant adenines are represented
+  as  red  blocks  forming  a  sheared G$\cdot$A  base-pair  with  the
+  guanines (represented  as a green blocks) in  the identified GroupII
+  structures.
+  In the  lower left corner of  the figure the  three lonepair triloop
+  motifs, or structural GNRA motifs, are superimposed in the reference
+  frame of residues  two and three.  In the lower  right corner of the
+  figure  the location  of the  first residue  in the  identified GNRA
+  structural  motifs is  highlighted by  a red  circle on  top  of the
+  secondary structure of the large subunit of the ribosome (taken from
+  Gutell Lab's  website \cite{cannone2002}) and  numbered according to
+  the 3D structural image above.}
 \label{fig:terts}
 \end{figure}
 
@@ -337,12 +349,24 @@ parameter configurations for the large subunit of the ribosome.
 \begin{figure}
 \centering 
 \includegraphics[angle=90, scale=0.5]{Chapter5/GNRAin1ffk.png}
-\caption{Scatterplot  of  base-step parameter  values  for GNRA  motif
-  candidates identified in a list given by the ROC, against a backdrop
-  of the range of values  for the step-parameters in the large subunit
-  of the ribosome PDB\_ID:1FFK.}
+\caption{Scatterplot of base-step parameter  values for the GN step in
+  GNRA motif  candidates (drawn as  blue points) identified in  a list
+  given by the ROC, against a  backdrop of the range of values for the
+  step-parameters in  the large  subunit of the  ribosome PDB\_ID:1FFK
+  (drawn as  red points).  Here the correlation  coefficients for each
+  scatterplot are given as explained in figure \ref{fig:allsteps}.}
 \label{fig:scattergnra}
 \end{figure}
+%
+% Looking at  the previous  plot, it's clear  that you can  have clear
+% steps which differentiate from  A-RNA steps, and which are recurrent
+% structurally, just look at every  other parameter but slide, and you
+% see  that  a  new  peak  in  the histogram  drawn  in  the  diagonal
+% appears. It would be good to explore this fact, at the step
+% level alone in a more thorough manner.
+%
+
+
 
 %\section{Canonical "Noise"}
 %To be able to say anything about motifs it's crucial to get rid of the
@@ -410,31 +434,30 @@ of  base-pairing and  base-stacking could  help define  RNA structural
 motifs.
 
 We  believe that  the problem  of  defining RNA  structural motifs  is
-clearly more complicated than what can be understood by any structural
-research  methodology  alone,  such  as  those based  on  analysis  of
-backbone  torsions,  or all-atom  fitting.   We  have  shown that  the
-rigid-body  parameters  relating  sequential  bases  facilitate  motif
-searches  in  RNA  atomic  structures  as  well  as  in  the  rigorous
-description of structural  motifs. It has also been  shown in previous
-work  on  RNA  in   the  Olson  group  \cite{yurongthesis},  that  the
-rigid-body parameters  describing RNA base-pairs can help  to find and
-describe novel  RNA tertiary interactions  important for understanding
-the three-dimensional fold of the ribosome, for example, the role that
-the  noncanonical sugar-edge  sugar-edge parallel  G$\cdot$A base-pair
-plays as linker of sequentially  distant regions in the 50S subunit of
-the  ribosome (PDB\_ID:1JJ2), and  it's relation  to known  RNA motifs
-such  as  the   kink-turn  motif.  We  consider  that   this  type  of
-characterizations and  their automation  with simple programs  such as
-``getMotif''  should  prove  useful  to the  community  interested  in
-ontological characterization of RNA.
+clearly   more   complicated  than   what   any  structural   research
+methodology,  such as the  analysis of  backbone torsions  or all-atom
+fitting,  can  alone  predict.   We  have shown  that  the  rigid-body
+parameters relating sequential bases  facilitate motif searches in RNA
+atomic structures as well as in the rigorous description of structural
+motifs. It  has also been shown in  previous work on RNA  in the Olson
+group \cite{yurongthesis},  that the rigid-body  parameters describing
+RNA  base-pairs can  help  to  find and  describe  novel RNA  tertiary
+interactions important for understanding the three-dimensional fold of
+the  ribosome.  For example,  the  noncanonical sugar-edge  sugar-edge
+parallel G$\cdot$A base-pair acts  as a linker of sequentially distant
+regions  in the  50S subunit  of the  ribosome (PDB\_ID:1JJ2),  and is
+related to  known RNA  motifs such as  the kink-turn motif.   We think
+that  this type  of characterization  and its  automation  with simple
+programs  such as ``getMotif''  should prove  useful to  the community
+interested in ontological characterization of RNA.
 
-Yet another specific question we  formulated inquires if we can use
-quantities  derived  from  the  3DNA  software  package  to  make  and
-automatic search  for a known  motif, for example, the  GNRA tetraloop
-motif, and perhaps find unknown motifs?
+Yet another  specific question we formulated in  this chapter inquires
+if we  can use  quantities derived from  the 3DNA software  package to
+make and  automated search  for a known  motif, for example,  the GNRA
+tetraloop motif, and perhaps find unknown motifs?
 
 We have found that by defining seeds from known motifs we can find new
-motifs at the boundaries of  these ones through their base-steps.  For
+motifs at the  boundaries of the seeds through  their base-steps.  For
 example, we  started a GNRA  motif search using its  average base-step
 parameters  from the  GNRA's found  in the  23S ribosomal  subunit and
 found a closely related motif which  we have called Group II motif and
@@ -442,14 +465,16 @@ which in turn is part of a composite motif \cite{nasalean2009} that is
 known as the lonepair triloop motif \cite{lee2003}.
 
 We can also  perform other, simpler, but not  as ``precise'' RNA motif
-searches,   e.g.  by   following  the   proposed   cluster  validation
-methodology used in Chapter 2 to find an optimal method for clustering
-other  3DNA-computed  properties of  smaller  dimensionality than  the
-base-step parameters, for example, sequential base overlaps.
+searches,   e.g.   by  following   the  proposed   cluster  validation
+methodology  used  in  Chapter  2,  to  find  an  optimal  method  for
+clustering  other 3DNA-computed  properties of  smaller dimensionality
+than the base-step parameters, for example, sequential base overlaps.
 
-Searches of other rigid-body  parameters which have not been explored,
-could also  be useful (such as the  helical parameters x-displacement,
-y-displacement, inclination and tip relating sequential base steps).
+Searches  based on other  rigid-body parameters,  which have  not been
+explored  here,  could  also  be  useful. These  include  the  helical
+parameters: x-displacement, y-displacement, helical-rise, inclination,
+tip,  and  helical  twist,  relating  sequential  bases  by  a  single
+rotational operation.
 
 \bibliography{biblio}
 
