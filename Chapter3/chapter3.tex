@@ -90,26 +90,46 @@ A    &      G    &      C    &      U    &      B/B$'$ \\ \hline
 \end{table}
 
 \subsection{RNA Base-Pairs Classification}
-We classified the RNA base-pairs  in our dataset using three criteria.
-(1) The Leontis-Westhof  edge classification scheme \cite{leontis1998}
-which is based on the  identification of three major interacting edges
-for hydrogen-bond  formation called WC  edge (W), Hoogsteen  edge (H),
-and Sugar edge (S).  (2) The rotational and translational base-pairing
-rigid-body parameters, shear,  stretch, stagger, buckle, propeller and
-opening.  (3)  The location of  base-pairs in helices, that  is, their
-location  in ``intact''  covalently bonded  sugar-phosphate backbones,
-and in  the ends  of ``quasi-continuous'' helices  with breaks  in the
-sugar-phosphate backbone.
+We classified the RNA base  pairs in our dataset using three criteria:
+(1) the Leontis-Westhof edge classification scheme \cite{leontis1998},
+which is based on the  identities of the three major interacting edges
+for  hydrogen-bond formation  called the  WC (W),  Hoogsteen  (H), and
+Sugar  (S)  edges, (2)  the  rotational  and translational  rigid-body
+base-pairing  parameters  called,  shear,  stretch,  stagger,  buckle,
+propeller and opening,  and (3) the location of  the base-pairs within
+the helices,  that is, their location in  either ``intact'' covalently
+bonded   sugar-phosphate  backbones  or   within  ``quasi-continuous''
+helices  with  breaks  in   the  sugar-phosphate  backbone  and  their
+positions within these kinds of helices (see below).
 
-In  out dataset  we  find that  $\sim$90\%  of the  base-pairs in  RNA
-helices will form base-pairs in one of seven possible hydrogen-bonding
-types, these  were found to  be canonical WC G$\cdot$C  and A$\cdot$U,
-and the  non-canonical G$\cdot$U wobble,  sheared G$\cdot$A, Hoogsteen
-A$\cdot$U, WC type G$\cdot$A, and U$\cdot$U wooble base-pair. Detailed
-results  showing how  these  seven major  RNA  base-pairing types  are
-classified  according to  various schemes,  and the  details  of their
-hydrogen-bond  distances  is  given  in Table~\ref{tab:seven}  and  in
-Figure~\ref{fig:pairs}
+We find  that $\sim$90\% of the base  pairs in the RNA  helices in our
+dataset  form base  pairs in  one of  seven  possible hydrogen-bonding
+types; canonical  WC G$\cdot$C and A$\cdot$U  pairs, and non-canonical
+G$\cdot$U  wobble,  sheared G$\cdot$A,  Hoogsteen  A$\cdot$U, WC  type
+G$\cdot$A, and  U$\cdot$U wooble base pairs.  Detailed results showing
+how these seven major  RNA base-pairing types are classified according
+to various  schemes, and the details of  their hydrogen-bond distances
+is given in Table~\ref{tab:seven} and in Figure~\ref{fig:pairs}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[angle=-90, scale=0.75]{Chapter3/sevenpairs.png}
+\caption{Seven most prominent base pairs in RNA helical regions in our
+  structural  dataset  shown  in  images (a-g),  (a-b)  the  canonical
+  G$\cdot$C and A$\cdot$U Watson-Crick pairs, (c) the wobble G$\cdot$U
+  pair, (d) the wobble U$\cdot$U pair, (e) the sheared G$\cdot$A pair,
+  (f)  the Watson-Crick-like  G$\cdot$A  pair, and  (g) the  Hoogsteen
+  A$\cdot$U pair.  The images on  the left for each base-pair show the
+  identities  of the  bases, atom  types (oxygen  red,  nitrogen blue,
+  carbon  and   hydrogen  white,  and  C1$'$  atoms   gray),  and  the
+  hydrogen-bond  connectivity  (magenta  colored dashed  lines).   The
+  rigth  side   images  of   each  base-pair  representation   show  a
+  superposition of the base pairs  in our helical dataset, centered in
+  the middle  base triad  (MBT) reference frame  (The definition  of a
+  middle base triad  is completely analogous to that  of a middle step
+  triad as explained thoroughly in Appendix \ref{appendix_1a}).}
+\label{fig:pairs}
+\end{figure}
 
 \begin{sidewaystable}
 \begin{center}
@@ -153,38 +173,32 @@ U$\cdot$U & Wobble & O2$\cdots$H-N3 & 2.95(0.24) & - & XVI & cis
  & & N3$\cdots$H-O4 & 2.87(0.15) & & & & &  \\
 \hline
 \end{tabular}
-\caption{Seven  main base-pairing  types in  RNA helical  dataset. The
-  first  column uses  the  Gutell and  collaborators nomenclature  for
-  base-pairs, column  two shows the prefered  hydrogen bonding pattern
-  for each base-pair, column  four gives the Saenger classification as
-  in Figure \ref{fig:saenger28}, column five gives the Leontis-Westhof
-  edge  classification obtained  trough the  RNAVIEW program,  and the
-  last column gives the total  number of identified base-pairs of each
-  category and the  percentage of those which comply  exactly with the
-  hydrogen-bonding pattern of column two.}
+\caption{Seven  dominant  base-pairing  types  found  in  RNA  helical
+  regions.   The  first  column  lists the  Gutell  and  collaborators
+  nomenclature \cite{lee2004} of the  base pairs. Column two shows the
+  standard hydrogen  bonding pattern  associated with each  base pair.
+  Column  three displays  a negative  sign  if the  bases forming  the
+  base-pair oppose  each other and a  positive sign if  they share the
+  same   face   \cite{lu2003}.    Column   four  gives   the   Saenger
+  classification as in  Figure \ref{fig:saenger28}.  Column five lists
+  the Leontis-Westhof edge  classification obtained trough the RNAVIEW
+  program \ref{yang2003},  and the last column gives  the total number
+  of  identified base  pairs of  each category  and the  percentage of
+  those which  comply exactly with the  hydrogen-bonding pattern shown
+  in column two.}
 \label{tab:seven}
 \end{center}  
 \end{sidewaystable}  
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[angle=-90, scale=0.6]{Chapter3/sevenpairs.png}
-\caption{Seven   most   prominent  pairs   in   RNA  helical   regions
-  dataset.  The  images  to  the  left  of  each  base-pair  show  the
-  hydrogen-bond  connectivity  as magenta  colored  dashed lines.  The
-  right  side   images  on   each  base-pair  representation   show  a
-  superposition of the base-pairs  in our helical dataset, centered in
-  the middle base triad reference frame. }
-\label{fig:pairs}
-\end{figure}
 
 \subsection{Base-Pairs in Helical Regions}
-Our classification also includes the location of base-pairs in helical
-regions, that is, whether they are  in the interior or in the terminal
-ends     of     ``intact''     or     ``quasi-continuous''     helical
+Our classification also includes the locations of the base pairs in helical
+regions, that is,  whether they are in the interior or  at the ends of
+``intact'' or ``quasi-continuous'' helical
 regions.  Figure~\ref{fig:helregxin}  illustrates  the  two  types  of
-helical regions  mentioned. In (a) an  ``intact'' helical region
-is depicted and in (b) a ``quasi-continuous'' helical region is shown.
+helical regions  mentioned. The ``intact'' helical region
+is depicted in Figure \ref{fig:helregxin}a.
+The ``quasi-continuous'' helical region shown in Figure \ref{fig:helregxin}b.
 
 \begin{figure}
 \centering
@@ -194,18 +208,17 @@ is depicted and in (b) a ``quasi-continuous'' helical region is shown.
 \label{fig:helregxin}
 \end{figure}  
 
-The results obtained from  the classification of base-pairs in helical
-regions  are  shown in  Table~\ref{tab:helcontext}.   We  see that  in
-particular  the   A$\cdot$U  Hoogsteen  pair  (A$\cdot$U$_{\text{H}}$)
-stands out as  being present mainly as an  insert \footnote{Similar to
-  the way  intercalating ligands (intercalators)  insert themselves in
-  DNA.} in helical regions, sometimes  in nicked regions and rarely in
-intact   ones.   Now,   for  the   G$\cdot$A   Watson-Crick-like  pair
-(G$\cdot$A$_{\text{WC}}$) we see the  inverse situation to that of the
-A$\cdot$U  Hoogsteen pair,  that is,  it rarely  occurs as  an insert,
-prefering to be  in nicks, and sometimes in  intact regions, a similar
+The locations of  the base pairs in helical  regions are summarized in
+Table~\ref{tab:helcontext}.     The     A$\cdot$U    Hoogsteen    pair
+(A$\cdot$U$_{\text{H}}$)  stands out  as  being present  mainly as  an
+insert   \footnote{Similar   to    the   way   intercalating   ligands
+  (intercalators)  insert  themselves  in  DNA.} in  helical  regions,
+sometimes in nicked  regions and rarely in intact  ones. The G$\cdot$A
+Watson-Crick-like  pair  (G$\cdot$A$_{\text{WC}}$)  differs  from  the
+A$\cdot$U  Hoogsteen pair,  in that,  it rarely  occurs as  an insert,
+preferring to be in nicks,  and sometimes in intact regions. A similar
 situation     happens    with     the    sheared     G$\cdot$A    pair
-(G$\cdot$A$_{\text{s}}$),  which is also  rare as  an insert  and it's
+(G$\cdot$A$_{\text{s}}$), which also rarely occurs as an insert and is
 mainly found in intact regions, and sometimes in nicks.  The canonical
 WC G$\cdot$C base-pair is two times more likely to occur at the end of
 helical  regions than  the other  canonical base-pair  A$\cdot$U.  The
