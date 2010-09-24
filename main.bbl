@@ -6,6 +6,25 @@ Olson, W.~K., Esguerra, M., Xin, Y., and Lu, X.-J. (2009)
   of High-Resolution Structures}.
 {\em Methods,} {\bf 47}, 177--186.
 
+\bibitem{lee2004}
+Lee, J.~C. and Gutell, R.~R. (2004)
+{Diversity of Base-pair Conformations and their Occurrence in rRNA Structure
+  and RNA Structural Motifs}.
+{\em Journal of Molecular Biology,} {\bf 344}, 1225--1249.
+
+\bibitem{lu2003}
+Lu, X.-J. and Olson, W. (2003)
+{3DNA: A Software Package for the Analysis, Rebuilding and Visualization of the
+  Three-Dimensional Nucleic Acid Structures}.
+{\em Nucleic Acids Research,} {\bf 31}, 5108--5121.
+
+\bibitem{olson1998}
+Olson, W.~K., Gorin, A.~A., Lu, X.-J., Hock, L.~M., and Zhurkin, V.~B. (1998)
+{DNA Sequence-Dependent Deformability Deduced from Protein-DNA Crystal
+  Complexes}.
+{\em Proceedings of the {N}ational {A}cademy of {S}ciences,} {\bf 95},
+  11163--11168.
+
 \bibitem{lemieux2006}
 Lemieux, S. and Major, F. (2006)
 {Automated Extraction and Classification of RNA Tertiary Structure Cyclic
@@ -122,12 +141,6 @@ A {S}tandard {R}eference {F}rame for the {D}escription of {N}ucleic {A}cid
   {B}ase-pair {G}eometry.
 {\em Journal of {M}olecular {B}iology,} {\bf 313}, 229--237.
 
-\bibitem{lu2003}
-Lu, X.-J. and Olson, W. (2003)
-{3DNA: A Software Package for the Analysis, Rebuilding and Visualization of the
-  Three-Dimensional Nucleic Acid Structures}.
-{\em Nucleic Acids Research,} {\bf 31}, 5108--5121.
-
 \bibitem{maroun1988b}
 Maroun, R.~C. and Olson, W.~K. (1988)
 {Base Sequence Effects in Double-Helical DNA. III. Average Properties of Curved
@@ -232,12 +245,6 @@ Weinberg, Z., Perreault, J., Meyer, M.~M., and Breaker, R.~R. (2009)
 Severcan, I., Geary, C., Verzemnieks, E., Chworos, A., and Jaeger, L. (2009)
 {Square-Shaped RNA Particles from Different RNA Folds}.
 {\em Nanotechnology Letters,} {\bf 9}, 1270--1277.
-
-\bibitem{lee2004}
-Lee, J.~C. and Gutell, R.~R. (2004)
-{Diversity of Base-pair Conformations and their Occurrence in rRNA Structure
-  and RNA Structural Motifs}.
-{\em Journal of Molecular Biology,} {\bf 344}, 1225--1249.
 
 \bibitem{leontis2002b}
 Leontis, N.~B. and Westhof, E. (2002)
@@ -784,17 +791,16 @@ Olson, W.~K. (1981)
 {Understanding the Motions of DNA}.
 {\em Biomolecular Stereodynamics,} {\bf 1}, 327--343.
 
+\bibitem{arnott1968}
+Arnott, S., W.Fuller, Hodgson, A., and Prutton, I. (1968)
+{Molecular Conformations and Structure Transitions of RNA Complementary Helices
+  and their Possible Biological Significance}.
+{\em Nature,} {\bf 220}, 561--564.
+
 \bibitem{eargle2006}
 Eargle, J., Wrigth, D., and Luthey-Schulten, Z. (2006)
 {Multiple Alignment of Protein Structures and Sequences for VMD}.
 {\em Bioinformatics,} {\bf 22}, 504--506.
-
-\bibitem{olson1998}
-Olson, W.~K., Gorin, A.~A., Lu, X.-J., Hock, L.~M., and Zhurkin, V.~B. (1998)
-{DNA Sequence-Dependent Deformability Deduced from Protein-DNA Crystal
-  Complexes}.
-{\em Proceedings of the {N}ational {A}cademy of {S}ciences,} {\bf 95},
-  11163--11168.
 
 \bibitem{wilson1955}
 Wilson, E.~B., Decius, J.~C., and Cross, P.~C. (1955)

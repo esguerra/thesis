@@ -17,9 +17,33 @@ Leontis, N.~B. and Westhof, E. (1998)
 {Conserved Geometrical Base-Pairing Patterns in RNA}.
 {\em Quarterly Reviews of Biophysics,} {\bf 31}, 399--455.
 
+\bibitem{lee2004}
+Lee, J.~C. and Gutell, R.~R. (2004)
+{Diversity of Base-pair Conformations and their Occurrence in rRNA Structure
+  and RNA Structural Motifs}.
+{\em Journal of Molecular Biology,} {\bf 344}, 1225--1249.
+
+\bibitem{arnott1968}
+Arnott, S., W.Fuller, Hodgson, A., and Prutton, I. (1968)
+{Molecular Conformations and Structure Transitions of RNA Complementary Helices
+  and their Possible Biological Significance}.
+{\em Nature,} {\bf 220}, 561--564.
+
+\bibitem{nasalean2009}
+Nasalean, L., Stombaugh, J., Zirbel, C.~L., and Leontis, N.~B.
+Vol. 13,  of  Springer Series in Biophysics chapter Chapter I, pp. 1--26
+Springer Verlag Berlin Heidelberg (November, 2009).
+
 \bibitem{eargle2006}
 Eargle, J., Wrigth, D., and Luthey-Schulten, Z. (2006)
 {Multiple Alignment of Protein Structures and Sequences for VMD}.
 {\em Bioinformatics,} {\bf 22}, 504--506.
+
+\bibitem{olson1998}
+Olson, W.~K., Gorin, A.~A., Lu, X.-J., Hock, L.~M., and Zhurkin, V.~B. (1998)
+{DNA Sequence-Dependent Deformability Deduced from Protein-DNA Crystal
+  Complexes}.
+{\em Proceedings of the {N}ational {A}cademy of {S}ciences,} {\bf 95},
+  11163--11168.
 
 \end{thebibliography}
