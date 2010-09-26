@@ -18,6 +18,12 @@ Lu, X.-J. and Olson, W. (2003)
   Three-Dimensional Nucleic Acid Structures}.
 {\em Nucleic Acids Research,} {\bf 31}, 5108--5121.
 
+\bibitem{yang2003}
+Yang, H. and Jossinet, F. (2003)
+Tools for the {A}utomatic {I}dentification and {C}lassification of {RNA} base
+  pairs.
+{\em Nucleic {A}cids {R}esearch,} {\bf 31}, 3450--3460.
+
 \bibitem{olson1998}
 Olson, W.~K., Gorin, A.~A., Lu, X.-J., Hock, L.~M., and Zhurkin, V.~B. (1998)
 {DNA Sequence-Dependent Deformability Deduced from Protein-DNA Crystal
@@ -806,12 +812,6 @@ Eargle, J., Wrigth, D., and Luthey-Schulten, Z. (2006)
 Wilson, E.~B., Decius, J.~C., and Cross, P.~C. (1955)
 Molecular Vibrations: The Theory of Infrared and Raman Vibrational Spectra,
 McGraw-Hill, .
-
-\bibitem{yang2003}
-Yang, H. and Jossinet, F. (2003)
-Tools for the {A}utomatic {I}dentification and {C}lassification of {RNA} base
-  pairs.
-{\em Nucleic {A}cids {R}esearch,} {\bf 31}, 3450--3460.
 
 \bibitem{hagerman1997}
 Hagerman, P.~J. (1997)
