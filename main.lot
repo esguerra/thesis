@@ -15,24 +15,24 @@
 \contentsline {table}{\numberline {3.5}{\ignorespaces Mean values and standard deviations of the six rigid-body base-pair parameters, the conformational accessible volumes scores of each pair \cite {olson1998}, and the root-mean square deviations (rmsd) of base-pairs superimposed in the middle base triad (MBT) (see Appendix \ref {appendix_1a}) in RNA helical regions.}}{60}{table.3.5}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Unique base-pair steps parameters counts and overlap values in RNA helical regions.}}{64}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Persistence lengths for chains of 1000 base-pairs constructed from the ten unique base-pair steps. A scaling factor $\zeta $ is used to reproduce the experimentally obtained values of persistence length of a random sequence with equal weights of G$\cdot $C and A$\cdot $U base-pairs, and with an equally weighed composition of the sixteen unique base-pair steps.}}{72}{table.4.2}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Counts of unique base-pair steps and overlap areas (subscripted values in parenthesis) values in intact RNA helical regions of RNA structures.}}{65}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Persistence lengths for chains of 1000 base-pairs constructed from the ten unique base-pair steps. A scaling factor $\zeta $ is used to reproduce the experimentally obtained values of persistence length of a random sequence with equal weights of G$\cdot $C and A$\cdot $U base-pairs, and with an equally weighed composition of the sixteen unique base-pair steps.}}{73}{table.4.2}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
-\contentsline {table}{\numberline {5.1}{\ignorespaces GNRA motif seed composed of the average base step parameter values for 20 GNRA motifs found in the large subunit of the ribosome PDB\_ID:1FFK \cite {lemieux2006}.}}{79}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces GNRA motif seed composed of the average base step parameter values for 20 GNRA motifs found in the large subunit of the ribosome PDB\_ID:1FFK \cite {lemieux2006}.}}{80}{table.5.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-7}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-8}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-9}
-\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{100}{table.B.1}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Example of structures, considered as bidimensional vectors, to be clustered using the average linkage method and the Manhattan distance.}}{101}{table.B.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-10}
-\contentsline {table}{\numberline {C.1}{\ignorespaces Persistence lengths for common polymers, and biopolymers with filament structures.}}{112}{table.C.1}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Persistence lengths for common polymers, and biopolymers with filament structures.}}{113}{table.C.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-11}
-\contentsline {table}{\numberline {D.1}{GNRA Motif Scores.}}{122}{table.D.1}
+\contentsline {table}{\numberline {D.1}{GNRA Motif Scores.}}{123}{table.D.1}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-12}
 \gdef \the@ipfilectr {}
