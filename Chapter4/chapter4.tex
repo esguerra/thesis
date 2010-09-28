@@ -186,7 +186,7 @@ The process of data reduction can be summarized as follows:
 \begin{itemize}
 \item{Collection   of   a   non-redundant   dataset   of   RNA   X-ray
 crystallographic  structures  restricted  to resolutions  better  than
-3.5\AA~with up-to-date data from the PDB.}
+3.5~\AA ~with up-to-date data from the PDB.}
 \item{Computation of  base-pair and base pair step  parameters for all
     structures using 3DNA \cite{lu2003}.}
 \item{Determination   of   the   Leontis-Westhof   classification   of
@@ -225,31 +225,36 @@ CpC.}
 The values in  the table can be sorted by any  of the included fields,
 that  is, Stack  Type, Step  Count,  Shift, Slide,  Rise, Tilt,  Roll,
 Twist, Volume,  and RMSD. Also  the scatterplot corresponding  to each
-step is  displayed when  clicking in the  counts column, along  with a
-potential  energy contour  in  the  Roll-Twist plane  at  4.5 $kT$.  A
-snapshot  of the  energy contour  for  the GG$\cdot$CC  step from  the
-web-framework is shown in Figure ~\ref{fig:contour}.
+step is  displayed when  the users click  on the counts  column, along
+with a  potential energy contour in  the Roll-Twist plane  at 4.5 $kT$
+(i.e.  3 standard deviations).   A snapshot  of the  roll-twist energy
+contour for  the GG$\cdot$CC step  from the web-framework is  shown in
+Figure  ~\ref{fig:contour} Note  the lack  of correlation  between the
+variables  compared to  the  same steps  in  in DNA  and the  slightly
+greater variation in roll compared to twist.
 \begin{figure}[htbp]
 \centering
-\includegraphics[angle=0, scale=0.58]{Chapter4/contour.png}
-\caption{Snapshot from the web-framework of a scatterplot in the
-  Roll-Twist plane with an energy contour at 4.5$kT$. The full data before
-  culling is show in red dots, and the culled data is shown as blue dots.} 
+\includegraphics[angle=0, scale=0.54]{Chapter4/contour.png}
+\caption{Snapshot  from  the web-framework  of  a  scatterplot in  the
+  Roll-Twist plane  with an energy  contour at 4.5$kT$. The  full data
+  before culling are depicted in red dots, and the culled data, within
+  3 standard deviations of the mean, by blue dots.}
 \label{fig:contour}
 \end{figure}
 
-The  other values  included  in  the web-framework  are  those of  the
-force-constants corresponding  to the unique steps. A  snapshot of the
-force-constant  matrix for  the GG$\cdot$CC  step is  shown  in Figure
+The other values included in the web-framework are the force-constants
+corresponding to  the unique steps.  A snapshot of  the force-constant
+matrix    for   the    GG$\cdot$CC   step    is   shown    in   Figure
 ~\ref{fig:forceconst}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[angle=0, scale=0.6]{Chapter4/forceconst.png}
-\caption{Snapshot of  the RNA Base-Pair Steps  web-framework where the
+\caption{Snapshot of  the RNA base-pair-steps  web-framework where the
   force constant matrix for the GG$\cdot$CC dimeric step is shown. The
   force  constant  matrix  is  derived  from the  covariance  of  step
-  parameter values following Go and Go \cite{go1976}.}
+  parameter  values following  Go and  Go \cite{go1976}  and  Olson et
+  al. \cite{olson1998}.}
 \label{fig:forceconst}
 \end{figure}  
 
@@ -264,92 +269,131 @@ magnetic  tweezers,  and small  angle  X-Ray  scattering (SAXS).   For
 reviews  of  such  techniques  applied  to the  determination  of  RNA
 persistence    length,    we   refer    the    reader   to    Hagerman
 \cite{hagerman1997}, Abels  et al.  \cite{abels2005},  and Caliskan et
-al.  \cite{caliskan2005}.  We compare our simulation results based on
-the   "realistic"   model  developed   by   Olson  and   collaborators
-\cite{olson1995} to describe DNA  with their findings, keeping in mind
-that   the   "realistic"  model   is   dependent  on   high-resolution
-crystallographic data.
+al.  \cite{caliskan2005}.  We compare  our simulated results, based on
+the observed  structural properties of  RNA and the  "realistic" model
+developed by Olson and collaborators \cite{marky1994a, maroun1988a} to
+describe  DNA,  with the  persistence  length  extracted from  various
+experimental means.
 
-Initial  studies   started  with  small   numbers  of  data   for  the
-deformabilities of the ten unique base-pair steps \cite{olson1995}.  A
-more complete  picture applied to the study  of DNA sequence-dependent
-deformability   became  available   in  1998   \cite{olson1998}.   The
-base-pair-step deformability data for  DNA has been constantly refined
-as more high-resolution DNA and DNA-protein structures have been added
-to  the   Nucleic  Acid  Database   (NDB)  \cite{balasubramanian2009}.
-Although such data has been available for DNA since 1998, such was not
-the case for RNA, until recently \cite{olson2009}.
+Initial studies started with  selected data for the deformabilities of
+the  ten unique  base-pair  steps \cite{olson1995}.   A more  complete
+picture applied  to the study of  DNA sequence-dependent deformability
+became  available   in  1998  \cite{olson1998}.    The  base-pair-step
+deformability  data  for  DNA  have  been constantly  refined  as  more
+high-resolution DNA and DNA-protein  structures have been added to the
+Nucleic Acid Database (NDB) \cite{balasubramanian2009}.  Although such
+data have been available for DNA  since 1998, such was not the case for
+RNA, until recently \cite{olson2009}.
 
 A brief description of the ``realistic'' model along with a simplified
 schema  of the  C++ code  developed by  Dr. Luke  Czapla  and modified
-slightly by  the author, is given  in Appendix~\ref{appendix4a}.  Also
-in such Appendix a brief account of various definitions of persistence
-length and the models generally used to compute it are given.
+slightly by  the author,  is given in  Appendix~\ref{appendix4a}. This
+Appendix  also includes  a brief  account of  various  definitions and
+models generally used to compute persistence length in the literature.
+
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=2.8]{Chapter4/perVlen.png}
-\caption{In the lower frame persistence length vs chain length in
-  base-pairs for naturally straigth chains. In the upper frame the
-  persistence length vs. chain length of ``real'' chains.}
+\includegraphics[angle=0, scale=2.6]{Chapter4/perVlen.png}
+\caption{In  the lower  frame persistence  length vs  chain  length in
+  base-pairs  for naturally  straigth chains  with 11  base  pairs per
+  turn. In the upper frame  the persistence length vs. chain length of
+  ``real''  chains.   Note that  chains  with  alternating base  pairs
+  sequence  are constructed  from two  types  of dimers  and that  the
+  computed  values  in  a  limited  configuration  sample  are  nearly
+  identical  for poly  rX$\cdot$ poly  rY and  poly rY$\cdot$  poly rX
+  chains where X$\neq$Y.}
 \label{fig:perVlen}
 \end{figure}
 
 Using  the mean  values and  force  constants of  RNA base-pair  steps
-available at our  web-framework we can use the  ``realistic'' model as
-implemented  by  Czapla~\cite{czapla2006}  to compute  the  persistence
-length  of chains  of increasing  lengths formed  from the  ten unique
-base-pair  steps  of canonical  Watson-Crick  G$\cdot$C and  A$\cdot$U
-pairs.   We  used two  rest  states  in  our calculations,  one  which
-corresponds to  a naturally straight chain using  the standard dimeric
-parameters for  the A-RNA conformation,  that is, $x_{i}^{0} =  \{0, 0,
-  3.30,  0,  0,  31.6\}$ with   a  helical  repeat  of  11  base-pairs
-\cite{arnott1999}.   The  other  rest  states  used  are  the  average
-base-step   parameters   of the ten unique steps obtained   from   our
-web-framework. It is  important to  note that one  cannot have  a chain
-composed of  pure GC$\cdot$GC  steps, for example,  since the  step in
-between two  such steps is  necessarily a CG$\cdot$CG  step, therefore
-eight of the  ten chains formed by the unique  base-pair steps will be
-mixed, and  only two will be made  purely from a single  kind of step,
-that  is, those  chains formed  from the  GG$\cdot$CC  and AA$\cdot$UU
-dimers.
+available at our web-framework we  can use the ``realistic'' model, as
+implemented  by  Czapla  et   al  \cite{czapla2006},  to  compute  the
+persistence length of RNA  helical chains of increasing lengths formed
+from  the  ten  unique   base-pair  steps  of  canonical  Watson-Crick
+G$\cdot$C  and  A$\cdot$U pairs.   We  used  two  rest states  in  our
+calculations,  one which  corresponds  to a  naturally straight  chain
+using the standard dimeric parameters for the A-RNA conformation, that
+is, $x_{i}^{0} = \{0, 0, 3.30,  0, 0, 32.7\}$ with a helical repeat of
+11  base-pairs \cite{chandrasekar1989,  arnott1999}.   The other  rest
+states  used are  the  average base-pair-step  parameters  of the  ten
+unique steps obtained from our  web-framework. It is important to note
+that one cannot  have a chain composed of  pure GC$\cdot$GC steps, for
+example, since  the step  in between two  such steps is  necessarily a
+CG$\cdot$CG  step, therefore  eight of  the ten  chains formed  by the
+unique base-pair  steps will be  mixed (alternating copolymers  of XpY
+and YpX steps), and only two  will contain a single kind of step. That
+is,  those  chains  formed  from  repetition  of  the  GG$\cdot$CC  or
+AA$\cdot$UU dimers.
 
-As expected the persistence  lengths for naturally straight chains are
-greater  than the  corresponding persistence  lenghts for  chains whose
-rest states are those  coming from the averaged crystallographic data,
-as is  clearly seen in  Figure~\ref{fig:perVlen}. As is the  case with
-DNA,  the polyAA  chains show  a smaller  persistence length  than the
-polyGG  chains, although  the difference  is not  as dramatic  as that
-shown by  Maroun and  Olson \cite{maroun1988a} for  DNA, that  is, the
-difference for DNA is about  $\sim$500 \AA, and for RNA the difference
-is about $\sim$100 \AA.  The stiffer polyGG chains in this case can
-also be attributed to a more symmetrical energy surface as is the case
-for  DNA,  this can  easily  be  seen  from the  corresponding  energy
-surfaces available at our web-framework where the energy contour for
-the GG$\cdot$CC step is circular and the one for AA$\cdot$UU base-pair
-step has the shape of an ellipse.
+As expected, the persistence lengths for naturally straight chains are
+greater than  the corresponding  persistence lenghts for  chains whose
+rest states  are those coming from the  averaged crystallographic data
+(Figure~\ref{fig:perVlen}).
+Repetition of  the averaged crystal rest states  yield regular helices
+with  the  repeats   per  turn  and  helical  rise   shown  in  Figure
+\ref{fig:helicalprop}. 
+%Repetition  of the averaged  crystal rest
+%state  yields a  regular helix  with 00  bp/helix and  a  helical step
+%height of 00 \AA res 11 bp/turn and 3.30 \AA in the naturally straight
+%rest state.
 
-For comparison to the DNA case we also computed the persistence length
-of RNA sequences of a length of 1000 bp sequences made up from repeats
-of  the unique  base-pair  steps  taking a  million  samples with  the
-gaussian sampler  and assuming  a naturally straight  chain as  can be
-seen  in  the results  in  Table  \ref{tab:compare}.   In general,  as
-expected, the persistence length values are bigger than those obtained
-for DNA,  this is due  to the stiffness  of the A-RNA  conformation in
-contrast  to the  more flexible  B-DNA conformation  which  RNA cannot
-assume.
+\begin{figure}
+\centering
+\includegraphics[angle=0, scale=0.66]{Chapter4/helicalprop.png}
+\caption{Helical parameter values  for the homopolymers and copolymers
+  built using  3DNA from the average  base-pair-step parameters values
+  of  averaged  crystallographic data.  For  corresponding images  see
+  Figure \ref{fig:homohetero}}
+\label{fig:helicalprop}
+\end{figure}
 
-We  also  constructed  a random  RNA  sequence  with  a 1:1  ratio  of
-A$\cdot$U  to  G$\cdot$C  base-pairs,  and equally  weighed  base-pair
-steps, this results can be compared to those obtained by Abels et al.,
-and those reported  by Hagerman. As we see  in Table \ref{tab:compare}
-the obtained  values are larger than  their experimental counterparts,
-as is  also the case  for the DNA  values, therefore a scaling  of the
-force  constants used  to compute the  persistence  lenghts given  in
-column  three of  Table  \ref{tab:compare} is  recommended. To  obtain
-values according to  those of Abels et al. a  $\zeta$ scaling value of
-0.65  is necessary  to  bring  the persistence  length  of the  random
-sequence RNA to a value of 638 \AA.
+
+As  is the  case with  DNA, the  poly rA$\cdot$poly  rU chains  show a
+smaller  persistence length  than  the poly  rG$\cdot$poly rC  chains,
+although the difference is not as dramatic as that shown by Maroun and
+Olson \cite{maroun1988a} for  DNA. That is, the difference  for DNA is
+about $\sim$500  \AA, and  for RNA the  difference is  about $\sim$100
+\AA.  The stiffer polyrG chains in this case reflects more symmetrical
+energy surface  as is the case for  DNA, this can easily  be seen from
+the corresponding energy surfaces available at our web-framework where
+the energy  contour for the GG$\cdot$CC  step is circular  and the one
+for AA$\cdot$UU base-pair step has the shape of an ellipse.
+
+With 3DNA  we can build a  rigid block model  representation using the
+average rest states from the  averaged crystallographic data to have a
+fast representation  of what  this conformations look  like as  can be
+seen in Figure \ref{fig:homohetero}.
+
+\begin{figure}
+\centering
+\includegraphics[angle=0, scale=3.0]{Chapter4/homohetero.png}
+\caption{Calladine-Drew like block representation \cite{calladine1997}
+  made from the rest states for  the ten unique base-pair steps in RNA
+  from averaged crystallographic data. The structures were built using
+  3DNA \cite{lu2003}.}
+\label{fig:homohetero}
+\end{figure}
+
+For comparison  with sequence dependent properties of  DNA we computed
+the persistence  length of RNA sequences of  1000 base-pair-steps made
+up of repeats of the  unique base-pair steps, taking a million samples
+with the Gaussian sampler and  assuming a naturally straight chain. As
+can be seen in the results in Table \ref{tab:compare}, the persistence
+length  is generally  larger than  the  obtained for  DNA (using  such
+data).   The dependence reflects  the greater  stiffness of  the A-RNA
+dimers  compared to the  more flexible  B-DNA conformation,  which RNA
+cannot assume.
+
+We also constructed a mixed  sequence RNA homopolymer with a 1:1 ratio
+of A$\cdot$U to G$\cdot$C base-pairs, and 16 equally weighed base-pair
+steps. The computed values  in Table \ref{tab:compare} are larger than
+their  experimental counterparts,  as is  also  the case  for the  DNA
+values.   We  therefore introduce  a  scaling  factor  to compute  the
+persistence  lengths  (Table   \ref{tab:compare}).  To  obtain  values
+according to those of Abels et  al. a $\zeta$ scaling value of 0.75 is
+necessary to bring  the persistence length of the  random sequence RNA
+to a value of 638 \AA.
 
 \begin{table}  
 \begin{center}
@@ -371,12 +415,12 @@ YR &  CA$\cdot$UG & 536      &  779   \\
    &  UA$\cdot$UA & 820      &  435   \\
    &  CG$\cdot$CG & 1117     &  534   \\
 \hline
-   & Random Sequence  & 911   &        \\
+   & Mixed Sequence  & 911   &        \\
    & Hagerman   & 700-800    &        \\
    & Abels et al.   & 622    &        \\ 
    & Abels et al.   & 638    &        \\
    & Ideal DNA    &          & 510    \\
-   & $\zeta$ (scaling factor)  & 0.65 & 0.50 \\
+   & $\zeta$ (scaling factor)  & 0.75 & 0.50 \\
 \hline
 \end{tabular}
 %}
@@ -390,43 +434,50 @@ YR &  CA$\cdot$UG & 536      &  779   \\
 \end{center}
 \end{table}
 
-We also computed the persistence length at increasing chain lengths of
-a   mixed   sequence  RNA   (polyACACACGGGGG)   as   seen  in   Figure
-\ref{fig:curved}. We see that  in contrast to Figure \ref{fig:perVlen}
-this function seems to be "damped",  which is usually the case for the
-appearance of curved polymeric structures.  A set of a hundred sampled
-conformations  of a  150 bp  long  chain using  the gaussian  sampling
-technique   were  rebuilt  using   3DNA  and   are  shown   in  Figure
-\ref{fig:rnatree} and can  also be seen as a movie  at the web address
-\url{http://napoli.rutgers.edu/site_media/movie.htm}, where we clearly
-see the tendency to curve  and therefore reduce the persistence length
-of RNA, which  is about $\sim$340 \AA~for  this sequence, much smaller
-than it is for any of the chains shown in Figure \ref{fig:perVlen}.
+We also computed the  persistence length, at increasing chain lengths,
+of      a      mixed       sequence      RNA      block      copolymer
+(poly(AC)$_{\text{3}}$G$_{\text{5}}$)     as     seen    in     Figure
+\ref{fig:curved}.     We   see   that,    in   contrast    to   Figure
+\ref{fig:perVlen}, the chain-legth dependence of the mean extension of
+the block copolymer seems to  be "damped".  The same sort of variation
+in    the    persistence    length    occurs    in    DNA    sequences
+\cite{maroun1988b}. A set of a hundred sampled configurations of a 150
+bp long chain, obtained using  the Gaussian sampling technique and the
+rebuild   feature  of   3DNA,   are  superimposed   using  the   first
+base-pair-step   reference    frame   of   the    chains   in   Figure
+\ref{fig:rnatree} and  viewable as a sequence of  independet images at
+the                             web                            address
+\url{http://rnasteps.rutgers.edu/rnadimer/media/img/movie.htm}.     The
+series of  images reveal  the tendency for  the sequence to  curve and
+therefore reduce the persistence length of RNA. The value of $\sim$340
+\AA~ for the block copolymer is  much smaller than that for any of the
+chains shown in Figure \ref{fig:perVlen}.
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=0.6]{Chapter4/dampedlike.png}
-\caption{Persistence length vs. chain  length for an RNA sequence made
-  up from the  repeating unit poly- ACACACGGGGG and  sampled using the
-  gaussian sampling technique of  Czapla et al. \cite{czapla2006}. The
-  curved pattern is indicative of curved configurations of RNA induced
-  by sequence.}
+\includegraphics[angle=0, scale=0.6]{Chapter4/curved_and_steps.png}
+\caption{Chain length  depence of the  persistence length for  the RNA
+  block  copolymer   poly  r(AC)$_{\text{3}}$G$_{\text{5}}\cdot$  poly
+  rC$_{\text{5}}$(GU)$_{\text{3}}$. Configuration samples obtained
+  using    the   Gaussian    sampling   technique    of    Czapla   et
+  al. \cite{czapla2006}. The curved  pattern is indicative of a curved
+  or super helical configuration in RNA induced by sequence.}
 \label{fig:curved}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=0.9]{Chapter4/polyacacacggggg_all.png}
-\caption{RNA chains of polyACACACGGGGG of 150bp length superimposed in
-  the  reference  frame  of  the  first base-step.  Shown  are  a  100
-  snapshots of the output produced from rebuilding the step-parameters
-  which are sampled with the  gaussian sampling technique of czapla et
-  al. \cite{czapla2006}.  In the figure the ribbon is a representation
-  of the  connection of sequential  phosphorous atoms which  have been
-  reconstructed  using 3DNA  from the  base-step parameters  which are
-  generated  to compute  the generator  matrices descibed  in Appendix
-  \ref{appendix4a}.}
-\label{rnatree}
+\includegraphics[angle=0, scale=2.0]{Chapter4/polyacacacggggg_all.png}
+\caption{RNA   chains   of   the   150  bps   block   copolymer   poly
+  r(AC)$_{\text{3}}$G$_{\text{5}}\cdot$                            poly
+  rC$_{\text{5}}$(GU)$_{\text{3}}$ superimposed in the reference frame
+  of the  first base-step.   Shown are a  100 snapshots of  the output
+  produced  by  building  the  structures from  the  randomly  sampled
+  step-parameters  obtained with  the Gaussian  sampling  technique of
+  Czapla et al. \cite{czapla2006}.  Each chain is depicted by a ribbon
+  linking sequential phosphorous  atoms, reconstructed using 3DNA from
+  the base-step parameters at each dimer step.}
+\label{fig:rnatree}
 \end{figure}  
 
 

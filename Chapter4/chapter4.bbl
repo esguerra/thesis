@@ -17,8 +17,15 @@ Wilson, E.~B., Decius, J.~C., and Cross, P.~C. (1955)
 Molecular Vibrations: The Theory of Infrared and Raman Vibrational Spectra,
 McGraw-Hill, .
 
+\bibitem{lu2003}
+Lu, X.-J. and Olson, W. (2003)
+{3DNA: A Software Package for the Analysis, Rebuilding and Visualization of the
+  Three-Dimensional Nucleic Acid Structures}.
+{\em Nucleic Acids Research,} {\bf 31}, 5108--5121.
+
 \bibitem{yang2003}
-Yang, H. and Jossinet, F. (2003)
+Yang, H., Jossinet, F., Leontis, N., Chen, L., Westbrook, J., Berman, H., and
+  Westhof, E. (2003)
 Tools for the {A}utomatic {I}dentification and {C}lassification of {RNA} base
   pairs.
 {\em Nucleic {A}cids {R}esearch,} {\bf 31}, 3450--3460.
@@ -40,6 +47,18 @@ Caliskan, G., Hyeon, C., Perez-Salas, U., Briber, R.~M., Woodson, S.~A., and
   Thirumalai, D. (2005)
 {Persistence Length Changes Dramatically as RNA Folds}.
 {\em Phys Rev Lett,} {\bf 95}, 268303.
+
+\bibitem{marky1994a}
+Marky, N.~L. and Olson, W.~K. (1994)
+{Configurational Statistics of the DNA Duplex: Extended Generator Matrices to
+  Treat the Rotations and Translations of Adjacent Residues}.
+{\em Biopolymers,} {\bf 34}, 109--120.
+
+\bibitem{maroun1988a}
+Maroun, R.~C. and Olson, W.~K. (1988)
+{Base Sequence Effects in Double-Helical DNA. II. Configurational Statistics of
+  Rodlike Chains}.
+{\em Biopolymers,} {\bf 27}, 561--584.
 
 \bibitem{olson1995}
 Olson, W.~K., Babcock, M.~S., Gorin, A., Liu, G., Marky, N.~L., Martino, J.~A.,
@@ -64,15 +83,26 @@ Czapla, L., Swigon, D., and Olson, W.~K. (2006)
 {Sequence-Dependent Effects in the Cyclization of Short DNA}.
 {\em Journal of Chemical Theory and Computation,} {\bf 2}, 685--695.
 
+\bibitem{chandrasekar1989}
+Chandrasekar, R. and Arnott, S.
+Numerical Data and Functional Relatioships in Science and Technology chapter
+  {The Structures of DNA and RNA Helices in Oriented Fibers}, pp. 31--170
+Springer-Verlag (1989).
+
 \bibitem{arnott1999}
 Arnott, S.
 Oxford Handbook of Nucleic Acid Structure pp. 1--38
 Oxford Science Publications (1999).
 
-\bibitem{maroun1988a}
+\bibitem{calladine1997}
+Calladine, C.~R. and Drew, H.~R.
+{Understanding DNA: The Molecule and How It Works}
+Academic Press (1997).
+
+\bibitem{maroun1988b}
 Maroun, R.~C. and Olson, W.~K. (1988)
-{Base Sequence Effects in Double-Helical DNA. II. Configurational Statistics of
-  Rodlike Chains}.
-{\em Biopolymers,} {\bf 27}, 561--584.
+{Base Sequence Effects in Double-Helical DNA. III. Average Properties of Curved
+  DNA}.
+{\em Biopolymers,} {\bf 27}, 585--603.
 
 \end{thebibliography}
