@@ -14,9 +14,9 @@ re-construct the Periodic Table classification of the elements.
 We start by normalizing the vectors of step parameters,
 \begin{gather}
 \label{eq:normalization}  
-\overline{x}_{jA}=\frac{x_{jA}-x_{jmin}}{x_{jmax}-x_{jmin}}
+\overline{x}_{jA}=\frac{x_{jA}-x_{jmin}}{x_{jmax}-x_{jmin}},
 \end{gather}
-where ${x}_{jA}$ is the value  of the step parameter \textit{j} of the
+where ${x}_{jA}$ is the value  of the step parameter $j$ of the
 structure A and $x_{jmin}$ and  $x_{jmax}$ are the minimum and maximum
 values for a particular step parameter \textit{j} \cite{restrepo2006}.
 Then,  using  the  software  package \textsf{R}  \cite{ihaka1996},  we
@@ -30,60 +30,59 @@ definitions.   These distances  are  often referred  to as  Manhattan,
 Euclidean  and   maximum  distances.  The  first   two  distances  are
 particular cases of what is known as Minkowski's metric:
 \begin{gather}
-d(X,Y)= \Big( \sum_{i=1}^N |x_i-y_i|^k \Big)^\frac{1}{k}
+d(X,Y)= \Big( \sum_{i=1}^N |x_i-y_i|^k \Big)^\frac{1}{k},
 \end{gather}
 where $d(X,Y)$ refers to the distance between two vectors $X$ and $Y$,
-where $N$ is  the dimensionality of the vector.  For  the case of step
+and $N$ is  the dimensionality of the vector.  For  the case of step
 parameters, $N$ is  six.  In the case where \textit{k}  is equal to 1,
 the  definition  corresponds to  the  Manhattan  distance (a  distance
 measured by  following along the edges  of blocks). In  the case where
 \textit{k} is equal to 2, we have the familiar Euclidean distance. The
 remaining distance, that is, the maximum distance, is defined by:
 \begin{gather}
-d(X,Y) = max |x_{i}-y_{i}|
+d(X,Y) = max |x_{i}-y_{i}|,
 \end{gather}
 where  the  distance  between  vectors  $X$ and  $Y$  is  the  maximum
 difference between vector variables.
 
 Yet  another distance  definition used  in  this text,  which is  more
-frequently interpreted as an statistical measure of error, is the root
-mean square  deviation (RMSD). The  root mean square deviation  can be
-seen as a  mean euclidean distance, in the sense  that it's defined as
-the square  root of the ratio  between the sum  of squared differences
-between vector variables, and the dimensionality of the vectors $N$.
+frequently  interpreted as  a  statistical measure  of  error, is  the
+root-mean-square deviation (RMSD).  The root-mean-square deviation can
+be seen as a mean Euclidean  distance, in the sense that it is defined
+as the square root of the ratio between the sum of squared differences
+between vector variables, and the dimensionality of the vectors $N$,
 
 \begin{gather}
 RMSD(X,Y)      =     \Big(      \frac{\sum_{i=1}^2     |x_i-y_i|^2}{N}
-\Big)^\frac{1}{2} \label{eq:rmsd}
+\Big)^\frac{1}{2} .\label{eq:rmsd}
 \end{gather}
 
 %\noindent
-Once the  distance is defined, we use  a hierarchical method
-to cluster  the set of distances between  base-step parameters.  The
-clustering algorithm first finds the two closest vectors (given by one
-of  the  distance definitions)  and  groups  them  together.  Then  it
-compares the  distance of the elements  in the newly  formed group and
-the  elements remaining  to be  grouped, according  to  the particular
-clustering method.  For example,  the single linkage clustering method
-takes  the  minimum  distance   between  elements  as  the  clustering
-criterion.  Such an approach would, as all other agglomerative
-hierarchical methods do, group together the closest vectors given the
-distance definition, and then would use the method definition (minimum
-distance) to compare the distance of the elements of the group to the
-elements  which  remain  ungrouped,   or  to  the  elements  of  other
-groups. As new  groups are formed the process  is repeated following a
-hierarchical order,  that is, whatever  distance is smaller  gives the
-grouping  criterion.   We   have  used  four  hierarchical  clustering
-methods, the descriptions of these methods follow in the next section,
-"Hierarchical Methods".
+Once the distance is defined,  we use a hierarchical method to cluster
+the  set of  distances between  base-step parameters.   The clustering
+algorithm first  finds the  two closest vectors  (given by one  of the
+distance definitions) and groups  them together.  Then it compares the
+distance of  the elements in the  newly formed group  and the elements
+remaining  to  be  grouped,  according to  the  particular  clustering
+method.  For  example, the single linkage clustering  method takes the
+minimum distance  between elements as the  clustering criterion.  Such
+an approach would, as all other agglomerative hierarchical methods do,
+group together the closest  vectors given the distance definition, and
+then would use the method definition (minimum distance) to compare the
+distance of  the elements  of the group  to the elements  which remain
+ungrouped,  or to  the elements  of other  groups. As  new  groups are
+formed the  process is repeated  following a hierarchical  order, that
+is,  whatever distance is  smaller gives  the grouping  criterion.  We
+have used  four hierarchical  clustering methods, the  descriptions of
+which follow in the next section, "Hierarchical Methods".
 
 For  every  possible combination  of  clustering  method and  distance
 definition we  obtain a dendrogram. The combination  of three distance
 definitions and four clustering  methods leads to 12 clustering trees.
 These trees are not all exactly  the same but show recurring groups of
-conformers.  To find the groups  which are repeated among the trees, a
+conformers.  To find the groups, which are repeated among the trees, a
 consensus  analysis  is  performed  using  the  \textsf{clue}  package
-\cite{hornik2005}, implemented  in \textsf{R}. The  resulting consensus
+\cite{hornik2005}, implemented in  \textsf{R}. The resulting consensus
 tree is illustrated in Figure~\ref{fig:eucl_cons}.
 
 \section{Hierarchical methods}
@@ -105,8 +104,9 @@ D(X, Y)=max\{d(x_i, y_j): x_i \in X, y_j \in Y \}.
 \end{gather} }
 Here $X$, $Y$, and $d(x_{i},y_{j})$ have the same meaning as above.
   
-\item{ \textit{Average linkage  clustering}, the mean distance between
-  elements of each cluster is taken as the clustering criterion,
+\item{  \textit{Average linkage clustering},  where the  mean distance
+  between  elements  of  each  cluster  is  taken  as  the  clustering
+  criterion,
 \begin{gather}
 D(X, Y)=\frac{1}{N_x  * N_y} \sum_{i=1}^{N_x}  \sum_{j=1}^{N_y} d(x_i,
 y_j).
@@ -117,8 +117,8 @@ clusters.  }
 \item{ \textit{Centroid linkage clustering}, where the distance between
   cluster centroids is used as the clustering criterion,
 \begin{gather}
-D(X, Y)=d(\overline{x}, \overline{y})\\
-\overline{x} = \frac{1}{N_x} \sum_{i=1}^{N_x} x_i\\
+D(X, Y)=d(\overline{x}, \overline{y}) ,\\
+\overline{x} = \frac{1}{N_x} \sum_{i=1}^{N_x} x_i ,\\
 \overline{y} = \frac{1}{N_y} \sum_{i=1}^{N_y} y_i.
 \end{gather} }
 
@@ -127,7 +127,7 @@ D(X, Y)=d(\overline{x}, \overline{y})\\
 %This Error Sum of Squares might  be the same as the residual sum of
 %squares which is important in regression models.
 \begin{gather}
-D(X,Y)=ESS(XY) -[ESS(X) + ESS(Y)]\\
+D(X,Y)=ESS(XY) -[ESS(X) + ESS(Y)] ,\\
 ESS(X)=  \sum_{i=1}^{N_x} \left|
 x_i -\frac{1}{N_x}\sum_{j=1}^{N_x} x_j\right|^2 .
 \end{gather} }
@@ -172,7 +172,7 @@ Structure & Property I & Property II\\
 4  &     -2.00  & -3.00 \\
 \hline
 5  &     3.00  &  -4.00 \\
-\hline
+\hline 
 \end{tabular}
 \caption{Example of  structures, considered as  bidimensional vectors,
   to be clustered  using the average linkage method  and the Manhattan
@@ -193,7 +193,7 @@ d(X, Y)=
 3  & 8  & 12   & 0 &   &   \\
 4  & 11 &  9   & 5 & 0 &   \\
 5  & 11 & 15   & 3 & 6 & 0 \\
-\end{vmatrix}
+\end{vmatrix} .
 \label{eq:man}
 \end{gather}
 Here we  assign labels 1-5 to the  rows and columns to  make clear the
@@ -214,7 +214,7 @@ objects are grouped, to the  top, where all the objects constitute one
 final group. The  first step then is to  group whatever structures are
 closest, that  is, structures 3 and  5 ($d(3, 5)=3$). Now  we find the
 mean distance between  the elements of this cluster  and the remaining
-unclustered structures, that is, structures  1, 2 and 4, we obtain the
+unclustered structures, that is, structures  1, 2 and 4. We obtain the
 following mean distances
 \begin{gather}
 D(\{3,5\}, 1)=\frac{1}{2*1}*(8+11) = 9.5 \\
@@ -222,14 +222,14 @@ D(\{3,5\}, 2)=\frac{1}{2*1}*(12+15) = 13.5\\
 D(\{3,5\}, 4)=\frac{1}{2*1}*(5+6) = 5.5 \label{eq:dist}
 \end{gather}
 Since  the distances between  \{3, 5\}  and all  remaining unclustered
-vectors is  higher than  the distance between  vectors 1 and  2 ($d(1,
-2)=4$) then \{1, 2\} are grouped. The following value, in hierarchical
-increasing   order   is   5.5    between   \{3,   5\}   and   4   (see
-equation~\ref{eq:dist}), so  we group them. The  next value, following
-the lower to higher hierarchy, is 6 ($d(4, 5)=6$), but we have already
-grouped 3  with 5, so we have  to keep advancing in  the hierarchy and
-we'll find that  the only remaining posibility for  grouping is, group
-\{1, 2\} and \{4, 3, 5\},  so we group them together as illustrated in
+vectors are  higher than the distance  between vectors 1  and 2 ($d(1,
+2)=4$) then \{1, 2\} is  grouped. Because the average distance between
+\{3, 5\} and 4 (see equation~\ref{eq:dist}) in hierarchical increasing
+order is 5.5 we group these data points. The next value, following the
+lower to higher  hierarchy, is 6 ($d(4, 5)=6$).  Since we have already
+grouped 3 with 5, we have  to keep advancing in the hierarchy and find
+that the  only remaining possibility  for grouping is, group  \{1, 2\}
+and  \{4,   3,  5\}.  We   group  them  together  as   illustrated  in
 Figure~\ref{fig:tree}.
 \begin{figure}[t]
 \centering
@@ -248,7 +248,7 @@ large dataset. The main problem  with the practical approaches used to
 solve this task is that clustering  methods do not offer an 'a priori'
 answer to  the optimal number  of groups that  a large dataset  can be
 split into. In our simple example, shown in Figure \ref{fig:tree}, our
-data split into two main  groups.  Since the assesment dependends upon
+data split into two main  groups.  Since the assesment depends upon
 the distances and clustering methods used in particular cases, then an
 emergent  necessity is  to be  able to  determine the  validity  of an
 optimal number of clusters solution.  Clustering validation techniques
@@ -262,10 +262,10 @@ variety  of clustering  validation algorithms,  using  the programming
 language  \textbf{R}  \cite{rcite}.   The  clValid  package  comprises
 measures which reflect  the compactness, connectedness, and separation
 of cluster partitions. The concept  of compactness of a cluster refers
-to the extent of  intra-cluster variation, the conectedness concept is
+to the extent of  intra-cluster variation. The conectedness concept is
 a more local  concept and means that neighboring  data elements should
-belong to the same cluster,  and the separation concept quantifies the
-degree of  separation between individual clusters.  An illustration of
+belong  to the  same cluster.  The separation  concept  quantifies the
+degree of separation between  individual clusters.  An illustration of
 these concepts is presented in Figure \ref{fig:concomsep}.
 
 \begin{figure}
@@ -273,7 +273,7 @@ these concepts is presented in Figure \ref{fig:concomsep}.
 \includegraphics[scale=0.36]{Appendix/consilcom.png}
 \caption{Illustration   of   the   compactness,   connectedness,   and
   separation  of  a bi-dimensional  dataset.  Images  a-d present  the
-  solutions  for hierarchical  clustering of  the  euclidean distances
+  solutions  for hierarchical  clustering of  the  Euclidean distances
   between  the datapoints considering  $k=[2-5]$ clusters.   The $k=3$
   case, i.e.,  three clusters stands  out from the other  solutions in
   being composed of  more compact and separated groups.   This fact is
@@ -286,10 +286,10 @@ these concepts is presented in Figure \ref{fig:concomsep}.
 \end{figure}  
 
 \subsection{Internal Measures}
-There are two main types of measures in the clValid package, these are
-called internal measures, and stability measures. In general, internal
+There are two main types of measures in the clValid package, which are
+called internal measures and  stability measures. In general, internal
 measures are those that  use, exclusively, the dataset, the clustering
-partitions,  and intrinsic  information in  the data  to  quantify the
+partitions, and the intrinsic information  in the data to quantify the
 quality of a  clustering result. In clValid three  indices are used to
 account for compactness, conectedness and separation. The connectivity
 index measures  cluster connectedness, while the  silhouette width and
@@ -299,10 +299,10 @@ compactness.
 \subsubsection{Connectivity Index}
 The connectivity index is defined as:
 \begin{gather}
-Conn(\mathcal{C}) = \sum_{i=1}^{N}\sum_{j=1}^{L} x_{i,nn_{i(j)}}
+Conn(\mathcal{C}) = \sum_{i=1}^{N}\sum_{j=1}^{L} x_{i,nn_{i(j)}},
 \end{gather}
-Where   $nn_{i(j)}$   stands  for   the   $j^{th}$  nearest   neighbor
-(\textit{nn}) to  the $i^{th}$ observation.  If $i$,  and its neareast
+where   $nn_{i(j)}$   stands  for   the   $j^{th}$  nearest   neighbor
+($nn$) to  the $i^{th}$ observation.  If $i$,  and its neareast
 neighbor   $nn_{i(j)}$   are   in   the   same   cluster,   the   term
 $x_{i,nn_{i(j)}}$ is zero. If they  do not belong to the same cluster,
 then  the  term is  assigned  a value  of  $1/j$.   The parameter  $L$
@@ -322,12 +322,12 @@ The connectivity index can give values between zero and infinity,
 and smaller values mean better connectivity.
 
 \subsubsection{Average Silhouette Width}
-The  average  silhoutte  width  (\textit{asw})  is  the  mean  of  the
+The  average  silhouette  width  (\textit{asw})  is  the  mean  of  the
 silhouette values $S(i)$ for $n$ observations,
 \begin{gather}
 \textit{asw} = \frac{1}{n} \sum_{i=1}^{n} S(i) \text{,}
 \end{gather}  
-Where the silhouette value is defined as:
+where the silhouette value is defined as:
 \begin{gather}
 \label{eq:silval}  
 S(i) = \frac{b_{i}-a_{i}}{\max(a_{i},b_{i})} \text{.}
@@ -363,9 +363,9 @@ smallest inter-cluster distance and the largest intra-cluster distance
 in a partitioning.  The index is defined by:
 \begin{gather}
 D(C) = \min_{C_{k} \in C} \left(  \frac{\min_{C_{l} \in C}
-  d(C_{k},C_{l})}{\max_{C_{m} \in C} diam(C_{m})} \right)
+  d(C_{k},C_{l})}{\max_{C_{m} \in C} diam(C_{m})} \right) ,
 \end{gather}
-Where $\min_{C_{l \in C}} d(C_{k},C_{l})$ is the minimum inter-cluster
+where $\min_{C_{l \in C}} d(C_{k},C_{l})$ is the minimum inter-cluster
 distance,  and  $\max_{C_{m}  \in   C}  diam(C_{m})$  is  the  maximum
 intra-cluster distance.   The Dunn index can have  values between zero
 and infinity, and a higher value means a better cluster separation and
@@ -375,60 +375,61 @@ compactness.
 Stability  measures are  a  special type  of  internal measure,  which
 evaluate the consistency of a clustering result by comparing clustered
 groups after sequential removal  of a column of data \cite{datta2003}.
-In  the following  definitions  $N$  stands for  the  total number  of
-datapoints  (rows of data)  and $M$  is the  total number  of columns,
-dimensions  in the  data.  The  dimensions in  datapoints  usually are
+In the following  definitions $N$ stands for the  total number of data
+points  (rows  of  data) and  $M$  is  the  total number  of  columns,
+dimensions in  the data.   The dimensions in  data points  usually are
 taken as a  collection of samples or time  points.  These measures are
 specially suited for  highly correlated data, as is  commonly the case
 for high-throughput genomic data,  such as micro-arrays.  In the cases
 shown here  an average is  taken over the  combined space of  the full
 data and the reduced data sets.
 
-\subsubsection{Average Proportion of Non-overlap (APN)}
-The  average proportion  of  non-overlap  (APN) is  a  measure of  the
-proportion of datapoints which are not placed in the same cluster when
-a comparison is made between  full data clustering, and the clustering
-performed  with one  column of  data, such  as one  type  of base-step
-parameter, removed. Its value is defined as:
+\subsubsection{Average Proportion of Non-overlap (\textit{APN})}
+The average  proportion of non-overlap (\textit{APN}) is  a measure of
+the proportion of datapoints which  are not placed in the same cluster
+when  a comparison  is  made  between full  data  clustering, and  the
+clustering  performed with one  column of  data, such  as one  type of
+base-step parameter, removed. Its value is defined as:
 \begin{gather}
-\text{APN}(\mathcal{C}) - \frac{1}{MN} \sum_{i=1}^{N}\sum_{l=1}^{M} \left( 1
+\textit{APN}(\mathcal{C}) - \frac{1}{MN} \sum_{i=1}^{N}\sum_{l=1}^{M} \left( 1
 - \frac{n(C^{i,j} \cap C^{i,0})}{n(C^{i,0})} \right) \text{,}
 \end{gather}  
-where $C^{i,0}$ is the cluster which contains datapoint $i$ in the
+where $C^{i,0}$ is the cluster which contains data point $i$ in the
 full dataset, and $C^{i,l}$ is the cluster which contains point $i$ in
 the  reduced dimensionality  dataset, where  the column  $l$  has been
-removed.  The  value of APN ranges between $[0-1]$  and is optimal
+removed.  The  value of \textit{APN} ranges between $[0-1]$  and is optimal
 for values closer to zero \cite{datta2003, brock2008}.
 
-\subsubsection{Average Distance (AD)}
-The average distance (AD) measure computes the distance between datapoints in a
-particular cluster of the full  dimensional dataset and that where one
-column, or dimension has been removed,
+\subsubsection{Average Distance (\textit{AD})}
+The  average  distance  (\textit{AD})  measure computes  the  distance
+between  datapoints in a  particular cluster  of the  full dimensional
+dataset and that where one column, or dimension has been removed,
 \begin{gather}
 AD(\mathcal{C})=\frac{1}{MN}       \sum_{i=1}^{N}\sum_{l=1}^{M}      -
 \frac{1}{n(C^{i,0})n(C^{i,l})}  \left[  \sum_{i  \in  C^{i,0},  j  \in
-    C^{i,l}} d(i,j) \right] \text{,}
+    C^{i,l}} d(i,j) \right] \text{.}
 \end{gather}
-Here $d(i,j)$ is the distance between point $i$ in the full dimensional
-dataset and point $j$ in the reduced dimension dataset.
-The values of AD range between $[0-\infty]$ and are optimal when they
-come closer to zero \cite{datta2003, brock2008}.
+Here  $d(i,j)$  is  the  distance   between  point  $i$  in  the  full
+dimensional dataset  and point $j$  in the reduced  dimension dataset.
+The values  of \textit{AD} range between $[0-\infty]$  and are optimal
+when they come closer to zero \cite{datta2003, brock2008}.
 
-\subsubsection{Average Distance Between Means (ADM)}
-The average  distance between means (ADM) score  measures the distance
+\subsubsection{Average Distance Between Means (\textit{ADM})}
+The average  distance between means (\textit{ADM}) score  measures the distance
 between  the mean of  the datapoints  within a  cluster with  the full
 number  of dimensions  and  the mean  of  the datapoints  of the  same
-cluster when reduced by one dimension.
+cluster when reduced by one dimension,
 \begin{gather}
 ADM(\mathcal{C})= \frac{1}{MN} \sum_{i=1}^{N} \sum_{l=1}^{M}
-d(\bar{x}_{C^{i,l}}, \bar{x}_{C^{i,0}})
+d(\bar{x}_{C^{i,l}}, \bar{x}_{C^{i,0}}) .
 \end{gather}  
-Here $\bar{x}_{C^{i,0}}$  is the mean  value of the datapoints  in the
+Here $\bar{x}_{C^{i,0}}$ is  the mean value of the  data points in the
 cluster   which  contains  point   $i$  in   the  full   dataset,  and
-$\bar{x}_{C^{i,l}}$ is the mean value of the datapoints in the cluster
-containing point $i$ with column $l$ removed.  The values of ADM range
-between $[0-\infty]$  and like the AD  and APN values  are optimal the
-closer they are to zero \cite{datta2003, brock2008}.
+$\bar{x}_{C^{i,l}}$  is the  mean  value  of the  data  points in  the
+cluster containing point  $i$ with column $l$ removed.   The values of
+\textit{ADM} range  between $[0-\infty]$ and like  the \textit{AD} and
+\textit{APN}  values   are  optimal  the  closer  they   are  to  zero
+\cite{datta2003, brock2008}.
 
 %\newline
 %Distance can be defined by Minkowski's metric:

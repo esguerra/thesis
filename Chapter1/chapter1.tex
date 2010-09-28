@@ -542,29 +542,45 @@ in RNA structures - namely AMIGOS, MC-Fold, and FR3D - also have the
 capability to find new RNA motifs.
 
 \section{Overview}
-Keeping always in  mind the greater scope of  the RNA folding problem,
-this thesis  addresses various issues of  RNA structural understanding
-using RNA crystallographic data from the Protein Data Bank (PDB). Such
-data  have been  analyzed statistically  in terms  of a rigourous
-rigid-body formalism.  In Chapter 2 the consensus clustering technique
-is   used  to   classify   RNA  base-step   parameters  of   non-A-RNA
-conformations, and  the resulting groups are  localized and examined
-in the context  of rRNA.  Chapter 3 reconsiders  previous work carried
-out by  Dr. Yurong Xin  in Dr. Olson's group lab, on classification  of RNA
-base-pairs, by  resorting the structures in her base pair structures
-(BPS) database with clustering  analysis techniques.
-In  Chapter 4 we  explore, using statistical  analyses, the
-data available for RNA  helical regions, and  use the  information to
-determine the persistence length and elastic behaviour of
-double-stranded RNA's with various repeating sequences and compare the
-crystallographic based behaviour with other experimental  results.  In
-Chapter  5 we  provide  a  new  python
-software,  pyRNAmotifs which interfaces  with 3DNA  to perform a rigourous
-search of existing and perhaps  new RNA motifs, and finally in Chapter
-6  we propose  the measurement  and classification  of  RNA structures
-using a  new graph theoretical index  named folding index,  based on a
-helical region "view"  of RNA's, which is clearly  concordant with the
-emerging  necessity   of  new  metrics  beyond   RMSD  for  structural
-understanding.
+Always keeping in  mind the greater scope of  the RNA folding problem,
+this thesis  addresses various issues  of RNA folding  and deformation
+using information in crystallographic structures from the Protein Data
+Bank (PDB). These data have  been analyzed statistically in terms of a
+rigorous  rigid-body  formalism  and  applied  to  the  study  of  RNA
+polymers.  In Chapter 2 the  consensus clustering technique is used to
+classify the  geometry of  dinucleotide of non-A-RNA  conformations in
+terms  of  the base-step  parameters  describing  the orientation  and
+displacement of  succesive bases along  the RNA chain.   The resulting
+groups are localized and examined in the context of ribosomal RNA.  In
+addition  to  consensus clustering,  a  set  of clustering  validation
+techniques is used in order to select, a priori, an optimal clustering
+methodology. This  approach differs from  the more common  practice in
+the bioinformatics  field of choosing an  optimal clustering technique
+arbitrarily.  The validated clustering method is used then to classify
+the non-A-RNA-like  conformations of the  23S subunit of  the ribosome
+into 17 main groups.
+
+In Chapter  3 we explore,  using statistical analyses,  the identities
+and spatial arrangements  of base pairs in the  context of RNA helical
+regions. We find the most prominent base pairs, where these base pairs
+are located in the helical environment, and how they deform.
+
+In  Chapter 4  we present  a web  framework with  an  integrated MySQL
+database containing information on  the RNA base-pair steps within the
+helical      regions       of      representative      high-resolution
+structures. Properties  such as the average step  parameters and force
+constants (derived  from inverse covariance analysis of  the data) are
+tabulated and available for  user download.  The public information in
+the web framework is used then to determine the persistence length and
+elastic  behaviour  of double-stranded  RNA's  with various  repeating
+sequences and to compare  the crystallographically based behavior with
+other  experimental results.  Finally in  Chapter 5  we provide  a new
+software,  ``getMotif'',  which  interfaces  with the  3DNA  suite  of
+programs to perform a rigorous  search of existing and potentially new
+RNA  motifs.   The computations  are  based  on  a simple  score  that
+accounts for  structural similarity at  the base-step-parameter level,
+providing   a   new    metric   \cite{parisien2009}   for   structural
+understanding of RNA beyond the traditional all-atom RMSD.
+
 
 \bibliography{biblio}

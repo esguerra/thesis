@@ -115,17 +115,16 @@ growth of DNA structures.
 \caption{The total number of structures available in the PDB up to the
   end of 2009.  The  scale of the axis on the left  (in black), is ten
   times that on the right (in  green). The black y-axis sets the scale
-  for the number of protein structures  available in the PDB up to the
-  end  of 2009.  The green  y-axis sets  the scale  for the  number of
-  molecular structures  containing nucleic acids  -- RNA only  in red,
-  DNA only  in blue, and protein  plus nucleic acid in  green --.  One
-  can clearly see  that the total number of  protein, RNA, and protein
-  plus nucleic  acid structures  is growing exponentially.   The trend
-  also  tends to show  that the  number of  DNA structures  is perhaps
-  growing linearly  instead of exponentially.  It  is also interesting
-  to see  how the  number of  RNA structures really  lifts off  in the
-  middle of the  nineties, whereas for DNA the  growth started earlier
-  and seems to be constant now.}
+  for the  number of  protein structures.  The  green y-axis  sets the
+  scale  for the  number  of molecular  structures containing  nucleic
+  acids -- RNA only in red, DNA only in blue, and protein plus nucleic
+  acid in  green --.   One can  clearly see that  the total  number of
+  protein, RNA,  and protein plus  nucleic acid structures  is growing
+  exponentially.  The  data also tend to  show that the  number of DNA
+  structures is perhaps growing linearly instead of exponentially.  It
+  is also interesting  to see how the number  of RNA structures really
+  lifts off in the middle of  the nineties, whereas for DNA the growth
+  started earlier and seems to be constant now.}
 \label{fig:allpolypdb}
 \end{figure}
 
@@ -227,12 +226,12 @@ multidimensional property vectors  of the elements \cite{restrepo2004,
  \centering
 \includegraphics[angle=90, scale=0.43]{Chapter2/collageb.png}
  \caption{Molecular images of  non-A-RNA dinucleotide (ApU) structures
-   identified by  Schneider at al.  \cite{schneider2004} and organized
+   identified by Schneider  at al.  \cite{schneider2004} and organized
    by   clusters   obtained  from   consensus   clustering  of   their
    hexadimensional  base-step parameter  vectors.  The  structures are
    centered  on the  reference frame  of  the adenine  base, with  the
-   (shaded) minor groove edge of the rigid block on adenine facing the
-   viewer.}
+   (shaded) minor-groove, or sugar, edge of the rigid block on adenine
+   facing the viewer.}
  \label{fig:nonAclus}
 \end{figure}
 
@@ -241,35 +240,37 @@ multidimensional property vectors  of the elements \cite{restrepo2004,
 \includegraphics[angle=90, scale=0.48]{Chapter2/collage2.png}
 \caption{Top  view of  the non-A-RNA  dinucleotides (ApU)  from Figure
   \ref{fig:nonAclus} centered  on the reference frame  of adenine with
-  its minor  groove or sugar \cite{leontis1998}  edge oriented towards
-  the  bottom  of  the  image   and  the  major  groove  or  Hoogsteen
+  its minor-groove, or sugar, \cite{leontis1998} edge oriented towards
+  the  bottom  of  the  image  and  the  major-groove,  or  Hoogsteen,
   \cite{leontis1998} edge oriented towards the top.}
 \label{fig:steps2}
 \end{figure}
 
-As is clear  from Figures~\ref{fig:nonAclus} and~\ref{fig:steps2}, the
-20 structures  identified by Schneider  et al. fall into  seven unique
-groups based  on the relative position  of the base  side groups, here
-taken to be an  adenine in the 3$'$ position and a  uracil in the 5$'$
-position.   Group I  contains  structure {1}  with  bases stacked  and
-base-plane normals pointing in  opposite directions, Group II includes
-extended,  unstacked  conformations   with  neighboring  bases  widely
-displaced  and oriented  roughly perpendicular  to each  other  in all
-cases -- structures {15, 16, 10, 14}. Group III also contains extended
-conformations but  with the uracil  on the minor-groove or  sugar edge
-\cite{leontis1998}  of  adenine and  the  bases  perpendicular to  one
-another.  The  uracil lies  near the "C8-carbon"  of adenine  in these
-cases -- structures {8, 9, 17}. The bases in each of the conformers in
-Group IV  are more parallel to  one another but are  displaced in four
-different ways.   The bases in Group  IVa -- structures {2,  4} -- are
-unstacked and neither parallel  nor perpendicular.  Those in Group IVb
--- structures  {18, 19,  20}  --  are closely  related  to A-RNA  with
-parallel and stacked bases. The  bases in Group IVc -- structures {11,
-  12,  13}  --  are  parallel   but  unstacked,  with  uracil  on  the
-major-groove  or Hoogsteen  \cite{leontis1998} edge  of  adenine.  The
-bases in Group IVd -- structures {3, 5, 6, 7} -- are also parallel and
-unstacked, but with the long  axis (y-axis) of uracil perpendicular to
-that  of adenine.   As  is clear  from Figure~\ref{fig:nonAclus},  the
+As  is clear  from  Figures~\ref{fig:eucl_cons}-\ref{fig:steps2} which
+reflect the clustered groups  obtained using the clustering techniques
+described in  Appendix \ref{appendix_a}, the  20 structures identified
+by  Schneider et  al.   fall into  seven  unique groups  based on  the
+relative position of the base side groups, here taken to be an adenine
+in  the 3$'$  position and  a uracil  in the  5$'$ position.   Group I
+contains  structure  {1} with  bases  stacked  and base-plane  normals
+pointing in opposite directions, Group II includes extended, unstacked
+conformations  with neighboring  bases widely  displaced  and oriented
+roughly perpendicular  to each other  in all cases --  structures {15,
+  16, 10, 14}. Group III also contains extended conformations but with
+the uracil  on the minor-groove, or sugar,  edge \cite{leontis1998} of
+adenine and the  bases perpendicular to one another.   The uracil lies
+near the  "C8-carbon" of adenine in  these cases --  structures {8, 9,
+  17}.   The bases  in each  of the  conformers in  Group IV  are more
+parallel to one another but are displaced in four different ways.  The
+bases in Group  IVa -- structures {2, 4} --  are unstacked and neither
+parallel nor perpendicular.  Those in Group IVb -- structures {18, 19,
+  20} -- are closely related to A-RNA with parallel and stacked bases.
+The bases in Group IVc --  structures {11, 12, 13} -- are parallel but
+unstacked,   with   uracil   on   the  major-groove,   or   Hoogsteen,
+\cite{leontis1998}  edge  of  adenine.   The  bases in  Group  IVd  --
+structures {3, 5,  6, 7} -- are also parallel  and unstacked, but with
+the long axis (y-axis) of uracil perpendicular to that of adenine.  As
+is clear from  Figures~\ref{fig:eucl_cons} and \ref{fig:nonAclus}, the
 conformers  in subgroups  IVc and  IVd  are closely  related, and  the
 dimers in  these two  subgroups are more  closely related to  those in
 subgroup IVb than to those in subgroup IVa.
@@ -291,16 +292,16 @@ steps in  the ribosome resemble  it more closely (smallest  mean RMSD)
 than the other  groups. This is clearly due to  the fact that subgroup
 IVb contains the A-RNA (structure 20) and AII-RNA (structure 19) dimer
 steps.  The mean  RMSD values also give a good  idea of the structural
-simmilarity between  each one  of the four  groups found  by consensus
+similarity  between each  one of  the four  groups found  by consensus
 clustering and  the most  populated base-step conformation  adopted by
-RNA steps, that is, we can  order the clustered groups by mean RMSD in
-the order GI > GIII > GII  > GIV. It would be interesting to correlate
-these  findings with  sequence  covariation studies  to understand  if
-there  is any connection  between structural  simmilarity to  the most
-common RNA dimer step, and sequence conservation across species.
+RNA steps. That is, we can  order the clustered groups by mean RMSD in
+the order GI > GIII > GII > GIV.
+%It would  be interesting to check
+%whether  this  ordering  has  any  sequence dependance  or  not.  Such
+%verification is currently 
 
 The distribution  of conformer groups  is presented in  an alternative
-way in Table~\ref{tab:nonA}, where  we count all base-steps which fall
+way in Table~\ref{tab:nonA}, where we  count all base steps which fall
 below an  RMSD score  of 10.  It  is important  to note here  that the
 computed  RMSD is  not an  all-atom RMSD,  as is  commonly  used after
 superimposition of molecular structures,  but the deviation between an
@@ -310,30 +311,31 @@ since the base-step parameter vectors are computed using a middle step
 reference frame between the  step bases \cite{lu2003}.  The reason for
 choosing 10 as the RMSD cutoff  value is based on visual inspection of
 superimposed  reconstructed structures at  different RMSD  values. For
-example, for  Group I; if we  reconstruct the ribosomal  steps with an
+example, for  Group I, if we  reconstruct the ribosomal  steps with an
 RMSD of 10  or less using their base-step  parameter values, we obtain
 the  set  of  superimposed  structures  shown in  the  left  panel  of
 Figure~\ref{fig:superimpose}.   But if  we reconstruct  the base-steps
 using  the set of  parameter values  which fall  within a  larger RMSD
 cutoff  value  of   15,  as  can  be  seen  in   the  right  panel  of
 Figure~\ref{fig:superimpose},  there  will  be  three  new  structures
-(whose second bases are shown in the blue ``clouds'') in the set of
-superimposed structures,  which clearly do  not overlap well  with the
-structures which fall  under the lower cutoff value  and therefore are
-unlikely candidates for being part of such a conformational group.
+(whose second  bases are shown in  the blue ``clouds'') in  the set of
+superimposed structures.  The latter clearly do not  overlap well with
+the structures which  fall under the lower cutoff  value and therefore
+are unlikely candidates for being part of such a conformational group.
   
 In  Table~\ref{tab:nonA} we see  that the  total number  of structures
 which  fall into  any of  the four  conformational groups  is  only 31
 percent  of the  total  number of  steps  in the  23S  subunit of  the
-ribosome,  meaning that  69  percent of  base-steps  fall outside  the
+ribosome,  meaning that  69 percent  of  base steps  fall outside  the
 conformational groupings. We believe this result might stem from three
 factors: 1) the A-RNA  (Structure 20 in Figures \ref{fig:nonAclus} and
 \ref{fig:steps2})  structure identified by  Schneider et  al.  differs
 from canonical A-RNA  in that the rise value is  4.39 \AA, rather than
 the standard  value of 3.30 \AA~  obtained for A-RNA  fibers by Arnott
-and collaborators \cite{arnott1973}.  This might have an effect on the
-number of structures  which can be grouped under  the A-RNA like Group
-IVb;  2) our  treatment  ignores the  richer  classification of  A-RNA
+and collaborators  \cite{arnott1973} and seen in  other RNA structures
+\cite{chadrasekar1989}.  This  might have an  effect on the  number of
+structures  which  can  be  grouped  under the  A-RNA-like  Group  IVb
+category; 2) our treatment  ignores the richer classification of A-RNA
 conformations described  by Schneider et  al.  \cite{schneider2004} by
 using  only  conformers  19 and  20  in  Group  IVb and  omitting  the
 remaining 12  A-RNA-like conformers;  and 3) the  mix here  of results
@@ -377,31 +379,31 @@ base steps present in the 23S subunit.}
  \centering
 \includegraphics[angle=90, scale=0.5]{Chapter2/RMSDschneider1.png}
 \caption{Root-mean-square deviation  of the dinucleotide  steps in the
-23S  subunit  of the  ribosome  from the  main  four  groups shown  in
-Figures~\ref{fig:nonAclus}  and  \ref{fig:steps2}.  The color  of  the
-histograms  is  the same  as  that  of  the outlines  surrounding  the
-structures in Figure~\ref{fig:nonAclus}}
+  23S  subunit of  the ribosome  from the  main four  groups  shown in
+  Figures~\ref{fig:nonAclus} and \ref{fig:steps2}.   The colors of the
+  histograms are  the same  as those of  the outlines  surrounding the
+  structures in Figure~\ref{fig:nonAclus}}
  \label{fig:histo1}
 \end{figure}
 
 \begin{figure}[htbp]
  \centering
 \includegraphics[angle=90, scale=0.5]{Chapter2/RMSDschneider2.png}
-\caption{Root-mean-square  deviation histograms of  dinucleotide steps
-in the 23S  subunit of the ribosome from the  four types of conformers
-within the  Group IV category shown in  Figures \ref{fig:nonAclus} and
-\ref{fig:steps2}. Note that most of the dimers resemble the A-RNA-like
-conformers in subgroup IVb in  the upper left histogram where there is
-the highest proportion of small RMSD values.}
+\caption{Root-mean-square deviation  of dinucleotide steps  in the 23S
+  subunit of the ribosome from the four types of conformers within the
+  Group   IV  category   shown  in   Figures   \ref{fig:nonAclus}  and
+  \ref{fig:steps2}.  Note  that  most   of  the  dimers  resemble  the
+  A-RNA-like conformers  in subgroup IVb  in the upper  left histogram
+  where there is the highest proportion of small RMSD values.}
  \label{fig:histo2}
 \end{figure}
 
 \begin{figure}[htp]
  \centering
 \includegraphics[angle=0, scale=1.5]{Chapter2/G1at10_15b.png}
-\caption{Rigid  block   representation  of  dinucleotide   steps.  The
+\caption{Rigid-block   representation  of  dinucleotide   steps.   The
   major-groove side of the  first nucleotide block is oriented towards
-  the  viewer and  colored black.  \textbf{Left:} Drawn  in  blue, the
+  the  viewer and colored  black.  \textbf{Left:}  Drawn in  blue, the
   block     representing     the      Group     I     cluster     from
   Figure~\ref{fig:nonAclus}. Superimposed  on the Group  I cluster are
   three  structures whose  step-parameter RMSD's  with respect  to the
@@ -409,27 +411,27 @@ the highest proportion of small RMSD values.}
   an RMSD  less than  or equal to  15 we  "identify" a total  of seven
   structures  from the  ribosome. We  clearly see  that three  of them
   (encircled in cyan blobs) are  farther apart from the original Group
-  I  main structure  of  Figure~\ref{fig:nonAclus} which  is drawn  in
-  blue.}
+  I main structure of  Figure~\ref{fig:nonAclus}, which is again drawn
+  in blue.}
  \label{fig:superimpose}
 \end{figure}
 
-\subsection{Selection of a Clustering Methodology} In order to analyze
-our dataset  of base-step parameters we have  used clustering analysis
-methods.  Clustering  analysis methods can be  broadly classified into
-two main  categories, either  partitional or hierarchical.   In either
-case the main problem one faces for classification purposes is that of
-deciding the  optimal number of  hierarchies or partitions  into which
-the analyzed data can be split.   To obtain a criterion for an optimal
-number of  clusters, and also to  decide which method  might be better
-for  our  dataset,  we  have  used  two  types  of  cluster-validation
-techniques.   They  are  known  as  internal  measures  and  stability
-measures.   Full  details of  the  definitions  of  such measures  are
-provided  in   the  literature  \cite{handl2005,   brock2008}  and  in
-Appendix~\ref{sec:validation}.  To perform  the validation analysis we
-used  a freely  available  cluster validation  package called  clValid
-\cite{brock2008},   which  is  implemented   in  the   R  \cite{rcite}
-statistical analysis package.
+\subsection{Selection of a Clustering Methodology}
+In order to  analyze our dataset of base-step  parameters we have used
+clustering  analysis  methods.   Clustering  analysis methods  can  be
+broadly  classified into  two main  categories, either  partitional or
+hierarchical.   In  either  case   the  main  problem  one  faces  for
+classification  purposes is  that of  deciding the  optimal  number of
+hierarchies or partitions  into which the analyzed data  can be split.
+To obtain a  criterion for an optimal number of  clusters, and also to
+decide which method might be better  for our dataset, we have used two
+types of  cluster-validation techniques.   They are known  as internal
+measures and  stability measures.  Full details of  the definitions of
+such  measures   are  provided  in   the  literature  \cite{handl2005,
+  brock2008}  and in  Appendix~\ref{sec:validation}.   To perform  the
+validation  analysis we  used  a freely  available cluster  validation
+package called clValid \cite{brock2008}, which is implemented in the R
+\cite{rcite} statistical analysis package.
 
 In  Figures~\ref{fig:internal} and~\ref{fig:stability} we  present the
 results for internal and stability validation of clustering techniques
@@ -439,37 +441,38 @@ to define the number of clusters  which we will be using frequently in
 the text.
 
 In   Figure~\ref{fig:internal}   we    see   the   validation   scores
-(connectivity,  silhoutte width,  and Dunn  index) for  cluster groups
+(connectivity, silhouette  width, and  Dunn index) for  cluster groups
 ranging  from   $k=2$,  up  to  $k=80$,  and   evaluated  using  both,
 hierarchical (hierarchical, diana)  and partitional (kmeans, pam, som,
 sota) methods. An optimal  connectivity measure must be minimized, and
-the  average silhouette  width  (silhouette) and  Dunn  index must  be
-maximized.  Keeping in mind the previously described optimal trends we
-see   that  for   the  three   graphs   shown  in   this  figure   the
+an optimal average silhouette width (silhouette) or Dunn index must be
+maximized.  Keeping  in mind the previously  described optimal trends,
+we  see that  for  the three  graphs  shown in  this  figure that  the
 hierarchical\footnote{The  hierarchical method can  be carried  out in
-various ways, for example, using  different metrics (i.e.  a mesure of
-the   distance    between   datapoints),   and    different   grouping
-methodologies.   In   this  specific  case  we  are   referring  to  a
-hierarchical  method carried  out  in an  agglomerative, or  bottom-up
-manner, meaning  that we  start by grouping  pairs of steps  which are
-initially ungrouped, and group  them progresively with other ungrouped
-steps    using   the   average    method   criteria    (explained   in
-Appendix~\ref{appendix_a}),  which  in  turn  depends  on  a  distance
-definition which in this case is that of the Euclidean (square root of
-the  sum of the  squared differences  between vector  elements) metric
-(defined  in Appendix~\ref{appendix_a}).}   method (series  of numeral
-1's shown in  black) performs better in terms  of the connectivity and
-Dunn index for the entire  range of eighty clusters $k=(2-80)$, and it
-is also the best performer in silhouette from $k=12$ onwards.
+  various ways,  for example, using different  metrics (i.e.  measures
+  the   distance   between   data-points),  and   different   grouping
+  methodologies.   In  this  specific  case  we  are  referring  to  a
+  hierarchical method  carried out  in an agglomerative,  or bottom-up
+  manner, meaning that  we start by grouping pairs  of steps which are
+  initially  ungrouped,   and  group  them   progresively  with  other
+  ungrouped  steps using  the  average method  criteria (explained  in
+  Appendix~\ref{appendix_a}).  The  criteria  in  turn,  depend  on  a
+  distance definition,  which in  this case is  that of  the Euclidean
+  (square root  of the sum  of the squared differences  between vector
+  elements)  metric (defined  in  Appendix~\ref{appendix_a}).}  method
+(series of numeral 1's shown in black) performs better in terms of the
+connectivity and  Dunn index for  the entire range of  eighty clusters
+$k=(2-80)$,  and it  is also  the  best performer  in silhouette  from
+$k=12$ onwards.
 
 Stability  measures (Figure~\ref{fig:stability})  are well  suited for
-highly  correlated  datasets  with  linear  correlation  between  many
+highly  correlated  datasets  with  linear correlations  between  many
 variables, but  they are  not very useful  for our dataset,  where the
 only correlations between variables occur for shift vs. twist and rise
 vs.   tilt, as  can  be  seen from  the  scatterplots and  correlation
 coefficients reported  in Figure~\ref{fig:allsteps}.  That  is, of the
 fifteen possible  correlated pairs, only two  are linearly correlated,
-and  such  correlations are  not  very  strong.  The values  of  these
+and  such correlations  are  not  very strong.   The  values of  these
 correlation coefficients  are less than  0.95, meaning that  less than
 90\%  of the variation  between variables  can be  accounted for  by a
 linear  relationship  between  them.   We, nevertheless,  include  the
@@ -477,38 +480,39 @@ cluster stability measures for completeness.
 
 We  have  computed  three  measures  of  stability  for  each  of  the
 hierarchical and  partitional methods, namely,  the average proportion
-of  non-overlap (APN),  the  average distance  (AD),  and the  average
-distance between means (ADM).  The  details of such measures are given
-in      Brock      et      al.       \cite{brock2008}      and      in
+of non-overlap (\textit{APN}), the average distance (\textit{AD}), and
+the  average distance  between means  (\textit{ADM}).  The  details of
+such  measures are  given in  Brock  et al.   \cite{brock2008} and  in
 Appendix~\ref{appendix_a}. The  best clustering methodology  will have
-low values of these quantities.  As seen in Figure~\ref{fig:stability}
-the best performing method according  to these APN and ADM criteria is
-sota (second-order  tolerance analysis). One can clearly  see from the
-corresponding series of  cyan numerals (5's) that the  sota values are
-smaller consistenly  than those for  all other methods for  almost all
-cluster sizes up  to $k=70$.  The best performers  (those with smaller
-values) over the  whole range of $k$ according to  the AD criteria are
-pam (series of green 3's) and som (series of blue 4's). Notice that in
-the AD  and ADM plots, perhaps  with the exception of  the sota method,
-all methods  seem to  follow the same  trend, meaning that  they would
-predict the same number of optimal clusters.
+low     values     of     these     quantities.     As     seen     in
+Figure~\ref{fig:stability},  the best  performing method  according to
+the  \textit{APN}  and  \textit{ADM}  criteria is  sota  (second-order
+tolerance analysis). One can clearly see from the corresponding series
+of cyan  numerals (5's) that  the sota values are  smaller consistenly
+than those  for all other methods  for almost all cluster  sizes up to
+$k=70$.   The best  performers (those  with smaller  values)  over the
+whole range  of $k$ according  to the AD  criteria are pam  (series of
+green 3's) and som (series of blue 4's). Notice that in the AD and ADM
+plots, perhaps with the exception of the sota method, all methods seem
+to follow  the same  trend, meaning that  they would predict  the same
+number of optimal clusters.
 
-\subsection{Splitting A-RNA-Like and Non-ARNA-Like Steps.}  In all
-cases the validation  results tell us that the  best overall number of
-clusters is  two, which is not  surprising since we do  not filter the
-A-RNA structures from our data set.  The two main groups are thus A-RNA
-type base-steps, and non-A-RNA steps.
+\subsection{Splitting A-RNA-Like and Non-ARNA-Like Steps.}
+In  all cases the  validation results  tell us  that the  best overall
+number of  clusters is two,  which is not  surprising since we  do not
+filter the  A-RNA structures from our  data set.  The  two main groups
+are thus A-RNA type base-steps, and non-A-RNA steps.
 
 \begin{figure}
  \centering
 \includegraphics[angle=0, scale=0.34]{Chapter2/STval_int.png}
 \caption{Cluster  validity   scores  for  internal   measures  of  the
-distances between all sets of  base-step parameters in the 23S subunit
-of ribosomal  RNA (PDB\_ID:1JJ2). Notice how  the hierarchical method,
-labeled as one  and drawn as series of  black numerals, behaves better
-for the whole range of  connectivity (smaller values) and Dunn (higher
-values) scores,  and how it  also outperforms all others  after $k=12$
-for silhouette (higher values) scores.}
+  distances  between  all sets  of  base-step  parameters  in the  23S
+  subunit of ribosomal RNA (PDB\_ID:1JJ2). Notice how the hierarchical
+  method,  labeled as  one  and  drawn as  series  of black  numerals,
+  behaves better for the  whole range of connectivity (smaller values)
+  and Dunn  (higher values)  scores, and how  it also  outperforms all
+  others after $k=12$ for silhouette (higher values) scores.}
  \label{fig:internal}
 \end{figure}
 
@@ -516,13 +520,14 @@ for silhouette (higher values) scores.}
  \centering
 \includegraphics[angle=0, scale=0.34]{Chapter2/STval_sta.png}
 \caption{Cluster  validity  scores   for  stability  measures  of  the
-distances between all sets of  base-step parameters in the 23S subunit
-of ribosomal RNA (PDB\_ID:1JJ2). The average proportion of non-overlap
-(APN), average distance (AD), and average distance between means (ADM)
-are  plotted  against the  number  of  clusters.  Note that  stability
-measures work  specially well for datasets of  highly correlated data,
-which is  not the case for  our dataset.  These values  are shown here
-for consistency with the validation package clValid.}
+  distances  between  all sets  of  base-step  parameters  in the  23S
+  subunit of  ribosomal RNA (PDB\_ID:1JJ2). The  average proportion of
+  non-overlap  (APN),  average  distance  (AD), and  average  distance
+  between  means (ADM)  are plotted  against the  number  of clusters.
+  Note that  stability measures work  especially well for  datasets of
+  highly  correlated data,  which is  not  the case  for our  dataset.
+  These  values are  shown here  for consistency  with  the validation
+  package clValid.}
  \label{fig:stability}
 \end{figure}
 
@@ -533,7 +538,7 @@ collaborators \cite{arnott1973}.  We find that there are 797 non-A-RNA
 like steps (about  29\% of the total number of steps)  in the 23S rRNA
 subunit by counting the steps  which have a root-mean square deviation
 between the ribosomal  steps and the standard A-RNA  step greater than
-18 \AA (see Figure~\ref{fig:dormsd}). The standard base-step parameter
+18 \AA~ (see Figure~\ref{fig:dormsd}). The standard base-step parameter
 values  for common  double-stranded RNA  and DNA  are listed  in Table
 \ref{tab:conf}.
 
@@ -541,14 +546,15 @@ values  for common  double-stranded RNA  and DNA  are listed  in Table
  \centering
 \includegraphics[angle=0, scale=0.38]{Chapter2/dormsd.png}
 \caption{Histogram of RMSD values  between base-step parameters of the
-23S  subunit  of  ribosomal  RNA  and  the  standard  A-RNA  base-step
-parameters  derived from  Arnott  and collaborators  \cite{arnott1973}
-work. The black vertical line drawn at an RMSD value of 18 denotes the
-limit   used    to   distinguish   A-RNA-like    conformations,   from
-non-A-RNA-like  conformations.   A   histogram  which  is  practically
-identical to the one shown  here is obtained if prior to normalization
-of  the   dataset  of  step-parameters   their  rotational  components
-(i.e. tilt, roll, twist) are expressed in radians instead of degrees.}
+  23S  subunit  of ribosomal  RNA  and  the  standard A-RNA  base-step
+  parameters  derived  from  the  work  of  Arnott  and  collaborators
+  \cite{arnott1973}. The black vertical line drawn at an RMSD value of
+  18 denotes  the limit used to  distinguish A-RNA-like conformations,
+  from non-A-RNA-like conformations.  A histogram which is practically
+  identical  to  the   one  shown  here  is  obtained   if,  prior  to
+  normalization  of the dataset  of step-parameters,  their rotational
+  components (i.e. tilt, roll, twist) are expressed in radians instead
+  of degrees.}
 \label{fig:dormsd}
 \end{figure}
 
@@ -581,19 +587,19 @@ AII-RNA & 1.01 & -2.52 & 3.33 & 2.9 & 9.8 & 25.1 & Schneider
 \begin{figure}
  \centering
 \includegraphics[angle=90, scale=0.48]{Chapter2/warna_step.png}
-\caption{Scatterplots     for      base-step     parameters,     shift
-  ($D_{x}$),  slide  ($D_{y}$),  rise  ($D_{z}$),
-  tilt ($\tau$),  roll ($\rho$), and  twist ($\Omega$), for  the A-RNA
-  (colored red)  and non-A-RNA  (colored blue) datasets.  The datasets
-  where split apart based on an  RMSD cutoff less than or equal to 18,
-  between the  base-step parameters of the  A-RNA structure determined
-  by Arnott et al.  \cite{arnott1973} and all the base-step parameters
-  of  the  23S subunit  of  ribosomal  RNA  (PDB\_ID:1JJ@).  Here  the
-  correlation coefficients  of each of  the scatterplots shown  in the
-  lower half  of the graph  are listed in  the mirror position  in the
-  upper half  of the diagram, i.e., the  shift-twist ($D_{x}, \Omega$)
-  correlation  coefficient (0.89)  of the  plotted data  shown  in the
-  lower left corner, is printed in the upper right corner.}
+\caption{Scatterplots for base-step parameters, shift ($D_{x}$), slide
+  ($D_{y}$), rise  ($D_{z}$), tilt ($\tau$), roll  ($\rho$), and twist
+  ($\Omega$), for the A-RNA (colored red) and non-A-RNA (colored blue)
+  datasets.  The  datasets were  split apart based  on an  RMSD cutoff
+  less than  or equal to 18,  between the base-step  parameters of the
+  A-RNA structure  determined by Arnott et  al.  \cite{arnott1973} and
+  all the  base-step parameters  of the 23S  subunit of  ribosomal RNA
+  (PDB\_ID:1JJ2).  Here  the correlation  coefficients of each  of the
+  scatterplots (both red  and blue points) shown in  the lower half of
+  the graph are listed in the mirror position in the upper half of the
+  diagram,  i.e.,   the  shift-twist  ($D_{x},   \Omega$)  correlation
+  coefficient  (0.89) of  the plotted  data  shown in  the lower  left
+  corner, is printed in the upper right corner.}
 \label{fig:allsteps}
 \end{figure}
 
@@ -601,19 +607,19 @@ AII-RNA & 1.01 & -2.52 & 3.33 & 2.9 & 9.8 & 25.1 & Schneider
 \centering
 \includegraphics[angle=90, scale=0.48]{Chapter2/noarna_step.png}
 \caption{Scatterplots for base-step parameters, shift ($D_{x}$), slide
-($D_{y}$),  rise ($D_{z}$),  tilt ($\tau$),  roll ($\rho$),  and twist
-($\Omega$), for the non-A-RNA dataset  (taken as the steps with RMSD's
-greater  than  18).    Points  are  color  coded  in   terms  of  base
-compositions;   purine-pyrimidine    (black);   purine-purine   (red);
-pyrimidine-pyrimidine    (green);    and   pyrimidine-purine    (blue)
-steps. Here  the correlation coefficients of each  of the scatterplots
-shown in the lower half of the graph are listed in the mirror position
-in  the upper  half of  the  diagram, i.e.,  the shift-twist  ($D_{x},
-\Omega$) correlation  coefficient (0.88) of the plotted  data shown in
-the lower left corner, is printed  in the upper right corner.  As seen
-from the  coloring scheme  there is no  clear sequence  preference for
-single-stranded   purine-pyrimidine  (RY),   purine-purine   (RR),  or
-pyrimidine-pyrimidine (YY).}
+  ($D_{y}$), rise  ($D_{z}$), tilt ($\tau$), roll  ($\rho$), and twist
+  ($\Omega$),  for the  non-A-RNA  dataset (taken  as  the steps  with
+  RMSD's greater  than 18).  Points  are color-coded in terms  of base
+  compositions;   purine-pyrimidine   (black);  purine-purine   (red);
+  pyrimidine-pyrimidine  (green); and  pyrimidine-purine  (blue). Here
+  the correlation  coefficients of each  of the scatterplots  shown in
+  the lower half of the graph are listed in the mirror position in the
+  upper half  of the diagram, i.e., the  shift-twist ($D_{x}, \Omega$)
+  correlation  coefficient (0.88)  of the  plotted data  shown  in the
+  lower left  corner, is printed in  the upper right  corner.  As seen
+  from the coloring  scheme there is no clear  sequence preference for
+  single-stranded  purine-pyrimidine   (RY),  purine-purine  (RR),  or
+  pyrimidine-pyrimidine (YY) steps.}
 \label{fig:pairsnoarna}
 \end{figure}
 
@@ -627,17 +633,17 @@ where the values  for the hierarchical method (black  number ones) are
 small for the connectivy and  silhouette scores and large for the Dunn
 index score.
 
-According   to  Dunn  Index   score  (upper   right  plot   of  Figure
+According  to  the  Dunn  Index  score (upper  right  plot  of  Figure
 \ref{fig:noarna}), the optimal number  of clusters is $k=67$. The Dunn
 index works under the idea of finding the best possible separation and
 compactness   (see  Appendix   \ref{appendix_a}  for   definitions  of
-separation and  compactness) between  clusters. Thus, the  grouping the
-797  base-steps  into  67  groups should  produce  well-separated  and
+separation and  compactness) between  clusters. Thus, the  grouping of
+the 797  base-steps into 67  groups should produce  well-separated and
 compact groups.   The other two indices  (connectivity and silhouette)
 show, as for the whole dataset, that the optimal number of clusters of
 the  non-A-RNA dataset  is  two.   The presence  of  shoulders in  the
 connectivity and silhouette plots  of the hierarchical clustering data
-is,  nonetheless  indicative   of  optimal  clusters.  Moreover  these
+is,  nonetheless  indicative  of  optimal  clusters.   Moreover  these
 shoulders  occur  at $k=67$  for  the  connectivity  (upper left)  and
 silhouette (lower left) plots.
 
@@ -652,75 +658,77 @@ al.\cite{schneider2004}, and  the whole set  of non-A-RNA dinucleotide
 steps in a common reference frame  on the adenine of an ApU step.  All
 structures are centered using the standard reference frame embedded in
 the  first base,  which in  our reconstructions  corresponds to  a red
-block  representing adenine.  The minor-groove  or sugar  edge  of the
-adenine is oriented to the left, the major-groove or Hoogsteen edge to
-the right, and the so-called Watson-Crick base-pairing edge is pointed
-toward the viewer.
+block representing  adenine.  The minor-groove, or sugar,  edge of the
+adenine is oriented to the  left, the major-groove, or Hoogsteen, edge
+to  the right,  and the  so-called Watson-Crick  base-pairing  edge is
+pointed toward the viewer.
 
 Comparison of the 17 groups of non-A-RNA dinucleotide steps with those
 found by Schneider and collaborators, shows that there are no steps in
 the Schneider  et al. dataset represented on  the major-groove (right)
-side of the red block representing adenine. That is, the right side of
+side of the red block representing adenine, that is, the right side of
 the  red adenine  block, although  there are  many such  steps  in the
-crystal  structure. On  the other  hand, although  the  17 represented
-groups  are not  as compact  as the  observed data,  they hint  of the
-geometrical preferences of the space of dinucleotide step-parameters.
-
-For example, it  is remarkable to see in the  group, labeled as g7
-in  Figure~\ref{fig:noarnak67}  that   the  cyan  blocks  representing
-uracil, orient their  planes orthogonally to the major  groove side of
-the red block representing adenine.
+crystal  structure. Many  of the  ``missing'' steps  lie in  the group
+labeled  as   g7  in  Figure~\ref{fig:noarnak67}.    The  cyan  blocks
+representing uracil in this  group orient their planes orthogonally to
+the major-groove  side of the  red block representing adenine.  On the
+other hand, although the 17 groups  are not as compact as the observed
+data,  they  hint of  the  geometrical  preferences  of the  space  of
+dinucleotide step-parameters.
 
 We    include    images     of    the    non-A-RNA    base-steps    in
 Figure~\ref{fig:noarnak67} in order to give  the reader an idea of the
 complexity  of the  conformation  space described  from a  base-viewed
 perspective rather  than of the more common  backbone perspective.  As
-is well  known small changes in  backbone can have  drastic effects of
-array  of  bases,  for  example  converting  right-handed  helices  to
-left-handed helices \cite{olson1976}.  On the other hand, large
+is well known,  small changes in backbone can  have drastic effects on
+the arrangement of bases,  for example converting right-handed helices
+to  left-handed helices  \cite{olson1976}.  On  the other  hand, large
 concerted changes in  the torsions can preserve the  structures of RNA
 and DNA helices \cite{olson1981}.
 
-This image suggests that the task of finding order in this broad range
-of  possible conformations  is somewhat  analogous to  solving  a ball
-puzzle.   There are  various  ball  puzzles, but  the  one which  most
-resembles this  case is that  of a so-called masterball  puzzle, which
-consists of a  sphere with two parallel lines  at roughly 60$^{\circ}$
-of  latitude north  and south  from  the sphere's  equator, and  eight
-meridians, as seen in the left side of Figure \ref{fig:masterball}. We
-believe  the puzzle  can be  effectively solved  by  using appropriate
-validated clustering analysis techniques.
+The composite image of conformations suggests that the task of finding
+order  in  this broad  range  of  possible  conformations is  somewhat
+analogous to solving  a ball puzzle.  There are  various ball puzzles,
+but the  one which  most resembles  this case is  that of  a so-called
+masterball puzzle, which consists of  a sphere with two parallel lines
+at roughly 60$^{\circ}$ of latitude  north and south from the sphere's
+equator,  and eight  meridians, as  seen in  the left  side  of Figure
+\ref{fig:masterball}. We believe the  puzzle can be effectively solved
+by using appropriate validated clustering analysis techniques.
 
 
 \begin{figure}
  \centering
 \includegraphics[angle=0, scale=0.72]{Chapter2/noarna_val.png}
 \caption{Cluster validity scores for the distances between all sets of
-  base-steps  parameters in  the non-A-RNA  dataset.  It  can  be seen
+  base-step  parameters in  the non-A-RNA  dataset.  It  can  be seen
   clearly that  the optimal method for clustering  is the hierarchical
   one, as  measured by  lower values in  the connectivity  scores, and
   higher values  in the  Dunn score.  The  optimal number  of clusters
-  given by the Dunn score is  67, we also see shoulders at $k=67$, for
-  the connectivity and silhouette scores.}
+  given by the Dunn score is  67. We also see shoulders at $k=67$, for
+  the silhouette scores, and a ``small'' shoulder for the connectivity
+  score.}
  \label{fig:noarna}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[angle=0, scale=0.30]{Chapter2/k67_17.png}
-\caption{The array  of bases  are represented in  all cases by  an ApU
-  step generated from step parameters  using 3DNA. The first 17 of the
-  67  groups  of  dinucleotide  conformers from  clustered  using  the
-  hierarchical clustering  algorithm.  Each  group is centered  on the
-  base  reference frame of  the adenine  block drawn  in red.   In the
-  lower  right corner of  the "contact  sheet" the  full space  of 797
-  reconstructed steps  is shown,  along with the  20 steps  derived by
-  Schneider et  al.  \cite{schneider2004}  from the torsion  angles in
-  the same  structure.  Notice  how the only  "hollow" section  of the
-  "onion" formed by the full  space of base-step conformations is that
-  corresponding  to the  Watson-Crick base-pairing  edges,  space that
-  would be occupied by the  bases paired to adenine by Watson-Crick or
-  other non-canonical base-pairing interactions.}
+\caption{Superimposed  images of  sequential base  steps found  in the
+  rRNA  23S subunit  structure (PDB\_ID:1JJ2)  and represented  in all
+  cases by  an ApU  step generated from  the observed  step parameters
+  using 3DNA. Examples are shown for  the first 17 of the 67 groups of
+  dinucleotide conformers  found using hierarchical  clustering.  Each
+  group is centered  on the base reference frame  of the adenine block
+  drawn in red.  In the lower  right corner of the "contact sheet" the
+  full space  of 797 reconstructed steps  is shown, along  with the 20
+  steps  derived by  Schneider et  al.  \cite{schneider2004}  from the
+  torsion angles in the same  structure.  Notice how the only "hollow"
+  section  of  the "onion"  formed  by  the  full space  of  base-step
+  conformations is that corresponding to the Watson-Crick base-pairing
+  edges,  the space  that would  be occupied  by the  bases  paired to
+  adenine by Watson-Crick  or other related non-canonical base-pairing
+  interactions.}
 \label{fig:noarnak67}
 \end{figure}
 

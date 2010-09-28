@@ -1,30 +1,31 @@
 \chapter{Persistence Length}
 \label{appendix4a}
-\bibliographystyle{nar} Nucleic Acids and other polymers, due to their
-size,  can  be   understood  as  mechanical  objects  \cite{marko2003,
-  nelson2004} and therefore engineering  approaches are often used for
-their understanding.  The methodology,  which considers the polymer as
-a long  continuous rod,  is known as  continuum elastic  theory.  This
-type of model  leaves little space for taking  into account the nature
-of  the subunits  which make  up the  polymer. That  is, it  is mainly
-applicable to homopolymers made  up of identical subunits with limited
-bending, twisting,  and stretching motions.  In nucleic acids  this is
-not necesarily the case, and a more general approach is needed to take
-into account the possibility of having different subunits and subunits
-with  different   levels  of  motion   in  the  polymer.    Olson  and
-collaborators  have developed a  sequence-dependent model,  refered to
-here  as  the  ``realistic''  model \cite{olson1993}  to  treat  long,
-fluctuating DNA  helices.  The model uses a  harmonic approximation to
-treat the motion of base-pair  steps and uses force-constants and rest
-states derived from X-ray  crystallographic data from the Nucleic Acid
-Database (NDB)  \cite{go1976, olson1998}.   Within the context  of the
-``realistic'' model, Czapla et al.  \cite{czapla2006} have developed a
-Gaussian sampling methodology to generate random chains configurations
-and adapted  matrix methods to compute global  polymer properties like
-the   persistence   length  from   expressions   developed  by   Flory
+\bibliographystyle{nar}
+Nucleic Acids and other polymers, due to their size, can be understood
+as  mechanical  objects  \cite{marko2003,  nelson2004}  and  therefore
+engineering approaches  are often  used for their  understanding.  The
+methodology, which considers the polymer  as a long continuous rod, is
+known as continuum  elastic theory.  This type of  model leaves little
+space for taking into account the nature of the subunits which make up
+the polymer. That is, the  theory is mainly applicable to homopolymers
+made  up of  identical subunits  with limited  bending,  twisting, and
+stretching  motions.  In  nucleic acids  this is  not  necessarily the
+case, and a  more general approach is needed to  take into account the
+possibility of  having different subunits and  subunits with different
+levels  of  motion  in  the  polymer.  Olson  and  collaborators  have
+developed  a   sequence-dependent  model,  refered  to   here  as  the
+``realistic'' model  \cite{olson1993}, to treat  long, fluctuating DNA
+helices.  The model uses a harmonic approximation to treat the motions
+of base-pair  steps and uses  force constants and rest  states derived
+from X-ray crystallographic data  from the Nucleic Acid Database (NDB)
+\cite{go1976,  olson1998}.  Within  the context  of  the ``realistic''
+model,  Czapla et  al.   \cite{czapla2006} have  developed a  Gaussian
+sampling  methodology  to  generate  random chain  configurations  and
+adapted matrix methods to  compute global polymer properties, like the
+persistence    length,   from    expressions   developed    by   Flory
 \cite{flory1969} and Olson et al. \cite{maroun1988a, marky1994a}
 
-In  what follows we  summarize definitions  of persistence  length and
+In what follows we summarize definitions of the persistence length and
 show how the persistence length is computed using different models.
 %The "realistic model" can be simplified to other  models, for example
 %to the  freely rotating model, just by  making the  twisting constant
@@ -67,11 +68,11 @@ length...'' John F. Marko and Simona Cocco, Physics World, March 2003
   Biological Physics: Energy, Information, Life, 2004.
 \end{quotation}
 
-These definitions coming from the point of view of physicists refer to
-an ideal  continuous thin rod.  Marko, refers  to the bend-persistence
-length,  whereas Nelson's  definition uses  a more  general  notion of
-persistence  length  which  includes,  besides  the  bend  persistence
-length, twist and stretch persistence lengths.
+These definitions, coming from the  point of view of physicists, refer
+to   an   ideal,  continuous   thin   rod.    Marko   refers  to   the
+bend-persistence  length,  whereas  Nelson's  definition uses  a  more
+general notion of persistence length, which includes, besides the bend
+persistence length, twist and stretch persistence lengths.
 
 From the ``stochastic'' perspective we cite Flory's definition:
 
@@ -96,7 +97,7 @@ infinity.
 
 When talking about persistence length  it is usually difficult to have
 a good idea of the meaning of  the quantity by itself.  That is, if we
-are told  that the persistence length  of DNA is, say,  530 \AA~ under
+are told that the persistence length of DNA is, say, 530~\AA ~under
 some specific concentration and  temperature conditions, we don't know
 what this  is telling us about  its stiffness since we  don't know any
 other standard values that can be related to this quantity.  To give a
@@ -105,7 +106,7 @@ length,  we have  collected  in Table~\ref{tab:perval}  values of  the
 persistence length for various filamentous biopolymers.  Inspection of
 the table  makes it clear  that B-DNA is  quite a stiff  biopolymer if
 compared to poly-glycine, or poly-alanine, but flexible if compared to
-a neurofilament of to F-actin.
+a neurofilament of F-actin.
 
 \begin{table}[htbp]
 \begin{center}
@@ -194,10 +195,10 @@ is   usually  the   quantity  of   interest  as   given   by  equation
 
 \begin{gather}
 \label{eq:e2e}
-\mathbf{r} = \sum_{i=1}^{n} \mathbf{l}_{i}\\
+\mathbf{r} = \sum_{i=1}^{n} \mathbf{l}_{i} ,\\
 \label{eq:end2end}
-r = \sqrt{\mathbf{r} \cdot \mathbf{r}}
-  = \sqrt{\sum_{i,j}\mathbf{l}_{i} \cdot \mathbf{l}_{j}}
+r = \sqrt{\mathbf{r} \cdot \mathbf{r}} 
+  = \sqrt{\sum_{i,j}\mathbf{l}_{i} \cdot \mathbf{l}_{j}} .
 \end{gather}
 
 To  distinguish  between  the  scalar  product of  bond  vectors  with
@@ -206,7 +207,7 @@ is rewritten as:
 
 \begin{gather}
 r^2 = \sum_{i=1}^{n}l_{i}^{2} + 2 \sum_{i\neq j}^{n}
-\mathbf{l}_{i} \cdot \mathbf{l}_{j}
+\mathbf{l}_{i} \cdot \mathbf{l}_{j} \quad.
 \end{gather}  
 
 This   expression   takes   into   account   only   a   single   chain
@@ -224,7 +225,7 @@ the expression:
 \begin{gather}
 \label{eq:secmom}  
 \left<r^2\right>=\sum_{i}^{n}\left<l_{i}^2\right> +
-2\sum_{i<j}^{n}\left<\mathbf{l}_{i} \cdot \mathbf{l}_{j}\right>
+2\sum_{i<j}^{n}\left<\mathbf{l}_{i} \cdot \mathbf{l}_{j}\right> .
 \end{gather}  
 
 When there is no correlation between bonds the average scalar products
@@ -232,7 +233,7 @@ within the summation vanish.
 
 \begin{gather}
 \label{eq:nocorr}
-\left<\mathbf{l}_{i} \cdot \mathbf{l}_{j}\right> = 0
+\left<\mathbf{l}_{i} \cdot \mathbf{l}_{j}\right> = 0 .
 \end{gather}
 
 A chemical  interpretation of  this is that  every bond is  allowed to
@@ -242,11 +243,12 @@ assume any  value between  0 and  360 degrees, and  that there  are no
 bond-angle (valence-angle) constraints whatsoever.  When the number of
 conformations approaches infinity the  average cosine between all bond
 angles will  be zero  and therefore the  scalar product is  also zero.
-Equation \ref{eq:secmom} keeps only the bond auto-correlation term:
+Equation  \ref{eq:secmom} keeps  only the  bond  auto-correlation term
+under the condition that:
 
 \begin{gather}
 \label{eq:fjc}  
-\left<r^2 \right> = \sum_{i=1}^{n}\left<l_{i}^2\right> = nl^2
+\left<r^2 \right> = \sum_{i=1}^{n}\left<l_{i}^2\right> = nl^2 .
 \end{gather}  
 
 This equation is used to describe a so-called freely-jointed chain
@@ -256,13 +258,13 @@ A quantity that can be used to check if a chain behaves as a FJC is the
 characteristic ratio:
 
 \begin{gather}
-C_{n}=\frac{\left<r^{2}\right>}{nl^{2}}
+C_{n}=\frac{\left<r^{2}\right>}{nl^{2}} ,
 \end{gather}
-Which will be unity for a FJC. In most cases as $n \to \infty$ the
+which will be unity for a FJC. In most cases as $n \to \infty$ the
 characteristic ratio is greater than one.
 
 \section{Realistic chains}
-In general there are  correlation between neighboring bonds in polymer
+In general there are  correlations between neighboring bonds in polymer
 chains  and so  the second  term in  the right-hand  side  of equation
 \ref{eq:secmom}  has  to  be   taken  into  account.   Using  equation
 \ref{eq:fjc} and expanding this term we have:
@@ -272,18 +274,18 @@ chains  and so  the second  term in  the right-hand  side  of equation
 <r^{2}> = nl^{2} + 2 \sum_{j=2}^{n}
 \left<  \mathbf{l}_{1} \cdot \mathbf{l}_{j}\right> +
 2 \sum_{j=i+1}^{n}\sum_{i=2}^{n}
-\left<  \mathbf{l}_{i} \cdot \mathbf{l}_{j}\right>
+\left< \mathbf{l}_{i} \cdot \mathbf{l}_{j}\right> .
 \end{gather}
 
 Consideration of the correlations between the $n$ bonds of a chain and
-its intial  direction the persistence  lenght as defined by  Porod and
+its intial  direction the persistence  length was defined by  Porod and
 Kratky  and  later  clarified  by  Flory.  Thus  the  average  sum  of
 projections of  $n$ bonds on the  direction of the first  bond when $n
-\to \infty$
+\to \infty$ yields
 
 \begin{gather}
 a    =   lim_{n->\infty}\sum_{i=1}^{n}    \left<\mathbf{l}_{i}   \cdot
-(\mathbf{l}_{1}/l_{1}) \right>
+(\mathbf{l}_{1}/l_{1}) \right> .
 \end{gather}
   
 Then, as $n \to \infty$ the sum in the second term in the right hand
@@ -300,27 +302,27 @@ Then the expression for the second moment of the mean square
 end-to-end distance in the limit $n \to \infty$ will be given by:
 
 \begin{gather}
-\left<r^{2}\right> = nl^{2} + 2n(al-l^{2})\\
-\left<r^{2}\right> = 2nla - nl^{2}
+\left<r^{2}\right> = nl^{2} + 2n(al-l^{2}) ,\\
+\left<r^{2}\right> = 2nla - nl^{2} ,
 \end{gather}  
 
 and the limiting characteristic ratio for the chain is then:
 
 \begin{eqnarray}
-C_{\infty} & =  & \frac{\left<r^{2}\right>}{ nl^{2}}\\
-          & =  & \frac{2nla - nl^{2}}{nl^{2}}\\
-          & =  & \frac{2a}{l} - 1
+C_{\infty} & = & \frac{\left<r^{2}\right>}{ nl^{2}} ,\\
+          & = & \frac{2nla - nl^{2}}{nl^{2}} ,\\
+          & = & \frac{2a}{l} - 1 .
 \end{eqnarray}  
 
 \section{Porod-Kratky or Worm Like Chain (WLC)}
-If a polymer is modelled as a linear (un-branched) continous and
+If a polymer is modelled as a linear (un-branched) continuous and
 homogenous chain its curvature at an arclength $s$ is given by the
 tangential unit vector $\hat{\mathbf{t}}$\footnote{Note that we will
 be using from now on the hat ($\hat{\mathbf{t}}$) notation to denote
-unit vectors.}:
+unit vectors.};
 
 \begin{gather}
-\hat{\mathbf{t}}(s)=\frac{\partial{\textbf{r}(s)}}{\partial{s}}
+\hat{\mathbf{t}}(s)=\frac{\partial{\textbf{r}(s)}}{\partial{s}} .
 \end{gather}
 
 Here $\textbf{r}(s)$ is the position vector of a point in the chain
@@ -329,19 +331,19 @@ The end-to-end vector is then defined as the integral sum of the chain
 curvature over the contour length of the chain:
 
 \begin{gather}
-\textbf{r}=\int_{0}^{L}\hat{\textbf{t}}(s)ds
+\textbf{r}=\int_{0}^{L}\hat{\textbf{t}}(s)ds .
 \end{gather}
 
 The average mean squared end-to-end distance is then:
 
 \begin{eqnarray}
 \label{eq:wlc}
-\left<r^2\right> & = & \left<\textbf{r} \cdot \textbf{r}\right> \nonumber \\
-               & = & \left<\int_{0}^{L}\hat{\textbf{t}}(s)ds \cdot \int_{0}^{L}\hat{\textbf{t}}(s')ds' \right>\nonumber \\
-               & = & \int_{0}^{L} ds \int_{0}^{L} \left<\hat{\textbf{t}}(s) \cdot \hat{\textbf{t}}(s')\right>ds' \nonumber \\
-               & = & \int_{0}^{L} ds \int_{0}^{L} \left<\cos{\theta}_{ss'}\right>~ ds' \nonumber \\
-               & = & \int_{0}^{L} ds \int_{0}^{L} \exp^{-\frac{|s-s'|}{a}} ds' \nonumber \\
-               & = & 2aL \{ 1 - \frac{a}{L}(1-\exp^{-\frac{L}{a}})\}
+\left<r^2\right> & = & \left<\textbf{r} \cdot \textbf{r}\right> \nonumber ,\\
+               & = & \left<\int_{0}^{L}\hat{\textbf{t}}(s)ds \cdot \int_{0}^{L}\hat{\textbf{t}}(s')ds' \right>\nonumber ,\\
+               & = & \int_{0}^{L} ds \int_{0}^{L} \left<\hat{\textbf{t}}(s) \cdot \hat{\textbf{t}}(s')\right>ds' \nonumber ,\\
+               & = & \int_{0}^{L} ds \int_{0}^{L} \left<\cos{\theta}_{ss'}\right>~ ds' \nonumber ,\\
+               & = & \int_{0}^{L} ds \int_{0}^{L} \exp^{-\frac{|s-s'|}{a}} ds' \nonumber ,\\
+               & = & 2aL \{ 1 - \frac{a}{L}(1-\exp^{-\frac{L}{a}})\} ,
 \end{eqnarray}
 where for a  chain of infinite length $\left<\cos{\theta_{ss'}}\right>
 =  \exp^{-\frac{|s-s'|}{a}}$, with $a$  being the  persistence length.
@@ -352,41 +354,45 @@ When $L \to \infty$ we see that $\left<r^{2}\right>=2aL$, and in such
 case the characteristic ratio for a WLC becomes:
 
 \begin{gather}
-C_{\infty}=\frac{2aL}{nl^{2}}  
+C_{\infty}=\frac{2aL}{nl^{2}} .
 \end{gather}  
 
 \section{Sequence Dependent Model}
 Equation \ref{eq:e2e} can be expressed with respect to the reference
-frame of the first bond, along  the bond-vector via a series of matrix
+frame of the first bond, along  the bond-vector, via a series of matrix
 transformations: 
 
 \begin{eqnarray}
 \label{eq:real1}  
 \mathbf{r} = \mathbf{l}_{1} & + & \mathbf{T}_{12}\mathbf{l}_{2}
 +\mathbf{T}_{12}\mathbf{T}_{23}\mathbf{l}_{3} \nonumber \\
- & + & ... + \mathbf{T}_{12}\mathbf{T}_{23}...\mathbf{T}_{N-1,N} \mathbf{l}_{N}
+ &  +   &  ...  +  \mathbf{T}_{12}\mathbf{T}_{23}...\mathbf{T}_{N-1,N}
+\mathbf{l}_{N} .
 \end{eqnarray}
-Here the  $\mathbf{T}_{N-1,N}$ transform the  vectors $\mathbf{l}_{N}$
-in coordinate  frame $N$ to  their representation in  coordinate frame
-$N^{-1}$.   Following Flory  \cite{flory1969}  equation \ref{eq:real1}
-can be written as a matrix product in the following way:
+Here the $\mathbf{T}_{N-1,N}$ are  matrices that transform the vectors
+$\mathbf{l}_{N}$ in  coordinate frame  $N$ to their  representation in
+coordinate frame $N^{-1}$.   Following Flory \cite{flory1969} equation
+\ref{eq:real1} can  be written  as a matrix  product in  the following
+way:
 
 \begin{gather}
-\mathbf{r}= \begin{bmatrix}\mathbf{E}_{3}~ \mathbf{0} \end{bmatrix} \mathbf{A}_{1:N}\begin{bmatrix} \mathbf{0} \\ 1 \end{bmatrix}
+\mathbf{r}=  \begin{bmatrix}\mathbf{E}_{3}~  \mathbf{0}  \end{bmatrix}
+\mathbf{A}_{1:N}\begin{bmatrix} \mathbf{0} \\ 1 \end{bmatrix} .
 \end{gather}
 
-Here $\mathbf{A}_{1:N}$ is a serial product of generator matrices
-$\mathbf{A}_{n}$ associated with consecutive bonds along the chain \cite{flory1969, maroun1988a, marky1994a},
-$\mathbf{E}_{3}$  is the  identity matrix  of order  3, and  $\mathbf{0}$  is a
-vector of necessary dimensions for matrix products to conform.
+Here  $\mathbf{A}_{1:N}$ is  a  serial product  of generator  matrices
+$\mathbf{A}_{n}$  associated with  consecutive bonds  along  the chain
+\cite{flory1969,  maroun1988a,  marky1994a},  $\mathbf{E}_{3}$ is  the
+identity matrix of order 3,  and $\mathbf{0}$ is a vector of necessary
+dimensions for the matrix products to conform.
 
 \begin{gather}
 \mathbf{A}_{n} =
 \begin{bmatrix}
-\mathbf{T}_{n} & \mathbf{l}_{n} \\
+\mathbf{T}_{n} & \mathbf{l}_{n} ,\\
 0 & 1
 \end{bmatrix}\\
-\mathbf{A}_{1:N}=\mathbf{A}_{1}\mathbf{A}_{2}...\mathbf{A}_{N}
+\mathbf{A}_{1:N}=\mathbf{A}_{1}\mathbf{A}_{2}...\mathbf{A}_{N} .
 \end{gather}
 
 The  generator   matrices  are  set  up  to   perform  the  coordinate
@@ -394,7 +400,7 @@ transformations in \ref{eq:real1}. The  sequence model comes into play
 in the product of the  generator matrices since every generator matrix
 contains   the  specific   sequence-dependent   geometric  information
 associated with the rigid block model for nucleic acids.  For complete
-detail of the transformation  of step parameters into Euclidean space,
+details of the transformation  of step parameters into Euclidean space,
 and how the polymer configuration  space is sampled using the Gaussian
 sampling technique, we refer the reader to Appendix A of Luke Czapla's
 doctoral thesis \cite{czapla2009}.
@@ -403,20 +409,20 @@ In addition to being able  to express the end-to-end distance with the
 generator  matrices we  can also  find the  persistence length  as the
 component  in row  three and  column four  of the  average  product of
 generator  matrices \footnote{If  we assume  that the  arrangements of
-  succesive base pair  steps are independent of all  other residues in
-  the  chain we  can replace  the average  product by  the  product of
+  succesive base-pair  steps are independent of all  other residues in
+  the  chain, we can  replace the  average product  by the  product of
   average  generator  matrices.},  that   is,  the  component  of  the
 translation  vector  along the  normal  of  the  first base-pair  (the
 assumed initial  direction of the chain). Sampling  has been performed
-for  a  large number  of  conformations such  that  the  terms in  the
+for a large number of conformations such that the terms in the average
 rotation matrix $\mathbf{T}$ approach very small numbers.
 
 \begin{gather}
 \mathbf{P}_{N} = \left<\mathbf{A}_{1}\right> \left<\mathbf{A}_{2}\right> ... \left<
-\mathbf{A}_{N-1}\right> \left< \mathbf{A}_{N}\right>\\
+\mathbf{A}_{N-1}\right> \left< \mathbf{A}_{N}\right> .\\
 a = \lim_{N \to \infty} \left[\begin{array}{cccc}0 & 0 & 1 & 0\end{array}
     \right] \mathbf{P}_{N}
-\left[\begin{array}{c} 0\\ 0\\ 0\\ 1\end{array}\right]
+\left[\begin{array}{c} 0\\ 0\\ 0\\ 1\end{array}\right] .
 \end{gather}  
 
 A sketch of the algorithm used to implement the sequence dependent

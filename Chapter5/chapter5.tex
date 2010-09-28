@@ -25,12 +25,13 @@ the automated search for GNRA tetraloop motifs.
 \section{The GNRA Tetraloop}
 The GNRA motif  was initially found to be  an important constituent of
 the small  subunit of the ribosome from  comparative sequence analyses
-\cite{woese1990}. That  is, the GNRA sequence  was frequently repeated
-among various organisms in tetraloop  regions of RNA, as were the CUUG
-and UNCG  tetraloop sequences. These three sequences  account for more
-than  70\% of  all tetraloops,  i.e.  single-stranded  loops  of four,
-non-Watson-Crick  paired  nucleotides, found  in  the  16S subunit  of
-ribosomal RNA \cite{woese1990, depaul2010}.
+\cite{woese1990}.   That is,  the  GNRA sequence,  where  R refers  to
+purine, was  frequently repeated among various  organisms in tetraloop
+regions of RNA,  as were the CUUG and  UNCG tetraloop sequences. These
+three sequences  account for  more than 70\%  of all  tetraloops, i.e.
+single-stranded  loops of  four, non-Watson-Crick  paired nucleotides,
+found   in  the   16S  subunit   of  ribosomal   RNA  \cite{woese1990,
+  depaul2010}.
 
 The most  abundant of all the  tetraloops in the ribosome  is the GNRA
 motif, and its structural  stability was initially characterized using
@@ -56,9 +57,9 @@ in Figure \ref{fig:gnrablocks}.
   RNA  ontology consortium  (ROC)  \cite{leontis2006b}.  The  hydrogen
   bonding interactions  detected by Heus and  Pardi \cite{heus1991} in
   NMR experiments are shown by black and blue dashed lines. The yellow
-  tube  connects  the phosphorus  atoms  (yellow  balls) in  phosphate
-  groups  belonging to  the the  sugar-phosphate backbone.   Atoms are
-  represented as balls and CPK colored.}
+  tube  connects  the  phosphorus   atoms  (yellow  balls)  along  the
+  sugar-phosphate backbone.   Atoms are  represented as balls  and CPK
+  colored, i.e., oxygen red, nitrogen blue, carbon black.}
 \label{fig:gnrablocks}
 \end{figure}
 
@@ -90,9 +91,9 @@ the  well known  GNRA motif  conformation  as the  starting point  for
 simulation  of other  tetraloops  \cite{srinivasan1998}.  These  other
 tetraloops do  not retain  a GNRA-like three-dimensional  structure in
 the simulations  \cite{srinivasan1998}. This effect  might reflect the
-fact that force fields used in such calculations \cite{cornell1995} do
-not correctly  predict known tetraloops  structures, such as  the GAAA
-tetraloop \cite{spackova2010}.
+fact   that    the   force   fields   used    in   such   calculations
+\cite{cornell1995}   do  not   correctly   predict  known   tetraloops
+structures, such as the GAAA tetraloop \cite{spackova2010}.
 
 \subsection{GNRA Motif Search Program}
 We have devised  a simple algorithm, ``getMotif'', to  search for GNRA
@@ -117,22 +118,22 @@ user wishes  to localize in an  arbitrary RNA structure or  set of RNA
 structures.
 
 The  algorithm has  been programed  as a  simple, yet  very  fast bash
-script \footnote{For  ease of use and  development a future  aim is to
-  code the algorithm fully in python without compromising the speed of
-  structure analysis.}  which interfaces  with three components -- one
-written in  python, the  second being the  3DNA package, and  the last
-written in the statistical analysis software \textbf{R}.  For example,
-for the large subunit of the ribosome, PDB\_ID:1JJ2, the program takes
-22.1 seconds to  download and analyze the whole  structure on an Intel
-Core Duo of 2.13GHz with 8Gb of RAM.
+script \footnote{For ease of use future coding of the algorithm can be
+  done  fully in python  without compromising  the speed  of structure
+  analysis.}  which interfaces with three components -- one written in
+python, the second being the 3DNA package, and the last written in the
+statistical analysis software \textbf{R}.   For example, for the large
+subunit of the ribosome,  PDB\_ID:1JJ2, the program takes 22.1 seconds
+to download  and analyze the whole  structure on an Intel  Core Duo of
+2.13GHz with 8Gb of RAM.
 
 The program  allows the user to  query any PDB\_ID. That  is, the user
 only needs to  input in the command line of  a UNIX/LINUX terminal the
 command, ``getMotif'' followed  by the PDB\_ID of the  RNA molecule of
 interest.  As  a result  the user obtains  a list composed  of residue
 numbers corresponding to the location of the start of the motif in the
-structure,  and a score  which describes  how close  or far  each four
-nucleotide  sequential structure  is from  the GNRA  motif  seed.  The
+structure,  and  a  score  which  describes  how  close  or  far  each
+four-nucleotide sequential structure is from the GNRA motif seed.  The
 advantage of  our program  over other Windows-based  motif recognition
 software,  aside from  providing a  new analysis  based  on rigid-body
 parameters,  is  that it  allows  for  easy  integration of  automated
@@ -141,9 +142,9 @@ user intervention for the analysis of every structure. For example, in
 the  RNA ontology  consortium  (ROC)  meeting of  May  2009 a  reduced
 dataset        of        RNA        structures        found        at:
 \url{https://docs.google.com/Doc?id=dhrmkfmn_13ftpbjcgq}    was   made
-available to participants with the  purpose of allowing them to search
+available to participants for the  purpose of allowing them to search
 for  RNA motifs  which would  later be  compared among  groups.  Using
-Windows-based  softwares  like  FR3D  \cite{sarver2008}  it  is  quite
+Windows-based  software  like  FR3D  \cite{sarver2008}  it  is  quite
 difficult for  the user  to submit  a large job  composed of  many PDB
 structures to a  queing system, or a cluster  computing server. Such a
 task is made simple using getMotif.
@@ -159,7 +160,7 @@ parameters.  These  average values  are show in  Table \ref{tab:seed},
 along with  the corresponsing step parameters of  canonical A-RNA. The
 first step  in the  GNRA tetraloop,  that is, GN,  takes up  the major
 distortion in step  parameter values, whereas the NR  and RA steps are
-more closely related  to a canonical A-RNA like  save for undersliding
+more closely related to a canonical A-RNA like save for lesser sliding
 and overtwisting.
 
 \begin{table}[hb]  
@@ -188,12 +189,13 @@ seed. The  score is simply the  sum of the elements  of the difference
 matrix  $X_{k}$,  where  the   difference  is  between  the  base-step
 parameters  in  the  GNRA   seed  matrix  $S$  and  the  corresponding
 parameters  for three  successive  steps in  each  one of  the  3 x  6
-matrices $W_{k}$ formed by the set of $k-3$ successive tetranuleoctide
+matrices $W_{k}$ formed by the set of $k-3$ successive tetranucleotide
 steps in the RNA structure, where  $k$ is the total number of steps.
 
 \begin{gather}
 X_{k} = |S - W_{k}| \\
 \text{score}_{k} = \sum X_{m,n} 
+\label{eq:sumdiffscore}
 \end{gather}  
 
 The scores  obtained from analysis  of the large ribosomal  subunit of
@@ -212,14 +214,16 @@ vertical line in Figure \ref{fig:gnrahist}.
 \includegraphics[angle=0, scale=0.5]{Chapter5/gnrahisto.png}
 \caption{Histogram of  the sum of  differences score between  the GNRA
   seed  motif and  all  sequential tri-nucleotide-steps  found in  the
-  large subunit of the ribosome PDB\_ID:1FFK}
+  large subunit of  the ribosome PDB\_ID:1FFK. A red  vertical line is
+  drawn  at the  cutoff value  of 150  used to  select the  GNRA motif
+  candidates.}
 \label{fig:gnrahist}
 \end{figure}
 
 Application of our program to  the list of 355 RNA structures provided
 by the ROC, finds  \footnote{The time GNRA tetraloop motifs candidates
   in the 355  structures were found in 7 minutes  and 29 seconds using
-  the program.}  75 of these structures  to have at least  one GNRA 3D
+  the program.}  75 of these structures,  to have at least one GNRA 3D
 motif candidate  with a cutoff value of  150, and a total  of 211 GNRA
 motif  candidates.  The  list of  all  identified motifs  in these  75
 structures including  the parameters at the first  step, are presented
@@ -229,11 +233,12 @@ column.  The  latter entry  is the  overlap or the  ring atoms  of the
 first  two bases  of the  tetraloop, which  is zero  in  the described
 structures.  Additionally  the third to last column  shows the overlap
 between  bases when  additional  exocyclic atoms  are considered,  for
-example, the N4  amino atoms of cytosines \cite{lu2003}.   We see that
-67\% of  the identified  GNRA motif candidates  start with a  GN step,
-and, interestingly,  that almost one  third (27\%) of the  first steps
-are UN  steps, and that a few  of the identified motifs  start with AN
-and CN dimers.
+example, the N4 amino atoms of cytosines \cite{lu2003}.  These numbers
+are generally small although there are examples where the base overlap
+is  substantial.  We  see  that  67\% of  the  identified  GNRA  motif
+candidates start with  a GN step, and, interestingly,  that almost one
+third (27\%) of  the first steps are  UN steps, and that a  few of the
+identified motifs start with AN and CN dimers.
 
 \begin{figure}
 \centering
@@ -251,8 +256,8 @@ To  further  analyze  the  results  of  the  motifs  identified  using
 (PDB\_ID:2J01) that  is included in the  ROC list.  As can  be seen in
 Table   \ref{tab:gnrascores}  for  the   2J01  entries,   the  program
 recognizes twenty  GNRA tetraloop motif  candidates, all of  which, in
-fact are, tetraloops. Of these 13 conform to the GNRA sequence, five
-start with UN,  one starts with A,  and one with C.  When  we align the
+fact are, tetraloops.  Of these 13 conform to  the GNRA sequence, five
+start with UN, one  starts with A, and one with C.   When we align the
 candidate GNRA motif sequences using  the reference frame of the first
 two  bases,  we  see that  they  fall  into  two main  groups  (Figure
 \ref{fig:groupsB}), one  with about eleven members and  the other with
@@ -263,10 +268,11 @@ step in  either group.  Group  I, which is  colored in blue  in Figure
 is  colored in  red  folds close  to  the common  GNRA  motif but  the
 residues  which would  form  the terminal  G$\cdot$A  base-pair are  a
 little  too   far  from  each   other  to  form  a   hydrogen  bonding
-pattern. This variation stems from a  large rise in the last step. The
-first two  steps are  very closely related  in every  case, suggesting
-that there  is a subtle switch  between the tetraloop  and a pentaloop
-conformation, governed by the rise in the last step.
+pattern.   This  variation   stems   from  a   large  rise   (vertical
+displacements) in the last step.  The first two steps are very closely
+related  in every  case,  suggesting  that there  is  a subtle  switch
+between the  tetraloop and a  pentaloop conformation, governed  by the
+rise in the last step.
 
 \begin{figure}
 \centering 
@@ -284,19 +290,21 @@ conformation, governed by the rise in the last step.
   in  c).  Residue  two  from Group  II  is commonly  found forming  a
   sheared G$\cdot$A base-pair with  a sequentially distant base.  This
   type of interaction, which maintains  the GNRA motif geometry and is
-  called a  lonepair triloop \cite{lee2003} has  been previously found
+  called a lonepair triloop  \cite{lee2003}, has been previously found
   from sequence covariation  analyisis. In the lower left  area of the
-  figure root mean square deviations, sum of differences scores, group
-  identities, and residue identities of the first step in the motif are
-  shown.   The  RMSD's  have  been  computed  on  the  sugar-phosphate
-  backbone atoms after  superimposition of structures using base-step
-  reference  frames as described  above, and  denoted by  RMSD\_rf, and
-  after superimposition of sugar-phosphate backbone  atoms denoted by
-  RMSD\_bb.}
+  figure root-mean-square deviations, sum of differences scores, group
+  identities, and residue identities (resid)  of the first step in the
+  motif  are shown.  The  simmilariry of  structures is  quantified in
+  terms of (i)  the RMSD values of the  sugar-phosphate backbone atoms
+  in  the  common coordinate  frame  between  residues  two and  three
+  (RMSD\_rf);  (ii)  the RMSD  value  of  the aligned  sugar-phosphate
+  backbone  atoms obtained  using the  VMD  \cite{eargle2006} software
+  (RMSD\_bb);    and   (iii)    the   sum    of    differences   score
+  (Equation~\ref{eq:sumdiffscore}).}
 \label{fig:groupsB}
 \end{figure}
 
-Interestingly some of  the GNRA candidates identified in  Group II are
+Interestingly, some of  the GNRA candidates identified in  Group II are
 part    of   a    highly   symmetrical    extended    "kissing"   loop
 interaction. These  can be seen  in Figure \ref{fig:terts}  where they
 are  superimposed, and  shown  in their  original  orientation in  the
@@ -313,28 +321,26 @@ correspond to the composite motifs of Nasalean and collaborators.
 \includegraphics[angle=0, scale=0.34]{Chapter5/lonepairtlooptertF.png}
 \caption{Subset   of   the  Group   II   structures  identified   with
   ``getMotif'',  which  correspond   to  the  lonepair  triloop  motif
-  identified by Gutell and collaborators \cite{lee2003}.
-  In   the  upper   left  corner   of  the   figure   a  space-filling
-  representation   of  the   \textit{Thermus   thermophilus}  ribosome
-  (PDB\_ID:2J01) is shown, where the 50S subunit is drawn in blue, 30S
-  subunit is drawn in  gray, and three interacting GNRA-like tetraloop
+  identified by Gutell and collaborators \cite{lee2003}.  In the upper
+  left  corner of  the figure  a space-filling  representation  of the
+  \textit{Thermus  thermophilus}  ribosome  (PDB\_ID:2J01)  is  shown,
+  where the 50S subunit is drawn  in blue, the 30S subunit is drawn in
+  gray  respectively, and  the three  interacting  GNRA-like tetraloop
   motifs, known as lone-pair triloop  motifs, are drawn in orange (I),
-  green (II), and red (II) color respectively.
-  In  the upper  right corner  of  the figure  a zoomed  image of  the
-  interacting lone-pair triloop motifs is shown. Each one of the Group
-  II  GNRA tetraloop motif  candidates are  drawn in  blue in  a stick
-  model representation. Sequentially  distant adenines are represented
-  as  red  blocks  forming  a  sheared G$\cdot$A  base-pair  with  the
-  guanines (represented  as a green blocks) in  the identified GroupII
-  structures.
-  In the  lower left corner of  the figure the  three lonepair triloop
-  motifs, or structural GNRA motifs, are superimposed in the reference
-  frame of residues  two and three.  In the lower  right corner of the
-  figure  the location  of the  first residue  in the  identified GNRA
-  structural  motifs is  highlighted by  a red  circle on  top  of the
-  secondary structure of the large subunit of the ribosome (taken from
-  Gutell Lab's  website \cite{cannone2002}) and  numbered according to
-  the 3D structural image above.}
+  green  (II), and  red (II)  color.  The  upper right  corner  of the
+  figure  shows a zoomed  image of  the interacting  lone-pair triloop
+  motifs. Each one of the Group II GNRA tetraloop motif candidates are
+  drawn in blue in  a stick model representation. Sequentially distant
+  adenines  and guanines  forming  a sheared  G$\cdot$A base-pair  are
+  represented  as  red and  green  blocks  in  the identified  GroupII
+  structures.   In the  lower  left  corner of  the  figure the  three
+  lonepair triloop motifs, or structural GNRA motifs, are superimposed
+  in  the reference frame  of residues  two and  three.  In  the lower
+  right corner of the figure the  location of the first residue in the
+  identified GNRA structural motifs is  highlighted by a red circle on
+  top of the secondary structure  of the large subunit of the ribosome
+  (taken  from Gutell Lab's  website \cite{cannone2002})  and numbered
+  according to the 3D structural image above.}
 \label{fig:terts}
 \end{figure}
 
@@ -343,8 +349,8 @@ the  first one is  the step  farthest away  from a  typical A-RNA-like
 base-step.  We plot  the step-parameter values for this  first step in
 the  scatterplot in  Figure \ref{fig:scattergnra}.   It is  clear from
 this  scatterplot  that these  steps,  depicted  by  the blue  points,
-constitute  a well  defined region  in  the space  of rigid-body  step
-parameter configurations for the large subunit of the ribosome.
+constitute  a   well  defined  region  in  the   space  of  rigid-body
+step-parameter configurations for the large subunit of the ribosome.
 
 \begin{figure}
 \centering 
@@ -352,9 +358,10 @@ parameter configurations for the large subunit of the ribosome.
 \caption{Scatterplot of base-step parameter  values for the GN step in
   GNRA motif  candidates (drawn as  blue points) identified in  a list
   given by the ROC, against a  backdrop of the range of values for the
-  step-parameters in  the large  subunit of the  ribosome PDB\_ID:1FFK
-  (drawn as  red points).  Here the correlation  coefficients for each
-  scatterplot are given as explained in figure \ref{fig:allsteps}.}
+  step-parameters in  all steps of  the large subunit of  the ribosome
+  PDB\_ID:1FFK   (drawn  as   red  points).    Here   the  correlation
+  coefficients for  each scatterplot are given as  explained in Figure
+  \ref{fig:allsteps}.}
 \label{fig:scattergnra}
 \end{figure}
 %
@@ -434,7 +441,7 @@ of  base-pairing and  base-stacking could  help define  RNA structural
 motifs.
 
 We  believe that  the problem  of  defining RNA  structural motifs  is
-clearly   more   complicated  than   what   any  structural   research
+clearly  more  complicated  than  what  any  one  structural  research
 methodology,  such as the  analysis of  backbone torsions  or all-atom
 fitting,  can  alone  predict.   We  have shown  that  the  rigid-body
 parameters relating sequential bases  facilitate motif searches in RNA
@@ -443,7 +450,7 @@ motifs. It  has also been shown in  previous work on RNA  in the Olson
 group \cite{yurongthesis},  that the rigid-body  parameters describing
 RNA  base-pairs can  help  to  find and  describe  novel RNA  tertiary
 interactions important for understanding the three-dimensional fold of
-the  ribosome.  For example,  the  noncanonical sugar-edge  sugar-edge
+the  ribosome.  For  example, the  noncanonical  sugar-edge sugar-edge
 parallel G$\cdot$A base-pair acts  as a linker of sequentially distant
 regions  in the  50S subunit  of the  ribosome (PDB\_ID:1JJ2),  and is
 related to  known RNA  motifs such as  the kink-turn motif.   We think
@@ -460,9 +467,9 @@ We have found that by defining seeds from known motifs we can find new
 motifs at the  boundaries of the seeds through  their base-steps.  For
 example, we  started a GNRA  motif search using its  average base-step
 parameters  from the  GNRA's found  in the  23S ribosomal  subunit and
-found a closely related motif which  we have called Group II motif and
-which in turn is part of a composite motif \cite{nasalean2009} that is
-known as the lonepair triloop motif \cite{lee2003}.
+found a  closely related motif which  we have called a  Group II motif
+and which  in turn  is part of  a composite  motif \cite{nasalean2009}
+that is known as the lonepair triloop motif \cite{lee2003}.
 
 We can also  perform other, simpler, but not  as ``precise'' RNA motif
 searches,   e.g.   by  following   the  proposed   cluster  validation
