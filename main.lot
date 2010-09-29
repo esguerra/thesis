@@ -4,7 +4,7 @@
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-3}
 \contentsline {table}{\numberline {2.1}{\ignorespaces Types and sizes of some large RNA structures ($>$300 bases) elucidated in the last decade.}}{24}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Number of base-steps in the 23S subunit of \textit {Haloarcula marismortui} ribosome with RMSD values less than or equal to 10, 15, and 20 from the average base-step vectors of the four groups of non-A-type RNA dinucleotide conformations. The numbers in parentheses are the corresponding percentages computed with respect to the 2753 base steps present in the 23S subunit.}}{33}{table.2.2}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Number of base steps in the 23S subunit of the \textit {Haloarcula marismortui} ribosome with RMSD values less than or equal to 10, 15, and 20 from the average base-step vectors of the four groups of non-A-type RNA dinucleotide conformations. The numbers in parentheses are the corresponding percentages computed with respect to the 2753 base steps present in the 23S subunit.}}{33}{table.2.2}
 \contentsline {table}{\numberline {2.3}{\ignorespaces Base-step parameters for common DNA and RNA conformations. The base-step parameters are computed for a single-stranded base-step rather than a double-stranded base-pair step.}}{38}{table.2.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-4}
@@ -15,8 +15,9 @@
 \contentsline {table}{\numberline {3.5}{\ignorespaces Mean values and standard deviations of the six rigid-body base-pair parameters, the conformational accessible volumes scores of each pair \cite {olson1998}, and the root-mean-square deviations (RMSD) of base pairs superimposed in the middle base triad (MBT) (see Appendix \ref {appendix_1a}) in RNA helical regions.}}{60}{table.3.5}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-5}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Counts of unique base-pair steps and overlap areas (subscripted values in parenthesis) values in intact RNA helical regions of RNA structures.}}{65}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Persistence lengths for chains of 1000 base-pairs constructed from the ten unique base-pair steps. A scaling factor $\zeta $ is used to reproduce the experimentally obtained values of persistence length of a random sequence with equal weights of G$\cdot $C and A$\cdot $U base-pairs, and with an equally weighed composition of the sixteen unique base-pair steps.}}{75}{table.4.2}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Counts of unique base-pair steps and overlap areas in \r Angstrom$^2$ (subscripted values in parenthesis) in intact RNA helical regions of RNA structures. The overlap values are those of shared areas between base pairs in a base-pair-step, these areas are defined by the base ring atoms \cite {lu2003}. For details on the dataset composition see Chapter \ref {basepairs} and Table \ref {tab:dbase}}}{65}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Helical parameter values for RNA homopolymers and alternating copolymers built using 3DNA from the average base-pair-step parameters values of averaged crystallographic data. For corresponding images see Figure \ref {fig:homohetero}}}{72}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Persistence lengths for chains of 1000 base-pairs constructed from the ten unique base-pair steps. A scaling factor $\zeta $ (i.e., effective temperature) is used to reproduce the experimentally obtained values of persistence length of a random sequence with equal weights of G$\cdot $C and A$\cdot $U base-pairs, and with an equally weighed composition of the sixteen unique base-pair steps.}}{75}{table.4.3}
 \gdef \the@ipfilectr {}
 \gdef \the@ipfilectr {@-6}
 \contentsline {table}{\numberline {5.1}{\ignorespaces GNRA motif seed composed of the average base step parameter values for 20 GNRA motifs found in the large subunit of the ribosome PDB\_ID:1FFK \cite {lemieux2006}.}}{84}{table.5.1}

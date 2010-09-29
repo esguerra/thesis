@@ -21,16 +21,19 @@ which can be formed in RNA is given in Figure \ref{fig:unique}.
 \centering
 \includegraphics[angle=0, scale=0.4]{Chapter4/unique.png}
 \caption{Color-coded representation of  the 21 unique base-pair dimers
-of RNA  formed by canonical G$\cdot$C, and  A$\cdot$U Watson-Crick and
-wobble  G$\cdot$U base-pairs.  The  grey boxes  include the  10 unique
-base-pair steps  formed by canonical G$\cdot$C and  A$\cdot$U, and the
-pink  boxes  the  additional  11  base-pair steps  which  result  from
-considering G$\cdot$U wobble base-pairs  as dimer building blocks. The
-coloring scheme  used to  denote the  bases is that  used in  the NDB,
-where A  is red, U is  cyan, G is green,  and C is  yellow.  The first
-base-pair X in  each XpY step in the 5$'$ to  3$'$ sense is identified
-as pair $i$ and the second Y  is identified by $i+1$ in the upper left
-corner of the figure.}
+  of RNA formed by canonical G$\cdot$C, and A$\cdot$U Watson-Crick and
+  wobble G$\cdot$U base  pairs.  The grey boxes include  the 10 unique
+  base-pair steps formed by canonical G$\cdot$C and A$\cdot$U, and the
+  pink  boxes the  additional  11 base-pair  steps  which result  from
+  considering   G$\cdot$U  wobble   base  pairs   as   dimer  building
+  blocks. The coloring scheme used to denote the bases is that used in
+  the NDB,  where A is red,  U is cyan, G  is green, and  C is yellow.
+  The first base-pair X in each XpY  step in the 5$'$ to 3$'$ sense is
+  identified as  pair $i$ and the  second Y is identified  by $i+1$ in
+  the upper  left corner  of the figure.  The white boxes  include the
+  base-pair steps with the equivalent sequence as those in the colored
+  boxes in the mirror location in  the grid but with the identities of
+  the strands switched.}
 \label{fig:unique}
 \end{figure}  
 
@@ -119,9 +122,13 @@ A$\cdot$G$_{\text{WC}}$ & G$\cdot$A$_{\text{WC}}$ & bp$_{i}$/bp$_{i+1}$\\
 \hline
 \end{tabular}
 %}
-\caption{Counts   of  unique   base-pair  steps   and   overlap  areas
-(subscripted  values  in parenthesis)  values  in  intact RNA  helical
-regions of RNA structures.}
+\caption{Counts  of unique base-pair  steps and  overlap areas  in \AA
+  ngstrom$^2$  (subscripted  values  in  parenthesis)  in  intact  RNA
+  helical regions of  RNA structures. The overlap values  are those of
+  shared areas between base pairs in a base-pair-step, these areas are
+  defined by  the base  ring atoms \cite{lu2003}.  For details  on the
+  dataset   composition   see   Chapter  \ref{basepairs}   and   Table
+  \ref{tab:dbase}}
 \label{tab:91steps}
 \end{center}
 %\end{table}
@@ -211,8 +218,8 @@ A$\cdot$U, and wobble G$\cdot$U, shown in Figure ~\ref{fig:average}.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[angle=0, scale=0.5]{Chapter4/average.png}
-\caption{Snapshot of  the unique  base-pair step parameters  table for
+\includegraphics[angle=0, scale=0.48]{Chapter4/average.png}
+\caption{Snapshot of  the unique  base-pair-step parameters  table for
 intact helical  regions of RNA, showing  the fields by  which the data
 can  be  sorted. In  this  case  the data  are  sorted  by dimer  step
 counts.   There   are    three   stack   types   purine-purine   (RR),
@@ -236,11 +243,12 @@ compared to the same steps  in in DNA \cite{olson1998, olson2009c} and
 the slightly greater variation in roll compared to twist.
 \begin{figure}[htbp]
 \centering
-\includegraphics[angle=0, scale=0.54]{Chapter4/contour.png}
+\includegraphics[angle=0, scale=0.54]{Chapter4/GG_CC.png}
 \caption{Snapshot  from  the web-framework  of  a  scatterplot in  the
   Roll-Twist plane  with an energy  contour at 4.5$kT$. The  full data
-  before culling are depicted in red dots, and the culled data, within
-  3 standard deviations of the mean, by blue dots.}
+  before culling (1335 steps) are depicted by red dots, and the culled
+  data (1274 steps), within 3 standard deviations of the mean, by blue
+  dots.}
 \label{fig:contour}
 \end{figure}
 
@@ -251,7 +259,7 @@ matrix    for   the    GG$\cdot$CC   step    is   shown    in   Figure
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[angle=0, scale=0.6]{Chapter4/forceconst.png}
+\includegraphics[angle=0, scale=0.58]{Chapter4/forceconst.png}
 \caption{Snapshot of  the RNA base-pair-steps  web-framework where the
   force constant matrix for the GG$\cdot$CC dimeric step is shown. The
   force  constant  matrix  is  derived  from the  covariance  of  step
@@ -298,14 +306,14 @@ literature.
 \begin{figure}
 \centering
 \includegraphics[angle=0, scale=2.6]{Chapter4/perVlen.png}
-\caption{In  the lower  frame persistence  length vs  chain  length in
-  base-pairs  for naturally  straigth chains  with 11  base  pairs per
-  turn. In the upper frame  the persistence length vs. chain length of
-  ``real''  chains.   Note that  chains  with  alternating base  pairs
-  sequence  are constructed  from two  types  of dimers  and that  the
-  computed  values  in  a  limited  configuration  sample  are  nearly
-  identical  for poly  rX$\cdot$ poly  rY and  poly rY$\cdot$  poly rX
-  chains where X$\neq$Y.}
+\caption{Persistence  length  vs.  chain   length  in  base  pairs  for
+  naturally straigth  B-like RNA  chains with 11  base pairs  per turn
+  (lower frame), ``real'' chains  (upper frame). Note that chains with
+  alternating base  pairs sequence are  constructed from two  types of
+  dimers  and that the  computed values  in a  limited configurational
+  sample (10$^{\text{5}}$  simulated chains) are  nearly identical for
+  poly  rX$\cdot$ poly  rY and  poly  rY$\cdot$ poly  rX chains  where
+  X$\neq$Y.}
 \label{fig:perVlen}
 \end{figure}
 
@@ -335,22 +343,59 @@ greater than  the corresponding  persistence lenghts for  chains whose
 rest   states   come   from   the   averaged   crystallographic   data
 (Figure~\ref{fig:perVlen}).  Repetition  of the averaged  crystal rest
 states yield  regular helices  with the helical  repeats per  turn and
-helical parameters shown in Figure \ref{fig:helicalprop}.
+helical parameters shown in Table \ref{tab:helicalprop}.
 %Repetition  of the averaged  crystal rest
 %state  yields a  regular helix  with 00  bp/helix and  a  helical step
 %height of 00 \AA res 11 bp/turn and 3.30 \AA in the naturally straight
 %rest state.
 
-\begin{figure}
-\centering
-\includegraphics[angle=0, scale=0.66]{Chapter4/helicalprop.png}
-\caption{Helical parameter values  for the homopolymers and copolymers
-  built using  3DNA from the average  base-pair-step parameters values
-  of  averaged  crystallographic data.  For  corresponding images  see
-  Figure \ref{fig:homohetero}}
-\label{fig:helicalprop}
-\end{figure}
+\begin{table}[htbp]
+\footnotesize{  
+\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{ 10}{|c|}{``UNREALISTIC'' HOMOPOLYMERS} \\ \hline
+Type & Step & X-disp (\AA)& Y-disp (\AA)& H-Rise (\AA)& Incl. ($^{\circ}$) & Tip ($^{\circ}$)& H-Twist ($^{\circ}$)& RPT & Pitch \\ \hline
+RR & AA$\cdot$UU & -3.63 & 0.08 & 2.79 & 12.8 & 0.7 & 32.4 & 11.1 & 31.03 \\ 
+ & AG & -4.54 & -0.13 & 2.71 & 15.4 & 0.2 & 31.2 & 11.6 & 31.30 \\ 
+ & GG$\cdot$CC & -4.63 & 0.02 & 2.80 & 13.6 & 0.0 & 32.0 & 11.3 & 31.55 \\ 
+ & GA & -3.76 & -0.03 & 2.87 & 10.4 & 0.0 & 33.1 & 10.9 & 31.21 \\ \hline
+RY & AC & -3.39 & -0.20 & 2.97 & 8.6 & -0.5 & 33.1 & 10.9 & 32.34 \\ 
+ & AU & -3.58 & -0.04 & 2.85 & 15.2 & -0.7 & 33.3 & 10.8 & 30.81 \\ 
+ & GC & -3.33 & -0.03 & 2.99 & 7.3 & 0.0 & 33.8 & 10.7 & 31.89 \\ \hline
+YR & CA & -4.50 & -0.02 & 2.49 & 19.3 & -0.4 & 32.4 & 11.1 & 27.63 \\ 
+ & UA & -4.05 & 0.09 & 2.52 & 20.5 & 0.2 & 34.2 & 10.5 & 26.57 \\ 
+ & CG & -5.33 & -0.04 & 2.47 & 20.6 & -0.6 & 31.0 & 11.6 & 28.68 \\ \hline
+ & ARNA & -4.04 & 0.07 & 2.81 & 15.5 & 0.8 & 32.7 & 11.0 & 30.91 \\ 
+ & Blike & -2.72 & 0.15 & 3.30 & 0.0 & 0.0 & 31.6 & 11.4 & 37.63 \\ \hline
+\multicolumn{ 10}{|c|}{HOMOPOLYMERS and COPOLYMERS} \\ \hline
+Type & Step & X-disp (\AA)& Y-disp (\AA)& H-Rise (\AA)& Incl. ($^{\circ}$)& Tip ($^{\circ}$)& H-Twist ($^{\circ}$)& RPT & Pitch \\ \hline
+RR.RR & AA$\cdot$UU & -3.63 & 0.08 & 2.79 & 12.8 & 0.7 & 32.4 & 11.1 & 31.03 \\ 
+ & GG$\cdot$CC & -4.63 & 0.02 & 2.80 & 13.6 & 0.0 & 32.0 & 11.3 & 31.55 \\ 
+ & AG$\cdot$CU & -4.18 & -0.09 & 2.79 & 13.2 & 0.1 & 32.1 & 11.2 & 31.33 \\ \hline
+RY.YR & AC$\cdot$GU & -3.90 & -0.12 & 2.75 & 13.5 & -0.5 & 32.8 & 11.0 & 30.20 \\ 
+ & AU$\cdot$AU & -3.79 & 0.02 & 2.70 & 17.6 & -0.3 & 33.7 & 10.7 & 28.85 \\ 
+ & GC$\cdot$GC & -4.24 & -0.04 & 2.75 & 13.3 & -0.3 & 32.5 & 11.1 & 30.46 \\ \hline
+ & ARNA & -4.04 & 0.07 & 2.81 & 15.5 & 0.8 & 32.7 & 11.0 & 30.91 \\ 
+ & Blike & -2.72 & 0.15 & 3.30 & 0.0 & 0.0 & 31.6 & 11.4 & 37.63 \\ \hline
+\end{tabular}
+\caption{Helical parameter values for RNA homopolymers and alternating
+  copolymers  built   using  3DNA  from   the  average  base-pair-step
+  parameters   values   of   averaged  crystallographic   data.    For
+  corresponding images see Figure \ref{fig:homohetero}}
+\label{tab:helicalprop}
+}
+\end{table}
 
+%\begin{figure}
+%\centering
+%\includegraphics[angle=0, scale=0.66]{Chapter4/helicalprop.png}
+%\caption{Helical parameter values for RNA homopolymers and alternating
+%  copolymers
+%  built using  3DNA from the average  base-pair-step parameters values
+%  of  averaged  crystallographic data.  For  corresponding images  see
+%  Figure \ref{fig:homohetero}}
+%\label{fig:helicalprop}
+%\end{figure}
 
 As  is the  case with  DNA, the  poly rA$\cdot$poly  rU chains  show a
 smaller  persistence length  than  the poly  rG$\cdot$poly rC  chains,
@@ -374,10 +419,11 @@ GG$\cdot$CC.
 \begin{figure}
 \centering
 \includegraphics[angle=0, scale=3.0]{Chapter4/homohetero.png}
-\caption{Calladine-Drew like block representation \cite{calladine1997}
-  made from the rest states for  the ten unique base-pair steps in RNA
-  from averaged crystallographic data. The structures were built using
-  3DNA \cite{lu2003}.}
+\caption{Calladine-Drew-like           block           representations
+  \cite{calladine1997} of  homopolymers and representative alternating
+  copolymers made  from the rest  states for the ten  unique base-pair
+  steps  in RNA  from averaged  crystallographic data.  The structures
+  were built using 3DNA \cite{lu2003}.}
 \label{fig:homohetero}
 \end{figure}
 
@@ -403,41 +449,42 @@ introduce  a scaling  factor $zeta$  (i.e., effective  temperature) to
 scale the  persistence lengths  to the experimentally  observed values
 (Table \ref{tab:compare}).   For example, we can  reproduce the values
 of Abels et  al.\cite{abels2005} with a $\zeta$ scaling  value of 0.75
-(638    \AA    vs.    638    \AA    deduced    from    force-extension
+(638 \AA~ vs.  638 \AA~ deduced from force-extension
 measurements \footnote{Note that the  experimental values are based on
   an idealized Worm-Like chain model of DNA.}).
 
-\begin{table}  
+\begin{table}[ht]  
 \begin{center}
 %\scalebox{0.7}{
 \begin{tabular}{|c|c|c|c|}
 \hline
 Stack Type & Base-pair Step & $a$ (\AA) RNA & $a$ (\AA) DNA\\
 \hline \hline
-RR &  AA$\cdot$UU & 758      &  789   \\
-   &  AG$\cdot$CU & 1116     &  919   \\
-   &  GG$\cdot$CC & 1099     &  808   \\
-   &  GA$\cdot$UC & 1115     &  785   \\
+RR &  AA$\cdot$UU & 765      &  395   \\
+   &  AG$\cdot$CU & 587      &  461   \\
+   &  GG$\cdot$CC & 606      &  405   \\
+   &  GA$\cdot$UC & 588      &  395   \\
 \hline
-RY &  AC$\cdot$GU & 539      &  1245   \\
-   &  AU$\cdot$AU & 818      &  490   \\
-   &  GC$\cdot$GC & 1166     &  904   \\
+RY &  AC$\cdot$GU & 664      &  625   \\
+   &  AU$\cdot$AU & 476      &  245   \\
+   &  GC$\cdot$GC & 604      &  454   \\
 \hline
-YR &  CA$\cdot$UG & 536      &  779   \\
-   &  UA$\cdot$UA & 820      &  435   \\
-   &  CG$\cdot$CG & 1117     &  534   \\
+YR &  CA$\cdot$UG & 662      &  391   \\
+   &  UA$\cdot$UA & 471      &  217   \\
+   &  CG$\cdot$CG & 607      &  269   \\
 \hline
-   & Mixed Sequence  & 911   &        \\
+   & Mixed Sequence  & 818   &        \\
    & Hagerman   & 700-800    &        \\
    & Abels et al.   & 622    &        \\ 
    & Abels et al.   & 638    &        \\
-   & Ideal DNA    &          & 510    \\
+   & Ideal DNA    &          & 500    \\
    & $\zeta$ (scaling factor)  & 0.75 & 0.50 \\
 \hline
 \end{tabular}
 %}
 \caption{Persistence lengths for chains of 1000 base-pairs constructed
-  from the ten unique base-pair steps. A scaling factor $\zeta$ is used to
+  from the ten unique base-pair steps. A scaling factor $\zeta$ (i.e.,
+  effective temperature) is used to
   reproduce the experimentally obtained values of persistence length
   of a random sequence with equal weights of G$\cdot$C and A$\cdot$U
   base-pairs, and with an equally weighed composition of the sixteen
@@ -467,28 +514,35 @@ chains shown in Figure \ref{fig:perVlen}.
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=0.6]{Chapter4/curved_and_steps.png}
-\caption{Chain length  depence of the  persistence length for  the RNA
-  block  copolymer   poly  r(AC)$_{\text{3}}$G$_{\text{5}}\cdot$  poly
-  rC$_{\text{5}}$(GU)$_{\text{3}}$. Configuration samples obtained
-  using    the   Gaussian    sampling   technique    of    Czapla   et
-  al. \cite{czapla2006}. The curved  pattern is indicative of a curved
-  or super helical configuration in RNA induced by sequence.}
+\includegraphics[angle=0, scale=0.61]{Chapter4/curved_and_steps.png}
+\caption{Chain-length  dependence   of  the  persistence   length  for
+  represented    RNA    polymers;    the    block    copolymer    poly
+  r(AC)$_{\text{3}}$G$_{\text{5}}\cdot$                            poly
+  rC$_{\text{5}}$(GU)$_{\text{3}}$,  the  alternating  copolymer  poly
+  r(AC)$\cdot$poly r(GU),  and the homopolymer  poly rG$\cdot$poly rC.
+  Configurational  samples   obtained  using  the   Gaussian  sampling
+  technique of  Czapla et al.   \cite{czapla2006}. The sinusoidal-like
+  pattern for the  block copolymer is indicative of  a curved or super
+  helical configuration in RNA induced by sequence.}
 \label{fig:curved}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[angle=0, scale=2.0]{Chapter4/polyacacacggggg_all.png}
-\caption{RNA   chains   of   the   150  bps   block   copolymer   poly
+\includegraphics[angle=0, scale=0.6]{Chapter4/states2.png}
+\caption{RNA   chains    of   the   150-bp    block   copolymer   poly
   r(AC)$_{\text{3}}$G$_{\text{5}}\cdot$                            poly
   rC$_{\text{5}}$(GU)$_{\text{3}}$ superimposed in the reference frame
-  of the  first base-step.   Shown are a  100 snapshots of  the output
+  of  the first  base  step.  Shown  are  20 snapshots  of the  output
   produced  by  building  the  structures from  the  randomly  sampled
   step-parameters  obtained with  the Gaussian  sampling  technique of
-  Czapla et al. \cite{czapla2006}.  Each chain is depicted by a ribbon
-  linking sequential phosphorous  atoms, reconstructed using 3DNA from
-  the base-step parameters at each dimer step.}
+  Czapla et al. \cite{czapla2006}. Colored  in red are 10 snapshots of
+  simulated ``real'' chains, and in blue 10 snapshots of intrinsically
+  straigth B-like chains.  Each chain  is depicted by a ribbon linking
+  sequential  phosphorus  atoms,  reconstructed  using 3DNA  from  the
+  base-step  parameters at each  dimer step.  Note the  greater curved
+  arrangements for the  red ``real'' chains which bring  their ends in
+  close contact, in contrast to the stiffer B-like chains.}
 \label{fig:rnatree}
 \end{figure}  
 

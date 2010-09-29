@@ -7,6 +7,12 @@ Olson, W.~K., Gorin, A.~A., Lu, X.-J., Hock, L.~M., and Zhurkin, V.~B. (1998)
 {\em Proceedings of the {N}ational {A}cademy of {S}ciences,} {\bf 95},
   11163--11168.
 
+\bibitem{lu2003}
+Lu, X.-J. and Olson, W. (2003)
+{3DNA: A Software Package for the Analysis, Rebuilding and Visualization of the
+  Three-Dimensional Nucleic Acid Structures}.
+{\em Nucleic Acids Research,} {\bf 31}, 5108--5121.
+
 \bibitem{go1976}
 Go, M. and Go, N. (1976)
 {Fluctuations of an Alpha-Helix}.
@@ -16,12 +22,6 @@ Go, M. and Go, N. (1976)
 Wilson, E.~B., Decius, J.~C., and Cross, P.~C. (1955)
 Molecular Vibrations: The Theory of Infrared and Raman Vibrational Spectra,
 McGraw-Hill, .
-
-\bibitem{lu2003}
-Lu, X.-J. and Olson, W. (2003)
-{3DNA: A Software Package for the Analysis, Rebuilding and Visualization of the
-  Three-Dimensional Nucleic Acid Structures}.
-{\em Nucleic Acids Research,} {\bf 31}, 5108--5121.
 
 \bibitem{yang2003}
 Yang, H., Jossinet, F., Leontis, N., Chen, L., Westbrook, J., Berman, H., and

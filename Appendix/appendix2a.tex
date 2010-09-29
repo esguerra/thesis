@@ -3,13 +3,14 @@
 \bibliographystyle{nar}
 \section{General Methodology}
 We considered  each of  the 20 non-A-RNA  type structures as  a vector
-composed of  six base-step  parameters.  We group these  vectors using
+composed of  six base-step parameters.   We group these  vectors using
 cluster analysis  following an automated process  shown to succesfully
 reproduce well  known patterns of  the Periodic Table from  a selected
 set  of variables, such  as, electronegativity,  ionization potential,
 and  other elemental  properties  \cite{restrepo2004}.  The  procedure
 followed  here  is  an  adaptation   of  how  clustering  is  used  to
-re-construct the Periodic Table classification of the elements.
+re-construct  the  Periodic   Table  classification  of  the  elements
+\cite{restrepo2006}.
 
 We start by normalizing the vectors of step parameters,
 \begin{gather}
@@ -19,7 +20,7 @@ We start by normalizing the vectors of step parameters,
 where ${x}_{jA}$ is the value  of the step parameter $j$ of the
 structure A and $x_{jmin}$ and  $x_{jmax}$ are the minimum and maximum
 values for a particular step parameter \textit{j} \cite{restrepo2006}.
-Then,  using  the  software  package \textsf{R}  \cite{ihaka1996},  we
+Then,  using  the  software  package \textbf{R}  \cite{ihaka1996},  we
 cluster these vectors into groups.  These groups can be displayed in a
 tree  representation,  also called  a  dendrogram,  or  in biology,  a
 phylogenetic tree (see Figure~\ref{fig:tree}).
@@ -49,8 +50,9 @@ Yet  another distance  definition used  in  this text,  which is  more
 frequently  interpreted as  a  statistical measure  of  error, is  the
 root-mean-square deviation (RMSD).  The root-mean-square deviation can
 be seen as a mean Euclidean  distance, in the sense that it is defined
-as the square root of the ratio between the sum of squared differences
-between vector variables, and the dimensionality of the vectors $N$,
+as  the square  root  of the  ratio  between the  sum  of the  squared
+differences between  vector variables,  and the dimensionality  of the
+vectors $N$,
 
 \begin{gather}
 RMSD(X,Y)      =     \Big(      \frac{\sum_{i=1}^2     |x_i-y_i|^2}{N}
@@ -74,7 +76,7 @@ ungrouped,  or to  the elements  of other  groups. As  new  groups are
 formed the  process is repeated  following a hierarchical  order, that
 is,  whatever distance is  smaller gives  the grouping  criterion.  We
 have used  four hierarchical  clustering methods, the  descriptions of
-which follow in the next section, "Hierarchical Methods".
+which follow in the next section.
 
 For  every  possible combination  of  clustering  method and  distance
 definition we  obtain a dendrogram. The combination  of three distance
@@ -82,7 +84,7 @@ definitions and four clustering  methods leads to 12 clustering trees.
 These trees are not all exactly  the same but show recurring groups of
 conformers.  To find the groups, which are repeated among the trees, a
 consensus  analysis  is  performed  using  the  \textsf{clue}  package
-\cite{hornik2005}, implemented in  \textsf{R}. The resulting consensus
+\cite{hornik2005}, implemented in  \textbf{R}. The resulting consensus
 tree is illustrated in Figure~\ref{fig:eucl_cons}.
 
 \section{Hierarchical methods}
@@ -108,7 +110,7 @@ Here $X$, $Y$, and $d(x_{i},y_{j})$ have the same meaning as above.
   between  elements  of  each  cluster  is  taken  as  the  clustering
   criterion,
 \begin{gather}
-D(X, Y)=\frac{1}{N_x  * N_y} \sum_{i=1}^{N_x}  \sum_{j=1}^{N_y} d(x_i,
+D(X, Y)=\frac{1}{N_x   N_y} \sum_{i=1}^{N_x}  \sum_{j=1}^{N_y} d(x_i,
 y_j).
 \end{gather}
 Here $N_x$ and $N_y$ are the number of elements in the respective
@@ -123,7 +125,7 @@ D(X, Y)=d(\overline{x}, \overline{y}) ,\\
 \end{gather} }
 
 \item{ \textit{Ward's Method},  where the error of the  sum of squares
-  (ESS) is used as the criterion,
+  (\textit{ESS}) is used as the criterion,
 %This Error Sum of Squares might  be the same as the residual sum of
 %squares which is important in regression models.
 \begin{gather}
@@ -347,7 +349,7 @@ distance,  such  as  the  Euclidean or  Manhattan  distance,  although
 formally  it  does  not  need   to  be  a  metric.   Notice  that  the
 contributions to the  average silhouette width (\textit{asw}), defined
 in  Equation  \ref{eq:silval}  can  only  have  values  in  the  range
-$[-1:1]$.   According  to  Kaufman and  Rousseeuw  \cite{kaufman1990},
+$[-1,1]$.  According to Kaufman and Rousseeuw \cite{kaufman1990},
 acceptable clusterings  usually have  an \textit{asw} value  above 0.5
 and  those with  values below  0.2 should  be considered  as  not well
 clustered. In this regard, it should  be noted that all the values for
