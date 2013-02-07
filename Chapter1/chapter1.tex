@@ -280,7 +280,7 @@ folding    free     energies    from    single-molecule    experiments
 
 
 \section{RNA Simulations}
-Network  and molecular  mechanics-molecular  dynamics (MM-MD)  methods
+Network  and Molecular  Mechanics-Molecular  Dynamics (MM-MD)  methods
 provide  useful  information  relevant  to the  RNA  folding-unfolding
 problem, especially  for describing fluctuations away  from the native
 conformation.   Gaussian network  models  \cite{y_wang2004, bahar1998,
@@ -390,49 +390,49 @@ From   secondary   structure   prediction  algorithms   like   Zuker's
 \textit{mfold} program \cite{zuker2003}, Hofacker's Vienna RNA package
 \cite{hofacker1994}, or Mathew's Dynaling software \cite{mathews2002},
 one obtains a  large ensemble of secondary structure  graphs, i.e., 2D
-representations of  the double-stranded helical  stems, hairpin loops,
- and bubbles formed by the constituent bases.  These graphs can be analyzed
-with graph  theory to produce  a partition function that describes the
-full arrangement  of contacts for  the total  number of  possible secondary
-structures, and allows  the construction  of a "relation  of microscopic
-conformations to macroscopic  properties" \cite{chen2000}. So far this
-type of model  has not been generalized to  take into account tertiary
-structural features, \textit{i.e.},  interhelical interactions of RNA.
-In  the  last  two to  three  years  a  boom  in prediction  of  small
-($\approx$ 200  nucleotides) RNA 3D structures  has started. Basically
-three types of approaches are being  followed.  One is that of using a
-coarse-grained model, assigning a potential function to it, applying a
-minimization procedure, and then performing a molecular mechanics (MM)
-all-atom  refinement \cite{das2007, ding2008,  jonikas2009a} of the structure.  Another
+representations of  the double-stranded helical stems,  hairpin loops,
+and  bubbles formed  by the  constituent bases.   These graphs  can be
+analyzed  with  graph theory  to  produce  a partition  function  that
+describes the  full arrangement  of contacts for  the total  number of
+possible  secondary  structures,  and  allows the  construction  of  a
+"relation  of  microscopic  conformations to  macroscopic  properties"
+\cite{chen2000}. So far this type of model has not been generalized to
+take  into   account  tertiary  structural   features,  \textit{i.e.},
+interhelical interactions  of RNA.  In the  last two to three  years a
+boom  in  prediction  of  small ($\approx$  200  nucleotides)  RNA  3D
+structures has started. Basically three  types of approaches are being
+followed.  One  is that of  using a coarse-grained model,  assigning a
+potential function to it, applying  a minimization procedure, and then
+performing   a   Molecular    Mechanics   (MM)   all-atom   refinement
+\cite{das2007,  ding2008,  jonikas2009a}  of the  structure.   Another
 starts  from  the predicted  secondary  structures,  assumes that  the
-helical  regions adopt  the canonical  A-form  structure, mechanically
+helical  regions adopt  the canonical  A-form structure,  mechanically
 inserts residues as rigid bodies in the remaining non-helical regions,
 and finally  carries out an MM  optimization \cite{martinez2008}.  The
-third  approach   entails  a  pipeline   between  secondary  structure
-prediction, and tertiary structure  assembly.  This pipeline uses as a
+third  approach   entails  a  pipeline  between   secondary  structure
+prediction, and tertiary structure assembly.   This pipeline uses as a
 bridging concept  between 2D and  3D structure, the  graph theoretical
-definition of  a minimum  cycle basis, which  for the case  of nucleic
-acids   has   been  renamed   as   a   Nucleic   Cyclic  Motif   (NCM)
+definition of  a minimum cycle  basis, which  for the case  of nucleic
+acids   has   been  renamed   as   a   Nucleic  Cyclic   Motif   (NCM)
 \cite{parisien2008}.
 
 \subsection{RNA  Overall Fold}
-Whereas  in  the case  of  proteins  one  qualitatively describes  the
-overall  fold  in terms  of  the  arrangement  of secondary  structure
+Whereas  in  the case  of  proteins  one qualitatively  describes  the
+overall  fold  in terms  of  the  arrangement of  secondary  structure
 motifs, \textit{i.e.}, using the helix-ribbon-coil images developed by
-Jane           Richardson          \cite{richardson2000}          (see
+Jane          Richardson           \cite{richardson2000}          (see
 Figure~\ref{fig:ribboncoil}), there is still no comparable description
-of  the overall  fold of  RNA. A  ribbon representation  of  the
-sugar-phosphate backbone (see Figure~\ref{fig:ribosome}) helps to understand
-the  folding of  small  RNA's, but  in  the case  of  the large
-ribosome structure,  a
-representation at  the same  level of detail  does not make  sense
-(these are  close to 3000  nucleotides in the
-large  subunit of  the  archaeal  ribosome).  In  the  past two  years
-Holbrook \cite{holbrook2008} and  Sykes \cite{sykes2009} have proposed
-new  representations for  RNA  based on  helical region  organization.
+of  the  overall   fold  of  RNA.  A  ribbon   representation  of  the
+sugar-phosphate  backbone  (see  Figure~\ref{fig:ribosome})  helps  to
+understand the  folding of small RNA's,  but in the case  of the large
+ribosome structure, a representation at  the same level of detail does
+not  make sense  (these are  close to  3000 nucleotides  in the  large
+subunit of  the archaeal  ribosome).  In the  past two  years Holbrook
+\cite{holbrook2008}  and  Sykes  \cite{sykes2009}  have  proposed  new
+representations  for   RNA  based  on  helical   region  organization.
 Holbrook  makes an  analysis  of continuous  interhelical strands,  so
 called,  COINS, and  Sykes  makes  an optmized  projection  of the  3D
-helical  axes to 2D  images, which  can later  be annotated  with, for
+helical axes  to 2D  images, which  can later  be annotated  with, for
 example, hydroxyl radical footprinting data.
 
 \begin{figure}[ht]
