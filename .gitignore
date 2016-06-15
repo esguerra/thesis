@@ -9,5 +9,12 @@
 *blg
 *ilg
 *ind
-
+*.bbl
+*.lot
+*.lof
+Appendix/biblio.bib
+Chapter2/biblio.bib
+Chapter3/biblio.bib
+Chapter4/biblio.bib
+Chapter6/biblio.bib
 

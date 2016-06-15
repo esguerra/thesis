@@ -4,15 +4,16 @@
 % Ph. D. Thesis
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Need ruproposal.cls which formats to Rutgers Style Guide
-\documentclass[11pt, oneside, pdftex]{ruformat}
-\renewcommand{\thefootnote}{\roman{footnote}}
+%\documentclass[11pt, oneside, pdftex]{ruformat}
+\documentclass[pdftex,11pt, oneside]{ruformat}
 \usepackage{amsmath, amstext, amsfonts, amssymb}
+\renewcommand{\thefootnote}{\roman{footnote}}
 \usepackage[pdftex]{graphicx}
 \usepackage{subfigure, longtable}
 \usepackage{float}
 \usepackage{rotating}
-\usepackage{slashbox}
-%\restylefloat{figure}
+%\usepackage{slashbox}
+\restylefloat{figure}
 \usepackage{longtable}
 \usepackage{url}
 %\usepackage{xtab}
@@ -22,8 +23,8 @@
 \doublespacing
 %The geometry package might not be necessary since there are definitions in
 %ruformat.cls
-%\usepackage[left=2.54cm,bottom=2.00cm,top=2.00cm,right=2.54cm]{geometry}
-\usepackage[left=1.5in,bottom=1.0in,top=1.0in,right=1.0in]{geometry}
+\usepackage[left=2.54cm,bottom=2.00cm,top=2.00cm,right=2.54cm]{geometry}
+%\usepackage[left=1.5in,bottom=1.0in,top=1.0in,right=1.0in]{geometry}
 \usepackage{chapterbib}
 \usepackage{makeidx}
 \makeindex
@@ -48,12 +49,15 @@
 % For more options go to: http://www.tug.dk/FontCatalogue/
 
 \usepackage[pdftex]{hyperref}%%Note: In TeXShop hyperref needs to be at the end of package calls.
-%\hypersetup{
-%  pdftitle = {Mauricio Esguerra Doctoral Thesis},
-%  pdfkeywords = {rna, persistence length, rna motifs},
-%  pdfauthor = {Mauricio Esguerra},
-%  bookmarks = true
-%}
+\hypersetup{
+  pdftitle = {Mauricio Esguerra Doctoral Thesis},
+  pdfkeywords = {rna, persistence length, rna motifs},
+  pdfauthor = {Mauricio Esguerra},
+  bookmarks = true,
+  linkcolor = black,
+  colorlinks = true,       % false: boxed links; true: colored links
+  citecolor = blue         % color of links to bibliography
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Here begins the document
@@ -89,7 +93,7 @@
 \include{Chapter3/chapter3}
 \include{Chapter4/chapter4}
 \include{Chapter5/chapter5}
-\include{Chapter6/chapter6}
+%\include{Chapter6/chapter6}
 \appendix
 \include{Appendix/appendix1a}
 \include{Appendix/appendix2a}
@@ -106,8 +110,6 @@
 \include{CV/cv}
 \end{document}
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Compilation Instructions:
 %
@@ -118,4 +120,3 @@
 % makeindex main
 % latex main
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
